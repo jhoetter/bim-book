@@ -32,5 +32,12 @@ export function preprocessMarkdown(raw: string): string {
   // 4. Fix relative image paths: ../assets/ → /assets/
   out = out.replace(/\]\(\.\.\/assets\//g, '](/assets/')
 
+  // 5. Convert ::TERM:: markers to gloss spans for hover tooltips
+  // Matches letters, digits, hyphens, German umlauts, apostrophes, spaces
+  out = out.replace(/::([\w\-äöüÄÖÜß' ]+)::/g, (_, term: string) => {
+    const id = term.trim().toLowerCase()
+    return `<span data-gloss="${id}">${term.trim()}</span>`
+  })
+
   return out
 }

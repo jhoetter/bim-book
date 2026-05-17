@@ -14,6 +14,7 @@ import { CalcUValue }   from './calculators/CalcUValue'
 import { CalcDewPoint } from './calculators/CalcDewPoint'
 import { CalcSound }    from './calculators/CalcSound'
 import { CalcHoai }     from './calculators/CalcHoai'
+import { GlossTooltip } from './GlossTooltip'
 import type { Components } from 'react-markdown'
 
 const CALC_COMPONENTS = {
@@ -94,6 +95,14 @@ export function MarkdownPage({ content }: Props) {
                   {alt && <figcaption>{alt}</figcaption>}
                 </figure>
               )
+            },
+            span(props) {
+              const { node, children, ...rest } = props as typeof props & { node?: { properties?: Record<string, unknown> } }
+              const glossTerm = node?.properties?.dataGloss as string | undefined
+              if (glossTerm) {
+                return <GlossTooltip term={glossTerm}>{children}</GlossTooltip>
+              }
+              return <span {...rest}>{children}</span>
             },
             a({ href, children, ...rest }) {
               const isExternal = href?.startsWith('http')
