@@ -46,16 +46,18 @@ export function GlossTooltip({ term, children }: Props) {
           className={`gloss-popover${above ? ' gloss-popover--above' : ' gloss-popover--below'}`}
           role="tooltip"
         >
-          <span className="gloss-popover-term">
-            {entry.term}
-            {entry.abbrev && (
-              <span className="gloss-popover-abbrev"> ({entry.abbrev})</span>
-            )}
-          </span>
-          <span className="gloss-popover-def">{entry.definition}</span>
           {entry.image && (
             <img className="gloss-popover-img" src={entry.image} alt={entry.term} />
           )}
+          <span className="gloss-popover-text">
+            <span className="gloss-popover-term">
+              {entry.term}
+              {entry.abbrev && (
+                <span className="gloss-popover-abbrev"> ({entry.abbrev})</span>
+              )}
+            </span>
+            <span className="gloss-popover-def">{entry.definition}</span>
+          </span>
         </span>
       )}
     </span>

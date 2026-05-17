@@ -1818,14 +1818,22 @@ html, body, #root {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-lg);
   padding: 10px 13px 11px;
-  min-width: 200px;
-  max-width: 300px;
+  min-width: 220px;
+  max-width: 360px;
   width: max-content;
   white-space: normal;
   pointer-events: none;
   display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+}
+.gloss-popover-text {
+  display: flex;
   flex-direction: column;
   gap: 4px;
+  min-width: 0;
+  flex: 1;
 }
 .gloss-popover--above {
   bottom: calc(100% + 7px);
@@ -1851,10 +1859,12 @@ html, body, #root {
   line-height: 1.55;
 }
 .gloss-popover-img {
-  width: 100%;
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
   border-radius: var(--radius-sm);
-  margin-top: 6px;
   object-fit: cover;
+  order: -1;
 }
 
 /* ── Input area ──────────────────────────────────────────────── */

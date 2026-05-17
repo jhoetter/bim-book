@@ -86,6 +86,13 @@ export const PARTS: Part[] = [
     ],
   },
   {
+    title: 'Nachschlagewerke',
+    chapters: [
+      { id: 'glossar', num: '', title: 'Glossar', path: 'appendix/glossar', icon: NoteBlockIcon, pageIcon: NoteBlockHifi },
+      { id: 'formelsammlung', num: '', title: 'Formelsammlung', path: 'appendix/formelsammlung', icon: QuantityTakeoffIcon, pageIcon: QuantityTakeoffHifi },
+    ],
+  },
+  {
     title: 'Teil I – Fundament',
     chapters: [
       { id: '01-architektur-als-system', num: '1', title: 'Architektur als System', path: 'chapters/01-architektur-als-system', icon: WallIcon, pageIcon: WallHifi, coverImage: '/assets/covers/cover-ch01.png' },
@@ -148,8 +155,6 @@ export const PARTS: Part[] = [
     title: 'Anhang',
     chapters: [
       { id: 'kastanienallee7', num: '', title: 'Kastanienallee 7', path: 'appendix/kastanienallee7', icon: TopoIcon, pageIcon: TopoHifi },
-      { id: 'glossar', num: '', title: 'Glossar', path: 'appendix/glossar', icon: NoteBlockIcon, pageIcon: NoteBlockHifi },
-      { id: 'formelsammlung', num: '', title: 'Formelsammlung', path: 'appendix/formelsammlung', icon: QuantityTakeoffIcon, pageIcon: QuantityTakeoffHifi },
       { id: 'ifc-referenz', num: '', title: 'IFC-Schnellreferenz', path: 'appendix/ifc-referenz', icon: IFCIcon, pageIcon: IFCHifi },
       { id: 'normen', num: '', title: 'Normen & Gesetze', path: 'appendix/normen', icon: ScheduleViewIcon, pageIcon: ScheduleViewHifi },
     ],
