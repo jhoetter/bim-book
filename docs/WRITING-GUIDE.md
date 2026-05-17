@@ -109,6 +109,31 @@ aus dem Glossar übereinstimmen. Verfügbare IDs findest du in `web/src/data/glo
 | `::Lastfall::` | lastfall |
 | `::Embodied Carbon::` | embodied-carbon |
 
+### Formel-Hover: `^^formel-id^^`
+
+Formeln werden im Text mit `^^formel-id^^` eingebettet. Der Leser sieht eine inline-gerenderte
+Kurzform der Formel (KaTeX) und beim Hover ein Popover mit vollständiger Formel, Variablen und
+Beispielwerten aus der Kastanienallee 7.
+
+```markdown
+Der ::U-Wert:: berechnet sich als ^^u-wert^^, wobei alle Schichtwiderstände addiert werden.
+```
+
+Verfügbare Formel-IDs (aus `web/src/data/formulas.ts`):
+
+| Formel-ID | Formel |
+|---|---|
+| `^^u-wert^^` | U-Wert nach DIN EN ISO 6946 |
+| `^^r-wert^^` | Wärmedurchgangswiderstand R = d/λ |
+| `^^transmissionswaermeverlust^^` | HT = Σ U·A·fx |
+| `^^gfz^^` | Geschossflächenzahl GFZ |
+| `^^grz^^` | Grundflächenzahl GRZ |
+| `^^primaerenergiebedarf^^` | Primärenergiebedarf Qp = Qf · fp |
+| `^^schalldaemmass^^` | Bewertetes Schalldämmmaß R'w |
+| `^^waermeleitung^^` | Wärmeleitung nach Fourier |
+
+Neue Formeln können in `web/src/data/formulas.ts` ergänzt werden.
+
 ### Kapitelreferenzen
 
 Verweise auf andere Kapitel:

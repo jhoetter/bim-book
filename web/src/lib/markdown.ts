@@ -39,5 +39,10 @@ export function preprocessMarkdown(raw: string): string {
     return `<span data-gloss="${id}">${term.trim()}</span>`
   })
 
+  // 6. Convert ^^formula-id^^ markers to formula spans
+  out = out.replace(/\^\^([\w\-]+)\^\^/g, (_, id: string) =>
+    `<span data-formula="${id.trim()}"></span>`
+  )
+
   return out
 }

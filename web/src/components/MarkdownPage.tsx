@@ -15,6 +15,7 @@ import { CalcDewPoint } from './calculators/CalcDewPoint'
 import { CalcSound }    from './calculators/CalcSound'
 import { CalcHoai }     from './calculators/CalcHoai'
 import { GlossTooltip } from './GlossTooltip'
+import { FormulaTooltip } from './FormulaTooltip'
 import type { Components } from 'react-markdown'
 
 const CALC_COMPONENTS = {
@@ -99,8 +100,12 @@ export function MarkdownPage({ content }: Props) {
             span(props) {
               const { node, children, ...rest } = props as typeof props & { node?: { properties?: Record<string, unknown> } }
               const glossTerm = node?.properties?.dataGloss as string | undefined
+              const formulaId = node?.properties?.dataFormula as string | undefined
               if (glossTerm) {
                 return <GlossTooltip term={glossTerm}>{children}</GlossTooltip>
+              }
+              if (formulaId) {
+                return <FormulaTooltip id={formulaId} />
               }
               return <span {...rest}>{children}</span>
             },
