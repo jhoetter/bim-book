@@ -1,0 +1,99 @@
+site_name: BIM von Grund auf
+site_description: Architektur, Baukonstruktion und digitales Planen vollständig verstehen
+site_author: Johannes Hötter
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: de
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    scheme: default
+    primary: custom
+    accent: custom
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - tables
+  - attr_list
+  - md_in_html
+  - footnotes
+  - toc:
+      permalink: true
+      title: Inhalt
+
+nav:
+  - Überblick: index.md
+
+  - Teil I – Fundament:
+    - "Kap. 1 – Architektur als System": chapters/01-architektur-als-system.md
+    - "Kap. 2 – Entwurf, Raum und Funktion": chapters/02-entwurf-raum-funktion.md
+
+  - Teil II – Baukörper:
+    - "Kap. 3 – Baustoffe": chapters/03-baustoffe.md
+    - "Kap. 4 – Tragwerk": chapters/04-tragwerk.md
+    - "Kap. 5 – Konstruktion: Gründung, Wand, Decke, Dach": chapters/05-konstruktion.md
+
+  - Teil III – Bauphysik:
+    - "Kap. 6 – Wärmeschutz & GEG": chapters/06-waermeschutz-geg.md
+    - "Kap. 7 – Feuchteschutz": chapters/07-feuchteschutz.md
+    - "Kap. 8 – Schallschutz": chapters/08-schallschutz.md
+    - "Kap. 9 – Brandschutz": chapters/09-brandschutz.md
+
+  - Teil IV – TGA:
+    - "Kap. 10 – Heizung & Wärmeversorgung": chapters/10-heizung-waermeversorgung.md
+    - "Kap. 11 – Lüftung & Raumluftqualität": chapters/11-lueftung.md
+    - "Kap. 12 – Sanitär & Entwässerung": chapters/12-sanitaer.md
+    - "Kap. 13 – Elektro & Gebäudeautomation": chapters/13-elektro.md
+
+  - Teil V – Recht & Prozess:
+    - "Kap. 14 – Planungsrecht": chapters/14-planungsrecht.md
+    - "Kap. 15 – HOAI": chapters/15-hoai.md
+    - "Kap. 16 – Kosten & Ausschreibung": chapters/16-kosten-ausschreibung.md
+
+  - Teil VI – BIM:
+    - "Kap. 17 – Was BIM wirklich ist": chapters/17-was-bim-wirklich-ist.md
+    - "Kap. 18 – IFC: Die Sprache des digitalen Gebäudes": chapters/18-ifc.md
+    - "Kap. 19 – Klassifikation": chapters/19-klassifikation.md
+    - "Kap. 20 – Prozess & Kollaboration": chapters/20-prozess-kollaboration.md
+    - "Kap. 21 – BIM in der Praxis": chapters/21-bim-praxis.md
+
+  - Teil VII – Nachhaltigkeit:
+    - "Kap. 22 – Nachhaltigkeit & Kreislaufwirtschaft": chapters/22-nachhaltigkeit.md
+    - "Kap. 23 – Sanierung": chapters/23-sanierung.md
+    - "Kap. 24 – Digitaler Zwilling & KI": chapters/24-digitaler-zwilling-ki.md
+
+  - Anhang:
+    - Kastanienallee 7: appendix/kastanienallee7.md
+    - Glossar: appendix/glossar.md
+    - IFC-Schnellreferenz: appendix/ifc-referenz.md
+    - Normen & Gesetze: appendix/normen.md

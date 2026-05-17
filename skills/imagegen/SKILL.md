@@ -16,8 +16,23 @@ cd /Users/jhoetter/repos/bim-book
 python3 skills/imagegen/generate.py \
   --type <TYP> \
   --desc "<BESCHREIBUNG AUF DEUTSCH>" \
-  --name "<DATEINAME>"
+  --name "<DATEINAME>" \
+  [--size <GRÖSSE>]          # optional, sonst Typ-Standard
+  [--skip-qa]                # QA überspringen (für schnelle Tests)
 ```
+
+### Größen (--size)
+
+| Kürzel | Pixel | Wann |
+|--------|-------|------|
+| `portrait` / `tall` | 1024×1536 | Schnitte, Wandaufbauten |
+| `landscape` / `wide` | 1536×1024 | Diagramme, Grundrisse, Isometrien |
+| `square` | 1024×1024 | Icons, quadratische Vergleiche |
+| `auto` | vom Modell | Wenn Ausrichtung unklar |
+| `1024x1536` | explizit | Direktangabe |
+
+**Standard:** wird automatisch aus dem Typ abgeleitet (style_config.json).  
+**Überschreiben:** `--size landscape` oder `--size auto` oder `--size 1024x1024`
 
 ### Illustrationstypen
 

@@ -2,66 +2,70 @@
   "book_title": "BIM von Grund auf",
   "style_description": "Consistent visual style for all book illustrations",
 
-  "base_style_prompt": "Technical architectural illustration for a professional German textbook. Clean, minimal design. White background. Precise thin lines. No photorealism, no photographs, no people. Modern flat design with subtle depth. German labels and annotations.",
+  "base_style_prompt": "Technical architectural illustration for a professional German textbook. Minimalist, clean design. Pure white background (#FFFFFF), no gradients, no drop shadows. Precise thin lines (1–2px equivalent). Geometric sans-serif font similar to Inter for all labels and annotations. No photorealism, no photographs, no people, no decorative elements. Modern flat design with clear hierarchy. All text and labels in German.",
 
   "color_palette": {
     "background": "#FFFFFF",
-    "primary": "#2C5F8A",
-    "primary_light": "#5B8DB8",
-    "structural": "#4A5568",
-    "structural_light": "#A0AEC0",
-    "accent": "#E07A3A",
-    "accent_light": "#F4B080",
-    "success": "#38A169",
-    "fill_light": "#EDF2F7",
-    "fill_warm": "#FDF0E8",
-    "description": "Slate blue for primary elements, warm gray for structures, terracotta-amber for highlights/callouts"
+    "ink": "#111827",
+    "structural": "#6B7280",
+    "structural_light": "#D1D5DB",
+    "thermal": "#93C5FD",
+    "thermal_dark": "#3B82F6",
+    "accent": "#F59E0B",
+    "accent_dark": "#D97706",
+    "tga": "#F97316",
+    "vegetation": "#10B981",
+    "highlight": "#EF4444",
+    "fill_light": "#F9FAFB",
+    "description": "Architecture-standard palette: neutral gray for structure/concrete, muted blue for thermal insulation, warm amber for TGA/MEP systems, near-black ink for lines and text"
   },
 
   "type_variants": {
     "isometric": {
-      "prompt_suffix": "Isometric 3D illustration, 30-degree isometric projection, layered building components visible, exploded view showing different building layers, colored by system (structural=gray, thermal=blue, technical=amber).",
+      "prompt_suffix": "Isometric 3D illustration, 30-degree isometric projection. Layered building components in exploded view. Structural elements in gray (#6B7280), thermal insulation in blue (#93C5FD), TGA/MEP in amber (#F59E0B). Thin black outlines. German labels in Inter-style font.",
       "size": "1536x1024",
       "use_for": ["building cross-sections", "exploded component views", "system overviews", "3D spatial concepts"]
     },
     "diagram": {
-      "prompt_suffix": "Clean 2D technical diagram, schematic style, clear flow arrows, labeled components, organized left-to-right or top-to-bottom layout, legend included.",
+      "prompt_suffix": "Clean 2D technical diagram on white background. Schematic style with thin lines. Clear directional arrows, labeled components. Organized left-to-right or top-to-bottom layout. Legend included. Near-black lines (#111827), colored fills from palette. Inter-style sans-serif font for all labels.",
       "size": "1536x1024",
       "use_for": ["system schematics", "process flows", "HVAC diagrams", "electrical layouts", "IFC hierarchy"]
     },
     "section": {
-      "prompt_suffix": "Architectural cross-section drawing, precise cut view, hatching patterns for different materials (concrete=diagonal lines, insulation=zigzag, wood=grain pattern), dimension lines, material labels on right side.",
+      "prompt_suffix": "Architectural cross-section drawing on white background. Precise cut view with standard hatching: concrete = diagonal lines (gray #6B7280), insulation = zigzag pattern (blue #93C5FD), render/plaster = fine dots or plain (light gray). Thin dimension lines with arrowheads on both ends. Material labels on right side. Inter-style sans-serif font.",
       "size": "1024x1536",
       "use_for": ["wall cross-sections", "roof build-ups", "floor constructions", "foundation details"]
     },
     "floorplan": {
-      "prompt_suffix": "Architectural floor plan, top-down view, walls shown in solid black, rooms labeled in German, furniture schematically indicated, north arrow included, scale bar.",
+      "prompt_suffix": "Architectural floor plan on white background. Top-down view, walls as solid black fills, rooms labeled in German. Furniture shown schematically with thin lines. North arrow and scale bar included. Inter-style sans-serif font.",
       "size": "1536x1024",
       "use_for": ["floor plans", "room layouts", "apartment layouts", "site plans"]
     },
     "comparison": {
-      "prompt_suffix": "Side-by-side comparison illustration, two or more variants clearly separated, pros/cons visually indicated, consistent scale between variants, numbered callouts.",
+      "prompt_suffix": "Side-by-side comparison on white background. Two or more variants clearly separated by a thin dividing line. Consistent scale between variants. Numbered callouts, minimal color coding from palette. Inter-style sans-serif font.",
       "size": "1536x1024",
       "use_for": ["material comparisons", "system alternatives", "before/after", "construction method variants"]
     },
     "infographic": {
-      "prompt_suffix": "Modern technical infographic, icons and simplified visuals, data represented graphically, clear hierarchy with title, subtitle, and content areas, numbered steps if process-oriented.",
+      "prompt_suffix": "Modern technical infographic on white background. Simplified icons, data represented graphically. Clear hierarchy: bold title, subtitle, numbered content areas. Steps numbered if process-oriented. Uses only 2–3 colors from the palette. Inter-style sans-serif font.",
       "size": "1536x1024",
       "use_for": ["process overviews", "regulation summaries", "HOAI phases", "BIM workflow", "statistics"]
     }
   },
 
-  "negative_prompt_guidance": "Avoid: photorealistic rendering, photographs, people/figures, decorative elements, gradients, drop shadows, cluttered compositions, English labels (unless technical standard terms like IFC), cartoon style.",
+  "negative_prompt_guidance": "Avoid: photorealistic rendering, photographs, people/figures, decorative elements, gradients, drop shadows, colored backgrounds, cluttered compositions, English labels (unless technical standard terms like IFC, BIM, HVAC), cartoon style, handwriting, serif fonts.",
 
   "kastanienallee_context": "The recurring example building 'Kastanienallee 7' is a 4-story residential building (Mehrfamilienhaus) in Bavaria, Germany. Massivbau (reinforced concrete skeleton, brick infill), flat green roof, underground parking, 12 apartments, ~1800m² GFA. When illustrating this building, use consistent massing: rectangular footprint ~20x18m, flat roofline, regular window grid, entrance on south facade.",
 
   "consistency_notes": [
-    "Always use the same color for the same building systems across all illustrations",
-    "Structural elements: slate gray (#4A5568)",
-    "Thermal insulation: soft blue (#5B8DB8)",
-    "TGA/MEP systems: amber (#E07A3A)",
-    "Green spaces / vegetation: muted green (#38A169)",
-    "Annotations and callouts: dark gray text (#2D3748) with thin leader lines",
-    "Chapter-specific accent colors are allowed but must not conflict with system colors"
+    "Same color always means same system across all chapters",
+    "Structural / Concrete: gray #6B7280",
+    "Thermal insulation: blue #93C5FD (fill) + #3B82F6 (outline/hatch)",
+    "TGA / MEP systems: amber #F59E0B",
+    "Masonry / brick: warm amber #D97706",
+    "Vegetation: green #10B981",
+    "Lines and text: near-black #111827",
+    "Background: always pure white #FFFFFF",
+    "Font: geometric sans-serif similar to Inter in all labels"
   ]
 }
