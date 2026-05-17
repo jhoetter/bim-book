@@ -21,32 +21,32 @@
   "type_variants": {
     "isometric": {
       "prompt_suffix": "Isometric 3D illustration, 30-degree isometric projection, layered building components visible, exploded view showing different building layers, colored by system (structural=gray, thermal=blue, technical=amber).",
-      "size": "1792x1024",
+      "size": "1536x1024",
       "use_for": ["building cross-sections", "exploded component views", "system overviews", "3D spatial concepts"]
     },
     "diagram": {
       "prompt_suffix": "Clean 2D technical diagram, schematic style, clear flow arrows, labeled components, organized left-to-right or top-to-bottom layout, legend included.",
-      "size": "1792x1024",
+      "size": "1536x1024",
       "use_for": ["system schematics", "process flows", "HVAC diagrams", "electrical layouts", "IFC hierarchy"]
     },
     "section": {
       "prompt_suffix": "Architectural cross-section drawing, precise cut view, hatching patterns for different materials (concrete=diagonal lines, insulation=zigzag, wood=grain pattern), dimension lines, material labels on right side.",
-      "size": "1024x1792",
+      "size": "1024x1536",
       "use_for": ["wall cross-sections", "roof build-ups", "floor constructions", "foundation details"]
     },
     "floorplan": {
       "prompt_suffix": "Architectural floor plan, top-down view, walls shown in solid black, rooms labeled in German, furniture schematically indicated, north arrow included, scale bar.",
-      "size": "1792x1024",
+      "size": "1536x1024",
       "use_for": ["floor plans", "room layouts", "apartment layouts", "site plans"]
     },
     "comparison": {
       "prompt_suffix": "Side-by-side comparison illustration, two or more variants clearly separated, pros/cons visually indicated, consistent scale between variants, numbered callouts.",
-      "size": "1792x1024",
+      "size": "1536x1024",
       "use_for": ["material comparisons", "system alternatives", "before/after", "construction method variants"]
     },
     "infographic": {
       "prompt_suffix": "Modern technical infographic, icons and simplified visuals, data represented graphically, clear hierarchy with title, subtitle, and content areas, numbered steps if process-oriented.",
-      "size": "1792x1024",
+      "size": "1536x1024",
       "use_for": ["process overviews", "regulation summaries", "HOAI phases", "BIM workflow", "statistics"]
     }
   },

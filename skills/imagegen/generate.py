@@ -64,18 +64,16 @@ def get_image_size(img_type: str, config: dict) -> str:
     return os.environ.get("OPENAI_IMAGE_SIZE", variant.get("size", "1792x1024"))
 
 
-def generate_image(prompt: str, size: str, api_key: str, model: str) -> str:
-    """Ruft die OpenAI Images API auf und gibt die Bild-URL zurück."""
-    import urllib.request
-    import json
+def generate_image(prompt: str, size: str, api_key: str, model: str) -> bytes:
+    """Ruft die OpenAI Images API auf und gibt die Bilddaten zurück."""
+    import base64
 
     payload = json.dumps({
         "model": model,
         "prompt": prompt,
         "n": 1,
         "size": size,
-        "quality": "standard",
-        "style": "natural"
+        "quality": "high",
     }).encode("utf-8")
 
     req = urllib.request.Request(
@@ -90,16 +88,19 @@ def generate_image(prompt: str, size: str, api_key: str, model: str) -> str:
     with urllib.request.urlopen(req) as resp:
         result = json.loads(resp.read())
 
-    return result["data"][0]["url"]
+    data = result["data"][0]
+    if "b64_json" in data:
+        return base64.b64decode(data["b64_json"])
+    # Fallback: URL (ältere Modelle)
+    with urllib.request.urlopen(data["url"]) as resp:
+        return resp.read()
 
 
-def download_image(url: str, output_path: Path):
-    """Lädt das Bild von der URL herunter und speichert es."""
-    with urllib.request.urlopen(url) as resp:
-        data = resp.read()
+def save_image(image_data: bytes, output_path: Path):
+    """Speichert Bilddaten als PNG-Datei."""
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, "wb") as f:
-        f.write(data)
+        f.write(image_data)
 
 
 def save_prompt_log(output_path: Path, prompt: str, description: str, img_type: str):
@@ -175,7 +176,7 @@ def main():
         print("Bitte .env aus .env.example erstellen und den API-Key eintragen.")
         sys.exit(1)
 
-    model = os.environ.get("OPENAI_IMAGE_MODEL", "dall-e-3")
+    model = os.environ.get("OPENAI_IMAGE_MODEL", "gpt-image-1")
     size = get_image_size(args.type, config)
 
     # Ausgabepfad
@@ -193,14 +194,14 @@ def main():
     # Bild generieren
     print("API-Aufruf läuft...")
     try:
-        image_url = generate_image(prompt, size, api_key, model)
+        image_data = generate_image(prompt, size, api_key, model)
     except Exception as e:
         print(f"FEHLER bei API-Aufruf: {e}")
         sys.exit(1)
 
-    # Bild herunterladen
-    print("Lade Bild herunter...")
-    download_image(image_url, output_path)
+    # Bild speichern
+    print("Speichere Bild...")
+    save_image(image_data, output_path)
 
     # Prompt-Log speichern
     log_path = save_prompt_log(output_path, prompt, args.desc, args.type)
