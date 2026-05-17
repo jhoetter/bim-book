@@ -123,6 +123,10 @@ html, body, #root {
   padding: 6px 10px 6px;
   border-bottom: 1px solid var(--border-soft);
   margin-bottom: 2px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--bg-sidebar);
 }
 
 .sidebar-search-bar {

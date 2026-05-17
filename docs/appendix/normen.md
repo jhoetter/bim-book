@@ -1,4 +1,4 @@
-# Anhang B – Normen & Gesetze
+# Normen & Gesetze
 
 Welche Norm gilt wofür – Schnellreferenz.
 

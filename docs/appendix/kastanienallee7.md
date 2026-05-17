@@ -1,4 +1,4 @@
-# Anhang E – Kastanienallee 7: Projektübersicht
+# Kastanienallee 7: Projektübersicht
 
 Das Leitbeispiel des Buches in kompakter Form.
 

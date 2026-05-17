@@ -1,4 +1,4 @@
-# Anhang D – IFC-Schnellreferenz
+# IFC-Schnellreferenz
 
 Die 50 wichtigsten IFC-Entitäten und Property Sets.
 
