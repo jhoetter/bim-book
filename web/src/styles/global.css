@@ -679,6 +679,8 @@ html, body, #root {
   font-style: italic;
 }
 
+.prose blockquote p { margin: 0; }
+
 /* ── Code ─────────────────────────────────────────────────────── */
 .prose code {
   font-family: var(--font-mono);
