@@ -76,3 +76,58 @@
   --dur-base:  150ms;
   --dur-slow:  250ms;
 }
+
+/* ── Dark mode tokens ──────────────────────────────────────────── */
+[data-theme="dark"] {
+  /* Surfaces */
+  --bg:          hsl(222 15% 10%);
+  --bg-sidebar:  hsl(222 18% 8%);
+  --bg-hover:    hsl(220 14% 16%);
+  --bg-active:   hsl(214 30% 18%);
+  --bg-code:     hsl(222 18% 13%);
+  --bg-sunken:   hsl(222 15% 12%);
+
+  /* Text */
+  --ink:         hsl(220 20% 95%);
+  --text:        hsl(220 16% 88%);
+  --text-muted:  hsl(220 10% 58%);
+  --text-faint:  hsl(220 8% 40%);
+
+  /* Structural */
+  --structural:       hsl(220 8% 55%);
+  --structural-light: hsl(220 8% 25%);
+  --structural-faint: hsl(220 8% 16%);
+
+  /* Borders */
+  --border:        hsl(220 12% 22%);
+  --border-soft:   hsl(220 10% 17%);
+  --border-strong: hsl(220 12% 34%);
+
+  /* Accent */
+  --thermal:      hsl(214 65% 60%);
+  --thermal-dark: hsl(214 78% 68%);
+  --accent:       var(--thermal-dark);
+  --accent-amber: hsl(38 90% 60%);
+
+  /* Semantic */
+  --amber:      hsl(38 90% 60%);
+  --amber-dark: hsl(34 78% 52%);
+  --vegetation: hsl(158 56% 48%);
+
+  /* Admonitions */
+  --adm-tip-bg:      hsl(46 20% 12%);
+  --adm-tip-border:  hsl(46 55% 28%);
+  --adm-tip-text:    hsl(46 90% 68%);
+  --adm-note-bg:     hsl(214 22% 13%);
+  --adm-note-border: hsl(214 55% 32%);
+  --adm-note-text:   hsl(214 78% 68%);
+  --adm-warn-bg:     hsl(0 20% 12%);
+  --adm-warn-border: hsl(0 52% 36%);
+  --adm-warn-text:   hsl(0 76% 66%);
+
+  /* Shadows — stronger on dark bg */
+  --shadow-xs: 0 1px 2px hsl(0 0% 0% / 0.25);
+  --shadow-sm: 0 1px 3px hsl(0 0% 0% / 0.35), 0 1px 2px hsl(0 0% 0% / 0.25);
+  --shadow-md: 0 4px 12px hsl(0 0% 0% / 0.45), 0 2px 4px hsl(0 0% 0% / 0.25);
+  --shadow-lg: 0 16px 40px hsl(0 0% 0% / 0.55), 0 6px 16px hsl(0 0% 0% / 0.35);
+}

@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, useParams, useLocation, Navigate, NavLink } from 'react-router-dom'
 import { useEffect, useState, useCallback, useRef, type PointerEvent } from 'react'
+import { ThemeProvider } from './lib/theme'
 import { Sidebar } from './components/Sidebar'
 import { Topbar } from './components/Topbar'
 import { TableOfContents } from './components/TableOfContents'
@@ -340,9 +341,11 @@ function AppLayout() {
 
 export function App() {
   return (
-    <BrowserRouter>
-      <AppLayout />
-      <ChatPanel />
-    </BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
+        <AppLayout />
+        <ChatPanel />
+      </BrowserRouter>
+    </ThemeProvider>
   )
 }

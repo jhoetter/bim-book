@@ -958,6 +958,13 @@ html, body, #root {
 .prose .admonition-kastanienallee .admonition-title::before {
   content: "🏠 ";
 }
+/* Images inside kastanienallee always on white — the container bg is sandstone */
+.prose .admonition-kastanienallee img {
+  background: #fff;
+  border-radius: var(--radius-sm);
+  padding: 8px;
+  border: 1px solid hsl(32 40% 88%);
+}
 
 /* Ziel — chapter learning objectives (muted green) */
 .prose .admonition-ziel {
@@ -3732,4 +3739,75 @@ html, body, #root {
   .pagination { display: none !important; }
   .sel-popover, .lightbox { display: none !important; }
   .ifc-ka7-note, .normen-entry .ifc-ka7-note { display: none !important; }
+}
+
+/* ── Sidebar footer (theme toggle) ────────────────────────────── */
+.sidebar-footer {
+  flex-shrink: 0;
+  border-top: 1px solid var(--border);
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sidebar-footer-label {
+  font-size: 11px;
+  color: var(--text-faint);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  flex: 1;
+  user-select: none;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: var(--bg-sunken);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 2px;
+}
+
+.theme-toggle-btn {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  border-radius: 3px;
+  color: var(--text-faint);
+  cursor: pointer;
+  transition: background var(--dur-fast), color var(--dur-fast);
+  flex-shrink: 0;
+}
+
+.theme-toggle-btn:hover {
+  background: var(--bg-hover);
+  color: var(--text);
+}
+
+.theme-toggle-btn--active {
+  background: var(--bg);
+  color: var(--accent);
+  box-shadow: var(--shadow-xs);
+}
+
+/* ── Dark mode: image backgrounds ─────────────────────────────── */
+/* Soft off-white — legible for black drawings, not blinding */
+[data-theme="dark"] .prose figure img {
+  background: hsl(220 14% 91%);
+  padding: 6px;
+}
+
+[data-theme="dark"] .lightbox {
+  background: hsl(222 15% 8% / 0.93);
+}
+
+[data-theme="dark"] .lightbox-img {
+  background: hsl(220 14% 91%);
+}
 }

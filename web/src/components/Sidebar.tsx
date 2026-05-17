@@ -1,14 +1,53 @@
 import { NavLink, useLocation } from 'react-router-dom'
 import { useEffect, useRef, useState, useCallback } from 'react'
+import React from 'react'
 import { WallHifi, HomeIcon } from 'bim-icons'
 import { PARTS, GALLERY_ICON, TOP_PAGES } from '../chapters'
 import { useBookmarks } from '../lib/bookmarks'
 import { search } from '../lib/search'
+import { useTheme, type Theme } from '../lib/theme'
 
 function chapterHref(path: string): string {
   if (path === 'index') return '/'
   return `/${path}`
 }
+
+const SunIcon = () => (
+  <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+    strokeWidth="1.75" strokeLinecap="round" aria-hidden="true">
+    <circle cx="8" cy="8" r="3" />
+    <line x1="8" y1="1" x2="8" y2="2.5" />
+    <line x1="8" y1="13.5" x2="8" y2="15" />
+    <line x1="1" y1="8" x2="2.5" y2="8" />
+    <line x1="13.5" y1="8" x2="15" y2="8" />
+    <line x1="3.05" y1="3.05" x2="4.1" y2="4.1" />
+    <line x1="11.9" y1="11.9" x2="12.95" y2="12.95" />
+    <line x1="12.95" y1="3.05" x2="11.9" y2="4.1" />
+    <line x1="4.1" y1="11.9" x2="3.05" y2="12.95" />
+  </svg>
+)
+
+const MonitorIcon = () => (
+  <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+    strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <rect x="1" y="2" width="14" height="10" rx="1.5" />
+    <line x1="5.5" y1="14" x2="10.5" y2="14" />
+    <line x1="8" y1="12" x2="8" y2="14" />
+  </svg>
+)
+
+const MoonIcon = () => (
+  <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+    strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M13.5 10.5A6 6 0 0 1 5.5 2.5a6 6 0 1 0 8 8Z" />
+  </svg>
+)
+
+const THEME_OPTIONS: { value: Theme; label: string; Icon: () => React.ReactElement }[] = [
+  { value: 'light',  label: 'Hell',   Icon: SunIcon },
+  { value: 'system', label: 'System', Icon: MonitorIcon },
+  { value: 'dark',   label: 'Dunkel', Icon: MoonIcon },
+]
 
 const SearchIcon = () => (
   <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor"
@@ -32,6 +71,7 @@ export function Sidebar() {
   const { bookmarks, toggle } = useBookmarks()
   const [filterBookmarks, setFilterBookmarks] = useState(false)
   const [query, setQuery] = useState('')
+  const { theme, setTheme } = useTheme()
 
   useEffect(() => {
     const el = scrollRef.current
@@ -202,6 +242,24 @@ export function Sidebar() {
           {(matchingPaths?.size === 0 || (filterBookmarks && bookmarks.length === 0)) && (
             <p className="sidebar-search-empty">Keine Treffer</p>
           )}
+        </div>
+      </div>
+
+      <div className="sidebar-footer">
+        <span className="sidebar-footer-label">Darstellung</span>
+        <div className="theme-toggle" role="group" aria-label="Farbschema wählen">
+          {THEME_OPTIONS.map(({ value, label, Icon }) => (
+            <button
+              key={value}
+              className={['theme-toggle-btn', theme === value ? 'theme-toggle-btn--active' : ''].join(' ').trim()}
+              onClick={() => setTheme(value)}
+              title={label}
+              aria-label={label}
+              aria-pressed={theme === value}
+            >
+              <Icon />
+            </button>
+          ))}
         </div>
       </div>
     </nav>
