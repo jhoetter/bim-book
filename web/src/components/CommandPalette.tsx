@@ -178,6 +178,7 @@ export function CommandPalette({ onClose, onToggleSidebar }: Props) {
         { name: 'Aktionen',       items: [bookmark, copyLink, sidebar, exportPdf] },
       ]
       const flatItems = [aiOpen, overview, gallery, bookmark, copyLink, sidebar, exportPdf]
+      flatItems.forEach((item, i) => { item.flatIdx = i })
       return { groups, flatItems }
     }
 
@@ -227,6 +228,7 @@ export function CommandPalette({ onClose, onToggleSidebar }: Props) {
       flatItems.push(aiAsk)
     }
 
+    flatItems.forEach((item, i) => { item.flatIdx = i })
     return { groups, flatItems }
   }, [query, isBookmarked, pageTitle, path, run, openChat, sendToChat, toggleBookmark, onToggleSidebar, navigate])
 

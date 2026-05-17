@@ -1338,18 +1338,18 @@ html, body, #root {
   position: absolute;
   bottom: 8px;
   left: 10px;
-  color: hsl(0 0% 100% / 0.9);
+  color: var(--ink);
+  background: var(--bg-sidebar);
+  border-radius: var(--radius-md);
+  padding: 7px;
   line-height: 1;
-  filter: drop-shadow(0 1px 4px hsl(0 0% 0% / 0.4));
 }
 .overview-card-icon--placeholder {
   bottom: auto;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  color: var(--structural);
-  opacity: 0.5;
-  filter: none;
+  opacity: 0.6;
 }
 
 .overview-card-body {
