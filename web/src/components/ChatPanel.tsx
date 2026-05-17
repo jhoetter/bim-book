@@ -173,7 +173,7 @@ function AssistantMessage({ items, onToggleTool }: { items: ContentItem[]; onTog
 
 function ExpandIcon() {
   return (
-    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+    <svg width="11" height="11" viewBox="0 0 13 13" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
       <polyline points="8,1 12,1 12,5" />
       <line x1="7.5" y1="5.5" x2="12" y2="1" />
       <polyline points="5,12 1,12 1,8" />
@@ -184,7 +184,7 @@ function ExpandIcon() {
 
 function CollapseIcon() {
   return (
-    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+    <svg width="11" height="11" viewBox="0 0 13 13" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
       <polyline points="12,5 8,5 8,1" />
       <line x1="8" y1="5" x2="12.5" y2="0.5" />
       <polyline points="1,8 5,8 5,12" />
@@ -209,11 +209,12 @@ export function ChatPanel() {
   const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput]       = useState('')
   const [streaming, setStreaming] = useState(false)
-  const messagesRef  = useRef<HTMLDivElement>(null)
-  const bottomRef    = useRef<HTMLDivElement>(null)
-  const abortRef     = useRef<AbortController | null>(null)
-  const textareaRef  = useRef<HTMLTextAreaElement>(null)
-  const atBottomRef  = useRef(true)
+  const messagesRef        = useRef<HTMLDivElement>(null)
+  const bottomRef          = useRef<HTMLDivElement>(null)
+  const abortRef           = useRef<AbortController | null>(null)
+  const textareaRef        = useRef<HTMLTextAreaElement>(null)
+  const atBottomRef        = useRef(true)
+  const programmaticScroll = useRef(false)
 
   const pendingMsgRef = useRef<string | null>(null)
 
@@ -245,22 +246,29 @@ export function ChatPanel() {
     }
   }, [open]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Track whether user has scrolled away from bottom
+  // Attach scroll listener whenever the panel is open (messagesRef is only
+  // in the DOM when open=true, so [] deps would always get a null ref).
+  // Ignore events we triggered ourselves to avoid the race with streaming renders.
   useEffect(() => {
+    if (!open) return
     const el = messagesRef.current
     if (!el) return
     const onScroll = () => {
+      if (programmaticScroll.current) return
       atBottomRef.current = el.scrollHeight - el.scrollTop - el.clientHeight < 60
     }
     el.addEventListener('scroll', onScroll, { passive: true })
     return () => el.removeEventListener('scroll', onScroll)
-  }, [])
+  }, [open])
 
-  // Auto-scroll only when user is near the bottom
+  // Auto-scroll only when user is near the bottom. Use instant scrollTop so
+  // the scroll event fires synchronously within the programmaticScroll window.
   useEffect(() => {
-    if (atBottomRef.current) {
-      bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
-    }
+    const el = messagesRef.current
+    if (!el || !atBottomRef.current) return
+    programmaticScroll.current = true
+    el.scrollTop = el.scrollHeight
+    requestAnimationFrame(() => { programmaticScroll.current = false })
   }, [messages, streaming])
 
   // Auto-grow textarea

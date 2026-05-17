@@ -9,6 +9,7 @@ import katex from 'katex'
 import { preprocessMarkdown } from '../lib/markdown'
 import { GLOSSAR } from '../data/glossar'
 import { FORMULAS, FORMULA_MAP } from '../data/formulas'
+import type { FormulaEntry } from '../data/formulas'
 import type { Components } from 'react-markdown'
 
 function tex(src: string, display = false) {
@@ -32,60 +33,70 @@ function GlossarPrint() {
   )
 }
 
-// ── Print-safe Formelsammlung: cards without interactive toggles ───────────
-function FormelSammlungPrint() {
+// ── Single formula card (reused for Formelsammlung and inline calc replacements)
+function FormulaCard({ entry }: { entry: FormulaEntry }) {
   return (
-    <div className="formel-sammlung formel-sammlung--print">
-      {FORMULAS.map(entry => (
-        <div key={entry.id} className="formel-card">
-          <div className="formel-card-header">
-            <h3 className="formel-card-name">{entry.name}</h3>
-            {entry.norm && <span className="formel-card-norm">{entry.norm}</span>}
-          </div>
-          <div
-            className="formel-card-display"
-            dangerouslySetInnerHTML={{ __html: tex(entry.displayTex, true) }}
-          />
-          {entry.variables.length > 0 && (
-            <table className="formel-vars-table">
-              <tbody>
-                {entry.variables.map(v => (
-                  <tr key={v.symbol} className="formel-var-row">
-                    <td className="formel-var-sym" dangerouslySetInnerHTML={{ __html: tex(v.symbol) }} />
-                    <td className="formel-var-desc">{v.description}</td>
-                    <td className="formel-var-unit">{v.unit}</td>
-                    {v.example && <td className="formel-var-example">z.B. {v.example}</td>}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          )}
-          {entry.example && (
-            <div className="formel-card-example">
-              <span className="formel-example-label">Beispiel · Kastanienallee 7: </span>
-              <span className="formel-example-text">{entry.example.description}</span>
-              <span className="formel-example-result">
-                {' → '}<strong>{entry.example.result} {entry.example.unit}</strong>
-              </span>
-            </div>
-          )}
+    <div className="formel-card">
+      <div className="formel-card-header">
+        <h3 className="formel-card-name">{entry.name}</h3>
+        {entry.norm && <span className="formel-card-norm">{entry.norm}</span>}
+      </div>
+      <div
+        className="formel-card-display"
+        dangerouslySetInnerHTML={{ __html: tex(entry.displayTex, true) }}
+      />
+      {entry.variables.length > 0 && (
+        <table className="formel-vars-table">
+          <tbody>
+            {entry.variables.map(v => (
+              <tr key={v.symbol} className="formel-var-row">
+                <td className="formel-var-sym" dangerouslySetInnerHTML={{ __html: tex(v.symbol) }} />
+                <td className="formel-var-desc">{v.description}</td>
+                <td className="formel-var-unit">{v.unit}</td>
+                {v.example && <td className="formel-var-example">z.B. {v.example}</td>}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
+      {entry.example && (
+        <div className="formel-card-example">
+          <span className="formel-example-label">Beispiel · Kastanienallee 7: </span>
+          <span className="formel-example-text">{entry.example.description}</span>
+          <span className="formel-example-result">
+            {' → '}<strong>{entry.example.result} {entry.example.unit}</strong>
+          </span>
         </div>
-      ))}
+      )}
     </div>
   )
 }
 
-const PLACEHOLDER = () => (
-  <div className="pdf-no-interactive">
-    Interaktiver Rechner — nur in der Web-App verfügbar
-  </div>
-)
+// ── Print-safe Formelsammlung: all formula cards ───────────────────────────
+function FormelSammlungPrint() {
+  return (
+    <div className="formel-sammlung formel-sammlung--print">
+      {FORMULAS.map(entry => <FormulaCard key={entry.id} entry={entry} />)}
+    </div>
+  )
+}
+
+// ── Inline calc replacements: show the formula, skip the interactive UI ────
+function CalcCard({ id }: { id: string }) {
+  const entry = FORMULA_MAP[id]
+  if (!entry) return null
+  return (
+    <div className="formel-sammlung formel-sammlung--print">
+      <FormulaCard entry={entry} />
+    </div>
+  )
+}
 
 const PRINT_COMPONENTS: Partial<Components> = {
-  'calc-u-value':    PLACEHOLDER,
-  'calc-dewpoint':   PLACEHOLDER,
-  'calc-sound':      PLACEHOLDER,
-  'calc-hoai':       PLACEHOLDER,
+  'calc-u-value':    () => <CalcCard id="u-wert" />,
+  'calc-dewpoint':   () => <CalcCard id="glaser" />,
+  'calc-sound':      () => <CalcCard id="schalldaemmass" />,
+  'calc-hoai':       () => <CalcCard id="hoai" />,
   'glossar-full':    () => <GlossarPrint />,
   'formel-sammlung': () => <FormelSammlungPrint />,
 } as unknown as Partial<Components>
@@ -120,7 +131,7 @@ export function PrintMarkdownPage({ content }: { content: string }) {
               return (
                 <span className="formula-print">
                   <span className="formula-badge-icon">ƒ</span>
-                  <span className="formula-badge-label">{entry.badge}</span>
+                  <span className="formula-badge-label">{entry.name}</span>
                 </span>
               )
             }
