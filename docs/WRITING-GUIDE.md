@@ -5,7 +5,31 @@ Jeder schreibende Agent muss es vollständig lesen, bevor er ein Kapitel erstell
 
 ---
 
+## Zielgruppe
+
+**Primär:** Technisch versierte Einsteiger ohne Baugrundlage (Informatiker, Softwareentwickler, Ingenieure aus anderen Disziplinen) **und** Architekturstudenten im frühen Studium. Beiden Gruppen fehlt jeweils eine Seite des Ganzen — dem Informatiker die Baupraxis, dem Architekturstudenten die digitale Systematik.
+
+**Sekundär:** Architekten und Fachplaner in der Praxis sowie BIM-Software-Entwickler. Diese Gruppe liest mit, um festzustellen: der Autor kennt das Handwerk. Das schafft Vertrauen und Glaubwürdigkeit — insbesondere für Architekten, die über die begleitende Software entscheiden.
+
+**Konsequenz für den Ton:** Architektonische Grundlagen (Baustoffe, Konstruktion, TGA, Statik, Bauphysik) werden vollständig und präzise erklärt — nicht als Zusammenfassung für Experten, sondern als solides Fundament. Ein Architekt muss beim Lesen denken: „Das stimmt." Ein Informatiker muss denken: „Das verstehe ich."
+
+---
+
 ## Grundprinzipien
+
+### 0. Kapiteltiefe und -länge
+
+Jedes Kapitel soll das Thema bis zu seiner natürlichen Tiefe durchziehen — nicht künstlich
+kürzen, nicht aufblähen. Als grobe Orientierung: **2.500 bis 3.500 Wörter**, je nach Thema.
+Das entspricht ungefähr 4–6 Bildschirmseiten mit Bildern.
+
+Ein Kapitel ist fertig, wenn:
+- Jedes Konzept erklärt wurde, nicht nur benannt
+- Der Leser versteht, *warum* etwas so ist, nicht nur *was* es ist
+- Die Kastanienallee-Boxen konkret rechnen und beschreiben, nicht nur verweisen
+- Mindestens zwei Bilder (Platzhalter) gesetzt sind
+
+**Warnsignal:** Wenn ein Kapitel kürzer als 1.500 Wörter ist, fehlt Tiefe.
 
 ### 1. Jedes Kapitel beantwortet genau eine Frage
 
@@ -35,9 +59,34 @@ Der Leser muss immer wissen: „Bin ich gerade beim allgemeinen Prinzip oder bei
 
 ### 4. Einstieg ist nie eine Definition
 
-Jedes Kapitel beginnt mit 2–3 Sätzen, die eine greifbare Situation, Beobachtung oder
+Jedes Kapitel beginnt mit 2–4 Sätzen, die eine greifbare Situation, Beobachtung oder
 Frage beschreiben. Keine Definitionen, keine Normnummern, keine Klammerbegriffe.
 Der Leser muss neugierig werden — dann erklären wir.
+
+### 5. Historischer und fachlicher Kontext gehört dazu
+
+Fachbücher, die sofort ins Thema springen, wirken wie Nachschlagewerke. Ein gutes Einstiegsbuch
+gibt dem Leser zuerst ein Gefühl dafür, *warum* das Thema so ist wie es ist — bevor es erklärt,
+*was* es ist.
+
+Beispiel: Kapitel 1 (Systemdenken) sollte kurz zeigen, wie Bauen im Laufe der Geschichte immer
+komplexer wurde — damit das Schichtenmodell als Antwort auf diese Komplexität erscheint, nicht
+als abstraktes Konzept aus dem Nichts.
+
+Diese historische oder konzeptuelle Einbettung gehört in den ersten Abschnitt nach dem Einstieg
+(vor oder als Teil von Abschnitt N.1). Sie muss nicht lang sein — 2–3 Absätze genügen — aber
+sie macht den Unterschied zwischen einem Kapitel, das sich liest, und einem, das sich lernt.
+
+### 6. Bilder sind keine Dekoration
+
+Mindestens **zwei Bilder (Platzhalter) pro Kapitel**. Bilder sollen:
+- ein Konzept zeigen, das im Text schwer beschreibbar ist
+- als Denkwerkzeug funktionieren (Schnitt, Vergleich, Schema, Grundriss)
+- gut beschrieben sein, damit die KI-Generierung präzise Ergebnisse liefert
+
+Bilder innerhalb von Kastanienallee-Containern haben automatisch weißen Hintergrund (CSS).
+Der `desc`-Block im IMAGE-Kommentar muss trotzdem immer „weißer Hintergrund" explizit enthalten,
+da dieser Text für die KI-Generierung verwendet wird.
 
 ---
 
@@ -306,6 +355,27 @@ tags: wdvs, wärmeschutz, wandquerschnitt, kastanienallee7
 
 Jeder Verweis auf ein anderes Kapitel muss ein echter Markdown-Link sein. Kein `→` vor Links.
 
+**Jeder Link verweist auf genau ein Kapitel.** Bereiche wie „Kapitel 14–16" sind verboten —
+sie können nicht angeklickt werden und sind daher für ein digitales Buch wertlos.
+
+Richtig — jedes Kapitel einzeln verlinkt, mit dem Thema als Linktext:
+```markdown
+Planungsrecht: [Kapitel 14](/chapters/14-planungsrecht) ·
+HOAI: [Kapitel 15](/chapters/15-hoai) ·
+Kosten: [Kapitel 16](/chapters/16-kosten-ausschreibung)
+```
+
+Falsch — unklickbarer Bereich:
+```markdown
+Teil V (Kapitel 14–16)   ← NIE SO
+```
+
+Richtig — thematisch benannte Einzellinks im Fließtext:
+```markdown
+…wie in [Kapitel 6](/chapters/06-waermeschutz-geg) berechnet.
+```
+
+Standard-Linkziele:
 ```markdown
 [Kap. 6](/chapters/06-waermeschutz-geg)
 [IFC-Schnellreferenz](/appendix/ifc-referenz)

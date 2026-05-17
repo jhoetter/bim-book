@@ -10,11 +10,13 @@
 
 ## Über dieses Buch
 
-Dieses Buch entsteht an der Schnittstelle zweier Welten: Architektur und Softwareentwicklung. Es richtet sich an technisch versierte Einsteiger – Informatiker, Ingenieure, Quereinsteiger – die verstehen wollen, wie ein Gebäude wirklich funktioniert, und wie dieses Wissen im Building Information Modeling (BIM) digital abgebildet wird.
+Dieses Buch entsteht an der Schnittstelle zweier Welten: Architektur und Softwareentwicklung. Es erklärt, wie ein Gebäude wirklich funktioniert — von der Entwurfsidee über Tragwerk, Bauphysik und Haustechnik bis hin zum vollständigen digitalen Gebäudemodell in IFC.
 
-Es ist kein Lehrbuch für Architekten. Es ist ein Buch für Menschen, die Architektur als **System** begreifen wollen: von der ersten Entwurfsidee über Tragwerk, Bauphysik und Haustechnik bis hin zum vollständigen digitalen Gebäudemodell in IFC.
+**Primäre Zielgruppe:** Technisch versierte Einsteiger (Informatiker, Softwareentwickler, Ingenieure aus anderen Disziplinen) sowie Architekturstudenten im frühen Studium. Beiden Gruppen fehlt ein Gesamtbild: dem Informatiker die Baupraxis, dem Architekturstudenten die digitale Systematik.
 
-Jedes Kapitel endet mit einer **„BIM-Brücke"**: der konkreten Antwort auf die Frage – wie bildet sich das, was wir gerade gelernt haben, im Datenmodell ab?
+**Sekundäre Zielgruppe:** Architekten und Fachplaner in der Praxis, die BIM-Methodik systematisch durchdringen wollen — und BIM-Software-Entwickler, die ihre Werkzeuge besser auf den Berufsalltag der Planer abstimmen möchten. Wer dieses Buch liest, soll merken: der Autor kennt das Handwerk.
+
+Jedes Kapitel endet mit einer **„BIM-Brücke"**: der konkreten Antwort auf die Frage — wie bildet sich das, was wir gerade gelernt haben, im Datenmodell ab?
 
 ---
 
