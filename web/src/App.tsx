@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, useParams, Navigate } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useParams, useLocation, Navigate } from 'react-router-dom'
 import { Sidebar } from './components/Sidebar'
 import { MarkdownPage } from './components/MarkdownPage'
 import { getContent, getNavigation, ALL_CHAPTERS } from './chapters'
@@ -42,10 +42,13 @@ function Pagination({ id }: { id: string }) {
 
 function ChapterRoute() {
   const { '*': slug } = useParams()
-  const path = slug ?? ''
+  // useParams '*' only captures the tail after the route prefix (/chapters/ or /appendix/)
+  // but getContent needs the full relative path like "chapters/04-tragwerk"
+  const location = useLocation()
+  const path = location.pathname.replace(/^\//, '')  // strip leading /
   const content = getContent(path)
   const chapter = ALL_CHAPTERS.find(c => c.path === path)
-  const id = chapter?.id ?? path.split('/').pop() ?? ''
+  const id = chapter?.id ?? (slug ?? '')
 
   return (
     <main className="content">
