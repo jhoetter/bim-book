@@ -133,6 +133,12 @@ export function CommandPalette({ onClose, onToggleSidebar }: Props) {
       shortcut: '[',
       action: () => run(onToggleSidebar),
     })
+    const exportPdf: RegularItem = mk({
+      kind: 'action', id: 'export-pdf',
+      label: 'Buch als PDF exportieren',
+      icon: <PrintIcon />,
+      action: () => run(() => document.dispatchEvent(new CustomEvent('bim:export-pdf'))),
+    })
 
     // ── Nav items ─────────────────────────────────────────────────────────────
 
@@ -169,9 +175,9 @@ export function CommandPalette({ onClose, onToggleSidebar }: Props) {
       const aiOpen: AiItem = mk({ kind: 'ai', id: 'ai-open', query: '' , action: openChat })
       const groups: PaletteGroup[] = [
         { name: 'Schnellzugriff', items: [aiOpen, overview, gallery] },
-        { name: 'Aktionen',       items: [bookmark, copyLink, sidebar] },
+        { name: 'Aktionen',       items: [bookmark, copyLink, sidebar, exportPdf] },
       ]
-      const flatItems = [aiOpen, overview, gallery, bookmark, copyLink, sidebar]
+      const flatItems = [aiOpen, overview, gallery, bookmark, copyLink, sidebar, exportPdf]
       return { groups, flatItems }
     }
 
@@ -186,7 +192,7 @@ export function CommandPalette({ onClose, onToggleSidebar }: Props) {
     }
     navMatches.sort((a, b) => ((b as RegularItem & {_score:number})._score ?? 0) - ((a as RegularItem & {_score:number})._score ?? 0))
 
-    const actionMatches: RegularItem[] = [bookmark, copyLink, sidebar].filter(item =>
+    const actionMatches: RegularItem[] = [bookmark, copyLink, sidebar, exportPdf].filter(item =>
       norm(item.label).includes(norm(q)) || norm(item.sublabel ?? '').includes(norm(q))
     )
 
@@ -411,6 +417,18 @@ function SidebarIcon() {
       <rect x="1" y="1" width="4" height="12" rx="1" opacity="0.35" />
       <rect x="6.5" y="1" width="6.5" height="2.5" rx="0.7" /><rect x="6.5" y="5.5" width="6.5" height="2.5" rx="0.7" />
       <rect x="6.5" y="10" width="6.5" height="2.5" rx="0.7" />
+    </svg>
+  )
+}
+
+function PrintIcon() {
+  return (
+    <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <rect x="3" y="1" width="8" height="4" rx="0.8" />
+      <path d="M3 5H1.5A.5.5 0 0 0 1 5.5v5a.5.5 0 0 0 .5.5H3" />
+      <path d="M11 5h1.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5H11" />
+      <rect x="3" y="8" width="8" height="5" rx="0.8" />
+      <path d="M10.5 6.5h.5" />
     </svg>
   )
 }

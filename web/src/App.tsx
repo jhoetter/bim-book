@@ -60,51 +60,57 @@ function ChapterRoute() {
   const chapter = ALL_CHAPTERS.find(c => c.path === path)
   const id = chapter?.id ?? (slug ?? '')
   const [imgFailed, setImgFailed] = useState(false)
-  const observerRef = useRef<IntersectionObserver | null>(null)
 
   useEffect(() => { setImgFailed(false) }, [path])
 
-  // Instant-jump to hash on load (no animation — just land there)
+  // Reset scroll to top on chapter navigation (before hash jump below)
+  useEffect(() => {
+    document.querySelector<HTMLElement>('.content-area')?.scrollTo({ top: 0 })
+  }, [path])
+
+  // Jump to hash on load — decodeURIComponent handles percent-encoded umlauts etc.
   useEffect(() => {
     if (!location.hash) return
-    const elId = location.hash.slice(1)
+    const elId = decodeURIComponent(location.hash.slice(1))
     const jump = () => document.getElementById(elId)?.scrollIntoView({ behavior: 'instant', block: 'start' })
-    const el = document.getElementById(elId)
-    if (el) jump()
+    if (document.getElementById(elId)) jump()
     else {
       const t = setTimeout(jump, 80)
       return () => clearTimeout(t)
     }
   }, [location.hash, path])
 
-  // Mirror TOC's IntersectionObserver to keep URL hash in sync while scrolling
+  // Keep URL hash in sync as user scrolls so reloading lands at the right heading
   useEffect(() => {
     const scrollRoot = document.querySelector<HTMLElement>('.content-area')
     if (!scrollRoot) return
 
+    let raf = 0
+    const onScroll = () => {
+      if (raf) return
+      raf = requestAnimationFrame(() => {
+        raf = 0
+        // Live rects — no stale cache, works even after lazy images shift layout
+        const base = scrollRoot.getBoundingClientRect().top
+        const threshold = base + 100
+        let current: HTMLElement | undefined
+        document.querySelectorAll<HTMLElement>('.prose h1[id], .prose h2[id], .prose h3[id]')
+          .forEach(el => { if (el.getBoundingClientRect().top <= threshold) current = el })
+        if (!current?.id) return
+        const target = window.location.pathname + '#' + current.id
+        if (window.location.pathname + decodeURIComponent(window.location.hash) !== target)
+          history.replaceState(null, '', target)
+      })
+    }
+
     const t = setTimeout(() => {
-      observerRef.current?.disconnect()
-      observerRef.current = new IntersectionObserver(
-        entries => {
-          const visible = entries
-            .filter(e => e.isIntersecting)
-            .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
-          if (!visible.length) return
-          const newId = visible[0].target.id
-          const target = window.location.pathname + '#' + newId
-          if (window.location.pathname + window.location.hash !== target) {
-            history.replaceState(null, '', target)
-          }
-        },
-        { root: scrollRoot, rootMargin: '-80px 0px -70% 0px', threshold: 0 }
-      )
-      document.querySelectorAll<HTMLElement>('.prose h1[id], .prose h2[id], .prose h3[id]')
-        .forEach(el => observerRef.current!.observe(el))
+      scrollRoot.addEventListener('scroll', onScroll, { passive: true })
     }, 80)
 
     return () => {
       clearTimeout(t)
-      observerRef.current?.disconnect()
+      cancelAnimationFrame(raf)
+      scrollRoot.removeEventListener('scroll', onScroll)
     }
   }, [path])
 
