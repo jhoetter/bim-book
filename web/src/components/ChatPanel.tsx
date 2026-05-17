@@ -1,6 +1,9 @@
 import { useState, useRef, useEffect, useCallback } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import remarkMath from 'remark-math'
+import rehypeKatex from 'rehype-katex'
+import rehypeHighlight from 'rehype-highlight'
 import {
   AIHifi,
   CloseIcon,
@@ -137,6 +140,13 @@ function ToolCard({ item, onToggle }: { item: ToolCallContent; onToggle: () => v
 
 // ── Assistant message ──────────────────────────────────────────────────────────
 
+// Normalize LaTeX delimiters the AI might output (\[...\] → $$...$$, \(...\) → $...$)
+function normalizeMath(text: string): string {
+  return text
+    .replace(/\\\[([\s\S]*?)\\\]/g, (_, m) => `$$${m}$$`)
+    .replace(/\\\(([\s\S]*?)\\\)/g, (_, m) => `$${m}$`)
+}
+
 function AssistantMessage({ items, onToggleTool }: { items: ContentItem[]; onToggleTool: (id: string) => void }) {
   return (
     <div className="chat-msg chat-msg--assistant">
@@ -144,7 +154,12 @@ function AssistantMessage({ items, onToggleTool }: { items: ContentItem[]; onTog
         if (item.type === 'text') {
           return item.text ? (
             <div key={i} className="chat-msg-prose">
-              <ReactMarkdown remarkPlugins={[remarkGfm]}>{item.text}</ReactMarkdown>
+              <ReactMarkdown
+                remarkPlugins={[remarkGfm, remarkMath]}
+                rehypePlugins={[rehypeKatex, rehypeHighlight]}
+              >
+                {normalizeMath(item.text)}
+              </ReactMarkdown>
             </div>
           ) : null
         }
