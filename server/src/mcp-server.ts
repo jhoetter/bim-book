@@ -71,6 +71,93 @@ server.tool(
   })
 )
 
+server.tool(
+  'calc_u_value',
+  'Berechnet U-Wert eines Bauteils (Schichten mit Dicke + Wärmeleitfähigkeit). Vergleich mit GEG 2024.',
+  {
+    layers: z.array(z.object({
+      name:   z.string().describe('Schichtbezeichnung'),
+      d_mm:   z.number().describe('Dicke in mm'),
+      lambda: z.number().describe('Wärmeleitfähigkeit W/(mK)'),
+    })).describe('Schichten von innen nach außen'),
+    component: z.enum(['wall', 'roof', 'floor', 'window']).optional().describe('Bauteiltyp'),
+  },
+  async ({ layers, component }) => ({
+    content: [{ type: 'text', text: executeTool('calc_u_value', { layers, component }) }],
+  })
+)
+
+server.tool(
+  'calc_dewpoint',
+  'Taupunktberechnung und Schimmelrisiko nach DIN 4108-2 (fRsi-Methode).',
+  {
+    temp_indoor:     z.number().describe('Raumtemperatur °C'),
+    humidity_indoor: z.number().describe('Relative Luftfeuchte %'),
+    temp_outdoor:    z.number().describe('Außentemperatur °C'),
+    f_Rsi:           z.number().optional().describe('Temperaturfaktor (Standard 0.70)'),
+  },
+  async ({ temp_indoor, humidity_indoor, temp_outdoor, f_Rsi }) => ({
+    content: [{ type: 'text', text: executeTool('calc_dewpoint', { temp_indoor, humidity_indoor, temp_outdoor, f_Rsi }) }],
+  })
+)
+
+server.tool(
+  'calc_sound',
+  'Schätzt Schalldämmmaß R\'w nach Massengesetz. Vergleich mit DIN 4109 Anforderungen.',
+  {
+    layers: z.array(z.object({
+      name: z.string().describe('Material'),
+      d_mm: z.number().describe('Dicke in mm'),
+      rho:  z.number().describe('Rohdichte kg/m³'),
+    })).describe('Schichten des Bauteils'),
+  },
+  async ({ layers }) => ({
+    content: [{ type: 'text', text: executeTool('calc_sound', { layers }) }],
+  })
+)
+
+server.tool(
+  'calc_hoai',
+  'HOAI 2021 Honorarberechnung für Objektplanung Gebäude nach anrechenbaren Kosten, Zone und LPs.',
+  {
+    kosten: z.number().describe('Anrechenbare Kosten in € (KG 300+400)'),
+    zone:   z.union([z.literal(1), z.literal(2), z.literal(3)]).describe('1=HZ I, 2=HZ III, 3=HZ V'),
+    lps:    z.array(z.number()).describe('Leistungsphasen 1–9'),
+  },
+  async ({ kosten, zone, lps }) => ({
+    content: [{ type: 'text', text: executeTool('calc_hoai', { kosten, zone, lps }) }],
+  })
+)
+
+server.tool(
+  'book_image',
+  'Fragt Abbildungen aus dem Buch ab. Ohne Argument: alle. Mit chapter_id: Bilder eines Kapitels. Mit image_key: Detail einer Abbildung. Mit search: Bildsuche.',
+  {
+    chapter_id: z.string().optional().describe('Kapitel-ID um nur Bilder dieses Kapitels zu sehen'),
+    image_key: z.string().optional().describe('Bildschlüssel (z.B. "kap01_schichtenmodell") für Details'),
+    search: z.string().optional().describe('Suchbegriff über Beschreibungen und Stichwörter'),
+  },
+  async ({ chapter_id, image_key, search }) => ({
+    content: [{ type: 'text', text: executeTool('book_image', { chapter_id, image_key, search }) }],
+  })
+)
+
+// Resource: image manifest
+server.resource(
+  'images',
+  'bim-book://images',
+  async () => {
+    const { getImageManifest } = await import('./book-index.js')
+    return {
+      contents: [{
+        uri: 'bim-book://images',
+        mimeType: 'application/json',
+        text: JSON.stringify(getImageManifest(), null, 2),
+      }],
+    }
+  }
+)
+
 // Resource: chapter list
 server.resource(
   'chapters',

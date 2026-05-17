@@ -32,6 +32,26 @@ interface Props {
   content: string
 }
 
+function imgIdFromSrc(src: string): string {
+  const filename = src.split('/').pop() ?? src
+  return 'img-' + filename.replace(/\.[^.]+$/, '')
+}
+
+type HeadingTag = 'h1' | 'h2' | 'h3' | 'h4'
+
+function makeHeading(Tag: HeadingTag) {
+  return function HeadingWithAnchor({ id, children, ...rest }: React.ComponentPropsWithoutRef<HeadingTag> & { id?: string }) {
+    return (
+      <Tag id={id} className="prose-heading" {...rest}>
+        {children}
+        {id && (
+          <a href={`#${id}`} className="prose-anchor" aria-hidden="true">#</a>
+        )}
+      </Tag>
+    )
+  }
+}
+
 export function MarkdownPage({ content }: Props) {
   const processed = preprocessMarkdown(content)
   const [lightbox, setLightbox] = useState<LightboxState | null>(null)
@@ -57,9 +77,14 @@ export function MarkdownPage({ content }: Props) {
           rehypePlugins={[rehypeRaw, rehypeSlug, rehypeKatex, rehypeHighlight]}
           components={{
             ...CALC_COMPONENTS,
+            h1: makeHeading('h1'),
+            h2: makeHeading('h2'),
+            h3: makeHeading('h3'),
+            h4: makeHeading('h4'),
             img({ src, alt }) {
+              const id = src ? imgIdFromSrc(src) : undefined
               return (
-                <figure>
+                <figure id={id}>
                   <img
                     src={src}
                     alt={alt ?? ''}

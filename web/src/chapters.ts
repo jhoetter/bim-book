@@ -1,8 +1,72 @@
+import type { ComponentType } from 'react'
+import type { BimIconProps, BimIconHifiProps } from 'bim-icons'
+import {
+  HomeIcon,
+  GridIcon,
+  WallIcon,
+  RoomIcon,
+  MaterialIcon,
+  TrussIcon,
+  ColumnIcon,
+  EnergyModelIcon,
+  WallLayerIcon,
+  MepSpaceIcon,
+  FireSprinklerIcon,
+  PipeIcon,
+  DuctRoundIcon,
+  PlumbingFixtureIcon,
+  ElectricalPanelIcon,
+  ProjectInfoIcon,
+  PhaseIcon,
+  QuantityTakeoffIcon,
+  LinkedModelIcon,
+  IFCIcon,
+  FamilyIcon,
+  SyncIcon,
+  PointCloudIcon,
+  RevisionIcon,
+  DigitalTwinIcon,
+  TopoIcon,
+  NoteBlockIcon,
+  ScheduleViewIcon,
+  // Hifi page icons
+  FloorHifi,
+  WallHifi,
+  RoomHifi,
+  MaterialHifi,
+  TrussHifi,
+  ColumnHifi,
+  EnergyModelHifi,
+  WallLayerHifi,
+  MepSpaceHifi,
+  FireSprinklerHifi,
+  PipeHifi,
+  DuctRoundHifi,
+  PlumbingFixtureHifi,
+  ElectricalPanelHifi,
+  ProjectInfoHifi,
+  PhaseHifi,
+  QuantityTakeoffHifi,
+  LinkedModelHifi,
+  IFCHifi,
+  FamilyHifi,
+  SyncHifi,
+  PointCloudHifi,
+  RevisionHifi,
+  DigitalTwinHifi,
+  TopoHifi,
+  NoteBlockHifi,
+  ScheduleViewHifi,
+} from 'bim-icons'
+
 export interface Chapter {
   id: string
   num: string
   title: string
   path: string
+  icon?: ComponentType<BimIconProps>
+  pageIcon?: ComponentType<BimIconHifiProps>
+  coverImage?: string
 }
 
 export interface Part {
@@ -10,79 +74,81 @@ export interface Part {
   chapters: Chapter[]
 }
 
+export const GALLERY_ICON = GridIcon
+
 export const PARTS: Part[] = [
   {
     title: 'Überblick',
     chapters: [
-      { id: 'index', num: '', title: 'Überblick', path: 'index' },
+      { id: 'index', num: '', title: 'Überblick', path: 'index', icon: HomeIcon, pageIcon: FloorHifi },
     ],
   },
   {
     title: 'Teil I – Fundament',
     chapters: [
-      { id: '01-architektur-als-system', num: '1', title: 'Architektur als System', path: 'chapters/01-architektur-als-system' },
-      { id: '02-entwurf-raum-funktion', num: '2', title: 'Entwurf, Raum und Funktion', path: 'chapters/02-entwurf-raum-funktion' },
+      { id: '01-architektur-als-system', num: '1', title: 'Architektur als System', path: 'chapters/01-architektur-als-system', icon: WallIcon, pageIcon: WallHifi, coverImage: '/assets/covers/cover-ch01.png' },
+      { id: '02-entwurf-raum-funktion', num: '2', title: 'Entwurf, Raum und Funktion', path: 'chapters/02-entwurf-raum-funktion', icon: RoomIcon, pageIcon: RoomHifi, coverImage: '/assets/covers/cover-ch02.png' },
     ],
   },
   {
     title: 'Teil II – Baukörper',
     chapters: [
-      { id: '03-baustoffe', num: '3', title: 'Baustoffe', path: 'chapters/03-baustoffe' },
-      { id: '04-tragwerk', num: '4', title: 'Tragwerk: Lasten, Kräfte, Systeme', path: 'chapters/04-tragwerk' },
-      { id: '05-konstruktion', num: '5', title: 'Konstruktion: Gründung, Wand, Decke, Dach', path: 'chapters/05-konstruktion' },
+      { id: '03-baustoffe', num: '3', title: 'Baustoffe', path: 'chapters/03-baustoffe', icon: MaterialIcon, pageIcon: MaterialHifi, coverImage: '/assets/covers/cover-ch03.png' },
+      { id: '04-tragwerk', num: '4', title: 'Tragwerk: Lasten, Kräfte, Systeme', path: 'chapters/04-tragwerk', icon: TrussIcon, pageIcon: TrussHifi },
+      { id: '05-konstruktion', num: '5', title: 'Konstruktion: Gründung, Wand, Decke, Dach', path: 'chapters/05-konstruktion', icon: ColumnIcon, pageIcon: ColumnHifi },
     ],
   },
   {
     title: 'Teil III – Bauphysik',
     chapters: [
-      { id: '06-waermeschutz-geg', num: '6', title: 'Wärmeschutz & GEG', path: 'chapters/06-waermeschutz-geg' },
-      { id: '07-feuchteschutz', num: '7', title: 'Feuchteschutz', path: 'chapters/07-feuchteschutz' },
-      { id: '08-schallschutz', num: '8', title: 'Schallschutz', path: 'chapters/08-schallschutz' },
-      { id: '09-brandschutz', num: '9', title: 'Brandschutz', path: 'chapters/09-brandschutz' },
+      { id: '06-waermeschutz-geg', num: '6', title: 'Wärmeschutz & GEG', path: 'chapters/06-waermeschutz-geg', icon: EnergyModelIcon, pageIcon: EnergyModelHifi },
+      { id: '07-feuchteschutz', num: '7', title: 'Feuchteschutz', path: 'chapters/07-feuchteschutz', icon: WallLayerIcon, pageIcon: WallLayerHifi },
+      { id: '08-schallschutz', num: '8', title: 'Schallschutz', path: 'chapters/08-schallschutz', icon: MepSpaceIcon, pageIcon: MepSpaceHifi },
+      { id: '09-brandschutz', num: '9', title: 'Brandschutz', path: 'chapters/09-brandschutz', icon: FireSprinklerIcon, pageIcon: FireSprinklerHifi },
     ],
   },
   {
     title: 'Teil IV – TGA',
     chapters: [
-      { id: '10-heizung-waermeversorgung', num: '10', title: 'Heizung & Wärmeversorgung', path: 'chapters/10-heizung-waermeversorgung' },
-      { id: '11-lueftung', num: '11', title: 'Lüftung & Raumluftqualität', path: 'chapters/11-lueftung' },
-      { id: '12-sanitaer', num: '12', title: 'Sanitär & Entwässerung', path: 'chapters/12-sanitaer' },
-      { id: '13-elektro', num: '13', title: 'Elektro & Gebäudeautomation', path: 'chapters/13-elektro' },
+      { id: '10-heizung-waermeversorgung', num: '10', title: 'Heizung & Wärmeversorgung', path: 'chapters/10-heizung-waermeversorgung', icon: PipeIcon, pageIcon: PipeHifi },
+      { id: '11-lueftung', num: '11', title: 'Lüftung & Raumluftqualität', path: 'chapters/11-lueftung', icon: DuctRoundIcon, pageIcon: DuctRoundHifi },
+      { id: '12-sanitaer', num: '12', title: 'Sanitär & Entwässerung', path: 'chapters/12-sanitaer', icon: PlumbingFixtureIcon, pageIcon: PlumbingFixtureHifi },
+      { id: '13-elektro', num: '13', title: 'Elektro & Gebäudeautomation', path: 'chapters/13-elektro', icon: ElectricalPanelIcon, pageIcon: ElectricalPanelHifi },
     ],
   },
   {
     title: 'Teil V – Recht & Prozess',
     chapters: [
-      { id: '14-planungsrecht', num: '14', title: 'Planungsrecht', path: 'chapters/14-planungsrecht' },
-      { id: '15-hoai', num: '15', title: 'HOAI: Phasen, Leistungen, Koordination', path: 'chapters/15-hoai' },
-      { id: '16-kosten-ausschreibung', num: '16', title: 'Kosten & Ausschreibung', path: 'chapters/16-kosten-ausschreibung' },
+      { id: '14-planungsrecht', num: '14', title: 'Planungsrecht', path: 'chapters/14-planungsrecht', icon: ProjectInfoIcon, pageIcon: ProjectInfoHifi },
+      { id: '15-hoai', num: '15', title: 'HOAI: Phasen, Leistungen, Koordination', path: 'chapters/15-hoai', icon: PhaseIcon, pageIcon: PhaseHifi },
+      { id: '16-kosten-ausschreibung', num: '16', title: 'Kosten & Ausschreibung', path: 'chapters/16-kosten-ausschreibung', icon: QuantityTakeoffIcon, pageIcon: QuantityTakeoffHifi },
     ],
   },
   {
     title: 'Teil VI – BIM',
     chapters: [
-      { id: '17-was-bim-wirklich-ist', num: '17', title: 'Was BIM wirklich ist', path: 'chapters/17-was-bim-wirklich-ist' },
-      { id: '18-ifc', num: '18', title: 'IFC: Die Sprache des digitalen Gebäudes', path: 'chapters/18-ifc' },
-      { id: '19-klassifikation', num: '19', title: 'Klassifikation', path: 'chapters/19-klassifikation' },
-      { id: '20-prozess-kollaboration', num: '20', title: 'Prozess & Kollaboration', path: 'chapters/20-prozess-kollaboration' },
-      { id: '21-bim-praxis', num: '21', title: 'BIM in der Praxis', path: 'chapters/21-bim-praxis' },
+      { id: '17-was-bim-wirklich-ist', num: '17', title: 'Was BIM wirklich ist', path: 'chapters/17-was-bim-wirklich-ist', icon: LinkedModelIcon, pageIcon: LinkedModelHifi },
+      { id: '18-ifc', num: '18', title: 'IFC: Die Sprache des digitalen Gebäudes', path: 'chapters/18-ifc', icon: IFCIcon, pageIcon: IFCHifi },
+      { id: '19-klassifikation', num: '19', title: 'Klassifikation', path: 'chapters/19-klassifikation', icon: FamilyIcon, pageIcon: FamilyHifi },
+      { id: '20-prozess-kollaboration', num: '20', title: 'Prozess & Kollaboration', path: 'chapters/20-prozess-kollaboration', icon: SyncIcon, pageIcon: SyncHifi },
+      { id: '21-bim-praxis', num: '21', title: 'BIM in der Praxis', path: 'chapters/21-bim-praxis', icon: PointCloudIcon, pageIcon: PointCloudHifi },
     ],
   },
   {
     title: 'Teil VII – Nachhaltigkeit',
     chapters: [
-      { id: '22-nachhaltigkeit', num: '22', title: 'Nachhaltigkeit & Kreislaufwirtschaft', path: 'chapters/22-nachhaltigkeit' },
-      { id: '23-sanierung', num: '23', title: 'Sanierung', path: 'chapters/23-sanierung' },
-      { id: '24-digitaler-zwilling-ki', num: '24', title: 'Digitaler Zwilling & KI', path: 'chapters/24-digitaler-zwilling-ki' },
+      { id: '22-nachhaltigkeit', num: '22', title: 'Nachhaltigkeit & Kreislaufwirtschaft', path: 'chapters/22-nachhaltigkeit', icon: EnergyModelIcon, pageIcon: EnergyModelHifi },
+      { id: '23-sanierung', num: '23', title: 'Sanierung', path: 'chapters/23-sanierung', icon: RevisionIcon, pageIcon: RevisionHifi },
+      { id: '24-digitaler-zwilling-ki', num: '24', title: 'Digitaler Zwilling & KI', path: 'chapters/24-digitaler-zwilling-ki', icon: DigitalTwinIcon, pageIcon: DigitalTwinHifi },
     ],
   },
   {
     title: 'Anhang',
     chapters: [
-      { id: 'kastanienallee7', num: '', title: 'Kastanienallee 7', path: 'appendix/kastanienallee7' },
-      { id: 'glossar', num: '', title: 'Glossar', path: 'appendix/glossar' },
-      { id: 'ifc-referenz', num: '', title: 'IFC-Schnellreferenz', path: 'appendix/ifc-referenz' },
-      { id: 'normen', num: '', title: 'Normen & Gesetze', path: 'appendix/normen' },
+      { id: 'kastanienallee7', num: '', title: 'Kastanienallee 7', path: 'appendix/kastanienallee7', icon: TopoIcon, pageIcon: TopoHifi },
+      { id: 'glossar', num: '', title: 'Glossar', path: 'appendix/glossar', icon: NoteBlockIcon, pageIcon: NoteBlockHifi },
+      { id: 'ifc-referenz', num: '', title: 'IFC-Schnellreferenz', path: 'appendix/ifc-referenz', icon: IFCIcon, pageIcon: IFCHifi },
+      { id: 'normen', num: '', title: 'Normen & Gesetze', path: 'appendix/normen', icon: ScheduleViewIcon, pageIcon: ScheduleViewHifi },
     ],
   },
 ]
@@ -111,5 +177,17 @@ export function getNavigation(id: string): { prev: Chapter | null; next: Chapter
   return {
     prev: idx > 0 ? ALL_CHAPTERS[idx - 1] : null,
     next: idx >= 0 && idx < ALL_CHAPTERS.length - 1 ? ALL_CHAPTERS[idx + 1] : null,
+  }
+}
+
+export function getBreadcrumb(pathname: string): { part: string | null; chapter: string | null } {
+  const path = pathname.replace(/^\//, '') || 'index'
+  if (path === 'gallery') return { part: null, chapter: 'Bildgalerie' }
+  const chapter = ALL_CHAPTERS.find(c => c.path === path)
+  if (!chapter) return { part: null, chapter: null }
+  const part = PARTS.find(p => p.chapters.some(c => c.id === chapter.id))
+  return {
+    part: part && part.title !== 'Überblick' ? part.title : null,
+    chapter: chapter.title,
   }
 }

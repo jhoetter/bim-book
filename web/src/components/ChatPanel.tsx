@@ -1,6 +1,14 @@
 import { useState, useRef, useEffect, useCallback } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import {
+  AgentIcon,
+  CloseIcon,
+  DeleteIcon,
+  ChevronDownIcon,
+  ChevronRightIcon,
+  LinkedModelIcon,
+} from 'bim-icons'
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -78,6 +86,11 @@ const TOOL_LABELS: Record<string, string> = {
   book_search:   'book search',
   book_toc:      'book toc',
   book_metadata: 'book metadata',
+  book_image:    'book image',
+  calc_u_value:  'calc u-wert',
+  calc_dewpoint: 'calc taupunkt',
+  calc_sound:    'calc schallschutz',
+  calc_hoai:     'calc hoai',
 }
 
 function ToolCard({ item, onToggle }: { item: ToolCallContent; onToggle: () => void }) {
@@ -95,7 +108,11 @@ function ToolCard({ item, onToggle }: { item: ToolCallContent; onToggle: () => v
         <span className="chat-tool-status">
           {item.result !== undefined ? '✓' : <span className="chat-tool-spinner" />}
         </span>
-        <span className="chat-tool-toggle">{item.expanded ? '▲' : '▼'}</span>
+        <span className="chat-tool-toggle">
+          {item.expanded
+            ? <ChevronDownIcon size={12} strokeWidth={2} />
+            : <ChevronRightIcon size={12} strokeWidth={2} />}
+        </span>
       </button>
 
       {item.expanded && (
@@ -233,7 +250,7 @@ export function ChatPanel() {
         (errMsg) => {
           updateAssistant(msg => ({
             ...msg,
-            items: [...msg.items, { type: 'text', text: `\n\n*Fehler: ${errMsg}*` }],
+            items: [...msg.items, { type: 'text', text: `Fehler: ${errMsg}` }],
           }))
           setStreaming(false)
         },
@@ -243,7 +260,7 @@ export function ChatPanel() {
       if ((e as Error).name !== 'AbortError') {
         updateAssistant(msg => ({
           ...msg,
-          items: [...msg.items, { type: 'text', text: `\n\n*Verbindungsfehler*` }],
+          items: [...msg.items, { type: 'text', text: 'Verbindungsfehler — läuft der API-Server auf Port 51741? (make server-dev)' }],
         }))
       }
       setStreaming(false)
@@ -276,15 +293,9 @@ export function ChatPanel() {
         title="BIM-Assistent"
         type="button"
       >
-        {open ? (
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M5 5l10 10M15 5L5 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-          </svg>
-        ) : (
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M2 6a2 2 0 012-2h12a2 2 0 012 2v7a2 2 0 01-2 2H7l-4 3V15H4a2 2 0 01-2-2V6z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round"/>
-          </svg>
-        )}
+        {open
+          ? <CloseIcon size={18} strokeWidth={2} />
+          : <AgentIcon size={20} strokeWidth={1.5} />}
       </button>
 
       {/* Chat panel */}
@@ -298,15 +309,11 @@ export function ChatPanel() {
             <div className="chat-panel-actions">
               {messages.length > 0 && (
                 <button className="chat-icon-btn" onClick={clear} title="Verlauf löschen" type="button">
-                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                    <path d="M3 4h10M6 4V2.5h4V4M5.5 4l.5 9h4l.5-9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
+                  <DeleteIcon size={14} strokeWidth={1.5} />
                 </button>
               )}
               <button className="chat-icon-btn" onClick={() => setOpen(false)} title="Schließen" type="button">
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                  <path d="M3 3l10 10M13 3L3 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-                </svg>
+                <CloseIcon size={14} strokeWidth={1.5} />
               </button>
             </div>
           </div>
@@ -315,9 +322,7 @@ export function ChatPanel() {
             {messages.length === 0 && (
               <div className="chat-empty">
                 <div className="chat-empty-icon">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" fill="currentColor"/>
-                  </svg>
+                  <LinkedModelIcon size={28} strokeWidth={1.2} />
                 </div>
                 <p>Stell mir eine Frage zum Buch!</p>
                 <p className="chat-empty-hint">Ich kann alle 23 Kapitel durchsuchen und dir präzise Antworten mit Quellenangaben geben.</p>

@@ -1,0 +1,15 @@
+Generiert: 2026-05-17 14:52
+Typ: cover
+Beschreibung: Architectural material study on dark charcoal background. A systematic grid of eight building material cross-sections arranged in two rows of four, each in a clean rectangular frame with white border: reinforced concrete (diagonal hatch), brick masonry (running bond pattern), steel profile (I-beam cross section), glass panel (parallel lines), mineral wool insulation (wave pattern), timber (wood grain), stone cladding (irregular ashlar), and aluminum cladding (chevron). Each material sample rendered with precise white line work on slightly lighter dark background. Scientific, precise, beautiful.
+
+--- QA-Verlauf ---
+
+Versuch 1: ✓ bestanden
+
+--- Finaler Prompt ---
+
+Chapter cover banner for a professional architectural textbook. IMPORTANT: Use a rich, dark charcoal background (#1B2030), NOT white. Architectural illustration with white and light-gray line work on this dark background. No text labels anywhere. Visually striking wide-format composition — the image will be displayed as a full-width banner cropped to roughly its top third, so place the most dramatic visual elements across the full width and height. Refined, editorial quality — think architectural magazine spread.
+
+Color palette: white and light-gray lines and shapes on dark charcoal (#1B2030) background. Accent touches of structural gray #6B7280 and amber #F59E0B.
+
+Subject: Architectural material study on dark charcoal background. A systematic grid of eight building material cross-sections arranged in two rows of four, each in a clean rectangular frame with white border: reinforced concrete (diagonal hatch), brick masonry (running bond pattern), steel profile (I-beam cross section), glass panel (parallel lines), mineral wool insulation (wave pattern), timber (wood grain), stone cladding (irregular ashlar), and aluminum cladding (chevron). Each material sample rendered with precise white line work on slightly lighter dark background. Scientific, precise, beautiful.

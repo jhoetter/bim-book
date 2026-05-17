@@ -5,18 +5,18 @@ import { resolve } from 'path'
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 2101,
+    port: 2100,
     proxy: {
-      '/api': 'http://localhost:3001',
+      '/api': 'http://localhost:51741',
     },
     watch: {
       ignored: (path: string) => path.includes('node_modules') || path.includes('.git'),
     },
   },
-  // Make sure Vite can resolve and serve files from the docs directory
   resolve: {
     alias: {
       '@docs': resolve(__dirname, '../docs'),
+      'bim-icons': resolve('/Users/jhoetter/repos/bim-icons/src/index.ts'),
     },
   },
 })

@@ -11,12 +11,10 @@ install:
 	@echo "ANTHROPIC_API_KEY in .env setzen, dann: make dev-all"
 
 dev:
-	cd web && npm run dev
+	npm run dev
 
-# Startet Frontend (Port 2101) + API-Server (Port 3001) parallel
-dev-all:
-	@echo "Starte BIM Book (Frontend :2101, API :3001)…"
-	@(cd server && npm run dev) & (cd web && npm run dev)
+# Alias: identisch mit dev
+dev-all: dev
 
 server:
 	cd server && npm run start

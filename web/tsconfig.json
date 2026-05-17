@@ -12,7 +12,10 @@
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
-    "strict": true
+    "strict": true,
+    "paths": {
+      "bim-icons": ["/Users/jhoetter/repos/bim-icons/src/index.ts"]
+    }
   },
   "include": ["src"]
 }

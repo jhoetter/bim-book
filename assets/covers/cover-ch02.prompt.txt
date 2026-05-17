@@ -1,0 +1,15 @@
+Generiert: 2026-05-17 14:52
+Typ: cover
+Beschreibung: Architectural floor plan composition on dark charcoal background. A large, detailed apartment floor plan centered in the image — walls shown as white filled rectangles, room spaces as subtle lighter gray, doors as quarter-circle arcs in white. Surrounding the main plan: small perspective sketches of interior spaces (living room, kitchen, bedroom) as white line drawings in the corners. Fine grid lines in very dark gray across the background for depth. Clean minimalist aesthetic, dramatically lit from above. Wide panoramic composition.
+
+--- QA-Verlauf ---
+
+Versuch 1: ✓ bestanden
+
+--- Finaler Prompt ---
+
+Chapter cover banner for a professional architectural textbook. IMPORTANT: Use a rich, dark charcoal background (#1B2030), NOT white. Architectural illustration with white and light-gray line work on this dark background. No text labels anywhere. Visually striking wide-format composition — the image will be displayed as a full-width banner cropped to roughly its top third, so place the most dramatic visual elements across the full width and height. Refined, editorial quality — think architectural magazine spread.
+
+Color palette: white and light-gray lines and shapes on dark charcoal (#1B2030) background. Accent touches of structural gray #6B7280 and amber #F59E0B.
+
+Subject: Architectural floor plan composition on dark charcoal background. A large, detailed apartment floor plan centered in the image — walls shown as white filled rectangles, room spaces as subtle lighter gray, doors as quarter-circle arcs in white. Surrounding the main plan: small perspective sketches of interior spaces (living room, kitchen, bedroom) as white line drawings in the corners. Fine grid lines in very dark gray across the background for depth. Clean minimalist aesthetic, dramatically lit from above. Wide panoramic composition.

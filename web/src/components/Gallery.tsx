@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { NavLink } from 'react-router-dom'
 import { createPortal } from 'react-dom'
 
@@ -38,13 +38,66 @@ function toggle<T>(set: Set<T>, value: T): Set<T> {
 
 interface LightboxEntry extends ImageEntry {}
 
+type OpenFilter = 'part' | 'type' | 'context' | 'tags' | null
+
+function FilterPill({
+  label,
+  isActive,
+  activeLabel,
+  isOpen,
+  onToggle,
+  onClear,
+  children,
+}: {
+  label: string
+  isActive: boolean
+  activeLabel: string
+  isOpen: boolean
+  onToggle: () => void
+  onClear: () => void
+  children: React.ReactNode
+}) {
+  return (
+    <div className="filter-pill-wrap">
+      <button
+        className={[
+          'filter-pill',
+          isActive ? 'filter-pill--active' : '',
+          isOpen   ? 'filter-pill--open'   : '',
+        ].filter(Boolean).join(' ')}
+        onClick={onToggle}
+        aria-expanded={isOpen}
+      >
+        <span>{isActive ? activeLabel : label}</span>
+        {isActive ? (
+          <span
+            className="filter-pill-x"
+            role="button"
+            aria-label={`${label} zurücksetzen`}
+            onClick={e => { e.stopPropagation(); onClear() }}
+          >×</span>
+        ) : (
+          <span className="filter-pill-chevron">▾</span>
+        )}
+      </button>
+      {isOpen && (
+        <div className="filter-popover">
+          {children}
+        </div>
+      )}
+    </div>
+  )
+}
+
 export function Gallery() {
-  const [manifest, setManifest] = useState<Manifest | null>(null)
-  const [activeParts, setActiveParts]       = useState<Set<string>>(new Set())
-  const [activeTypes, setActiveTypes]       = useState<Set<string>>(new Set())
-  const [activeContext, setActiveContext]   = useState<'all' | 'kastanienallee' | 'generic'>('all')
-  const [activeTags, setActiveTags]         = useState<Set<string>>(new Set())
-  const [lightbox, setLightbox]             = useState<LightboxEntry | null>(null)
+  const [manifest, setManifest]       = useState<Manifest | null>(null)
+  const [activeParts, setActiveParts] = useState<Set<string>>(new Set())
+  const [activeTypes, setActiveTypes] = useState<Set<string>>(new Set())
+  const [activeContext, setActiveContext] = useState<'all' | 'kastanienallee' | 'generic'>('all')
+  const [activeTags, setActiveTags]   = useState<Set<string>>(new Set())
+  const [lightbox, setLightbox]       = useState<LightboxEntry | null>(null)
+  const [openFilter, setOpenFilter]   = useState<OpenFilter>(null)
+  const filterBarRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     fetch('/assets/image-manifest.json')
@@ -52,6 +105,17 @@ export function Gallery() {
       .then(setManifest)
       .catch(() => setManifest({ version: 1, images: [] }))
   }, [])
+
+  useEffect(() => {
+    if (!openFilter) return
+    const handleClick = (e: MouseEvent) => {
+      if (filterBarRef.current && !filterBarRef.current.contains(e.target as Node)) {
+        setOpenFilter(null)
+      }
+    }
+    document.addEventListener('mousedown', handleClick)
+    return () => document.removeEventListener('mousedown', handleClick)
+  }, [openFilter])
 
   const closeLightbox = useCallback(() => setLightbox(null), [])
 
@@ -70,10 +134,10 @@ export function Gallery() {
     return <div className="gallery-page"><p className="gallery-empty">Lade Bilder…</p></div>
   }
 
-  const images = manifest.images
-  const allParts  = [...new Set(images.map(i => i.part))].sort()
-  const allTypes  = [...new Set(images.map(i => i.type))]
-  const allTags   = [...new Set(images.flatMap(i => i.tags))].sort()
+  const images   = manifest.images
+  const allParts = [...new Set(images.map(i => i.part))].sort()
+  const allTypes = [...new Set(images.map(i => i.type))]
+  const allTags  = [...new Set(images.flatMap(i => i.tags))].sort()
 
   const filtered = images.filter(img => {
     if (activeParts.size > 0 && !activeParts.has(img.part)) return false
@@ -90,7 +154,28 @@ export function Gallery() {
     setActiveTypes(new Set())
     setActiveContext('all')
     setActiveTags(new Set())
+    setOpenFilter(null)
   }
+
+  function toggleOpen(key: NonNullable<OpenFilter>) {
+    setOpenFilter(prev => prev === key ? null : key)
+  }
+
+  const partLabel = activeParts.size === 1
+    ? `Teil: ${[...activeParts][0]}`
+    : `Teil: ${activeParts.size}`
+
+  const typeLabel = activeTypes.size === 1
+    ? `Typ: ${TYPE_LABELS[[...activeTypes][0]] ?? [...activeTypes][0]}`
+    : `Typ: ${activeTypes.size}`
+
+  const ctxLabel = activeContext === 'kastanienallee'
+    ? 'Kontext: Kastanienallee 7'
+    : 'Kontext: Generisch'
+
+  const tagLabel = activeTags.size === 1
+    ? `Tags: ${[...activeTags][0]}`
+    : `Tags: ${activeTags.size}`
 
   return (
     <div className="gallery-page">
@@ -103,72 +188,94 @@ export function Gallery() {
         </p>
       </div>
 
-      <div className="gallery-filters">
-        <div className="gallery-filter-row">
-          <span className="gallery-filter-label">Teil</span>
+      <div className="gallery-filter-bar" ref={filterBarRef}>
+        <FilterPill
+          label="Teil"
+          isActive={activeParts.size > 0}
+          activeLabel={partLabel}
+          isOpen={openFilter === 'part'}
+          onToggle={() => toggleOpen('part')}
+          onClear={() => setActiveParts(new Set())}
+        >
           {allParts.map(part => (
-            <button
-              key={part}
-              className={`gallery-chip${activeParts.has(part) ? ' gallery-chip--active' : ''}`}
-              onClick={() => setActiveParts(s => toggle(s, part))}
-            >
+            <label key={part} className={`filter-option${activeParts.has(part) ? ' filter-option--active' : ''}`}>
+              <input
+                type="checkbox"
+                checked={activeParts.has(part)}
+                onChange={() => setActiveParts(s => toggle(s, part))}
+              />
               {part}
-            </button>
+            </label>
           ))}
-        </div>
+        </FilterPill>
 
-        <div className="gallery-filter-row">
-          <span className="gallery-filter-label">Typ</span>
+        <FilterPill
+          label="Typ"
+          isActive={activeTypes.size > 0}
+          activeLabel={typeLabel}
+          isOpen={openFilter === 'type'}
+          onToggle={() => toggleOpen('type')}
+          onClear={() => setActiveTypes(new Set())}
+        >
           {allTypes.map(type => (
-            <button
-              key={type}
-              className={`gallery-chip${activeTypes.has(type) ? ' gallery-chip--active' : ''}`}
-              onClick={() => setActiveTypes(s => toggle(s, type))}
-            >
+            <label key={type} className={`filter-option${activeTypes.has(type) ? ' filter-option--active' : ''}`}>
+              <input
+                type="checkbox"
+                checked={activeTypes.has(type)}
+                onChange={() => setActiveTypes(s => toggle(s, type))}
+              />
               {TYPE_LABELS[type] ?? type}
-            </button>
+            </label>
           ))}
-        </div>
+        </FilterPill>
 
-        <div className="gallery-filter-row">
-          <span className="gallery-filter-label">Kontext</span>
+        <FilterPill
+          label="Kontext"
+          isActive={activeContext !== 'all'}
+          activeLabel={ctxLabel}
+          isOpen={openFilter === 'context'}
+          onToggle={() => toggleOpen('context')}
+          onClear={() => setActiveContext('all')}
+        >
           {(['all', 'kastanienallee', 'generic'] as const).map(ctx => (
-            <button
-              key={ctx}
-              className={[
-                'gallery-chip',
-                activeContext === ctx ? 'gallery-chip--active' : '',
-                ctx === 'kastanienallee' ? 'gallery-chip--kastanienallee' : '',
-              ].filter(Boolean).join(' ')}
-              onClick={() => setActiveContext(ctx)}
-            >
+            <label key={ctx} className={`filter-option${activeContext === ctx ? ' filter-option--active' : ''}`}>
+              <input
+                type="radio"
+                name="gallery-context"
+                checked={activeContext === ctx}
+                onChange={() => setActiveContext(ctx)}
+              />
               {ctx === 'all' ? 'Alle' : ctx === 'kastanienallee' ? 'Kastanienallee 7' : 'Generisch'}
-            </button>
+            </label>
           ))}
-        </div>
+        </FilterPill>
 
         {allTags.length > 0 && (
-          <div className="gallery-filter-row gallery-filter-row--tags">
-            <span className="gallery-filter-label">Tags</span>
-            <div className="gallery-tags-scroll">
-              {allTags.map(tag => (
-                <button
-                  key={tag}
-                  className={`gallery-chip gallery-chip--tag${activeTags.has(tag) ? ' gallery-chip--active' : ''}`}
-                  onClick={() => setActiveTags(s => toggle(s, tag))}
-                >
-                  {tag}
-                </button>
-              ))}
-            </div>
-          </div>
+          <FilterPill
+            label="Tags"
+            isActive={activeTags.size > 0}
+            activeLabel={tagLabel}
+            isOpen={openFilter === 'tags'}
+            onToggle={() => toggleOpen('tags')}
+            onClear={() => setActiveTags(new Set())}
+          >
+            {allTags.map(tag => (
+              <label key={tag} className={`filter-option filter-option--mono${activeTags.has(tag) ? ' filter-option--active' : ''}`}>
+                <input
+                  type="checkbox"
+                  checked={activeTags.has(tag)}
+                  onChange={() => setActiveTags(s => toggle(s, tag))}
+                />
+                {tag}
+              </label>
+            ))}
+          </FilterPill>
         )}
 
         {hasFilters && (
-          <div className="gallery-filter-row">
-            <span className="gallery-filter-label" />
-            <button className="gallery-reset" onClick={resetFilters}>Filter zurücksetzen</button>
-          </div>
+          <button className="gallery-reset" onClick={resetFilters}>
+            Alle zurücksetzen
+          </button>
         )}
       </div>
 
@@ -233,7 +340,7 @@ export function Gallery() {
             </div>
             {lightbox.chapterPath && (
               <NavLink
-                to={`/${lightbox.chapterPath}`}
+                to={`/${lightbox.chapterPath}#img-${lightbox.file.replace(/\.[^.]+$/, '')}`}
                 className="gallery-lightbox-link"
                 onClick={closeLightbox}
               >

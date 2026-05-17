@@ -124,21 +124,28 @@ CHAPTER_TITLES = {
 
 
 def build_prompt(description: str, img_type: str, context: str, config: dict) -> str:
-    base = config["base_style_prompt"]
+    base = config["base_style_prompt"] if img_type != "cover" else ""
     variant = config["type_variants"].get(img_type, config["type_variants"]["diagram"])
     type_suffix = variant["prompt_suffix"]
     palette = config["color_palette"]
-    color_hint = (
-        f"Color palette: structural gray {palette['structural']}, "
-        f"thermal insulation blue {palette['thermal']}, "
-        f"TGA/MEP amber {palette['accent']}, "
-        f"pure white background {palette['background']}, "
-        f"near-black lines and text {palette['ink']}."
-    )
+    if img_type == "cover":
+        color_hint = (
+            f"Color palette: white and light-gray lines and shapes on dark charcoal (#1B2030) background. "
+            f"Accent touches of structural gray {palette['structural']} and amber {palette['accent']}."
+        )
+    else:
+        color_hint = (
+            f"Color palette: structural gray {palette['structural']}, "
+            f"thermal insulation blue {palette['thermal']}, "
+            f"TGA/MEP amber {palette['accent']}, "
+            f"pure white background {palette['background']}, "
+            f"near-black lines and text {palette['ink']}."
+        )
     building_ctx = ""
     if context == "kastanienallee":
         building_ctx = f"\n\nBuilding context: {config['kastanienallee_context']}"
-    return f"{base}\n\n{type_suffix}\n\n{color_hint}{building_ctx}\n\nSubject: {description}"
+    prefix = f"{base}\n\n" if base else ""
+    return f"{prefix}{type_suffix}\n\n{color_hint}{building_ctx}\n\nSubject: {description}"
 
 
 def update_manifest(name: str, img_type: str, context: str, tags: str,
@@ -291,6 +298,58 @@ def qa_check(image_data: bytes, description: str, img_type: str, api_key: str) -
     return json.loads(result["choices"][0]["message"]["content"])
 
 
+def qa_check_cover(image_data: bytes, description: str, api_key: str) -> dict:
+    """
+    Cover-specific QA: evaluates visual design and compositional quality,
+    NOT technical accuracy. A cover fails if it has text, wrong background,
+    grid layouts, or 3D-render style rather than clean architectural line work.
+    """
+    image_b64 = base64.b64encode(image_data).decode()
+
+    system_msg = (
+        "You are an art director for a high-end professional architectural textbook. "
+        "You evaluate chapter cover banner images purely on visual design quality. "
+        "Be strict — a cover passes only if it would look excellent as an editorial magazine spread."
+    )
+
+    user_msg = (
+        f"Evaluate this chapter cover image. Chapter topic: {description}\n\n"
+        "ALL of the following must be true for a PASS:\n"
+        "1. Dark charcoal background (#1B2030) — must NOT be white, light, or gradient\n"
+        "2. Absolutely no text, numbers, labels, or annotations anywhere\n"
+        "3. Compositionally dynamic — NOT a uniform grid of equal-sized panels\n"
+        "4. Thematically relevant to the chapter topic\n"
+        "5. Most visual elements concentrated in the CENTER BAND of the image (top and bottom edges can be sparse)\n"
+        "6. Clean architectural line-work style — NOT photorealistic 3D renders, NOT sketchy/hand-drawn\n"
+        "7. Uses at least one accent color from the palette (gray, amber, or blue) beyond just white-on-dark\n\n"
+        'Respond ONLY as JSON:\n'
+        '{"pass": true/false, "issues": ["Issue 1", "Issue 2"], '
+        '"correction_prompt": "Specific, actionable correction instruction in English"}'
+    )
+
+    payload = json.dumps({
+        "model": QA_MODEL,
+        "messages": [
+            {"role": "system", "content": system_msg},
+            {
+                "role": "user",
+                "content": [
+                    {"type": "text", "text": user_msg},
+                    {"type": "image_url", "image_url": {
+                        "url": f"data:image/png;base64,{image_b64}",
+                        "detail": "high"
+                    }},
+                ],
+            },
+        ],
+        "response_format": {"type": "json_object"},
+        "max_tokens": 700,
+    }).encode()
+
+    result = api_post("https://api.openai.com/v1/chat/completions", payload, api_key)
+    return json.loads(result["choices"][0]["message"]["content"])
+
+
 def remove_white_background(image_data: bytes, threshold: int = BG_THRESHOLD) -> bytes:
     try:
         from PIL import Image
@@ -388,7 +447,7 @@ def main():
         description="Erzeugt Buchillustrationen für 'BIM von Grund auf' via gpt-image-2 + QA"
     )
     parser.add_argument("--type", "-t",
-                        choices=["isometric", "diagram", "section", "floorplan", "comparison", "infographic"],
+                        choices=["isometric", "diagram", "section", "floorplan", "comparison", "infographic", "cover"],
                         default="diagram")
     parser.add_argument("--desc", "-d", required=True)
     parser.add_argument("--name", "-n", required=True)
@@ -425,6 +484,10 @@ def main():
                         help="Zeigt generierten Prompt ohne API-Aufruf")
     parser.add_argument("--skip-qa", action="store_true",
                         help="QA-Loop überspringen (schneller, für Tests)")
+    parser.add_argument("--no-remove-bg", action="store_true",
+                        help="Hintergrundentfernung überspringen (für Cover-Bilder mit farbigem Hintergrund)")
+    parser.add_argument("--no-manifest", action="store_true",
+                        help="Manifest-Eintrag überspringen (z.B. für Cover-Bilder die nicht in der Galerie erscheinen sollen)")
     args = parser.parse_args()
 
     load_env()
@@ -460,8 +523,19 @@ def main():
         sys.exit(1)
 
     model = os.environ.get("OPENAI_IMAGE_MODEL", "gpt-image-2")
-    output_dir = Path(args.output_dir) if args.output_dir else REPO_ROOT / "assets" / "illustrations"
+
+    # Cover type auto-defaults: separate directory, no bg removal, no manifest entry
+    is_cover = args.type == "cover"
+    if args.output_dir:
+        output_dir = Path(args.output_dir)
+    elif is_cover:
+        output_dir = REPO_ROOT / "assets" / "covers"
+    else:
+        output_dir = REPO_ROOT / "assets" / "illustrations"
     output_path = output_dir / f"{args.name}.png"
+
+    no_remove_bg = args.no_remove_bg or is_cover
+    no_manifest = args.no_manifest or is_cover
 
     size_label = size
     if args.size and args.size.lower() in SIZE_ALIASES:
@@ -469,6 +543,8 @@ def main():
 
     print(f"Generiere: {args.desc[:80]}{'…' if len(args.desc) > 80 else ''}")
     print(f"Typ: {args.type} | Größe: {size_label} | Modell: {model}")
+    if is_cover:
+        print(f"Cover-Modus: kein BG-Entfernen, kein Manifest-Eintrag, cover-spezifische QA")
     print(f"QA: {QA_MODEL} | Max. Versuche: {MAX_QA_ATTEMPTS}")
     print(f"Ausgabe: {output_path.relative_to(REPO_ROOT)}")
     print()
@@ -497,7 +573,10 @@ def main():
 
         print(f"[{attempt}/{MAX_QA_ATTEMPTS}] QA-Prüfung via {QA_MODEL}...")
         try:
-            qa_result = qa_check(image_data, args.desc, args.type, api_key)
+            if is_cover:
+                qa_result = qa_check_cover(image_data, args.desc, api_key)
+            else:
+                qa_result = qa_check(image_data, args.desc, args.type, api_key)
         except Exception as e:
             print(f"  QA-Fehler (wird übersprungen): {e}")
             qa_passed = True
@@ -533,22 +612,28 @@ def main():
         print(f"✗ QA-Log:      {log_path.relative_to(REPO_ROOT)}")
         sys.exit(2)
 
-    print("Entferne Hintergrund...")
-    image_data = remove_white_background(image_data)
+    if no_remove_bg:
+        print("Hintergrundentfernung übersprungen.")
+    else:
+        print("Entferne Hintergrund...")
+        image_data = remove_white_background(image_data)
     print("Speichere Bild...")
     save_image(image_data, output_path)
     log_path = save_prompt_log(output_path, current_prompt, args.desc, args.type, qa_log)
 
-    generated_ts = datetime.now().strftime("%Y-%m-%d %H:%M")
-    manifest_path = update_manifest(
-        args.name, args.type, args.context,
-        args.tags, args.caption, args.desc, generated_ts,
-    )
-
     attempts_used = len(qa_log)
     print(f"✓ Bild gespeichert:   {output_path.relative_to(REPO_ROOT)}  (Versuche: {attempts_used})")
     print(f"✓ QA-Log gespeichert: {log_path.relative_to(REPO_ROOT)}")
-    print(f"✓ Manifest aktualisiert: {manifest_path.relative_to(REPO_ROOT)}")
+
+    if no_manifest:
+        print("Manifest-Eintrag übersprungen.")
+    else:
+        generated_ts = datetime.now().strftime("%Y-%m-%d %H:%M")
+        manifest_path = update_manifest(
+            args.name, args.type, args.context,
+            args.tags, args.caption, args.desc, generated_ts,
+        )
+        print(f"✓ Manifest aktualisiert: {manifest_path.relative_to(REPO_ROOT)}")
 
 
 if __name__ == "__main__":

@@ -39,14 +39,28 @@ python3 skills/imagegen/generate.py \
 
 ### Illustrationstypen
 
-| Typ | Wofür | Format |
-|-----|-------|--------|
-| `isometric` | Gebäudeschnitte, Bauteilaufbauten, Systemübersichten | Querformat |
-| `diagram` | Schemata (Heizung, Lüftung, IFC-Hierarchie, Workflows) | Querformat |
-| `section` | Wandquerschnitte, Dachaufbauten, Detailschnitte | Hochformat |
-| `floorplan` | Grundrisse, Lagepläne | Querformat |
-| `comparison` | Materialvergleiche, Systemalternativen | Querformat |
-| `infographic` | Prozeßübersichten, HOAI-Phasen, Normenzusammenfassungen | Querformat |
+| Typ | Wofür | Format | Besonderheiten |
+|-----|-------|--------|----------------|
+| `isometric` | Gebäudeschnitte, Bauteilaufbauten, Systemübersichten | Querformat | Weißer Hintergrund, mit Beschriftung |
+| `diagram` | Schemata (Heizung, Lüftung, IFC-Hierarchie, Workflows) | Querformat | Weißer Hintergrund, mit Beschriftung |
+| `section` | Wandquerschnitte, Dachaufbauten, Detailschnitte | Hochformat | Weißer Hintergrund, mit Beschriftung |
+| `floorplan` | Grundrisse, Lagepläne | Querformat | Weißer Hintergrund, mit Beschriftung |
+| `comparison` | Materialvergleiche, Systemalternativen | Querformat | Weißer Hintergrund, mit Beschriftung |
+| `infographic` | Prozeßübersichten, HOAI-Phasen, Normenzusammenfassungen | Querformat | Weißer Hintergrund, mit Beschriftung |
+| `cover` | Kapitel-Titelbanner | Querformat | **Dunkelgrauer Hintergrund (#1B2030), keine Beschriftung, automatisch → `assets/covers/`** |
+
+#### Cover-Typ: Automatisches Verhalten
+- Ausgabe automatisch in `assets/covers/` (kein `--output-dir` nötig)
+- Hintergrundentfernung automatisch deaktiviert (weißes Line-Work auf dunklem BG bleibt intakt)
+- Kein Manifest-Eintrag (Cover erscheinen nicht in der Galerie)
+- Cover-spezifische QA: prüft visuellen Impact, kein Text, dunkler Hintergrund, keine Grid-Layouts
+
+#### Tipps für gute Cover-Beschreibungen
+- **Zeig das Kapitelthema durch eine starke Bildkomposition**, kein Grid von gleich großen Feldern
+- Die sichtbare Zone im Banner ist die **Bildmitte** (~25–60% von oben) — platziere die wichtigsten Elemente dort
+- Nutze **1–3 dominante Elemente** in dynamischer Anordnung über die volle Breite
+- Amber (#F59E0B), Blau (#93C5FD) oder Grau (#6B7280) als Akzentfarben einsetzen — nicht nur weiß-auf-dunkel
+- Kein Text, keine Maßketten, keine Beschriftungen
 
 ### Dry Run (Prompt prüfen ohne API-Aufruf)
 

@@ -21,10 +21,19 @@ const SYSTEM_PROMPT = `Du bist ein intelligenter Assistent für das Fachbuch "BI
 
 Das Buch behandelt Architektur, Bautechnik, Bauphysik, TGA (technische Gebäudeausrüstung), Recht & Prozesse sowie Building Information Modeling (BIM).
 
-Du hast Zugriff auf alle Kapitel des Buchs über Werkzeuge (Tools). Nutze sie aktiv:
-- Starte mit book_search oder book_toc, um relevante Abschnitte zu finden
-- Lies dann mit book_cat die genauen Inhalte
+Du hast Zugriff auf alle Kapitel des Buchs und auf bauphysikalische Rechentools. Nutze sie aktiv:
+
+Buchwerkzeuge:
+- book_search oder book_toc: Relevante Abschnitte finden
+- book_cat: Genaue Inhalte lesen (gibt auch Bildbeschreibungen zurück)
+- book_metadata / book_image: Metadaten und Abbildungen abfragen
 - Zitiere konkrete Stellen und nenne das Kapitel
+
+Rechentools (direkt berechenbar, ohne Buch):
+- calc_u_value: U-Wert-Berechnung nach DIN EN ISO 6946 + GEG 2024 Vergleich
+- calc_dewpoint: Taupunkt & Schimmelrisiko nach DIN 4108-2
+- calc_sound: Schalldämmmaß R'w nach Massengesetz + DIN 4109
+- calc_hoai: HOAI 2021 Honorarberechnung für Objektplanung
 
 Antworte präzise, sachlich und auf Deutsch. Wenn du etwas nicht weißt oder es nicht im Buch steht, sag es klar.`
 
@@ -133,7 +142,7 @@ app.get('/api/health', (_req, res) => {
   res.json({ ok: true, hasKey: !!process.env.ANTHROPIC_API_KEY })
 })
 
-const PORT = process.env.PORT ?? 3001
+const PORT = process.env.PORT ?? 51741
 app.listen(PORT, () => {
   console.log(`BIM Book API server running on http://localhost:${PORT}`)
   if (!process.env.ANTHROPIC_API_KEY) {

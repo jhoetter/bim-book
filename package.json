@@ -1,0 +1,27 @@
+{
+  "name": "bim-book",
+  "version": "1.0.0",
+  "description": "> **Arbeitstitel:** BIM von Grund auf – Wie ein Gebäude entsteht und wie es digital abgebildet wird   > **Autor:** Johannes Hötter   > **Status:** Konzeptphase · Mai 2026   > **Sprache:** Deutsch (Erstfassung)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "concurrently --names \"api,web\" --prefix-colors \"cyan,blue\" \"cd server && npx tsx src/api-server.ts\" \"cd web && npx vite --port 2100\"",
+    "server": "cd server && npx tsx src/api-server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhoetter/bim-book.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhoetter/bim-book/issues"
+  },
+  "homepage": "https://github.com/jhoetter/bim-book#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

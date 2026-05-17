@@ -1,0 +1,105 @@
+{
+  "_info": "Bildbeschreibungen für den BIM-Buch-Agenten. Aktualisieren: python3 skills/imagedesc/describe.py",
+  "_updated": "2026-05-17",
+  "images": {
+    "kap01_schichtenmodell": {
+      "file": "kap01_schichtenmodell.png",
+      "chapter_id": "01-architektur-als-system",
+      "chapter_title": "Architektur als System",
+      "figure_num": "Abb. 1.1",
+      "caption": "Die vier Schichten der Kastanienallee 7 in der isometrischen Explosionsdarstellung.",
+      "type": "isometric",
+      "description": "Isometrische Explosionsdarstellung eines viergeschossigen Mehrfamilienhauses (Kastanienallee 7), aufgeteilt in vier vertikal übereinander-explodierte Schichten. Jede Schicht ist farblich kodiert und mit einer Legende rechts versehen: (1) Tragstruktur – Stahlbetonrahmen, Fundamente, Stützen und Deckenplatten in grauer Schraffur; (2) Gebäudehülle – Außenwände mit WDVS-Fassade und Flachdach in hellblau; (3) Haustechnik/TGA – Rohrleitungen, Heizkörper und Elektroinstallationen in amber/gelb; (4) Innenausbau – Trennwände, Bodenbeläge und Einbauten in hellgrau. Die Explosionsdarstellung macht die Unabhängigkeit und unterschiedliche Dauerhaftigkeit der vier Schichten visuell erfahrbar.",
+      "keywords": ["Schichtenmodell", "Tragstruktur", "Gebäudehülle", "TGA", "Haustechnik", "Innenausbau", "Kastanienallee 7", "Explosionsdarstellung", "Schichten", "Mehrfamilienhaus", "WDVS", "Stahlbeton"],
+      "described_by": "prompt+manual"
+    },
+    "kap02_grundriss_eg": {
+      "file": "kap02_grundriss_eg.png",
+      "chapter_id": "02-entwurf-raum-funktion",
+      "chapter_title": "Entwurf, Raum und Funktion",
+      "figure_num": "Abb. 2.1",
+      "caption": "Grundriss Erdgeschoss Kastanienallee 7, Maßstab 1:100.",
+      "type": "floor_plan",
+      "description": "Technischer Grundriss des Erdgeschosses der Kastanienallee 7 im Maßstab 1:100. Rechteckiger Grundriss ca. 20×18 m. Erschließung: Eingang an der Südfassade mit Windfang, zentrales Treppenhaus mit Aufzug im Kern. Drei Wohneinheiten: 2-Zimmer-Wohnung links (Küche, Wohnzimmer, Bad, Schlafzimmer), 3-Zimmer-Wohnung Mitte (mit Süd-Balkon), 4-Zimmer-Wohnung rechts (größte Einheit, Nord- und Südausrichtung). Tragende Wände schwarz ausgefüllt, Leichtwände gestrichelt, Raumbezeichnungen auf Deutsch, Nordpfeil oben rechts, Maßketten an allen Außenseiten.",
+      "keywords": ["Grundriss", "Erdgeschoss", "Kastanienallee 7", "Wohneinheiten", "Erschließung", "Treppenhaus", "Grundrissplanung", "Raumplanung", "Maßstab", "Wohnungsgrundriss", "2-Zimmer", "3-Zimmer", "4-Zimmer"],
+      "described_by": "prompt+manual"
+    },
+    "kap04_tragsysteme_vergleich": {
+      "file": "kap04_tragsysteme_vergleich.png",
+      "chapter_id": "04-tragwerk",
+      "chapter_title": "Tragwerk: Lasten, Kräfte, Systeme",
+      "figure_num": "Abb. 4.1",
+      "caption": "Vergleich drei typischer Tragsysteme im Querschnitt.",
+      "type": "comparison",
+      "description": "Nebeneinanderstellung dreier Tragsysteme im schematischen Querschnitt, durch vertikale Linien getrennt. Links: Stahlbeton-Skelettbau – Stützen und Deckenplatten aus Stahlbeton in grauer Diagonalschraffur, mit Lastpfeil von oben und typischer Spannweite 6–8 m. Mitte: Holztafelbau – Holzrahmen mit stehenden Stielen und horizontalen Riegeln in braun, Gefach ausgefüllt, Lastpfeil, Spannweite 3–5 m. Rechts: Stahlskelettbau – I-Träger aus Stahl in dunkelgrau, schlankes Profil, Lastpfeil, Spannweite 12–20 m. Je System Maßangaben und deutsche Beschriftungen.",
+      "keywords": ["Tragsystem", "Tragwerk", "Stahlbeton", "Skelettbau", "Holztafelbau", "Stahlbau", "I-Träger", "Spannweite", "Querschnitt", "Vergleich", "Lasten", "Massivbau"],
+      "described_by": "prompt+manual"
+    },
+    "kap05_flachdach_aufbau": {
+      "file": "kap05_flachdach_aufbau.png",
+      "chapter_id": "05-konstruktion",
+      "chapter_title": "Konstruktion: Gründung, Wand, Decke, Dach",
+      "figure_num": "Abb. 5.1",
+      "caption": "Flachdach-Warmkonstruktion im Schichtaufbau (Querschnitt).",
+      "type": "section",
+      "description": "Vertikaler Querschnitt durch einen Flachdachaufbau in Warmkonstruktion, von unten nach oben: (1) Stahlbetondecke 200 mm – grau diagonal schraffiert; (2) Dampfsperre 0,2 mm – schwarze Linie; (3) EPS-Wärmedämmung 160 mm – Zickzack-Muster in blau, verhindert Tauwasser; (4) Trennlage – dünne graue Linie; (5) Dachabdichtung zweilagig 8 mm – dunkelgrauer Streifen; (6) Extensive Begrünung 80 mm – grüne Füllung. Gesamtaufbau ca. 450 mm. Maßketten links mit mm-Angaben je Schicht, Beschriftungen rechts. Beigedruckte Kennwerte: U-Wert = 0,17 W/(m²K), Einschichtiger Wärmedurchgangskoeffizient. Weißer Hintergrund.",
+      "keywords": ["Flachdach", "Warmkonstruktion", "Dachaufbau", "EPS", "Wärmedämmung", "Dampfsperre", "Dachabdichtung", "Begrünung", "Dachbegrünung", "U-Wert", "Schichtaufbau", "Querschnitt"],
+      "described_by": "prompt+manual"
+    },
+    "kap06_wandaufbau_wdvs": {
+      "file": "kap06_wandaufbau_wdvs.png",
+      "chapter_id": "06-waermeschutz-geg",
+      "chapter_title": "Wärmeschutz & GEG",
+      "figure_num": "Abb. 6.1",
+      "caption": "Wandaufbau mit WDVS (Wärmedämmverbundsystem) im Querschnitt.",
+      "type": "section",
+      "description": "Horizontaler Wandquerschnitt durch eine gedämmte Außenwand mit Wärmedämmverbundsystem (WDVS), von innen nach außen: (1) Innenputz 15 mm – dünn, glatt; (2) Stahlbetonwand 200 mm – grau diagonal schraffiert, tragendes Element; (3) Mineralwolle WLG 035 160 mm – Zickzack-Schraffur in blau, Wärmedämmschicht; (4) Armierungsputz 5 mm mit eingebettetem Glasfasergewebe; (5) Silikonharzputz 3 mm – Außenoberfläche. Gesamtdicke 383 mm. Beidseitige Maßketten mit mm-Angaben pro Schicht. Beschriftungsbox: U = 0,19 W/(m²K). Alle Beschriftungen deutsch, weißer Hintergrund.",
+      "keywords": ["WDVS", "Wärmedämmverbundsystem", "Wandaufbau", "Außenwand", "Mineralwolle", "WLG035", "Wärmedämmung", "U-Wert", "Querschnitt", "Stahlbeton", "Armierungsputz", "Außendämmung"],
+      "described_by": "prompt+manual"
+    },
+    "kap10_heizkreis_schema": {
+      "file": "kap10_heizkreis_schema.png",
+      "chapter_id": "10-heizung-waermeversorgung",
+      "chapter_title": "Heizung & Wärmeversorgung",
+      "figure_num": "Abb. 10.1",
+      "caption": "Hydraulisches Schema einer Fernwärmeanlage mit drei Heizkreisen.",
+      "type": "schema",
+      "description": "Hydraulisches Fließschema einer Fernwärme-Übergabeanlage für das Mehrfamilienhaus Kastanienallee 7. Von links nach rechts: (1) Fernwärme-Übergabestation mit Plattenwärmetauscher-Symbol; (2) Zentraler Verteilerbalken (Vorlauf/Rücklauf); (3) Drei Heizkreise rechts: Fußbodenheizung Erdgeschoss, FBH OG1, FBH OG2. Vorlauf-Leitungen rot gestrichelt mit Fließrichtungspfeil, Rücklauf-Leitungen blau gestrichelt mit Gegenpfeil. Umwälzpumpen als Kreis-mit-Pfeil-Symbol je Heizkreis. Temperaturen beschriftet: VL 70°C / RL 50°C an Übergabe, VL 35°C / RL 28°C an Fußbodenheizkreisen. Absperrventile und Regelventile als Normsymbole. Alle Beschriftungen deutsch.",
+      "keywords": ["Fernwärme", "Heizkreis", "hydraulisches Schema", "Fließschema", "Fußbodenheizung", "Vorlauf", "Rücklauf", "Wärmetauscher", "Pumpe", "Heizung", "TGA", "Übergabestation"],
+      "described_by": "prompt+manual"
+    },
+    "kap15_hoai_phasen": {
+      "file": "kap15_hoai_phasen.png",
+      "chapter_id": "15-hoai",
+      "chapter_title": "HOAI: Phasen, Leistungen, Koordination",
+      "figure_num": "Abb. 15.1",
+      "caption": "Die neun Leistungsphasen der HOAI als horizontale Zeitleiste.",
+      "type": "timeline",
+      "description": "Horizontale Zeitleiste mit neun gleichmäßig breiten Blöcken, von links nach rechts darstellend die HOAI-Leistungsphasen LP1–LP9. Jeder Block zeigt: große LP-Nummer, darunter Kurzbezeichnung. LP1 Grundlagenermittlung, LP2 Vorplanung, LP3 Entwurfsplanung, LP4 Genehmigungsplanung, LP5 Ausführungsplanung – in blau (abgestuft, Planungsphase); LP6 Vorbereitung Vergabe, LP7 Mitwirkung Vergabe – in amber/gelb (Vergabephase); LP8 Objektüberwachung / Bauüberwachung, LP9 Objektbetreuung – in grau (Realisierungsphase). Unter jedem Block: prozentualer Honoraranteil. Chronologischer Ablauf von Planung über Genehmigung zu Bau und Abnahme.",
+      "keywords": ["HOAI", "Leistungsphasen", "LP1", "LP2", "LP3", "LP4", "LP5", "LP6", "LP7", "LP8", "LP9", "Planungsphasen", "Honorar", "Objektüberwachung", "Genehmigung", "Ausführungsplanung", "Vergabe"],
+      "described_by": "prompt+manual"
+    },
+    "kap18_ifc_hierarchie": {
+      "file": "kap18_ifc_hierarchie.png",
+      "chapter_id": "18-ifc",
+      "chapter_title": "IFC: Die Sprache des digitalen Gebäudes",
+      "figure_num": "Abb. 18.1",
+      "caption": "IFC-Projekthierarchie als Baumdiagramm (IfcProject bis IfcSpace).",
+      "type": "diagram",
+      "description": "Hierarchisches Baumdiagramm der IFC-Projektstruktur, von oben nach unten mit Einrückung und Verbindungslinien. Ebene 1 (Wurzel): IfcProject – das gesamte Projekt. Ebene 2: IfcSite – das Grundstück. Ebene 3: IfcBuilding – das Gebäude Kastanienallee 7. Ebene 4 (vier Knoten): IfcBuildingStorey – Keller, Erdgeschoss, Obergeschoss 1, Obergeschoss 2. Ebene 5 (unter Erdgeschoss exemplarisch): IfcSpace – Wohnung, Treppenhaus, Flur. IFC-Bezeichner in Monospace-Schrift (blau hervorgehoben), deutsche Erläuterungen daneben in normaler Schrift. Verbindungslinien grau, Knotenboxen hellblau. Das Diagramm zeigt wie IFC-Datenmodelle Gebäude von der abstrakten Projektebene bis zum konkreten Raum strukturieren.",
+      "keywords": ["IFC", "IfcProject", "IfcSite", "IfcBuilding", "IfcBuildingStorey", "IfcSpace", "Hierarchie", "Baumdiagramm", "Datenmodell", "BIM", "Projekthierarchie", "Gebäudestruktur", "OpenBIM"],
+      "described_by": "prompt+manual"
+    },
+    "kap22_lca_baustoffe": {
+      "file": "kap22_lca_baustoffe.png",
+      "chapter_id": "22-nachhaltigkeit",
+      "chapter_title": "Nachhaltigkeit & Kreislaufwirtschaft",
+      "figure_num": "Abb. 22.1",
+      "caption": "Lebenszyklusanalyse (LCA) dreier Baustoffe im CO₂-Vergleich.",
+      "type": "comparison",
+      "description": "Vergleichsdiagramm der Ökobilanz (Lebenszyklusanalyse/LCA) dreier Baustoffe in drei nebeneinanderstehenden Spalten. Spalte 1 – Beton (grau): Balken-Diagramm zeigt hohen CO₂-Fußabdruck ca. 200 kg CO₂/m², mittlere Recyclingquote, Symbol eines Betonelements; Spalte 2 – Holz (grün): sehr niedriger oder negativer CO₂-Wert (Kohlenstoffspeicherung), hohe Recyclingquote (Kaskadennutzung), Symbol einer Brettstapeldecke; Spalte 3 – Stahl (dunkelblau): mittlerer CO₂-Wert ca. 150 kg CO₂/m², sehr hohe Recyclingquote (>90%), Symbol eines Stahlprofils. Y-Achse beschriftet kg CO₂/m², alle Beschriftungen deutsch. Visualisiert den Unterschied zwischen linearer (Beton) und zirkulärer (Stahl, Holz) Materialwirtschaft.",
+      "keywords": ["LCA", "Lebenszyklusanalyse", "Ökobilanz", "CO2", "Beton", "Holz", "Stahl", "Kreislaufwirtschaft", "Recycling", "Nachhaltigkeit", "Treibhausgasemissionen", "Baustoffe", "Kohlenstoffspeicherung"],
+      "described_by": "prompt+manual"
+    }
+  }
+}

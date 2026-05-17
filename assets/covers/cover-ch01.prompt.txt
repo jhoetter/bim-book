@@ -1,0 +1,15 @@
+Generiert: 2026-05-17 14:49
+Typ: cover
+Beschreibung: Isometric exploded view of a multi-story residential building, dark charcoal background. Four clearly separated horizontal layers floating above each other: bottom layer shows a reinforced concrete structural skeleton with columns and beams in light gray; second layer shows exterior facade panels and flat roof outline in slightly lighter gray with fine line grid; third layer shows MEP networks — pipes, ducts, electrical conduits — in thin amber lines; top layer shows interior partition walls as thin white lines. Clean white outlines on all elements. Dramatic depth and shadow. Ultra-wide panoramic composition, elements spread across the full image width.
+
+--- QA-Verlauf ---
+
+Versuch 1: ✓ bestanden
+
+--- Finaler Prompt ---
+
+Chapter cover banner for a professional architectural textbook. IMPORTANT: Use a rich, dark charcoal background (#1B2030), NOT white. Architectural illustration with white and light-gray line work on this dark background. No text labels anywhere. Visually striking wide-format composition — the image will be displayed as a full-width banner cropped to roughly its top third, so place the most dramatic visual elements across the full width and height. Refined, editorial quality — think architectural magazine spread.
+
+Color palette: white and light-gray lines and shapes on dark charcoal (#1B2030) background. Accent touches of structural gray #6B7280 and amber #F59E0B.
+
+Subject: Isometric exploded view of a multi-story residential building, dark charcoal background. Four clearly separated horizontal layers floating above each other: bottom layer shows a reinforced concrete structural skeleton with columns and beams in light gray; second layer shows exterior facade panels and flat roof outline in slightly lighter gray with fine line grid; third layer shows MEP networks — pipes, ducts, electrical conduits — in thin amber lines; top layer shows interior partition walls as thin white lines. Clean white outlines on all elements. Dramatic depth and shadow. Ultra-wide panoramic composition, elements spread across the full image width.

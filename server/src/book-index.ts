@@ -4,6 +4,19 @@ import { fileURLToPath } from 'url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 export const DOCS_DIR = join(__dirname, '..', '..', 'docs')
+const ASSETS_DIR = join(__dirname, '..', '..', 'assets', 'illustrations')
+const MANIFEST_PATH = join(ASSETS_DIR, 'manifest.json')
+
+export interface ImageMeta {
+  key: string
+  file: string
+  chapterId: string
+  figureNum: string
+  caption: string
+  type: string
+  description: string
+  keywords: string[]
+}
 
 export interface ChapterMeta {
   id: string
@@ -15,6 +28,7 @@ export interface ChapterMeta {
   headings: string[]
   wordCount: number
   summary: string
+  images: ImageMeta[]
 }
 
 export interface Part {
@@ -99,6 +113,53 @@ const RAW_PARTS: Array<{ title: string; chapters: Array<{ id: string; num: strin
   },
 ]
 
+// ── Image manifest ────────────────────────────────────────────────────────────
+
+let _imageManifest: Record<string, ImageMeta> | null = null
+
+function loadImageManifest(): Record<string, ImageMeta> {
+  if (_imageManifest) return _imageManifest
+  if (!existsSync(MANIFEST_PATH)) {
+    _imageManifest = {}
+    return _imageManifest
+  }
+  try {
+    const raw = JSON.parse(readFileSync(MANIFEST_PATH, 'utf-8')) as {
+      images: Record<string, {
+        file: string; chapter_id: string; figure_num: string; caption: string
+        type: string; description: string; keywords: string[]
+      }>
+    }
+    _imageManifest = {}
+    for (const [key, img] of Object.entries(raw.images)) {
+      _imageManifest[key] = {
+        key,
+        file: img.file,
+        chapterId: img.chapter_id,
+        figureNum: img.figure_num,
+        caption: img.caption,
+        type: img.type,
+        description: img.description,
+        keywords: img.keywords,
+      }
+    }
+  } catch {
+    _imageManifest = {}
+  }
+  return _imageManifest
+}
+
+export function getImageManifest(): Record<string, ImageMeta> {
+  return loadImageManifest()
+}
+
+export function getImagesForChapter(chapterId: string): ImageMeta[] {
+  const manifest = loadImageManifest()
+  return Object.values(manifest).filter(img => img.chapterId === chapterId)
+}
+
+// ── Markdown parsing ──────────────────────────────────────────────────────────
+
 function parseMarkdownMeta(content: string): { headings: string[]; wordCount: number; summary: string } {
   const lines = content.split('\n')
   const headings: string[] = []
@@ -140,7 +201,9 @@ function buildMeta(raw: { id: string; num: string; title: string; path: string }
     summary = parsed.summary
   }
 
-  return { ...raw, part, filePath, headings, wordCount, summary }
+  const images = getImagesForChapter(raw.id)
+
+  return { ...raw, part, filePath, headings, wordCount, summary, images }
 }
 
 export const PARTS: Part[] = RAW_PARTS.map(p => ({

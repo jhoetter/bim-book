@@ -50,6 +50,11 @@
       "prompt_suffix": "Modern technical infographic on white background. Simplified icons, data represented graphically. Clear hierarchy: bold title, subtitle, numbered content areas. Steps numbered if process-oriented. Uses only 2–3 colors from the palette. Inter-style sans-serif font.",
       "size": "1536x1024",
       "use_for": ["process overviews", "regulation summaries", "HOAI phases", "BIM workflow", "statistics"]
+    },
+    "cover": {
+      "prompt_suffix": "Chapter cover banner for a professional architectural textbook. IMPORTANT: Use a rich, dark charcoal background (#1B2030), NOT white or light. Architectural illustration with white, light-gray, and accent-colored line work on this dark background. No text, no numbers, no labels, no annotations anywhere. COMPOSITION: The image is displayed as a full-width banner at 220px height. With the vertical anchor at 40%, the visible crop covers the CENTER BAND of the image (roughly 25%–60% from the top). Place the most visually compelling elements in this central zone — the top ~25% and bottom ~40% are outside the typical view and should be treated as atmospheric edges, not wasted. Do NOT use a uniform grid of equal-sized panels. Prefer a single strong panoramic composition or 2–3 dominant elements in dynamic arrangement. Accent colors sparingly from the shared palette — structural gray (#6B7280), thermal blue (#93C5FD), TGA amber (#F59E0B) — as glowing highlights against the dark ground. Style: clean architectural line work with slight depth and atmosphere. NOT photorealistic. NOT sketchy. Refined editorial quality — architectural magazine spread.",
+      "size": "1536x1024",
+      "use_for": ["chapter cover images", "page banner thumbnails"]
     }
   },
 
