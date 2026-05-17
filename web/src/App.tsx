@@ -117,6 +117,16 @@ function ChapterRoute() {
   const cover = chapter?.coverImage
   const hasImage = !!cover && !imgFailed
   const PageIcon = chapter?.pageIcon
+  const isRef = chapter?.isReferencePage
+
+  if (isRef) {
+    return (
+      <main className="content">
+        <MarkdownPage content={content} />
+      </main>
+    )
+  }
+
   return (
     <>
       <div className="page-cover-wrap">
@@ -250,6 +260,8 @@ function AppLayout() {
             <Routes>
               <Route path="/" element={<Overview />} />
               <Route path="/gallery" element={<Gallery />} />
+              <Route path="/glossar" element={<ChapterRoute />} />
+              <Route path="/formelsammlung" element={<ChapterRoute />} />
               <Route path="/chapters/*" element={<ChapterRoute />} />
               <Route path="/appendix/*" element={<ChapterRoute />} />
               <Route path="*" element={<Navigate to="/" replace />} />

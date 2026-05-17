@@ -1,4 +1,4 @@
-# Anhang A – Glossar
+# Glossar
 
 Über 30 Fachbegriffe aus Architektur, Bauphysik, TGA und BIM – mit Definition, Abkürzung und Abbildung.
 

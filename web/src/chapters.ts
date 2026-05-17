@@ -69,6 +69,7 @@ export interface Chapter {
   icon?: ComponentType<BimIconProps>
   pageIcon?: ComponentType<BimIconHifiProps>
   coverImage?: string
+  isReferencePage?: boolean
 }
 
 export interface Part {
@@ -88,8 +89,8 @@ export const PARTS: Part[] = [
   {
     title: 'Nachschlagewerke',
     chapters: [
-      { id: 'glossar', num: '', title: 'Glossar', path: 'appendix/glossar', icon: NoteBlockIcon, pageIcon: NoteBlockHifi },
-      { id: 'formelsammlung', num: '', title: 'Formelsammlung', path: 'appendix/formelsammlung', icon: QuantityTakeoffIcon, pageIcon: QuantityTakeoffHifi },
+      { id: 'glossar', num: '', title: 'Glossar', path: 'glossar', icon: NoteBlockIcon, pageIcon: NoteBlockHifi, isReferencePage: true },
+      { id: 'formelsammlung', num: '', title: 'Formelsammlung', path: 'formelsammlung', icon: QuantityTakeoffIcon, pageIcon: QuantityTakeoffHifi, isReferencePage: true },
     ],
   },
   {
@@ -189,11 +190,14 @@ export function findChapterByPath(path: string): Chapter | undefined {
   return ALL_CHAPTERS.find(c => c.path === path || c.id === path)
 }
 
+const NAV_CHAPTERS = ALL_CHAPTERS.filter(c => !c.isReferencePage)
+
 export function getNavigation(id: string): { prev: Chapter | null; next: Chapter | null } {
-  const idx = ALL_CHAPTERS.findIndex(c => c.id === id)
+  const idx = NAV_CHAPTERS.findIndex(c => c.id === id)
+  if (idx < 0) return { prev: null, next: null }
   return {
-    prev: idx > 0 ? ALL_CHAPTERS[idx - 1] : null,
-    next: idx >= 0 && idx < ALL_CHAPTERS.length - 1 ? ALL_CHAPTERS[idx + 1] : null,
+    prev: idx > 0 ? NAV_CHAPTERS[idx - 1] : null,
+    next: idx < NAV_CHAPTERS.length - 1 ? NAV_CHAPTERS[idx + 1] : null,
   }
 }
 
