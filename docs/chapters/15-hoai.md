@@ -71,6 +71,8 @@ Das Honorar errechnet sich aus:
 
 Beispiel: Wohngebäude, anrechenbare Kosten 2 Mio. €, Honorarzone III (Mitte) → Grundhonorar ca. 170.000 €. Wird LP 5 vollständig erbracht: 25 % davon = ca. 42.500 € für die Ausführungsplanung allein.
 
+<calc-hoai></calc-hoai>
+
 ---
 
 !!! tip "BIM-Brücke"

@@ -12,8 +12,9 @@ export function preprocessMarkdown(raw: string): string {
   )
 
   // 2. Convert !!! type "title"\n    content → <div class="admonition …">
+  // Body pattern also captures blank lines so multi-paragraph/code/table blocks stay inside
   out = out.replace(
-    /^!!! (\w+)(?:\s+"([^"]*)")?\n((?:(?:    |\t)[^\n]*\n?)*)/gm,
+    /^!!! (\w+)(?:\s+"([^"]*)")?\n((?:(?:(?:    |\t)[^\n]*|)\n)*)/gm,
     (_match, type: string, title: string | undefined, body: string) => {
       const content = body.replace(/^(    |\t)/gm, '').trim()
       const titleHtml = title
@@ -23,7 +24,12 @@ export function preprocessMarkdown(raw: string): string {
     },
   )
 
-  // 3. Fix relative image paths: ../assets/ → /assets/
+  // 3. Convert LaTeX \[...\] display math → $$...$$ (remark-math v6 only supports $/$$ delimiters)
+  out = out.replace(/\\\[([\s\S]*?)\\\]/g, (_, math) => `$$${math}$$`)
+  // Convert \(...\) inline math → $...$
+  out = out.replace(/\\\(([\s\S]*?)\\\)/g, (_, math) => `$${math}$`)
+
+  // 4. Fix relative image paths: ../assets/ → /assets/
   out = out.replace(/\]\(\.\.\/assets\//g, '](/assets/')
 
   return out

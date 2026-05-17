@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "bim-book": {
+      "command": "npx",
+      "args": ["tsx", "server/src/mcp-server.ts"],
+      "env": {}
+    }
+  }
+}

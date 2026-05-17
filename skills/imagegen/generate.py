@@ -13,6 +13,7 @@ import argparse
 import base64
 import json
 import os
+import re
 import sys
 import urllib.request
 import urllib.error
@@ -21,6 +22,7 @@ from datetime import datetime
 
 REPO_ROOT = Path(__file__).parent.parent.parent
 STYLE_CONFIG = Path(__file__).parent / "style_config.json"
+MANIFEST_PATH = REPO_ROOT / "assets" / "image-manifest.json"
 
 MAX_QA_ATTEMPTS = 3
 QA_MODEL = "gpt-4o"
@@ -56,7 +58,72 @@ def load_style_config():
         return json.load(f)
 
 
-def build_prompt(description: str, img_type: str, config: dict) -> str:
+CHAPTER_PARTS = {
+    **{n: ("I",   "Teil I – Fundament")            for n in range(1,  3)},
+    **{n: ("II",  "Teil II – Baukörper")            for n in range(3,  6)},
+    **{n: ("III", "Teil III – Bauphysik")           for n in range(6,  10)},
+    **{n: ("IV",  "Teil IV – TGA")                  for n in range(10, 14)},
+    **{n: ("V",   "Teil V – Recht & Prozess")       for n in range(14, 17)},
+    **{n: ("VI",  "Teil VI – BIM")                  for n in range(17, 22)},
+    **{n: ("VII", "Teil VII – Nachhaltigkeit")      for n in range(22, 25)},
+}
+
+CHAPTER_PATHS = {
+    1:  "chapters/01-architektur-als-system",
+    2:  "chapters/02-entwurf-raum-funktion",
+    3:  "chapters/03-baustoffe",
+    4:  "chapters/04-tragwerk",
+    5:  "chapters/05-konstruktion",
+    6:  "chapters/06-waermeschutz-geg",
+    7:  "chapters/07-feuchteschutz",
+    8:  "chapters/08-schallschutz",
+    9:  "chapters/09-brandschutz",
+    10: "chapters/10-heizung-waermeversorgung",
+    11: "chapters/11-lueftung",
+    12: "chapters/12-sanitaer",
+    13: "chapters/13-elektro",
+    14: "chapters/14-planungsrecht",
+    15: "chapters/15-hoai",
+    16: "chapters/16-kosten-ausschreibung",
+    17: "chapters/17-was-bim-wirklich-ist",
+    18: "chapters/18-ifc",
+    19: "chapters/19-klassifikation",
+    20: "chapters/20-prozess-kollaboration",
+    21: "chapters/21-bim-praxis",
+    22: "chapters/22-nachhaltigkeit",
+    23: "chapters/23-sanierung",
+    24: "chapters/24-digitaler-zwilling-ki",
+}
+
+CHAPTER_TITLES = {
+    1:  "Architektur als System",
+    2:  "Entwurf, Raum und Funktion",
+    3:  "Baustoffe",
+    4:  "Tragwerk: Lasten, Kräfte, Systeme",
+    5:  "Konstruktion: Gründung, Wand, Decke, Dach",
+    6:  "Wärmeschutz & GEG",
+    7:  "Feuchteschutz",
+    8:  "Schallschutz",
+    9:  "Brandschutz",
+    10: "Heizung & Wärmeversorgung",
+    11: "Lüftung & Raumluftqualität",
+    12: "Sanitär & Entwässerung",
+    13: "Elektro & Gebäudeautomation",
+    14: "Planungsrecht",
+    15: "HOAI: Phasen, Leistungen, Koordination",
+    16: "Kosten & Ausschreibung",
+    17: "Was BIM wirklich ist",
+    18: "IFC: Die Sprache des digitalen Gebäudes",
+    19: "Klassifikation",
+    20: "Prozess & Kollaboration",
+    21: "BIM in der Praxis",
+    22: "Nachhaltigkeit & Kreislaufwirtschaft",
+    23: "Sanierung",
+    24: "Digitaler Zwilling & KI",
+}
+
+
+def build_prompt(description: str, img_type: str, context: str, config: dict) -> str:
     base = config["base_style_prompt"]
     variant = config["type_variants"].get(img_type, config["type_variants"]["diagram"])
     type_suffix = variant["prompt_suffix"]
@@ -68,7 +135,51 @@ def build_prompt(description: str, img_type: str, config: dict) -> str:
         f"pure white background {palette['background']}, "
         f"near-black lines and text {palette['ink']}."
     )
-    return f"{base}\n\n{type_suffix}\n\n{color_hint}\n\nSubject: {description}"
+    building_ctx = ""
+    if context == "kastanienallee":
+        building_ctx = f"\n\nBuilding context: {config['kastanienallee_context']}"
+    return f"{base}\n\n{type_suffix}\n\n{color_hint}{building_ctx}\n\nSubject: {description}"
+
+
+def update_manifest(name: str, img_type: str, context: str, tags: str,
+                    caption: str, description: str, generated: str):
+    manifest = {"version": 1, "images": []}
+    if MANIFEST_PATH.exists():
+        with open(MANIFEST_PATH) as f:
+            manifest = json.load(f)
+
+    m = re.match(r"kap(\d+)_", name)
+    chapter = int(m.group(1)) if m else None
+    part, part_title = CHAPTER_PARTS.get(chapter, ("?", "Unbekannt")) if chapter else ("?", "Unbekannt")
+    chapter_title = CHAPTER_TITLES.get(chapter, "") if chapter else ""
+    chapter_path = CHAPTER_PATHS.get(chapter, "") if chapter else ""
+
+    tag_list = [t.strip() for t in tags.split(",")] if tags else []
+    used_caption = caption if caption else (description[:120] + "…" if len(description) > 120 else description)
+
+    entry = {
+        "file": f"{name}.png",
+        "chapter": chapter,
+        "part": part,
+        "partTitle": part_title,
+        "chapterTitle": chapter_title,
+        "type": img_type,
+        "context": context,
+        "caption": used_caption,
+        "tags": tag_list,
+        "chapterPath": chapter_path,
+        "generated": generated,
+    }
+
+    images = [img for img in manifest.get("images", []) if img.get("file") != entry["file"]]
+    images.append(entry)
+    images.sort(key=lambda x: x.get("chapter") or 999)
+    manifest["images"] = images
+
+    MANIFEST_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with open(MANIFEST_PATH, "w", encoding="utf-8") as f:
+        json.dump(manifest, f, ensure_ascii=False, indent=2)
+    return MANIFEST_PATH
 
 
 def apply_correction(base_prompt: str, issues: list, correction: str) -> str:
@@ -292,6 +403,24 @@ def main():
             "Oder explizit: 1024x1536. Standard: Typ-abhängig aus style_config.json."
         ),
     )
+    parser.add_argument(
+        "--context", "-c",
+        choices=["generic", "kastanienallee"],
+        default="generic",
+        help="Bildkontext: 'kastanienallee' injiziert Gebäudebeschreibung in den Prompt.",
+    )
+    parser.add_argument(
+        "--tags",
+        default=None,
+        metavar="TAG1,TAG2,...",
+        help="Kommagetrennte Stichwörter für das Bildmanifest (z.B. 'tragwerk,massivbau,vergleich').",
+    )
+    parser.add_argument(
+        "--caption",
+        default=None,
+        metavar="TEXT",
+        help="Kurzbeschreibung fürs Manifest (max ~100 Zeichen). Standard: Anfang von --desc.",
+    )
     parser.add_argument("--dry-run", action="store_true",
                         help="Zeigt generierten Prompt ohne API-Aufruf")
     parser.add_argument("--skip-qa", action="store_true",
@@ -300,7 +429,7 @@ def main():
 
     load_env()
     config = load_style_config()
-    base_prompt = build_prompt(args.desc, args.type, config)
+    base_prompt = build_prompt(args.desc, args.type, args.context, config)
 
     try:
         size = resolve_size(args.size, args.type, config)
@@ -313,8 +442,11 @@ def main():
         print("DRY RUN – Kein API-Aufruf")
         print("=" * 60)
         print(f"Typ:          {args.type}")
+        print(f"Kontext:      {args.context}")
         print(f"Größe:        {size}{' (Alias: ' + args.size + ')' if args.size else ' (Typ-Standard)'}")
         print(f"Beschreibung: {args.desc}")
+        print(f"Caption:      {args.caption or '(auto)'}")
+        print(f"Tags:         {args.tags or '(keine)'}")
         print(f"Dateiname:    {args.name}.png")
         print(f"QA-Modell:    {QA_MODEL} (max. {MAX_QA_ATTEMPTS} Versuche)")
         print()
@@ -407,9 +539,16 @@ def main():
     save_image(image_data, output_path)
     log_path = save_prompt_log(output_path, current_prompt, args.desc, args.type, qa_log)
 
+    generated_ts = datetime.now().strftime("%Y-%m-%d %H:%M")
+    manifest_path = update_manifest(
+        args.name, args.type, args.context,
+        args.tags, args.caption, args.desc, generated_ts,
+    )
+
     attempts_used = len(qa_log)
     print(f"✓ Bild gespeichert:   {output_path.relative_to(REPO_ROOT)}  (Versuche: {attempts_used})")
     print(f"✓ QA-Log gespeichert: {log_path.relative_to(REPO_ROOT)}")
+    print(f"✓ Manifest aktualisiert: {manifest_path.relative_to(REPO_ROOT)}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "images": [
+    {
+      "file": "kap01_schichtenmodell.png",
+      "chapter": 1,
+      "part": "I",
+      "partTitle": "Teil I – Fundament",
+      "chapterTitle": "Architektur als System",
+      "type": "isometric",
+      "context": "kastanienallee",
+      "caption": "Schichtenmodell: Tragstruktur, Hülle, TGA und Innenausbau",
+      "tags": ["schichtenmodell", "tragstruktur", "gebaeudehuelle", "tga", "innenausbau"],
+      "chapterPath": "chapters/01-architektur-als-system",
+      "generated": "2026-05-17 11:13"
+    },
+    {
+      "file": "kap02_grundriss_eg.png",
+      "chapter": 2,
+      "part": "I",
+      "partTitle": "Teil I – Fundament",
+      "chapterTitle": "Entwurf, Raum und Funktion",
+      "type": "floorplan",
+      "context": "kastanienallee",
+      "caption": "Grundriss Erdgeschoss: Eingang, Treppenhaus, drei Wohneinheiten",
+      "tags": ["grundriss", "erdgeschoss", "erschliessung", "wohneinheiten", "barrierefreiheit"],
+      "chapterPath": "chapters/02-entwurf-raum-funktion",
+      "generated": "2026-05-17 11:13"
+    },
+    {
+      "file": "kap04_tragsysteme_vergleich.png",
+      "chapter": 4,
+      "part": "II",
+      "partTitle": "Teil II – Baukörper",
+      "chapterTitle": "Tragwerk: Lasten, Kräfte, Systeme",
+      "type": "comparison",
+      "context": "generic",
+      "caption": "Tragsysteme im Vergleich: Massivbau, Holztafelbau, Stahlskelettbau",
+      "tags": ["tragwerk", "massivbau", "holztafelbau", "stahlbau", "vergleich", "lastpfad"],
+      "chapterPath": "chapters/04-tragwerk",
+      "generated": "2026-05-17 11:13"
+    },
+    {
+      "file": "kap05_flachdach_aufbau.png",
+      "chapter": 5,
+      "part": "II",
+      "partTitle": "Teil II – Baukörper",
+      "chapterTitle": "Konstruktion: Gründung, Wand, Decke, Dach",
+      "type": "section",
+      "context": "kastanienallee",
+      "caption": "Flachdach Warmkonstruktion: Schichtenfolge mit U-Wert 0,17 W/(m²K)",
+      "tags": ["flachdach", "warmdach", "daemmung", "eps", "dachabdichtung", "begrunung", "u-wert"],
+      "chapterPath": "chapters/05-konstruktion",
+      "generated": "2026-05-17 11:12"
+    },
+    {
+      "file": "kap06_wandaufbau_wdvs.png",
+      "chapter": 6,
+      "part": "III",
+      "partTitle": "Teil III – Bauphysik",
+      "chapterTitle": "Wärmeschutz & GEG",
+      "type": "section",
+      "context": "kastanienallee",
+      "caption": "Wandquerschnitt WDVS: Innenputz bis Silikonharzputz, U = 0,19 W/(m²K)",
+      "tags": ["wand", "wdvs", "mineralwolle", "waermeschutz", "u-wert", "schnitt", "schichtaufbau"],
+      "chapterPath": "chapters/06-waermeschutz-geg",
+      "generated": "2026-05-17 11:22"
+    },
+    {
+      "file": "kap10_heizkreis_schema.png",
+      "chapter": 10,
+      "part": "IV",
+      "partTitle": "Teil IV – TGA",
+      "chapterTitle": "Heizung & Wärmeversorgung",
+      "type": "diagram",
+      "context": "kastanienallee",
+      "caption": "Hydraulisches Schema: Fernwärme-Übergabe, Verteiler, drei Fußbodenheizkreise",
+      "tags": ["heizung", "fernwaerme", "hydraulik", "fussbodenheizung", "tga", "schema", "vorlauf", "ruecklauf"],
+      "chapterPath": "chapters/10-heizung-waermeversorgung",
+      "generated": "2026-05-17 11:13"
+    },
+    {
+      "file": "kap15_hoai_phasen.png",
+      "chapter": 15,
+      "part": "V",
+      "partTitle": "Teil V – Recht & Prozess",
+      "chapterTitle": "HOAI: Phasen, Leistungen, Koordination",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "HOAI Leistungsphasen LP1–LP9 als Zeitstrahl",
+      "tags": ["hoai", "leistungsphasen", "planung", "prozess", "lp1", "lp9", "honorar"],
+      "chapterPath": "chapters/15-hoai",
+      "generated": "2026-05-17 11:13"
+    },
+    {
+      "file": "kap18_ifc_hierarchie.png",
+      "chapter": 18,
+      "part": "VI",
+      "partTitle": "Teil VI – BIM",
+      "chapterTitle": "IFC: Die Sprache des digitalen Gebäudes",
+      "type": "diagram",
+      "context": "kastanienallee",
+      "caption": "IFC-Projekthierarchie: IfcProject → IfcSite → IfcBuilding → IfcBuildingStorey → IfcSpace",
+      "tags": ["ifc", "hierarchie", "bim", "datenmodell", "ifcproject", "ifcspace", "kastanienallee7"],
+      "chapterPath": "chapters/18-ifc",
+      "generated": "2026-05-17 11:13"
+    },
+    {
+      "file": "kap22_lca_baustoffe.png",
+      "chapter": 22,
+      "part": "VII",
+      "partTitle": "Teil VII – Nachhaltigkeit",
+      "chapterTitle": "Nachhaltigkeit & Kreislaufwirtschaft",
+      "type": "comparison",
+      "context": "generic",
+      "caption": "LCA-Vergleich: CO₂-Bilanz von Beton, Holz und Stahl",
+      "tags": ["nachhaltigkeit", "lca", "co2", "beton", "holz", "stahl", "kreislaufwirtschaft", "epd"],
+      "chapterPath": "chapters/22-nachhaltigkeit",
+      "generated": "2026-05-17 11:15"
+    }
+  ]
+}

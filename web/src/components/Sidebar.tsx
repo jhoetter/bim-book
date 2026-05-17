@@ -16,6 +16,18 @@ export function Sidebar() {
         <span className="sidebar-subtitle">Johannes Hötter</span>
       </div>
 
+      <div className="sidebar-gallery-link">
+        <NavLink
+          to="/gallery"
+          className={({ isActive }) =>
+            ['sidebar-link sidebar-link--gallery', isActive ? 'sidebar-link--active' : ''].join(' ').trim()
+          }
+        >
+          <span className="sidebar-gallery-icon">▦</span>
+          <span className="sidebar-link-title">Bildgalerie</span>
+        </NavLink>
+      </div>
+
       <div className="sidebar-nav">
         {PARTS.map(part => (
           <div key={part.title} className="sidebar-part">

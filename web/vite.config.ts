@@ -6,8 +6,10 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 2101,
+    proxy: {
+      '/api': 'http://localhost:3001',
+    },
     watch: {
-      // Watch docs/ outside the Vite root so HMR fires on markdown edits
       ignored: (path: string) => path.includes('node_modules') || path.includes('.git'),
     },
   },

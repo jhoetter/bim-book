@@ -39,6 +39,8 @@ R_T = R_{si} + \sum_{i} \frac{d_i}{\lambda_i} + R_{se}
 
 Die Wärmeleitfähigkeit \(\lambda\) ist ein Materialkennwert: Mineralwolle hat λ = 0,035 W/(mK), Stahlbeton λ = 2,3 W/(mK). Der Widerstand einer Schicht wächst mit der Dicke und sinkt mit der Wärmeleitfähigkeit.
 
+<calc-u-value></calc-u-value>
+
 ---
 
 ## 6.3 Rechenbeispiel: WDVS-Außenwand Kastanienallee 7

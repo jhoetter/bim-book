@@ -7,8 +7,21 @@ import rehypeKatex from 'rehype-katex'
 import rehypeSlug from 'rehype-slug'
 import rehypeHighlight from 'rehype-highlight'
 import rehypeRaw from 'rehype-raw'
+import 'katex/dist/katex.min.css'
 import 'highlight.js/styles/github.css'
 import { preprocessMarkdown } from '../lib/markdown'
+import { CalcUValue }   from './calculators/CalcUValue'
+import { CalcDewPoint } from './calculators/CalcDewPoint'
+import { CalcSound }    from './calculators/CalcSound'
+import { CalcHoai }     from './calculators/CalcHoai'
+import type { Components } from 'react-markdown'
+
+const CALC_COMPONENTS = {
+  'calc-u-value':  () => <CalcUValue />,
+  'calc-dewpoint': () => <CalcDewPoint />,
+  'calc-sound':    () => <CalcSound />,
+  'calc-hoai':     () => <CalcHoai />,
+} as unknown as Partial<Components>
 
 interface LightboxState {
   src: string
@@ -43,6 +56,7 @@ export function MarkdownPage({ content }: Props) {
           remarkPlugins={[remarkGfm, remarkMath]}
           rehypePlugins={[rehypeRaw, rehypeSlug, rehypeKatex, rehypeHighlight]}
           components={{
+            ...CALC_COMPONENTS,
             img({ src, alt }) {
               return (
                 <figure>

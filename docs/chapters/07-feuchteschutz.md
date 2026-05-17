@@ -9,6 +9,8 @@ Feuchtigkeit ist der häufigste Schadensverursacher in Gebäuden – und oft der
 !!! note "Kapitel in Bearbeitung"
     Dieses Kapitel wird derzeit ausgearbeitet. Der vollständige Text erscheint in der nächsten Revision.
 
+<calc-dewpoint></calc-dewpoint>
+
 ---
 
 !!! tip "BIM-Brücke"

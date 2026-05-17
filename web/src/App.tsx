@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route, useParams, useLocation, Navigate } from 'react-router-dom'
 import { Sidebar } from './components/Sidebar'
 import { MarkdownPage } from './components/MarkdownPage'
+import { Gallery } from './components/Gallery'
+import { ChatPanel } from './components/ChatPanel'
 import { getContent, getNavigation, ALL_CHAPTERS } from './chapters'
 import { NavLink } from 'react-router-dom'
 
@@ -76,12 +78,14 @@ export function App() {
         <div className="content-area">
           <Routes>
             <Route path="/" element={<IndexRoute />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="/chapters/*" element={<ChapterRoute />} />
             <Route path="/appendix/*" element={<ChapterRoute />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </div>
       </div>
+      <ChatPanel />
     </BrowserRouter>
   )
 }

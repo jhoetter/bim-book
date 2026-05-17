@@ -9,6 +9,8 @@ Lärm ist nach Temperatur das zweithäufigste Beschwerdefeld von Mietern. Dieses
 !!! note "Kapitel in Bearbeitung"
     Dieses Kapitel wird derzeit ausgearbeitet. Der vollständige Text erscheint in der nächsten Revision.
 
+<calc-sound></calc-sound>
+
 ---
 
 !!! tip "BIM-Brücke"

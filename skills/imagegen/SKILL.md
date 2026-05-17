@@ -17,6 +17,9 @@ python3 skills/imagegen/generate.py \
   --type <TYP> \
   --desc "<BESCHREIBUNG AUF DEUTSCH>" \
   --name "<DATEINAME>" \
+  [--context <KONTEXT>]      # generic (Standard) | kastanienallee
+  [--caption "<TEXT>"]       # Kurzbeschreibung fürs Manifest (~100 Zeichen)
+  [--tags "tag1,tag2,..."]   # Stichwörter fürs Manifest (kommagetrennt)
   [--size <GRÖSSE>]          # optional, sonst Typ-Standard
   [--skip-qa]                # QA überspringen (für schnelle Tests)
 ```
@@ -69,6 +72,20 @@ Beispiele:
 
 Bilder werden in `assets/illustrations/` gespeichert.
 Zu jedem Bild wird automatisch eine `.prompt.txt` gespeichert (für Reproduzierbarkeit).
+
+## Bildkontext (`--context`)
+
+| Wert | Wann verwenden |
+|------|---------------|
+| `generic` | Allgemeine Lehrillustration ohne Gebäudebezug (Standard) |
+| `kastanienallee` | Bild bezieht sich auf das Leitbeispiel Kastanienallee 7 – injiziert automatisch die Gebäudebeschreibung in den Prompt |
+
+## Manifest-Eintrag
+
+Jedes erzeugte Bild wird automatisch in `assets/image-manifest.json` eingetragen. Pflichtfelder (`--type`, `--name`) werden automatisch ausgewertet. Optional:
+
+- `--caption "Kurztext"` – erscheint in der Bildgalerie als Bildunterschrift
+- `--tags "wand,daemmung,u-wert"` – Filter-Stichwörter in der Galerie
 
 ## Konsistenter Stil
 
