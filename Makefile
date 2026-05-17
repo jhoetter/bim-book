@@ -1,22 +1,21 @@
 .PHONY: install dev build clean img
 
 install:
-	pip3 install mkdocs mkdocs-material pillow
-	@mkdir -p docs/assets
-	@ln -sfn "$(CURDIR)/assets/illustrations" docs/assets/illustrations 2>/dev/null || true
-	@ln -sfn "$(CURDIR)/assets/diagrams" docs/assets/diagrams 2>/dev/null || true
+	pip3 install pillow
+	@mkdir -p web/public
+	@ln -sfn ../../assets web/public/assets 2>/dev/null || true
+	cd web && npm install
 	@echo ""
-	@echo "Installation abgeschlossen."
-	@echo "Starte Entwicklungsserver mit: make dev"
+	@echo "Installation abgeschlossen. Starte mit: make dev"
 
 dev:
-	PATH="$$PATH:$$HOME/Library/Python/3.9/bin" mkdocs serve --dev-addr localhost:2100
+	cd web && npm run dev
 
 build:
-	mkdocs build --clean
+	cd web && npm run build
 
 clean:
-	rm -rf site/
+	rm -rf web/dist web/node_modules
 
 # Bild generieren: make img TYPE=section DESC="..." NAME="kap06_wandaufbau"
 img:
