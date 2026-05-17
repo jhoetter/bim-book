@@ -291,7 +291,7 @@ html, body, #root {
 }
 
 .sidebar-nav-top {
-  padding: 8px 8px 0;
+  padding: 8px 0 0;
   border-bottom: 1px solid var(--border-soft);
   margin-bottom: 2px;
 }
