@@ -8,6 +8,7 @@ import { Gallery } from './components/Gallery'
 import { Overview } from './components/Overview'
 import { ChatPanel } from './components/ChatPanel'
 import { CommandPalette } from './components/CommandPalette'
+import { PdfPrintView } from './components/PdfPrintView'
 import { getContent, getNavigation, ALL_CHAPTERS } from './chapters'
 
 const SIDEBAR_MIN = 180
@@ -59,64 +60,51 @@ function ChapterRoute() {
   const chapter = ALL_CHAPTERS.find(c => c.path === path)
   const id = chapter?.id ?? (slug ?? '')
   const [imgFailed, setImgFailed] = useState(false)
-  const rafRef = useRef(0)
+  const observerRef = useRef<IntersectionObserver | null>(null)
 
-  // Reset error state when navigating to a different chapter
   useEffect(() => { setImgFailed(false) }, [path])
 
+  // Instant-jump to hash on load (no animation — just land there)
   useEffect(() => {
     if (!location.hash) return
     const elId = location.hash.slice(1)
-    const scroll = () => document.getElementById(elId)?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    const jump = () => document.getElementById(elId)?.scrollIntoView({ behavior: 'instant', block: 'start' })
     const el = document.getElementById(elId)
-    if (el) {
-      scroll()
-    } else {
-      const t = setTimeout(scroll, 120)
+    if (el) jump()
+    else {
+      const t = setTimeout(jump, 80)
       return () => clearTimeout(t)
     }
   }, [location.hash, path])
 
-  // Update URL hash as user scrolls so reload restores scroll position
+  // Mirror TOC's IntersectionObserver to keep URL hash in sync while scrolling
   useEffect(() => {
-    const contentArea = document.querySelector<HTMLElement>('.content-area')
-    if (!contentArea) return
+    const scrollRoot = document.querySelector<HTMLElement>('.content-area')
+    if (!scrollRoot) return
 
-    let headings: HTMLElement[] = []
-
-    const onScroll = () => {
-      if (rafRef.current) return
-      rafRef.current = requestAnimationFrame(() => {
-        rafRef.current = 0
-        if (!headings.length) return
-        const threshold = contentArea.getBoundingClientRect().top + 96
-        let current: HTMLElement | null = null
-        for (const h of headings) {
-          if (h.getBoundingClientRect().top <= threshold) current = h
-          else break
-        }
-        const newHash = current?.id ? `#${current.id}` : ''
-        const target = window.location.pathname + newHash
-        if (window.location.pathname + window.location.hash !== target) {
-          history.replaceState(null, '', target)
-        }
-      })
-    }
-
-    // Delay attaching the listener so the initial scroll-to-hash animation
-    // doesn't immediately overwrite the hash we just navigated to
     const t = setTimeout(() => {
-      headings = Array.from(
-        document.querySelectorAll<HTMLElement>('.prose h1[id], .prose h2[id], .prose h3[id], .prose h4[id]')
+      observerRef.current?.disconnect()
+      observerRef.current = new IntersectionObserver(
+        entries => {
+          const visible = entries
+            .filter(e => e.isIntersecting)
+            .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
+          if (!visible.length) return
+          const newId = visible[0].target.id
+          const target = window.location.pathname + '#' + newId
+          if (window.location.pathname + window.location.hash !== target) {
+            history.replaceState(null, '', target)
+          }
+        },
+        { root: scrollRoot, rootMargin: '-80px 0px -70% 0px', threshold: 0 }
       )
-      contentArea.addEventListener('scroll', onScroll, { passive: true })
-    }, 400)
+      document.querySelectorAll<HTMLElement>('.prose h1[id], .prose h2[id], .prose h3[id]')
+        .forEach(el => observerRef.current!.observe(el))
+    }, 80)
 
     return () => {
       clearTimeout(t)
-      cancelAnimationFrame(rafRef.current)
-      rafRef.current = 0
-      contentArea.removeEventListener('scroll', onScroll)
+      observerRef.current?.disconnect()
     }
   }, [path])
 
@@ -152,6 +140,7 @@ function AppLayout() {
   )
   const [sidebarWidth, setSidebarWidth] = useState(SIDEBAR_DEFAULT)
   const [paletteOpen, setPaletteOpen] = useState(false)
+  const [isPrinting, setIsPrinting] = useState(false)
   const resizeRef = useRef<{ startX: number; startWidth: number } | null>(null)
 
   const toggle = useCallback(() => setSidebarOpen(v => !v), [])
@@ -174,7 +163,7 @@ function AppLayout() {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       const target = e.target as HTMLElement
-      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+      if ((e.metaKey || e.ctrlKey) && e.code === 'KeyK') {
         e.preventDefault()
         setPaletteOpen(v => !v)
         return
@@ -185,6 +174,13 @@ function AppLayout() {
     }
     document.addEventListener('keydown', onKey)
     return () => document.removeEventListener('keydown', onKey)
+  }, [])
+
+  // PDF export trigger
+  useEffect(() => {
+    const handler = () => setIsPrinting(true)
+    document.addEventListener('bim:export-pdf', handler)
+    return () => document.removeEventListener('bim:export-pdf', handler)
   }, [])
 
   const handleResizeStart = useCallback((e: PointerEvent<HTMLDivElement>) => {
@@ -219,47 +215,58 @@ function AppLayout() {
   }, [sidebarWidth])
 
   return (
-    <div
-      className={`layout${sidebarOpen ? '' : ' layout--collapsed'}`}
-      style={{ '--sidebar-w': `${sidebarWidth}px` } as React.CSSProperties}
-    >
-      <Sidebar />
-      {sidebarOpen && (
-        <div
-          className="sidebar-backdrop"
-          onClick={() => setSidebarOpen(false)}
-          aria-hidden="true"
-        />
-      )}
-      {sidebarOpen && (
-        <div
-          className="sidebar-resize-handle"
-          onPointerDown={handleResizeStart}
-          role="separator"
-          aria-label="Sidebar vergrößern"
-          aria-orientation="vertical"
-        />
-      )}
-      <TableOfContents />
-      <div className="main-area">
-        <Topbar sidebarOpen={sidebarOpen} onToggle={toggle} onOpenPalette={() => setPaletteOpen(true)} />
-        <div className="content-area">
-          <Routes>
-            <Route path="/" element={<Overview />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/chapters/*" element={<ChapterRoute />} />
-            <Route path="/appendix/*" element={<ChapterRoute />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
-          </Routes>
+    <>
+      <div
+        className={`layout${sidebarOpen ? '' : ' layout--collapsed'}`}
+        style={{ '--sidebar-w': `${sidebarWidth}px` } as React.CSSProperties}
+      >
+        <Sidebar />
+        {sidebarOpen && (
+          <div
+            className="sidebar-backdrop"
+            onClick={() => setSidebarOpen(false)}
+            aria-hidden="true"
+          />
+        )}
+        {sidebarOpen && (
+          <div
+            className="sidebar-resize-handle"
+            onPointerDown={handleResizeStart}
+            role="separator"
+            aria-label="Sidebar vergrößern"
+            aria-orientation="vertical"
+          />
+        )}
+        <TableOfContents />
+        <div className="main-area">
+          <Topbar sidebarOpen={sidebarOpen} onToggle={toggle} onOpenPalette={() => setPaletteOpen(true)} />
+          <div className="content-area">
+            <Routes>
+              <Route path="/" element={<Overview />} />
+              <Route path="/gallery" element={<Gallery />} />
+              <Route path="/chapters/*" element={<ChapterRoute />} />
+              <Route path="/appendix/*" element={<ChapterRoute />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
+            </Routes>
+          </div>
         </div>
+        {paletteOpen && (
+          <CommandPalette
+            onClose={() => setPaletteOpen(false)}
+            onToggleSidebar={toggle}
+          />
+        )}
+        {isPrinting && (
+          <div className="pdf-preparing-overlay" aria-live="polite">
+            <div className="pdf-preparing-msg">
+              <div className="pdf-preparing-spinner" aria-hidden="true" />
+              PDF wird vorbereitet…
+            </div>
+          </div>
+        )}
       </div>
-      {paletteOpen && (
-        <CommandPalette
-          onClose={() => setPaletteOpen(false)}
-          onToggleSidebar={toggle}
-        />
-      )}
-    </div>
+      {isPrinting && <PdfPrintView onDone={() => setIsPrinting(false)} />}
+    </>
   )
 }
 
