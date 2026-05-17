@@ -107,7 +107,7 @@ Das Treppenhaus muss nach DIN 18065 dimensioniert sein: Mindestbreite 1,00 m (em
 **Horizontale Erschließung** sind Flure und Vorräume. Im Zweispänner ist die Erschließungsfläche minimal: Jede Wohnung hat einen eigenen Eingangsbereich, der direkt in den Wohnungsflur führt.
 
 !!! tip "Treppenhaus als Fluchtweg"
-    Das Treppenhaus ist immer auch notwendiger Treppenraum im Sinne des Brandschutzes. Die Anforderungen an Brandschutz und Rettungswege ([→ Kapitel 9](/chapters/09-brandschutz)) beeinflussen Breiten, Materialien und die Lage von Türen und Fenstern. Eine Außenwandöffnung (Fenster oder maschinelle Entrauchung) im Treppenhaus ist in den meisten Bundesländern Pflicht.
+    Das Treppenhaus ist immer auch notwendiger Treppenraum im Sinne des Brandschutzes. Die Anforderungen an Brandschutz und Rettungswege (siehe [Kapitel 9](/chapters/09-brandschutz)) beeinflussen Breiten, Materialien und die Lage von Türen und Fenstern. Eine Außenwandöffnung (Fenster oder maschinelle Entrauchung) im Treppenhaus ist in den meisten Bundesländern Pflicht.
 
 ---
 
@@ -157,4 +157,4 @@ Am Ende ist der Grundriss nicht nur ein Entwurfsergebnis – er ist das zentrale
 
 Deshalb ist der Grundriss das erste Dokument, das bei einer Planungsänderung aktualisiert werden muss – und das letzte, das ohne Rücksprache mit allen Beteiligten verändert werden sollte.
 
-In der digitalen Planungsmethodik wird der Grundriss zur dritten Dimension erweitert: Das räumliche Modell des Gebäudes enthält nicht nur Flächen, sondern Volumen, Materialien und Informationen – und kann von allen Planern gleichzeitig bearbeitet und auf Konflikte geprüft werden. Wie das funktioniert, behandelt Teil VI dieses Buches ([→ Kapitel 17–21](/chapters/17-was-bim-wirklich-ist)).
+In der digitalen Planungsmethodik wird der Grundriss zur dritten Dimension erweitert: Das räumliche Modell des Gebäudes enthält nicht nur Flächen, sondern Volumen, Materialien und Informationen – und kann von allen Planern gleichzeitig bearbeitet und auf Konflikte geprüft werden. Wie das funktioniert, behandelt [Teil VI](/chapters/17-was-bim-wirklich-ist) dieses Buches.

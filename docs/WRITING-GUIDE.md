@@ -75,6 +75,16 @@ Eine **::Wärmebrücke::** entsteht, wenn...
 **Wichtig:** Der Text innerhalb `::...::` muss exakt (case-insensitive) mit einer Term-ID
 aus dem Glossar übereinstimmen. Verfügbare IDs findest du in `web/src/data/glossar.ts`.
 
+**Niemals `**fett**` als Ersatz für einen fehlenden Glossareintrag verwenden.**
+`**fett**` ist ausschließlich für:
+- Labels in Listen (`**Wärmeversorgung:** Fernwärme …`)
+- Leit- oder Zusammenfassungssätze (`**Tragwerk begrenzt Hülle und Innenausbau.**`)
+- Nicht-terminologische Hervorhebungen
+
+Wenn ein Fachbegriff hervorgehoben werden soll, der noch nicht im Glossar steht:
+1. Eintrag in `web/src/data/glossar.ts` anlegen (id, term, definition, thema, typ)
+2. Dann `::Begriff::` im Markdown verwenden
+
 ### Häufige Term-IDs (Kurzreferenz)
 
 | Schreibweise im Text | Term-ID |
@@ -108,6 +118,28 @@ aus dem Glossar übereinstimmen. Verfügbare IDs findest du in `web/src/data/glo
 | `::Glaser-Verfahren::` | glaser-verfahren |
 | `::Lastfall::` | lastfall |
 | `::Embodied Carbon::` | embodied-carbon |
+| `::Schichtenmodell::` | schichtenmodell |
+
+### Neuen Glossareintrag anlegen
+
+Wenn ein Begriff fehlt, zuerst in `web/src/data/glossar.ts` eintragen, dann erst im Markdown referenzieren:
+
+```ts
+{
+  id: 'schichtenmodell',           // kebab-case, alphabetisch einsortieren
+  term: 'Schichtenmodell',         // Anzeigename
+  abbrev: 'SM',                    // nur wenn offiziell gebräuchliche Abkürzung existiert
+  definition: 'Kurze, präzise Definition …',
+  thema: 'Konstruktion',           // einer der GlossThema-Werte (siehe unten)
+  typ: 'Begriff',                  // einer der GlossTyp-Werte (siehe unten)
+}
+```
+
+**Erlaubte `thema`-Werte:** `BIM` · `Wärmeschutz` · `Feuchteschutz` · `Schallschutz` · `Brandschutz` · `TGA` · `Baurecht` · `Konstruktion` · `Energie` · `Nachhaltigkeit`
+
+**Erlaubte `typ`-Werte:** `Begriff` · `Kennwert` · `Verfahren` · `Material` · `Norm`
+
+Einträge alphabetisch nach `id` sortiert halten. `abbrev` nur setzen, wenn die Abkürzung offiziell und im Fachbereich gebräuchlich ist.
 
 ### Formel-Hover: `^^formel-id^^`
 
@@ -176,7 +208,7 @@ tags: wdvs, wärmeschutz, wandquerschnitt
 
 ### Querverweise und Links
 
-**Pflicht:** Jeder Verweis auf ein anderes Kapitel, einen Anhang oder eine externe Quelle muss ein echter Markdown-Link sein. Bloßes `→ Kapitel 4` ohne Link ist nicht erlaubt.
+**Pflicht:** Jeder Verweis auf ein anderes Kapitel, einen Anhang oder eine externe Quelle muss ein echter Markdown-Link sein. Kein Pfeil (`→`) vor oder in Links.
 
 #### Interne Kapitelverweise
 
@@ -193,12 +225,12 @@ Absolute Root-Pfade ohne `.md`-Extension verwenden:
 
 **Inline-Verweis** (im Fließtext):
 ```markdown
-…wie die Eurocode-Reihe zeigt ([→ Kapitel 4](/chapters/04-tragwerk)).
+…wie die Eurocode-Reihe zeigt (siehe [Kapitel 4](/chapters/04-tragwerk)).
 ```
 
 **Standalone-Verweiszeile** (mehrere Ziele, z. B. am Abschnittsende):
 ```markdown
-→ Wärmeschutz: [Kap. 6](/chapters/06-waermeschutz-geg) · Feuchteschutz: [Kap. 7](/chapters/07-feuchteschutz)
+Wärmeschutz: [Kap. 6](/chapters/06-waermeschutz-geg) · Feuchteschutz: [Kap. 7](/chapters/07-feuchteschutz)
 ```
 
 **Benannter Link** im Fließtext:
