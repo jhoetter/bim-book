@@ -185,6 +185,7 @@ export const GLOSSAR: GlossEntry[] = [
     id: 'transmissionswärmeverlust',
     term: 'Transmissionswärmeverlust',
     definition: 'Wärmeverlust durch Bauteile der Gebäudehülle (Wand, Dach, Fenster), berechnet über U-Wert und Fläche.',
+    image: '/assets/glossar/transmissionswärmeverlust.png',
   },
   {
     id: 'u-wert',
@@ -203,18 +204,20 @@ export const GLOSSAR: GlossEntry[] = [
     term: 'Wärmedämmverbundsystem',
     abbrev: 'WDVS',
     definition: 'Vorgehängte Dämmschicht (Mineralwolle oder EPS) mit Putzoberfläche, direkt auf der Wand verklebt.',
-    image: '/assets/glossar/armierungsputz.png',
+    image: '/assets/glossar/wdvs.png',
   },
   {
     id: 'wärmebrücke',
     term: 'Wärmebrücke',
     definition: 'Stelle in der Gebäudehülle mit erhöhtem Wärmestrom durch geometrische oder materialbezogene Unterbrechung der Dämmschicht.',
+    image: '/assets/glossar/wärmebrücke.png',
   },
   {
     id: 'wlg',
     term: 'Wärmeleitfähigkeitsgruppe',
     abbrev: 'WLG',
     definition: 'Klassifiziert Dämmstoffe nach λ-Wert: WLG 030 = λ ≤ 0,030 W/(mK), WLG 035 = λ ≤ 0,035 W/(mK).',
+    image: '/assets/glossar/wlg.png',
   },
 ]
 
