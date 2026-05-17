@@ -1,0 +1,90 @@
+# Skill: Buchillustration generieren
+
+Dieser Skill erzeugt konsistente Illustrationen für das Buch **„BIM von Grund auf"** via OpenAI DALL-E 3.
+
+## Voraussetzungen
+
+1. `.env` Datei im Repo-Root mit `OPENAI_API_KEY=sk-...`
+2. Python 3 (keine externen Abhängigkeiten – nur stdlib)
+
+## Verwendung durch Claude
+
+Wenn eine Illustration für das Buch benötigt wird, rufe das Skript so auf:
+
+```bash
+cd /Users/jhoetter/repos/bim-book
+python3 skills/imagegen/generate.py \
+  --type <TYP> \
+  --desc "<BESCHREIBUNG AUF DEUTSCH>" \
+  --name "<DATEINAME>"
+```
+
+### Illustrationstypen
+
+| Typ | Wofür | Format |
+|-----|-------|--------|
+| `isometric` | Gebäudeschnitte, Bauteilaufbauten, Systemübersichten | Querformat |
+| `diagram` | Schemata (Heizung, Lüftung, IFC-Hierarchie, Workflows) | Querformat |
+| `section` | Wandquerschnitte, Dachaufbauten, Detailschnitte | Hochformat |
+| `floorplan` | Grundrisse, Lagepläne | Querformat |
+| `comparison` | Materialvergleiche, Systemalternativen | Querformat |
+| `infographic` | Prozeßübersichten, HOAI-Phasen, Normenzusammenfassungen | Querformat |
+
+### Dry Run (Prompt prüfen ohne API-Aufruf)
+
+```bash
+python3 skills/imagegen/generate.py --dry-run \
+  --type isometric \
+  --desc "Explosionsdarstellung Kastanienallee 7: Tragstruktur grau, Dämmung blau, TGA amber" \
+  --name "kap01_gebaeude_schichten"
+```
+
+## Dateinamen-Konvention
+
+```
+kap{NR}_{kürzel}.png
+
+Beispiele:
+  kap01_architektur_system.png
+  kap05_flachdach_aufbau.png
+  kap06_u_wert_berechnung.png
+  kap10_heizkreis_schema.png
+  kap18_ifc_hierarchie.png
+```
+
+Bilder werden in `assets/illustrations/` gespeichert.
+Zu jedem Bild wird automatisch eine `.prompt.txt` gespeichert (für Reproduzierbarkeit).
+
+## Konsistenter Stil
+
+Der Stil ist zentral in `skills/imagegen/style_config.json` definiert:
+
+- **Farbsystem:** Stahlblau `#2C5F8A` (Primär), Warm-Grau `#4A5568` (Tragwerk), Amber `#E07A3A` (TGA/Akzent)
+- **Hintergrund:** Immer weiß
+- **Beschriftungen:** Deutsch
+- **Kein Fotorealismus**, keine Personen, keine Dekoration
+- Gleiche Farbe = gleiche Bedeutung in allen Kapiteln
+
+## Beispielaufruf je Kapitel
+
+```bash
+# Kapitel 1 – Gebäude als System
+python3 skills/imagegen/generate.py --type isometric \
+  --desc "Isometrische Explosionsdarstellung eines viergeschossigen Mehrfamilienhauses. Vier Schichten sichtbar: 1. Tragstruktur (Stahlbeton, grau), 2. Gebäudehülle (Fassade + Dach, blau), 3. TGA-Installationen (Rohre und Leitungen, amber), 4. Innenausbau (Wände, Böden, hell). Beschriftung der vier Schichten rechts." \
+  --name "kap01_schichtenmodell"
+
+# Kapitel 6 – Wärmeschutz
+python3 skills/imagegen/generate.py --type section \
+  --desc "Wandquerschnitt von innen nach außen: Innenputz 15mm, Stahlbetonwand 200mm (diagonal schraffiert), Mineralwolle WLG035 160mm (Zickzack-Muster, blau), Armierungsputz 5mm, Silikonharzputz 3mm (weiß außen). Rechts U-Wert Angabe 0,19 W/m²K. Maßpfeile mit Millimeterangaben. Deutsche Beschriftungen." \
+  --name "kap06_wandaufbau_wdvs"
+
+# Kapitel 10 – Heizung
+python3 skills/imagegen/generate.py --type diagram \
+  --desc "Hydraulisches Schema einer Fernwärmeanlage: Übergabestation links (Wärmetauscher), Verteiler Mitte, drei Heizkreise rechts (Fußbodenheizung EG, FBH OG1, FBH OG2). Vorlauf rot gestrichelt, Rücklauf blau gestrichelt. Pumpen als Kreissymbole. Thermometer-Symbole an Vorlauf (70°C) und Rücklauf (50°C). Deutsche Beschriftungen." \
+  --name "kap10_fernwaerme_schema"
+
+# Kapitel 18 – IFC
+python3 skills/imagegen/generate.py --type diagram \
+  --desc "IFC-Projektstruktur als Baumdiagramm von oben nach unten: IfcProject → IfcSite → IfcBuilding → IfcBuildingStorey (4x: KG, EG, OG1, OG2) → IfcSpace (Wohnung, Treppe, Flur). Jede Ebene in anderem Blauton. Schriftart monospace für IFC-Klassen. Deutsche Erläuterungen in normaler Schrift daneben." \
+  --name "kap18_ifc_projektstruktur"
+```
