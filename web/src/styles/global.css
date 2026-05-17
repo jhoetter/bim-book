@@ -471,49 +471,56 @@ html, body, #root {
   .content { padding: 28px 20px 64px; }
 }
 
-/* ── Chapter hero opening animation ──────────────────────────── */
-/*
-  The hero overlays only the content-area (positioned via JS rect).
-  clip-path contracts from full-height → top 220px (the cover strip),
-  at which point it looks identical to the real cover below → seamless.
-*/
-:root { --cover-h: 220px; }
+/* ── Chapter cover variables ──────────────────────────────────── */
+:root {
+  --cover-h: 220px;
+  --topbar-h: 44px;
+}
 @media (max-width: 760px) { :root { --cover-h: 160px; } }
 
-.chapter-hero {
-  z-index: 500;
+/* ── Chapter hero intro (page-cover-wrap expands then collapses) ─ */
+/*
+  No portal, no fixed/sticky, no z-index fights.
+  The real page-cover-wrap grows to full viewport height via CSS class,
+  then transitions back to --cover-h. The cover image (same element)
+  fills 100% during hero, then returns to its natural size. Content
+  below slides up as the wrap collapses — all in normal document flow.
+*/
+.page-cover-wrap--hero {
+  height: calc(100svh - var(--topbar-h));
   overflow: hidden;
-  clip-path: inset(0 0 0 0);
-  will-change: clip-path;
-  transition: clip-path 1s cubic-bezier(0.76, 0, 0.24, 1);
+  transition: height 0.9s cubic-bezier(0.65, 0, 0.35, 1) 0.15s;
 }
 
-.chapter-hero--contracting {
-  clip-path: inset(0 0 calc(100% - var(--cover-h)) 0);
-}
-
-.chapter-hero__cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.page-cover-wrap--contracting {
   height: var(--cover-h);
-  object-fit: cover;
-  object-position: center 40%;
 }
 
-.chapter-hero__overlay {
+.page-cover-wrap--hero .page-cover,
+.page-cover-wrap--contracting .page-cover {
+  height: 100%;
+}
+
+/* Intro overlay + content (absolute within page-cover-wrap) */
+.cover-hero-intro {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.42);
-  transition: opacity 0.55s ease;
+  z-index: 3;
+  pointer-events: none;
 }
 
-.chapter-hero--contracting .chapter-hero__overlay {
+.cover-hero-intro__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  transition: opacity 0.35s ease 0.1s;
+}
+
+.cover-hero-intro--out .cover-hero-intro__overlay {
   opacity: 0;
 }
 
-.chapter-hero__content {
+.cover-hero-intro__content {
   position: absolute;
   inset: 0;
   display: flex;
@@ -525,10 +532,10 @@ html, body, #root {
   text-align: center;
   padding: 0 40px;
   z-index: 1;
-  transition: opacity 0.35s ease;
+  transition: opacity 0.2s ease;
 }
 
-.chapter-hero--contracting .chapter-hero__content {
+.cover-hero-intro--out .cover-hero-intro__content {
   opacity: 0;
 }
 
@@ -556,7 +563,7 @@ html, body, #root {
   letter-spacing: -0.03em;
   line-height: 1.15;
   max-width: 680px;
-  text-shadow: 0 1px 8px rgba(0,0,0,0.3);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 760px) {
@@ -606,6 +613,14 @@ html, body, #root {
   background: var(--bg-sidebar);
   border-radius: var(--radius-md);
   padding: 10px;
+  transition: opacity 0.35s ease;
+}
+
+/* Hidden during hero (covered by overlay + overflow:hidden anyway),
+   fades in smoothly when cover-wrap returns to normal */
+.page-cover-wrap--hero .page-icon-float,
+.page-cover-wrap--contracting .page-icon-float {
+  opacity: 0;
 }
 
 /* Make content start below the icon overhang: 29px (half of 58px icon) + 20px breathing room */

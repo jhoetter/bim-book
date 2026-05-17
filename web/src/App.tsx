@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route, useParams, useLocation, Navigate, NavLink } from 'react-router-dom'
-import { useEffect, useState, useCallback, useRef, type PointerEvent, type ComponentType } from 'react'
-import { createPortal } from 'react-dom'
+import { useEffect, useState, useCallback, useRef, type PointerEvent } from 'react'
 import { Sidebar } from './components/Sidebar'
 import { Topbar } from './components/Topbar'
 import { TableOfContents } from './components/TableOfContents'
@@ -53,50 +52,6 @@ function Pagination({ id }: { id: string }) {
   )
 }
 
-interface ChapterHeroProps {
-  cover: string
-  PageIcon?: ComponentType<{ size?: number }>
-  title: string
-  num: string
-}
-
-function ChapterHero({ cover, PageIcon, title, num }: ChapterHeroProps) {
-  const [rect, setRect] = useState<DOMRect | null>(null)
-  const [phase, setPhase] = useState<'hold' | 'contracting' | 'done'>('hold')
-
-  useEffect(() => {
-    const el = document.querySelector<HTMLElement>('.content-area')
-    if (el) setRect(el.getBoundingClientRect())
-  }, [])
-
-  useEffect(() => {
-    const t = setTimeout(() => setPhase('contracting'), 750)
-    return () => clearTimeout(t)
-  }, [])
-
-  if (phase === 'done' || !rect) return null
-
-  return createPortal(
-    <div
-      aria-hidden="true"
-      className={`chapter-hero${phase === 'contracting' ? ' chapter-hero--contracting' : ''}`}
-      style={{ position: 'fixed', top: rect.top, left: rect.left, width: rect.width, height: rect.height }}
-      onTransitionEnd={(e) => {
-        if (e.propertyName === 'clip-path' && e.target === e.currentTarget) setPhase('done')
-      }}
-    >
-      <img className="chapter-hero__cover" src={cover} alt="" />
-      <div className="chapter-hero__overlay" />
-      <div className="chapter-hero__content">
-        {PageIcon && <div className="chapter-hero__icon"><PageIcon size={80} /></div>}
-        {num && <p className="chapter-hero__num">Kapitel {num}</p>}
-        <p className="chapter-hero__title">{title}</p>
-      </div>
-    </div>,
-    document.body
-  )
-}
-
 function ChapterRoute() {
   const { '*': slug } = useParams()
   const location = useLocation()
@@ -105,12 +60,23 @@ function ChapterRoute() {
   const chapter = ALL_CHAPTERS.find(c => c.path === path)
   const id = chapter?.id ?? (slug ?? '')
   const [imgFailed, setImgFailed] = useState(false)
+  const [heroPhase, setHeroPhase] = useState<'hold' | 'contracting' | 'none'>('none')
+  const isFirstMount = useRef(true)
 
   useEffect(() => { setImgFailed(false) }, [path])
 
+  // Hero intro: only on SPA navigation, never on initial load / hard reload
+  useEffect(() => {
+    if (isFirstMount.current) { isFirstMount.current = false; return }
+    if (!chapter?.coverImage || chapter?.isReferencePage) return
+    setHeroPhase('hold')
+    const t = setTimeout(() => setHeroPhase('contracting'), 700)
+    return () => clearTimeout(t)
+  }, [path])
+
   // Reset scroll to top on chapter navigation (before hash jump below)
   useEffect(() => {
-    document.querySelector<HTMLElement>('.content-area')?.scrollTo({ top: 0 })
+    document.querySelector<HTMLElement>('.content-area')?.scrollTo({ top: 0, behavior: 'instant' })
   }, [path])
 
   // Jump to hash on load — decodeURIComponent handles percent-encoded umlauts etc.
@@ -172,18 +138,32 @@ function ChapterRoute() {
     )
   }
 
+  const heroActive = heroPhase !== 'none'
+  const wrapClass = [
+    'page-cover-wrap',
+    heroActive ? 'page-cover-wrap--hero' : '',
+    heroPhase === 'contracting' ? 'page-cover-wrap--contracting' : '',
+  ].filter(Boolean).join(' ')
+
   return (
     <>
-      {hasImage && (
-        <ChapterHero
-          key={path}
-          cover={cover!}
-          PageIcon={PageIcon}
-          title={chapter?.title ?? ''}
-          num={chapter?.num ?? ''}
-        />
-      )}
-      <div className="page-cover-wrap">
+      <div
+        className={wrapClass}
+        onTransitionEnd={(e) => {
+          if (heroPhase === 'contracting' && e.propertyName === 'height' && e.target === e.currentTarget)
+            setHeroPhase('none')
+        }}
+      >
+        {heroActive && (
+          <div aria-hidden="true" className={`cover-hero-intro${heroPhase === 'contracting' ? ' cover-hero-intro--out' : ''}`}>
+            <div className="cover-hero-intro__overlay" />
+            <div className="cover-hero-intro__content">
+              {PageIcon && <div className="chapter-hero__icon"><PageIcon size={80} /></div>}
+              {chapter?.num && <p className="chapter-hero__num">Kapitel {chapter.num}</p>}
+              <p className="chapter-hero__title">{chapter?.title ?? ''}</p>
+            </div>
+          </div>
+        )}
         {hasImage
           ? <img className="page-cover" src={cover} alt="" aria-hidden="true" onError={() => setImgFailed(true)} />
           : <div className="page-cover page-cover--placeholder" aria-hidden="true" />
@@ -205,15 +185,28 @@ function ChapterRoute() {
 
 function AppLayout() {
   const location = useLocation()
-  const [sidebarOpen, setSidebarOpen] = useState(
-    () => typeof window !== 'undefined' ? window.innerWidth >= 768 : true
-  )
-  const [sidebarWidth, setSidebarWidth] = useState(SIDEBAR_DEFAULT)
+  const [sidebarOpen, setSidebarOpen] = useState(() => {
+    if (typeof window === 'undefined') return true
+    if (window.innerWidth < 768) return false
+    const stored = localStorage.getItem('sidebar-open')
+    return stored !== null ? stored === 'true' : true
+  })
+  const [sidebarWidth, setSidebarWidth] = useState(() => {
+    if (typeof window === 'undefined') return SIDEBAR_DEFAULT
+    const parsed = parseInt(localStorage.getItem('sidebar-width') ?? '', 10)
+    return isNaN(parsed) ? SIDEBAR_DEFAULT : Math.max(SIDEBAR_MIN, Math.min(SIDEBAR_MAX, parsed))
+  })
   const [paletteOpen, setPaletteOpen] = useState(false)
   const [isPrinting, setIsPrinting] = useState(false)
   const resizeRef = useRef<{ startX: number; startWidth: number } | null>(null)
 
   const toggle = useCallback(() => setSidebarOpen(v => !v), [])
+
+  // Persist open state (desktop only — don't overwrite with mobile auto-collapse)
+  useEffect(() => {
+    if (window.innerWidth >= 768)
+      localStorage.setItem('sidebar-open', String(sidebarOpen))
+  }, [sidebarOpen])
 
   // Auto-collapse on narrow viewports
   useEffect(() => {
@@ -261,6 +254,7 @@ function AppLayout() {
     doc.body.style.cursor = 'col-resize'
     doc.body.style.userSelect = 'none'
 
+    let lastWidth = sidebarWidth
     const onMove = (ev: globalThis.PointerEvent) => {
       const state = resizeRef.current
       if (!state) return
@@ -269,6 +263,7 @@ function AppLayout() {
         setSidebarOpen(false)
       } else {
         const clamped = Math.max(SIDEBAR_MIN, Math.min(SIDEBAR_MAX, next))
+        lastWidth = clamped
         setSidebarWidth(clamped)
         setSidebarOpen(true)
       }
@@ -277,6 +272,7 @@ function AppLayout() {
       resizeRef.current = null
       doc.body.style.cursor = ''
       doc.body.style.userSelect = ''
+      localStorage.setItem('sidebar-width', String(lastWidth))
       doc.removeEventListener('pointermove', onMove)
       doc.removeEventListener('pointerup', onUp)
     }
