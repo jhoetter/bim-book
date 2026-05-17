@@ -472,35 +472,44 @@ html, body, #root {
 }
 
 /* ── Chapter hero opening animation ──────────────────────────── */
+/*
+  The hero overlays only the content-area (positioned via JS rect).
+  clip-path contracts from full-height → top 220px (the cover strip),
+  at which point it looks identical to the real cover below → seamless.
+*/
+:root { --cover-h: 220px; }
+@media (max-width: 760px) { :root { --cover-h: 160px; } }
+
 .chapter-hero {
-  position: fixed;
-  inset: 0;
   z-index: 500;
   overflow: hidden;
-  transform: translateY(0);
-  transition: transform 0.9s cubic-bezier(0.65, 0, 0.35, 1);
+  clip-path: inset(0 0 0 0);
+  will-change: clip-path;
+  transition: clip-path 1s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
-.chapter-hero--sliding {
-  transform: translateY(-100%);
+.chapter-hero--contracting {
+  clip-path: inset(0 0 calc(100% - var(--cover-h)) 0);
 }
 
-.chapter-hero__bg {
+.chapter-hero__cover {
   position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center 40%;
-  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--cover-h);
+  object-fit: cover;
+  object-position: center 40%;
 }
 
 .chapter-hero__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.38);
-  transition: opacity 0.5s ease;
+  background: rgba(0, 0, 0, 0.42);
+  transition: opacity 0.55s ease;
 }
 
-.chapter-hero--sliding .chapter-hero__overlay {
+.chapter-hero--contracting .chapter-hero__overlay {
   opacity: 0;
 }
 
@@ -511,43 +520,47 @@ html, body, #root {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 14px;
+  gap: 16px;
   color: white;
   text-align: center;
-  padding: 0 32px;
+  padding: 0 40px;
   z-index: 1;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.35s ease;
 }
 
-.chapter-hero--sliding .chapter-hero__content {
+.chapter-hero--contracting .chapter-hero__content {
   opacity: 0;
 }
 
 .chapter-hero__icon {
   line-height: 1;
-  opacity: 0.9;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 12px;
+  backdrop-filter: blur(6px);
 }
 
 .chapter-hero__num {
   margin: 0;
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  opacity: 0.65;
+  opacity: 0.6;
 }
 
 .chapter-hero__title {
   margin: 0;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: 700;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.03em;
   line-height: 1.15;
-  max-width: 700px;
+  max-width: 680px;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.3);
 }
 
 @media (max-width: 760px) {
-  .chapter-hero__title { font-size: 1.75rem; }
+  .chapter-hero__title { font-size: 1.65rem; }
 }
 
 /* ── Chapter cover banner + floating icon (Notion-style) ─────── */
@@ -559,7 +572,7 @@ html, body, #root {
 .page-cover {
   display: block;
   width: 100%;
-  height: 220px;
+  height: var(--cover-h);
   object-fit: cover;
   object-position: center 40%;
 }
@@ -605,7 +618,6 @@ html, body, #root {
 }
 
 @media (max-width: 760px) {
-  .page-cover { height: 160px; }
   .page-icon-float { left: 20px; }
   .content--has-cover { padding-top: 48px; }
 }

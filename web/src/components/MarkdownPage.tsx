@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { createPortal } from 'react-dom'
+import { Link } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import remarkMath from 'remark-math'
@@ -166,6 +167,13 @@ export function MarkdownPage({ content }: Props) {
             },
             a({ href, children, ...rest }) {
               const isExternal = href?.startsWith('http')
+              if (href && !isExternal && !href.startsWith('#') && !href.startsWith('mailto:')) {
+                // Convert relative .md paths (../chapters/X.md, ./X.md) to router paths (/chapters/X)
+                const to = href.startsWith('/')
+                  ? href
+                  : '/' + href.replace(/^(?:\.\.\/|\.\/)+/, '').replace(/\.md(#|$)/, '$1')
+                return <Link to={to} {...rest}>{children}</Link>
+              }
               return (
                 <a
                   href={href}

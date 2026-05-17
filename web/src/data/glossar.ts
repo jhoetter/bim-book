@@ -257,6 +257,12 @@ export const GLOSSAR: GlossEntry[] = [
     thema: 'Wärmeschutz', typ: 'Material',
   },
   {
+    id: 'schichtenmodell',
+    term: 'Schichtenmodell',
+    definition: 'Konzeptionelles Modell, das ein Gebäude in vier Schichten mit unterschiedlicher Lebensdauer und Verantwortung unterteilt: Tragstruktur, Gebäudehülle, Technische Gebäudeausrüstung und Innenausbau.',
+    thema: 'Konstruktion', typ: 'Begriff',
+  },
+  {
     id: 'wärmebrücke',
     term: 'Wärmebrücke',
     definition: 'Stelle in der Gebäudehülle mit erhöhtem Wärmestrom durch geometrische oder materialbezogene Unterbrechung der Dämmschicht.',

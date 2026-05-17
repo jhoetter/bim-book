@@ -61,26 +61,36 @@ interface ChapterHeroProps {
 }
 
 function ChapterHero({ cover, PageIcon, title, num }: ChapterHeroProps) {
-  const [phase, setPhase] = useState<'hold' | 'sliding' | 'done'>('hold')
+  const [rect, setRect] = useState<DOMRect | null>(null)
+  const [phase, setPhase] = useState<'hold' | 'contracting' | 'done'>('hold')
 
   useEffect(() => {
-    const t = setTimeout(() => setPhase('sliding'), 650)
+    const el = document.querySelector<HTMLElement>('.content-area')
+    if (el) setRect(el.getBoundingClientRect())
+  }, [])
+
+  useEffect(() => {
+    const t = setTimeout(() => setPhase('contracting'), 750)
     return () => clearTimeout(t)
   }, [])
 
-  if (phase === 'done') return null
+  if (phase === 'done' || !rect) return null
 
   return createPortal(
     <div
-      className={`chapter-hero${phase === 'sliding' ? ' chapter-hero--sliding' : ''}`}
-      onTransitionEnd={() => setPhase('done')}
+      aria-hidden="true"
+      className={`chapter-hero${phase === 'contracting' ? ' chapter-hero--contracting' : ''}`}
+      style={{ position: 'fixed', top: rect.top, left: rect.left, width: rect.width, height: rect.height }}
+      onTransitionEnd={(e) => {
+        if (e.propertyName === 'clip-path' && e.target === e.currentTarget) setPhase('done')
+      }}
     >
-      <div className="chapter-hero__bg" style={{ backgroundImage: `url(${cover})` }} />
+      <img className="chapter-hero__cover" src={cover} alt="" />
       <div className="chapter-hero__overlay" />
       <div className="chapter-hero__content">
         {PageIcon && <div className="chapter-hero__icon"><PageIcon size={80} /></div>}
         {num && <p className="chapter-hero__num">Kapitel {num}</p>}
-        <h1 className="chapter-hero__title">{title}</h1>
+        <p className="chapter-hero__title">{title}</p>
       </div>
     </div>,
     document.body

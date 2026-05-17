@@ -174,12 +174,58 @@ tags: wdvs, wärmeschutz, wandquerschnitt
 - Der Platzhalter zeigt `desc` im UI als Prompt-Vorschau — schreib ihn für die KI, nicht für den Leser
 - Bilder werden mit `python3 skills/imagegen/generate-placeholders.py` batch-generiert
 
-### Kapitelreferenzen
+### Querverweise und Links
 
-Verweise auf andere Kapitel:
+**Pflicht:** Jeder Verweis auf ein anderes Kapitel, einen Anhang oder eine externe Quelle muss ein echter Markdown-Link sein. Bloßes `→ Kapitel 4` ohne Link ist nicht erlaubt.
+
+#### Interne Kapitelverweise
+
+Absolute Root-Pfade ohne `.md`-Extension verwenden:
+
 ```markdown
-→ Kapitel 6 befasst sich ausführlich mit dem [Wärmeschutz](../chapters/06-waermeschutz-geg.md).
+[Kap. 6](/chapters/06-waermeschutz-geg)
+[Kap. 18](/chapters/18-ifc)
+[IFC-Schnellreferenz](/appendix/ifc-referenz)
+[Kastanienallee 7](/appendix/kastanienallee7)
+[Glossar](/glossar)
+[Formelsammlung](/formelsammlung)
 ```
+
+**Inline-Verweis** (im Fließtext):
+```markdown
+…wie die Eurocode-Reihe zeigt ([→ Kapitel 4](/chapters/04-tragwerk)).
+```
+
+**Standalone-Verweiszeile** (mehrere Ziele, z. B. am Abschnittsende):
+```markdown
+→ Wärmeschutz: [Kap. 6](/chapters/06-waermeschutz-geg) · Feuchteschutz: [Kap. 7](/chapters/07-feuchteschutz)
+```
+
+**Benannter Link** im Fließtext:
+```markdown
+Kapitel 6 befasst sich ausführlich mit dem [Wärmeschutz](/chapters/06-waermeschutz-geg).
+```
+
+#### Externe Weblinks
+
+Standard-Markdown-Link — öffnet automatisch in neuem Tab:
+```markdown
+[Beuth Verlag](https://www.beuth.de)
+[GEG 2023](https://www.gesetze-im-internet.de/geg/)
+```
+
+Niemals rohe URLs ohne Link-Text in den Fließtext schreiben.
+
+#### Pfadübersicht (Kurzreferenz)
+
+| Ziel | Pfad |
+|---|---|
+| Kapitel N | `/chapters/NN-slug` (z. B. `/chapters/04-tragwerk`) |
+| IFC-Schnellreferenz | `/appendix/ifc-referenz` |
+| Kastanienallee 7 | `/appendix/kastanienallee7` |
+| Normen & Gesetze | `/appendix/normen` |
+| Glossar | `/glossar` |
+| Formelsammlung | `/formelsammlung` |
 
 ### Admonitions
 

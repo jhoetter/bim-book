@@ -28,7 +28,7 @@ Das Koordinationsproblem, das daraus entsteht, ist das eigentliche Kernproblem m
 
 ## 1.2 Das Schichtenmodell
 
-Das nützlichste konzeptionelle Werkzeug zur Beschreibung von Gebäuden als System ist das **Schichtenmodell**. Unabhängig von Bauweise, Größe oder Funktion lassen sich vier Schichten unterscheiden, die sich in Lebensdauer, Verantwortung und Planungslogik grundlegend voneinander unterscheiden.
+Das nützlichste konzeptionelle Werkzeug zur Beschreibung von Gebäuden als System ist das ::Schichtenmodell::. Unabhängig von Bauweise, Größe oder Funktion lassen sich vier Schichten unterscheiden, die sich in Lebensdauer, Verantwortung und Planungslogik grundlegend voneinander unterscheiden.
 
 ### Schicht 1: Tragstruktur
 
@@ -36,7 +36,7 @@ Das Skelett des Gebäudes. Fundamente, Stützen, Träger, Deckenplatten, tragend
 
 Die Tragstruktur ist das Langlebigste am Gebäude. Bei der Kastanienallee 7 ist sie für mindestens 80 Jahre dimensioniert: Stahlbetonrahmen mit aussteifenden Wandscheiben, Flachdecken je Geschoss, Flachgründung auf tragfähigem Baugrund. Sie verändert sich kaum. Kein Umbau ohne Statiker, keine Kernbohrung ohne Ausführungsplan – denn jeder Eingriff in die Tragstruktur hat das Potenzial, die Standsicherheit des gesamten Gebäudes zu gefährden.
 
-Tragwerk ist unsichtbar, wenn es funktioniert – und existenziell, wenn es versagt. Diese Asymmetrie erklärt, warum Tragwerksplanung so stark normiert ist: Die Eurocode-Reihe (EN 1990 bis EN 1999) bildet das europäische Regelwerk, das in Deutschland als DIN EN mit nationalen Anhängen gilt (→ Kapitel 4).
+Tragwerk ist unsichtbar, wenn es funktioniert – und existenziell, wenn es versagt. Diese Asymmetrie erklärt, warum Tragwerksplanung so stark normiert ist: Die Eurocode-Reihe (EN 1990 bis EN 1999) bildet das europäische Regelwerk, das in Deutschland als DIN EN mit nationalen Anhängen gilt ([→ Kapitel 4](/chapters/04-tragwerk)).
 
 Das Tragwerk macht bei einem Mehrfamilienhaus typischerweise 15–20 % der Baukosten aus. Sein Einfluss auf alle anderen Systeme ist dennoch überproportional: Stützenraster und Deckenstärken bestimmen, welche Grundrisse möglich sind. Deckendurchbrüche für die Haustechnik müssen mit der Statik abgestimmt werden. Wo das Tragwerk endet, fängt die Planung der nächsten Schicht an.
 
@@ -65,7 +65,7 @@ An der Kastanienallee 7 umfasst die ::TGA::
 - **Elektro:** Hausanschluss 3 × 63 A, zwölf Wohnungszähler, zehn Ladepunkte für Elektrofahrzeuge in der Tiefgarage
 - **Photovoltaik:** 30 kWp auf dem Flachdach, Eigenverbrauch für Allgemeinstrom
 
-Die ::TGA:: bestimmt maßgeblich, wie viel Platz im Gebäude für Technikflächen, Schächte und Installationsebenen benötigt wird. Sie ist der häufigste Grund für Planungskonflikte und Koordinationsprobleme auf der Baustelle – und gleichzeitig die Disziplin, die am meisten von digitaler Planung profitiert (→ Teil VI).
+Die ::TGA:: bestimmt maßgeblich, wie viel Platz im Gebäude für Technikflächen, Schächte und Installationsebenen benötigt wird. Sie ist der häufigste Grund für Planungskonflikte und Koordinationsprobleme auf der Baustelle – und gleichzeitig die Disziplin, die am meisten von digitaler Planung profitiert ([→ Teil VI](/chapters/17-was-bim-wirklich-ist)).
 
 ### Schicht 4: Innenausbau
 
@@ -88,7 +88,7 @@ Die vier Schichten sind nicht unabhängig – sie bedingen und begrenzen sich ge
 **Der Innenausbau reagiert auf alle anderen.** Er füllt den Raum, den Tragwerk, Hülle und ::TGA:: übrig lassen. Wenn die Schächte zu groß geplant wurden, verliert der Innenausbau nutzbare Fläche. Wenn Installationsebenen nicht eingeplant wurden, landen Kabel und Rohre auf Putz.
 
 !!! tip "Die Reihenfolge der Planung"
-    In der Praxis werden alle vier Schichten nicht nacheinander, sondern parallel geplant – mit ständigen Rückkopplungsschleifen. Digitale Planungsmethoden helfen, diese Abhängigkeiten früh sichtbar zu machen und Konflikte zu erkennen, bevor sie zur Baustelle werden (→ Teil VI).
+    In der Praxis werden alle vier Schichten nicht nacheinander, sondern parallel geplant – mit ständigen Rückkopplungsschleifen. Digitale Planungsmethoden helfen, diese Abhängigkeiten früh sichtbar zu machen und Konflikte zu erkennen, bevor sie zur Baustelle werden ([→ Teil VI](/chapters/17-was-bim-wirklich-ist)).
 
 ---
 
@@ -122,7 +122,7 @@ Das Gebäude ist fiktiv – aber nicht beliebig. Es ist so konzipiert, dass es m
 
 In jedem Kapitel dient die Kastanienallee 7 als konkreter Anwendungsfall. Wenn Transmissionswärmeverluste berechnet werden, dann an ihrer Außenwand. Wenn Grundrissdisposition erklärt wird, dann mit ihrem Erdgeschoss. Wenn Brandschutzkonzepte diskutiert werden, dann für ihr Treppenhaus.
 
-Die vollständigen Kenndaten finden sich in [Anhang E](../appendix/kastanienallee7.md).
+Die vollständigen Kenndaten finden sich in [Anhang E](/appendix/kastanienallee7).
 
 ---
 
