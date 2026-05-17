@@ -1,0 +1,153 @@
+# Terms Registry
+# Tracks which chapter first fully introduces each glossary term (full name + abbreviation).
+# Agents MUST read this before writing a chapter, and update it after.
+#
+# CHAPTER ORDER (sequential — do not change):
+#   01-architektur-als-system
+#   02-entwurf-raum-funktion
+#   03-baustoffe
+#   04-tragwerk
+#   05-konstruktion
+#   06-waermeschutz-geg
+#   07-feuchteschutz
+#   08-schallschutz
+#   09-brandschutz
+#   10-heizung-waermeversorgung
+#   11-lueftung
+#   12-sanitaer
+#   13-elektro
+#   14-planungsrecht
+#   15-hoai
+#   16-kosten-ausschreibung
+#   17-was-bim-wirklich-ist
+#   18-ifc
+#   19-klassifikation
+#   20-prozess-kollaboration
+#   21-bim-praxis
+#   22-nachhaltigkeit
+#   23-sanierung
+#   24-digitaler-zwilling-ki
+#
+# FIELD MEANINGS:
+#   introduced_in: chapter ID where the term was first spelled out in full
+#   null means: not yet introduced in any finalized chapter (agent must introduce it when first needed)
+#
+# USAGE RULES FOR WRITING AGENTS:
+#   - If introduced_in is set AND that chapter comes BEFORE your current chapter →
+#     use ::ABBREV:: (or ::TermName:: for non-abbreviated) freely without re-introduction.
+#   - If introduced_in is null OR that chapter is your current chapter or later →
+#     write the FULL NAME in bold on first use, with abbreviation in parentheses,
+#     and mark it with ::ABBREV:: inside the parens:
+#       **Technische Gebäudeausrüstung** (::TGA::)
+#     Then update this registry: set introduced_in to your chapter ID.
+#   - Every use of a term (first and subsequent) that benefits from hover context
+#     should be wrapped in ::...::.
+
+terms:
+  armierungsputz:
+    introduced_in: null
+
+  bap:
+    introduced_in: null
+
+  bcf:
+    introduced_in: null
+
+  bim:
+    introduced_in: null
+
+  dampfbremse:
+    introduced_in: null
+
+  dampfsperre:
+    introduced_in: null
+
+  dvgw:
+    introduced_in: null
+
+  embodied-carbon:
+    introduced_in: null
+
+  epd:
+    introduced_in: null
+
+  eurocode:
+    introduced_in: null
+
+  fbh:
+    introduced_in: null
+
+  geg:
+    introduced_in: null
+
+  gfz:
+    introduced_in: null
+
+  glaser-verfahren:
+    introduced_in: null
+
+  grz:
+    introduced_in: null
+
+  hoai:
+    introduced_in: null
+
+  hydraulischer-abgleich:
+    introduced_in: null
+
+  ifc:
+    introduced_in: null
+
+  innenputz:
+    introduced_in: null
+
+  kwl:
+    introduced_in: null
+
+  lastfall:
+    introduced_in: null
+
+  lod:
+    introduced_in: null
+
+  mineralwolle:
+    introduced_in: null
+
+  mbo:
+    introduced_in: null
+
+  primärenergiefaktor:
+    introduced_in: null
+
+  r-wert:
+    introduced_in: null
+
+  rei:
+    introduced_in: null
+
+  schallschutz-rw:
+    introduced_in: null
+
+  step:
+    introduced_in: null
+
+  tga:
+    introduced_in: null
+
+  transmissionswärmeverlust:
+    introduced_in: null
+
+  u-wert:
+    introduced_in: null
+
+  vob:
+    introduced_in: null
+
+  wdvs:
+    introduced_in: null
+
+  wärmebrücke:
+    introduced_in: null
+
+  wlg:
+    introduced_in: null
