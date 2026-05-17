@@ -1,6 +1,38 @@
+function escAttr(s: string): string {
+  return s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/\n/g, ' ').trim()
+}
+
 // Preprocess mkdocs-flavoured markdown into standard HTML-enriched markdown
 export function preprocessMarkdown(raw: string): string {
   let out = raw
+
+  // 0. Convert <!-- IMAGE\nkey: val\n...\n-->\n![alt](path) pairs into <img-placeholder> elements
+  out = out.replace(
+    /<!-- IMAGE\n([\s\S]*?)-->\n!\[([^\]]*)\]\(([^)]*)\)/g,
+    (_match, body: string, alt: string, path: string) => {
+      const attrs: Record<string, string> = {}
+      for (const line of body.trim().split('\n')) {
+        const colonIdx = line.indexOf(':')
+        if (colonIdx === -1) continue
+        const key = line.slice(0, colonIdx).trim()
+        const value = line.slice(colonIdx + 1).trim()
+        if (key && value) attrs[key] = value
+      }
+      const src = path.replace('../assets/', '/assets/')
+      return (
+        `<img-placeholder` +
+        ` data-name="${escAttr(attrs.name ?? '')}"` +
+        ` data-type="${escAttr(attrs.type ?? '')}"` +
+        ` data-size="${escAttr(attrs.size ?? '')}"` +
+        ` data-desc="${escAttr(attrs.desc ?? '')}"` +
+        ` data-caption="${escAttr(attrs.caption ?? '')}"` +
+        ` data-tags="${escAttr(attrs.tags ?? '')}"` +
+        ` data-src="${escAttr(src)}"` +
+        ` data-alt="${escAttr(alt)}"` +
+        `></img-placeholder>`
+      )
+    }
+  )
 
   // 1. Strip mkdocs tabbed syntax (=== "Tab"\n    content) → bold heading + content
   out = out.replace(
@@ -29,9 +61,9 @@ export function preprocessMarkdown(raw: string): string {
   // Convert \(...\) inline math → $...$
   out = out.replace(/\\\(([\s\S]*?)\\\)/g, (_, math) => `$${math}$`)
 
-  // 4. Strip chapter intro description block (between first two --- after H1/subtitle)
+  // 4. Strip subtitle line + intro description block (between first two --- after H1)
   out = out.replace(
-    /^(# [^\n]+\n(?:\n\*[^\n]+\*\n)?)\n---\n[\s\S]*?\n---\n/,
+    /^(# [^\n]+\n)(?:\n\*[^\n]+\*\n)?\n---\n[\s\S]*?\n---\n/,
     '$1\n',
   )
 

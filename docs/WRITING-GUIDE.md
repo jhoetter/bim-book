@@ -134,6 +134,46 @@ Verfügbare Formel-IDs (aus `web/src/data/formulas.ts`):
 
 Neue Formeln können in `web/src/data/formulas.ts` ergänzt werden.
 
+### Bilder: Platzhalter mit Prompt
+
+Jedes Bild wird als **Platzhalter-Block** gesetzt, der den Bildprompt für die spätere Generierung trägt.
+Das Bild-Referenz-Tag (`![...]()`) folgt direkt darunter und zeigt auf den künftigen Dateinamen.
+Das UI rendert den Block als Placeholder-Karte, solange die Bilddatei noch nicht existiert.
+Sobald das Bild generiert wurde, erscheint automatisch das fertige Bild.
+
+**Format:**
+
+```
+<!-- IMAGE
+name: kap06_wandaufbau_wdvs
+type: section
+size: landscape
+desc: Wandquerschnitt WDVS mit 5 Schichten von innen nach außen: Mauerwerk 240 mm (grau,
+  Diagonalschraffur), Klebemortel 5 mm, Mineralwolle 120 mm (blau, Zickzack, WLG 035),
+  Armierputz 8 mm, Silikonharzputz 3 mm. Maßketten rechts, Beschriftungen auf Deutsch,
+  weiß Hintergrund, technisch-clean ohne Personen.
+caption: Wandaufbau mit WDVS – Kastanienallee 7
+tags: wdvs, wärmeschutz, wandquerschnitt
+-->
+![WDVS-Wandquerschnitt](../assets/illustrations/kap06_wandaufbau_wdvs.png)
+```
+
+**Pflichtfelder:**
+| Feld | Bedeutung |
+|---|---|
+| `name` | Dateiname ohne `.png` — Schema: `kapNN_stichwort` |
+| `type` | `section`, `diagram`, `isometric`, `floorplan`, `comparison`, `infographic`, `cover` |
+| `size` | `landscape` (Standard), `square`, `portrait` |
+| `desc` | Vollständige Bildbeschreibung für die KI — so präzise wie möglich |
+| `caption` | Bildunterschrift (erscheint unter dem fertigen Bild) |
+| `tags` | Kommagetrennte Stichwörter für das Manifest |
+
+**Regeln:**
+- `name` muss mit dem Dateinamen im `![...](../assets/illustrations/<name>.png)` übereinstimmen
+- `desc` trägt alle fachlichen Details: Schichten, Maße, Schraffurmuster, Beschriftungssprache
+- Der Platzhalter zeigt `desc` im UI als Prompt-Vorschau — schreib ihn für die KI, nicht für den Leser
+- Bilder werden mit `python3 skills/imagegen/generate-placeholders.py` batch-generiert
+
 ### Kapitelreferenzen
 
 Verweise auf andere Kapitel:
@@ -177,4 +217,22 @@ Hinweise, Warnungen und Tipps:
 3. `docs/appendix/kastanienallee7.md` lesen → aktuelle Kenndaten des Beispielgebäudes
 4. Ggf. vorangehende Kapitel überfliegen → welche Beispiele wurden bereits gezeigt?
 5. Kapitel schreiben nach obigen Konventionen
+   - Bilder als Platzhalter-Blöcke setzen (siehe „Bilder: Platzhalter mit Prompt")
+   - `desc` im Platzhalter vollständig und fachlich korrekt formulieren
 6. `docs/terms-registry.yaml` aktualisieren mit allen neu eingeführten Begriffen
+
+## Bilder generieren (nach dem Schreiben)
+
+```bash
+# Alle fehlenden Bilder generieren (liest alle <!-- IMAGE --> Blöcke):
+python3 skills/imagegen/generate-placeholders.py
+
+# Vorschau: zeigt welche Bilder fehlen ohne zu generieren:
+python3 skills/imagegen/generate-placeholders.py --dry-run
+
+# Nur ein bestimmtes Kapitel:
+python3 skills/imagegen/generate-placeholders.py --chapter 06
+
+# Alle Bilder neu generieren (auch vorhandene überschreiben):
+python3 skills/imagegen/generate-placeholders.py --all
+```

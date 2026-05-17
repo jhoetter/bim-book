@@ -47,8 +47,25 @@ Die Wärmeleitfähigkeit \(\lambda\) ist ein Materialkennwert: Mineralwolle hat 
 
 Die Außenwand ist als **Wärmedämmverbundsystem (WDVS)** ausgeführt – die in Deutschland weitverbreitetste Fassadenbauart.
 
+<!-- IMAGE
+name: kap06_wandaufbau_wdvs
+type: section
+size: landscape
+desc: Wandquerschnitt WDVS von innen nach außen: Innenputz 15mm, Stahlbeton 200mm (grau, Diagonalschraffur), Mineralwolle 160mm (blau, Zickzack, WLG 035), Armierungsputz 5mm, Silikonharzputz 3mm. Maßketten rechts, alle Beschriftungen auf Deutsch, weißer Hintergrund, technisch-clean ohne Personen.
+caption: Abb. 6.1: Wandquerschnitt WDVS mit Maßketten und U-Wert. Mineralwolle WLG 035, 160 mm.
+tags: wdvs, wärmeschutz, wandquerschnitt, section, kastanienallee
+-->
 ![WDVS-Wandquerschnitt](../assets/illustrations/kap06_wandaufbau_wdvs.png)
-*Abb. 6.1: Wandquerschnitt WDVS mit Maßketten und U-Wert. Mineralwolle WLG 035, 160 mm.*
+
+<!-- IMAGE
+name: kap06_u_wert_vergleich
+type: comparison
+size: landscape
+desc: Vergleichsdiagramm U-Werte verschiedener Wandkonstruktionen: ungedämmt (1960er, U=1,2), Standard (0,35), KfW-55 (0,20), Kastanienallee 7 WDVS (0,19), Passivhaus (0,10). Balkendiagramm horizontal, Werte als Beschriftung, Farbkodierung grau/blau/amber, weißer Hintergrund.
+caption: Abb. 6.2: U-Wert-Vergleich verschiedener Wandstandards
+tags: u-wert, vergleich, wärmeschutz, diagramm
+-->
+![U-Wert Vergleich](../assets/illustrations/kap06_u_wert_vergleich.png)
 
 **Schichtaufbau von innen nach außen:**
 
