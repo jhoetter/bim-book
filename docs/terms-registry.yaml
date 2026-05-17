@@ -80,13 +80,13 @@ terms:
     introduced_in: null
 
   gfz:
-    introduced_in: null
+    introduced_in: "02-entwurf-raum-funktion"
 
   glaser-verfahren:
     introduced_in: null
 
   grz:
-    introduced_in: null
+    introduced_in: "02-entwurf-raum-funktion"
 
   hoai:
     introduced_in: null
@@ -110,7 +110,7 @@ terms:
     introduced_in: null
 
   mbo:
-    introduced_in: null
+    introduced_in: "02-entwurf-raum-funktion"
 
   mineralwolle:
     introduced_in: null
@@ -128,13 +128,13 @@ terms:
     introduced_in: null
 
   schichtenmodell:
-    introduced_in: null
+    introduced_in: "01-architektur-als-system"
 
   step:
     introduced_in: null
 
   tga:
-    introduced_in: null
+    introduced_in: "01-architektur-als-system"
 
   transmissionswärmeverlust:
     introduced_in: null

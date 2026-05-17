@@ -4,149 +4,114 @@
 
 ---
 
-Ein Gebäude ist kein Objekt. Es ist ein System — zusammengesetzt aus Materialien, Konstruktionen, technischen Anlagen, räumlichen Beziehungen und Informationen, die über Jahrzehnte ineinandergreifen.
+Wer ein Gründerzeithaus aufmerksam betrachtet, stellt fest: Die Grundmauern und Decken stehen seit 120 Jahren. Die Fenster wurden in den 1990ern ausgetauscht. Die Heizungsanlage wurde schon dreimal erneuert. Die Küche sieht aus wie 2019. Vier verschiedene Zeitrhythmen — in einem einzigen Gebäude.
 
-Wer Architektur verstehen will, muss dieses System verstehen: wie seine Teile zusammenwirken, welche Abhängigkeiten zwischen ihnen bestehen, und warum eine Entscheidung in einem Teilbereich unweigerlich Konsequenzen für alle anderen hat. Genau das ist das Ziel dieses Buches.
-
----
-
-## 1.1 Drei Jahrtausende in einem Satz
-
-Der römische Ingenieur und Architekt Marcus Vitruvius Pollio formulierte im ersten Jahrhundert v. Chr. drei Anforderungen, die jedes gute Gebäude erfüllen muss:
-
-> *Firmitas, Utilitas, Venustas* — Standfestigkeit, Nützlichkeit, Schönheit.
-
-Zwei Jahrtausende Architekturgeschichte haben an dieser Formel nichts Wesentliches geändert. Was sich geändert hat: die Komplexität der Antworten.
-
-**Firmitas** meint heute nicht mehr nur das Ausharren unter Wind und Schnee. Es umfasst Erdbebensicherheit, Brandwiderstand, Schallschutz, Feuchteschutz — ein ganzes Regelwerk aus Normen und Nachweisen, das wir in den Teilen II und III dieses Buches durcharbeiten.
-
-**Utilitas** hat sich von der schlichten Frage nach Tür und Fenster zu einer Wissenschaft der Grundrissoptimierung, Barrierefreiheit, Raumakustik und Tageslichtversorgung entwickelt. Was [Kapitel 2](/chapters/02-entwurf-raum-funktion) beginnt, zieht sich durch das gesamte Buch.
-
-**Venustas** ist das Unberechenbarste — und bleibt es. Dieses Buch handelt von allem, was sich berechnen und normieren lässt. Das Ästhetische ist die Voraussetzung, die man mitbringt.
+Das ist kein Zufall. Es ist die grundlegende Eigenschaft jedes gebauten Werks: Ein Gebäude besteht aus Teilen, die sich mit unterschiedlicher Geschwindigkeit verändern. Wer das versteht, plant besser.
 
 ---
 
-## 1.2 Das Schichtenmodell
+!!! ziel "Nach diesem Kapitel können Sie …"
+    - das Schichtenmodell benennen und auf jedes Gebäude anwenden
+    - erklären, warum Entscheidungen in einer Schicht immer andere Schichten beeinflussen
+    - die Kastanienallee 7 als Leitbeispiel des Buches einordnen
 
-Das wirkmächtigste Konzept für das Verständnis von Gebäuden als Systeme ist das **::Schichtenmodell::**. Es geht auf den britischen Architekten und Planer Frank Duffy zurück, der in den 1970er Jahren erkannte, dass ein Gebäude keine monolithische Einheit ist, sondern aus Schichten besteht, die mit sehr unterschiedlicher Geschwindigkeit veralten und ersetzt werden.
+---
 
-Der amerikanische Autor Stewart Brand hat dieses Konzept 1994 in *How Buildings Learn* popularisiert. Für die Praxis des Hochbaus sind vier Schichten entscheidend:
+## 1.1 Das Schichtenmodell
 
-### Schicht 1 — Tragstruktur (80 bis 200 Jahre)
+Das **::Schichtenmodell::**, entwickelt vom britischen Planer Frank Duffy und später vom Autor Stewart Brand in *How Buildings Learn* (1994) verbreitet, unterteilt jedes Gebäude in vier Schichten — geordnet nach ihrer typischen Lebensdauer:
 
-Fundamente, Stützen, Deckenplatten, tragende Wände. Diese Schicht bestimmt die geometrische Grundform des Gebäudes und ist de facto unveränderlich. Wer Wände versetzt oder Decken durchbricht, greift in das statische System ein — ein Eingriff, der immer rechnerisch nachgewiesen und baurechtlich genehmigt werden muss.
+**Tragstruktur — 80 bis 150 Jahre.** Fundamente, Stützen, Deckenplatten, tragende Wände. Diese Schicht gibt dem Gebäude seine geometrische Grundform und ist de facto unveränderlich. Wer eine tragende Wand versetzen will, braucht einen Statiker und eine Baugenehmigung.
 
-Bei der Kastanienallee 7 ist das der Stahlbeton-Skelettrahmen mit einem 6,0 × 6,0 m Stützenraster, der die Lasten über vier Vollgeschosse in die Fundamentplatte ableitet. Die Bemessung folgt dem **::Eurocode::**, der europäischen Normenreihe für Tragwerksplanung.
+**Gebäudehülle — 30 bis 50 Jahre.** Außenwände, Dach, Fenster, Außentüren. Die Hülle schützt vor Witterung und regelt, was zwischen innen und außen ausgetauscht wird: Wärme, Feuchtigkeit, Schall. Sie wird im Lauf eines Gebäudelebens mindestens einmal komplett erneuert, ohne dass die Tragstruktur angetastet wird.
 
-### Schicht 2 — Gebäudehülle (30 bis 50 Jahre)
+**Technische Gebäudeausrüstung — 15 bis 25 Jahre.** Heizung, Lüftung, Sanitär, Elektro — alles, was das Gebäude am Leben hält. Diese Systeme werden unter dem Begriff **Technische Gebäudeausrüstung** (::TGA::) zusammengefasst. Sie sind die kurzlebigste Schicht: Heizkessel werden nach 20 Jahren ersetzt, Rohrleitungen nach 40. Der wichtigste Planungsgrundsatz folgt daraus: ::TGA::-Bauteile dürfen nicht fest einbetoniert sein. Zugänglichkeit und Austauschbarkeit sind keine Option, sondern Pflicht.
 
-Außenwände, Dach, Fenster, Außentüren. Die Hülle trennt innen von außen, schützt vor Witterung und reguliert den Wärme-, Feuchte- und Schallaustausch. Ihre Lebensdauer ist kürzer als die der Tragstruktur: Fassaden werden gedämmt, Fenster getauscht, Dächer neu abgedichtet — ohne dass das Tragwerk angetastet wird.
-
-Bei der Kastanienallee 7 besteht die Hülle aus dem **Wärmedämmverbundsystem** (::WDVS::) an den Außenwänden — 160 mm **::Mineralwolle::**, Wärmeleitfähigkeitsgruppe (::WLG::) 035 — und einer extensiv begrünten Flachdachkonstruktion mit Photovoltaik-Anlage.
-
-### Schicht 3 — Technische Gebäudeausrüstung (15 bis 25 Jahre)
-
-Die **Technische Gebäudeausrüstung** (::TGA::) umfasst alle haustechnischen Systeme: Heizung, Lüftung, Sanitär, Elektro und Gebäudeautomation. Sie ist die lebenserhaltende Infrastruktur des Gebäudes — und die kurzlebigste der vier Schichten.
-
-Heizkessel, Pumpen und Regelgeräte haben typische Standzeiten von 15 bis 20 Jahren. Rohrleitungen und Kabeltrassen halten länger, aber auch sie werden im Laufe eines Gebäudelebens mindestens einmal vollständig erneuert. Der wichtigste Planungsgrundsatz folgt daraus: Die ::TGA:: darf nie in der Tragstruktur einbetoniert werden. Zugänglichkeit und Austauschbarkeit sind Pflicht.
-
-Bei der Kastanienallee 7 liefert Fernwärme die thermische Energie. Die Verteilung erfolgt über Steigestränge und eine Fußbodenheizung in jedem Geschoss. Lüftung und Elektro sind in abgehängten Decken und Installationsschächten geführt.
-
-### Schicht 4 — Innenausbau (5 bis 15 Jahre)
-
-Nichttragende Trennwände, Bodenbeläge, Deckenverkleidungen, Einbauten, Oberflächen. Der Innenausbau ist die anpassungsfähigste Schicht: Sie folgt den Nutzungsanforderungen, ändert sich bei jedem Mieterwechsel und wird in der Sanierung zuerst erneuert.
-
-Der Entwurf muss die spätere Änderbarkeit des Innenausbaus ermöglichen, ohne in die Tragstruktur oder die laufende ::TGA:: eingreifen zu müssen.
-
-!!! note "Schichtenmodell ≠ Wandschichtaufbau"
-    Das Schichtenmodell beschreibt Gebäudeebenen mit unterschiedlicher Lebensdauer — nicht den materialspezifischen Schichtaufbau einer Wand oder eines Dachs. Den lernen Sie in [Kapitel 5](/chapters/05-konstruktion).
+**Innenausbau — 5 bis 15 Jahre.** Nichttragende Trennwände, Bodenbeläge, Deckenverkleidungen, Oberflächen, Einbauten. Der Innenausbau ist die anpassungsfähigste Schicht — er folgt den Nutzern und verändert sich mit jedem Mieterwechsel und jeder Nutzungsänderung.
 
 <!-- IMAGE
 name: kap01_schichtenmodell
 type: isometric
 size: landscape
 desc: Isometrische Explosionsdarstellung eines viergeschossigen Mehrfamilienhauses (Kastanienallee 7).
-  Vier vertikal übereinander-explodierte Schichten, farblich kodiert mit Beschriftungen:
-  (1) Tragstruktur unten — Stahlbeton-Skelettrahmen mit Stützen auf 6x6 m Raster, Fundamentplatte,
-  Deckenplatten in Diagonalschraffur grau; Lebensdauer-Label "80–200 Jahre";
-  (2) Gebäudehülle — Außenwand-WDVS-Platten hellblau, extensiv begrüntes Flachdach grün;
-  Lebensdauer-Label "30–50 Jahre";
-  (3) TGA — schematische Rohrleitungen rot (Heizung), blau (Sanitär), grau (Lüftung), gelbe Kabeltrassen,
-  alle innerhalb des Skeletts schwebend; Lebensdauer-Label "15–25 Jahre";
-  (4) Innenausbau oben — nichttragende Trockenbau-Trennwände, Bodenbeläge, Einbauten, hellgrau;
-  Lebensdauer-Label "5–15 Jahre".
-  Legende rechts mit deutschen Schichtbezeichnungen. Weißer Hintergrund, technisch-clean, ohne Personen.
-caption: Das Schichtenmodell der Kastanienallee 7 — vier Schichten mit unterschiedlicher Lebensdauer
-tags: schichtenmodell, tragstruktur, gebaeudehuelle, tga, innenausbau, kastanienallee7, lebensdauer
+  Vier vertikal übereinander-explodierte Schichten, jede farblich kodiert:
+  (1) Tragstruktur ganz unten — Stahlbeton-Skelettrahmen mit Stützen auf 6x6 m Raster,
+  Fundamentplatte, Deckenplatten in grauer Diagonalschraffur. Label "Tragstruktur · 80–150 Jahre".
+  (2) Gebäudehülle — Außenwandplatten mit angedeuteter Dämmschicht (hellblau), extensiv
+  begrüntes Flachdach (grüne Fläche oben). Label "Gebäudehülle · 30–50 Jahre".
+  (3) TGA — schematische Rohrleitungen (rot für Heizung, blau für Sanitär), Lüftungskanäle
+  (grau-oval), Elektrokabeltrassen (gelb), schwebend innerhalb des Skeletts.
+  Label "TGA · 15–25 Jahre".
+  (4) Innenausbau ganz oben — nichttragende Trockenbau-Trennwände (dünn, hellgrau), angedeutete
+  Bodenbeläge und Einbauten. Label "Innenausbau · 5–15 Jahre".
+  Jede Schicht hat eine kleine Lebensdauer-Angabe als Label rechts. Weißer Hintergrund,
+  technisch-clean, Beschriftungen auf Deutsch, ohne Personen.
+caption: Das Schichtenmodell — vier Schichten, vier Zeitrhythmen
+tags: schichtenmodell, tragstruktur, gebaeudehuelle, tga, innenausbau, kastanienallee7
 -->
-![Schichtenmodell: vier Schichten der Kastanienallee 7](../assets/illustrations/kap01_schichtenmodell.png)
+![Das Schichtenmodell: vier Schichten der Kastanienallee 7](../assets/illustrations/kap01_schichtenmodell.png)
+
+!!! kastanienallee "Kastanienallee 7"
+    Das Gebäude folgt dem Schichtenmodell in Reinform:
+
+    **Tragstruktur:** Stahlbeton-Skelettrahmen mit 6,0 × 6,0 m Stützenraster, Fundamentplatte, vier
+    Deckenplatten über Vollgeschoss — geplant für 100 Jahre Standzeit.
+
+    **Gebäudehülle:** Gedämmte Außenwände, extensiv begrüntes Flachdach mit Photovoltaik-Anlage.
+    Typische Erneuerungsintervalle: Dachabdichtung nach 30 Jahren, Fassade nach 40 Jahren.
+
+    **TGA:** Fernwärme-Übergabestation, Fußbodenheizung in jedem Geschoss, dezentrale Lüftung je
+    Wohnung, 12 Wohnungszähler — alle Systeme in Schächten und abgehängten Decken geführt,
+    zugänglich ohne Eingriff in die Tragstruktur.
+
+    **Innenausbau:** Trockenbau-Trennwände, Parkettböden, Einbauküchen. Der erste Mieterwechsel
+    wird wahrscheinlich eine neue Küche und einen neuen Bodenbelag bedeuten.
 
 ---
 
-## 1.3 Kastanienallee 7 — Ein System im Überblick
+## 1.2 Warum die Schichten nicht unabhängig voneinander sind
 
-Das Leitbeispiel dieses Buches ist ein typisches Mehrfamilienhaus in einer bayerischen Mittelstadt: **Kastanienallee 7**, vier Vollgeschosse plus Keller und Dachgeschoss, zwölf Wohneinheiten, rund 1.800 m² Bruttogrundfläche.
+Das ::Schichtenmodell:: klingt zunächst wie ein Ordnungsschema — in der Praxis ist es ein Denkwerkzeug. Denn die vier Schichten sind nicht isoliert: Eine Entscheidung in einer Schicht erzwingt immer Konsequenzen in anderen.
 
-Die vollständigen Kenndaten finden sich im Anhang unter [Kastanienallee 7](/appendix/kastanienallee7). Hier eine erste Einordnung nach dem ::Schichtenmodell:::
+Ein einfaches Beispiel: Der Architekt der Kastanienallee 7 entscheidet sich für Fußbodenheizung statt Heizkörpern. Diese eine Entscheidung in der ::TGA::-Schicht zieht Folgen nach sich:
 
-| Schicht | Realisierung Kastanienallee 7 | Typ. Lebensdauer |
-|---|---|---|
-| Tragstruktur | Stahlbeton-Skelett, 6 × 6 m Stützenraster | 80–150 Jahre |
-| Gebäudehülle | ::WDVS:: (::Mineralwolle:: 160 mm), Flachdach + PV | 30–50 Jahre |
-| ::TGA:: | Fernwärme, Fußbodenheizung, Wohnraumlüftung | 15–25 Jahre |
-| Innenausbau | Trockenbau-Trennwände, Parkettböden, Einbauten | 10–20 Jahre |
+- Die Estrichdicke nimmt um 10 bis 12 cm zu. Das verändert die Aufbauhöhe des gesamten Fußbodens — vier Geschosse mal 12 cm sind fast 50 cm, die irgendwo herkommen müssen. Das muss die **Tragstruktur** früh wissen.
+- Fußbodenheizung arbeitet mit niedrigen Vorlauftemperaturen. Damit sie den Raum ausreichend beheizt, muss die **Gebäudehülle** gut dämmen. Das eine setzt das andere voraus.
+- Im **Innenausbau** darf der Estrich nachträglich weder gedämmt noch durchbohrt werden, ohne das Heizsystem zu beschädigen.
 
-Der **::U-Wert::** der Außenwand beträgt 0,19 W/(m²K) — das entspricht den Anforderungen des **Gebäudeenergiegesetzes** (::GEG::). Die ::Mineralwolle:: der Klasse ::WLG:: 035 leistet dabei den Löwenanteil der Dämmwirkung. Was diese Kennwerte bedeuten und wie sie berechnet werden, ist Thema von [Kapitel 6](/chapters/06-waermeschutz-geg).
-
-Das Gebäude ist bewusst typisch gewählt: keine Besonderheiten, kein Sonderbau, keine Ausnahmen. Die Kastanienallee 7 könnte in Ansbach, Rosenheim oder Landshut stehen — und steht damit für tausende Neubauten, die jedes Jahr in deutschen Mittelstädten entstehen.
-
----
-
-## 1.4 Systemdenken: Warum eine Entscheidung alles verändert
-
-Das ::Schichtenmodell:: ist mehr als ein Ordnungsschema — es ist ein Denkwerkzeug. Es zeigt, dass Entscheidungen in einer Schicht immer Konsequenzen für andere Schichten haben.
-
-Ein konkretes Beispiel aus der Kastanienallee 7: Die Entscheidung, Fußbodenheizung statt Heizkörpern zu verwenden, betrifft alle vier Schichten.
-
-**Tragstruktur:** Der Fußbodenaufbau wird um 10–12 cm dicker. Bei vier Vollgeschossen bedeutet das eine Mehrbelastung der Deckenplatten von rund 1,5 kN/m², die der Tragwerksplaner früh kennen muss.
-
-**Hülle:** Fußbodenheizung arbeitet mit niedrigen Vorlauftemperaturen (35–45 °C). Das macht hohe Dämmstandards erst wirtschaftlich: Ein schlecht gedämmtes Gebäude kann von der Fußbodenheizung nicht ausreichend beheizt werden.
-
-**::TGA:::** Die Heizkreisverteilung, die Pumpenauslegung und der Hydraulische Abgleich folgen anderen Regeln als bei Heizkörpern. Schächte und Unterverteilungen müssen früh im Grundriss eingeplant werden.
-
-**Innenausbau:** Der Estrich wird Teil des Wärmeabgabesystems und darf im Nachhinein nicht gedämmt oder durchbohrt werden — ein Planungshinweis, der bis zur Möblierung relevant bleibt.
-
-**Daraus folgt:** Gute Planung ist immer Systemplanung. Wer nur eine Schicht betrachtet, plant das Falsche. Dieses Buch gibt die Werkzeuge, um alle vier Schichten gleichzeitig im Blick zu behalten.
+Diese Abhängigkeiten existieren in jedem Gebäude, bei jeder Entscheidung. Sie lassen sich nicht wegplanen — aber sie lassen sich erkennen und koordinieren. Genau dafür ist das ::Schichtenmodell:: das richtige Werkzeug: Es macht sichtbar, welche Schicht von einer Entscheidung betroffen ist.
 
 !!! tip "Praxistipp"
-    In der frühen Entwurfsphase lohnt es sich, für jede größere Entwurfsentscheidung explizit zu prüfen: Welche anderen Schichten sind betroffen? Diese Frage verhindert die häufigsten Koordinationsfehler zwischen Architekt, Tragwerksplaner und TGA-Fachplaner.
+    In der frühen Entwurfsphase hilft es, bei jeder größeren Entscheidung explizit zu fragen:
+    *Welche anderen Schichten sind betroffen?* Diese Frage verhindert die häufigsten
+    Koordinationsfehler zwischen Tragwerksplanung, Haustechnik und Architektur.
 
 ---
 
-## 1.5 Wie dieses Buch aufgebaut ist
+## 1.3 Was das für dieses Buch bedeutet
 
-Die Struktur des Buches folgt dem ::Schichtenmodell:: — von der Materie zur Methode, vom Stoff zur digitalen Repräsentation:
+Dieses Buch ist nach der Logik des ::Schichtenmodells:: aufgebaut — von der Materie zur Methode:
 
-**Teil I — Fundament** (Kapitel 1–2): Systemverständnis, Raum und Entwurf.
+**Teil I – Fundament** (Kapitel 1–2): Das Systemdenken und der Entwurf. Wo wir jetzt sind.
 
-**Teil II — Baukörper** ([Kapitel 3](/chapters/03-baustoffe)–[5](/chapters/05-konstruktion)): Baustoffe, Tragwerk und Konstruktion.
+**Teil II – Baukörper** ([Kapitel 3–5](/chapters/03-baustoffe)): Baustoffe, Tragwerk, Konstruktion — die Tragstruktur und ihre Hülle im Detail.
 
-**Teil III — Bauphysik** ([Kapitel 6](/chapters/06-waermeschutz-geg)–[9](/chapters/09-brandschutz)): Wärmeschutz, Feuchteschutz, Schallschutz, Brandschutz.
+**Teil III – Bauphysik** ([Kapitel 6–9](/chapters/06-waermeschutz-geg)): Wärme, Feuchtigkeit, Schall, Feuer — die physikalischen Gesetze, denen kein Bauteil entkommt.
 
-**Teil IV — TGA** ([Kapitel 10](/chapters/10-heizung-waermeversorgung)–[13](/chapters/13-elektro)): Heizung, Lüftung, Sanitär, Elektro.
+**Teil IV – TGA** ([Kapitel 10–13](/chapters/10-heizung-waermeversorgung)): Heizung, Lüftung, Sanitär, Elektro.
 
-**Teil V — Recht & Prozess** ([Kapitel 14](/chapters/14-planungsrecht)–[16](/chapters/16-kosten-ausschreibung)): Planungsrecht, HOAI, Kosten und Ausschreibung.
+**Teil V – Recht & Prozess** ([Kapitel 14–16](/chapters/14-planungsrecht)): Planungsrecht, Honorar, Kosten.
 
-**Teil VI — BIM** ([Kapitel 17](/chapters/17-was-bim-wirklich-ist)–[21](/chapters/21-bim-praxis)): Was BIM wirklich ist, IFC, Klassifikation, Kollaboration.
+**Teil VI – BIM** ([Kapitel 17–21](/chapters/17-was-bim-wirklich-ist)): Wie das digitale Modell all das zusammenhält.
 
-**Teil VII — Nachhaltigkeit** ([Kapitel 22](/chapters/22-nachhaltigkeit)–[24](/chapters/24-digitaler-zwilling-ki)): Kreislaufwirtschaft, Sanierung, Digitaler Zwilling.
+**Teil VII – Nachhaltigkeit** ([Kapitel 22–24](/chapters/22-nachhaltigkeit)): Kreislaufwirtschaft, Sanierung, Ausblick.
 
-Alle Kapitel nutzen dasselbe Gebäude als Beispiel. Was in Kapitel 2 als Grundriss beginnt, wird in [Kapitel 6](/chapters/06-waermeschutz-geg) als energetisches Modell weitergedacht und in [Kapitel 18](/chapters/18-ifc) als IFC-Datei vollständig beschrieben.
+Alle Kapitel nutzen dasselbe Gebäude — die Kastanienallee 7. Was hier als Konzept beginnt, wird in [Kapitel 4](/chapters/04-tragwerk) als Lastpfad berechnet, in [Kapitel 10](/chapters/10-heizung-waermeversorgung) als Heizungssystem dimensioniert und in [Kapitel 18](/chapters/18-ifc) als digitales Modell beschrieben.
 
 ---
 
 ## Zusammenfassung
 
-**Ein Gebäude ist ein System aus vier Schichten mit unterschiedlicher Lebensdauer.** Das ::Schichtenmodell:: — Tragstruktur, Gebäudehülle, ::TGA::, Innenausbau — beschreibt, wie Entscheidungen in einer Schicht alle anderen beeinflussen. Gute Planung beginnt mit diesem Systemverständnis und setzt es in jeder Planungsphase konsequent fort.
+**Ein Gebäude ist kein monolithisches Objekt, sondern ein System aus vier Schichten mit unterschiedlicher Lebensdauer.** Das ::Schichtenmodell:: — Tragstruktur, Gebäudehülle, ::TGA::, Innenausbau — macht sichtbar, welche Teile eines Gebäudes in welchem Rhythmus erneuert werden und wie Entscheidungen in einer Schicht andere Schichten beeinflussen.
 
-Tragwerkssysteme im Detail: [Kapitel 4](/chapters/04-tragwerk) · Konstruktiver Aufbau: [Kapitel 5](/chapters/05-konstruktion) · Wärmeschutz der Hülle: [Kapitel 6](/chapters/06-waermeschutz-geg) · TGA-Systeme: [Kapitel 10](/chapters/10-heizung-waermeversorgung)–[13](/chapters/13-elektro)
+Tragwerk und Konstruktion im Detail: [Kapitel 4](/chapters/04-tragwerk) · [Kapitel 5](/chapters/05-konstruktion) · TGA-Systeme: [Kapitel 10](/chapters/10-heizung-waermeversorgung)–[13](/chapters/13-elektro) · Leitbeispiel: [Kastanienallee 7](/appendix/kastanienallee7)

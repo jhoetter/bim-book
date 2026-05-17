@@ -4,155 +4,131 @@
 
 ---
 
-Architektur beginnt mit dem Grundriss. Nicht weil der Grundriss alles ist — aber weil er die Entscheidungen enthält, die am längsten wirken. Wer Wände falsch setzt, baut das Gebäude falsch. Wer Erschließung und Nutzung nicht klärt, schafft Räume, in denen Menschen nicht gut leben können.
+Auf dem Tisch des Architekten liegt ein DIN-A3-Blatt: der Bebauungsplan. Er gibt an, welche Grundflächenzahl zulässig ist, wie viele Geschosse gebaut werden dürfen, wie groß der Abstand zur Grundstücksgrenze sein muss. Aus diesem einen Dokument ergibt sich die Grundgeometrie des Gebäudes — bevor eine einzige Wand gezeichnet ist.
 
-Dieses Kapitel legt das Handwerkszeug bereit: Was macht Räume funktionsfähig? Wie organisiert man einen Grundriss? Welche planungsrechtlichen Grenzen setzen Bebauungsplan und Bauordnung? Und wie sieht das an einem konkreten Beispiel aus — der Kastanienallee 7?
-
----
-
-## 2.1 Was Räume funktionsfähig macht
-
-Kein Raum existiert für sich allein. Jeder Raum hat eine Funktion, eine Beziehung zu benachbarten Räumen und eine Verbindung nach außen. Diese drei Dimensionen — Funktion, Relation, Verbindung — bestimmen, ob ein Grundriss gut ist.
-
-### Funktion und Maß
-
-Jedem Raum liegt ein Nutzungsraster zugrunde. Eine Küche für zwei Personen braucht mindestens 7 m², um Arbeitsfläche, Herd, Kühlschrank und den Bereich davor gleichzeitig zu benutzen. Ein Schlafzimmer ist erst möblierbar, wenn es mindestens 2,50 m in der kürzesten Seite misst — sonst passt kein Doppelbett mit beidseitigem Zugang. Diese Mindestmaße sind keine Konvention, sondern aus ergonomischen Messungen abgeleitet.
-
-Die DIN 18040 (Barrierefreies Bauen) fügt eine weitere Ebene hinzu: Bewegungsflächen für Rollstuhlnutzer von mindestens 1,50 × 1,50 m vor jedem Sanitärelement, Türbreiten von mindestens 90 cm in der lichten Weite, stufenlose Zugänge. Für die Kastanienallee 7, die der Gebäudeklasse 4 nach der **Musterbauordnung** (::MBO::) zuzuordnen ist, gilt barrierefreie Erschließung als Pflicht: Die erste Wohneinheit pro Geschoss muss vollständig barrierefrei nutzbar sein.
-
-### Relation: Welcher Raum liegt neben welchem?
-
-Ein Wohnzimmer sollte Süd- oder Westausrichtung haben, eine Küche kann nach Norden orientiert werden. Das Bad liegt sinnvollerweise an der Außenwand (Fenster, Lüftung) oder am Installationsschacht. Schlafräume profitieren von Abstand zu Straßenlärm.
-
-Diese Überlegungen klingen intuitiv — sind aber planbar. Das wichtigste Werkzeug ist die Blasendiagramm-Methode: Räume als Kreise zeichnen, Verbindungen als Linien, Außenwände als Begrenzung. Erst wenn die Relationen stimmen, beginnt man mit dem Grundriss.
-
-### Verbindung: Erschließung als Rückgrat
-
-Flure, Treppenräume, Aufzüge — die Erschließung ist das Rückgrat jedes Grundrisses. Sie bestimmt, wie viel Fläche für die Bewegung verbraucht wird (Erschließungsanteil) und wie die Wohnungen belichtet und belüftet werden können.
-
-Im deutschen Mehrfamilienhausbau haben sich zwei Typen durchgesetzt:
-
-**Zweispänner:** Zwei Wohnungen pro Geschoss, beidseitig vom Treppenhaus erschlossen. Maximale Besonnung beider Wohnungen, kurze Flurwege, geringe Erschließungsfläche. Nachteil: Bei großen Gebäuden entstehen lange, unwirtschaftliche Baukörper.
-
-**Mehrspänner:** Drei oder mehr Wohnungen pro Erschließungskern. Wirtschaftlicher im großen Maßstab, aber mit schlechteren Belichtungsbedingungen für die innenliegenden Räume.
-
-Die Kastanienallee 7 ist als **Vierspänner** organisiert: vier Wohnungen pro Geschoss um ein zentrales Treppenhaus. Das ermöglicht eine nahezu quadratische Grundfläche von 20 × 18 m — mit sehr gutem Verhältnis von Hüllfläche zu beheiztem Volumen.
+Dieser Rahmen ist eng, aber er ist nicht das Ganze. Innerhalb der planungsrechtlichen Grenzen entscheidet der Entwurf über alles, was das Wohnen im Gebäude ausmacht: Orientierung der Räume, Länge der Flure, Lage des Treppenhauses, Größe der Wohnungen. Gute Grundrisse entstehen nicht trotz der Einschränkungen — sie entstehen durch den präzisen Umgang mit ihnen.
 
 ---
 
-## 2.2 Kompaktheit und das A/V-Verhältnis
+!!! ziel "Nach diesem Kapitel können Sie …"
+    - GRZ und GFZ berechnen und aus dem Bebauungsplan lesen
+    - Erschließungstypen im Mehrfamilienhaus unterscheiden und bewerten
+    - den Grundriss der Kastanienallee 7 lesen und seine Qualitäten einordnen
 
-Das Verhältnis der wärmeübertragenden Hüllfläche (A) zum beheizten Gebäudevolumen (V) ist eine der wichtigsten Kennzahlen im energetischen Entwurf. Je kleiner das A/V-Verhältnis, desto kompakter das Gebäude — und desto geringer der Wärmeverlust bei gleicher Dämmqualität.
+---
 
-Ein freistehendes Einfamilienhaus hat typischerweise ein A/V-Verhältnis von 0,8 bis 1,2 m⁻¹. Ein kompaktes Mehrfamilienhaus wie die Kastanienallee 7 erreicht Werte von 0,3 bis 0,5 m⁻¹. Das ist physikalisch vorteilhaft: Schon die Bauform spart Energie, bevor auch nur ein Zentimeter Dämmung eingebaut wird.
+## 2.1 Was der Bebauungsplan vorgibt
 
-Für den Entwurf folgt daraus: **Einsprünge, Erker, freigestellte Treppenhäuser und komplexe Dachformen erhöhen das A/V-Verhältnis.** Was gestalterisch reizvoll sein kann, ist energetisch teuer. Guter Entwurf kennt diesen Trade-off.
+Der Bebauungsplan regelt für jedes Grundstück, was gebaut werden darf. Drei Kennzahlen sind dabei zentral.
 
-Das ::GEG:: setzt das A/V-Verhältnis in die Berechnung des zulässigen Wärmedurchgangskoeffizienten der Hülle ein: Kompaktere Gebäude dürfen bei einzelnen Bauteilen höhere ::U-Wert::e aufweisen, weil ihre Gesamtbilanz trotzdem stimmt. Die Formel folgt in [Kapitel 6](/chapters/06-waermeschutz-geg).
+### Grundflächenzahl
+
+Die **Grundflächenzahl** (::GRZ::) gibt an, welchen Anteil der Grundstücksfläche das Gebäude überbauen darf. Eine ::GRZ:: von 0,4 auf einem 600 m² großen Grundstück erlaubt eine Grundfläche von maximal 240 m².
+
+Die Formel ist einfach: ^^grz^^ — Grundfläche des Gebäudes geteilt durch Grundstücksfläche. Garagen, Terrassen und Stellplätze werden nach § 19 Abs. 4 BauNVO mit dem Faktor 0,5 angerechnet, sodass die tatsächlich versiegelte Fläche die zulässige ::GRZ:: überschreiten kann — höchstens bis zum 1,5-fachen.
+
+### Geschossflächenzahl
+
+Die **Geschossflächenzahl** (::GFZ::) setzt die Summe aller Geschossflächen ins Verhältnis zur Grundstücksfläche: ^^gfz^^ Ein viergeschossiges Gebäude mit 360 m² Grundfläche hat 4 × 360 = 1.440 m² Geschossfläche. Auf einem 600 m² Grundstück ergibt das eine GFZ von 2,4.
+
+!!! note "GFZ ≠ Wohnfläche"
+    Die Geschossfläche nach BauNVO umfasst die gesamte Grundfläche je Stockwerk inklusive
+    Außenwände, Treppenhaus und Schächte. Die Wohnfläche nach Wohnflächenverordnung ist kleiner,
+    weil nicht beheizte Nebenräume und Erschließungsflächen abgezogen werden.
+
+### Gebäudeklassen
+
+Die **Musterbauordnung** (::MBO::) teilt Gebäude in fünf Klassen ein — nach Geschosszahl und der Höhe des höchsten Aufenthaltsraums. Die Einordnung bestimmt, welche Anforderungen an Standsicherheit, Brandschutz und Rettungswege gelten. Für Brandschutz und Feuerwiderstandsklassen folgt [Kapitel 9](/chapters/09-brandschutz).
+
+!!! kastanienallee "Kastanienallee 7"
+    Das Grundstück hat eine Fläche von ca. 600 m². Das Gebäude überbaut 20 × 18 = 360 m².
+
+    **GRZ:** 360 / 600 = **0,60** — im oberen Bereich, im Bebauungsplan für diesen Standort
+    ausnahmsweise bis 0,6 zugelassen (Standardwert allgemeines Wohngebiet: 0,4).
+
+    **GFZ:** 4 × 360 / 600 = **2,4** — typisch für innerstädtisches Wohngebiet.
+
+    **Gebäudeklasse 4** nach ::MBO::, weil vier Vollgeschosse und der oberste Aufenthaltsraum
+    unter 13 m Höhe liegt. Folge: tragende Bauteile in F 90, barrierefreie Erschließung Pflicht,
+    Aufzug aus Gründen der Barrierefreiheit bereits mit vier Geschossen vorgesehen.
+
+---
+
+## 2.2 Grundrissorganisation
+
+Der Grundriss entscheidet, wie Menschen täglich im Gebäude leben. Drei Fragen stehen dabei im Mittelpunkt: Wie werden die Wohnungen erschlossen? Wie sind die Räume zueinander angeordnet? Und wie groß ist die Fläche, die nicht gewohnt, sondern nur durchlaufen wird?
+
+### Erschließungstypen
+
+Im deutschen Mehrfamilienhaus haben sich wenige Erschließungstypen durchgesetzt:
+
+**Zweispänner:** Zwei Wohnungen pro Geschoss, beidseitig vom Treppenhaus erschlossen. Kurze Flurwege, maximale Besonnung für beide Wohnungen, geringe Erschließungsfläche. Bei großen Gebäuden entstehen damit lange, schmale Baukörper.
+
+**Dreispänner:** Drei Wohnungen pro Kern. Wirtschaftlicher im großen Maßstab, aber eine der drei Wohnungen hat meist nur eine Orientierungsrichtung.
+
+**Mehrspänner (vier und mehr):** Vier oder mehr Wohnungen um einen Erschließungskern. Maximale Flächeneffizienz, erlaubt kompakte, nahezu quadratische Baukörper — auf Kosten der Orientierung einiger Wohnungen.
+
+Die Wahl des Erschließungstyps ist keine rein formale Entscheidung: Sie bestimmt, welche Wohnungen gut belichtet werden, wie lang die Flure sind, wo Schächte für Versorgungsleitungen liegen können, und wie viel Gesamtfläche des Gebäudes nicht als Wohnfläche vermietet werden kann.
+
+!!! kastanienallee "Kastanienallee 7"
+    Das Gebäude ist als **Vierspänner** organisiert: vier Wohnungen pro Geschoss um ein
+    zentrales Treppenhaus mit Aufzug.
+
+    ![Grundriss Erdgeschoss, M 1:100](../assets/illustrations/kap02_grundriss_eg.png)
+
+    Der Eingang liegt an der Südseite, eingezogen hinter einem Windfang. Das Treppenhaus
+    liegt im Kern des Gebäudes — alle vier Wohnungstüren sind von dort in wenigen Schritten
+    erreichbar. Der Erschließungsflur ist auf das bauordnungsrechtliche Minimum reduziert.
+
+    Je Geschoss drei Wohnungstypen: zwei 2-Zimmer-Wohnungen (je ca. 55 m²), eine
+    3-Zimmer-Wohnung (ca. 75 m²) und eine 4-Zimmer-Wohnung (ca. 95 m²). Die größte Wohnung
+    liegt an der Südseite mit zwei Orientierungsrichtungen. Über vier Vollgeschosse ergeben
+    sich zwölf Wohneinheiten in ausgewogener Größenmischung.
+
+---
+
+## 2.3 Kompaktheit
+
+Jedes Gebäude hat eine Hüllfläche — Außenwände, Dach, Bodenplatte — und ein beheiztes Volumen dahinter. Das Verhältnis dieser beiden Größen heißt A/V-Verhältnis: Hüllfläche (A) geteilt durch beheiztes Volumen (V), angegeben in m⁻¹.
+
+Je kleiner dieser Wert, desto kompakter das Gebäude: Wenig Hüllfläche umschließt viel Volumen. Kompaktheit ist geometrisch effizient — ein Würfel hat bei gleichem Volumen eine deutlich kleinere Oberfläche als ein flacher, ausgedehnter Körper.
+
+Für den Entwurf folgt daraus: Einsprünge, Erker, freigestellte Treppenhäuser und komplexe Dachformen vergrößern die Hüllfläche, ohne mehr Wohnfläche zu schaffen. Das ist ein Trade-off, den jeder Entwurf bewusst eingehen oder vermeiden sollte.
 
 <!-- IMAGE
 name: kap02_av_verhaeltnis
 type: comparison
 size: landscape
-desc: Vergleich zweier Grundrissformen und ihres A/V-Verhältnisses. Links: verzweigter Baukörper
-  mit Erkern und Einsprüngen, A/V = 1,0 m⁻¹ (schlecht), Hüllfläche rot eingefärbt, Volumen grau.
-  Rechts: kompakter, nahezu quadratischer Baukörper wie Kastanienallee 7, A/V = 0,42 m⁻¹ (gut),
-  gleiche Geschossfläche wie links, Hüllfläche deutlich kleiner. Beide im gleichen Maßstab.
-  Unter jedem Baukörper die Kennwerte: Hüllfläche A in m², Volumen V in m³, A/V-Verhältnis in m⁻¹.
-  Beschriftungen deutsch, weißer Hintergrund, technisch-clean.
+desc: Vergleich zweier Baukörper in der Draufsicht (Grundriss) und im Schrägbild, jeweils mit
+  identischer Geschossfläche. Links: ein verzweigter, L-förmiger Baukörper mit Einsprüngen und
+  Vorsprüngen; große Hüllfläche, kleines Volumen. Darunter Kennwerte: A = 820 m², V = 1.200 m³,
+  A/V = 0,68 m⁻¹ (ungünstig, rot markiert). Rechts: ein kompakter, nahezu quadratischer
+  Baukörper wie die Kastanienallee 7 (20 × 18 m, 4 Geschosse); kleine Hüllfläche, gleiches
+  Volumen. Darunter Kennwerte: A = 540 m², V = 1.440 m³, A/V = 0,38 m⁻¹ (günstig, grün markiert).
+  Hüllfläche in beiden Varianten rot schraffiert dargestellt. Beschriftungen deutsch, weißer
+  Hintergrund, technisch-clean.
 caption: Kompakter Baukörper (rechts) vs. verzweigter Baukörper (links) — gleiche Fläche, deutlich besseres A/V-Verhältnis
-tags: a-v-verhältnis, kompaktheit, energieeffizienz, grundriss, kastanienallee7
+tags: a-v-verhältnis, kompaktheit, grundriss, baukörper, kastanienallee7
 -->
-![A/V-Verhältnis: Vergleich Baukörperformen](../assets/illustrations/kap02_av_verhaeltnis.png)
+![A/V-Verhältnis: Vergleich kompakter und verzweigter Baukörper](../assets/illustrations/kap02_av_verhaeltnis.png)
 
----
+!!! kastanienallee "Kastanienallee 7"
+    Der nahezu quadratische Grundriss von 20 × 18 m ist das Ergebnis einer bewussten
+    Optimierung auf Kompaktheit.
 
-## 2.3 Planungsrechtliche Rahmenbedingungen
+    Hüllfläche A: ca. 2 × (20 + 18) × 12 m Höhe + 360 m² Dach + 360 m² Bodenplatte
+    = ca. 1.632 m². Beheiztes Volumen V: 20 × 18 × 12 = 4.320 m³.
 
-Bevor der erste Strich gezeichnet wird, legt das Planungsrecht den Rahmen fest. Drei Kennzahlen bestimmen, was auf einem Grundstück gebaut werden darf.
+    **A/V ≈ 0,38 m⁻¹** — ein guter Wert für ein freistehendes Mehrfamilienhaus.
+    Ein Einfamilienhaus mit gleicher Wohnfläche hätte typischerweise A/V > 0,8 m⁻¹.
 
-### Grundflächenzahl (GRZ)
-
-Die **Grundflächenzahl** (::GRZ::) gibt an, welcher Anteil der Grundstücksfläche bebaut werden darf. Eine ::GRZ:: von 0,4 bedeutet: Auf einem 600 m² großen Grundstück darf die Grundfläche des Gebäudes höchstens 240 m² betragen.
-
-$$\text{GRZ} = \frac{A_{\text{bebaute Fläche}}}{A_{\text{Grundstück}}}$$
-
-Die Berechnung folgt ^^grz^^. Garagen, Nebenanlagen und Terrassen werden bei der GRZ mit dem Faktor 0,5 angerechnet (§ 19 Abs. 4 BauNVO), sodass die tatsächlich versiegelte Fläche die Grundflächenzahl übersteigen kann — maximal bis auf das 1,5-fache der zulässigen GRZ.
-
-Die Kastanienallee 7 hat eine Grundfläche von 360 m² (20 × 18 m) auf einem Grundstück von ca. 600 m². Das ergibt eine GRZ von 0,60 — im oberen Bereich des Zulässigen für allgemeine Wohngebiete (GRZ max. 0,4 nach § 17 BauNVO, im konkreten Bebauungsplan ausnahmsweise bis 0,6 zugelassen).
-
-### Geschossflächenzahl (GFZ)
-
-Die **Geschossflächenzahl** (::GFZ::) setzt die Summe aller Geschossflächen ins Verhältnis zur Grundstücksfläche:
-
-$$\text{GFZ} = \frac{\sum \text{Geschossfläche}}{\text{Grundstücksfläche}}$$
-
-Die Berechnung folgt ^^gfz^^. Mit vier Vollgeschossen à 360 m² ergibt sich für die Kastanienallee 7 eine GFZ von 1.440 / 600 = **2,4**. Dieser Wert liegt für innerstädtisches allgemeines Wohngebiet im typischen Bereich.
-
-!!! note "GFZ und Wohnfläche"
-    Die Geschossfläche nach BauNVO umfasst die gesamte Grundfläche je Stockwerk inklusive Außenwände. Sie ist nicht identisch mit der Wohnfläche nach WoFlV: Die Wohnfläche wird kleiner, weil Treppenhäuser, Schächte und nicht beheizbare Nebenräume abgezogen werden.
-
-### Gebäudeklassen nach MBO
-
-Die ::MBO:: unterteilt Gebäude in fünf Klassen nach Höhe und Nutzung. Die Einordnung bestimmt, welche Anforderungen an Brandschutz, Standsicherheit und Rettungswege gelten.
-
-Die Kastanienallee 7 mit vier Vollgeschossen und einer Firsthöhe unter 13 m über Gelände fällt in **Gebäudeklasse 4**: Gebäude mit mehr als zwei Vollgeschossen und einer Fußbodenhöhe des obersten Aufenthaltsraumes ≤ 13 m. Das hat praktische Konsequenzen: Tragende Bauteile müssen in der Regel in **F 90** (feuerhemmend) ausgeführt werden, Rettungswege müssen ohne Hilfsmittel der Feuerwehr erreichbar sein, der Aufzug ist ab fünf Vollgeschossen Pflicht — hier aber aus Gründen der Barrierefreiheit bereits mit vier Geschossen vorgesehen.
-
----
-
-## 2.4 Kastanienallee 7 — Grundrissanalyse
-
-Der Grundriss des Erdgeschosses zeigt das Organisationsprinzip des gesamten Gebäudes: ein zentrales Treppenhaus mit Aufzug als Erschließungskern, vier Wohnungen, die sich nach allen vier Himmelsrichtungen orientieren.
-
-![Grundriss Erdgeschoss Kastanienallee 7, M 1:100](../assets/illustrations/kap02_grundriss_eg.png)
-
-### Erschließung
-
-Der Eingang liegt an der Südseite des Gebäudes, eingezogen hinter einem Windfang. Das Treppenhaus nimmt die Gebäudemitte ein und erschließt alle vier Wohneinheiten pro Geschoss über einen kurzen Erschließungsflur. Der Aufzug liegt direkt neben dem Treppenhaus.
-
-Diese Anordnung minimiert die Erschließungsfläche: Der Flur vor den Wohnungstüren ist auf das bauordnungsrechtliche Minimum reduziert. Gleichzeitig ist die Erschließung vollständig überwacht — es gibt keinen Blind-Flur ohne natürliche Belichtung.
-
-### Wohnungsschlüssel
-
-Je Geschoss vier Wohnungen in drei Typen:
-
-| Typ | Anzahl je Geschoss | Fläche | Orientierung |
-|---|---|---|---|
-| 2-Zimmer-Wohnung | 2 | je ca. 55 m² | Nord bzw. Süd |
-| 3-Zimmer-Wohnung | 1 | ca. 75 m² | Ost + Nord |
-| 4-Zimmer-Wohnung | 1 | ca. 95 m² | Süd + West |
-
-Über vier Vollgeschosse ergibt das zwölf Wohneinheiten in ausgewogener Größenmischung — für den Mietwohnungsmarkt ein bewährtes Verhältnis.
-
-### Kompaktheit und Orientierung
-
-Die nahezu quadratische Grundfläche von 20 × 18 m ist das Ergebnis einer Optimierung: Sie maximiert das Verhältnis von Wohnfläche zu Erschließungsfläche und minimiert gleichzeitig die Hüllfläche pro Wohneinheit. Das A/V-Verhältnis beträgt rund 0,42 m⁻¹ — ein guter Wert für ein freistehendes Wohngebäude dieser Größe.
-
-Die Südausrichtung der größten Wohneinheit ist kein Zufall: Südorientierte Wohnräume profitieren von passiven solaren Gewinnen im Winter, die den Heizenergiebedarf spürbar senken. Diese solare Optimierung ist im ::GEG:: indirekt berücksichtigt: Gebäude mit ungünstiger Ausrichtung müssen höhere Dämmstandards kompensieren.
-
-### Barrierefreiheit
-
-Alle vier Wohnungen im Erdgeschoss sind nach DIN 18040-2 (Wohnungen) barrierefrei zugänglich. Der Aufzug erschließt alle Geschosse. Türbreiten ≥ 90 cm und stufenlose Zugänge sind im gesamten Gebäude umgesetzt. Damit erfüllt die Kastanienallee 7 die Anforderungen der Landesbauordnung für Gebäude der Gebäudeklasse 4 in Bayern.
-
----
-
-## 2.5 Grundriss und TGA — ein frühes Gespräch
-
-Ein Grundriss, der keine Rücksicht auf die ::TGA:: nimmt, erzeugt in der Ausführungsplanung Konflikte. Drei Punkte sind besonders kritisch:
-
-**Installationsschächte:** Steigeleitungen für Heizung, Sanitär und Elektro brauchen vertikale Schächte, die von Keller bis Dach durchlaufen — in jeder Etage an derselben Stelle. Bei der Kastanienallee 7 liegen zwei Nassschächte unmittelbar neben dem Treppenhaus; jede Wohnung hat maximal zwei Meter Leitungsweg zur Steigleitung.
-
-**Lüftungsführung:** Mechanische Lüftungsanlagen erfordern horizontale Lüftungskanäle in der abgehängten Decke. Deren Querschnitt bestimmt die verfügbare lichte Raumhöhe. Bei der Kastanienallee 7 liegt die Rohdecke bei 3,0 m, die abgehängte Decke bei 2,65 m — ausreichend, aber nicht üppig.
-
-**Heizungsverteiler:** Jede Fußbodenheizungs-Wohneinheit braucht einen Verteilerkasten. Der muss im Grundriss eingeplant sein — typisch in einem kleinen Schrank im Flur, der in jeder Etage an derselben Position sitzt.
-
-!!! warning "Achtung"
-    Nachträgliche Grundrissänderungen, die die Lage von Schächten, Stiegen oder Lüftungskanälen verschieben, sind in der Ausführungsplanung unverhältnismäßig teuer. Klären Sie ::TGA::-Schnittstellen bereits im Entwurf.
+    Was die Kompaktheit für den Wärmeschutz bedeutet, folgt in
+    [Kapitel 6](/chapters/06-waermeschutz-geg).
 
 ---
 
 ## Zusammenfassung
 
-**Der Grundriss ist das wichtigste Dokument der Architektur** — er enthält alle Entscheidungen, die am längsten wirken. Gute Grundrissplanung verbindet Funktion, Compaktheit, Erschließungseffizienz und planungsrechtliche Rahmenbedingungen. Die Kastanienallee 7 zeigt, wie diese Anforderungen in einem typischen Mehrfamilienhaus zusammenkommen: viergeschossig, barrierefrei, kompakt (A/V 0,42 m⁻¹), GFZ 2,4, GRZ 0,60.
+**Gute Grundrisse entstehen durch den präzisen Umgang mit Einschränkungen** — planungsrechtliche Kennzahlen (::GRZ::, ::GFZ::, Gebäudeklasse) sind nicht Feinde des Entwurfs, sondern sein Ausgangsmaterial. Erschließungstyp und Kompaktheit bestimmen, wie effizient eine Grundfläche genutzt wird und wie sich das Gebäude langfristig verhalten wird.
 
-Planungsrecht im Detail: [Kapitel 14](/chapters/14-planungsrecht) · Barrierefreiheit und Brandschutz: [Kapitel 9](/chapters/09-brandschutz) · TGA-Schächte und Lüftung: [Kapitel 11](/chapters/11-lueftung) · Kenndaten Kastanienallee 7: [Kastanienallee 7](/appendix/kastanienallee7)
+Planungsrecht im Detail: [Kapitel 14](/chapters/14-planungsrecht) · Wärmeschutz und A/V-Verhältnis: [Kapitel 6](/chapters/06-waermeschutz-geg) · Brandschutz und Gebäudeklassen: [Kapitel 9](/chapters/09-brandschutz) · Leitbeispiel: [Kastanienallee 7](/appendix/kastanienallee7)
