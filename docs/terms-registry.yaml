@@ -72,13 +72,13 @@ terms:
     introduced_in: null
 
   eurocode:
-    introduced_in: null
+    introduced_in: "01-architektur-als-system"
 
   fbh:
     introduced_in: null
 
   geg:
-    introduced_in: null
+    introduced_in: "01-architektur-als-system"
 
   gfz:
     introduced_in: "02-entwurf-raum-funktion"
@@ -114,7 +114,7 @@ terms:
     introduced_in: "01-architektur-als-system"
 
   mbo:
-    introduced_in: null
+    introduced_in: "02-entwurf-raum-funktion"
 
   primärenergiefaktor:
     introduced_in: null
@@ -127,6 +127,9 @@ terms:
 
   schallschutz-rw:
     introduced_in: null
+
+  schichtenmodell:
+    introduced_in: "01-architektur-als-system"
 
   step:
     introduced_in: null
@@ -144,10 +147,10 @@ terms:
     introduced_in: null
 
   wdvs:
-    introduced_in: null
+    introduced_in: "01-architektur-als-system"
 
   wärmebrücke:
     introduced_in: null
 
   wlg:
-    introduced_in: null
+    introduced_in: "01-architektur-als-system"
