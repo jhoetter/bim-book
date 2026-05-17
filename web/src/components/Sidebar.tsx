@@ -1,7 +1,7 @@
 import { NavLink, useLocation } from 'react-router-dom'
 import { useEffect, useRef } from 'react'
 import { WallHifi, HomeIcon } from 'bim-icons'
-import { PARTS, GALLERY_ICON } from '../chapters'
+import { PARTS, GALLERY_ICON, TOP_PAGES } from '../chapters'
 import { useBookmarks } from '../lib/bookmarks'
 
 function chapterHref(path: string): string {
@@ -35,12 +35,9 @@ export function Sidebar() {
       <div className="sidebar-header">
         <NavLink to="/" className="sidebar-brand">
           <span className="sidebar-brand-mark" aria-hidden="true">
-            <WallHifi size={18} />
+            <WallHifi size={16} />
           </span>
-          <span className="sidebar-brand-info">
-            <span className="sidebar-title">BIM von Grund auf</span>
-            <span className="sidebar-subtitle">Johannes Hötter</span>
-          </span>
+          <span className="sidebar-title">BIM von Grund auf</span>
         </NavLink>
       </div>
 
@@ -69,6 +66,25 @@ export function Sidebar() {
             </span>
             <span className="sidebar-link-title">Bildgalerie</span>
           </NavLink>
+          {TOP_PAGES.map(chapter => {
+            const Icon = chapter.icon
+            return (
+              <NavLink
+                key={chapter.id}
+                to={`/${chapter.path}`}
+                className={({ isActive }) =>
+                  ['sidebar-link', isActive ? 'sidebar-link--active' : ''].join(' ').trim()
+                }
+              >
+                {Icon && (
+                  <span className="sidebar-icon" aria-hidden="true">
+                    <Icon size={14} strokeWidth={1.5} />
+                  </span>
+                )}
+                <span className="sidebar-link-title">{chapter.title}</span>
+              </NavLink>
+            )
+          })}
         </div>
 
         {bookmarks.length > 0 && (
@@ -108,7 +124,7 @@ export function Sidebar() {
         )}
 
         <div className="sidebar-nav">
-          {PARTS.filter(part => part.title !== 'Überblick').map(part => (
+          {PARTS.filter(part => part.title !== 'Überblick' && part.title !== 'Nachschlagewerke').map(part => (
             <div key={part.title} className="sidebar-part">
               <span className="sidebar-part-title">{part.title}</span>
               <ul>

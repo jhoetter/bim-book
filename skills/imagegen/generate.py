@@ -28,6 +28,20 @@ MAX_QA_ATTEMPTS = 3
 QA_MODEL = "gpt-4o"
 BG_THRESHOLD = 240
 
+# Autocrop-Konfiguration
+AUTOCROP_PADDING_PCT = 0.05   # Padding = 5 % der größeren Content-Dimension
+AUTOCROP_MIN_SAVINGS = 0.20   # Kein Crop wenn Whitespace-Einsparung < 20 %
+AUTOCROP_MAX_EXPAND  = 0.30   # Standard-AR ablehnen wenn > 30 % Expansion nötig
+
+# Zulässige Standard-Aspektverhältnisse (Landscape + Square; kein Portrait für Diagramme)
+STANDARD_RATIOS = [
+    ("2:1",  2.0 / 1.0),
+    ("16:9", 16.0 / 9.0),
+    ("3:2",  3.0 / 2.0),
+    ("4:3",  4.0 / 3.0),
+    ("1:1",  1.0 / 1.0),
+]
+
 # Unterstützte Größen von gpt-image-2
 VALID_SIZES = {"1024x1024", "1536x1024", "1024x1536", "auto"}
 
@@ -364,6 +378,99 @@ def remove_white_background(image_data: bytes, threshold: int = BG_THRESHOLD) ->
     return buf.getvalue()
 
 
+def autocrop_image(image_data: bytes) -> bytes:
+    """
+    Schneidet überschüssiges Whitespace (Transparenz nach BG-Remove) weg.
+
+    Ablauf:
+      1. Bounding-Box der nicht-transparenten Pixel ermitteln
+      2. Padding drauflegen (5 % der größeren Content-Dimension)
+      3. Auf nächstes Standard-Aspektverhältnis expandieren (nie shrink)
+      4. Nur ausführen wenn Whitespace-Einsparung ≥ 20 %
+    """
+    try:
+        from PIL import Image
+        import io
+    except ImportError:
+        print("  Hinweis: Pillow nicht installiert – Autocrop übersprungen.")
+        return image_data
+
+    img = Image.open(io.BytesIO(image_data)).convert("RGBA")
+    w, h = img.size
+
+    bbox = img.getbbox()  # non-transparent bounds, or None if fully transparent
+    if bbox is None:
+        return image_data
+
+    cx1, cy1, cx2, cy2 = bbox
+    content_w = cx2 - cx1
+    content_h = cy2 - cy1
+
+    pad = max(20, int(max(content_w, content_h) * AUTOCROP_PADDING_PCT))
+
+    # Padded crop region, clamped to image bounds
+    x1 = max(0, cx1 - pad)
+    y1 = max(0, cy1 - pad)
+    x2 = min(w, cx2 + pad)
+    y2 = min(h, cy2 + pad)
+    crop_w = x2 - x1
+    crop_h = y2 - y1
+
+    savings = 1.0 - (crop_w * crop_h) / (w * h)
+    if savings < AUTOCROP_MIN_SAVINGS:
+        print(f"  Autocrop: übersprungen (nur {savings:.0%} Whitespace)")
+        return image_data
+
+    # Nächstes Standard-Aspektverhältnis suchen (expandieren, nicht shrink)
+    crop_ratio = crop_w / crop_h
+    best_label = None
+    best_expand = float("inf")
+    final_w, final_h = crop_w, crop_h
+
+    for label, ratio in STANDARD_RATIOS:
+        if ratio >= crop_ratio:
+            # Bild ist zu hoch → Breite expandieren
+            new_w = int(crop_h * ratio)
+            new_h = crop_h
+        else:
+            # Bild ist zu breit → Höhe expandieren
+            new_w = crop_w
+            new_h = int(crop_w / ratio)
+
+        expand = (new_w * new_h - crop_w * crop_h) / (crop_w * crop_h)
+        if expand < best_expand and expand <= AUTOCROP_MAX_EXPAND:
+            best_expand = expand
+            best_label = label
+            final_w, final_h = new_w, new_h
+
+    # Nicht über Originaldimensionen hinausgehen
+    final_w = min(w, final_w)
+    final_h = min(h, final_h)
+
+    # Content zentrieren im finalen Canvas
+    cx = (x1 + x2) // 2
+    cy = (y1 + y2) // 2
+    out_x1 = max(0, cx - final_w // 2)
+    out_y1 = max(0, cy - final_h // 2)
+    out_x2 = out_x1 + final_w
+    out_y2 = out_y1 + final_h
+
+    # Korrigieren falls über den Rand
+    if out_x2 > w:
+        out_x1, out_x2 = w - final_w, w
+    if out_y2 > h:
+        out_y1, out_y2 = h - final_h, h
+
+    cropped = img.crop((out_x1, out_y1, out_x2, out_y2))
+
+    ratio_note = f" → {best_label}" if best_label else " (kein passendes AR)"
+    print(f"  Autocrop: {w}×{h} → {final_w}×{final_h}{ratio_note}  (–{savings:.0%} Whitespace)")
+
+    buf = io.BytesIO()
+    cropped.save(buf, "PNG")
+    return buf.getvalue()
+
+
 def create_placeholder(output_path: Path, description: str, attempts: int):
     """Erstellt ein Placeholder-PNG wenn QA nach max. Versuchen nicht bestanden."""
     try:
@@ -482,6 +589,8 @@ def main():
                         help="Hintergrundentfernung überspringen (für Cover-Bilder mit farbigem Hintergrund)")
     parser.add_argument("--no-manifest", action="store_true",
                         help="Manifest-Eintrag überspringen (z.B. für Cover-Bilder die nicht in der Galerie erscheinen sollen)")
+    parser.add_argument("--no-autocrop", action="store_true",
+                        help="Automatisches Zuschneiden von Whitespace überspringen")
     args = parser.parse_args()
 
     load_env()
@@ -611,6 +720,16 @@ def main():
     else:
         print("Entferne Hintergrund...")
         image_data = remove_white_background(image_data)
+
+    # Autocrop: nur wenn BG entfernt wurde (braucht Transparenz für BoundingBox)
+    no_autocrop = args.no_autocrop or no_remove_bg
+    if no_autocrop:
+        if args.no_autocrop:
+            print("Autocrop übersprungen (--no-autocrop).")
+    else:
+        print("Autocrop...")
+        image_data = autocrop_image(image_data)
+
     print("Speichere Bild...")
     save_image(image_data, output_path)
     log_path = save_prompt_log(output_path, current_prompt, args.desc, args.type, qa_log)

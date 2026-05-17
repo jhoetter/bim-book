@@ -241,32 +241,25 @@ html, body, #root {
 .sidebar-brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   text-decoration: none;
   padding: 4px 6px;
   border-radius: var(--radius-md);
   transition: background var(--dur-fast);
+  width: 100%;
+  justify-content: flex-start;
 }
 .sidebar-brand:hover { background: var(--bg-hover); }
 
 .sidebar-brand-mark {
-  width: 28px;
-  height: 28px;
-  border-radius: var(--radius-sm);
-  background: var(--accent);
-  color: #fff;
+  width: 20px;
+  height: 20px;
+  color: var(--accent);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   user-select: none;
-}
-
-.sidebar-brand-info {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  min-width: 0;
 }
 
 .sidebar-title {
@@ -279,15 +272,6 @@ html, body, #root {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.sidebar-subtitle {
-  display: block;
-  font-size: 10px;
-  color: var(--text-faint);
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  white-space: nowrap;
 }
 
 .sidebar-nav-top {
@@ -1542,6 +1526,48 @@ html, body, #root {
 .chat-bubble:hover { background: var(--structural); transform: scale(1.04); }
 .chat-bubble--open { background: var(--structural); }
 
+/* ── Selection popover ──────────────────────────────────────────── */
+.sel-popover {
+  position: fixed;
+  transform: translate(-50%, calc(-100% - 10px));
+  z-index: 9999;
+  background: hsl(220 20% 14%);
+  border: 1px solid hsl(220 14% 22%);
+  border-radius: 8px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  box-shadow: 0 4px 20px hsl(220 20% 5% / 0.35), 0 1px 4px hsl(220 20% 5% / 0.2);
+  animation: sel-in 120ms var(--ease-out);
+  pointer-events: auto;
+}
+@keyframes sel-in {
+  from { opacity: 0; transform: translate(-50%, calc(-100% - 6px)) scale(0.95); }
+  to   { opacity: 1; transform: translate(-50%, calc(-100% - 10px)) scale(1); }
+}
+.sel-popover__ai {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: hsl(220 10% 82%);
+  font-size: 12.5px;
+  font-weight: 500;
+  font-family: var(--font);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 100ms, color 100ms;
+}
+.sel-popover__ai:hover {
+  background: hsl(220 14% 22%);
+  color: hsl(0 0% 96%);
+}
+.sel-popover__ai svg { flex-shrink: 0; opacity: 0.85; }
+
 /* Normal panel */
 .chat-panel {
   position: fixed;
@@ -2149,7 +2175,7 @@ html, body, #root {
 }
 
 /* ── GlossarFull (appendix page) ─────────────────────────────── */
-.glossar-full { max-width: 860px; }
+.glossar-full { max-width: 900px; }
 
 .glossar-search-wrap {
   display: flex;
@@ -2182,10 +2208,10 @@ html, body, #root {
 
 .glossar-entry {
   display: grid;
-  grid-template-columns: 180px 1fr auto;
+  grid-template-columns: 80px 180px 1fr;
   align-items: start;
   gap: 12px 16px;
-  padding: 12px 4px;
+  padding: 14px 4px;
   border-bottom: 1px solid var(--border-soft);
 }
 .glossar-entry:last-child { border-bottom: none; }
@@ -2221,16 +2247,23 @@ html, body, #root {
 }
 
 .glossar-entry-img-wrap {
-  flex-shrink: 0;
-  width: 88px;
+  width: 80px;
 }
 .glossar-entry-img {
-  width: 88px;
-  height: 88px;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-soft);
   display: block;
+}
+.glossar-entry-img-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-sidebar);
+  border: 1px dashed var(--border-soft);
+  opacity: 0.5;
 }
 
 /* ── FormelSammlung (appendix page) ──────────────────────────── */

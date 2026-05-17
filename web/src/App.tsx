@@ -59,6 +59,7 @@ function ChapterRoute() {
   const chapter = ALL_CHAPTERS.find(c => c.path === path)
   const id = chapter?.id ?? (slug ?? '')
   const [imgFailed, setImgFailed] = useState(false)
+  const rafRef = useRef(0)
 
   // Reset error state when navigating to a different chapter
   useEffect(() => { setImgFailed(false) }, [path])
@@ -75,6 +76,49 @@ function ChapterRoute() {
       return () => clearTimeout(t)
     }
   }, [location.hash, path])
+
+  // Update URL hash as user scrolls so reload restores scroll position
+  useEffect(() => {
+    const contentArea = document.querySelector<HTMLElement>('.content-area')
+    if (!contentArea) return
+
+    let headings: HTMLElement[] = []
+
+    const onScroll = () => {
+      if (rafRef.current) return
+      rafRef.current = requestAnimationFrame(() => {
+        rafRef.current = 0
+        if (!headings.length) return
+        const threshold = contentArea.getBoundingClientRect().top + 96
+        let current: HTMLElement | null = null
+        for (const h of headings) {
+          if (h.getBoundingClientRect().top <= threshold) current = h
+          else break
+        }
+        const newHash = current?.id ? `#${current.id}` : ''
+        const target = window.location.pathname + newHash
+        if (window.location.pathname + window.location.hash !== target) {
+          history.replaceState(null, '', target)
+        }
+      })
+    }
+
+    // Delay attaching the listener so the initial scroll-to-hash animation
+    // doesn't immediately overwrite the hash we just navigated to
+    const t = setTimeout(() => {
+      headings = Array.from(
+        document.querySelectorAll<HTMLElement>('.prose h1[id], .prose h2[id], .prose h3[id], .prose h4[id]')
+      )
+      contentArea.addEventListener('scroll', onScroll, { passive: true })
+    }, 400)
+
+    return () => {
+      clearTimeout(t)
+      cancelAnimationFrame(rafRef.current)
+      rafRef.current = 0
+      contentArea.removeEventListener('scroll', onScroll)
+    }
+  }, [path])
 
   const cover = chapter?.coverImage
   const hasImage = !!cover && !imgFailed

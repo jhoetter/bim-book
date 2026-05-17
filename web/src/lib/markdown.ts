@@ -20,7 +20,7 @@ export function preprocessMarkdown(raw: string): string {
       const titleHtml = title
         ? `<p class="admonition-title">${title}</p>\n\n`
         : ''
-      return `\n<div class="admonition admonition-${type}">\n\n${titleHtml}${content}\n\n</div>\n`
+      return `\n<div class="admonition admonition-${type}">\n\n${titleHtml}${content}\n\n</div>\n\n`
     },
   )
 
@@ -29,17 +29,23 @@ export function preprocessMarkdown(raw: string): string {
   // Convert \(...\) inline math → $...$
   out = out.replace(/\\\(([\s\S]*?)\\\)/g, (_, math) => `$${math}$`)
 
-  // 4. Fix relative image paths: ../assets/ → /assets/
+  // 4. Strip chapter intro description block (between first two --- after H1/subtitle)
+  out = out.replace(
+    /^(# [^\n]+\n(?:\n\*[^\n]+\*\n)?)\n---\n[\s\S]*?\n---\n/,
+    '$1\n',
+  )
+
+  // 5. Fix relative image paths: ../assets/ → /assets/
   out = out.replace(/\]\(\.\.\/assets\//g, '](/assets/')
 
-  // 5. Convert ::TERM:: markers to gloss spans for hover tooltips
+  // 6. Convert ::TERM:: markers to gloss spans for hover tooltips
   // Matches letters, digits, hyphens, German umlauts, apostrophes, spaces
   out = out.replace(/::([\w\-äöüÄÖÜß' ]+)::/g, (_, term: string) => {
     const id = term.trim().toLowerCase()
     return `<span data-gloss="${id}">${term.trim()}</span>`
   })
 
-  // 6. Convert ^^formula-id^^ markers to formula spans
+  // 7. Convert ^^formula-id^^ markers to formula spans
   out = out.replace(/\^\^([\w\-]+)\^\^/g, (_, id: string) =>
     `<span data-formula="${id.trim()}"></span>`
   )

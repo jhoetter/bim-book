@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
@@ -18,6 +18,7 @@ import { GlossTooltip } from './GlossTooltip'
 import { FormulaTooltip } from './FormulaTooltip'
 import { GlossarFull } from './GlossarFull'
 import { FormelSammlung } from './FormelSammlung'
+import { AIHifi } from 'bim-icons'
 import type { Components } from 'react-markdown'
 
 const CALC_COMPONENTS = {
@@ -32,6 +33,12 @@ const CALC_COMPONENTS = {
 interface LightboxState {
   src: string
   alt: string
+}
+
+interface SelectionPopoverState {
+  x: number
+  y: number
+  text: string
 }
 
 interface Props {
@@ -61,6 +68,8 @@ function makeHeading(Tag: HeadingTag) {
 export function MarkdownPage({ content }: Props) {
   const processed = preprocessMarkdown(content)
   const [lightbox, setLightbox] = useState<LightboxState | null>(null)
+  const [selPopover, setSelPopover] = useState<SelectionPopoverState | null>(null)
+  const proseRef = useRef<HTMLDivElement>(null)
 
   const closeLightbox = useCallback(() => setLightbox(null), [])
 
@@ -75,8 +84,43 @@ export function MarkdownPage({ content }: Props) {
     }
   }, [lightbox, closeLightbox])
 
+  const handleMouseUp = useCallback(() => {
+    const sel = window.getSelection()
+    if (!sel || sel.isCollapsed) { setSelPopover(null); return }
+    const text = sel.toString().trim()
+    if (!text) { setSelPopover(null); return }
+    const range = sel.getRangeAt(0)
+    if (!proseRef.current?.contains(range.commonAncestorContainer)) { setSelPopover(null); return }
+    const rect = range.getBoundingClientRect()
+    setSelPopover({ x: rect.left + rect.width / 2, y: rect.top, text })
+  }, [])
+
+  useEffect(() => {
+    const onMouseDown = (e: MouseEvent) => {
+      const popoverEl = document.querySelector('.sel-popover')
+      if (popoverEl && popoverEl.contains(e.target as Node)) return
+      setSelPopover(null)
+    }
+    const onScroll = () => setSelPopover(null)
+    document.addEventListener('mousedown', onMouseDown)
+    document.querySelector('.content-area')?.addEventListener('scroll', onScroll)
+    return () => {
+      document.removeEventListener('mousedown', onMouseDown)
+      document.querySelector('.content-area')?.removeEventListener('scroll', onScroll)
+    }
+  }, [])
+
+  const askAI = useCallback((text: string) => {
+    setSelPopover(null)
+    window.getSelection()?.removeAllRanges()
+    document.dispatchEvent(new CustomEvent('bim:chat-send', {
+      detail: { message: `Erkläre mir diesen Abschnitt: „${text}"` },
+    }))
+  }, [])
+
   return (
     <>
+      <div ref={proseRef} onMouseUp={handleMouseUp}>
       <div className="prose">
         <ReactMarkdown
           remarkPlugins={[remarkGfm, remarkMath]}
@@ -131,6 +175,24 @@ export function MarkdownPage({ content }: Props) {
           {processed}
         </ReactMarkdown>
       </div>
+      </div>
+
+      {selPopover && createPortal(
+        <div
+          className="sel-popover"
+          style={{ left: selPopover.x, top: selPopover.y }}
+        >
+          <button
+            className="sel-popover__ai"
+            onMouseDown={e => e.preventDefault()}
+            onClick={() => askAI(selPopover.text)}
+          >
+            <AIHifi size={14} />
+            Mit KI erklären
+          </button>
+        </div>,
+        document.body
+      )}
 
       {lightbox && createPortal(
         <div className="lightbox" onClick={closeLightbox} role="dialog" aria-modal="true">

@@ -161,6 +161,8 @@ export const PARTS: Part[] = [
   },
 ]
 
+export const TOP_PAGES: Chapter[] = PARTS.find(p => p.title === 'Nachschlagewerke')?.chapters ?? []
+
 // Flat ordered list for prev/next navigation
 export const ALL_CHAPTERS: Chapter[] = PARTS.flatMap(p => p.chapters)
 
@@ -194,8 +196,9 @@ export function getBreadcrumb(pathname: string): { part: string | null; chapter:
   const chapter = ALL_CHAPTERS.find(c => c.path === path)
   if (!chapter) return { part: null, chapter: null }
   const part = PARTS.find(p => p.chapters.some(c => c.id === chapter.id))
+  const skipPartTitle = new Set(['Überblick', 'Nachschlagewerke'])
   return {
-    part: part && part.title !== 'Überblick' ? part.title : null,
+    part: part && !skipPartTitle.has(part.title) ? part.title : null,
     chapter: chapter.title,
   }
 }

@@ -28,6 +28,18 @@ export function GlossarFull() {
       <div className="glossar-list">
         {filtered.map(entry => (
           <div key={entry.id} className="glossar-entry">
+            {entry.image ? (
+              <div className="glossar-entry-img-wrap">
+                <img
+                  className="glossar-entry-img"
+                  src={entry.image}
+                  alt={entry.term}
+                  loading="lazy"
+                />
+              </div>
+            ) : (
+              <div className="glossar-entry-img-placeholder" />
+            )}
             <div className="glossar-entry-left">
               <span className="glossar-entry-term">{entry.term}</span>
               {entry.abbrev && (
@@ -37,16 +49,6 @@ export function GlossarFull() {
             <div className="glossar-entry-body">
               <p className="glossar-entry-def">{entry.definition}</p>
             </div>
-            {entry.image && (
-              <div className="glossar-entry-img-wrap">
-                <img
-                  className="glossar-entry-img"
-                  src={entry.image}
-                  alt={entry.term}
-                  loading="lazy"
-                />
-              </div>
-            )}
           </div>
         ))}
       </div>
