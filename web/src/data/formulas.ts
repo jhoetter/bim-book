@@ -8,7 +8,8 @@ export interface FormulaVariable {
 export interface FormulaEntry {
   id: string
   name: string
-  inlineTex: string
+  badge: string        // short inline label, e.g. "U = …"
+  inlineTex: string    // kept for potential future use
   displayTex: string
   variables: FormulaVariable[]
   example?: {
@@ -23,6 +24,7 @@ export const FORMULAS: FormulaEntry[] = [
   {
     id: 'u-wert',
     name: 'U-Wert (Wärmedurchgangskoeffizient)',
+    badge: 'U = …',
     inlineTex: 'U = \\tfrac{1}{R_{si} + \\sum\\frac{d}{\\lambda} + R_{se}}',
     displayTex: 'U = \\frac{1}{R_{si} + \\displaystyle\\sum_{i}\\frac{d_i}{\\lambda_i} + R_{se}}',
     variables: [
@@ -41,6 +43,7 @@ export const FORMULAS: FormulaEntry[] = [
   {
     id: 'r-wert',
     name: 'R-Wert (Wärmedurchgangswiderstand)',
+    badge: 'R = d/λ',
     inlineTex: 'R = \\tfrac{d}{\\lambda}',
     displayTex: 'R = \\frac{d}{\\lambda}',
     variables: [
@@ -57,6 +60,7 @@ export const FORMULAS: FormulaEntry[] = [
   {
     id: 'transmissionswaermeverlust',
     name: 'Transmissionswärmeverlust H_T',
+    badge: 'H_T = ΣU·A·f',
     inlineTex: 'H_T = \\sum U_i A_i f_{x,i}',
     displayTex: 'H_T = \\sum_{i} U_i \\cdot A_i \\cdot f_{x,i}',
     variables: [
@@ -74,6 +78,7 @@ export const FORMULAS: FormulaEntry[] = [
   {
     id: 'gfz',
     name: 'Geschossflächenzahl (GFZ)',
+    badge: 'GFZ = ΣGF / GS',
     inlineTex: '\\text{GFZ} = \\tfrac{\\sum GF}{GS}',
     displayTex: '\\text{GFZ} = \\frac{\\text{Geschossfläche (gesamt)}}{\\text{Grundstücksfläche}}',
     variables: [
@@ -90,6 +95,7 @@ export const FORMULAS: FormulaEntry[] = [
   {
     id: 'grz',
     name: 'Grundflächenzahl (GRZ)',
+    badge: 'GRZ = A_beb / A_GS',
     inlineTex: '\\text{GRZ} = \\tfrac{A_{bebaut}}{A_{Grundst.}}',
     displayTex: '\\text{GRZ} = \\frac{A_{\\text{bebaute Fläche}}}{A_{\\text{Grundstück}}}',
     variables: [
@@ -106,6 +112,7 @@ export const FORMULAS: FormulaEntry[] = [
   {
     id: 'primaerenergiebedarf',
     name: 'Primärenergiebedarf Q_p',
+    badge: 'Q_p = Q_f · f_p',
     inlineTex: 'Q_p = Q_f \\cdot f_p',
     displayTex: 'Q_p = Q_f \\cdot f_p',
     variables: [
@@ -122,6 +129,7 @@ export const FORMULAS: FormulaEntry[] = [
   {
     id: 'schalldaemmass',
     name: "Bewertetes Schalldämmmaß R'w",
+    badge: "R'w = Rw − K",
     inlineTex: "R'_w = R_w - K",
     displayTex: "R'_w = R_w - K_{\\text{Flanke}}",
     variables: [
@@ -138,6 +146,7 @@ export const FORMULAS: FormulaEntry[] = [
   {
     id: 'waermeleitung',
     name: 'Wärmeleitung (Fourier)',
+    badge: 'q = λ · ΔT/d',
     inlineTex: 'q = \\lambda \\cdot \\tfrac{\\Delta T}{d}',
     displayTex: 'q = \\lambda \\cdot \\frac{\\Delta T}{d}',
     variables: [

@@ -16,13 +16,17 @@ import { CalcSound }    from './calculators/CalcSound'
 import { CalcHoai }     from './calculators/CalcHoai'
 import { GlossTooltip } from './GlossTooltip'
 import { FormulaTooltip } from './FormulaTooltip'
+import { GlossarFull } from './GlossarFull'
+import { FormelSammlung } from './FormelSammlung'
 import type { Components } from 'react-markdown'
 
 const CALC_COMPONENTS = {
-  'calc-u-value':  () => <CalcUValue />,
-  'calc-dewpoint': () => <CalcDewPoint />,
-  'calc-sound':    () => <CalcSound />,
-  'calc-hoai':     () => <CalcHoai />,
+  'calc-u-value':    () => <CalcUValue />,
+  'calc-dewpoint':   () => <CalcDewPoint />,
+  'calc-sound':      () => <CalcSound />,
+  'calc-hoai':       () => <CalcHoai />,
+  'glossar-full':    () => <GlossarFull />,
+  'formel-sammlung': () => <FormelSammlung />,
 } as unknown as Partial<Components>
 
 interface LightboxState {

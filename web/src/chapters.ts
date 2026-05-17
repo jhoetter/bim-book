@@ -149,6 +149,7 @@ export const PARTS: Part[] = [
     chapters: [
       { id: 'kastanienallee7', num: '', title: 'Kastanienallee 7', path: 'appendix/kastanienallee7', icon: TopoIcon, pageIcon: TopoHifi },
       { id: 'glossar', num: '', title: 'Glossar', path: 'appendix/glossar', icon: NoteBlockIcon, pageIcon: NoteBlockHifi },
+      { id: 'formelsammlung', num: '', title: 'Formelsammlung', path: 'appendix/formelsammlung', icon: QuantityTakeoffIcon, pageIcon: QuantityTakeoffHifi },
       { id: 'ifc-referenz', num: '', title: 'IFC-Schnellreferenz', path: 'appendix/ifc-referenz', icon: IFCIcon, pageIcon: IFCHifi },
       { id: 'normen', num: '', title: 'Normen & Gesetze', path: 'appendix/normen', icon: ScheduleViewIcon, pageIcon: ScheduleViewHifi },
     ],

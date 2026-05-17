@@ -7,7 +7,7 @@ interface Props {
 }
 
 function tex(src: string, display = false) {
-  return katex.renderToString(src, { throwOnError: false, displayMode: display, output: 'html' })
+  return katex.renderToString(src, { throwOnError: false, displayMode: display, output: 'html', trust: false })
 }
 
 export function FormulaTooltip({ id }: Props) {
@@ -44,10 +44,10 @@ export function FormulaTooltip({ id }: Props) {
       aria-label={`Formel: ${entry.name}`}
       aria-expanded={open}
     >
-      <span
-        className="formula-inline"
-        dangerouslySetInnerHTML={{ __html: tex(entry.inlineTex) }}
-      />
+      <span className="formula-inline">
+        <span className="formula-badge-icon">ƒ</span>
+        <span className="formula-badge-label">{entry.badge}</span>
+      </span>
       {open && (
         <span
           className={`formula-popover${above ? ' formula-popover--above' : ' formula-popover--below'}`}

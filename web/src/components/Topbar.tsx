@@ -6,9 +6,10 @@ import { useBookmarks } from '../lib/bookmarks'
 interface TopbarProps {
   sidebarOpen: boolean
   onToggle: () => void
+  onOpenPalette: () => void
 }
 
-export function Topbar({ onToggle }: TopbarProps) {
+export function Topbar({ onToggle, onOpenPalette }: TopbarProps) {
   const location = useLocation()
   const { part, chapter } = getBreadcrumb(location.pathname)
   const path = location.pathname.replace(/^\//, '') || 'index'
@@ -69,6 +70,19 @@ export function Topbar({ onToggle }: TopbarProps) {
         >
           <ShareIcon />
         </button>
+
+        <button
+          className="topbar-palette-btn"
+          onClick={onOpenPalette}
+          aria-label="Befehlspalette öffnen (⌘K)"
+          title="Befehlspalette (⌘K)"
+        >
+          <PaletteSearchIcon />
+          <span className="topbar-palette-hint">
+            <span className="topbar-palette-key">⌘</span>
+            <span className="topbar-palette-key">K</span>
+          </span>
+        </button>
       </div>
 
       {copied && (
@@ -109,6 +123,15 @@ function ShareIcon() {
     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M9.5 1.5 12.5 4.5l-3 3" />
       <path d="M12.5 4.5H5a3 3 0 0 0 0 6h1.5" />
+    </svg>
+  )
+}
+
+function PaletteSearchIcon() {
+  return (
+    <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <circle cx="6" cy="6" r="4.5" />
+      <path d="M10.5 10.5l2.5 2.5" />
     </svg>
   )
 }

@@ -34,11 +34,13 @@ export const GLOSSAR: GlossEntry[] = [
     id: 'dampfbremse',
     term: 'Dampfbremse',
     definition: 'Schicht mit definiertem sd-Wert (0,5–1500 m), die Dampfdiffusion verlangsamt, aber nicht vollständig verhindert.',
+    image: '/assets/glossar/dampfbremse.png',
   },
   {
     id: 'dampfsperre',
     term: 'Dampfsperre',
     definition: 'Schicht mit sehr hohem sd-Wert (> 1500 m), die Dampfdiffusion praktisch verhindert.',
+    image: '/assets/glossar/dampfsperre.png',
   },
   {
     id: 'dvgw',
@@ -67,6 +69,7 @@ export const GLOSSAR: GlossEntry[] = [
     term: 'Fußbodenheizung',
     abbrev: 'FBH',
     definition: 'Flächenheizung, die Wärme über die Bodenoberfläche abgibt. Betriebstemperatur 30–45 °C Vorlauf.',
+    image: '/assets/glossar/fbh.png',
   },
   {
     id: 'geg',
@@ -84,6 +87,7 @@ export const GLOSSAR: GlossEntry[] = [
     id: 'glaser-verfahren',
     term: 'Glaser-Verfahren',
     definition: 'Vereinfachtes Rechenverfahren zur Bestimmung von Tauwassermengen in Bauteilen (DIN 4108-3).',
+    image: '/assets/glossar/glaser-verfahren.png',
   },
   {
     id: 'grz',
@@ -118,6 +122,7 @@ export const GLOSSAR: GlossEntry[] = [
     term: 'Kontrollierte Wohnraumlüftung',
     abbrev: 'KWL',
     definition: 'Mechanisches Lüftungssystem mit Wärmerückgewinnung (η ≥ 75 %).',
+    image: '/assets/glossar/kwl.png',
   },
   {
     id: 'lastfall',
@@ -134,6 +139,7 @@ export const GLOSSAR: GlossEntry[] = [
     id: 'mineralwolle',
     term: 'Mineralwolle',
     definition: 'Dämmstoff aus Glaswolle oder Steinwolle. Wärmeleitfähigkeit λ = 0,030–0,045 W/(mK), je nach WLG-Klasse.',
+    image: '/assets/glossar/mineralwolle.png',
   },
   {
     id: 'mbo',
@@ -173,6 +179,7 @@ export const GLOSSAR: GlossEntry[] = [
     term: 'Technische Gebäudeausrüstung',
     abbrev: 'TGA',
     definition: 'Oberbegriff für Heizung, Lüftung, Sanitär, Elektro und Gebäudeautomation im Gebäude.',
+    image: '/assets/glossar/tga.png',
   },
   {
     id: 'transmissionswärmeverlust',
@@ -183,6 +190,7 @@ export const GLOSSAR: GlossEntry[] = [
     id: 'u-wert',
     term: 'U-Wert',
     definition: 'Wärmedurchgangskoeffizient in W/(m²K). Je kleiner, desto besser die Wärmedämmung des Bauteils.',
+    image: '/assets/glossar/u-wert.png',
   },
   {
     id: 'vob',
@@ -195,6 +203,7 @@ export const GLOSSAR: GlossEntry[] = [
     term: 'Wärmedämmverbundsystem',
     abbrev: 'WDVS',
     definition: 'Vorgehängte Dämmschicht (Mineralwolle oder EPS) mit Putzoberfläche, direkt auf der Wand verklebt.',
+    image: '/assets/glossar/armierungsputz.png',
   },
   {
     id: 'wärmebrücke',
