@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, useParams, useLocation, Navigate, NavLink } from 'react-router-dom'
-import { useEffect, useState, useCallback, useRef, type PointerEvent } from 'react'
+import { useEffect, useState, useCallback, useRef, type PointerEvent, type ComponentType } from 'react'
+import { createPortal } from 'react-dom'
 import { Sidebar } from './components/Sidebar'
 import { Topbar } from './components/Topbar'
 import { TableOfContents } from './components/TableOfContents'
@@ -49,6 +50,40 @@ function Pagination({ id }: { id: string }) {
         )}
       </div>
     </div>
+  )
+}
+
+interface ChapterHeroProps {
+  cover: string
+  PageIcon?: ComponentType<{ size?: number }>
+  title: string
+  num: string
+}
+
+function ChapterHero({ cover, PageIcon, title, num }: ChapterHeroProps) {
+  const [phase, setPhase] = useState<'hold' | 'sliding' | 'done'>('hold')
+
+  useEffect(() => {
+    const t = setTimeout(() => setPhase('sliding'), 650)
+    return () => clearTimeout(t)
+  }, [])
+
+  if (phase === 'done') return null
+
+  return createPortal(
+    <div
+      className={`chapter-hero${phase === 'sliding' ? ' chapter-hero--sliding' : ''}`}
+      onTransitionEnd={() => setPhase('done')}
+    >
+      <div className="chapter-hero__bg" style={{ backgroundImage: `url(${cover})` }} />
+      <div className="chapter-hero__overlay" />
+      <div className="chapter-hero__content">
+        {PageIcon && <div className="chapter-hero__icon"><PageIcon size={80} /></div>}
+        {num && <p className="chapter-hero__num">Kapitel {num}</p>}
+        <h1 className="chapter-hero__title">{title}</h1>
+      </div>
+    </div>,
+    document.body
   )
 }
 
@@ -129,6 +164,15 @@ function ChapterRoute() {
 
   return (
     <>
+      {hasImage && (
+        <ChapterHero
+          key={path}
+          cover={cover!}
+          PageIcon={PageIcon}
+          title={chapter?.title ?? ''}
+          num={chapter?.num ?? ''}
+        />
+      )}
       <div className="page-cover-wrap">
         {hasImage
           ? <img className="page-cover" src={cover} alt="" aria-hidden="true" onError={() => setImgFailed(true)} />

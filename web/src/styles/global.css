@@ -471,6 +471,85 @@ html, body, #root {
   .content { padding: 28px 20px 64px; }
 }
 
+/* ── Chapter hero opening animation ──────────────────────────── */
+.chapter-hero {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  overflow: hidden;
+  transform: translateY(0);
+  transition: transform 0.9s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.chapter-hero--sliding {
+  transform: translateY(-100%);
+}
+
+.chapter-hero__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+}
+
+.chapter-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.38);
+  transition: opacity 0.5s ease;
+}
+
+.chapter-hero--sliding .chapter-hero__overlay {
+  opacity: 0;
+}
+
+.chapter-hero__content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: white;
+  text-align: center;
+  padding: 0 32px;
+  z-index: 1;
+  transition: opacity 0.4s ease;
+}
+
+.chapter-hero--sliding .chapter-hero__content {
+  opacity: 0;
+}
+
+.chapter-hero__icon {
+  line-height: 1;
+  opacity: 0.9;
+}
+
+.chapter-hero__num {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.65;
+}
+
+.chapter-hero__title {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+  max-width: 700px;
+}
+
+@media (max-width: 760px) {
+  .chapter-hero__title { font-size: 1.75rem; }
+}
+
 /* ── Chapter cover banner + floating icon (Notion-style) ─────── */
 .page-cover-wrap {
   position: relative;
@@ -3076,6 +3155,165 @@ html, body, #root {
   to { transform: rotate(360deg); }
 }
 
+/* ── IfcReferenz ──────────────────────────────────────────────── */
+.ifc-referenz { max-width: 900px; }
+.ifc-list { display: flex; flex-direction: column; }
+
+.ifc-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 4px;
+  border-bottom: 1px solid var(--border-soft);
+}
+.ifc-entry:last-child { border-bottom: none; }
+
+.ifc-entry-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.ifc-entity-name {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--bg-active);
+  border-radius: var(--radius-xs);
+  padding: 2px 7px;
+  letter-spacing: -0.01em;
+}
+
+.ifc-entry-tags {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.ifc-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 10.5px;
+  font-weight: 500;
+  padding: 1px 7px;
+  border-radius: var(--radius-xs);
+  white-space: nowrap;
+  line-height: 1.6;
+}
+.ifc-tag--struktur   { background: hsl(240 60% 94%); color: hsl(240 50% 44%); }
+.ifc-tag--arch       { background: hsl(214 82% 94%); color: hsl(214 60% 40%); }
+.ifc-tag--heizung    { background: hsl(0 72% 94%);   color: hsl(0 60% 40%);   }
+.ifc-tag--lueftung   { background: hsl(158 50% 92%); color: hsl(158 50% 30%); }
+.ifc-tag--elektro    { background: hsl(38 90% 92%);  color: hsl(34 70% 34%);  }
+.ifc-tag--material   { background: hsl(220 12% 93%); color: hsl(220 8% 40%);  }
+.ifc-tag--pset       { background: var(--bg-code); color: var(--text-muted); border: 1px solid var(--border); }
+
+.ifc-entry-bedeutung {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Shared KA7 note — used by both IfcReferenz and NormenReferenz */
+.ifc-ka7-note {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  background: #FFF7ED;
+  border: 1px solid #FDE68A;
+  border-radius: var(--radius-sm);
+  padding: 5px 10px;
+  margin-top: 2px;
+}
+.dark .ifc-ka7-note {
+  background: hsl(34 60% 14%);
+  border-color: hsl(34 50% 30%);
+}
+.ifc-ka7-label {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--amber-dark);
+  flex-shrink: 0;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+.ifc-ka7-text {
+  font-size: 12.5px;
+  color: hsl(34 50% 32%);
+  line-height: 1.55;
+}
+.dark .ifc-ka7-text { color: hsl(34 60% 72%); }
+
+/* ── NormenReferenz ───────────────────────────────────────────── */
+.normen-referenz { max-width: 900px; }
+.normen-list { display: flex; flex-direction: column; }
+
+.normen-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 4px;
+  border-bottom: 1px solid var(--border-soft);
+}
+.normen-entry:last-child { border-bottom: none; }
+
+.normen-entry-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.normen-norm-name {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--text);
+  font-family: var(--font-mono);
+}
+
+.normen-entry-tags {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.norm-phase, .norm-bereich {
+  display: inline-flex;
+  align-items: center;
+  font-size: 10.5px;
+  font-weight: 500;
+  padding: 1px 7px;
+  border-radius: var(--radius-xs);
+  white-space: nowrap;
+  line-height: 1.6;
+}
+
+.norm-phase--entwurf     { background: hsl(214 82% 94%); color: hsl(214 60% 40%); }
+.norm-phase--genehmigung { background: hsl(270 60% 94%); color: hsl(270 50% 44%); }
+.norm-phase--ausfuehrung { background: hsl(38 90% 92%);  color: hsl(34 70% 34%);  }
+.norm-phase--betrieb     { background: hsl(158 50% 92%); color: hsl(158 50% 30%); }
+.norm-phase--alle        { background: hsl(220 12% 93%); color: hsl(220 8% 40%);  }
+
+.norm-bereich--bauphysik  { background: hsl(214 60% 94%); color: hsl(214 60% 40%); }
+.norm-bereich--brandschutz{ background: hsl(0 72% 94%);   color: hsl(0 60% 40%);   }
+.norm-bereich--tga        { background: hsl(38 90% 92%);  color: hsl(34 70% 34%);  }
+.norm-bereich--lueftung   { background: hsl(158 50% 92%); color: hsl(158 50% 30%); }
+.norm-bereich--recht      { background: hsl(270 60% 94%); color: hsl(270 50% 44%); }
+.norm-bereich--bim        { background: var(--bg-active);  color: var(--accent);    }
+
+.normen-entry-thema {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
 /* ── @media print ─────────────────────────────────────────────── */
 
 @media print {
@@ -3436,4 +3674,5 @@ html, body, #root {
      ════════════════════════════════════════════════════════════ */
   .pagination { display: none !important; }
   .sel-popover, .lightbox { display: none !important; }
+  .ifc-ka7-note, .normen-entry .ifc-ka7-note { display: none !important; }
 }

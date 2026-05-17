@@ -18,6 +18,8 @@ import { GlossTooltip } from './GlossTooltip'
 import { FormulaTooltip } from './FormulaTooltip'
 import { GlossarFull } from './GlossarFull'
 import { FormelSammlung } from './FormelSammlung'
+import { IfcReferenz } from './IfcReferenz'
+import { NormenReferenz } from './NormenReferenz'
 import { ImagePlaceholder } from './ImagePlaceholder'
 import { AIHifi } from 'bim-icons'
 import type { Components } from 'react-markdown'
@@ -29,6 +31,8 @@ const CALC_COMPONENTS = {
   'calc-hoai':       () => <CalcHoai />,
   'glossar-full':    () => <GlossarFull />,
   'formel-sammlung': () => <FormelSammlung />,
+  'ifc-referenz':    () => <IfcReferenz />,
+  'normen-referenz': () => <NormenReferenz />,
   'img-placeholder': (props: { node?: { properties?: Record<string, unknown> } }) =>
     <ImagePlaceholder node={props.node} />,
 } as unknown as Partial<Components>
