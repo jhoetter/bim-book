@@ -1,7 +1,8 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import { useEffect, useRef } from 'react'
 import { WallHifi, HomeIcon } from 'bim-icons'
 import { PARTS, GALLERY_ICON } from '../chapters'
+import { useBookmarks } from '../lib/bookmarks'
 
 function chapterHref(path: string): string {
   if (path === 'index') return '/'
@@ -10,6 +11,8 @@ function chapterHref(path: string): string {
 
 export function Sidebar() {
   const scrollRef = useRef<HTMLDivElement>(null)
+  const location = useLocation()
+  const { bookmarks, remove } = useBookmarks()
 
   useEffect(() => {
     const el = scrollRef.current
@@ -25,6 +28,7 @@ export function Sidebar() {
   }, [])
 
   const GalleryIcon = GALLERY_ICON
+  const currentPath = location.pathname.replace(/^\//, '') || 'index'
 
   return (
     <nav className="sidebar">
@@ -66,6 +70,42 @@ export function Sidebar() {
             <span className="sidebar-link-title">Bildgalerie</span>
           </NavLink>
         </div>
+
+        {bookmarks.length > 0 && (
+          <div className="sidebar-bookmarks">
+            <span className="sidebar-part-title">
+              <svg className="sidebar-bookmarks-icon" width="9" height="9" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true">
+                <path d="M2.5 1.5A1 1 0 0 1 3.5.5h7a1 1 0 0 1 1 1v11.25a.25.25 0 0 1-.388.208L7 10.25l-4.112 2.708A.25.25 0 0 1 2.5 12.75V1.5Z" />
+              </svg>
+              Lesezeichen
+            </span>
+            <ul>
+              {bookmarks.map(bm => {
+                const isActive = bm.path === currentPath
+                return (
+                  <li key={bm.path} className="sidebar-bookmark-item">
+                    <NavLink
+                      to={chapterHref(bm.path)}
+                      className={['sidebar-link sidebar-bookmark-link', isActive ? 'sidebar-link--active' : ''].join(' ').trim()}
+                      title={bm.part ? `${bm.part} · ${bm.title}` : bm.title}
+                    >
+                      <span className="sidebar-icon sidebar-bookmark-placeholder" aria-hidden="true" />
+                      <span className="sidebar-link-title">{bm.title}</span>
+                    </NavLink>
+                    <button
+                      className="sidebar-bookmark-remove"
+                      onClick={() => remove(bm.path)}
+                      aria-label={`${bm.title} entfernen`}
+                      title="Entfernen"
+                    >
+                      ×
+                    </button>
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
+        )}
 
         <div className="sidebar-nav">
           {PARTS.filter(part => part.title !== 'Überblick').map(part => (

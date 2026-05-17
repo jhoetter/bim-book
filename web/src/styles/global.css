@@ -143,8 +143,12 @@ html, body, #root {
   margin: 0 !important;
   flex: 1;
   min-width: 0;
-  padding-left: 37px !important;
   padding-right: 26px !important;
+}
+
+.sidebar-bookmark-placeholder {
+  opacity: 0 !important;
+  pointer-events: none;
 }
 
 .sidebar-bookmark-remove {
