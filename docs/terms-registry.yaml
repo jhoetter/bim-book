@@ -111,7 +111,7 @@ terms:
     introduced_in: null
 
   mineralwolle:
-    introduced_in: null
+    introduced_in: "01-architektur-als-system"
 
   mbo:
     introduced_in: null
@@ -132,13 +132,13 @@ terms:
     introduced_in: null
 
   tga:
-    introduced_in: null
+    introduced_in: "01-architektur-als-system"
 
   transmissionswärmeverlust:
     introduced_in: null
 
   u-wert:
-    introduced_in: null
+    introduced_in: "01-architektur-als-system"
 
   vob:
     introduced_in: null
