@@ -1384,7 +1384,7 @@ html, body, #root {
 
 /* ── Gallery page ─────────────────────────────────────────────── */
 .gallery-page {
-  padding: 40px 48px 80px;
+  padding: 56px 48px 80px;
   max-width: 1400px;
   margin: 0 auto;
 }

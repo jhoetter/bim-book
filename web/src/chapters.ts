@@ -155,9 +155,9 @@ export const PARTS: Part[] = [
   {
     title: 'Anhang',
     chapters: [
-      { id: 'kastanienallee7', num: '', title: 'Kastanienallee 7', path: 'appendix/kastanienallee7', icon: TopoIcon, pageIcon: TopoHifi },
-      { id: 'ifc-referenz', num: '', title: 'IFC-Schnellreferenz', path: 'appendix/ifc-referenz', icon: IFCIcon, pageIcon: IFCHifi },
-      { id: 'normen', num: '', title: 'Normen & Gesetze', path: 'appendix/normen', icon: ScheduleViewIcon, pageIcon: ScheduleViewHifi },
+      { id: 'kastanienallee7', num: '', title: 'Kastanienallee 7', path: 'appendix/kastanienallee7', icon: TopoIcon, pageIcon: TopoHifi, isReferencePage: true },
+      { id: 'ifc-referenz', num: '', title: 'IFC-Schnellreferenz', path: 'appendix/ifc-referenz', icon: IFCIcon, pageIcon: IFCHifi, isReferencePage: true },
+      { id: 'normen', num: '', title: 'Normen & Gesetze', path: 'appendix/normen', icon: ScheduleViewIcon, pageIcon: ScheduleViewHifi, isReferencePage: true },
     ],
   },
 ]
