@@ -946,6 +946,32 @@ html, body, #root {
 
 .prose .admonition p:last-child { margin-bottom: 0; }
 
+/* Kastanienallee 7 — running example container (warm sandstone) */
+.prose .admonition-kastanienallee {
+  background: hsl(32 100% 96%);
+  border-color: hsl(32 70% 78%);
+  border-left: 3px solid hsl(28 75% 48%);
+}
+.prose .admonition-kastanienallee .admonition-title {
+  color: hsl(28 70% 34%);
+}
+.prose .admonition-kastanienallee .admonition-title::before {
+  content: "🏠 ";
+}
+
+/* Ziel — chapter learning objectives (muted green) */
+.prose .admonition-ziel {
+  background: hsl(158 60% 96%);
+  border-color: hsl(158 50% 72%);
+  border-left: 3px solid hsl(158 64% 36%);
+}
+.prose .admonition-ziel .admonition-title {
+  color: hsl(158 72% 28%);
+}
+.prose .admonition-ziel .admonition-title::before {
+  content: "◎ ";
+}
+
 /* ── Pagination ───────────────────────────────────────────────── */
 .pagination {
   display: flex;
@@ -3606,10 +3632,12 @@ html, body, #root {
   .prose blockquote p { margin: 0; }
 
   .prose .admonition         { page-break-inside: avoid; margin: 4mm 0; padding: 3mm 5mm; border-left: 3pt solid; border-radius: 0 3pt 3pt 0; }
-  .prose .admonition-tip     { background: #fffbef !important; border-color: #d4a017 !important; }
-  .prose .admonition-note    { background: #eef4ff !important; border-color: #4a90d9 !important; }
-  .prose .admonition-warning { background: #fff3f2 !important; border-color: #d94040 !important; }
-  .prose .admonition-title   { font-size: 9pt; font-weight: 700; margin-bottom: 1.5mm; }
+  .prose .admonition-tip           { background: #fffbef !important; border-color: #d4a017 !important; }
+  .prose .admonition-note          { background: #eef4ff !important; border-color: #4a90d9 !important; }
+  .prose .admonition-warning       { background: #fff3f2 !important; border-color: #d94040 !important; }
+  .prose .admonition-kastanienallee { background: #fef6ee !important; border-color: #c97d3a !important; }
+  .prose .admonition-ziel          { background: #f0fbf6 !important; border-color: #3aab7a !important; }
+  .prose .admonition-title         { font-size: 9pt; font-weight: 700; margin-bottom: 1.5mm; }
 
   .prose-anchor { display: none !important; }
   .prose .math-display { overflow: visible; }

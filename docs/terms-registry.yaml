@@ -30,18 +30,17 @@
 #
 # FIELD MEANINGS:
 #   introduced_in: chapter ID where the term was first spelled out in full
-#   null means: not yet introduced in any finalized chapter (agent must introduce it when first needed)
+#   null means: not yet introduced in any finalized chapter
 #
 # USAGE RULES FOR WRITING AGENTS:
 #   - If introduced_in is set AND that chapter comes BEFORE your current chapter →
-#     use ::ABBREV:: (or ::TermName:: for non-abbreviated) freely without re-introduction.
+#     use ::ABBREV:: (or ::TermName::) freely without re-introduction.
 #   - If introduced_in is null OR that chapter is your current chapter or later →
-#     write the FULL NAME in bold on first use, with abbreviation in parentheses,
-#     and mark it with ::ABBREV:: inside the parens:
+#     write the FULL NAME in bold on first use, with abbreviation in parentheses:
 #       **Technische Gebäudeausrüstung** (::TGA::)
-#     Then update this registry: set introduced_in to your chapter ID.
-#   - Every use of a term (first and subsequent) that benefits from hover context
-#     should be wrapped in ::...::.
+#     Then update this registry.
+#   - Do NOT introduce a term before the chapter where it is first needed.
+#     The planned introduction chapters are listed in the Writing Guide.
 
 terms:
   armierungsputz:
@@ -72,22 +71,22 @@ terms:
     introduced_in: null
 
   eurocode:
-    introduced_in: "01-architektur-als-system"
+    introduced_in: null
 
   fbh:
     introduced_in: null
 
   geg:
-    introduced_in: "01-architektur-als-system"
+    introduced_in: null
 
   gfz:
-    introduced_in: "02-entwurf-raum-funktion"
+    introduced_in: null
 
   glaser-verfahren:
     introduced_in: null
 
   grz:
-    introduced_in: "02-entwurf-raum-funktion"
+    introduced_in: null
 
   hoai:
     introduced_in: null
@@ -110,11 +109,11 @@ terms:
   lod:
     introduced_in: null
 
-  mineralwolle:
-    introduced_in: "01-architektur-als-system"
-
   mbo:
-    introduced_in: "02-entwurf-raum-funktion"
+    introduced_in: null
+
+  mineralwolle:
+    introduced_in: null
 
   primärenergiefaktor:
     introduced_in: null
@@ -129,28 +128,28 @@ terms:
     introduced_in: null
 
   schichtenmodell:
-    introduced_in: "01-architektur-als-system"
+    introduced_in: null
 
   step:
     introduced_in: null
 
   tga:
-    introduced_in: "01-architektur-als-system"
+    introduced_in: null
 
   transmissionswärmeverlust:
     introduced_in: null
 
   u-wert:
-    introduced_in: "01-architektur-als-system"
+    introduced_in: null
 
   vob:
     introduced_in: null
 
   wdvs:
-    introduced_in: "01-architektur-als-system"
+    introduced_in: null
 
   wärmebrücke:
     introduced_in: null
 
   wlg:
-    introduced_in: "01-architektur-als-system"
+    introduced_in: null

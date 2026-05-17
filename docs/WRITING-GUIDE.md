@@ -5,6 +5,42 @@ Jeder schreibende Agent muss es vollständig lesen, bevor er ein Kapitel erstell
 
 ---
 
+## Grundprinzipien
+
+### 1. Jedes Kapitel beantwortet genau eine Frage
+
+Bevor ein Wort geschrieben wird, muss klar sein: *Welche eine Frage beantwortet dieses Kapitel?*
+Alles, was nicht zur Antwort beiträgt, gehört nicht ins Kapitel.
+
+Beispiel:
+- Kapitel 1 beantwortet: „Was ist ein Gebäude, wenn man es als System denkt?"
+- Kapitel 6 beantwortet: „Wie verliert ein Gebäude Wärme, und wie hält man sie?"
+
+### 2. Begriffe werden eingeführt, wenn der Leser sie braucht — nicht früher
+
+Der U-Wert gehört in Kapitel 6 (Wärmeschutz), nicht in Kapitel 1 (Systemüberblick).
+Der Eurocode gehört in Kapitel 4 (Tragwerk), nicht früher.
+
+**Regel:** Ein Fachbegriff wird genau dort eingeführt, wo der Leser ihn braucht, um den nächsten
+Satz zu verstehen. Nicht als Vorgriff, nicht als Vollständigkeitsübung.
+
+Vor dem Schreiben: `docs/terms-registry.yaml` lesen, um zu wissen, welche Begriffe bereits
+eingeführt sind und welche noch nicht. Nach dem Schreiben: Registry aktualisieren.
+
+### 3. Das Leitbeispiel ist immer visuell getrennt vom Fließtext
+
+Die Kastanienallee 7 darf **nie frei im Fließtext schwimmen**. Jede Anwendung des abstrakten
+Prinzips auf das Leitbeispiel gehört in den `kastanienallee`-Container (siehe unten).
+Der Leser muss immer wissen: „Bin ich gerade beim allgemeinen Prinzip oder beim konkreten Beispiel?"
+
+### 4. Einstieg ist nie eine Definition
+
+Jedes Kapitel beginnt mit 2–3 Sätzen, die eine greifbare Situation, Beobachtung oder
+Frage beschreiben. Keine Definitionen, keine Normnummern, keine Klammerbegriffe.
+Der Leser muss neugierig werden — dann erklären wir.
+
+---
+
 ## Das Leitbeispiel: Kastanienallee 7
 
 Alle Kapitel verwenden **dasselbe fiktive Referenzgebäude** als durchgehendes Beispiel:
@@ -15,7 +51,90 @@ Alle Kapitel verwenden **dasselbe fiktive Referenzgebäude** als durchgehendes B
 > Primärenergiebedarf: 45 kWh/(m²a) nach GEG
 
 Die vollständigen Kenndaten findest du in `docs/appendix/kastanienallee7.md`.
-Verwende dieses Gebäude bei konkreten Beispielen, Berechnungen und Illustrationen.
+
+---
+
+## Kapitelstruktur (verbindliches Template)
+
+```markdown
+# Kapitel N – Titel
+
+*Teil X – Teilname*
+
+---
+
+[Einstieg: 2–3 Sätze. Greifbare Situation, Beobachtung oder Frage.
+ KEINE Definitionen, KEINE Normen, KEINE Fachkürzel.
+ Der Leser muss neugierig werden.]
+
+---
+
+!!! ziel "Nach diesem Kapitel können Sie …"
+    - [konkretes, messbares Lernziel]
+    - [konkretes, messbares Lernziel]
+    - [konkretes, messbares Lernziel]
+
+## N.1 Abschnitt — Allgemeines Prinzip
+
+[Fließtext: Konzept erklären, vom Allgemeinen zum Konkreten]
+
+!!! kastanienallee "Kastanienallee 7"
+    [Wie dieses Prinzip am Leitbeispiel-Gebäude konkret aussieht.
+     IMMER in diesem Container. NIEMALS frei im Fließtext.]
+
+## N.2 Weiteres Prinzip
+
+[…]
+
+## Zusammenfassung
+
+**[Merksatz: Ein Satz, der den Kern des Kapitels trägt.]**
+
+Verwandte Kapitel: [Kap. X](/chapters/…) · [Kap. Y](/chapters/…)
+```
+
+---
+
+## Visuelle Container
+
+### `!!! kastanienallee "Kastanienallee 7"`
+
+**Zweck:** Jede Anwendung des abstrakten Prinzips auf das Leitbeispiel-Gebäude.
+
+Regeln:
+- Immer mit dem Titel „Kastanienallee 7"
+- Enthält konkrete Zahlen, Abmessungen, Typen aus dem Leitbeispiel
+- Steht nach dem Abschnitt, der das allgemeine Prinzip erklärt
+- Pro Abschnitt maximal ein Kastanienallee-Container
+
+```markdown
+!!! kastanienallee "Kastanienallee 7"
+    Die Außenwand besteht aus 200 mm Stahlbeton plus 160 mm Mineralwolle (WLG 035).
+    Das ergibt einen Wärmedurchgangswiderstand von R = 0,16 / 0,035 = 4,57 m²K/W.
+```
+
+### `!!! ziel "Nach diesem Kapitel können Sie …"`
+
+**Zweck:** Lernziele des Kapitels, genau einmal direkt nach dem Einstieg.
+
+```markdown
+!!! ziel "Nach diesem Kapitel können Sie …"
+    - den U-Wert eines mehrschichtigen Bauteils berechnen
+    - die GEG-Anforderung für Außenwände einordnen
+    - das Prinzip des Wärmedämmverbundsystems erklären
+```
+
+### `!!! note "Hinweis"`
+
+**Zweck:** Erläuternder Einschub oder Begriffsklärung, die den Lesefluss unterbrechen würde.
+
+### `!!! tip "Praxistipp"`
+
+**Zweck:** Hinweis aus der Planungspraxis, der nicht aus einer Norm stammt.
+
+### `!!! warning "Achtung"`
+
+**Zweck:** Bekanntes Fehlerquellenmuster oder häufiger Planungsfehler.
 
 ---
 
@@ -23,115 +142,95 @@ Verwende dieses Gebäude bei konkreten Beispielen, Berechnungen und Illustration
 
 ### Glossar-Datei
 
-Alle Fachbegriffe mit ihren Definitionen sind in `web/src/data/glossar.ts` als strukturierte
-Daten gespeichert. Lies diese Datei, um zu wissen, welche Begriffe im Buch definiert sind
-(IDs, Abkürzungen, Definitionen).
+Alle Fachbegriffe mit ihren Definitionen sind in `web/src/data/glossar.ts` gespeichert.
+Lies diese Datei, um die verfügbaren IDs, Abkürzungen und Definitionen zu kennen.
 
 ### Terms Registry
 
 Die Datei `docs/terms-registry.yaml` protokolliert, in welchem Kapitel jeder Begriff
-**zum ersten Mal vollständig eingeführt** wurde.
+**zum ersten Mal** eingeführt wurde.
 
 **VOR dem Schreiben eines Kapitels:**
 1. Lies `docs/terms-registry.yaml`
-2. Ermittle die bereits eingeführten Begriffe (alle mit `introduced_in` gesetzt UND deren
-   Kapitel-ID im Chapter-Order vor deinem Kapitel liegt)
-3. Diese Begriffe kannst du direkt mit `::ABKÜRZUNG::` verwenden, ohne sie nochmals zu erklären
+2. Begriffe mit `introduced_in` gesetzt UND Kapitel-ID vor deinem Kapitel → frei mit `::ABBREV::` verwenden
+3. Begriffe mit `introduced_in: null` → erst einführen, wenn der Leser sie braucht
 
-**NACH dem Schreiben eines Kapitels:**
-1. Ergänze in `docs/terms-registry.yaml` alle Begriffe, die du in diesem Kapitel
-   neu eingeführt hast, mit `introduced_in: "<deine-kapitel-id>"`
+**NACH dem Schreiben:**
+Trage jeden neu eingeführten Begriff in die Registry ein.
 
----
+### Markup-Syntax
 
-## Markup-Konventionen
-
-### Glossar-Hovering: `::TERM::`
-
-Jeder Fachbegriff, der im Buch vorkommt und im Glossar eingetragen ist, wird mit der
-`::TERM::`-Syntax markiert. Dadurch erscheint beim Lesen ein Hover-Popover mit der Definition.
-
-**Ersteinführung eines Begriffs** (introduced_in ist null oder dieses Kapitel):
+**Ersteinführung** (introduced_in ist null oder dieses Kapitel):
+```markdown
+Die **Technische Gebäudeausrüstung** (::TGA::) umfasst alle haustechnischen Systeme…
 ```
-Die **Technische Gebäudeausrüstung** (::TGA::) umfasst alle haustechnischen Systeme...
-```
-→ Vollständiger Name in Fett, Abkürzung in Klammern mit `::...::` markiert.
+→ Vollständiger Name fett, Abkürzung in Klammern mit `::…::`.
 
-**Weitere Verwendungen** (Begriff bereits eingeführt):
+**Folge-Verwendungen** (Begriff bereits eingeführt):
+```markdown
+Die ::TGA:: bestimmt die Schachtgrößen…
 ```
-Die ::TGA:: bestimmt die Schachtgrößen...
-```
-→ Nur die Abkürzung mit `::...::`, kein Fettdruck.
+→ Nur `::…::`, kein Fettdruck.
 
-**Begriffe ohne Abkürzung** (z.B. Wärmebrücke, Eurocode):
-```
-Eine ::Wärmebrücke:: entsteht, wenn...
-```
-→ Vollständiger Terminus mit `::...::`. Bei Ersteinführung in Fett:
-```
-Eine **::Wärmebrücke::** entsteht, wenn...
-```
+**Begriff ohne Abkürzung** (z.B. Wärmebrücke):
+- Ersteinführung: `**::Wärmebrücke::**`
+- Folge-Verwendung: `::Wärmebrücke::`
 
-**Wichtig:** Der Text innerhalb `::...::` muss exakt (case-insensitive) mit einer Term-ID
-aus dem Glossar übereinstimmen. Verfügbare IDs findest du in `web/src/data/glossar.ts`.
-
-**Niemals `**fett**` als Ersatz für einen fehlenden Glossareintrag verwenden.**
+**Wichtig:** Niemals `**fett**` als Ersatz für einen fehlenden Glossareintrag verwenden.
 `**fett**` ist ausschließlich für:
-- Labels in Listen (`**Wärmeversorgung:** Fernwärme …`)
-- Leit- oder Zusammenfassungssätze (`**Tragwerk begrenzt Hülle und Innenausbau.**`)
+- Labels in Listen (`**Tragstruktur:** Stahl, Stahlbeton…`)
+- Leit- oder Merksätze am Ende von Abschnitten
 - Nicht-terminologische Hervorhebungen
 
-Wenn ein Fachbegriff hervorgehoben werden soll, der noch nicht im Glossar steht:
-1. Eintrag in `web/src/data/glossar.ts` anlegen (id, term, definition, thema, typ)
+Wenn ein Fachbegriff fehlt:
+1. Eintrag in `web/src/data/glossar.ts` anlegen
 2. Dann `::Begriff::` im Markdown verwenden
 
 ### Häufige Term-IDs (Kurzreferenz)
 
-| Schreibweise im Text | Term-ID |
-|---|---|
-| `::TGA::` | tga |
-| `::BIM::` | bim |
-| `::IFC::` | ifc |
-| `::HOAI::` | hoai |
-| `::GEG::` | geg |
-| `::WDVS::` | wdvs |
-| `::U-Wert::` | u-wert |
-| `::R-Wert::` | r-wert |
-| `::LOD::` | lod |
-| `::BCF::` | bcf |
-| `::BAP::` | bap |
-| `::GFZ::` | gfz |
-| `::GRZ::` | grz |
-| `::MBO::` | mbo |
-| `::VOB::` | vob |
-| `::KWL::` | kwl |
-| `::FBH::` | fbh |
-| `::REI::` | rei |
-| `::WLG::` | wlg |
-| `::EPD::` | epd |
-| `::STEP::` | step |
-| `::Wärmebrücke::` | wärmebrücke |
-| `::Eurocode::` | eurocode |
-| `::Mineralwolle::` | mineralwolle |
-| `::Dampfbremse::` | dampfbremse |
-| `::Dampfsperre::` | dampfsperre |
-| `::Glaser-Verfahren::` | glaser-verfahren |
-| `::Lastfall::` | lastfall |
-| `::Embodied Carbon::` | embodied-carbon |
-| `::Schichtenmodell::` | schichtenmodell |
+| Schreibweise | Term-ID | Erste Einführung in |
+|---|---|---|
+| `::TGA::` | tga | Kap. 1 |
+| `::Schichtenmodell::` | schichtenmodell | Kap. 1 |
+| `::GEG::` | geg | Kap. 6 |
+| `::U-Wert::` | u-wert | Kap. 6 |
+| `::R-Wert::` | r-wert | Kap. 6 |
+| `::WDVS::` | wdvs | Kap. 5 oder 6 |
+| `::Mineralwolle::` | mineralwolle | Kap. 3 |
+| `::WLG::` | wlg | Kap. 3 |
+| `::Wärmebrücke::` | wärmebrücke | Kap. 6 |
+| `::Eurocode::` | eurocode | Kap. 4 |
+| `::GFZ::` | gfz | Kap. 2 |
+| `::GRZ::` | grz | Kap. 2 |
+| `::MBO::` | mbo | Kap. 2 |
+| `::Glaser-Verfahren::` | glaser-verfahren | Kap. 7 |
+| `::Dampfbremse::` | dampfbremse | Kap. 7 |
+| `::Dampfsperre::` | dampfsperre | Kap. 7 |
+| `::REI::` | rei | Kap. 9 |
+| `::FBH::` | fbh | Kap. 10 |
+| `::KWL::` | kwl | Kap. 11 |
+| `::DVGW::` | dvgw | Kap. 12 |
+| `::HOAI::` | hoai | Kap. 15 |
+| `::VOB::` | vob | Kap. 16 |
+| `::BIM::` | bim | Kap. 17 |
+| `::IFC::` | ifc | Kap. 18 |
+| `::LOD::` | lod | Kap. 18 |
+| `::BCF::` | bcf | Kap. 20 |
+| `::BAP::` | bap | Kap. 20 |
+| `::EPD::` | epd | Kap. 22 |
+| `::Embodied Carbon::` | embodied-carbon | Kap. 22 |
 
 ### Neuen Glossareintrag anlegen
 
-Wenn ein Begriff fehlt, zuerst in `web/src/data/glossar.ts` eintragen, dann erst im Markdown referenzieren:
+Wenn ein Begriff fehlt, zuerst in `web/src/data/glossar.ts` eintragen:
 
 ```ts
 {
-  id: 'schichtenmodell',           // kebab-case, alphabetisch einsortieren
-  term: 'Schichtenmodell',         // Anzeigename
-  abbrev: 'SM',                    // nur wenn offiziell gebräuchliche Abkürzung existiert
+  id: 'schichtenmodell',
+  term: 'Schichtenmodell',
   definition: 'Kurze, präzise Definition …',
-  thema: 'Konstruktion',           // einer der GlossThema-Werte (siehe unten)
-  typ: 'Begriff',                  // einer der GlossTyp-Werte (siehe unten)
+  thema: 'Konstruktion',
+  typ: 'Begriff',
 }
 ```
 
@@ -139,13 +238,13 @@ Wenn ein Begriff fehlt, zuerst in `web/src/data/glossar.ts` eintragen, dann erst
 
 **Erlaubte `typ`-Werte:** `Begriff` · `Kennwert` · `Verfahren` · `Material` · `Norm`
 
-Einträge alphabetisch nach `id` sortiert halten. `abbrev` nur setzen, wenn die Abkürzung offiziell und im Fachbereich gebräuchlich ist.
+Einträge alphabetisch nach `id` sortiert halten.
 
-### Formel-Hover: `^^formel-id^^`
+---
 
-Formeln werden im Text mit `^^formel-id^^` eingebettet. Der Leser sieht eine inline-gerenderte
-Kurzform der Formel (KaTeX) und beim Hover ein Popover mit vollständiger Formel, Variablen und
-Beispielwerten aus der Kastanienallee 7.
+## Formel-Hover: `^^formel-id^^`
+
+Formeln werden im Text mit `^^formel-id^^` eingebettet:
 
 ```markdown
 Der ::U-Wert:: berechnet sich als ^^u-wert^^, wobei alle Schichtwiderstände addiert werden.
@@ -156,135 +255,87 @@ Verfügbare Formel-IDs (aus `web/src/data/formulas.ts`):
 | Formel-ID | Formel |
 |---|---|
 | `^^u-wert^^` | U-Wert nach DIN EN ISO 6946 |
-| `^^r-wert^^` | Wärmedurchgangswiderstand R = d/λ |
+| `^^r-wert^^` | R = d/λ |
 | `^^transmissionswaermeverlust^^` | HT = Σ U·A·fx |
 | `^^gfz^^` | Geschossflächenzahl GFZ |
 | `^^grz^^` | Grundflächenzahl GRZ |
-| `^^primaerenergiebedarf^^` | Primärenergiebedarf Qp = Qf · fp |
-| `^^schalldaemmass^^` | Bewertetes Schalldämmmaß R'w |
-| `^^waermeleitung^^` | Wärmeleitung nach Fourier |
+| `^^primaerenergiebedarf^^` | Qp = Qf · fp |
+| `^^schalldaemmass^^` | R'w |
+| `^^waermeleitung^^` | q = λ · ΔT/d |
 
-Neue Formeln können in `web/src/data/formulas.ts` ergänzt werden.
+---
 
-### Bilder: Platzhalter mit Prompt
+## Bilder: Platzhalter mit Prompt
 
-Jedes Bild wird als **Platzhalter-Block** gesetzt, der den Bildprompt für die spätere Generierung trägt.
-Das Bild-Referenz-Tag (`![...]()`) folgt direkt darunter und zeigt auf den künftigen Dateinamen.
-Das UI rendert den Block als Placeholder-Karte, solange die Bilddatei noch nicht existiert.
-Sobald das Bild generiert wurde, erscheint automatisch das fertige Bild.
+Jedes noch nicht vorhandene Bild wird als Platzhalter-Block gesetzt:
 
-**Format:**
-
-```
+```markdown
 <!-- IMAGE
 name: kap06_wandaufbau_wdvs
 type: section
 size: landscape
-desc: Wandquerschnitt WDVS mit 5 Schichten von innen nach außen: Mauerwerk 240 mm (grau,
-  Diagonalschraffur), Klebemortel 5 mm, Mineralwolle 120 mm (blau, Zickzack, WLG 035),
-  Armierputz 8 mm, Silikonharzputz 3 mm. Maßketten rechts, Beschriftungen auf Deutsch,
-  weiß Hintergrund, technisch-clean ohne Personen.
-caption: Wandaufbau mit WDVS – Kastanienallee 7
-tags: wdvs, wärmeschutz, wandquerschnitt
+desc: Wandquerschnitt WDVS mit 5 Schichten von innen nach außen: Innenputz 15 mm (glatt),
+  Stahlbeton 200 mm (grau, Diagonalschraffur), Mineralwolle WLG 035 160 mm (blau, Zickzack),
+  Armierungsputz 5 mm, Silikonharzputz 3 mm. Maßketten rechts in mm, Beschriftungen deutsch,
+  weißer Hintergrund, technisch-clean, keine Personen.
+caption: Wandaufbau mit WDVS — Kastanienallee 7
+tags: wdvs, wärmeschutz, wandquerschnitt, kastanienallee7
 -->
 ![WDVS-Wandquerschnitt](../assets/illustrations/kap06_wandaufbau_wdvs.png)
 ```
 
 **Pflichtfelder:**
+
 | Feld | Bedeutung |
 |---|---|
 | `name` | Dateiname ohne `.png` — Schema: `kapNN_stichwort` |
-| `type` | `section`, `diagram`, `isometric`, `floorplan`, `comparison`, `infographic`, `cover` |
-| `size` | `landscape` (Standard), `square`, `portrait` |
+| `type` | `section` · `diagram` · `isometric` · `floorplan` · `comparison` · `infographic` |
+| `size` | `landscape` (Standard) · `square` · `portrait` |
 | `desc` | Vollständige Bildbeschreibung für die KI — so präzise wie möglich |
-| `caption` | Bildunterschrift (erscheint unter dem fertigen Bild) |
-| `tags` | Kommagetrennte Stichwörter für das Manifest |
+| `caption` | Bildunterschrift |
+| `tags` | Kommagetrennte Stichwörter |
 
 **Regeln:**
-- `name` muss mit dem Dateinamen im `![...](../assets/illustrations/<name>.png)` übereinstimmen
+- `name` muss mit dem Dateinamen im `![…](../assets/illustrations/<name>.png)` übereinstimmen
 - `desc` trägt alle fachlichen Details: Schichten, Maße, Schraffurmuster, Beschriftungssprache
-- Der Platzhalter zeigt `desc` im UI als Prompt-Vorschau — schreib ihn für die KI, nicht für den Leser
 - Bilder werden mit `python3 skills/imagegen/generate-placeholders.py` batch-generiert
 
-### Querverweise und Links
+---
 
-**Pflicht:** Jeder Verweis auf ein anderes Kapitel, einen Anhang oder eine externe Quelle muss ein echter Markdown-Link sein. Kein Pfeil (`→`) vor oder in Links.
+## Querverweise und Links
 
-#### Interne Kapitelverweise
-
-Absolute Root-Pfade ohne `.md`-Extension verwenden:
+Jeder Verweis auf ein anderes Kapitel muss ein echter Markdown-Link sein. Kein `→` vor Links.
 
 ```markdown
 [Kap. 6](/chapters/06-waermeschutz-geg)
-[Kap. 18](/chapters/18-ifc)
 [IFC-Schnellreferenz](/appendix/ifc-referenz)
 [Kastanienallee 7](/appendix/kastanienallee7)
 [Glossar](/glossar)
 [Formelsammlung](/formelsammlung)
 ```
 
-**Inline-Verweis** (im Fließtext):
-```markdown
-…wie die Eurocode-Reihe zeigt (siehe [Kapitel 4](/chapters/04-tragwerk)).
-```
-
-**Standalone-Verweiszeile** (mehrere Ziele, z. B. am Abschnittsende):
-```markdown
-Wärmeschutz: [Kap. 6](/chapters/06-waermeschutz-geg) · Feuchteschutz: [Kap. 7](/chapters/07-feuchteschutz)
-```
-
-**Benannter Link** im Fließtext:
-```markdown
-Kapitel 6 befasst sich ausführlich mit dem [Wärmeschutz](/chapters/06-waermeschutz-geg).
-```
-
-#### Externe Weblinks
-
-Standard-Markdown-Link — öffnet automatisch in neuem Tab:
-```markdown
-[Beuth Verlag](https://www.beuth.de)
-[GEG 2023](https://www.gesetze-im-internet.de/geg/)
-```
-
-Niemals rohe URLs ohne Link-Text in den Fließtext schreiben.
-
-#### Pfadübersicht (Kurzreferenz)
+**Pfadübersicht:**
 
 | Ziel | Pfad |
 |---|---|
-| Kapitel N | `/chapters/NN-slug` (z. B. `/chapters/04-tragwerk`) |
+| Kapitel N | `/chapters/NN-slug` |
 | IFC-Schnellreferenz | `/appendix/ifc-referenz` |
 | Kastanienallee 7 | `/appendix/kastanienallee7` |
 | Normen & Gesetze | `/appendix/normen` |
 | Glossar | `/glossar` |
 | Formelsammlung | `/formelsammlung` |
 
-### Admonitions
-
-Hinweise, Warnungen und Tipps:
-```
-!!! note "Hinweis"
-    Kurzer erläuternder Text.
-
-!!! tip "Praxistipp"
-    Anwendungsbezogener Tipp.
-
-!!! warning "Achtung"
-    Wichtiger Hinweis auf Fehlerquelle.
-```
-
 ---
 
-## Stil und Struktur
+## Stil und Sprache
 
-- **Ton**: sachlich, direkt, ohne unnötige Füllwörter. Wie ein erfahrener Praktiker erklärt.
-- **Satzlänge**: mittellang. Keine Schachtelsätze.
-- **Abschnittsgröße**: ~3–6 Sätze pro Absatz.
-- **Beispiele**: immer an der Kastanienallee 7 festmachen, wenn konkrete Zahlen gefragt sind.
-- **Keine Wiederholung**: Was in früheren Kapiteln erklärt wurde, wird nicht nochmals erklärt,
-  sondern nur referenziert.
-- **Konsistenz**: Verwende die exakt gleichen Fachbegriffe wie in früheren Kapiteln.
-  Synonyme vermeiden, wenn ein eingeführter Begriff existiert.
+- **Ton:** sachlich, direkt, kein Füllwerk. Wie ein erfahrener Praktiker erklärt.
+- **Einstieg:** nie eine Definition, nie „In diesem Kapitel werden wir…"
+- **Satzlänge:** mittellang. Keine Schachtelsätze.
+- **Absatzgröße:** 3–5 Sätze. Ein Absatz, ein Gedanke.
+- **Begriffe:** Nur einführen, wenn der Leser sie jetzt braucht.
+- **Kastanienallee:** Immer im Container, niemals frei im Fließtext.
+- **Keine Wiederholung:** Was früher erklärt wurde, wird referenziert, nicht wiederholt.
 
 ---
 
@@ -292,25 +343,25 @@ Hinweise, Warnungen und Tipps:
 
 1. `docs/terms-registry.yaml` lesen → welche Begriffe sind bereits eingeführt?
 2. `web/src/data/glossar.ts` lesen → welche Term-IDs stehen zur Verfügung?
-3. `docs/appendix/kastanienallee7.md` lesen → aktuelle Kenndaten des Beispielgebäudes
-4. Ggf. vorangehende Kapitel überfliegen → welche Beispiele wurden bereits gezeigt?
-5. Kapitel schreiben nach obigen Konventionen
-   - Bilder als Platzhalter-Blöcke setzen (siehe „Bilder: Platzhalter mit Prompt")
-   - `desc` im Platzhalter vollständig und fachlich korrekt formulieren
-6. `docs/terms-registry.yaml` aktualisieren mit allen neu eingeführten Begriffen
+3. `docs/appendix/kastanienallee7.md` lesen → aktuelle Kenndaten des Leitbeispiels
+4. Die *eine Frage* des Kapitels formulieren — alles, was nicht zur Antwort beiträgt, weglassen
+5. Kapitel schreiben nach obigem Template:
+   - Einstieg ohne Definitionen
+   - Lernziele im `ziel`-Container
+   - Allgemeine Prinzipien im Fließtext
+   - Leitbeispiel-Anwendungen im `kastanienallee`-Container
+   - Bilder als Platzhalter-Blöcke
+6. `docs/terms-registry.yaml` mit neu eingeführten Begriffen aktualisieren
 
 ## Bilder generieren (nach dem Schreiben)
 
 ```bash
-# Alle fehlenden Bilder generieren (liest alle <!-- IMAGE --> Blöcke):
+# Alle fehlenden Bilder generieren:
 python3 skills/imagegen/generate-placeholders.py
 
-# Vorschau: zeigt welche Bilder fehlen ohne zu generieren:
+# Vorschau ohne Generierung:
 python3 skills/imagegen/generate-placeholders.py --dry-run
 
 # Nur ein bestimmtes Kapitel:
 python3 skills/imagegen/generate-placeholders.py --chapter 06
-
-# Alle Bilder neu generieren (auch vorhandene überschreiben):
-python3 skills/imagegen/generate-placeholders.py --all
 ```
