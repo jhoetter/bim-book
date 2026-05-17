@@ -1297,6 +1297,16 @@ html, body, #root {
   color: var(--ink);
   line-height: 1.3;
 }
+.overview-card-desc {
+  font-size: 0.72rem;
+  color: var(--text-faint);
+  line-height: 1.45;
+  margin-top: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 
 /* ── Gallery page ─────────────────────────────────────────────── */
 .gallery-page {
@@ -2452,29 +2462,122 @@ html, body, #root {
 }
 .formel-example-label { font-weight: 600; color: var(--text); }
 
-.formel-card-calc { border-top: 1px solid var(--border-soft); }
-.formel-calc-toggle {
-  width: 100%;
+/* calc shown directly — reset calc-card chrome inside formel-card */
+.formel-card-calc-direct {
+  border-top: 1px solid var(--border-soft);
+}
+.formel-card-calc-direct .calc-card {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background: var(--bg);
+  box-shadow: none;
+}
+
+/* ── Formel ƒ info button ────────────────────────────────────────── */
+.formel-card-header-right {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 18px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--accent);
-  font-family: var(--font);
-  transition: background var(--dur-fast);
+  gap: 8px;
+  flex-shrink: 0;
 }
-.formel-calc-toggle:hover { background: var(--bg-hover); }
-.formel-calc-toggle--open { background: var(--bg-active); }
-.formel-calc-chevron { font-size: 11px; color: var(--text-faint); }
-.formel-calc-body {
-  padding: 16px 18px 20px;
-  border-top: 1px solid var(--border-soft);
+.formel-info-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1.5px solid var(--accent);
+  background: none;
+  color: var(--accent);
+  font-size: 13px;
+  font-style: italic;
+  font-family: Georgia, serif;
+  cursor: pointer;
+  flex-shrink: 0;
+  line-height: 1;
+  transition: background var(--dur-fast), color var(--dur-fast);
+}
+.formel-info-btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ── Formel dialog ───────────────────────────────────────────────── */
+.formel-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 0;
   background: var(--bg);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.22);
+  max-width: 560px;
+  width: 90vw;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+.formel-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.38);
+  backdrop-filter: blur(3px);
+}
+.formel-dialog-inner {
+  display: flex;
+  flex-direction: column;
+}
+.formel-dialog-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  background: var(--bg-sidebar);
+  border-bottom: 1px solid var(--border-soft);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.formel-dialog-name {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 650;
+  color: var(--text);
+  min-width: 0;
+}
+.formel-dialog-close {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: none;
+  background: none;
+  color: var(--text-faint);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background var(--dur-fast), color var(--dur-fast);
+}
+.formel-dialog-close:hover {
+  background: var(--bg-hover);
+  color: var(--text);
+}
+.formel-dialog-display {
+  padding: 24px 18px 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-soft);
+  overflow-x: auto;
+}
+.formel-dialog-vars {
+  border-bottom: 1px solid var(--border-soft);
+}
+.formel-dialog-example {
+  border-top: none;
 }
 
 /* ── Topbar ⌘K palette button ─────────────────────────────────── */
@@ -2966,7 +3069,8 @@ html, body, #root {
 
   /* Formel cards — hide interactive calc toggle */
   .formel-card { page-break-inside: avoid; }
-  .formel-card-calc { display: none !important; }
+  .formel-card-calc-direct { display: none !important; }
+  .formel-dialog { display: none !important; }
 
   /* Tooltips — suppress popovers, show plain text */
   .gloss { border-bottom: none !important; cursor: text !important; }

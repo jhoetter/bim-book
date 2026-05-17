@@ -178,6 +178,13 @@ export function getContent(path: string): string {
   return (rawFiles[key] as string | undefined) ?? `# Nicht gefunden\n\nDie Seite \`${path}\` existiert noch nicht.`
 }
 
+export function getChapterDescription(path: string): string {
+  const raw = getContent(path)
+  const match = raw.match(/^# [^\n]+\n(?:\n\*[^\n]+\*\n)?\n---\n\n?([\s\S]*?)(?=\n---|\n##)/)
+  if (!match) return ''
+  return match[1].trim().split('\n\n')[0]
+}
+
 export function findChapterByPath(path: string): Chapter | undefined {
   return ALL_CHAPTERS.find(c => c.path === path || c.id === path)
 }

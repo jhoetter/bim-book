@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import { PARTS, type Chapter } from '../chapters'
+import { PARTS, getChapterDescription, type Chapter } from '../chapters'
 
 function chapterHref(path: string): string {
   if (path === 'index') return '/'
@@ -11,6 +11,7 @@ function OverviewCard({ chapter }: { chapter: Chapter }) {
   const [imgFailed, setImgFailed] = useState(false)
   const Icon = chapter.pageIcon
   const hasImage = !!chapter.coverImage && !imgFailed
+  const description = chapter.num ? getChapterDescription(chapter.path) : ''
 
   return (
     <NavLink to={chapterHref(chapter.path)} className="overview-card">
@@ -30,6 +31,9 @@ function OverviewCard({ chapter }: { chapter: Chapter }) {
           <span className="overview-card-num">Kap. {chapter.num}</span>
         )}
         <span className="overview-card-title">{chapter.title}</span>
+        {description && (
+          <p className="overview-card-desc">{description}</p>
+        )}
       </div>
     </NavLink>
   )
@@ -46,7 +50,7 @@ export function Overview() {
       </div>
 
       {PARTS
-        .filter(part => part.title !== 'Überblick')
+        .filter(part => part.title !== 'Überblick' && part.title !== 'Nachschlagewerke')
         .map(part => (
           <section key={part.title} className="overview-part">
             <h2 className="overview-part-label">{part.title}</h2>
