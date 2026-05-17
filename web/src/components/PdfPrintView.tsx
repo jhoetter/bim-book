@@ -3,7 +3,7 @@ import { PARTS, getContent } from '../chapters'
 import type { Chapter, Part } from '../chapters'
 import { PrintMarkdownPage } from './PrintMarkdownPage'
 
-const SKIP_PART_LABEL = new Set(['Überblick', 'Nachschlagewerke', 'Anhang'])
+const SKIP_PART_LABEL = new Set(['Überblick', 'Nachschlagewerke'])
 
 interface Props {
   onDone: () => void

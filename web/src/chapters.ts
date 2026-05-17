@@ -91,6 +91,9 @@ export const PARTS: Part[] = [
     chapters: [
       { id: 'glossar', num: '', title: 'Glossar', path: 'glossar', icon: NoteBlockIcon, pageIcon: NoteBlockHifi, isReferencePage: true },
       { id: 'formelsammlung', num: '', title: 'Formelsammlung', path: 'formelsammlung', icon: QuantityTakeoffIcon, pageIcon: QuantityTakeoffHifi, isReferencePage: true },
+      { id: 'kastanienallee7', num: '', title: 'Kastanienallee 7', path: 'appendix/kastanienallee7', icon: TopoIcon, pageIcon: TopoHifi, isReferencePage: true },
+      { id: 'ifc-referenz', num: '', title: 'IFC-Schnellreferenz', path: 'appendix/ifc-referenz', icon: IFCIcon, pageIcon: IFCHifi, isReferencePage: true },
+      { id: 'normen', num: '', title: 'Normen & Gesetze', path: 'appendix/normen', icon: ScheduleViewIcon, pageIcon: ScheduleViewHifi, isReferencePage: true },
     ],
   },
   {
@@ -150,14 +153,6 @@ export const PARTS: Part[] = [
       { id: '22-nachhaltigkeit', num: '22', title: 'Nachhaltigkeit & Kreislaufwirtschaft', path: 'chapters/22-nachhaltigkeit', icon: PlantingIcon, pageIcon: PlantingHifi, coverImage: '/assets/covers/cover-ch22.png' },
       { id: '23-sanierung', num: '23', title: 'Sanierung', path: 'chapters/23-sanierung', icon: RevisionIcon, pageIcon: RevisionHifi, coverImage: '/assets/covers/cover-ch23.png' },
       { id: '24-digitaler-zwilling-ki', num: '24', title: 'Digitaler Zwilling & KI', path: 'chapters/24-digitaler-zwilling-ki', icon: DigitalTwinIcon, pageIcon: DigitalTwinHifi, coverImage: '/assets/covers/cover-ch24.png' },
-    ],
-  },
-  {
-    title: 'Anhang',
-    chapters: [
-      { id: 'kastanienallee7', num: '', title: 'Kastanienallee 7', path: 'appendix/kastanienallee7', icon: TopoIcon, pageIcon: TopoHifi, isReferencePage: true },
-      { id: 'ifc-referenz', num: '', title: 'IFC-Schnellreferenz', path: 'appendix/ifc-referenz', icon: IFCIcon, pageIcon: IFCHifi, isReferencePage: true },
-      { id: 'normen', num: '', title: 'Normen & Gesetze', path: 'appendix/normen', icon: ScheduleViewIcon, pageIcon: ScheduleViewHifi, isReferencePage: true },
     ],
   },
 ]
