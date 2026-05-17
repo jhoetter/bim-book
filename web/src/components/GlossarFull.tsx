@@ -40,13 +40,13 @@ export function GlossarFull() {
             ) : (
               <div className="glossar-entry-img-placeholder" />
             )}
-            <div className="glossar-entry-left">
-              <span className="glossar-entry-term">{entry.term}</span>
-              {entry.abbrev && (
-                <span className="glossar-entry-abbrev">{entry.abbrev}</span>
-              )}
-            </div>
             <div className="glossar-entry-body">
+              <div className="glossar-entry-head">
+                {entry.abbrev && (
+                  <span className="glossar-entry-abbrev">{entry.abbrev}</span>
+                )}
+                <span className="glossar-entry-term">{entry.term}</span>
+              </div>
               <p className="glossar-entry-def">{entry.definition}</p>
             </div>
           </div>

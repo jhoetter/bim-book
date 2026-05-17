@@ -224,7 +224,7 @@ html, body, #root {
 
 .sidebar-header {
   height: 44px;
-  padding: 0 12px 0 14px;
+  padding: 0 12px 0 6px;
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
@@ -243,7 +243,7 @@ html, body, #root {
   align-items: center;
   gap: 8px;
   text-decoration: none;
-  padding: 4px 6px;
+  padding: 4px 6px 4px 12px;
   border-radius: var(--radius-md);
   transition: background var(--dur-fast);
   width: 100%;
@@ -609,6 +609,104 @@ html, body, #root {
 
 .prose figcaption {
   margin-top: 0.65em;
+  font-size: 0.79rem;
+  color: var(--text-faint);
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 0.01em;
+  line-height: 1.55;
+}
+
+/* ── Image Placeholder Card ───────────────────────────────────── */
+.img-placeholder-card {
+  margin: 2.4em 0;
+  border-radius: var(--radius-md);
+  border: 1.5px dashed var(--border-strong);
+  background: var(--bg-sidebar);
+  overflow: hidden;
+  text-align: left;
+}
+
+.img-placeholder-card__header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 14px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-hover);
+}
+
+.img-placeholder-card__icon {
+  color: var(--text-faint);
+  flex-shrink: 0;
+}
+
+.img-placeholder-card__name {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--structural);
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.img-placeholder-card__badge {
+  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  padding: 2px 7px;
+  border-radius: var(--radius-xs);
+  background: var(--bg-code);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.img-placeholder-card__body {
+  padding: 12px 14px 14px;
+}
+
+.img-placeholder-card__prompt-label {
+  font-size: 0.67rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-faint);
+  margin-bottom: 5px;
+}
+
+.img-placeholder-card__prompt {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.58;
+  background: var(--bg-sunken);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  border: 1px solid var(--border-soft);
+  word-break: break-word;
+}
+
+.img-placeholder-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 9px;
+}
+
+.img-placeholder-card__tag {
+  font-size: 0.68rem;
+  padding: 2px 7px;
+  border-radius: 100px;
+  background: var(--bg-code);
+  color: var(--text-faint);
+  border: 1px solid var(--border-soft);
+}
+
+.img-placeholder-card__caption {
+  margin-top: 10px;
   font-size: 0.79rem;
   color: var(--text-faint);
   font-style: italic;
@@ -1503,6 +1601,12 @@ html, body, #root {
   margin-top: 0.2em;
 }
 
+.prose hr {
+  border: none;
+  border-top: 1px solid var(--border-soft);
+  margin: 2em 0;
+}
+
 /* ══ Chat Panel ═══════════════════════════════════════════════════════ */
 
 .chat-bubble {
@@ -2208,62 +2312,72 @@ html, body, #root {
 
 .glossar-entry {
   display: grid;
-  grid-template-columns: 80px 180px 1fr;
+  grid-template-columns: 56px 1fr;
   align-items: start;
-  gap: 12px 16px;
-  padding: 14px 4px;
+  gap: 10px 14px;
+  padding: 10px 4px;
   border-bottom: 1px solid var(--border-soft);
 }
 .glossar-entry:last-child { border-bottom: none; }
 
-.glossar-entry-left {
+.glossar-entry-body {
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 3px;
-  padding-top: 1px;
+}
+.glossar-entry-head {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  flex-wrap: wrap;
 }
 .glossar-entry-term {
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--text);
   line-height: 1.35;
 }
 .glossar-entry-abbrev {
-  font-size: 11.5px;
+  font-size: 11px;
   color: var(--accent);
   font-weight: 500;
   background: var(--bg-active);
   border-radius: var(--radius-xs);
   padding: 1px 5px;
-  align-self: flex-start;
+  flex-shrink: 0;
 }
-
-.glossar-entry-body { min-width: 0; }
 .glossar-entry-def {
-  font-size: 13.5px;
+  font-size: 13px;
   color: var(--text-muted);
-  line-height: 1.6;
+  line-height: 1.55;
   margin: 0;
 }
 
 .glossar-entry-img-wrap {
-  width: 80px;
+  width: 56px;
 }
 .glossar-entry-img {
-  width: 80px;
-  height: 80px;
+  width: 56px;
+  height: 56px;
   object-fit: cover;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-soft);
   display: block;
 }
 .glossar-entry-img-placeholder {
-  width: 80px;
-  height: 80px;
+  width: 56px;
+  height: 56px;
   border-radius: var(--radius-sm);
-  background: var(--bg-sidebar);
-  border: 1px dashed var(--border-soft);
-  opacity: 0.5;
+  border: 1px solid var(--border-soft);
+  background:
+    repeating-linear-gradient(
+      -45deg,
+      var(--bg-sidebar) 0px,
+      var(--bg-sidebar) 6px,
+      var(--bg-hover)   6px,
+      var(--bg-hover)   12px
+    );
 }
 
 /* ── FormelSammlung (appendix page) ──────────────────────────── */
@@ -2641,4 +2755,239 @@ html, body, #root {
   min-width: 16px;
   color: var(--text-muted);
   line-height: 1;
+}
+
+/* ── PDF Export ────────────────────────────────────────────────── */
+
+#pdf-print-view { display: none; }
+
+.pdf-preparing-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pdf-preparing-msg {
+  background: var(--bg-sidebar);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 32px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.pdf-preparing-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: pdf-spin 0.7s linear infinite;
+}
+@keyframes pdf-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── @media print ─────────────────────────────────────────────── */
+
+@media print {
+  /* Blanket color accuracy */
+  *, *::before, *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Page size and margins */
+  @page { size: A4; margin: 22mm 25mm; }
+
+  /* Hide screen-only chrome */
+  .layout,
+  .chat-panel,
+  .palette-overlay,
+  .pdf-preparing-overlay { display: none !important; }
+
+  /* Show the print container */
+  #pdf-print-view { display: block !important; }
+
+  body { background: #fff !important; color: #111 !important; }
+
+  /* ── Cover page ──────────────────────────────────────────────── */
+  .pdf-cover {
+    page-break-after: always;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .pdf-cover-inner { max-width: 400px; }
+  .pdf-cover-eyebrow {
+    font-size: 10pt;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #888;
+    margin: 0 0 20px;
+  }
+  .pdf-cover-title {
+    font-size: 80pt;
+    font-weight: 800;
+    color: #111;
+    line-height: 1;
+    margin: 0 0 18px;
+    letter-spacing: -0.03em;
+  }
+  .pdf-cover-subtitle {
+    font-size: 13pt;
+    color: #555;
+    margin: 0 0 36px;
+    line-height: 1.5;
+  }
+  .pdf-cover-rule {
+    width: 48px;
+    height: 2px;
+    background: #ccc;
+    margin: 0 auto 28px;
+  }
+  .pdf-cover-year {
+    font-size: 11pt;
+    color: #999;
+    margin: 0;
+  }
+
+  /* ── Chapter pages ───────────────────────────────────────────── */
+  .pdf-chapter { page-break-before: always; }
+
+  .pdf-chapter-hero {
+    margin: -22mm -25mm 0;
+    height: 190px;
+    overflow: hidden;
+  }
+  .pdf-chapter-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .pdf-chapter-header {
+    margin: 28px 0 20px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  .pdf-chapter-part {
+    font-size: 8.5pt;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #999;
+    margin: 0 0 6px;
+  }
+  .pdf-chapter-h1 {
+    font-size: 26pt;
+    font-weight: 800;
+    color: #111;
+    line-height: 1.15;
+    margin: 0;
+    letter-spacing: -0.02em;
+  }
+  .pdf-chapter-num {
+    font-size: 18pt;
+    font-weight: 400;
+    color: #777;
+  }
+
+  /* ── Prose typography ─────────────────────────────────────────── */
+  .prose {
+    font-size: 10.5pt;
+    line-height: 1.68;
+    color: #111;
+  }
+  .prose h1 { font-size: 20pt; page-break-after: avoid; }
+  .prose h2 { font-size: 15pt; page-break-after: avoid; margin-top: 22pt; }
+  .prose h3 { font-size: 12.5pt; page-break-after: avoid; }
+  .prose h4 { font-size: 11pt; page-break-after: avoid; }
+
+  .prose figure { page-break-inside: avoid; }
+  .prose table  { page-break-inside: avoid; }
+  .prose pre    { page-break-inside: avoid; white-space: pre-wrap; word-break: break-word; }
+  .prose .admonition { page-break-inside: avoid; }
+
+  .prose-anchor { display: none !important; }
+
+  /* Code blocks — legible monochrome */
+  .prose pre {
+    background: #f4f4f4 !important;
+    border: 1px solid #ddd;
+    color: #333 !important;
+  }
+  .prose pre code { background: transparent !important; color: #333 !important; }
+  .prose code {
+    background: #f0f0f0 !important;
+    color: #333 !important;
+    border: 1px solid #e0e0e0 !important;
+  }
+
+  /* Admonitions */
+  .prose .admonition {
+    background: #fafafa !important;
+    border-left: 3px solid #ccc !important;
+  }
+  .prose .admonition-title { color: #444 !important; }
+
+  /* Tables */
+  .prose thead { background: #f0f0f0 !important; }
+  .prose tbody tr:hover td { background: none !important; }
+  .prose th, .prose td { color: #111 !important; }
+
+  /* Interactive element placeholder */
+  .pdf-no-interactive {
+    border: 1px dashed #ccc;
+    border-radius: 6px;
+    padding: 12px 18px;
+    color: #aaa;
+    font-size: 9.5pt;
+    font-style: italic;
+    text-align: center;
+    margin: 16px 0;
+  }
+
+  /* Glossar in print — no search bar */
+  .glossar-search-wrap { display: none !important; }
+  .glossar-entry { page-break-inside: avoid; }
+  .glossar-entry-img-wrap { display: none !important; }
+  .glossar-entry-img-placeholder { display: none !important; }
+
+  /* Formel cards — hide interactive calc toggle */
+  .formel-card { page-break-inside: avoid; }
+  .formel-card-calc { display: none !important; }
+
+  /* Tooltips — suppress popovers, show plain text */
+  .gloss { border-bottom: none !important; cursor: text !important; }
+  .gloss-tooltip { display: none !important; }
+  .gloss-print { border-bottom: 1px dotted #aaa; }
+  .formula-popover { display: none !important; }
+  .formula { cursor: text !important; }
+  .formula-print {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 8.5pt;
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 0 4px;
+  }
+
+  /* Pagination links — skip in PDF */
+  .pagination { display: none !important; }
+
+  /* Selection popover / lightbox */
+  .sel-popover, .lightbox { display: none !important; }
 }
