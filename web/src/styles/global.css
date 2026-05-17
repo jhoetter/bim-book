@@ -118,44 +118,112 @@ html, body, #root {
   to   { opacity: 0; }
 }
 
-/* ── Sidebar bookmarks section ────────────────────────────────── */
-.sidebar-bookmarks {
+/* ── Sidebar search bar ───────────────────────────────────────── */
+.sidebar-search-wrap {
+  padding: 6px 10px 6px;
   border-bottom: 1px solid var(--border-soft);
-  padding-bottom: 6px;
   margin-bottom: 2px;
 }
 
-.sidebar-bookmarks-icon {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 4px;
-  opacity: 0.6;
-}
-
-.sidebar-bookmark-item {
-  position: relative;
+.sidebar-search-bar {
   display: flex;
   align-items: center;
-  margin: 1px 6px;
+  gap: 3px;
+  background: var(--bg-hover);
+  border: 1px solid var(--border-soft);
+  border-radius: 6px;
+  padding: 0 0 0 7px;
+  overflow: hidden;
+  transition: border-color 120ms;
 }
 
-.sidebar-bookmark-link {
-  margin: 0 !important;
+.sidebar-search-bar:focus-within {
+  border-color: var(--accent);
+  background: var(--bg);
+}
+
+.sidebar-search-icon {
+  color: var(--text-faint);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding-top: 1px;
+}
+
+.sidebar-search-input {
   flex: 1;
   min-width: 0;
-  padding-right: 26px !important;
+  border: none;
+  background: none;
+  font-size: 12px;
+  color: var(--text);
+  padding: 5px 4px;
+  outline: none;
+  font-family: inherit;
 }
 
-.sidebar-bookmark-placeholder {
-  opacity: 0 !important;
-  pointer-events: none;
+.sidebar-search-input::placeholder { color: var(--text-faint); }
+
+.sidebar-search-clear {
+  width: 18px;
+  height: 18px;
+  border: none;
+  background: none;
+  border-radius: 3px;
+  color: var(--text-faint);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1;
+  flex-shrink: 0;
+  padding: 0;
+  transition: background 80ms, color 80ms;
+}
+.sidebar-search-clear:hover { background: var(--bg-hover); color: var(--text); }
+
+.sidebar-search-bm {
+  width: 26px;
+  align-self: stretch;
+  border: none;
+  border-left: 1px solid var(--border-soft);
+  background: none;
+  color: var(--text-faint);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0;
+  transition: background 80ms, color 80ms;
+}
+.sidebar-search-bm:hover { background: var(--bg-active); color: var(--text); }
+.sidebar-search-bm--on { color: var(--accent); }
+.sidebar-search-bm--on:hover { color: var(--accent); }
+
+.sidebar-search-empty {
+  font-size: 12px;
+  color: var(--text-faint);
+  padding: 12px 20px;
+  margin: 0;
 }
 
-.sidebar-bookmark-remove {
+/* ── Sidebar chapter bookmark toggle ──────────────────────────── */
+.sidebar-chapter-item {
+  position: relative;
+}
+
+.sidebar-chapter-item .sidebar-link {
+  padding-right: 28px;
+}
+
+.sidebar-bm-btn {
   position: absolute;
-  right: 4px;
-  width: 20px;
-  height: 20px;
+  right: 10px;
+  top: 5px;
+  width: 18px;
+  height: 18px;
   border: none;
   background: none;
   border-radius: var(--radius-xs);
@@ -164,14 +232,21 @@ html, body, #root {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  line-height: 1;
+  padding: 0;
   opacity: 0;
-  transition: background 80ms, color 80ms, opacity 80ms;
+  transition: opacity 100ms, color 100ms, background 80ms;
   flex-shrink: 0;
 }
-.sidebar-bookmark-item:hover .sidebar-bookmark-remove { opacity: 1; }
-.sidebar-bookmark-remove:hover { background: #fee2e2; color: #dc2626; }
+
+.sidebar-chapter-item:hover .sidebar-bm-btn { opacity: 0.45; }
+.sidebar-chapter-item:hover .sidebar-bm-btn:hover { opacity: 1; background: var(--bg-hover); }
+
+.sidebar-bm-btn--on {
+  opacity: 1 !important;
+  color: var(--accent);
+}
+
+.sidebar-bm-btn--on:hover { background: var(--bg-active) !important; }
 
 /* ── Breadcrumb ───────────────────────────────────────────────── */
 .breadcrumb {
@@ -2958,196 +3033,338 @@ html, body, #root {
 /* ── @media print ─────────────────────────────────────────────── */
 
 @media print {
-  /* Blanket color accuracy */
+
   *, *::before, *::after {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
 
-  /* Page size and margins */
-  @page { size: A4; margin: 22mm 25mm; }
+  @page { size: A4; margin: 20mm 24mm 18mm; }
 
-  /* Hide screen-only chrome */
-  .layout,
-  .chat-panel,
-  .palette-overlay,
-  .pdf-preparing-overlay { display: none !important; }
-
-  /* Show the print container */
+  .layout, .chat-panel, .palette-overlay, .pdf-preparing-overlay { display: none !important; }
   #pdf-print-view { display: block !important; }
 
-  body { background: #fff !important; color: #111 !important; }
+  body {
+    background: #fff !important;
+    color: #1a1818 !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
 
-  /* ── Cover page ──────────────────────────────────────────────── */
+  /* ════════════════════════════════════════════════════════════
+     SIMPLE TITLE PAGE
+     ════════════════════════════════════════════════════════════ */
   .pdf-cover {
     page-break-after: always;
-    height: 100vh;
+    /* Fixed to the content-area height so nothing bleeds past it */
+    height: 259mm; /* 297mm − 20mm top − 18mm bottom */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-  .pdf-cover-inner { max-width: 400px; }
+  .pdf-cover-inner { max-width: 130mm; }
+
   .pdf-cover-eyebrow {
-    font-size: 10pt;
-    letter-spacing: 0.3em;
+    font-size: 8pt;
+    letter-spacing: 0.35em;
     text-transform: uppercase;
-    color: #888;
-    margin: 0 0 20px;
+    color: #a09080;
+    margin: 0 0 6mm;
+    font-weight: 500;
   }
   .pdf-cover-title {
-    font-size: 80pt;
-    font-weight: 800;
-    color: #111;
-    line-height: 1;
-    margin: 0 0 18px;
-    letter-spacing: -0.03em;
-  }
-  .pdf-cover-subtitle {
-    font-size: 13pt;
-    color: #555;
-    margin: 0 0 36px;
-    line-height: 1.5;
+    font-size: 64pt;
+    font-weight: 900;
+    color: #1a1818 !important;
+    line-height: 0.9;
+    margin: 0 0 8mm;
+    letter-spacing: -0.05em;
   }
   .pdf-cover-rule {
-    width: 48px;
-    height: 2px;
-    background: #ccc;
-    margin: 0 auto 28px;
+    width: 32pt;
+    height: 2pt;
+    background: #c0804a !important;
+    margin: 0 auto 8mm;
+  }
+  .pdf-cover-subtitle {
+    font-size: 10.5pt;
+    color: #706050;
+    margin: 0 0 16mm;
+    line-height: 1.6;
+    font-weight: 400;
   }
   .pdf-cover-year {
-    font-size: 11pt;
-    color: #999;
+    font-size: 9pt;
+    color: #b0a090;
+    letter-spacing: 0.1em;
     margin: 0;
   }
 
-  /* ── Chapter pages ───────────────────────────────────────────── */
+  /* ════════════════════════════════════════════════════════════
+     CHAPTER: outer wrapper — page break before each chapter
+     ════════════════════════════════════════════════════════════ */
   .pdf-chapter { page-break-before: always; }
 
-  .pdf-chapter-hero {
-    margin: -22mm -25mm 0;
-    height: 190px;
+  /* ── Full-bleed chapter cover using a named @page with margin:0 ── */
+  /*
+   * CSS named pages (Chrome 85+): assigning a named page to an element
+   * forces it onto its own page that uses the named @page rule.
+   * This is the only reliable way to get true full-bleed in Chromium.
+   */
+  @page chapterCover { size: A4; margin: 0; }
+
+  .pdf-chapter-cover-page {
+    page: chapterCover;        /* this page gets 0 margin → full bleed */
+    page-break-after: always;
+    position: relative;
+    width: 210mm;
+    height: 297mm;
     overflow: hidden;
   }
-  .pdf-chapter-hero-img {
+  .pdf-chapter-cover-img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
+    object-position: center 35%;
+  }
+  /* Uniform semi-transparent overlay over the entire image */
+  .pdf-chapter-cover-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.44) !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 24mm 22mm;
+  }
+  .pdf-chapter-cover-part {
+    font-size: 7.5pt;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.75) !important;
+    margin: 0 0 4mm;
+    font-weight: 600;
+  }
+  .pdf-chapter-cover-h1 {
+    font-size: 30pt;
+    font-weight: 800;
+    color: #fff !important;
+    line-height: 1.1;
+    margin: 0;
+    letter-spacing: -0.03em;
+  }
+  .pdf-chapter-cover-num {
+    font-weight: 300;
+    font-size: 22pt;
+    color: rgba(255,255,255,0.72) !important;
   }
 
+  /* ── Chapter without cover image: simple header ─────────────── */
   .pdf-chapter-header {
-    margin: 28px 0 20px;
-    padding-bottom: 14px;
-    border-bottom: 2px solid #e0e0e0;
+    margin: 0 0 7mm;
+    padding-bottom: 5mm;
+    border-bottom: 1.5pt solid #e8e2da;
   }
   .pdf-chapter-part {
-    font-size: 8.5pt;
-    letter-spacing: 0.2em;
+    font-size: 7pt;
+    letter-spacing: 0.28em;
     text-transform: uppercase;
-    color: #999;
-    margin: 0 0 6px;
+    color: #c0804a !important;
+    margin: 0 0 3.5mm;
+    font-weight: 700;
   }
   .pdf-chapter-h1 {
-    font-size: 26pt;
+    font-size: 24pt;
     font-weight: 800;
-    color: #111;
-    line-height: 1.15;
+    color: #1a1818 !important;
+    line-height: 1.1;
     margin: 0;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
   }
   .pdf-chapter-num {
-    font-size: 18pt;
-    font-weight: 400;
-    color: #777;
+    font-size: 16pt;
+    font-weight: 300;
+    color: #c0804a !important;
   }
 
-  /* ── Prose typography ─────────────────────────────────────────── */
+  /* ════════════════════════════════════════════════════════════
+     PROSE TYPOGRAPHY
+     ════════════════════════════════════════════════════════════ */
   .prose {
-    font-size: 10.5pt;
-    line-height: 1.68;
-    color: #111;
+    font-size: 10pt;
+    line-height: 1.74;
+    color: #1a1818;
+    max-width: none;
   }
-  .prose h1 { font-size: 20pt; page-break-after: avoid; }
-  .prose h2 { font-size: 15pt; page-break-after: avoid; margin-top: 22pt; }
-  .prose h3 { font-size: 12.5pt; page-break-after: avoid; }
-  .prose h4 { font-size: 11pt; page-break-after: avoid; }
 
-  .prose figure { page-break-inside: avoid; }
-  .prose table  { page-break-inside: avoid; }
-  .prose pre    { page-break-inside: avoid; white-space: pre-wrap; word-break: break-word; }
-  .prose .admonition { page-break-inside: avoid; }
+  /* Suppress the chapter's redundant h1 — already on cover page or in header */
+  .pdf-chapter .prose h1 { display: none !important; }
+
+  .prose h2 {
+    font-size: 13.5pt;
+    font-weight: 720;
+    color: #1a1818 !important;
+    margin-top: 8mm;
+    margin-bottom: 2.5mm;
+    padding-bottom: 2mm;
+    border-bottom: 0.75pt solid #e8e2da;
+    page-break-after: avoid;
+    letter-spacing: -0.015em;
+  }
+  .prose h3 {
+    font-size: 11pt;
+    font-weight: 660;
+    color: #2a2220 !important;
+    margin-top: 5mm;
+    margin-bottom: 1.5mm;
+    page-break-after: avoid;
+  }
+  .prose h4 {
+    font-size: 10pt;
+    font-weight: 600;
+    color: #3a3028 !important;
+    page-break-after: avoid;
+  }
+
+  .prose p { margin-bottom: 3mm; }
+
+  .prose figure        { page-break-inside: avoid; margin: 5mm 0; }
+  .prose figure img    { max-width: 100%; height: auto; border-radius: 3pt; display: block; }
+  .prose figcaption    { font-size: 8.5pt; color: #8a7e74; text-align: center; margin-top: 2mm; font-style: italic; line-height: 1.45; }
+
+  .prose table         { page-break-inside: avoid; border-collapse: collapse; width: 100%; }
+  .prose th, .prose td { font-size: 9pt; padding: 2mm 3.5mm; border: 0.5pt solid #ddd8d2; color: #1a1818 !important; line-height: 1.5; }
+  .prose thead         { background: #f2ede7 !important; }
+  .prose th            { font-weight: 650; }
+  .prose tbody tr:hover td { background: none !important; }
+
+  .prose pre {
+    page-break-inside: avoid;
+    background: #f4f0ea !important;
+    border: 0.75pt solid #ddd8d2;
+    border-radius: 3pt;
+    padding: 3.5mm 4mm;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-size: 8.5pt;
+  }
+  .prose pre code { background: transparent !important; color: #1a1818 !important; }
+  .prose :not(pre) > code {
+    background: #f4f0ea !important;
+    color: #7a4020 !important;
+    font-size: 8.5pt;
+    padding: 0.5pt 2.5pt;
+    border: 0.5pt solid #ddd8d2 !important;
+    border-radius: 2pt;
+  }
+
+  .prose blockquote {
+    border-left: 3pt solid #c8a060 !important;
+    background: #fdf7ed !important;
+    padding: 3mm 5mm;
+    margin: 4mm 0;
+    color: #4a3820;
+    font-style: italic;
+  }
+  .prose blockquote p { margin: 0; }
+
+  .prose .admonition         { page-break-inside: avoid; margin: 4mm 0; padding: 3mm 5mm; border-left: 3pt solid; border-radius: 0 3pt 3pt 0; }
+  .prose .admonition-tip     { background: #fffbef !important; border-color: #d4a017 !important; }
+  .prose .admonition-note    { background: #eef4ff !important; border-color: #4a90d9 !important; }
+  .prose .admonition-warning { background: #fff3f2 !important; border-color: #d94040 !important; }
+  .prose .admonition-title   { font-size: 9pt; font-weight: 700; margin-bottom: 1.5mm; }
 
   .prose-anchor { display: none !important; }
+  .prose .math-display { overflow: visible; }
 
-  /* Code blocks — legible monochrome */
-  .prose pre {
-    background: #f4f4f4 !important;
-    border: 1px solid #ddd;
-    color: #333 !important;
-  }
-  .prose pre code { background: transparent !important; color: #333 !important; }
-  .prose code {
-    background: #f0f0f0 !important;
-    color: #333 !important;
-    border: 1px solid #e0e0e0 !important;
-  }
-
-  /* Admonitions */
-  .prose .admonition {
-    background: #fafafa !important;
-    border-left: 3px solid #ccc !important;
-  }
-  .prose .admonition-title { color: #444 !important; }
-
-  /* Tables */
-  .prose thead { background: #f0f0f0 !important; }
-  .prose tbody tr:hover td { background: none !important; }
-  .prose th, .prose td { color: #111 !important; }
-
-  /* Interactive element placeholder */
+  /* ════════════════════════════════════════════════════════════
+     INTERACTIVE PLACEHOLDER
+     ════════════════════════════════════════════════════════════ */
   .pdf-no-interactive {
-    border: 1px dashed #ccc;
-    border-radius: 6px;
-    padding: 12px 18px;
-    color: #aaa;
-    font-size: 9.5pt;
+    border: 0.75pt dashed #c8b89a;
+    border-radius: 4pt;
+    padding: 5mm 8mm;
+    color: #a89878;
+    font-size: 9pt;
     font-style: italic;
     text-align: center;
-    margin: 16px 0;
+    margin: 5mm 0;
+    background: #fdf8f2 !important;
   }
 
-  /* Glossar in print — no search bar */
-  .glossar-filter-bar { display: none !important; }
-  .glossar-entry { page-break-inside: avoid; }
-  .glossar-entry-img-wrap { display: none !important; }
-  .glossar-entry-img-placeholder { display: none !important; }
+  /* ════════════════════════════════════════════════════════════
+     GLOSSAR — 2-column definition grid
+     ════════════════════════════════════════════════════════════ */
+  .glossar-search-wrap { display: none !important; }
+  .glossar-print { margin-top: 3mm; }
 
-  /* Formel cards — hide interactive calc toggle */
-  .formel-card { page-break-inside: avoid; }
-  .formel-card-calc-direct { display: none !important; }
-  .formel-dialog { display: none !important; }
+  .gp-entry {
+    display: grid;
+    grid-template-columns: 46mm 1fr;
+    gap: 0 8mm;
+    padding: 3mm 0;
+    border-bottom: 0.5pt solid #ede8e0;
+    page-break-inside: avoid;
+  }
+  .gp-entry:first-child { border-top: 0.5pt solid #ede8e0; }
 
-  /* Tooltips — suppress popovers, show plain text */
-  .gloss { border-bottom: none !important; cursor: text !important; }
+  .gp-term   { padding-top: 0.5mm; }
+  .gp-name   { display: block; font-size: 9.5pt; font-weight: 700; color: #1a1818; line-height: 1.35; }
+  .gp-abbrev { display: block; font-size: 7.5pt; color: #a09080; font-style: italic; margin-top: 1mm; }
+  .gp-def    { font-size: 9.5pt; color: #3a3028; line-height: 1.58; margin: 0; }
+
+  /* ════════════════════════════════════════════════════════════
+     FORMELSAMMLUNG
+     ════════════════════════════════════════════════════════════ */
+  .formel-card {
+    page-break-inside: avoid;
+    border: 0.75pt solid #ddd8d0;
+    border-radius: 5pt;
+    padding: 5mm 5mm 4mm;
+    margin: 3.5mm 0;
+    background: #faf8f5 !important;
+  }
+  .formel-card-header  { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 3mm; gap: 4mm; }
+  .formel-card-name    { font-size: 10pt; font-weight: 700; margin: 0; }
+  .formel-card-norm    { font-size: 7.5pt; color: #a09080; flex-shrink: 0; }
+  .formel-card-display { text-align: center; margin: 2mm 0 3mm; }
+  .formel-card-calc    { display: none !important; }
+
+  .formel-vars-table { width: 100%; border-collapse: collapse; margin-top: 2mm; }
+  .formel-var-row td { padding: 1.5mm 2mm; border-bottom: 0.5pt solid #ede8e0; font-size: 8.5pt; }
+  .formel-var-sym    { font-weight: 600; width: 20mm; }
+  .formel-var-unit   { color: #8a7868; width: 18mm; text-align: right; }
+  .formel-var-example { color: #a09080; font-style: italic; }
+
+  .formel-card-example  { margin-top: 3mm; font-size: 8.5pt; padding: 2mm 3.5mm; background: #f5efe3 !important; border-radius: 3pt; color: #4a3820; }
+  .formel-example-label { font-weight: 700; }
+
+  /* ════════════════════════════════════════════════════════════
+     TOOLTIPS & BADGES
+     ════════════════════════════════════════════════════════════ */
+  .gloss         { border-bottom: 0.75pt dotted #c0b09a !important; cursor: default !important; }
   .gloss-tooltip { display: none !important; }
-  .gloss-print { border-bottom: 1px dotted #aaa; }
+  .gloss-print   { border-bottom: 0.75pt dotted #c0b09a; }
+
   .formula-popover { display: none !important; }
-  .formula { cursor: text !important; }
+  .formula         { cursor: default !important; }
   .formula-print {
     display: inline-flex;
     align-items: center;
-    gap: 2px;
-    font-size: 8.5pt;
-    color: #666;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    padding: 0 4px;
+    gap: 2pt;
+    font-size: 7.5pt;
+    color: #8a5830;
+    border: 0.5pt solid #d4a060;
+    border-radius: 2pt;
+    padding: 0 3pt;
+    background: #fdf5e8 !important;
+    vertical-align: baseline;
   }
 
-  /* Pagination links — skip in PDF */
+  /* ════════════════════════════════════════════════════════════
+     MISC
+     ════════════════════════════════════════════════════════════ */
   .pagination { display: none !important; }
-
-  /* Selection popover / lightbox */
   .sel-popover, .lightbox { display: none !important; }
 }

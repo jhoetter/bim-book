@@ -1,18 +1,37 @@
 import { NavLink, useLocation } from 'react-router-dom'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState, useCallback } from 'react'
 import { WallHifi, HomeIcon } from 'bim-icons'
 import { PARTS, GALLERY_ICON, TOP_PAGES } from '../chapters'
 import { useBookmarks } from '../lib/bookmarks'
+import { search } from '../lib/search'
 
 function chapterHref(path: string): string {
   if (path === 'index') return '/'
   return `/${path}`
 }
 
+const SearchIcon = () => (
+  <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+    strokeWidth="1.75" strokeLinecap="round" aria-hidden="true">
+    <circle cx="6.5" cy="6.5" r="4.5" />
+    <line x1="10.5" y1="10.5" x2="14" y2="14" />
+  </svg>
+)
+
+const BmIcon = ({ filled }: { filled: boolean }) => (
+  <svg width="11" height="11" viewBox="0 0 14 14" aria-hidden="true"
+    fill={filled ? 'currentColor' : 'none'}
+    stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M2.5 1.5A1 1 0 0 1 3.5.5h7a1 1 0 0 1 1 1v11.25a.25.25 0 0 1-.388.208L7 10.25l-4.112 2.708A.25.25 0 0 1 2.5 12.75V1.5Z" />
+  </svg>
+)
+
 export function Sidebar() {
   const scrollRef = useRef<HTMLDivElement>(null)
-  const location = useLocation()
-  const { bookmarks, remove } = useBookmarks()
+  const inputRef = useRef<HTMLInputElement>(null)
+  const { bookmarks, toggle } = useBookmarks()
+  const [filterBookmarks, setFilterBookmarks] = useState(false)
+  const [query, setQuery] = useState('')
 
   useEffect(() => {
     const el = scrollRef.current
@@ -27,8 +46,19 @@ export function Sidebar() {
     return () => { el.removeEventListener('scroll', onScroll); clearTimeout(timer) }
   }, [])
 
+  useEffect(() => {
+    if (bookmarks.length === 0) setFilterBookmarks(false)
+  }, [bookmarks.length])
+
+  const handleClear = useCallback(() => {
+    setQuery('')
+    inputRef.current?.focus()
+  }, [])
+
+  const bookmarkedPaths = new Set(bookmarks.map(b => b.path))
+  const matchingPaths = query.trim().length > 1 ? search(query) : null
+
   const GalleryIcon = GALLERY_ICON
-  const currentPath = location.pathname.replace(/^\//, '') || 'index'
 
   return (
     <nav className="sidebar">
@@ -87,73 +117,91 @@ export function Sidebar() {
           })}
         </div>
 
-        {bookmarks.length > 0 && (
-          <div className="sidebar-bookmarks">
-            <span className="sidebar-part-title">
-              <svg className="sidebar-bookmarks-icon" width="9" height="9" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true">
-                <path d="M2.5 1.5A1 1 0 0 1 3.5.5h7a1 1 0 0 1 1 1v11.25a.25.25 0 0 1-.388.208L7 10.25l-4.112 2.708A.25.25 0 0 1 2.5 12.75V1.5Z" />
-              </svg>
-              Lesezeichen
-            </span>
-            <ul>
-              {bookmarks.map(bm => {
-                const isActive = bm.path === currentPath
-                return (
-                  <li key={bm.path} className="sidebar-bookmark-item">
-                    <NavLink
-                      to={chapterHref(bm.path)}
-                      className={['sidebar-link sidebar-bookmark-link', isActive ? 'sidebar-link--active' : ''].join(' ').trim()}
-                      title={bm.part ? `${bm.part} · ${bm.title}` : bm.title}
-                    >
-                      <span className="sidebar-icon sidebar-bookmark-placeholder" aria-hidden="true" />
-                      <span className="sidebar-link-title">{bm.title}</span>
-                    </NavLink>
-                    <button
-                      className="sidebar-bookmark-remove"
-                      onClick={() => remove(bm.path)}
-                      aria-label={`${bm.title} entfernen`}
-                      title="Entfernen"
-                    >
-                      ×
-                    </button>
-                  </li>
-                )
-              })}
-            </ul>
+        <div className="sidebar-search-wrap">
+          <div className="sidebar-search-bar">
+            <span className="sidebar-search-icon"><SearchIcon /></span>
+            <input
+              ref={inputRef}
+              className="sidebar-search-input"
+              placeholder="Kapitel durchsuchen…"
+              value={query}
+              onChange={e => setQuery(e.target.value)}
+              aria-label="Kapitel durchsuchen"
+              spellCheck={false}
+            />
+            {query && (
+              <button className="sidebar-search-clear" onClick={handleClear} aria-label="Suche leeren">
+                ×
+              </button>
+            )}
+            {bookmarks.length > 0 && (
+              <button
+                className={['sidebar-search-bm', filterBookmarks ? 'sidebar-search-bm--on' : ''].join(' ').trim()}
+                onClick={() => setFilterBookmarks(f => !f)}
+                title={filterBookmarks ? 'Alle Kapitel anzeigen' : 'Nur Lesezeichen anzeigen'}
+                aria-label={filterBookmarks ? 'Lesezeichenfilter deaktivieren' : 'Nur Lesezeichen anzeigen'}
+              >
+                <BmIcon filled={filterBookmarks} />
+              </button>
+            )}
           </div>
-        )}
+        </div>
 
         <div className="sidebar-nav">
-          {PARTS.filter(part => part.title !== 'Überblick' && part.title !== 'Nachschlagewerke').map(part => (
-            <div key={part.title} className="sidebar-part">
-              <span className="sidebar-part-title">{part.title}</span>
-              <ul>
-                {part.chapters.map(chapter => {
-                  const Icon = chapter.icon
-                  return (
-                    <li key={chapter.id}>
-                      <NavLink
-                        to={chapterHref(chapter.path)}
-                        className={({ isActive }) =>
-                          ['sidebar-link', isActive ? 'sidebar-link--active' : ''].join(' ').trim()
-                        }
-                        end={chapter.path === 'index'}
-                      >
-                        {Icon ? (
-                          <span className="sidebar-icon" aria-hidden="true">
-                            <Icon size={14} strokeWidth={1.5} />
-                          </span>
-                        ) : chapter.num ? (
-                          <span className="sidebar-num">{chapter.num}</span>
-                        ) : null}
-                        <span className="sidebar-link-title">{chapter.title}</span>
-                      </NavLink>
-                    </li>
-                  )
-                })}
-              </ul>
-            </div>
-          ))}
+          {PARTS.filter(part => part.title !== 'Überblick' && part.title !== 'Nachschlagewerke').map(part => {
+            const chapters = part.chapters.filter(ch => {
+              if (filterBookmarks && !bookmarkedPaths.has(ch.path)) return false
+              if (matchingPaths && !matchingPaths.has(ch.path)) return false
+              return true
+            })
+            if (chapters.length === 0) return null
+            return (
+              <div key={part.title} className="sidebar-part">
+                <span className="sidebar-part-title">{part.title}</span>
+                <ul>
+                  {chapters.map(chapter => {
+                    const Icon = chapter.icon
+                    const isBookmarked = bookmarkedPaths.has(chapter.path)
+                    return (
+                      <li key={chapter.id} className="sidebar-chapter-item">
+                        <NavLink
+                          to={chapterHref(chapter.path)}
+                          className={({ isActive }) =>
+                            ['sidebar-link', isActive ? 'sidebar-link--active' : ''].join(' ').trim()
+                          }
+                          end={chapter.path === 'index'}
+                        >
+                          {Icon ? (
+                            <span className="sidebar-icon" aria-hidden="true">
+                              <Icon size={14} strokeWidth={1.5} />
+                            </span>
+                          ) : chapter.num ? (
+                            <span className="sidebar-num">{chapter.num}</span>
+                          ) : null}
+                          <span className="sidebar-link-title">{chapter.title}</span>
+                        </NavLink>
+                        <button
+                          className={['sidebar-bm-btn', isBookmarked ? 'sidebar-bm-btn--on' : ''].join(' ').trim()}
+                          onClick={e => {
+                            e.preventDefault()
+                            e.stopPropagation()
+                            toggle({ path: chapter.path, title: chapter.title, part: part.title })
+                          }}
+                          aria-label={isBookmarked ? 'Lesezeichen entfernen' : 'Lesezeichen setzen'}
+                          title={isBookmarked ? 'Lesezeichen entfernen' : 'Lesezeichen setzen'}
+                        >
+                          <BmIcon filled={isBookmarked} />
+                        </button>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </div>
+            )
+          })}
+          {(matchingPaths?.size === 0 || (filterBookmarks && bookmarks.length === 0)) && (
+            <p className="sidebar-search-empty">Keine Treffer</p>
+          )}
         </div>
       </div>
     </nav>
