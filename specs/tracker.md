@@ -1,6 +1,6 @@
 # Buch-Tracker: Vom Entwurf zum Modell
 
-Last updated: 2026-05-18
+Last updated: 2026-05-18 (Review-Update: Aufzug, MVD, CRS, BAP-Inhalt, Raumakustik, IFC-Validierung, LCA-BIM-Kopplung, Datenpipeline)
 
 Zweck: Master-Planungsdokument für alle 24 Kapitel. Kein Prosatext — nur Skizze: was muss rein, welche Bilder, welche Begriffe, welche Quellen. Writing Agents lesen diesen Tracker vor dem Schreiben eines Kapitels.
 
@@ -10,7 +10,7 @@ Zweck: Master-Planungsdokument für alle 24 Kapitel. Kein Prosatext — nur Skiz
 
 **Konsequenz für Kapiteltiefe:** Architektonische Grundlagen (Baustoffe, Konstruktion, TGA, Statik, Bauphysik) müssen vollständig und präzise erklärt werden — nicht als Zusammenfassung für Experten, sondern als solides Fundament für Einsteiger, das Architekten als fachlich korrekt erkennen.
 
-Leitbeispiel: **Kastanienallee 7** — viergeschossiges MFH, 12 Wohneinheiten, Stahlbeton-Skelett, Fernwärme + KWL, Flachdach mit PV, Vierspänner, GRZ 0,6, GFZ 2,4, Gebäudeklasse 4 nach MBO.
+Leitbeispiel: **Kastanienallee 7** — viergeschossiges MFH, 12 Wohneinheiten, Stahlbeton-Skelett, Fernwärme + KWL, Flachdach mit PV, Vierspänner, GRZ 0,6, GFZ 2,4, Gebäudeklasse 4 nach MBO, **aufzugspflichtig nach Art. 37 BayBO** (4 Vollgeschosse; 1 Aufzug im Treppenhauskern, Kabine 1,10 × 1,40 m lichte Maße nach DIN 18040-2, maschinenraumlos).
 
 ---
 
@@ -70,6 +70,12 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 | Kap. 6 (Wärmeschutz) nutzt digitales Format nicht — interaktive Tabelle fehlt | **niedrig** | Kap. 6 | — |
 | Kap. 24 in 2 Jahren schon veraltet — Scope zu ambitioniert | **mittel** | Kap. 24 | OE-07 |
 | Kap. 19 (Klassifikation) riskiert zu abstrakt zu werden — DE-Fokus fehlt | **mittel** | Kap. 19 | — |
+| Aufzug fehlt komplett — GK 4 nach Art. 37 BayBO macht ihn für K7 obligatorisch; nicht in K02-Box, K05, K12, K13 | **hoch** | Kap. 2, 5, 12, 13 | — |
+| Georeferenzierung / CRS fehlt in K18 — für Entwickler kritisch: IfcGeometricRepresentationContext, IfcMapConversion, EPSG:25832 | **hoch** | Kap. 18 | — |
+| MVD (Model View Definition) fehlt in K18 — erklärt nicht, warum IFC-Export zwischen Tools so stark variiert | **hoch** | Kap. 18 | — |
+| BAP-Inhalt nicht erklärt — Begriff in K15 eingeführt, aber Kapitelgliederung und Erstellungsprozess fehlen | **mittel** | Kap. 15 | — |
+| Innenausbau nicht systematisch — Trockenbau, Deckenraster, Unterdecken, Bodenbeläge (jenseits Estrich) fehlen | **mittel** | Kap. 5 | OE-09 |
+| Stellplatznachweis / Außenanlagen fehlen — Versickerung, Pkw-Zufahrt, Stellplatzsatzung Bayern | **niedrig** | Kap. 2, 14 | OE-10 |
 
 ---
 
@@ -135,6 +141,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
   - nach 1.2: Konkrete Schichteninhalte K7 (Skelettrahmen 6×6 m, Dachabdichtung, Fernwärme-Station, Trockenbau)
 
 - **BIM-Brücke:** Schichtenmodell = IFC-Modellstruktur; Tragstruktur → `IfcColumn`, `IfcSlab`; TGA → `IfcDistributionSystem`; Innenausbau → `IfcCovering`; Verbindung zu Kap. 17–18
+  ⚠️ **Vorausverweise-Hinweis (didaktisch wichtig):** Die BIM-Brücken in K01–K16 verwenden IFC-Notation, bevor IFC in K17/18 eingeführt wird. K01 muss explizit sagen: „Diese Boxen sind Vorausgriffe — wer IFC noch nicht kennt, kann sie zunächst überfliegen und nach Kap. 18 zurückkehren." Diesen Satz in K01 setzen, damit sequenziell lesende Einsteiger nicht stolpern.
 
 - **Quellen:** Ching (Systemdenken), Bildwörterbuch (hist. Bautechnik), FK1 (Schichtenaufbau)
 
@@ -175,6 +182,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 - **Kastanienallee-Boxen:**
   - nach 2.1: GRZ 0,60 / GFZ 2,4 / GK 4 nach MBO — Rechenweg vollständig
   - nach 2.3: Vierspänner, Windfang Südseite, drei Wohnungstypen je Geschoss
+  - nach 2.4: Aufzugspflicht K7 — GK 4, 4 Vollgeschosse → Art. 37 BayBO: Aufzug zwingend; 1 Aufzug im Treppenhauskern; Kabine 1,10 × 1,40 m lichte Maße (DIN 18040-2 barrierefrei); Schacht ca. 1,80 × 2,20 m Außenmaß Stahlbeton; Grubenmaß 1,10 m → Kellergeschoss notwendig; maschinenraumlos (MRL) nach DIN EN 81-20
   - nach 2.5: A/V ≈ 0,38 m⁻¹, Berechnung, Vergleich mit EFH > 0,8 m⁻¹
 
 - **BIM-Brücke:** `IfcSpace` (Raumfläche nach DIN 277); Raumprogramm als Datenanforderung; GFZ-Prüfung automatisierbar aus `IfcBuilding` + `IfcSite`; → Kap. 18, 19
@@ -277,7 +285,8 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 - **Pflichtabschnitte (H2):**
   - 5.1 Gründung — Baugrundgutachten (warum Boden erkunden bevor planen); Frostfreiheit (≥ 80 cm in D); Keller vs. kein Keller; Weißer Trog vs. Schwarze Wanne; Perimeterdämmung; Plattendicke
   - 5.2 Außenwand — einschalig vs. zweischalig vs. WDVS (Wärmedämmverbundsystem); Schichtfolge von innen nach außen mit Begründung (Dampfdiffusion: dampfdicht → offen); Fensteranschluss als kritisches Detail (Wärmebrücke an Laibung); Rollladenkasten
-  - 5.3 Deckenaufbau — Rohdecke (Beton/Holz); schwimmender Estrich mit Trittschalldämmung; Fußbodenheizung als integrierter Bestandteil; Bodenbelag; Aufbauhöhe gesamt (typisch 15–18 cm über Rohdecke)
+  - 5.3 Deckenaufbau — Rohdecke (Beton/Holz); schwimmender Estrich mit Trittschalldämmung; Fußbodenheizung als integrierter Bestandteil; Bodenbelag; Aufbauhöhe gesamt (typisch 15–18 cm über Rohdecke); Deckenöffnung Aufzugsschacht als Koordinationsaufgabe
+  - 5.3a Aufzugsschacht ⚠️ NEU — Stahlbeton-Aufzugsschacht als tragendes und aussteifendes Element; Lichtraum Kabine 1,10 × 1,40 m → Schacht ca. 1,80 × 2,20 m Außenmaß; Wanddicke ≥ 20 cm (Schallschutz!); Grubentiefe 1,10 m unter EG-Fertigfußboden; maschinenraumlos (MRL): Antrieb im Schachtkopf, kein separater Maschinenraum; Kopfraum mind. 3,50 m über oberstem Halt; DIN EN 81-20; Lage im Treppenhauskern (Koordination mit NTH-Anforderungen → Kap. 9); Aufzug ist kein Sonderfall: 4 Vollgeschosse in Bayern = Aufzugspflicht
   - 5.4 Flachdach — Aufbau: Tragschicht → Dampfbremse → Dämmung → Abdichtung → Schutzlage → Begrünung/PV; Warmdach vs. Umkehrdach; Gefällegebung (min. 2%); Attika; Entwässerung: Einläufe + Notüberlauf
   - 5.5 Geneigtes Dach (Vergleichsgebäude EFH) — Sparren, Pfetten, Kehlbalken; Aufsparren- vs. Zwischensparrendämmung; Dachdeckungen kurz
   - 5.6 Holzbau als System ⚠️ NEU — **konsolidiert Holzbau-Inhalte aus Kap. 3, 8, 23 hier an einem Ort**; Holzrahmenbau (Stiel + Riegel, vorgefertigt, bis 5 Geschosse gut), Brettsperrholz CLT (Plattenbauweise, bis 10+ Geschosse möglich, serielle Sanierung); Brandschutz Holz: Abbrandrate 0,65 mm/min, Kapselklasse K60; Schallschutz: Flankenübertragung das Hauptproblem, Lösungen; Feuchte: Holzfeuchte < 20% dauerhaft, Konstruktionsholz KD (kiln dried); CO₂-Bilanz: ca. 250 kg CO₂ gebunden je m³ BSH; wann Holz wirtschaftlich gegenüber Beton; Holzbau in Kap. 8 und 23 nur noch referenzieren, nicht mehr doppeln
@@ -393,6 +402,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
   - 8.2 Schalldämmmaß R'w — Was es bedeutet (Differenz in dB); Masse-Gesetz (Verdopplung Masse → +6 dB); DIN 4109: Mindestanforderungen (Trennwände MFH: R'w ≥ 53 dB; Decken: R'w ≥ 54 dB, L'n,w ≤ 53 dB); erhöhter Schallschutz (VDI 4100 Stufe II/III)
   - 8.3 Konstruktive Maßnahmen — Entkopplung (schwimmender Estrich + Trittschalldämmung, Gummilager für Anlagen); Masse (Betondecken); zweischalige Konstruktionen (Vorsatzschale mit Luftspalt); Installationsschächte schalltechnisch entkoppeln
   - 8.4 Schallschutz im Holzbau — Flankenübertragung besonders problematisch; kurzer Verweis auf Kap. 5 (dort vollständig); hier nur: warum Holz schwieriger ist als Beton (Masse-Gesetz benachteiligt leichte Bauteile), und welche Lösungsstrategie (Entkopplung + schwere Einlagen)
+  - 8.5 Raumakustik ⚠️ NEU — von Luft- und Trittschall-Dämmung trennen: Raumakustik beschreibt die Klangqualität im Raum selbst, nicht das Schalldurchgang zwischen Räumen; Nachhallzeit T (RT60): Wohnung ≤ 0,5 s, Treppenhaus ≤ 1,2 s, Gemeinschaftsraum ≤ 0,8 s; vereinfacht: T = 0,163 × V/A (Sabine-Formel); Absorptionsfläche erhöhen durch: Teppich, Akustikdecken (Holzwolle-Platten, Mineralfaser), Vorhänge, Mobiliar; relevante Räume in MFH: Treppenhaus (Hall durch harte Oberflächen), Eingangszone, Tiefgarage; geregelt in DIN 18041 (primär Unterrichtsräume, aber als Orientierung für Gemeinschaftsflächen nutzbar); kurz halten — kein vollständiges Raumakustikkapitel
 
 - **Einzuführende Begriffe:** `schallschutz-rw`
 
@@ -535,7 +545,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
   - 12.2 Warmwasserbereitung und Legionellen — Zentralspeicher ≥ 60 °C; Zirkulationsleitung mit Dämmung; Hygieneanforderungen TRWI; dezentrale Alternative
   - 12.3 Entwässerung — Schmutzwasser vs. Regenwasser (Trennsystem in D Pflicht); Fallleitungen (DN 100), Sammelleitung (Gefälle mind. 1:50), Reinigungsöffnungen; Rückstausicherung (Rückstauverschluss, Hebeanlage wenn unter Rückstauebene)
   - 12.4 Sanitärobjekte und Barrierefreiheit — Bodenablauf (barrierefreie Dusche ebenerdige Dusche), WC-Anschlussmaße, Handwaschbecken-Mindestabstände (Neufert), rollstuhlgerechte Dusche 1,50 × 1,50 m
-  - 12.5 Leitungsführung als Entwurfsthema — Steigschächte: warum alle Nassräume übereinander; Kellerverrohrung; Dachentwässerung: Einläufe + Notüberlauf (DIN EN 12056)
+  - 12.5 Leitungsführung als Entwurfsthema — Steigschächte: warum alle Nassräume übereinander; Kellerverrohrung; Dachentwässerung: Einläufe + Notüberlauf (DIN EN 12056); **Aufzugsschacht als Konkurrent:** keine TGA-Leitungen durch den Aufzugsschacht führen — eigener separater Schacht für Aufzug; Koordination von Steigschacht-Lage und Aufzugsschacht früh in LP 2 klären (→ Kap. 5 für Schachtdimensionen)
 
 - **Einzuführende Begriffe:** `dvgw` (Regelwerk Trinkwasser)
 
@@ -569,7 +579,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
   - 13.1 Elektrische Grundversorgung — Hausanschluss (NS-Kabel vom Netz), Zähleranlage (getrennt je Wohnung + Allgemeinstrom), Unterverteilung; RCD (FI-Schutzschalter), Leitungsschutzschalter, Potentialausgleich
   - 13.2 Leitungsführung — Unterputz (UP) vs. Kabelkanal vs. Kabeltrasse; Mindestabstände zu anderen Gewerken; Leerrohre als Vorhaltung
   - 13.3 Beleuchtungsplanung — Beleuchtungsstärke nach DIN EN 12464 (Wohnen 100 lx, Büro 500 lx); LED-Technik (Lichtfarbe CCT, CRI); Notbeleuchtung (Rettungszeichen), Bewegungsmelder
-  - 13.4 Schwachstromtechnik — Glasfaser/LAN (Gigabit-Pflicht Neubau ab 2023), Brandmeldeanlage, Einbruchmeldeanlage, Videosprechanlage, EV-Ladeinfrastruktur (GEG §72 Stellplatz-Pflicht Neubau)
+  - 13.4 Schwachstromtechnik — Glasfaser/LAN (Gigabit-Pflicht Neubau ab 2023), Brandmeldeanlage, Einbruchmeldeanlage, Videosprechanlage, EV-Ladeinfrastruktur (GEG §72 Stellplatz-Pflicht Neubau); **Aufzugssteuerung** (DIN EN 81-20): separater Starkstromkreis 400 V, Aufzugsnotruf nach EN 81-28 (Pflicht), Notstromversorgung für Aufzugsbeleuchtung + Notruf; bei GK 4 kein Feuerwehraufzug erforderlich (erst GK 5 > 7 Geschosse); Aufzug rechtzeitig in Elektroplanung LP 2/3 integrieren
   - 13.5 Photovoltaik — Funktionsprinzip, Ertrag (900–1.100 kWh/kWp·a in D), Wechselrichter, Eigenverbrauch vs. Einspeisung; GEG 2024 und Solarenergiepflicht der Länder; K7 mit 30 kWp
   - 13.6 Gebäudeautomation — KNX (Bus-Standard DE), BACnet (Gewerbe), DALI (Licht); Visualisierung/Gebäudeleittechnik; Energiemanagement: Lastspitzen kappen, Smart Meter
 
@@ -600,9 +610,10 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
   - Wer darf wo was bauen — wie ist das Baurecht aufgebaut?
   - Wie liest man einen Bebauungsplan, bevor der Stift ansetzt?
   - Was passiert im Genehmigungsverfahren?
+  - *(IT-Perspektive)* Wie ist Planungsrecht ein Constraint-System, das BIM-Modelle von außen beschränkt — und welche dieser Constraints sind heute schon automatisierbar prüfbar?
 
 - **Pflichtabschnitte (H2):**
-  - 14.1 Das Baurecht-System — dreistufig: BauGB (Bundesrecht) → LBO/MBO (Landesrecht) → örtliche Satzungen; BauNVO als Verordnung zum BauGB
+  - 14.1 Das Baurecht-System — dreistufig: BauGB (Bundesrecht) → LBO/MBO (Landesrecht) → örtliche Satzungen; BauNVO als Verordnung zum BauGB; **IT-Einstieg:** Planungsrecht als Constraint-System — der B-Plan definiert Parameter (GRZ, GFZ, Traufhöhe, Nutzungsart), das Modell muss diese einhalten; GFZ-Prüfung ist heute aus IFC-Flächen automatisierbar; vollautomatische Code-Compliance (alle Abstandsflächen, alle Brandschutzanforderungen aus Modell) ist ein offenes Forschungsfeld (→ Kap. 24 für Ausblick)
   - 14.2 Bebauungsplan lesen — Festsetzungen: Art der Nutzung (WA, WR, MI, GE, GI), GRZ, GFZ, Traufhöhe, Firsthöhe, Baugrenzen, Baulinien; was fehlt wenn kein B-Plan: §34 (Innenbereich, Einfügen), §35 (Außenbereich, Privilegierung)
   - 14.3 Genehmigungsverfahren — Beteiligte: Bauherr, Entwurfsverfasser (mit Bauvorlageberechtigung), Nachbarn (Abstandsflächen), TÖB; vereinfachtes vs. reguläres Verfahren; Zeitablauf 3–12 Monate; Baulast
   - 14.4 Abstandsflächen — Berechnung: Wandhöhe × Faktor (0,4 in WA, 1,0 bei Wandhöhe > 16 m); Mindestabstand 3 m; Zusammenrechnung bei Grundstücksgrenzen; Ausnahmen
@@ -642,6 +653,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
   - 15.2 Honorarberechnung — anrechenbare Kosten (Bau + TGA, nicht Grundstück), Honorarzonen I–V, Mindestsatz; Beispielrechnung K7
   - 15.3 Fachplaner und ihre Rollen — Tragwerksplanung (LP 2–6), TGA (LP 2–8 je Gewerk), Brandschutz (LP 2–4 + 8), Bauphysik (LP 2–5); wer koordiniert wen (Objektplaner Architekt als Koordinator)
   - 15.4 BIM in den Leistungsphasen — LOD 100 (LP 1), LOD 200 (LP 2–3), LOD 300 (LP 5), LOD 400 (Ausführung/Vergabe), LOD 500 (as-built); AIA (Auftraggeber-Informations-Anforderungen) als Steuerungsinstrument; BIM-Manager als neue Rolle
+  - 15.5 BIM-Ausführungsplan (BAP/BEP): Inhalt und Struktur ⚠️ NEU — der BAP ist das zentrale Steuerungsdokument eines BIM-Projekts; typische Kapitelstruktur: (1) Projektziele und BIM-Anwendungsfälle, (2) Modellstruktur und Namenskonventionen (Koordinatenursprung, Dateibenennungsschema), (3) LOD-Matrix je Disziplin und Leistungsphase, (4) Software und Dateiformate (IFC-Version, MVD, Exporteinstellungen), (5) CDE-Nutzungsvereinbarungen (Statusworkflow, Benennung nach ISO 19650), (6) Qualitätssicherung (wer prüft was wann — Kollisionsrunde, Modellkoordination), (7) Rollen und Verantwortlichkeiten (BIM-Manager, BIM-Koordinator je Gewerk, BIM-Autoren); Erstellung: AG-seitig AIA → AN-seitig BAP als Antwort darauf; Zeitpunkt: BAP fertig vor LP 3-Start; Praxisproblem: BAP-Vorlage oft copy-paste aus Vorprojekt ohne Anpassung
 
 - **Einzuführende Begriffe:** `hoai`, `lod`, `bap`
 
@@ -751,7 +763,8 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
   - 18.5 Beziehungen in IFC — `IfcRelContainedInSpatialStructure`, `IfcRelAssociatesMaterial`, `IfcRelDefinesByType`, `IfcRelConnectsElements`; warum Beziehungen wichtiger sind als Objekte; wie man von einem Element zu seinem Material kommt (3 Schritte); IfcOwnerHistory als Metadaten-Container
   - 18.6 STEP-Format manuell lesen ⚠️ WICHTIG FÜR ENTWICKLER — vollständig annotiertes Beispiel: eine IfcWall von K7 in STEP-Text; Zeilennummern, Entitäts-IDs, Argumentlisten; wie man mit grep/Python erste Fragen stellt; häufige Fehlertypen (doppelte GUIDs, fehlende Containment, leere Geometrie)
   - 18.7 Programmatischer Zugriff mit IfcOpenShell ⚠️ NEU — Zielgruppe (Informatiker) direkt abholen; 10-Zeilen-Python: IFC laden, alle Wände ausgeben, Pset lesen; IfcOpenShell als de-facto Standard; Alternativen (.NET: xBIM; JS: web-ifc); was man damit bauen kann — genug um eigene Werkzeuge zu schreiben
-  - 18.8 IFC-Versionen — IFC2x3 (noch ca. 60% Marktanteil DE), IFC4 (aktuell, besser strukturiert), IFC4.3 (Infrastruktur + Brücken); was sich geändert hat; warum IFC2x3 trotzdem noch relevant ist; Empfehlung: für Neuprojekte IFC4
+  - 18.8 IFC-Versionen und MVD ⚠️ ERWEITERT — IFC2x3 (noch ca. 60% Marktanteil DE), IFC4 (aktuell, besser strukturiert), IFC4.3 (Infrastruktur + Brücken); was sich geändert hat; warum IFC2x3 trotzdem noch relevant ist; Empfehlung: für Neuprojekte IFC4; **MVD (Model View Definition):** warum IFC-Export zwischen Tools so stark variiert — eine MVD definiert den Sub-Schema-Subset, der für einen Anwendungsfall gültig ist; wichtigste MVDs: Coordination View 2.0 (IFC2x3, de-facto-Standard für Koordination DE), Reference View 1.2 (IFC4, read-only, für Datenübergabe), Design Transfer View (IFC4, bidirektional, voller Geometriezugriff); Revit exportiert primär CV 2.0 → deshalb gehen beim IFC4-Import oft Geometrietypen verloren; Empfehlung: MVD im BAP (Kap. 15) projektspezifisch vereinbaren und im IFC-Datei-Header prüfen
+  - 18.9 Georeferenzierung und CRS ⚠️ NEU — für Entwickler die Modelle in GIS-Systeme integrieren oder mehrere Teilmodelle koordinieren; Problem: jedes Authoring-Tool platziert den lokalen Modellursprung woanders → bei CDE-Import passen Modelle nicht zusammen; `IfcGeometricRepresentationContext`: enthält `WorldCoordinateSystem` (lokales Ursprungskoordinatensystem) und `TrueNorth`; Lösung in IFC4: `IfcMapConversion` koppelt das lokale Koordinatensystem an ein geographisches CRS; EPSG-Codes: EPSG:25832 (ETRS89/UTM Zone 32N) ist Standard für Deutschland; IFC2x3-Limitation: `IfcSite.RefLatitude`/`RefLongitude` (Grad/Minuten/Sekunden, unzuverlässig, kein CRS-Link) — deshalb auch in IFC2x3-Projekten oft separate Georeferenzierungs-CSV nötig; GIS-Kopplung: Shapefile/WFS → Geländemodell → IFC-Modell georeferenziert; praktische Empfehlung: Koordinatenursprung projektbezogen definieren und im BAP festschreiben; ohne saubere Georeferenzierung scheitert Stadtmodell-Integration (CityGML, 3D-Stadtmodelle der Kommunen)
 
 - **Einzuführende Begriffe:** `step`, `ifc` (wenn nicht schon in Kap. 17)
 
@@ -760,6 +773,8 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
   - `kap18_beziehungen` — Graphdiagramm, landscape ⚠️ NEU — ein IfcWall-Objekt als Zentrum, Pfeile zu: IfcMaterial (via IfcRelAssociatesMaterial), IfcSpace (via IfcRelSpaceBoundary), IfcWallType (via IfcRelDefinesByType), IfcBuildingStorey (via IfcRelContainedInSpatialStructure); zeigt warum Beziehungen das Kernsystem sind; weißer Hintergrund
   - `kap18_step_format` — Code-Darstellung, landscape — annotiertes STEP-Beispiel für eine IfcWall von K7 mit Geometrie + Psets; Zeilen farblich markiert und erklärt; weißer Hintergrund
   - `kap18_entitaeten_uebersicht` — Mindmap/Klassendiagramm, landscape — wichtigste IFC-Entitäten hierarchisch, Farbe nach Disziplin, weißer Hintergrund
+  - `kap18_mvd_vergleich` — Vergleichstabelle, landscape ⚠️ NEU — Coordination View 2.0 vs. Reference View vs. Design Transfer View: IFC-Version, unterstützte Features (Geometrie, Properties, Mengen), Revit-Exportoption, typischer Use-Case; weißer Hintergrund
+  - `kap18_georeferenzierung` — Systemdiagramm, landscape ⚠️ NEU — lokales Modellkoordinatensystem + IfcMapConversion-Pfeil → EPSG:25832 → GIS-Layer; daneben: Problem ohne Georeferenzierung (zwei Modelle passen nicht zusammen); weißer Hintergrund
 
 - **Kastanienallee-Boxen:**
   - nach 18.4: IFC-Auszug K7-Außenwand vollständig annotiert: `IfcWall` + `IfcMaterialLayerSet` + `Pset_WallCommon` + Geometrie
@@ -860,7 +875,8 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
   - 21.2 Koordinations- und Prüftools — Navisworks (Autodesk), Solibri (Nemetschek), BIMcollab; was ein Koordinationsmodell ist; Regelbasierte Prüfung (z.B. "jede Tür muss Raumzugang haben"); Clash-Bericht als Kommunikationsmittel
   - 21.3 Analysetools — Energieanalyse (IDA ICE, DesignBuilder, OpenStudio); Statik (RFEM, Dlubal); Tageslichtsimulation (Radiance, Velux Daylight); Schnittstelle IFC → gbXML → Analysesoftware
   - 21.4 Facility Management — COBie (Construction Operations Building Information Exchange) als Datenübergabe; CAFM-Systeme (IBM Maximo, Archibus, Nemetschek Crem); Wartungsdaten im Modell ab LP 5
-  - 21.5 Häufige BIM-Fehler — Modell ohne Daten (nur 3D-Hülle); Psets leer; IFC-Export-Probleme (Schichten fehlen, Geometrie zerstört); fehlende EIR → niemand weiß was geliefert werden soll; zu späte Modellkoordination
+  - 21.5 Häufige BIM-Fehler — Modell ohne Daten (nur 3D-Hülle); Psets leer; IFC-Export-Probleme (Schichten fehlen, Geometrie zerstört); fehlende EIR → niemand weiß was geliefert werden soll; zu späte Modellkoordination; fehlende Georeferenzierung → Teilmodelle passen nicht zusammen
+  - 21.5a IFC-Validierungstools ⚠️ NEU — wie man prüft, ob eine IFC-Datei valide und spezifikationskonform ist: **buildingSMART Validation Service** (online, kostenlos, prüft IFC-Datei gegen Schema + MVD + Normative Rules); **IDS (Information Delivery Specification)**: maschinenlesbares XML-Format, das festlegt welche Objekte welche Properties in welchem Kontext haben müssen; IDS-Validatoren in Solibri (kommerziell), BIMcollab ZOOM (kostenlos für Grundfunktionen), xBIM Toolkit (.NET, open source); Bedeutung für Entwickler: eigene IFC-Ausgaben gegen IDS testen statt manuell in STEP-Datei debuggen; Praxistipp: jedes Projekt sollte eine projektspezifische IDS-Datei haben, die die EIR maschinenlesbar formalisiert
   - 21.6 Open-Source-Ökosystem — IfcOpenShell (Python), BlenderBIM, xBIM Toolkit (.NET), FreeCAD BIM; was die Community baut
 
 - **Einzuführende Begriffe:** — (keine spezifischen neuen Terms)
@@ -908,7 +924,8 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
   - nach 22.2: LCA K7 — Embodied Carbon Berechnung für Tragstruktur (Beton CO₂-intensiv) vs. Alternative Holzskelett; Ergebnis: Unterschied ca. 180 vs. 60 kg CO₂eq/m²
   - nach 22.5: Dachbegrünung K7 — extensiv 400 m², Retentionswirkung 40 L/m², Temperaturreduktion Dachfläche 20°C
 
-- **BIM-Brücke:** Materialpass im BIM-Modell; LCA-Schnittstellen (IfcMaterial + EPD-Link); DGNB-Dokumentation aus BIM; Rückbauinformationen als Datenpflicht; → Kap. 18
+- **BIM-Brücke:** Materialpass im BIM-Modell; LCA-Schnittstellen (`IfcMaterial` + EPD-Link via `IfcClassificationReference`); DGNB-Dokumentation aus BIM; Rückbauinformationen als Datenpflicht; → Kap. 18
+  ⚠️ **Explizit erklären was sich ändert wenn LCA-Daten im Modell liegen** — das ist der Punkt wo K22 aufhört Nachhaltigkeitskapitel-mit-BIM-Fußnote zu sein: (1) Entwurfsvarianten sofort auf CO₂-Auswirkung vergleichen (Beton vs. Holz in Sekunden, nicht Stunden), (2) Mengenermittlung aus IFC-Modell direkt in LCA-Tool (kein manuelles CSV — `Qto_WallBaseQuantities` liefert Volumen, EPD liefert CO₂/m³), (3) Materialpass automatisch exportierbar als PDF + als maschinenlesbares JSON; der Workflow: IFC-Export → oneclick LCA / Tally → CO₂-Bericht; was heute noch fehlt: standardisierte EPD-ID in IFC (kein Pflicht-Pset dafür)
 
 - **Quellen:** AtlasRecycling, NachhaltigeGT, EnergieAtlas
 
@@ -964,7 +981,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
   - Wo sind die echten Lücken, die neue Software schließen kann?
 
 - **Pflichtabschnitte (H2):**
-  - 24.1 Digitaler Zwilling: Was heute wirklich funktioniert — Definition: BIM + Echtzeit-Sensorik + bidirektionale Kopplung; ehrliche Bestandsaufnahme: Infrastruktur (Brücken, Tunnel) schon produktionsreif; Hochbau: Insellösungen (Energiemonitoring, Aufzugswartung), aber kein echter Zwilling; was fehlt: durchgängige Datenpipeline von Sensor bis Modell
+  - 24.1 Digitaler Zwilling: Was heute wirklich funktioniert — Definition: BIM + Echtzeit-Sensorik + bidirektionale Kopplung; ehrliche Bestandsaufnahme: Infrastruktur (Brücken, Tunnel) schon produktionsreif; Hochbau: Insellösungen (Energiemonitoring, Aufzugswartung), aber kein echter Zwilling; was fehlt: durchgängige Datenpipeline von Sensor bis Modell; **Datenpipeline-Architektur skizzieren** (für IT-Zielgruppe wertvoll, kurz halten): typischer Stack: Sensor (MQTT / OPC-UA / Modbus) → Edge-Gateway → Zeitreihendatenbank (InfluxDB, TimescaleDB) → API (REST/GraphQL) → BIM-Viewer/Dashboard; das technische Kernproblem benennen: IFC ist ein statisches Snapshot-Format, kein Live-Datenmodell; bestehende Ansätze zur Kopplung: Property-Update via CDE-API, buildingSMART-Streaming-Prototypen (Forschungsphase), Asset-Information-Model nach ISO 19650-3; ohne Datenpipeline-Verständnis bleibt „Digitaler Zwilling" für IT-Leser eine Marketingfloskel
   - 24.2 KI im Bauwesen: Realitätscheck — was funktioniert heute: Bildanalyse auf Baustelle (Fortschritt, Sicherheit), Kostenprognose aus Vergleichsdaten, automatische Kollisionsprüfung; was ist Hype: vollautomatische Grundrissgenerierung, "natürlichsprachliche BIM-Abfrage" (rudimentär); was fehlt noch: semantisch korrekte IFC-Ausgabe, durchgehende Code-Compliance-Prüfung
   - 24.3 Wo neue Software den Unterschied macht — die echten Lücken: kein gutes offenes Authoring-Tool, IFC-Export-Qualität chronisch schlecht, LCA-Integration fehlt, Planungsrecht-Prüfung manuell; wer diese Lücken schließt, hat einen Markt
 
@@ -1013,3 +1030,5 @@ Diese Regeln gelten für jedes Kapitel und werden hier nicht wiederholt — sie 
 | OE-06 | "Pläne lesen" (Grundriss/Schnitt/Ansicht/Detail): als eigenes Mini-Kapitel 2a oder als Block 2.0 in Kap. 2? | Kap. 2 | Block 2.0 in Kap. 2 — eigenes Kapitel übertreibt |
 | OE-07 | Kap. 24 eigenständig oder als Ausblick-Abschnitt am Ende von Kap. 21 integrieren? | Kap. 21 + 24 | Eigenständig lassen, aber kürzer (→ 1,200–1,800 W) |
 | OE-08 | Holzbau: eigenes Kapitel 5a (zwischen Kap. 5 und 6) oder stark ausgebauter Abschnitt 5.6 in Kap. 5? | Kap. 5 | Abschnitt 5.6 — eigenes Kapitel sprengt die Struktur |
+| OE-09 | Innenausbau (Trockenbau-Systemwände, Deckenraster, Unterdecken, Bodenbeläge über Estrich) als eigener Abschnitt 5.7 in Kap. 5 oder in Kap. 16 (Ausschreibung)? Relevant für LOD 300–400 und 5D-BIM. | Kap. 5, 16 | Noch offen — bisher fehlt Trockenbau komplett im Tracker |
+| OE-10 | Stellplatznachweis und Außenanlagen (Versickerung, Pkw-Zufahrtsquerschnitt, Stellplatzsatzung Bayern) als Ergänzung in Kap. 2.1 oder Kap. 14.5? K7 mit GRZ 0,6 braucht Vollständigkeit für die Genehmigungsfähigkeit. | Kap. 2, 14 | Noch offen — K7 ohne Stellplatznachweis ist formal unvollständig |
