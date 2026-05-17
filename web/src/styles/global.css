@@ -309,7 +309,6 @@ html, body, #root {
   font-size: 12.5px;
   color: var(--text-muted);
   text-decoration: none;
-  border-radius: var(--radius-sm);
   margin: 1px 6px;
   line-height: 1.45;
   border-left: 2px solid transparent;
@@ -2291,19 +2290,24 @@ html, body, #root {
 /* ── GlossarFull (appendix page) ─────────────────────────────── */
 .glossar-full { max-width: 900px; }
 
-.glossar-search-wrap {
+.glossar-filter-bar {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 6px;
+  padding: 8px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
   margin-bottom: 20px;
 }
+.glossar-filter-bar .glossar-search { flex: 1; min-width: 0; }
+.glossar-filter-bar .glossar-count { margin-left: auto; flex-shrink: 0; }
 .glossar-search {
   flex: 1;
-  height: 34px;
-  padding: 0 12px;
+  height: 28px;
+  padding: 0 10px;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  font-size: 13.5px;
+  font-size: 0.78rem;
   font-family: var(--font);
   color: var(--text);
   background: var(--bg);
@@ -2912,7 +2916,7 @@ html, body, #root {
   line-height: 1;
 }
 
-/* ── PDF Export ────────────────────────────────────────────────── */
+/* ── PDF Export (screen) ───────────────────────────────────────── */
 
 #pdf-print-view { display: none; }
 
@@ -3114,7 +3118,7 @@ html, body, #root {
   }
 
   /* Glossar in print — no search bar */
-  .glossar-search-wrap { display: none !important; }
+  .glossar-filter-bar { display: none !important; }
   .glossar-entry { page-break-inside: avoid; }
   .glossar-entry-img-wrap { display: none !important; }
   .glossar-entry-img-placeholder { display: none !important; }

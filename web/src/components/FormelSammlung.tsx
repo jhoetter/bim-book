@@ -125,9 +125,9 @@ const THEMA_ORDER: FormelThema[] = [
 ]
 
 export function FormelSammlung() {
+  const [search, setSearch]             = useState('')
   const [activeThemen, setActiveThemen] = useState<Set<FormelThema>>(new Set())
-  const [nurMitRechner, setNurMitRechner] = useState(false)
-  const [openFilter, setOpenFilter] = useState(false)
+  const [openFilter, setOpenFilter]     = useState(false)
   const filterBarRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -143,11 +143,11 @@ export function FormelSammlung() {
 
   const filtered = FORMULAS.filter(f => {
     if (activeThemen.size > 0 && !activeThemen.has(f.thema)) return false
-    if (nurMitRechner && getCalc(f) == null) return false
+    if (search.trim() && !f.name.toLowerCase().includes(search.toLowerCase())) return false
     return true
   })
 
-  const hasFilters = activeThemen.size > 0 || nurMitRechner
+  const hasFilters = activeThemen.size > 0
 
   const themaLabel = activeThemen.size === 1
     ? `Thema: ${[...activeThemen][0]}`
@@ -156,6 +156,14 @@ export function FormelSammlung() {
   return (
     <div className="formel-page">
       <div className="glossar-filter-bar" ref={filterBarRef}>
+        <input
+          className="glossar-search"
+          type="search"
+          placeholder="Formel suchen…"
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+          aria-label="Formeln durchsuchen"
+        />
         <FilterPill
           label="Thema"
           isActive={activeThemen.size > 0}
@@ -176,26 +184,12 @@ export function FormelSammlung() {
           ))}
         </FilterPill>
 
-        <button
-          className={`filter-pill${nurMitRechner ? ' filter-pill--active' : ''}`}
-          onClick={() => setNurMitRechner(v => !v)}
-        >
-          Mit Rechner
-          {nurMitRechner && (
-            <span
-              className="filter-pill-x"
-              role="button"
-              aria-label="Rechner-Filter zurücksetzen"
-              onClick={e => { e.stopPropagation(); setNurMitRechner(false) }}
-            >×</span>
-          )}
-        </button>
-
         {hasFilters && (
-          <button className="gallery-reset" onClick={() => { setActiveThemen(new Set()); setNurMitRechner(false); setOpenFilter(false) }}>
+          <button className="gallery-reset" onClick={() => { setActiveThemen(new Set()); setOpenFilter(false) }}>
             Alle zurücksetzen
           </button>
         )}
+        <span className="glossar-count">{filtered.length} Formeln</span>
       </div>
 
       {filtered.length === 0 ? (
