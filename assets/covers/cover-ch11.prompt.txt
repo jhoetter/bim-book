@@ -1,6 +1,6 @@
-Generiert: 2026-05-17 15:39
+Generiert: 2026-05-17 18:27
 Typ: cover
-Beschreibung: Large architectural floor plan spanning nearly the full image width on white background. A multi-apartment residential floor plan with walls as solid near-black filled rectangles, door openings as quarter-circle arcs, window niches as thin parallel lines. Structural column grid marked with amber dots (#F59E0B) at regular intervals. Fine light-gray construction grid lines extending across the background. Two ghost floor plans flanking left and right at 25% opacity — suggesting design iteration. No text. No room labels. No dimensions.
+Beschreibung: Isometric cut-away view of a building floor showing the supply and exhaust air ventilation duct network, spanning the full image width on white background. Large round supply ducts in thermal blue (#93C5FD) branch from a central AHU unit across the full ceiling width. Exhaust ducts in structural gray (#6B7280) return parallel. Diffuser outlets shown as rectangular grilles at regular intervals. Bold directional arrows in amber (#F59E0B) show airflow direction. The duct network fills the composition corner to corner. No text. No labels.
 
 --- QA-Verlauf ---
 
@@ -14,4 +14,4 @@ Chapter cover banner illustration for a professional architectural textbook. Pur
 
 Color palette: structural gray #6B7280, thermal insulation blue #93C5FD, TGA/MEP amber #F59E0B, pure white background #FFFFFF, near-black lines and text #111827.
 
-Subject: Large architectural floor plan spanning nearly the full image width on white background. A multi-apartment residential floor plan with walls as solid near-black filled rectangles, door openings as quarter-circle arcs, window niches as thin parallel lines. Structural column grid marked with amber dots (#F59E0B) at regular intervals. Fine light-gray construction grid lines extending across the background. Two ghost floor plans flanking left and right at 25% opacity — suggesting design iteration. No text. No room labels. No dimensions.
+Subject: Isometric cut-away view of a building floor showing the supply and exhaust air ventilation duct network, spanning the full image width on white background. Large round supply ducts in thermal blue (#93C5FD) branch from a central AHU unit across the full ceiling width. Exhaust ducts in structural gray (#6B7280) return parallel. Diffuser outlets shown as rectangular grilles at regular intervals. Bold directional arrows in amber (#F59E0B) show airflow direction. The duct network fills the composition corner to corner. No text. No labels.

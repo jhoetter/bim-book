@@ -1,6 +1,6 @@
-Generiert: 2026-05-17 15:39
+Generiert: 2026-05-17 18:09
 Typ: cover
-Beschreibung: Large architectural floor plan spanning nearly the full image width on white background. A multi-apartment residential floor plan with walls as solid near-black filled rectangles, door openings as quarter-circle arcs, window niches as thin parallel lines. Structural column grid marked with amber dots (#F59E0B) at regular intervals. Fine light-gray construction grid lines extending across the background. Two ghost floor plans flanking left and right at 25% opacity — suggesting design iteration. No text. No room labels. No dimensions.
+Beschreibung: Vertical architectural cross-section through the complete building envelope spanning the full image width — from foundation to flat roof. Zones from left to right across the full width: strip foundation and basement wall in structural gray with diagonal hatching; ground floor slab in gray; load-bearing wall with masonry in amber (#F59E0B) coursing; floor structure with joists; exterior insulation in thermal blue (#93C5FD) zigzag; flat roof build-up with membrane layers in near-black. Each zone fills the full image height, separated by clean cut lines. Bold, large-scale. White background. No text. No labels.
 
 --- QA-Verlauf ---
 
@@ -14,4 +14,4 @@ Chapter cover banner illustration for a professional architectural textbook. Pur
 
 Color palette: structural gray #6B7280, thermal insulation blue #93C5FD, TGA/MEP amber #F59E0B, pure white background #FFFFFF, near-black lines and text #111827.
 
-Subject: Large architectural floor plan spanning nearly the full image width on white background. A multi-apartment residential floor plan with walls as solid near-black filled rectangles, door openings as quarter-circle arcs, window niches as thin parallel lines. Structural column grid marked with amber dots (#F59E0B) at regular intervals. Fine light-gray construction grid lines extending across the background. Two ghost floor plans flanking left and right at 25% opacity — suggesting design iteration. No text. No room labels. No dimensions.
+Subject: Vertical architectural cross-section through the complete building envelope spanning the full image width — from foundation to flat roof. Zones from left to right across the full width: strip foundation and basement wall in structural gray with diagonal hatching; ground floor slab in gray; load-bearing wall with masonry in amber (#F59E0B) coursing; floor structure with joists; exterior insulation in thermal blue (#93C5FD) zigzag; flat roof build-up with membrane layers in near-black. Each zone fills the full image height, separated by clean cut lines. Bold, large-scale. White background. No text. No labels.

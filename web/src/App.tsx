@@ -7,6 +7,7 @@ import { MarkdownPage } from './components/MarkdownPage'
 import { Gallery } from './components/Gallery'
 import { Overview } from './components/Overview'
 import { ChatPanel } from './components/ChatPanel'
+import { CommandPalette } from './components/CommandPalette'
 import { getContent, getNavigation, ALL_CHAPTERS } from './chapters'
 
 const SIDEBAR_MIN = 180
@@ -57,6 +58,10 @@ function ChapterRoute() {
   const content = getContent(path)
   const chapter = ALL_CHAPTERS.find(c => c.path === path)
   const id = chapter?.id ?? (slug ?? '')
+  const [imgFailed, setImgFailed] = useState(false)
+
+  // Reset error state when navigating to a different chapter
+  useEffect(() => { setImgFailed(false) }, [path])
 
   useEffect(() => {
     if (!location.hash) return
@@ -72,12 +77,13 @@ function ChapterRoute() {
   }, [location.hash, path])
 
   const cover = chapter?.coverImage
+  const hasImage = !!cover && !imgFailed
   const PageIcon = chapter?.pageIcon
   return (
     <>
       <div className="page-cover-wrap">
-        {cover
-          ? <img className="page-cover" src={cover} alt="" aria-hidden="true" />
+        {hasImage
+          ? <img className="page-cover" src={cover} alt="" aria-hidden="true" onError={() => setImgFailed(true)} />
           : <div className="page-cover page-cover--placeholder" aria-hidden="true" />
         }
         {PageIcon && (
@@ -101,6 +107,7 @@ function AppLayout() {
     () => typeof window !== 'undefined' ? window.innerWidth >= 768 : true
   )
   const [sidebarWidth, setSidebarWidth] = useState(SIDEBAR_DEFAULT)
+  const [paletteOpen, setPaletteOpen] = useState(false)
   const resizeRef = useRef<{ startX: number; startWidth: number } | null>(null)
 
   const toggle = useCallback(() => setSidebarOpen(v => !v), [])
@@ -119,10 +126,15 @@ function AppLayout() {
     if (window.innerWidth < 768) setSidebarOpen(false)
   }, [location.pathname])
 
-  // `[` key shortcut (mirrors bim-ai)
+  // `[` key + ⌘K shortcuts
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       const target = e.target as HTMLElement
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault()
+        setPaletteOpen(v => !v)
+        return
+      }
       if (e.metaKey || e.ctrlKey || e.altKey) return
       if (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable) return
       if (e.key === '[') { e.preventDefault(); setSidebarOpen(v => !v) }
@@ -186,7 +198,7 @@ function AppLayout() {
       )}
       <TableOfContents />
       <div className="main-area">
-        <Topbar sidebarOpen={sidebarOpen} onToggle={toggle} />
+        <Topbar sidebarOpen={sidebarOpen} onToggle={toggle} onOpenPalette={() => setPaletteOpen(true)} />
         <div className="content-area">
           <Routes>
             <Route path="/" element={<Overview />} />
@@ -197,6 +209,12 @@ function AppLayout() {
           </Routes>
         </div>
       </div>
+      {paletteOpen && (
+        <CommandPalette
+          onClose={() => setPaletteOpen(false)}
+          onToggleSidebar={toggle}
+        />
+      )}
     </div>
   )
 }

@@ -1,6 +1,6 @@
-Generiert: 2026-05-17 15:39
+Generiert: 2026-05-17 18:11
 Typ: cover
-Beschreibung: Large architectural floor plan spanning nearly the full image width on white background. A multi-apartment residential floor plan with walls as solid near-black filled rectangles, door openings as quarter-circle arcs, window niches as thin parallel lines. Structural column grid marked with amber dots (#F59E0B) at regular intervals. Fine light-gray construction grid lines extending across the background. Two ghost floor plans flanking left and right at 25% opacity — suggesting design iteration. No text. No room labels. No dimensions.
+Beschreibung: Wide cross-section through an insulated exterior wall showing the heat-flow concept, spanning the full image width on white background. Three zones: left — interior concrete wall in structural gray (#6B7280) with diagonal hatching; center — thick thermal insulation block in thermal blue (#93C5FD) with dense zigzag pattern, dominating the composition; right — exterior render in near-white. Multiple horizontal amber arrows (#F59E0B) cross the full width from left to right, thinning as they pass through the insulation — visualizing U-value heat attenuation. Arrows are bold and large. No text. No labels. No numbers.
 
 --- QA-Verlauf ---
 
@@ -14,4 +14,4 @@ Chapter cover banner illustration for a professional architectural textbook. Pur
 
 Color palette: structural gray #6B7280, thermal insulation blue #93C5FD, TGA/MEP amber #F59E0B, pure white background #FFFFFF, near-black lines and text #111827.
 
-Subject: Large architectural floor plan spanning nearly the full image width on white background. A multi-apartment residential floor plan with walls as solid near-black filled rectangles, door openings as quarter-circle arcs, window niches as thin parallel lines. Structural column grid marked with amber dots (#F59E0B) at regular intervals. Fine light-gray construction grid lines extending across the background. Two ghost floor plans flanking left and right at 25% opacity — suggesting design iteration. No text. No room labels. No dimensions.
+Subject: Wide cross-section through an insulated exterior wall showing the heat-flow concept, spanning the full image width on white background. Three zones: left — interior concrete wall in structural gray (#6B7280) with diagonal hatching; center — thick thermal insulation block in thermal blue (#93C5FD) with dense zigzag pattern, dominating the composition; right — exterior render in near-white. Multiple horizontal amber arrows (#F59E0B) cross the full width from left to right, thinning as they pass through the insulation — visualizing U-value heat attenuation. Arrows are bold and large. No text. No labels. No numbers.

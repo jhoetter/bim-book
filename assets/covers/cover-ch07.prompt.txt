@@ -1,10 +1,11 @@
-Generiert: 2026-05-17 15:39
+Generiert: 2026-05-17 18:13
 Typ: cover
-Beschreibung: Large architectural floor plan spanning nearly the full image width on white background. A multi-apartment residential floor plan with walls as solid near-black filled rectangles, door openings as quarter-circle arcs, window niches as thin parallel lines. Structural column grid marked with amber dots (#F59E0B) at regular intervals. Fine light-gray construction grid lines extending across the background. Two ghost floor plans flanking left and right at 25% opacity — suggesting design iteration. No text. No room labels. No dimensions.
+Beschreibung: Vertical cross-section through a basement wall and floor showing moisture protection layers, spanning the full image width on white background. From left: exterior ground soil shown as a fine dot pattern in warm gray; waterproofing membrane as a bold continuous black line hugging the outer wall face; drainage mat as a grid of amber (#F59E0B) diamond shapes; structural concrete wall in structural gray (#6B7280) with diagonal hatching; interior floor slab in gray. Small blue arrows (#93C5FD) at the left show water pressure pressing against the wall. The section fills the full height and width. No text. No labels.
 
 --- QA-Verlauf ---
 
 Versuch 1: ✓ bestanden
+  Korrektur: No corrections needed, the image meets all the criteria.
 
 --- Finaler Prompt ---
 
@@ -14,4 +15,4 @@ Chapter cover banner illustration for a professional architectural textbook. Pur
 
 Color palette: structural gray #6B7280, thermal insulation blue #93C5FD, TGA/MEP amber #F59E0B, pure white background #FFFFFF, near-black lines and text #111827.
 
-Subject: Large architectural floor plan spanning nearly the full image width on white background. A multi-apartment residential floor plan with walls as solid near-black filled rectangles, door openings as quarter-circle arcs, window niches as thin parallel lines. Structural column grid marked with amber dots (#F59E0B) at regular intervals. Fine light-gray construction grid lines extending across the background. Two ghost floor plans flanking left and right at 25% opacity — suggesting design iteration. No text. No room labels. No dimensions.
+Subject: Vertical cross-section through a basement wall and floor showing moisture protection layers, spanning the full image width on white background. From left: exterior ground soil shown as a fine dot pattern in warm gray; waterproofing membrane as a bold continuous black line hugging the outer wall face; drainage mat as a grid of amber (#F59E0B) diamond shapes; structural concrete wall in structural gray (#6B7280) with diagonal hatching; interior floor slab in gray. Small blue arrows (#93C5FD) at the left show water pressure pressing against the wall. The section fills the full height and width. No text. No labels.

@@ -1,0 +1,28 @@
+Generiert: 2026-05-17 18:17
+Typ: cover
+Beschreibung: Panoramic cross-section through a multi-layer party wall and floor assembly showing acoustic insulation, on white background. Left and right rooms separated by a wall with three clearly differentiated layers: outer concrete leaf in structural gray (#6B7280), acoustic insulation core as a thick amber (#F59E0B) resilient layer with a compressed wave pattern, inner concrete leaf in gray. Concentric semicircular sound-wave arcs emanate from the left side, visibly diminishing as they pass through the layers — shown as fine near-black curves. Floor decoupling strips at the base in amber. Bold, wide composition. No text. No labels.
+
+--- QA-Verlauf ---
+
+Versuch 1: ✗ nicht bestanden
+  - The accent color thermal blue is used but not in the walls, and it's not the same as structural gray or TGA amber which are expected for the wall and decoupling strips.
+  - The sound-wave arcs appear not to diminish convincingly as they pass through the layers.
+  Korrektur: Use TGA amber for the floor decoupling strips as required, and ensure the sound-wave arcs diminish more naturally as they pass through the layers.
+
+Versuch 2: ✓ bestanden
+
+--- Finaler Prompt ---
+
+Technical architectural illustration for a professional German textbook. Minimalist, clean design. Pure white background (#FFFFFF), no gradients, no drop shadows. Precise thin lines (1–2px equivalent). Geometric sans-serif font similar to Inter for all labels and annotations. No photorealism, no photographs, no people, no decorative elements. Modern flat design with clear hierarchy. All text and labels in German.
+
+Chapter cover banner illustration for a professional architectural textbook. Pure white background (#FFFFFF) — same clean technical style as all other book illustrations. NO text, NO labels, NO numbers, NO annotations anywhere. COMPOSITION: The image is displayed as a full-width banner at 220px height with a vertical anchor at 40% — the visible crop covers the CENTER BAND of the image (roughly 25%–60% from the top). Concentrate the most visually powerful elements in this central zone; top and bottom edges can be sparse. Use large, bold, clearly readable shapes that fill the full image width. Do NOT use a uniform grid of equal-sized panels. Prefer 1–3 dominant elements in dynamic panoramic arrangement. Use the shared color palette boldly: structural gray (#6B7280) for concrete/steel, thermal blue (#93C5FD) for insulation, TGA amber (#F59E0B) for MEP/materials. Think: the same technical precision as an in-page illustration, scaled up, stripped of labels, composed for visual impact. NOT photorealistic. NOT hand-drawn.
+
+Color palette: structural gray #6B7280, thermal insulation blue #93C5FD, TGA/MEP amber #F59E0B, pure white background #FFFFFF, near-black lines and text #111827.
+
+Subject: Panoramic cross-section through a multi-layer party wall and floor assembly showing acoustic insulation, on white background. Left and right rooms separated by a wall with three clearly differentiated layers: outer concrete leaf in structural gray (#6B7280), acoustic insulation core as a thick amber (#F59E0B) resilient layer with a compressed wave pattern, inner concrete leaf in gray. Concentric semicircular sound-wave arcs emanate from the left side, visibly diminishing as they pass through the layers — shown as fine near-black curves. Floor decoupling strips at the base in amber. Bold, wide composition. No text. No labels.
+
+KORREKTUREN (aus QA-Prüfung):
+- The accent color thermal blue is used but not in the walls, and it's not the same as structural gray or TGA amber which are expected for the wall and decoupling strips.
+- The sound-wave arcs appear not to diminish convincingly as they pass through the layers.
+
+Bitte korrigiere: Use TGA amber for the floor decoupling strips as required, and ensure the sound-wave arcs diminish more naturally as they pass through the layers.

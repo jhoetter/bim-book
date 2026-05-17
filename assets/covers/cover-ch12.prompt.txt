@@ -1,6 +1,6 @@
-Generiert: 2026-05-17 15:39
+Generiert: 2026-05-17 18:30
 Typ: cover
-Beschreibung: Large architectural floor plan spanning nearly the full image width on white background. A multi-apartment residential floor plan with walls as solid near-black filled rectangles, door openings as quarter-circle arcs, window niches as thin parallel lines. Structural column grid marked with amber dots (#F59E0B) at regular intervals. Fine light-gray construction grid lines extending across the background. Two ghost floor plans flanking left and right at 25% opacity — suggesting design iteration. No text. No room labels. No dimensions.
+Beschreibung: Schematic of a building's sanitary and drainage system spanning the full image width on white background. Vertical stacks run from top to bottom: cold water in thin thermal blue (#93C5FD) lines, hot water in thin amber (#F59E0B) lines, and drainage as bold near-black pipes with larger diameter. Horizontal branches connect to fixture symbols (sink, toilet, bathtub) on each floor level. Fall arrows on drainage pipes show gradient. The system spans two to three floors vertically and fills the full width. Bold, clear line weights. No text. No labels.
 
 --- QA-Verlauf ---
 
@@ -14,4 +14,4 @@ Chapter cover banner illustration for a professional architectural textbook. Pur
 
 Color palette: structural gray #6B7280, thermal insulation blue #93C5FD, TGA/MEP amber #F59E0B, pure white background #FFFFFF, near-black lines and text #111827.
 
-Subject: Large architectural floor plan spanning nearly the full image width on white background. A multi-apartment residential floor plan with walls as solid near-black filled rectangles, door openings as quarter-circle arcs, window niches as thin parallel lines. Structural column grid marked with amber dots (#F59E0B) at regular intervals. Fine light-gray construction grid lines extending across the background. Two ghost floor plans flanking left and right at 25% opacity — suggesting design iteration. No text. No room labels. No dimensions.
+Subject: Schematic of a building's sanitary and drainage system spanning the full image width on white background. Vertical stacks run from top to bottom: cold water in thin thermal blue (#93C5FD) lines, hot water in thin amber (#F59E0B) lines, and drainage as bold near-black pipes with larger diameter. Horizontal branches connect to fixture symbols (sink, toilet, bathtub) on each floor level. Fall arrows on drainage pipes show gradient. The system spans two to three floors vertically and fills the full width. Bold, clear line weights. No text. No labels.
