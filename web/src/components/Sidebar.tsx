@@ -3,7 +3,7 @@ import { useEffect, useRef, useState, useCallback } from 'react'
 import React from 'react'
 import { WallHifi, HomeIcon } from 'bim-icons'
 import { PARTS, GALLERY_ICON, TOP_PAGES } from '../chapters'
-import { useBookmarks } from '../lib/bookmarks'
+import { bookmarkHref, useBookmarks } from '../lib/bookmarks'
 import { useSelfTestResults } from '../lib/selftests'
 import { getSelfTestForChapter } from '../data/selftests'
 import { search } from '../lib/search'
@@ -77,7 +77,7 @@ const DoneIcon = () => (
 export function Sidebar() {
   const scrollRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
-  const { bookmarks, toggle } = useBookmarks()
+  const { bookmarks, toggle, remove } = useBookmarks()
   const { results: selfTestResults } = useSelfTestResults()
   const [filterBookmarks, setFilterBookmarks] = useState(false)
   const [query, setQuery] = useState('')
@@ -105,7 +105,12 @@ export function Sidebar() {
     inputRef.current?.focus()
   }, [])
 
-  const bookmarkedPaths = new Set(bookmarks.map(b => b.path))
+  const bookmarkByPath = bookmarks.reduce((acc, bookmark) => {
+    const existing = acc.get(bookmark.path)
+    if (!existing || bookmark.savedAt >= existing.savedAt) acc.set(bookmark.path, bookmark)
+    return acc
+  }, new Map<string, (typeof bookmarks)[number]>())
+  const bookmarkedPaths = new Set(bookmarkByPath.keys())
   const matchingPaths = query.trim().length > 1 ? search(query) : null
 
   const GalleryIcon = GALLERY_ICON
@@ -211,13 +216,15 @@ export function Sidebar() {
                 <ul>
                   {chapters.map(chapter => {
                     const Icon = chapter.icon
-                    const isBookmarked = bookmarkedPaths.has(chapter.path)
+                    const chapterBookmark = bookmarkByPath.get(chapter.path)
+                    const isBookmarked = Boolean(chapterBookmark)
                     const selfTest = getSelfTestForChapter(chapter.id)
                     const isSelfTestDone = !!selfTest && !!selfTestResults[selfTest.id]
+                    const markerLabel = chapterBookmark?.headingTitle ?? 'Seitenanfang'
                     return (
                       <li key={chapter.id} className="sidebar-chapter-item">
                         <NavLink
-                          to={chapterHref(chapter.path)}
+                          to={filterBookmarks && chapterBookmark ? bookmarkHref(chapterBookmark) : chapterHref(chapter.path)}
                           className={({ isActive }) =>
                             ['sidebar-link', isActive ? 'sidebar-link--active' : ''].join(' ').trim()
                           }
@@ -230,16 +237,21 @@ export function Sidebar() {
                           ) : chapter.num ? (
                             <span className="sidebar-num">{chapter.num}</span>
                           ) : null}
-                          <span className="sidebar-link-title-row">
-                            <span className="sidebar-link-title">{chapter.title}</span>
-                            {isSelfTestDone && (
-                              <span
-                                className="sidebar-selftest-done"
-                                aria-label="Selbsttest abgeschlossen"
-                                title="Selbsttest abgeschlossen"
-                              >
-                                <DoneIcon />
-                              </span>
+                          <span className="sidebar-link-copy">
+                            <span className="sidebar-link-title-row">
+                              <span className="sidebar-link-title">{chapter.title}</span>
+                              {isSelfTestDone && (
+                                <span
+                                  className="sidebar-selftest-done"
+                                  aria-label="Selbsttest abgeschlossen"
+                                  title="Selbsttest abgeschlossen"
+                                >
+                                  <DoneIcon />
+                                </span>
+                              )}
+                            </span>
+                            {filterBookmarks && chapterBookmark && (
+                              <span className="sidebar-link-marker">{markerLabel}</span>
                             )}
                           </span>
                         </NavLink>
@@ -248,10 +260,11 @@ export function Sidebar() {
                           onClick={e => {
                             e.preventDefault()
                             e.stopPropagation()
-                            toggle({ path: chapter.path, title: chapter.title, part: part.title })
+                            if (chapterBookmark) remove(chapter.path)
+                            else toggle({ path: chapter.path, title: chapter.title, part: part.title })
                           }}
-                          aria-label={isBookmarked ? 'Lesezeichen entfernen' : 'Lesezeichen setzen'}
-                          title={isBookmarked ? 'Lesezeichen entfernen' : 'Lesezeichen setzen'}
+                          aria-label={isBookmarked ? 'Marker entfernen' : 'Seite merken'}
+                          title={isBookmarked ? 'Marker entfernen' : 'Seite merken'}
                         >
                           <BmIcon filled={isBookmarked} />
                         </button>

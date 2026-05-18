@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState, useMemo, useCallback } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { PARTS } from '../chapters'
-import { useBookmarks } from '../lib/bookmarks'
+import { bookmarkKey, useBookmarks } from '../lib/bookmarks'
+import { getCurrentHeadingInfo, scrollToHeading, type HeadingInfo } from '../lib/reading-position'
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -77,20 +78,52 @@ export function CommandPalette({ onClose, onToggleSidebar }: Props) {
 
   const [query,     setQuery]     = useState('')
   const [activeIdx, setActiveIdx] = useState(0)
+  const [currentHeading, setCurrentHeading] = useState<HeadingInfo | null>(null)
   const inputRef = useRef<HTMLInputElement>(null)
   const listRef  = useRef<HTMLDivElement>(null)
 
   useEffect(() => { inputRef.current?.focus() }, [])
 
   const path      = location.pathname.replace(/^\//, '') || 'index'
-  const pageTitle = useMemo(() => {
+  const { pageTitle, pagePart } = useMemo(() => {
     for (const p of PARTS) {
       const ch = p.chapters.find(c => c.path === path)
-      if (ch) return ch.title
+      if (ch) return { pageTitle: ch.title, pagePart: p.title === 'Überblick' || p.title === 'Nachschlagewerke' ? null : p.title }
     }
-    return 'Überblick'
+    return { pageTitle: 'Überblick', pagePart: null }
   }, [path])
-  const isBookmarked = bookmarks.some(b => b.path === path)
+  const currentBookmarkTarget = currentHeading
+    ? { path, title: pageTitle, part: pagePart, headingId: currentHeading.id, headingTitle: currentHeading.text, headingLevel: currentHeading.level }
+    : { path, title: pageTitle, part: pagePart }
+  const chapterBookmark = bookmarks.find(b => b.path === path)
+  const isBookmarked = Boolean(chapterBookmark)
+  const isCurrentTargetBookmarked = chapterBookmark ? bookmarkKey(chapterBookmark) === bookmarkKey(currentBookmarkTarget) : false
+
+  useEffect(() => {
+    const scrollRoot = document.querySelector<HTMLElement>('.content-area')
+    let raf = 0
+    const update = () => {
+      if (raf) return
+      raf = requestAnimationFrame(() => {
+        raf = 0
+        const heading = getCurrentHeadingInfo()
+        setCurrentHeading(prev => prev?.id === heading?.id ? prev : heading)
+      })
+    }
+
+    const initial = window.setTimeout(update, 100)
+    scrollRoot?.addEventListener('scroll', update, { passive: true })
+    window.addEventListener('hashchange', update)
+    window.addEventListener('resize', update)
+
+    return () => {
+      window.clearTimeout(initial)
+      cancelAnimationFrame(raf)
+      scrollRoot?.removeEventListener('scroll', update)
+      window.removeEventListener('hashchange', update)
+      window.removeEventListener('resize', update)
+    }
+  }, [location.pathname])
 
   const run = useCallback((fn: () => void) => { onClose(); fn() }, [onClose])
 
@@ -114,11 +147,24 @@ export function CommandPalette({ onClose, onToggleSidebar }: Props) {
 
     const bookmark: RegularItem = mk({
       kind: 'action', id: 'bookmark',
-      label: isBookmarked ? 'Lesezeichen entfernen' : 'Seite merken',
-      sublabel: pageTitle,
+      label: isCurrentTargetBookmarked ? 'Marker entfernen' : isBookmarked ? 'Marker hierhin verschieben' : currentHeading ? 'Abschnitt merken' : 'Seite merken',
+      sublabel: currentHeading ? `${pageTitle} · ${currentHeading.text}` : pageTitle,
       icon: <BookmarkIcon />,
-      action: () => run(() => toggleBookmark({ path, title: pageTitle, part: null })),
+      action: () => run(() => {
+        const heading = getCurrentHeadingInfo()
+        toggleBookmark(heading
+          ? { path, title: pageTitle, part: pagePart, headingId: heading.id, headingTitle: heading.text, headingLevel: heading.level }
+          : { path, title: pageTitle, part: pagePart }
+        )
+      }),
     })
+    const jumpToBookmark: RegularItem | null = chapterBookmark?.headingId ? mk({
+      kind: 'action', id: 'jump-bookmark',
+      label: 'Zum Marker springen',
+      sublabel: `${pageTitle} · ${chapterBookmark.headingTitle ?? 'Seitenanfang'}`,
+      icon: <JumpToBookmarkIcon />,
+      action: () => run(() => scrollToHeading(chapterBookmark.headingId!)),
+    }) : null
     const copyLink: RegularItem = mk({
       kind: 'action', id: 'copy',
       label: 'Link kopieren',
@@ -175,9 +221,9 @@ export function CommandPalette({ onClose, onToggleSidebar }: Props) {
       const aiOpen: AiItem = mk({ kind: 'ai', id: 'ai-open', query: '' , action: openChat })
       const groups: PaletteGroup[] = [
         { name: 'Schnellzugriff', items: [aiOpen, overview, gallery] },
-        { name: 'Aktionen',       items: [bookmark, copyLink, sidebar, exportPdf] },
+        { name: 'Aktionen',       items: [jumpToBookmark, bookmark, copyLink, sidebar, exportPdf].filter((item): item is RegularItem => Boolean(item)) },
       ]
-      const flatItems = [aiOpen, overview, gallery, bookmark, copyLink, sidebar, exportPdf]
+      const flatItems = [aiOpen, overview, gallery, jumpToBookmark, bookmark, copyLink, sidebar, exportPdf].filter((item): item is PaletteItem => Boolean(item))
       flatItems.forEach((item, i) => { item.flatIdx = i })
       return { groups, flatItems }
     }
@@ -193,7 +239,7 @@ export function CommandPalette({ onClose, onToggleSidebar }: Props) {
     }
     navMatches.sort((a, b) => ((b as RegularItem & {_score:number})._score ?? 0) - ((a as RegularItem & {_score:number})._score ?? 0))
 
-    const actionMatches: RegularItem[] = [bookmark, copyLink, sidebar, exportPdf].filter(item =>
+    const actionMatches: RegularItem[] = [jumpToBookmark, bookmark, copyLink, sidebar, exportPdf].filter((item): item is RegularItem => Boolean(item)).filter(item =>
       norm(item.label).includes(norm(q)) || norm(item.sublabel ?? '').includes(norm(q))
     )
 
@@ -230,7 +276,7 @@ export function CommandPalette({ onClose, onToggleSidebar }: Props) {
 
     flatItems.forEach((item, i) => { item.flatIdx = i })
     return { groups, flatItems }
-  }, [query, isBookmarked, pageTitle, path, run, openChat, sendToChat, toggleBookmark, onToggleSidebar, navigate])
+  }, [query, chapterBookmark, isBookmarked, isCurrentTargetBookmarked, currentHeading, pageTitle, pagePart, path, run, openChat, sendToChat, toggleBookmark, onToggleSidebar, navigate])
 
   useEffect(() => { setActiveIdx(0) }, [query])
 
@@ -401,6 +447,16 @@ function BookmarkIcon() {
   return (
     <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" aria-hidden>
       <path d="M2.5 1.75A.75.75 0 0 1 3.25 1h7.5a.75.75 0 0 1 .75.75v10.5a.25.25 0 0 1-.388.208L7 9.75l-4.112 2.708A.25.25 0 0 1 2.5 12.25V1.75Z" />
+    </svg>
+  )
+}
+
+function JumpToBookmarkIcon() {
+  return (
+    <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <path d="M2.5 1.75A.75.75 0 0 1 3.25 1h7.5a.75.75 0 0 1 .75.75v10.5a.25.25 0 0 1-.388.208L7 9.75l-4.112 2.708A.25.25 0 0 1 2.5 12.25V1.75Z" />
+      <path d="M7 4v4" />
+      <path d="M5.35 6.35 7 8l1.65-1.65" />
     </svg>
   )
 }

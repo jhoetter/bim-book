@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useRef } from 'react'
+import { useState, useEffect, useCallback, useRef, isValidElement, type ComponentPropsWithoutRef, type ReactNode } from 'react'
 import { createPortal } from 'react-dom'
 import { Link, useLocation } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
@@ -13,6 +13,7 @@ import 'highlight.js/styles/github.css'
 import { preprocessMarkdown } from '../lib/markdown'
 import { getBreadcrumb } from '../chapters'
 import { applyTextHighlights, compactContext, getRangeQuote, useTextHighlights } from '../lib/highlights'
+import { bookmarkKey, useBookmarks } from '../lib/bookmarks'
 import { CalcUValue }   from './calculators/CalcUValue'
 import { CalcDewPoint } from './calculators/CalcDewPoint'
 import { CalcSound }    from './calculators/CalcSound'
@@ -73,13 +74,58 @@ function imgIdFromSrc(src: string): string {
 
 type HeadingTag = 'h1' | 'h2' | 'h3' | 'h4'
 
-function makeHeading(Tag: HeadingTag) {
-  return function HeadingWithAnchor({ id, children, ...rest }: React.ComponentPropsWithoutRef<HeadingTag> & { id?: string }) {
+interface HeadingContext {
+  path: string
+  part: string | null
+  pageTitle: string
+  bookmarks: ReturnType<typeof useBookmarks>['bookmarks']
+  toggleBookmark: ReturnType<typeof useBookmarks>['toggle']
+}
+
+function reactNodeText(node: ReactNode): string {
+  if (typeof node === 'string' || typeof node === 'number') return String(node)
+  if (Array.isArray(node)) return node.map(reactNodeText).join('')
+  if (isValidElement<{ children?: ReactNode }>(node)) return reactNodeText(node.props.children)
+  return ''
+}
+
+function HeadingBookmarkIcon({ filled }: { filled: boolean }) {
+  return (
+    <svg width="13" height="13" viewBox="0 0 14 14" aria-hidden="true" fill={filled ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round">
+      <path d="M2.5 1.5A1 1 0 0 1 3.5.5h7a1 1 0 0 1 1 1v11.25a.25.25 0 0 1-.388.208L7 10.25l-4.112 2.708A.25.25 0 0 1 2.5 12.75V1.5Z" />
+    </svg>
+  )
+}
+
+function makeHeading(Tag: HeadingTag, ctx: HeadingContext) {
+  return function HeadingWithAnchor({ id, children, ...rest }: ComponentPropsWithoutRef<HeadingTag> & { id?: string }) {
+    const headingTitle = reactNodeText(children).trim()
+    const headingLevel = parseInt(Tag[1], 10)
+    const target = id
+      ? { path: ctx.path, title: ctx.pageTitle, part: ctx.part, headingId: id, headingTitle, headingLevel }
+      : null
+    const isBookmarked = target ? ctx.bookmarks.some(b => bookmarkKey(b) === bookmarkKey(target)) : false
+
     return (
       <Tag id={id} className="prose-heading" {...rest}>
         {children}
         {id && (
           <a href={`#${id}`} className="prose-anchor" aria-hidden="true">#</a>
+        )}
+        {target && (
+          <button
+            type="button"
+            className={`prose-bookmark${isBookmarked ? ' prose-bookmark--active' : ''}`}
+            onClick={e => {
+              e.preventDefault()
+              e.stopPropagation()
+              ctx.toggleBookmark(target)
+            }}
+            aria-label={isBookmarked ? 'Abschnittsmarker entfernen' : 'Abschnitt merken'}
+            title={isBookmarked ? 'Abschnittsmarker entfernen' : 'Abschnitt merken'}
+          >
+            <HeadingBookmarkIcon filled={isBookmarked} />
+          </button>
         )}
       </Tag>
     )
@@ -107,6 +153,7 @@ function closestContextText(range: Range): string {
 function cleanHeadingText(el: Element): string {
   const clone = el.cloneNode(true) as Element
   clone.querySelector('.prose-anchor')?.remove()
+  clone.querySelector('.prose-bookmark')?.remove()
   return compactContext(clone.textContent ?? '')
 }
 
@@ -131,6 +178,8 @@ export function MarkdownPage({ content }: Props) {
   const path = location.pathname.replace(/^\//, '') || 'index'
   const { part, chapter } = getBreadcrumb(location.pathname)
   const { highlights, add: addHighlight, remove: removeHighlight } = useTextHighlights()
+  const { bookmarks, toggle: toggleBookmark } = useBookmarks()
+  const headingContext = { path, part, pageTitle: chapter ?? 'Überblick', bookmarks, toggleBookmark }
 
   const closeLightbox = useCallback(() => setLightbox(null), [])
 
@@ -253,10 +302,10 @@ export function MarkdownPage({ content }: Props) {
                 node={props.node}
                 onOpen={(src, alt) => setLightbox({ src, alt })}
               />,
-            h1: makeHeading('h1'),
-            h2: makeHeading('h2'),
-            h3: makeHeading('h3'),
-            h4: makeHeading('h4'),
+            h1: makeHeading('h1', headingContext),
+            h2: makeHeading('h2', headingContext),
+            h3: makeHeading('h3', headingContext),
+            h4: makeHeading('h4', headingContext),
             img({ src, alt }) {
               const id = src ? imgIdFromSrc(src) : undefined
               return (

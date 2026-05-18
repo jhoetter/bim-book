@@ -452,6 +452,14 @@ html, body, #root {
   color: var(--accent);
 }
 
+.sidebar-link-copy {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
 .sidebar-link-title {
   flex: 1;
   min-width: 0;
@@ -464,6 +472,22 @@ html, body, #root {
   align-items: flex-start;
   max-width: 100%;
   min-width: 0;
+}
+
+.sidebar-link-marker {
+  min-width: 0;
+  color: var(--text-faint);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.25;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sidebar-link--active .sidebar-link-marker {
+  color: var(--accent);
+  opacity: 0.72;
 }
 
 /* ── Sidebar resize handle ────────────────────────────────────── */
@@ -2103,6 +2127,37 @@ html, body, #root {
 }
 .prose-heading:hover .prose-anchor { opacity: 1; }
 .prose-anchor:hover { color: var(--accent); }
+
+.prose-bookmark {
+  opacity: 0;
+  margin-left: 0.25em;
+  width: 19px;
+  height: 19px;
+  border: none;
+  border-radius: var(--radius-xs);
+  background: none;
+  color: var(--text-faint);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: opacity 120ms, color 120ms, background 120ms;
+}
+
+.prose-heading:hover .prose-bookmark,
+.prose-bookmark--active {
+  opacity: 1;
+}
+
+.prose-bookmark:hover {
+  color: var(--accent);
+  background: var(--bg-hover);
+}
+
+.prose-bookmark--active {
+  color: var(--accent);
+}
 
 /* ── Chapter intro line ───────────────────────────────────────── */
 .prose h1 + p:first-of-type {
