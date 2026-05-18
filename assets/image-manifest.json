@@ -959,6 +959,42 @@
       ],
       "chapterPath": "chapters/19-klassifikation",
       "generated": "2026-05-18 15:16"
+    },
+    {
+      "file": "kap20_cde_workflow.png",
+      "chapter": 20,
+      "part": "VI",
+      "partTitle": "Teil VI – BIM",
+      "chapterTitle": "Prozess & Kollaboration",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Die CDE macht Informationsstatus sichtbar",
+      "tags": [
+        "cde",
+        "iso19650",
+        "workflow",
+        "shared"
+      ],
+      "chapterPath": "chapters/20-prozess-kollaboration",
+      "generated": "2026-05-18 15:19"
+    },
+    {
+      "file": "kap20_iso19650_struktur.png",
+      "chapter": 20,
+      "part": "VI",
+      "partTitle": "Teil VI – BIM",
+      "chapterTitle": "Prozess & Kollaboration",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "ISO 19650 ordnet Informationsanforderungen und Lieferteams",
+      "tags": [
+        "iso19650",
+        "aia",
+        "midp",
+        "tidp"
+      ],
+      "chapterPath": "chapters/20-prozess-kollaboration",
+      "generated": "2026-05-18 15:21"
     }
   ]
 }
