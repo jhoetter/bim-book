@@ -4,6 +4,8 @@ import React from 'react'
 import { WallHifi, HomeIcon } from 'bim-icons'
 import { PARTS, GALLERY_ICON, TOP_PAGES } from '../chapters'
 import { useBookmarks } from '../lib/bookmarks'
+import { useSelfTestResults } from '../lib/selftests'
+import { getSelfTestForChapter } from '../data/selftests'
 import { search } from '../lib/search'
 import { useTheme, type Theme } from '../lib/theme'
 
@@ -65,10 +67,18 @@ const BmIcon = ({ filled }: { filled: boolean }) => (
   </svg>
 )
 
+const DoneIcon = () => (
+  <svg width="11" height="11" viewBox="0 0 14 14" fill="none" stroke="currentColor"
+    strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M2 7.5 5.4 10.8 12 3.5" />
+  </svg>
+)
+
 export function Sidebar() {
   const scrollRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
   const { bookmarks, toggle } = useBookmarks()
+  const { results: selfTestResults } = useSelfTestResults()
   const [filterBookmarks, setFilterBookmarks] = useState(false)
   const [query, setQuery] = useState('')
   const { theme, setTheme } = useTheme()
@@ -202,6 +212,8 @@ export function Sidebar() {
                   {chapters.map(chapter => {
                     const Icon = chapter.icon
                     const isBookmarked = bookmarkedPaths.has(chapter.path)
+                    const selfTest = getSelfTestForChapter(chapter.id)
+                    const isSelfTestDone = !!selfTest && !!selfTestResults[selfTest.id]
                     return (
                       <li key={chapter.id} className="sidebar-chapter-item">
                         <NavLink
@@ -218,7 +230,18 @@ export function Sidebar() {
                           ) : chapter.num ? (
                             <span className="sidebar-num">{chapter.num}</span>
                           ) : null}
-                          <span className="sidebar-link-title">{chapter.title}</span>
+                          <span className="sidebar-link-title-row">
+                            <span className="sidebar-link-title">{chapter.title}</span>
+                            {isSelfTestDone && (
+                              <span
+                                className="sidebar-selftest-done"
+                                aria-label="Selbsttest abgeschlossen"
+                                title="Selbsttest abgeschlossen"
+                              >
+                                <DoneIcon />
+                              </span>
+                            )}
+                          </span>
                         </NavLink>
                         <button
                           className={['sidebar-bm-btn', isBookmarked ? 'sidebar-bm-btn--on' : ''].join(' ').trim()}

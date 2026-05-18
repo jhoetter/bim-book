@@ -10,7 +10,9 @@ import { Overview } from './components/Overview'
 import { ChatPanel } from './components/ChatPanel'
 import { CommandPalette } from './components/CommandPalette'
 import { PdfPrintView } from './components/PdfPrintView'
+import { ChapterSelfTest } from './components/ChapterSelfTest'
 import { getContent, getNavigation, ALL_CHAPTERS } from './chapters'
+import { getSelfTestForChapter } from './data/selftests'
 
 const SIDEBAR_MIN = 180
 const SIDEBAR_MAX = 480
@@ -130,6 +132,7 @@ function ChapterRoute() {
   const hasImage = !!cover && !imgFailed
   const PageIcon = chapter?.pageIcon
   const isRef = chapter?.isReferencePage
+  const selfTest = chapter ? getSelfTestForChapter(chapter.id) : undefined
 
   if (isRef) {
     return (
@@ -177,6 +180,7 @@ function ChapterRoute() {
       </div>
       <main className="content content--has-cover">
         <MarkdownPage content={content} />
+        {selfTest && <ChapterSelfTest test={selfTest} />}
         <Pagination id={id} />
       </main>
     </>
@@ -314,6 +318,7 @@ function AppLayout() {
               <Route path="/glossar" element={<ChapterRoute />} />
               <Route path="/markierungen" element={<ChapterRoute />} />
               <Route path="/formelsammlung" element={<ChapterRoute />} />
+              <Route path="/selbsttests" element={<ChapterRoute />} />
               <Route path="/chapters/*" element={<ChapterRoute />} />
               <Route path="/appendix/*" element={<ChapterRoute />} />
               <Route path="*" element={<Navigate to="/" replace />} />

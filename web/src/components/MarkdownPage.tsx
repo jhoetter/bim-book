@@ -23,6 +23,7 @@ import { GlossarFull } from './GlossarFull'
 import { FormelSammlung } from './FormelSammlung'
 import { IfcReferenz } from './IfcReferenz'
 import { NormenReferenz } from './NormenReferenz'
+import { SelfTestOverview } from './SelfTestOverview'
 import { MarkierungenFull } from './MarkierungenFull'
 import { ImagePlaceholder } from './ImagePlaceholder'
 import { AIHifi } from 'bim-icons'
@@ -36,6 +37,7 @@ const CALC_COMPONENTS = {
   'glossar-full':    () => <GlossarFull />,
   'formel-sammlung': () => <FormelSammlung />,
   'markierungen-full': () => <MarkierungenFull />,
+  'selbsttest-uebersicht': () => <SelfTestOverview />,
   'ifc-referenz':    () => <IfcReferenz />,
   'normen-referenz': () => <NormenReferenz />,
 } as unknown as Partial<Components>
