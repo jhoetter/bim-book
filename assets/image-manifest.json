@@ -548,6 +548,42 @@
       "generated": "2026-05-18 14:24"
     },
     {
+      "file": "kap11_kwl_schema.png",
+      "chapter": 11,
+      "part": "IV",
+      "partTitle": "Teil IV – TGA",
+      "chapterTitle": "Lüftung & Raumluftqualität",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "KWL führt Luft gezielt nach Nutzung und Feuchte",
+      "tags": [
+        "kwl",
+        "lüftung",
+        "wärmerückgewinnung",
+        "wohnung"
+      ],
+      "chapterPath": "chapters/11-lueftung",
+      "generated": "2026-05-18 14:27"
+    },
+    {
+      "file": "kap11_kanalquerschnitte.png",
+      "chapter": 11,
+      "part": "IV",
+      "partTitle": "Teil IV – TGA",
+      "chapterTitle": "Lüftung & Raumluftqualität",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "Luftmengen werden im Grundriss als reale Kanalquerschnitte sichtbar",
+      "tags": [
+        "lüftung",
+        "kanalquerschnitt",
+        "schacht",
+        "tga"
+      ],
+      "chapterPath": "chapters/11-lueftung",
+      "generated": "2026-05-18 14:29"
+    },
+    {
       "file": "kap15_entwurfsprozess.png",
       "chapter": 15,
       "part": "V",
