@@ -1068,6 +1068,42 @@
       ],
       "chapterPath": "chapters/22-nachhaltigkeit",
       "generated": "2026-05-18 15:34"
+    },
+    {
+      "file": "kap23_baualtersphasen.png",
+      "chapter": 23,
+      "part": "VII",
+      "partTitle": "Teil VII – Nachhaltigkeit",
+      "chapterTitle": "Sanierung",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "Baualtersphasen liefern erste Hinweise, ersetzen aber keine Untersuchung",
+      "tags": [
+        "sanierung",
+        "baualter",
+        "bestand",
+        "konstruktion"
+      ],
+      "chapterPath": "chapters/23-sanierung",
+      "generated": "2026-05-18 15:37"
+    },
+    {
+      "file": "kap23_scan_to_bim.png",
+      "chapter": 23,
+      "part": "VII",
+      "partTitle": "Teil VII – Nachhaltigkeit",
+      "chapterTitle": "Sanierung",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Scan-to-BIM macht Geometrie sichtbar, nicht automatisch Konstruktion",
+      "tags": [
+        "scan-to-bim",
+        "punktwolke",
+        "sanierung",
+        "bestand"
+      ],
+      "chapterPath": "chapters/23-sanierung",
+      "generated": "2026-05-18 15:40"
     }
   ]
 }
