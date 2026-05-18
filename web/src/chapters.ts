@@ -110,6 +110,7 @@ export const PARTS: Part[] = [
     title: 'Nachschlagewerke',
     chapters: [
       { id: 'glossar', num: '', title: 'Glossar', path: 'glossar', icon: NoteBlockIcon, pageIcon: NoteBlockHifi, isReferencePage: true },
+      { id: 'markierungen', num: '', title: 'Markierungen', path: 'markierungen', icon: NoteBlockIcon, pageIcon: NoteBlockHifi, isReferencePage: true },
       { id: 'formelsammlung', num: '', title: 'Formelsammlung', path: 'formelsammlung', icon: QuantityTakeoffIcon, pageIcon: QuantityTakeoffHifi, isReferencePage: true },
       { id: 'kastanienallee7', num: '', title: 'Kastanienallee 7', path: 'appendix/kastanienallee7', icon: TopoIcon, pageIcon: TopoHifi, isReferencePage: true },
       { id: 'ifc-referenz', num: '', title: 'IFC-Schnellreferenz', path: 'appendix/ifc-referenz', icon: IFCIcon, pageIcon: IFCHifi, isReferencePage: true },

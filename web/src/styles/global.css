@@ -2088,6 +2088,11 @@ html, body, #root {
   margin: 2em 0;
 }
 
+::highlight(bim-book-text-highlights) {
+  background: hsl(48 100% 63% / 0.55);
+  color: inherit;
+}
+
 /* ══ Chat Panel ═══════════════════════════════════════════════════════ */
 
 .chat-bubble {
@@ -2131,7 +2136,7 @@ html, body, #root {
   from { opacity: 0; transform: translate(-50%, calc(-100% - 6px)) scale(0.95); }
   to   { opacity: 1; transform: translate(-50%, calc(-100% - 10px)) scale(1); }
 }
-.sel-popover__ai {
+.sel-popover__btn {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -2147,11 +2152,25 @@ html, body, #root {
   white-space: nowrap;
   transition: background 100ms, color 100ms;
 }
-.sel-popover__ai:hover {
+.sel-popover__btn:hover {
   background: hsl(220 14% 22%);
   color: hsl(0 0% 96%);
 }
-.sel-popover__ai svg { flex-shrink: 0; opacity: 0.85; }
+.sel-popover__btn--marker {
+  color: hsl(48 95% 74%);
+}
+.sel-popover__btn--marker:hover {
+  background: hsl(48 90% 45% / 0.18);
+  color: hsl(48 100% 78%);
+}
+.sel-popover__btn--remove {
+  color: hsl(8 88% 76%);
+}
+.sel-popover__btn--remove:hover {
+  background: hsl(8 80% 45% / 0.18);
+  color: hsl(8 100% 82%);
+}
+.sel-popover__btn svg { flex-shrink: 0; opacity: 0.85; }
 
 /* Normal panel */
 .chat-panel {
@@ -2937,6 +2956,96 @@ html, body, #root {
 .glossar-tag--typ {
   background: var(--bg-active);
   color: var(--text-muted);
+}
+
+/* ── Markierungen ─────────────────────────────────────────────── */
+.markierungen-full { max-width: 900px; }
+.markierung-list { display: flex; flex-direction: column; }
+.markierung-entry {
+  display: grid;
+  grid-template-columns: 12px 1fr;
+  gap: 12px;
+  padding: 14px 4px;
+  border-bottom: 1px solid var(--border-soft);
+}
+.markierung-entry:last-child { border-bottom: none; }
+.markierung-swatch {
+  width: 12px;
+  height: 100%;
+  min-height: 64px;
+  border-radius: 3px;
+  background: hsl(48 100% 63% / 0.75);
+  border: 1px solid hsl(42 80% 45% / 0.28);
+}
+.markierung-body {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.markierung-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.markierung-location {
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 650;
+  text-decoration: none;
+}
+.markierung-location:hover { color: var(--accent); }
+.markierung-quote {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0;
+  padding: 2px 5px;
+  border-radius: var(--radius-xs);
+  background: hsl(48 100% 63% / 0.38);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 520;
+}
+.markierung-context {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+.markierung-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  color: var(--text-faint);
+  font-size: 11.5px;
+  flex-wrap: wrap;
+}
+.markierung-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.markierung-action {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-muted);
+  border-radius: var(--radius-xs);
+  padding: 3px 7px;
+  font: inherit;
+  font-size: 11.5px;
+  cursor: pointer;
+}
+.markierung-action:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+.markierung-action--danger:hover {
+  border-color: hsl(0 70% 55% / 0.45);
+  color: hsl(0 70% 48%);
 }
 
 /* ── FormelSammlung (appendix page) ──────────────────────────── */

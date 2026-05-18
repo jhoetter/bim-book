@@ -312,6 +312,7 @@ function AppLayout() {
               <Route path="/" element={<Overview />} />
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/glossar" element={<ChapterRoute />} />
+              <Route path="/markierungen" element={<ChapterRoute />} />
               <Route path="/formelsammlung" element={<ChapterRoute />} />
               <Route path="/chapters/*" element={<ChapterRoute />} />
               <Route path="/appendix/*" element={<ChapterRoute />} />
