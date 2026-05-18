@@ -1104,6 +1104,42 @@
       ],
       "chapterPath": "chapters/23-sanierung",
       "generated": "2026-05-18 15:40"
+    },
+    {
+      "file": "kap24_digitaler_zwilling.png",
+      "chapter": 24,
+      "part": "VII",
+      "partTitle": "Teil VII – Nachhaltigkeit",
+      "chapterTitle": "Digitaler Zwilling & KI",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Ein digitaler Zwilling koppelt Modell, Messdaten und Betrieb",
+      "tags": [
+        "digitaler-zwilling",
+        "sensorik",
+        "bim",
+        "datenpipeline"
+      ],
+      "chapterPath": "chapters/24-digitaler-zwilling-ki",
+      "generated": "2026-05-18 15:42"
+    },
+    {
+      "file": "kap24_ki_reifegrad.png",
+      "chapter": 24,
+      "part": "VII",
+      "partTitle": "Teil VII – Nachhaltigkeit",
+      "chapterTitle": "Digitaler Zwilling & KI",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "KI-Anwendungen unterscheiden sich stark in Reifegrad und Nutzen",
+      "tags": [
+        "ki",
+        "bim",
+        "reifegrad",
+        "bauwirtschaft"
+      ],
+      "chapterPath": "chapters/24-digitaler-zwilling-ki",
+      "generated": "2026-05-18 15:45"
     }
   ]
 }
