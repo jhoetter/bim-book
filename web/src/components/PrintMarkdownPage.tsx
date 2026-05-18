@@ -101,6 +101,30 @@ const PRINT_COMPONENTS: Partial<Components> = {
   'formel-sammlung': () => <FormelSammlungPrint />,
 } as unknown as Partial<Components>
 
+function normalizeImageSrc(src: string | undefined): string | undefined {
+  if (!src) return undefined
+  if (src.startsWith('http') || src.startsWith('/')) return src
+  if (src.startsWith('../assets/')) return src.replace('../assets/', '/assets/')
+  if (src.startsWith('assets/')) return `/${src}`
+  return src
+}
+
+function PrintImagePlaceholder({ node }: { node?: { properties?: Record<string, unknown> } }) {
+  const p = node?.properties ?? {}
+  const src = normalizeImageSrc((p.dataSrc as string | undefined) ?? '')
+  const alt = (p.dataAlt as string | undefined) ?? ''
+  const caption = (p.dataCaption as string | undefined) || alt
+
+  if (!src) return null
+
+  return (
+    <figure>
+      <img src={src} alt={alt} loading="eager" decoding="sync" />
+      {caption && <figcaption>{caption}</figcaption>}
+    </figure>
+  )
+}
+
 export function PrintMarkdownPage({ content }: { content: string }) {
   const processed = preprocessMarkdown(content)
   return (
@@ -110,10 +134,12 @@ export function PrintMarkdownPage({ content }: { content: string }) {
         rehypePlugins={[rehypeRaw, rehypeSlug, rehypeKatex, rehypeHighlight]}
         components={{
           ...PRINT_COMPONENTS,
+          'img-placeholder': PrintImagePlaceholder,
           img({ src, alt }) {
+            const normalizedSrc = normalizeImageSrc(src)
             return (
               <figure>
-                <img src={src} alt={alt ?? ''} loading="eager" />
+                <img src={normalizedSrc} alt={alt ?? ''} loading="eager" decoding="sync" />
                 {alt && <figcaption>{alt}</figcaption>}
               </figure>
             )

@@ -3654,7 +3654,10 @@ html, body, #root {
   }
 
   .layout, .chat-panel, .chat-bubble, .palette-overlay, .pdf-preparing-overlay { display: none !important; }
-  #pdf-print-view { display: block !important; }
+  #pdf-print-view {
+    display: block !important;
+    max-width: none;
+  }
 
   body {
     background: #fff !important;
@@ -3718,11 +3721,6 @@ html, body, #root {
   .pdf-chapter { page-break-before: always; }
 
   /* ── Full-bleed chapter cover using a named @page with margin:0 ── */
-  /*
-   * CSS named pages (Chrome 85+): assigning a named page to an element
-   * forces it onto its own page that uses the named @page rule.
-   * This is the only reliable way to get true full-bleed in Chromium.
-   */
   @page chapterCover {
     size: A4;
     margin: 0;
@@ -3735,11 +3733,17 @@ html, body, #root {
   }
 
   .pdf-chapter-cover-page {
-    page: chapterCover;        /* this page gets 0 margin → full bleed */
+    page: chapterCover;
+    page-break-before: always;
     page-break-after: always;
+    break-before: page;
+    break-after: page;
     position: relative;
-    width: 210mm;
-    height: 297mm;
+    /* Slightly oversize the cover so Chrome's print shrink-to-fit pass
+       cannot leave a white strip on the right or bottom edge. */
+    width: 222mm;
+    height: 313mm;
+    margin: 0 -12mm -16mm 0;
     overflow: hidden;
   }
   .pdf-chapter-cover-img {
@@ -3753,13 +3757,19 @@ html, body, #root {
   .pdf-chapter-cover-overlay {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.44) !important;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 0 24mm 22mm;
   }
+  .pdf-chapter-cover-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.44) !important;
+  }
   .pdf-chapter-cover-part {
+    position: relative;
     font-size: 7.5pt;
     letter-spacing: 0.28em;
     text-transform: uppercase;
@@ -3768,6 +3778,7 @@ html, body, #root {
     font-weight: 600;
   }
   .pdf-chapter-cover-h1 {
+    position: relative;
     font-size: 30pt;
     font-weight: 800;
     color: #fff !important;

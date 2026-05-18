@@ -9,12 +9,39 @@ interface Props {
   onDone: () => void
 }
 
+function nextFrame() {
+  return new Promise<void>(resolve => requestAnimationFrame(() => resolve()))
+}
+
+async function waitForImage(img: HTMLImageElement) {
+  if (!img.complete) {
+    await new Promise<void>(resolve => {
+      img.addEventListener('load', () => resolve(), { once: true })
+      img.addEventListener('error', () => resolve(), { once: true })
+    })
+  }
+
+  if (img.complete && img.naturalWidth > 0 && img.decode) {
+    await img.decode().catch(() => undefined)
+  }
+}
+
+async function waitForPrintImages(root: HTMLElement) {
+  const images = Array.from(root.querySelectorAll('img'))
+  if (images.length === 0) return
+
+  await Promise.race([
+    Promise.all(images.map(waitForImage)),
+    new Promise(resolve => setTimeout(resolve, 10000)),
+  ])
+}
+
 function ChapterSection({ chapter, part }: { chapter: Chapter; part: Part }) {
   const partLabel = !SKIP_PART_LABEL.has(part.title) ? part.title : null
 
   if (chapter.coverImage) {
     return (
-      <div className="pdf-chapter">
+      <>
         {/* Full-page chapter cover: image fills the page, title overlaid at bottom */}
         <div className="pdf-chapter-cover-page">
           <img
@@ -35,10 +62,10 @@ function ChapterSection({ chapter, part }: { chapter: Chapter; part: Part }) {
           </div>
         </div>
         {/* Content page after the cover */}
-        <div className="pdf-chapter-content">
+        <div className="pdf-chapter pdf-chapter-content">
           <PrintMarkdownPage content={getContent(chapter.path)} />
         </div>
-      </div>
+      </>
     )
   }
 
@@ -58,11 +85,23 @@ function ChapterSection({ chapter, part }: { chapter: Chapter; part: Part }) {
 
 export function PdfPrintView({ onDone }: Props) {
   useEffect(() => {
-    const timer = setTimeout(() => window.print(), 600)
+    let cancelled = false
+
+    async function printWhenReady() {
+      await nextFrame()
+      await nextFrame()
+
+      const root = document.getElementById('pdf-print-view')
+      if (root) await waitForPrintImages(root)
+      if (!cancelled) window.print()
+    }
+
+    void printWhenReady()
+
     const handleAfterPrint = () => onDone()
     window.addEventListener('afterprint', handleAfterPrint)
     return () => {
-      clearTimeout(timer)
+      cancelled = true
       window.removeEventListener('afterprint', handleAfterPrint)
     }
   }, [onDone])
