@@ -1527,6 +1527,207 @@ html, body, #root {
   overflow: hidden;
 }
 
+.chapter-graph-section {
+  margin: 0 0 44px;
+}
+.chapter-graph-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.chapter-graph-summary {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: -6px;
+}
+.chapter-graph-legend {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  font-size: 0.72rem;
+  color: var(--text-faint);
+}
+.chapter-graph-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.chapter-graph-legend-line {
+  width: 24px;
+  height: 2px;
+  background: var(--text-faint);
+  opacity: 0.55;
+}
+.chapter-graph-legend-node {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.chapter-graph-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 16px;
+  min-height: 420px;
+}
+.chapter-graph-canvas {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--border-soft) 70%, transparent) 1px, transparent 1px),
+    linear-gradient(0deg, color-mix(in srgb, var(--border-soft) 70%, transparent) 1px, transparent 1px),
+    var(--bg);
+  background-size: 40px 40px;
+  overflow: auto;
+}
+.chapter-graph-canvas svg {
+  display: block;
+  width: 100%;
+  min-width: 760px;
+  height: auto;
+}
+.chapter-graph-arrow {
+  fill: var(--text-faint);
+}
+.chapter-graph-edge {
+  fill: none;
+  stroke: var(--text-faint);
+  stroke-linecap: round;
+  opacity: 0.12;
+  transition: opacity var(--dur-fast), stroke var(--dur-fast);
+}
+.chapter-graph-edge--active {
+  opacity: 0.36;
+  stroke: var(--text-muted);
+}
+.chapter-graph-node {
+  cursor: pointer;
+  opacity: 0.32;
+  transition: opacity var(--dur-fast), filter var(--dur-fast);
+  outline: none;
+}
+.chapter-graph-node--active {
+  opacity: 1;
+}
+.chapter-graph-node:focus-visible circle:not(.chapter-graph-node-hit) {
+  stroke: var(--ink);
+  stroke-width: 3px;
+}
+.chapter-graph-node-hit {
+  fill: transparent;
+}
+.chapter-graph-node circle:not(.chapter-graph-node-hit) {
+  stroke: var(--bg);
+  stroke-width: 3px;
+  filter: drop-shadow(0 5px 10px hsl(220 20% 20% / 0.14));
+}
+.chapter-graph-node-num {
+  fill: white;
+  font-size: 13px;
+  font-weight: 700;
+  text-anchor: middle;
+  pointer-events: none;
+}
+.chapter-graph-label {
+  fill: var(--text-faint);
+  font-size: 10px;
+  font-weight: 550;
+  opacity: 0.36;
+  transition: opacity var(--dur-fast), fill var(--dur-fast);
+}
+.chapter-graph-label--active {
+  fill: var(--text);
+  opacity: 0.92;
+}
+.chapter-graph-detail {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg);
+  padding: 16px;
+  min-height: 180px;
+}
+.chapter-graph-detail-kicker {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 650;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 8px;
+}
+.chapter-graph-detail h3 {
+  font-size: 1rem;
+  line-height: 1.3;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+.chapter-graph-detail dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.chapter-graph-detail dt {
+  font-size: 0.68rem;
+  color: var(--text-faint);
+  margin-bottom: 4px;
+}
+.chapter-graph-detail dd {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.chapter-graph-toplist {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.chapter-graph-toplist li {
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr) 28px;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+.chapter-graph-toplist span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--bg-sidebar);
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.chapter-graph-toplist strong {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+.chapter-graph-toplist em {
+  color: var(--text-faint);
+  font-size: 0.72rem;
+  font-style: normal;
+  text-align: right;
+}
+@media (max-width: 1100px) {
+  .chapter-graph-panel { grid-template-columns: 1fr; }
+  .chapter-graph-detail { min-height: 0; }
+}
+@media (max-width: 640px) {
+  .chapter-graph-head { align-items: flex-start; flex-direction: column; }
+  .chapter-graph-canvas svg { min-width: 700px; }
+}
+
 /* ── Gallery page ─────────────────────────────────────────────── */
 .gallery-page {
   padding: 56px 48px 80px;

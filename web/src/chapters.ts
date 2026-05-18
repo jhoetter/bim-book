@@ -77,6 +77,26 @@ export interface Part {
   chapters: Chapter[]
 }
 
+export interface ChapterGraphNode {
+  chapter: Chapter
+  partTitle: string
+  incoming: number
+  outgoing: number
+  total: number
+}
+
+export interface ChapterGraphEdge {
+  sourceId: string
+  targetId: string
+  count: number
+}
+
+export interface ChapterReferenceGraph {
+  nodes: ChapterGraphNode[]
+  edges: ChapterGraphEdge[]
+  totalLinks: number
+}
+
 export const GALLERY_ICON = GridIcon
 
 export const PARTS: Part[] = [
@@ -179,6 +199,73 @@ export function getChapterDescription(path: string): string {
   const match = raw.match(/^# [^\n]+\n(?:\n\*[^\n]+\*\n)?\n---\n\n?([\s\S]*?)(?=\n---|\n##)/)
   if (!match) return ''
   return match[1].trim().split('\n\n')[0]
+}
+
+function normalizeChapterHref(href: string): string | null {
+  const normalized = href
+    .trim()
+    .replace(/^https?:\/\/[^/]+/i, '')
+    .replace(/^\/+/, '')
+    .split(/[?#]/)[0]
+
+  if (!normalized.startsWith('chapters/')) return null
+  return normalized.replace(/\.md$/, '')
+}
+
+export function getChapterReferenceGraph(): ChapterReferenceGraph {
+  const chapterPart = new Map<string, string>()
+  for (const part of PARTS) {
+    for (const chapter of part.chapters) chapterPart.set(chapter.id, part.title)
+  }
+
+  const chapters = ALL_CHAPTERS.filter(chapter => chapter.num && !chapter.isReferencePage)
+  const byPath = new Map(chapters.map(chapter => [chapter.path, chapter]))
+  const edgeCounts = new Map<string, number>()
+  let totalLinks = 0
+
+  for (const source of chapters) {
+    const content = getContent(source.path)
+    const linkPattern = /(?<!!)\[[^\]]+\]\(([^)\s]+)(?:\s+"[^"]*")?\)/g
+    let match: RegExpExecArray | null
+    while ((match = linkPattern.exec(content))) {
+      const targetPath = normalizeChapterHref(match[1])
+      if (!targetPath) continue
+      const target = byPath.get(targetPath)
+      if (!target || target.id === source.id) continue
+
+      const key = `${source.id}->${target.id}`
+      edgeCounts.set(key, (edgeCounts.get(key) ?? 0) + 1)
+      totalLinks += 1
+    }
+  }
+
+  const edges = Array.from(edgeCounts.entries()).map(([key, count]) => {
+    const [sourceId, targetId] = key.split('->')
+    return { sourceId, targetId, count }
+  })
+
+  const incoming = new Map<string, number>()
+  const outgoing = new Map<string, number>()
+  for (const edge of edges) {
+    outgoing.set(edge.sourceId, (outgoing.get(edge.sourceId) ?? 0) + edge.count)
+    incoming.set(edge.targetId, (incoming.get(edge.targetId) ?? 0) + edge.count)
+  }
+
+  return {
+    nodes: chapters.map(chapter => {
+      const inCount = incoming.get(chapter.id) ?? 0
+      const outCount = outgoing.get(chapter.id) ?? 0
+      return {
+        chapter,
+        partTitle: chapterPart.get(chapter.id) ?? '',
+        incoming: inCount,
+        outgoing: outCount,
+        total: inCount + outCount,
+      }
+    }),
+    edges,
+    totalLinks,
+  }
 }
 
 export function findChapterByPath(path: string): Chapter | undefined {

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { PARTS, getChapterDescription, type Chapter } from '../chapters'
+import { ChapterReferenceGraph } from './ChapterReferenceGraph'
 
 function chapterHref(path: string): string {
   if (path === 'index') return '/'
@@ -48,6 +49,8 @@ export function Overview() {
           Ein Kompendium für Architekten, Ingenieure und BIM-Koordinatoren
         </p>
       </div>
+
+      <ChapterReferenceGraph />
 
       {PARTS
         .filter(part => part.title !== 'Überblick' && part.title !== 'Nachschlagewerke')
