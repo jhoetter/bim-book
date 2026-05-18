@@ -25,6 +25,7 @@ import { IfcReferenz } from './IfcReferenz'
 import { NormenReferenz } from './NormenReferenz'
 import { SelfTestOverview } from './SelfTestOverview'
 import { MarkierungenFull } from './MarkierungenFull'
+import { QuellenReferenz } from './QuellenReferenz'
 import { ImagePlaceholder } from './ImagePlaceholder'
 import { AIHifi } from 'bim-icons'
 import type { Components } from 'react-markdown'
@@ -40,6 +41,7 @@ const CALC_COMPONENTS = {
   'selbsttest-uebersicht': () => <SelfTestOverview />,
   'ifc-referenz':    () => <IfcReferenz />,
   'normen-referenz': () => <NormenReferenz />,
+  'quellen-referenz': () => <QuellenReferenz />,
 } as unknown as Partial<Components>
 
 interface LightboxState {

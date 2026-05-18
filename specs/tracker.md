@@ -30,29 +30,14 @@ Priorität:
 
 ## Quellenverzeichnis
 
-Alle PDFs liegen unter `~/Desktop/architecture books/`.
+Die vollständige Quellenliste liegt als filterbare Referenzseite in der Web-App:
 
-| Kürzel | Datei | Relevant für |
-|--------|-------|-------------|
-| Neufert | `01_Grundlagen-und-Entwurf/Bauentwurfslehre (Neufert).pdf` | Kap. 2, 8, 12 — Normmaße, Wendeflächen, Sanitär |
-| Ching | `01_Grundlagen-und-Entwurf/Architecture Form Space and Order – Ching.pdf` | Kap. 1, 2 — Proportionen, Raumordnung |
-| Baubuch | `01_Grundlagen-und-Entwurf/Das Baubuch – Xella.pdf` | Kap. 3, 5, 7 — Mauerwerk, Aufbauten |
-| FK1 | `02_Baukonstruktion/Baukonstruktionslehre 1 – Frick & Knoell.pdf` | Kap. 3, 4, 5 — Gründung, Wand, Decke, Dach |
-| FK2 | `02_Baukonstruktion/Baukonstruktionslehre 2 – Frick & Knoell.pdf` | Kap. 5 — Details, Anschlüsse |
-| Haustechnik | `04_Gebaeudetechnik/Haustechnik.pdf` (Laasch) | Kap. 10, 11, 12, 13 |
-| NachhaltigeGT | `04_Gebaeudetechnik/Nachhaltige Gebaeudetechnik.pdf` | Kap. 10, 22 |
-| Villmann | `10_Bauphysik/Grundlagen der Bauphysik – Villmann.pdf` | Kap. 6, 7, 8 |
-| Zürcher | `10_Bauphysik/Bauphysik Bau und Energie – Zuercher & Frank.pdf` | Kap. 6, 7 |
-| EnergieAtlas | `00_Atlas-Reihe/Energie Atlas (Detail).pdf` | Kap. 6, 22 |
-| FassadenAtlas | `00_Atlas-Reihe/Fassaden Atlas (Detail).pdf` | Kap. 5, 6 |
-| FlachdachAtlas | `00_Atlas-Reihe/Atlas Flachdach (Detail).pdf` | Kap. 5 |
-| AtlasBaustoff | `00_Atlas-Reihe/Atlas Baustoff (Detail).pdf` | Kap. 3 |
-| AtlasSanierung | `00_Atlas-Reihe/Atlas Sanierung (Detail).pdf` | Kap. 23 |
-| AtlasRecycling | `00_Atlas-Reihe/Atlas Recycling (Detail).pdf` | Kap. 22 |
-| Ridder | `09_Digital-und-BIM/Autodesk Revit 2026 – Ridder.pdf` | Kap. 21 |
-| ISO19650 | `09_Digital-und-BIM/Common Data Environment – ISO 19650 (DE).pdf` | Kap. 20 |
-| DINSPEC | `09_Digital-und-BIM/DIN SPEC 91391-1 2019 (DE).pdf` | Kap. 20 |
-| Bildwörterbuch | `01_Grundlagen-und-Entwurf/Bildwoerterbuch der Architektur – Koepf & Binding.pdf` | Kap. 1, 3, 4 |
+- Markdown-Seite: `docs/appendix/quellen.md`
+- strukturierte Daten: `web/src/data/sources.ts`
+
+Die Liste erfasst die Fachbibliothek aus Atlas-Reihe, Grundlagen/Entwurf, Baukonstruktion, Holzbau, Gebäudetechnik, Sanierung/Denkmalpflege, Recht/Verträge, Bauausführung, Zeichnen/Darstellung, Digital/BIM, Bauphysik, Tragwerkslehre sowie Normen/Gesetze. Jede Quelle trägt dort eine kurze Verwendungseinordnung und die Kapitel, in denen sie inhaltlich sinnvoll vorkommt.
+
+**Schreibregel:** Kapitel behalten ihre knappen `Quellen`-Zeilen als Arbeitsnotiz. Für neue oder überarbeitete Kapitel soll die konkrete Auswahl aus `web/src/data/sources.ts` übernommen werden; die App-Seite `/appendix/quellen` bleibt das vollständige Verzeichnis.
 
 ---
 

@@ -9,6 +9,7 @@ import katex from 'katex'
 import { preprocessMarkdown } from '../lib/markdown'
 import { GLOSSAR } from '../data/glossar'
 import { FORMULAS, FORMULA_MAP } from '../data/formulas'
+import { SOURCES } from '../data/sources'
 import type { FormulaEntry } from '../data/formulas'
 import type { Components } from 'react-markdown'
 
@@ -81,6 +82,22 @@ function FormelSammlungPrint() {
   )
 }
 
+function QuellenPrint() {
+  return (
+    <div className="quellen-print">
+      {SOURCES.map(entry => (
+        <div key={entry.id} className="qp-entry">
+          <div className="qp-head">
+            <span className="qp-title">{entry.title}</span>
+            <span className="qp-kind">{entry.group} · {entry.kind}</span>
+          </div>
+          <p className="qp-note">{entry.note}</p>
+        </div>
+      ))}
+    </div>
+  )
+}
+
 // ── Inline calc replacements: show the formula, skip the interactive UI ────
 function CalcCard({ id }: { id: string }) {
   const entry = FORMULA_MAP[id]
@@ -99,6 +116,7 @@ const PRINT_COMPONENTS: Partial<Components> = {
   'calc-hoai':       () => <CalcCard id="hoai" />,
   'glossar-full':    () => <GlossarPrint />,
   'formel-sammlung': () => <FormelSammlungPrint />,
+  'quellen-referenz': () => <QuellenPrint />,
 } as unknown as Partial<Components>
 
 function normalizeImageSrc(src: string | undefined): string | undefined {

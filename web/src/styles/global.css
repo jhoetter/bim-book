@@ -4097,6 +4097,138 @@ html, body, #root {
   line-height: 1.5;
 }
 
+/* ── QuellenReferenz ─────────────────────────────────────────── */
+.quellen-referenz { max-width: 900px; }
+
+.quellen-list { display: flex; flex-direction: column; }
+
+.quellen-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 15px 4px;
+  border-bottom: 1px solid var(--border-soft);
+}
+.quellen-entry:last-child { border-bottom: none; }
+
+.quellen-entry-main {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.quellen-entry-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.quellen-title {
+  margin: 0;
+  font-size: 13.5px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--text);
+}
+
+.quellen-entry-tags {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-top: 1px;
+}
+
+.quellen-note {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.quellen-chapters-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  min-width: 0;
+}
+
+.quellen-chapters-label {
+  margin-top: 2px;
+  color: var(--text-faint);
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  line-height: 1.7;
+  text-transform: uppercase;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.quellen-chapters {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
+  min-width: 0;
+}
+
+.source-chapter-chip {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+  max-width: 100%;
+  gap: 5px;
+  padding: 2px 7px 2px 3px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xs);
+  background: var(--bg);
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 11px;
+  line-height: 1.45;
+  transition: background var(--dur-fast), border-color var(--dur-fast), color var(--dur-fast);
+}
+.source-chapter-chip:hover {
+  background: var(--bg-hover);
+  border-color: var(--structural-light);
+  color: var(--text);
+}
+.source-chapter-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  border-radius: var(--radius-xs);
+  background: var(--bg-active);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 10px;
+  flex-shrink: 0;
+}
+.source-chapter-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .quellen-entry-tags {
+    margin-left: 0;
+    justify-content: flex-start;
+  }
+  .quellen-chapters-block {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
 /* ── @media print ─────────────────────────────────────────────── */
 
 @media print {
@@ -4416,6 +4548,23 @@ html, body, #root {
   .gp-name   { display: block; font-size: 9.5pt; font-weight: 700; color: #1a1818; line-height: 1.35; }
   .gp-abbrev { display: block; font-size: 7.5pt; color: #a09080; font-style: italic; margin-top: 1mm; }
   .gp-def    { font-size: 9.5pt; color: #3a3028; line-height: 1.58; margin: 0; }
+
+  .quellen-print { margin-top: 3mm; }
+  .qp-entry {
+    padding: 3mm 0;
+    border-bottom: 0.5pt solid #ede8e0;
+    page-break-inside: avoid;
+  }
+  .qp-entry:first-child { border-top: 0.5pt solid #ede8e0; }
+  .qp-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 6mm;
+    align-items: baseline;
+  }
+  .qp-title { font-size: 9.5pt; font-weight: 700; color: #1a1818; line-height: 1.35; }
+  .qp-kind { font-size: 7.5pt; color: #8f806f; white-space: nowrap; }
+  .qp-note { font-size: 8.8pt; color: #3a3028; line-height: 1.45; margin: 1mm 0; }
 
   /* ════════════════════════════════════════════════════════════
      FORMELSAMMLUNG

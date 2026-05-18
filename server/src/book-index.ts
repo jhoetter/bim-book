@@ -107,6 +107,7 @@ const RAW_PARTS: Array<{ title: string; chapters: Array<{ id: string; num: strin
     chapters: [
       { id: 'kastanienallee7', num: '', title: 'Kastanienallee 7', path: 'appendix/kastanienallee7' },
       { id: 'glossar', num: '', title: 'Glossar', path: 'appendix/glossar' },
+      { id: 'quellen', num: '', title: 'Quellen', path: 'appendix/quellen' },
       { id: 'ifc-referenz', num: '', title: 'IFC-Schnellreferenz', path: 'appendix/ifc-referenz' },
       { id: 'normen', num: '', title: 'Normen & Gesetze', path: 'appendix/normen' },
     ],

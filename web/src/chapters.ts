@@ -32,6 +32,7 @@ import {
   TopoIcon,
   KeynoteIcon,
   NoteBlockIcon,
+  SheetListIcon,
   ViewReferenceIcon,
   ValidationRuleIcon,
   // Hifi page icons
@@ -65,6 +66,7 @@ import {
   TopoHifi,
   KeynoteHifi,
   NoteBlockHifi,
+  SheetListHifi,
   ViewReferenceHifi,
   ValidationRuleHifi,
 } from 'bim-icons'
@@ -120,6 +122,7 @@ export const PARTS: Part[] = [
       { id: 'glossar', num: '', title: 'Glossar', path: 'glossar', icon: NoteBlockIcon, pageIcon: NoteBlockHifi, isReferencePage: true },
       { id: 'markierungen', num: '', title: 'Markierungen', path: 'markierungen', icon: KeynoteIcon, pageIcon: KeynoteHifi, isReferencePage: true },
       { id: 'formelsammlung', num: '', title: 'Formelsammlung', path: 'formelsammlung', icon: DimensionIcon, pageIcon: DimensionHifi, isReferencePage: true },
+      { id: 'quellen', num: '', title: 'Quellen', path: 'appendix/quellen', icon: SheetListIcon, pageIcon: SheetListHifi, isReferencePage: true },
       { id: 'selbsttests', num: '', title: 'Selbsttests', path: 'selbsttests', icon: ValidationRuleIcon, pageIcon: ValidationRuleHifi, isReferencePage: true },
       { id: 'kastanienallee7', num: '', title: 'Kastanienallee 7', path: 'appendix/kastanienallee7', icon: TopoIcon, pageIcon: TopoHifi, isReferencePage: true },
       { id: 'ifc-referenz', num: '', title: 'IFC-Schnellreferenz', path: 'appendix/ifc-referenz', icon: ViewReferenceIcon, pageIcon: ViewReferenceHifi, isReferencePage: true },

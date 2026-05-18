@@ -235,6 +235,23 @@ Wenn ein Fachbegriff fehlt:
 1. Eintrag in `web/src/data/glossar.ts` anlegen
 2. Dann `::Begriff::` im Markdown verwenden
 
+---
+
+## Quellen
+
+Die Fachbibliothek ist in `web/src/data/sources.ts` erfasst und als Anhangseite
+`/appendix/quellen` sichtbar. Diese Liste ist das vollständige Arbeitsverzeichnis; der Tracker
+enthält nur kapitelbezogene Kurznotizen.
+
+**VOR dem Schreiben eines Kapitels:**
+1. In `web/src/data/sources.ts` die Quellen mit passender Kapitel-ID prüfen.
+2. Nur Quellen verwenden, die das konkrete Kapitel fachlich stützen.
+3. Keine langen Zitate übernehmen; Inhalte knapp paraphrasieren und fachlich einordnen.
+
+**NACH dem Schreiben:**
+Wenn eine bisher nicht zugeordnete Quelle tatsächlich verwendet wurde, ihre `chapters`-Liste in
+`web/src/data/sources.ts` ergänzen.
+
 ### Häufige Term-IDs (Kurzreferenz)
 
 | Schreibweise | Term-ID | Erste Einführung in |
@@ -413,15 +430,17 @@ Standard-Linkziele:
 
 1. `docs/terms-registry.yaml` lesen → welche Begriffe sind bereits eingeführt?
 2. `web/src/data/glossar.ts` lesen → welche Term-IDs stehen zur Verfügung?
-3. `docs/appendix/kastanienallee7.md` lesen → aktuelle Kenndaten des Leitbeispiels
-4. Die *eine Frage* des Kapitels formulieren — alles, was nicht zur Antwort beiträgt, weglassen
-5. Kapitel schreiben nach obigem Template:
+3. `web/src/data/sources.ts` lesen → welche Quellen für das Kapitel vorgesehen sind?
+4. `docs/appendix/kastanienallee7.md` lesen → aktuelle Kenndaten des Leitbeispiels
+5. Die *eine Frage* des Kapitels formulieren — alles, was nicht zur Antwort beiträgt, weglassen
+6. Kapitel schreiben nach obigem Template:
    - Einstieg ohne Definitionen
    - Lernziele im `ziel`-Container
    - Allgemeine Prinzipien im Fließtext
    - Leitbeispiel-Anwendungen im `kastanienallee`-Container
    - Bilder als Platzhalter-Blöcke
-6. `docs/terms-registry.yaml` mit neu eingeführten Begriffen aktualisieren
+7. `docs/terms-registry.yaml` mit neu eingeführten Begriffen aktualisieren
+8. Falls nötig `web/src/data/sources.ts` mit tatsächlich verwendeten Quellen aktualisieren
 
 ## Bilder generieren (nach dem Schreiben)
 

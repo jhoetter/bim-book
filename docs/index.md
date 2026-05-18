@@ -25,7 +25,7 @@ Jedes Kapitel endet mit einer **BIM-Brücke** – der konkreten Antwort auf die 
 | V | 14–16 | Planung, Recht & Prozess | ~60 |
 | VI | 17–21 | BIM: Das digitale Gebäude | ~90 |
 | VII | 22–24 | Nachhaltigkeit, Sanierung & Ausblick | ~60 |
-| – | Anhang | Glossar, IFC-Referenz, Normen | ~21 |
+| – | Anhang | Glossar, Quellen, IFC-Referenz, Normen | ~21 |
 | | **Gesamt** | **24 Kapitel** | **~511 Seiten** |
 
 ---
