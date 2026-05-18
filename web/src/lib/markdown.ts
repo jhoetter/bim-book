@@ -48,6 +48,8 @@ export function preprocessMarkdown(raw: string): string {
   out = out.replace(
     /^!!! (\w+)(?:\s+"([^"]*)")?\n((?:(?:(?:    |\t)[^\n]*|)\n)*)/gm,
     (_match, type: string, title: string | undefined, body: string) => {
+      if (type === 'ziel') return '\n'
+
       const content = body.replace(/^(    |\t)/gm, '').trim()
       const titleHtml = title
         ? `<p class="admonition-title">${title}</p>\n\n`
