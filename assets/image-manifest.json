@@ -779,6 +779,42 @@
       ],
       "chapterPath": "chapters/16-kosten-ausschreibung",
       "generated": "2026-05-18 14:50"
+    },
+    {
+      "file": "kap17_bim_dimensionen.png",
+      "chapter": 17,
+      "part": "VI",
+      "partTitle": "Teil VI – BIM",
+      "chapterTitle": "Was BIM wirklich ist",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "BIM-Anwendungsfälle koppeln Modellinformation mit Entscheidungen",
+      "tags": [
+        "bim",
+        "4d",
+        "5d",
+        "facility-management"
+      ],
+      "chapterPath": "chapters/17-was-bim-wirklich-ist",
+      "generated": "2026-05-18 14:53"
+    },
+    {
+      "file": "kap17_prozessvergleich.png",
+      "chapter": 17,
+      "part": "VI",
+      "partTitle": "Teil VI – BIM",
+      "chapterTitle": "Was BIM wirklich ist",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "BIM verschiebt Koordination nach vorn",
+      "tags": [
+        "bim",
+        "prozess",
+        "koordination",
+        "bcf"
+      ],
+      "chapterPath": "chapters/17-was-bim-wirklich-ist",
+      "generated": "2026-05-18 14:55"
     }
   ]
 }
