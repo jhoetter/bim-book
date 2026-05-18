@@ -3,8 +3,10 @@ import type { BimIconProps, BimIconHifiProps } from 'bim-icons'
 import {
   HomeIcon,
   GridIcon,
+  SheetIcon,
   WallIcon,
   RoomIcon,
+  DimensionIcon,
   MaterialIcon,
   TrussIcon,
   FoundationIcon,
@@ -28,12 +30,16 @@ import {
   RevisionIcon,
   DigitalTwinIcon,
   TopoIcon,
+  KeynoteIcon,
   NoteBlockIcon,
-  ScheduleViewIcon,
+  ViewReferenceIcon,
+  ValidationRuleIcon,
   // Hifi page icons
   FloorHifi,
+  SheetHifi,
   WallHifi,
   RoomHifi,
+  DimensionHifi,
   MaterialHifi,
   TrussHifi,
   FoundationHifi,
@@ -57,8 +63,10 @@ import {
   RevisionHifi,
   DigitalTwinHifi,
   TopoHifi,
+  KeynoteHifi,
   NoteBlockHifi,
-  ScheduleViewHifi,
+  ViewReferenceHifi,
+  ValidationRuleHifi,
 } from 'bim-icons'
 
 export interface Chapter {
@@ -110,12 +118,12 @@ export const PARTS: Part[] = [
     title: 'Nachschlagewerke',
     chapters: [
       { id: 'glossar', num: '', title: 'Glossar', path: 'glossar', icon: NoteBlockIcon, pageIcon: NoteBlockHifi, isReferencePage: true },
-      { id: 'markierungen', num: '', title: 'Markierungen', path: 'markierungen', icon: NoteBlockIcon, pageIcon: NoteBlockHifi, isReferencePage: true },
-      { id: 'formelsammlung', num: '', title: 'Formelsammlung', path: 'formelsammlung', icon: QuantityTakeoffIcon, pageIcon: QuantityTakeoffHifi, isReferencePage: true },
-      { id: 'selbsttests', num: '', title: 'Selbsttests', path: 'selbsttests', icon: ScheduleViewIcon, pageIcon: ScheduleViewHifi, isReferencePage: true },
+      { id: 'markierungen', num: '', title: 'Markierungen', path: 'markierungen', icon: KeynoteIcon, pageIcon: KeynoteHifi, isReferencePage: true },
+      { id: 'formelsammlung', num: '', title: 'Formelsammlung', path: 'formelsammlung', icon: DimensionIcon, pageIcon: DimensionHifi, isReferencePage: true },
+      { id: 'selbsttests', num: '', title: 'Selbsttests', path: 'selbsttests', icon: ValidationRuleIcon, pageIcon: ValidationRuleHifi, isReferencePage: true },
       { id: 'kastanienallee7', num: '', title: 'Kastanienallee 7', path: 'appendix/kastanienallee7', icon: TopoIcon, pageIcon: TopoHifi, isReferencePage: true },
-      { id: 'ifc-referenz', num: '', title: 'IFC-Schnellreferenz', path: 'appendix/ifc-referenz', icon: IFCIcon, pageIcon: IFCHifi, isReferencePage: true },
-      { id: 'normen', num: '', title: 'Normen & Gesetze', path: 'appendix/normen', icon: ScheduleViewIcon, pageIcon: ScheduleViewHifi, isReferencePage: true },
+      { id: 'ifc-referenz', num: '', title: 'IFC-Schnellreferenz', path: 'appendix/ifc-referenz', icon: ViewReferenceIcon, pageIcon: ViewReferenceHifi, isReferencePage: true },
+      { id: 'normen', num: '', title: 'Normen & Gesetze', path: 'appendix/normen', icon: SheetIcon, pageIcon: SheetHifi, isReferencePage: true },
     ],
   },
   {
