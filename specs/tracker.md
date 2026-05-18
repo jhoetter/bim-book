@@ -85,28 +85,28 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 |---|-------|------|--------|------|----------------|
 | 1 | Architektur als System | I | `Entwurf` | P0 | 2,800–3,200 |
 | 2 | Entwurf, Raum und Funktion | I | `Entwurf` | P0 | 3,000–3,800 ↑ |
-| 3 | Baustoffe | II | `Open` | P1 | 3,000–3,500 |
-| 4 | Tragwerk: Lasten, Kräfte, Systeme | II | `Open` | P1 | 3,200–3,800 ↑ |
-| 5 | Konstruktion: Gründung, Wand, Decke, Dach | II | `Open` | P1 | 3,800–4,500 ↑ |
-| 6 | Wärmeschutz & GEG | III | `Open` | P1 | 2,800–3,200 |
-| 7 | Feuchteschutz | III | `Open` | P1 | 2,200–2,800 |
-| 8 | Schallschutz | III | `Open` | P1 | 2,000–2,500 |
-| 9 | Brandschutz | III | `Open` | P1 | 2,000–2,500 |
-| 10 | Heizung & Wärmeversorgung | IV | `Open` | P1 | 2,800–3,200 |
-| 11 | Lüftung & Raumluftqualität | IV | `Open` | P1 | 2,500–3,000 |
-| 12 | Sanitär & Entwässerung | IV | `Open` | P1 | 2,200–2,800 |
-| 13 | Elektro & Gebäudeautomation | IV | `Open` | P1 | 2,500–3,000 |
-| 14 | Planungsrecht | V | `Open` | P1 | 2,500–3,000 |
-| 15 | HOAI: Phasen, Leistungen, Honorar | V | `Open` | P1 | 2,800–3,200 |
-| 16 | Kosten & Ausschreibung | V | `Open` | P1 | 2,800–3,200 ↑ |
-| 17 | Was BIM wirklich ist | VI | `Open` | P1 | 2,200–2,800 |
-| 18 | IFC: Die Sprache des digitalen Gebäudes | VI | `Open` | P1 | 4,000–5,000 ↑↑ |
-| 19 | Klassifikation | VI | `Open` | P1 | 2,000–2,500 ↓ |
-| 20 | Prozess & Kollaboration: CDE, ISO 19650 | VI | `Open` | P1 | 2,500–3,000 |
-| 21 | BIM in der Praxis | VI | `Open` | P1 | 2,200–2,800 |
-| 22 | Nachhaltigkeit & Kreislaufwirtschaft | VII | `Open` | P2 | 2,500–3,000 |
-| 23 | Sanierung | VII | `Open` | P2 | 2,500–3,000 |
-| 24 | Digitaler Zwilling & KI | VII | `Open` | P2 | 1,200–1,800 ↓↓ |
+| 3 | Baustoffe | II | `Entwurf` | P1 | 3,000–3,500 |
+| 4 | Tragwerk: Lasten, Kräfte, Systeme | II | `Entwurf` | P1 | 3,200–3,800 ↑ |
+| 5 | Konstruktion: Gründung, Wand, Decke, Dach | II | `Entwurf` | P1 | 3,800–4,500 ↑ |
+| 6 | Wärmeschutz & GEG | III | `Entwurf` | P1 | 2,800–3,200 |
+| 7 | Feuchteschutz | III | `Entwurf` | P1 | 2,200–2,800 |
+| 8 | Schallschutz | III | `Entwurf` | P1 | 2,000–2,500 |
+| 9 | Brandschutz | III | `Entwurf` | P1 | 2,000–2,500 |
+| 10 | Heizung & Wärmeversorgung | IV | `Entwurf` | P1 | 2,800–3,200 |
+| 11 | Lüftung & Raumluftqualität | IV | `Entwurf` | P1 | 2,500–3,000 |
+| 12 | Sanitär & Entwässerung | IV | `Entwurf` | P1 | 2,200–2,800 |
+| 13 | Elektro & Gebäudeautomation | IV | `Entwurf` | P1 | 2,500–3,000 |
+| 14 | Planungsrecht | V | `Entwurf` | P1 | 2,500–3,000 |
+| 15 | HOAI: Phasen, Leistungen, Honorar | V | `Entwurf` | P1 | 2,800–3,200 |
+| 16 | Kosten & Ausschreibung | V | `Entwurf` | P1 | 2,800–3,200 ↑ |
+| 17 | Was BIM wirklich ist | VI | `Entwurf` | P1 | 2,200–2,800 |
+| 18 | IFC: Die Sprache des digitalen Gebäudes | VI | `Entwurf` | P1 | 4,000–5,000 ↑↑ |
+| 19 | Klassifikation | VI | `Entwurf` | P1 | 2,000–2,500 ↓ |
+| 20 | Prozess & Kollaboration: CDE, ISO 19650 | VI | `Entwurf` | P1 | 2,500–3,000 |
+| 21 | BIM in der Praxis | VI | `Entwurf` | P1 | 2,200–2,800 |
+| 22 | Nachhaltigkeit & Kreislaufwirtschaft | VII | `Entwurf` | P2 | 2,500–3,000 |
+| 23 | Sanierung | VII | `Entwurf` | P2 | 2,500–3,000 |
+| 24 | Digitaler Zwilling & KI | VII | `Entwurf` | P2 | 1,200–1,800 ↓↓ |
 
 ---
 
@@ -197,7 +197,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K03 — Baustoffe: Eigenschaften, Verhalten, Einsatz
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 3,000–3,500
 - **Kernfragen:**
   - Warum baut man womit? Welches Material für welchen Zweck?
@@ -236,7 +236,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K04 — Tragwerk: Lasten, Kräfte, Systeme
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 3,200–3,800 ↑
 - **Kernfragen:**
   - Warum fällt ein Gebäude nicht um? Was ist Lastabtragung?
@@ -275,7 +275,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K05 — Konstruktion: Gründung, Wand, Decke, Dach
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 3,800–4,500 ↑ (wegen neuem Holzbau-Abschnitt)
 - **Kernfragen:**
   - Wie ist ein Gebäude tatsächlich Schicht für Schicht zusammengebaut?
@@ -317,7 +317,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K06 — Wärmeschutz & GEG
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 2,800–3,200
 - **Kernfragen:**
   - Wie verliert ein Gebäude Wärme, und wie rechne ich das?
@@ -354,7 +354,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K07 — Feuchteschutz
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 2,200–2,800
 - **Kernfragen:**
   - Wie bewegt sich Feuchtigkeit durch Bauteile?
@@ -390,7 +390,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K08 — Schallschutz
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 2,000–2,500
 - **Kernfragen:**
   - Was macht ein Gebäude leise?
@@ -425,7 +425,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K09 — Brandschutz
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 2,000–2,500
 - **Kernfragen:**
   - Was schreibt die Bauordnung zum Brandschutz vor?
@@ -461,7 +461,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K10 — Heizung & Wärmeversorgung
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 2,800–3,200
 - **Kernfragen:**
   - Wie wird ein Gebäude warm — welche Systeme gibt es?
@@ -498,7 +498,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K11 — Lüftung & Raumluftqualität
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 2,500–3,000
 - **Kernfragen:**
   - Wann reicht Fensterlüftung nicht mehr?
@@ -533,7 +533,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K12 — Sanitär & Entwässerung
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 2,200–2,800
 - **Kernfragen:**
   - Wie kommt Trinkwasser rein, wie geht Abwasser raus?
@@ -568,7 +568,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K13 — Elektro & Gebäudeautomation
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 2,500–3,000
 - **Kernfragen:**
   - Was steckt hinter Schaltern und Steckdosen?
@@ -604,7 +604,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K14 — Planungsrecht
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 2,500–3,000
 - **Kernfragen:**
   - Wer darf wo was bauen — wie ist das Baurecht aufgebaut?
@@ -641,7 +641,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K15 — HOAI: Phasen, Leistungen, Koordination
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 2,800–3,200
 - **Kernfragen:**
   - Wie ist ein Bauprojekt organisiert — wer macht was wann?
@@ -677,7 +677,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K16 — Kosten & Ausschreibung
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 2,800–3,200 ↑
 - **Kernfragen:**
   - Was kostet ein Gebäude wirklich, und wie ermittelt man das?
@@ -713,7 +713,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K17 — Was BIM wirklich ist
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 2,200–2,800
 - **Kernfragen:**
   - Was ist BIM — und was ist es nicht?
@@ -747,7 +747,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K18 — IFC: Die Sprache des digitalen Gebäudes
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 4,000–5,000 ↑↑ — **Kernkapitel für Zielgruppe; lieber zu lang als zu kurz**
 - **Kernfragen:**
   - Wie ist IFC aufgebaut — was ist die Projektstruktur?
@@ -792,7 +792,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K19 — Klassifikation
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 2,000–2,500 ↓ (gestrafft, DE-Fokus)
 - **⚠️ Fokus-Warnung:** OmniClass und Uniclass nur als Überblick — für Einsteiger in DE wenig praxisrelevant. Schwerpunkt auf Deutsche Klassifikation (DIN 276, DIN 277, STLB-Bau) und die Verbindung zu IFC. Riskiert zu abstrakt zu werden wenn zu viel Systemtheorie.
 - **Kernfragen:**
@@ -827,7 +827,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K20 — Prozess & Kollaboration: CDE, ISO 19650 & AIA
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 2,500–3,000
 - **Kernfragen:**
   - Wie arbeiten viele Planer zusammen ohne Datenchaos?
@@ -863,7 +863,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K21 — BIM in der Praxis
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 2,200–2,800
 - **Kernfragen:**
   - Was passiert in einem BIM-Projekt von Anfang bis Ende konkret?
@@ -900,7 +900,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K22 — Nachhaltigkeit & Kreislaufwirtschaft
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 2,500–3,000
 - **Kernfragen:**
   - Wie nachhaltig ist Bauen wirklich — was sind die Zahlen?
@@ -937,7 +937,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K23 — Sanierung
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 2,500–3,000
 - **Kernfragen:**
   - Was ist anders bei Bestandsgebäuden — welche Unbekannten gibt es?
@@ -972,7 +972,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K24 — Digitaler Zwilling & KI
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 1,200–1,800 ↓↓ — bewusst kurz gehalten; in 2 Jahren schon veraltet; besser ehrlich und knapp als ambitioniert und falsch; siehe OE-07
 - **⚠️ Scope-Warnung:** Kein vollständiges Kapitel über KI schreiben — das Thema dreht sich zu schnell. Stattdessen: was heute (2026) produktionsreif ist, was Hype ist, und wo die echten Lücken im BIM-Ökosystem liegen. Kein Futurismus.
 - **Kernfragen:**

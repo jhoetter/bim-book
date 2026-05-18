@@ -44,112 +44,112 @@
 
 terms:
   armierungsputz:
-    introduced_in: null
+    introduced_in: "05-konstruktion"
 
   bap:
-    introduced_in: null
+    introduced_in: "15-hoai"
 
   bcf:
-    introduced_in: null
+    introduced_in: "17-was-bim-wirklich-ist"
 
   bim:
-    introduced_in: null
+    introduced_in: "17-was-bim-wirklich-ist"
 
   dampfbremse:
-    introduced_in: null
+    introduced_in: "05-konstruktion"
 
   dampfsperre:
-    introduced_in: null
+    introduced_in: "05-konstruktion"
 
   dvgw:
-    introduced_in: null
+    introduced_in: "12-sanitaer"
 
   embodied-carbon:
-    introduced_in: null
+    introduced_in: "22-nachhaltigkeit"
 
   epd:
-    introduced_in: null
+    introduced_in: "22-nachhaltigkeit"
 
   eurocode:
-    introduced_in: null
+    introduced_in: "03-baustoffe"
 
   fbh:
-    introduced_in: null
+    introduced_in: "10-heizung-waermeversorgung"
 
   geg:
-    introduced_in: null
+    introduced_in: "06-waermeschutz-geg"
 
   gfz:
     introduced_in: "02-entwurf-raum-funktion"
 
   glaser-verfahren:
-    introduced_in: null
+    introduced_in: "07-feuchteschutz"
 
   grz:
     introduced_in: "02-entwurf-raum-funktion"
 
   hoai:
-    introduced_in: null
+    introduced_in: "15-hoai"
 
   hydraulischer-abgleich:
-    introduced_in: null
+    introduced_in: "10-heizung-waermeversorgung"
 
   ifc:
-    introduced_in: null
+    introduced_in: "17-was-bim-wirklich-ist"
 
   innenputz:
-    introduced_in: null
+    introduced_in: "05-konstruktion"
 
   kwl:
-    introduced_in: null
+    introduced_in: "11-lueftung"
 
   lastfall:
-    introduced_in: null
+    introduced_in: "04-tragwerk"
 
   lod:
-    introduced_in: null
+    introduced_in: "15-hoai"
 
   mbo:
     introduced_in: "02-entwurf-raum-funktion"
 
   mineralwolle:
-    introduced_in: null
+    introduced_in: "03-baustoffe"
 
   primärenergiefaktor:
-    introduced_in: null
+    introduced_in: "06-waermeschutz-geg"
 
   r-wert:
-    introduced_in: null
+    introduced_in: "06-waermeschutz-geg"
 
   rei:
-    introduced_in: null
+    introduced_in: "09-brandschutz"
 
   schallschutz-rw:
-    introduced_in: null
+    introduced_in: "08-schallschutz"
 
   schichtenmodell:
     introduced_in: "01-architektur-als-system"
 
   step:
-    introduced_in: null
+    introduced_in: "18-ifc"
 
   tga:
     introduced_in: "01-architektur-als-system"
 
   transmissionswärmeverlust:
-    introduced_in: null
+    introduced_in: "06-waermeschutz-geg"
 
   u-wert:
-    introduced_in: null
+    introduced_in: "06-waermeschutz-geg"
 
   vob:
-    introduced_in: null
+    introduced_in: "16-kosten-ausschreibung"
 
   wdvs:
-    introduced_in: null
+    introduced_in: "05-konstruktion"
 
   wärmebrücke:
-    introduced_in: null
+    introduced_in: "06-waermeschutz-geg"
 
   wlg:
-    introduced_in: null
+    introduced_in: "03-baustoffe"
