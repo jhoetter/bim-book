@@ -656,6 +656,42 @@
       "generated": "2026-05-18 14:40"
     },
     {
+      "file": "kap14_baurecht_hierarchie.png",
+      "chapter": 14,
+      "part": "V",
+      "partTitle": "Teil V – Recht & Prozess",
+      "chapterTitle": "Planungsrecht",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Baurecht wirkt von Bundesrecht bis zur örtlichen Satzung",
+      "tags": [
+        "baurecht",
+        "baugb",
+        "mbo",
+        "bebauungsplan"
+      ],
+      "chapterPath": "chapters/14-planungsrecht",
+      "generated": "2026-05-18 14:42"
+    },
+    {
+      "file": "kap14_bebauungsplan_legende.png",
+      "chapter": 14,
+      "part": "V",
+      "partTitle": "Teil V – Recht & Prozess",
+      "chapterTitle": "Planungsrecht",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Ein Bebauungsplan ist eine räumliche Regelkarte",
+      "tags": [
+        "bebauungsplan",
+        "grz",
+        "gfz",
+        "baugrenze"
+      ],
+      "chapterPath": "chapters/14-planungsrecht",
+      "generated": "2026-05-18 14:45"
+    },
+    {
       "file": "kap15_entwurfsprozess.png",
       "chapter": 15,
       "part": "V",
