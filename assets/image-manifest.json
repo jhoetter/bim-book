@@ -422,6 +422,42 @@
       "generated": "2026-05-18 10:57"
     },
     {
+      "file": "kap08_schallpfade.png",
+      "chapter": 8,
+      "part": "III",
+      "partTitle": "Teil III – Bauphysik",
+      "chapterTitle": "Schallschutz",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Schall wandert direkt und über flankierende Bauteile",
+      "tags": [
+        "schallschutz",
+        "luftschall",
+        "flankenübertragung",
+        "grundriss"
+      ],
+      "chapterPath": "chapters/08-schallschutz",
+      "generated": "2026-05-18 14:09"
+    },
+    {
+      "file": "kap08_deckenaufbau_schall.png",
+      "chapter": 8,
+      "part": "III",
+      "partTitle": "Teil III – Bauphysik",
+      "chapterTitle": "Schallschutz",
+      "type": "section",
+      "context": "generic",
+      "caption": "Trittschalldämmung wirkt nur, wenn der Estrich wirklich schwimmt",
+      "tags": [
+        "schallschutz",
+        "trittschall",
+        "estrich",
+        "deckenaufbau"
+      ],
+      "chapterPath": "chapters/08-schallschutz",
+      "generated": "2026-05-18 14:12"
+    },
+    {
       "file": "kap15_entwurfsprozess.png",
       "chapter": 15,
       "part": "V",
