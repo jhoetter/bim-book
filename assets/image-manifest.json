@@ -92,6 +92,152 @@
       ],
       "chapterPath": "chapters/02-entwurf-raum-funktion",
       "generated": "2026-05-18 07:50"
+    },
+    {
+      "file": "kap02_formtransformationen.png",
+      "chapter": 2,
+      "part": "I",
+      "partTitle": "Teil I – Fundament",
+      "chapterTitle": "Entwurf, Raum und Funktion",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Räumliche Transformationen verändern Grundkörper zu Entwurfsformen",
+      "tags": [
+        "entwurf",
+        "formtransformation",
+        "rotation",
+        "translation",
+        "subtraktion"
+      ],
+      "chapterPath": "chapters/02-entwurf-raum-funktion",
+      "generated": "2026-05-18 09:58"
+    },
+    {
+      "file": "kap02_raumorganisation.png",
+      "chapter": 2,
+      "part": "I",
+      "partTitle": "Teil I – Fundament",
+      "chapterTitle": "Entwurf, Raum und Funktion",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Raumorganisation ordnet Beziehungen zwischen Räumen",
+      "tags": [
+        "raumorganisation",
+        "achse",
+        "raster",
+        "cluster",
+        "zentralraum"
+      ],
+      "chapterPath": "chapters/02-entwurf-raum-funktion",
+      "generated": "2026-05-18 10:01"
+    },
+    {
+      "file": "kap03_materialvergleich.png",
+      "chapter": 3,
+      "part": "II",
+      "partTitle": "Teil II – Baukörper",
+      "chapterTitle": "Baustoffe",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "Baustoffe unterscheiden sich in mehreren Kennwerten gleichzeitig",
+      "tags": [
+        "baustoffe",
+        "materialvergleich",
+        "kennwerte",
+        "eurocode"
+      ],
+      "chapterPath": "chapters/03-baustoffe",
+      "generated": "2026-05-18 10:12"
+    },
+    {
+      "file": "kap03_clt_vs_beton.png",
+      "chapter": 3,
+      "part": "II",
+      "partTitle": "Teil II – Baukörper",
+      "chapterTitle": "Baustoffe",
+      "type": "comparison",
+      "context": "generic",
+      "caption": "CLT und Beton lösen dieselbe Aufgabe mit unterschiedlichen physikalischen Stärken",
+      "tags": [
+        "holzbau",
+        "clt",
+        "beton",
+        "decke",
+        "vergleich"
+      ],
+      "chapterPath": "chapters/03-baustoffe",
+      "generated": "2026-05-18 10:15"
+    },
+    {
+      "file": "kap03_daemmstoff_vergleich.png",
+      "chapter": 3,
+      "part": "II",
+      "partTitle": "Teil II – Baukörper",
+      "chapterTitle": "Baustoffe",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "Dämmstoffe erreichen ähnliche U-Werte mit unterschiedlichen Dicken",
+      "tags": [
+        "dämmstoffe",
+        "mineralwolle",
+        "wlg",
+        "u-wert"
+      ],
+      "chapterPath": "chapters/03-baustoffe",
+      "generated": "2026-05-18 10:17"
+    },
+    {
+      "file": "kap15_entwurfsprozess.png",
+      "chapter": 15,
+      "part": "V",
+      "partTitle": "Teil V – Recht & Prozess",
+      "chapterTitle": "HOAI: Phasen, Leistungen, Koordination",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Entwerfen ist ein iterativer Prozess aus Problemklärung, Varianten und begründeter Auswahl",
+      "tags": [
+        "entwurfsprozess",
+        "problemdefinition",
+        "alternativen",
+        "kriterienmatrix"
+      ],
+      "chapterPath": "chapters/15-hoai",
+      "generated": "2026-05-18 10:04"
+    },
+    {
+      "file": "kap15_leistungsphasen.png",
+      "chapter": 15,
+      "part": "V",
+      "partTitle": "Teil V – Recht & Prozess",
+      "chapterTitle": "HOAI: Phasen, Leistungen, Koordination",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "Die Leistungsphasen ordnen Entscheidungen und Lieferstände",
+      "tags": [
+        "hoai",
+        "leistungsphasen",
+        "planungsprozess"
+      ],
+      "chapterPath": "chapters/15-hoai",
+      "generated": "2026-05-18 10:06"
+    },
+    {
+      "file": "kap15_bim_lod.png",
+      "chapter": 15,
+      "part": "V",
+      "partTitle": "Teil V – Recht & Prozess",
+      "chapterTitle": "HOAI: Phasen, Leistungen, Koordination",
+      "type": "comparison",
+      "context": "generic",
+      "caption": "Mit jeder Leistungsphase steigt der Informationsgehalt des Modells",
+      "tags": [
+        "lod",
+        "bim",
+        "leistungsphasen",
+        "modell"
+      ],
+      "chapterPath": "chapters/15-hoai",
+      "generated": "2026-05-18 10:10"
     }
   ]
 }
