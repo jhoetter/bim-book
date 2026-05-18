@@ -34,8 +34,6 @@ const CALC_COMPONENTS = {
   'formel-sammlung': () => <FormelSammlung />,
   'ifc-referenz':    () => <IfcReferenz />,
   'normen-referenz': () => <NormenReferenz />,
-  'img-placeholder': (props: { node?: { properties?: Record<string, unknown> } }) =>
-    <ImagePlaceholder node={props.node} />,
 } as unknown as Partial<Components>
 
 interface LightboxState {
@@ -135,6 +133,11 @@ export function MarkdownPage({ content }: Props) {
           rehypePlugins={[rehypeRaw, rehypeSlug, rehypeKatex, rehypeHighlight]}
           components={{
             ...CALC_COMPONENTS,
+            'img-placeholder': (props: { node?: { properties?: Record<string, unknown> } }) =>
+              <ImagePlaceholder
+                node={props.node}
+                onOpen={(src, alt) => setLightbox({ src, alt })}
+              />,
             h1: makeHeading('h1'),
             h2: makeHeading('h2'),
             h3: makeHeading('h3'),

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 
 interface HeadingItem {
@@ -11,7 +11,39 @@ export function TableOfContents() {
   const location = useLocation()
   const [headings, setHeadings] = useState<HeadingItem[]>([])
   const [activeId, setActiveId] = useState<string>('')
-  const observerRef = useRef<IntersectionObserver | null>(null)
+  const rafRef = useRef(0)
+
+  const updateActiveHeading = useCallback(() => {
+    const scrollRoot = document.querySelector<HTMLElement>('.content-area')
+    if (!scrollRoot || headings.length === 0) return
+
+    const rootRect = scrollRoot.getBoundingClientRect()
+    const activationY = rootRect.top + 130
+    const headingEls = headings
+      .map(({ id }) => document.getElementById(id))
+      .filter((el): el is HTMLElement => Boolean(el))
+
+    if (headingEls.length === 0) return
+
+    let current = headingEls[0]
+    for (const el of headingEls) {
+      if (el.getBoundingClientRect().top <= activationY) current = el
+      else break
+    }
+
+    const scrollBottom = scrollRoot.scrollTop + scrollRoot.clientHeight
+    if (scrollRoot.scrollHeight - scrollBottom < 4) current = headingEls[headingEls.length - 1]
+
+    setActiveId(prev => prev === current.id ? prev : current.id)
+  }, [headings])
+
+  const scheduleUpdate = useCallback(() => {
+    if (rafRef.current) return
+    rafRef.current = requestAnimationFrame(() => {
+      rafRef.current = 0
+      updateActiveHeading()
+    })
+  }, [updateActiveHeading])
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -35,33 +67,22 @@ export function TableOfContents() {
 
   useEffect(() => {
     if (headings.length === 0) return
-    observerRef.current?.disconnect()
+    const scrollRoot = document.querySelector<HTMLElement>('.content-area')
+    if (!scrollRoot) return
 
-    // Scroll happens inside .content-area, not the viewport — pass it as root
-    const scrollRoot = document.querySelector('.content-area') as HTMLElement | null
+    updateActiveHeading()
+    const delayed = window.setTimeout(updateActiveHeading, 250)
+    scrollRoot.addEventListener('scroll', scheduleUpdate, { passive: true })
+    window.addEventListener('resize', scheduleUpdate)
 
-    observerRef.current = new IntersectionObserver(
-      entries => {
-        const visible = entries
-          .filter(e => e.isIntersecting)
-          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
-        if (visible.length > 0) setActiveId(visible[0].target.id)
-      },
-      {
-        root: scrollRoot,
-        // 80px top inset (topbar + padding), activate in top ~30% of scroll area
-        rootMargin: '-80px 0px -70% 0px',
-        threshold: 0,
-      }
-    )
-
-    headings.forEach(({ id }) => {
-      const el = document.getElementById(id)
-      if (el) observerRef.current!.observe(el)
-    })
-
-    return () => observerRef.current?.disconnect()
-  }, [headings])
+    return () => {
+      window.clearTimeout(delayed)
+      cancelAnimationFrame(rafRef.current)
+      rafRef.current = 0
+      scrollRoot.removeEventListener('scroll', scheduleUpdate)
+      window.removeEventListener('resize', scheduleUpdate)
+    }
+  }, [headings, scheduleUpdate, updateActiveHeading])
 
   if (headings.length < 2) return null
 
@@ -76,6 +97,7 @@ export function TableOfContents() {
             className={`toc-item toc-item--h${level}${isActive ? ' toc-item--active' : ''}`}
             onClick={e => {
               e.preventDefault()
+              setActiveId(id)
               document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
             }}
           >

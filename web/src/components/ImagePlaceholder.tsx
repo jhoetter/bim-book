@@ -2,9 +2,10 @@ import { useState } from 'react'
 
 interface Props {
   node?: { properties?: Record<string, unknown> }
+  onOpen?: (src: string, alt: string) => void
 }
 
-export function ImagePlaceholder({ node }: Props) {
+export function ImagePlaceholder({ node, onOpen }: Props) {
   const p = node?.properties ?? {}
   const name    = (p['dataName']    as string) || ''
   const type    = (p['dataType']    as string) || ''
@@ -22,7 +23,21 @@ export function ImagePlaceholder({ node }: Props) {
   if (loaded) {
     return (
       <figure>
-        <img src={src} alt={alt} loading="lazy" />
+        <img
+          src={src}
+          alt={alt}
+          loading="lazy"
+          role={onOpen ? 'button' : undefined}
+          tabIndex={onOpen ? 0 : undefined}
+          onClick={() => src && onOpen?.(src, alt)}
+          onKeyDown={e => {
+            if (!src || !onOpen) return
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault()
+              onOpen(src, alt)
+            }
+          }}
+        />
         {(caption || alt) && <figcaption>{caption || alt}</figcaption>}
       </figure>
     )

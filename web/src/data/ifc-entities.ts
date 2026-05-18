@@ -205,6 +205,13 @@ export const IFC_ENTRIES: IfcEntry[] = [
     disziplin: 'TGA-Heizung', typ: 'Entität',
     ka7: '12 Wärmemengenzähler + 12 Kaltwasserzähler (je WE) für die verbrauchsabhängige Abrechnung.',
   },
+  {
+    id: 'distributionsystem',
+    entity: 'IfcDistributionSystem',
+    bedeutung: 'Technisches Versorgungssystem, das zusammengehörige TGA-Komponenten bündelt',
+    disziplin: 'TGA-Heizung', typ: 'Entität',
+    ka7: 'Heizungs-, Lüftungs-, Sanitär- und Elektrosysteme bündeln Geräte, Leitungen und Verbraucher je Gewerk.',
+  },
 
   // TGA – Lüftung
   {

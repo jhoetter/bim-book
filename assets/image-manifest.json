@@ -1,4 +1,97 @@
 {
   "version": 1,
-  "images": []
+  "images": [
+    {
+      "file": "kap01_schichtenmodell.png",
+      "chapter": 1,
+      "part": "I",
+      "partTitle": "Teil I – Fundament",
+      "chapterTitle": "Architektur als System",
+      "type": "isometric",
+      "context": "generic",
+      "caption": "Ein Gebäude als vier Schichten mit unterschiedlichen Lebensdauern",
+      "tags": [
+        "schichtenmodell",
+        "systemdenken",
+        "kastanienallee7",
+        "lebensdauer"
+      ],
+      "chapterPath": "chapters/01-architektur-als-system",
+      "generated": "2026-05-18 07:41"
+    },
+    {
+      "file": "kap01_interdependenzen.png",
+      "chapter": 1,
+      "part": "I",
+      "partTitle": "Teil I – Fundament",
+      "chapterTitle": "Architektur als System",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Entscheidungen wandern zwischen den Schichten",
+      "tags": [
+        "interdependenzen",
+        "schichtenmodell",
+        "tga",
+        "grundriss"
+      ],
+      "chapterPath": "chapters/01-architektur-als-system",
+      "generated": "2026-05-18 07:43"
+    },
+    {
+      "file": "kap02_planarten.png",
+      "chapter": 2,
+      "part": "I",
+      "partTitle": "Teil I – Fundament",
+      "chapterTitle": "Entwurf, Raum und Funktion",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Grundriss, Schnitt, Ansicht und Detail zeigen dasselbe Gebäude mit unterschiedlicher Absicht",
+      "tags": [
+        "planarten",
+        "grundriss",
+        "schnitt",
+        "ansicht",
+        "detail"
+      ],
+      "chapterPath": "chapters/02-entwurf-raum-funktion",
+      "generated": "2026-05-18 07:45"
+    },
+    {
+      "file": "kap02_erschliessungstypen.png",
+      "chapter": 2,
+      "part": "I",
+      "partTitle": "Teil I – Fundament",
+      "chapterTitle": "Entwurf, Raum und Funktion",
+      "type": "comparison",
+      "context": "generic",
+      "caption": "Typische Erschließungssysteme im Geschosswohnungsbau",
+      "tags": [
+        "erschliessung",
+        "zweispänner",
+        "dreispänner",
+        "vierspänner",
+        "laubengang"
+      ],
+      "chapterPath": "chapters/02-entwurf-raum-funktion",
+      "generated": "2026-05-18 07:48"
+    },
+    {
+      "file": "kap02_av_verhaeltnis.png",
+      "chapter": 2,
+      "part": "I",
+      "partTitle": "Teil I – Fundament",
+      "chapterTitle": "Entwurf, Raum und Funktion",
+      "type": "comparison",
+      "context": "generic",
+      "caption": "Kompakte Baukörper haben weniger Hüllfläche je Volumen",
+      "tags": [
+        "av-verhältnis",
+        "kompaktheit",
+        "wärmeschutz",
+        "energie"
+      ],
+      "chapterPath": "chapters/02-entwurf-raum-funktion",
+      "generated": "2026-05-18 07:50"
+    }
+  ]
 }

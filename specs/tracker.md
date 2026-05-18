@@ -83,8 +83,8 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 | # | Titel | Teil | Status | Prio | Wörter (Ziel) |
 |---|-------|------|--------|------|----------------|
-| 1 | Architektur als System | I | `Open` | P0 | 2,800–3,200 |
-| 2 | Entwurf, Raum und Funktion | I | `Open` | P0 | 3,000–3,800 ↑ |
+| 1 | Architektur als System | I | `Entwurf` | P0 | 2,800–3,200 |
+| 2 | Entwurf, Raum und Funktion | I | `Entwurf` | P0 | 3,000–3,800 ↑ |
 | 3 | Baustoffe | II | `Open` | P1 | 3,000–3,500 |
 | 4 | Tragwerk: Lasten, Kräfte, Systeme | II | `Open` | P1 | 3,200–3,800 ↑ |
 | 5 | Konstruktion: Gründung, Wand, Decke, Dach | II | `Open` | P1 | 3,800–4,500 ↑ |
@@ -116,7 +116,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K01 — Architektur als System
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 2,800–3,200
 - **Kernfragen:**
   - Was macht ein Gebäude zu mehr als einem Haufen Steine?
@@ -153,7 +153,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ### K02 — Entwurf, Raum und Funktion
 
-- **Status:** `Open`
+- **Status:** `Entwurf`
 - **Zielwörter:** 3,000–3,800 ↑ (erhöht wegen Pläne-lesen-Block)
 - **Kernfragen:**
   - Wie liest man einen Architekturplan — was ist Grundriss, Schnitt, Ansicht, Detail?
