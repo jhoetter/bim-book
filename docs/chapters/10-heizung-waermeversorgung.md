@@ -62,6 +62,8 @@ tags: fernwärme, fbh, hydraulischer-abgleich, heizkreis
 -->
 ![Heizkreisschema](../assets/illustrations/kap10_heizkreis_schema.png)
 
+Das Schema zeigt die Verteilung im Gebäude. Im Raum selbst wird daraus ein Bauteilaufbau: Die Heizrohre liegen im Bodenpaket und müssen mit Estrich, Trittschall, Belag und Raumhöhe koordiniert werden.
+
 <!-- IMAGE
 name: kap10_fbh_aufbau
 type: section

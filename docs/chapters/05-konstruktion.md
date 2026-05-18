@@ -42,6 +42,8 @@ tags: wdvs, innenputz, armierungsputz, wandaufbau
 -->
 ![WDVS-Wandaufbau](../assets/illustrations/kap05_wandaufbau.png)
 
+Der Schichtaufbau erklärt die Fläche. Das Detail am Fenster zeigt die Stelle, an der diese Schichten nicht mehr parallel laufen, sondern an Rahmen, Laibung, Dichtung und Sonnenschutz anschließen müssen.
+
 <!-- IMAGE
 name: kap05_fensteranschluss
 type: section
