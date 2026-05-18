@@ -1400,14 +1400,24 @@ html, body, #root {
 
 /* ── Overview page (chapter grid) ────────────────────────────── */
 .overview-page {
-  padding: 48px 48px 80px;
-  max-width: 1400px;
-  margin: 0 auto;
+  height: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 48px 0 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
-@media (max-width: 960px) { .overview-page { padding: 32px 24px 64px; } }
-@media (max-width: 640px) { .overview-page { padding: 24px 16px 48px; } }
+@media (max-width: 960px) { .overview-page { padding-top: 32px; } }
+@media (max-width: 640px) { .overview-page { padding-top: 24px; } }
 
-.overview-header { margin-bottom: 40px; }
+.overview-header {
+  margin-bottom: 34px;
+  padding: 0 48px;
+  flex-shrink: 0;
+}
+@media (max-width: 960px) { .overview-header { padding: 0 24px; } }
+@media (max-width: 640px) { .overview-header { padding: 0 16px; } }
 .overview-title {
   font-size: 1.75rem;
   font-weight: 700;
@@ -1526,206 +1536,244 @@ html, body, #root {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
+.overview-card-badge {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: white;
+  font-size: 0.58rem;
+  font-weight: 750;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px hsl(222 24% 9% / 0.16);
+}
 .chapter-graph-section {
-  margin: 0 0 44px;
+  flex: 1;
+  min-height: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 .chapter-graph-head {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 12px;
+  flex-shrink: 0;
+  padding: 0 48px 14px;
 }
+@media (max-width: 960px) { .chapter-graph-head { padding-left: 24px; padding-right: 24px; } }
+@media (max-width: 640px) { .chapter-graph-head { padding-left: 16px; padding-right: 16px; } }
 .chapter-graph-summary {
   font-size: 0.8rem;
   color: var(--text-muted);
   margin-top: -6px;
 }
-.chapter-graph-legend {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  flex-wrap: wrap;
-  font-size: 0.72rem;
-  color: var(--text-faint);
-}
-.chapter-graph-legend span {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-.chapter-graph-legend-line {
-  width: 24px;
-  height: 2px;
-  background: var(--text-faint);
-  opacity: 0.55;
-}
-.chapter-graph-legend-node {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--accent);
-}
 .chapter-graph-panel {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 220px;
-  gap: 16px;
-  min-height: 420px;
+  flex: 1;
+  min-height: 0;
+  display: flex;
 }
 .chapter-graph-canvas {
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  border-top: 1px solid var(--border);
   background:
     linear-gradient(90deg, color-mix(in srgb, var(--border-soft) 70%, transparent) 1px, transparent 1px),
     linear-gradient(0deg, color-mix(in srgb, var(--border-soft) 70%, transparent) 1px, transparent 1px),
     var(--bg);
   background-size: 40px 40px;
   overflow: auto;
+  overscroll-behavior: contain;
 }
-.chapter-graph-canvas svg {
-  display: block;
+.chapter-graph-stage {
+  position: relative;
+  width: 1940px;
+  height: 1360px;
+}
+.chapter-graph-stage svg,
+.chapter-graph-card-layer {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  min-width: 760px;
-  height: auto;
+  height: 100%;
 }
-.chapter-graph-arrow {
-  fill: var(--text-faint);
-}
-.chapter-graph-edge {
-  fill: none;
-  stroke: var(--text-faint);
-  stroke-linecap: round;
-  opacity: 0.12;
-  transition: opacity var(--dur-fast), stroke var(--dur-fast);
-}
-.chapter-graph-edge--active {
-  opacity: 0.36;
-  stroke: var(--text-muted);
-}
-.chapter-graph-node {
-  cursor: pointer;
-  opacity: 0.32;
-  transition: opacity var(--dur-fast), filter var(--dur-fast);
-  outline: none;
-}
-.chapter-graph-node--active {
-  opacity: 1;
-}
-.chapter-graph-node:focus-visible circle:not(.chapter-graph-node-hit) {
-  stroke: var(--ink);
-  stroke-width: 3px;
-}
-.chapter-graph-node-hit {
-  fill: transparent;
-}
-.chapter-graph-node circle:not(.chapter-graph-node-hit) {
-  stroke: var(--bg);
-  stroke-width: 3px;
-  filter: drop-shadow(0 5px 10px hsl(220 20% 20% / 0.14));
-}
-.chapter-graph-node-num {
-  fill: white;
-  font-size: 13px;
-  font-weight: 700;
-  text-anchor: middle;
+.chapter-graph-stage svg {
+  display: block;
+  z-index: 1;
   pointer-events: none;
 }
-.chapter-graph-label {
-  fill: var(--text-faint);
-  font-size: 10px;
-  font-weight: 550;
-  opacity: 0.36;
-  transition: opacity var(--dur-fast), fill var(--dur-fast);
+.chapter-graph-card-layer {
+  z-index: 2;
 }
-.chapter-graph-label--active {
-  fill: var(--text);
-  opacity: 0.92;
+.chapter-graph-part {
+  opacity: 0.58;
+  transition: opacity var(--dur-base) var(--ease-base);
 }
-.chapter-graph-detail {
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  background: var(--bg);
-  padding: 16px;
-  min-height: 180px;
+.chapter-graph-part--active {
+  opacity: 1;
 }
-.chapter-graph-detail-kicker {
-  display: block;
-  font-size: 0.68rem;
-  font-weight: 650;
-  letter-spacing: 0.07em;
+.chapter-graph-part--dimmed {
+  opacity: 0.14;
+}
+.chapter-graph-part-band {
+  fill: none;
+  stroke: color-mix(in srgb, var(--accent) 15%, transparent);
+  stroke-width: 34px;
+  stroke-linecap: round;
+}
+.chapter-graph-part-label {
+  fill: color-mix(in srgb, var(--accent) 56%, var(--text-faint));
+  font-size: 12px;
+  font-weight: 760;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--text-faint);
-  margin-bottom: 8px;
 }
-.chapter-graph-detail h3 {
-  font-size: 1rem;
-  line-height: 1.3;
-  color: var(--ink);
-  margin-bottom: 16px;
+.chapter-graph-edge,
+.chapter-graph-edge-arrow {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: opacity var(--dur-fast), stroke var(--dur-fast);
 }
-.chapter-graph-detail dl {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
+.chapter-graph-edge-wrap {
+  stroke: var(--text-faint);
+  opacity: 0.07;
+  transition: opacity var(--dur-fast), stroke var(--dur-fast);
 }
-.chapter-graph-detail dt {
-  font-size: 0.68rem;
-  color: var(--text-faint);
-  margin-bottom: 4px;
+.chapter-graph-edge-wrap--idle {
+  opacity: 0.075;
 }
-.chapter-graph-detail dd {
-  font-size: 1.45rem;
-  font-weight: 700;
-  color: var(--ink);
+.chapter-graph-edge-wrap--incoming {
+  opacity: 0.74;
+  stroke: var(--thermal);
 }
-.chapter-graph-toplist {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.chapter-graph-edge-wrap--outgoing {
+  opacity: 0.9;
+  stroke: var(--accent);
 }
-.chapter-graph-toplist li {
-  display: grid;
-  grid-template-columns: 26px minmax(0, 1fr) 28px;
-  align-items: center;
-  gap: 8px;
-  min-width: 0;
+.chapter-graph-edge-wrap--dimmed {
+  opacity: 0.01;
 }
-.chapter-graph-toplist span {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: var(--bg-sidebar);
-  color: var(--text-muted);
-  font-size: 0.72rem;
-  font-weight: 700;
+.overview-card--graph {
+  position: absolute;
+  width: 152px;
+  min-height: 144px;
+  transform: translate(-50%, -50%) scale(var(--graph-zoom, 1));
+  transform-origin: center;
+  opacity: 0.22;
+  z-index: 1;
+  box-shadow: 0 12px 24px hsl(220 20% 18% / 0.08);
+  transition:
+    width var(--dur-slow) var(--ease-out),
+    min-height var(--dur-slow) var(--ease-out),
+    opacity var(--dur-fast),
+    box-shadow var(--dur-base) var(--ease-base),
+    border-color var(--dur-base) var(--ease-base),
+    transform var(--dur-base) var(--ease-base);
 }
-.chapter-graph-toplist strong {
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  color: var(--text);
+.overview-card--graph:hover {
+  transform: translate(-50%, calc(-50% - 2px)) scale(var(--graph-zoom, 1));
+}
+.overview-card--graph-active {
+  opacity: 1;
+  z-index: 2;
+}
+.overview-card--graph-entry {
+  border-color: color-mix(in srgb, var(--accent) 52%, var(--border));
+  box-shadow:
+    0 0 0 4px color-mix(in srgb, var(--accent) 12%, transparent),
+    0 18px 34px hsl(222 24% 9% / 0.14);
+}
+.overview-card--graph-hovered {
+  width: 240px;
+  min-height: 248px;
+  z-index: 20;
+  border-color: var(--accent);
+  box-shadow:
+    0 0 0 4px color-mix(in srgb, var(--accent) 16%, transparent),
+    0 18px 40px hsl(222 24% 9% / 0.16);
+}
+.overview-card--graph .overview-card-cover {
+  height: 72px;
+  transition: height var(--dur-slow) var(--ease-out);
+}
+.overview-card--graph-hovered .overview-card-cover {
+  height: 124px;
+}
+.overview-card--graph .overview-card-body {
+  min-height: 72px;
+  padding: 8px 9px 9px;
+  transition: min-height var(--dur-slow) var(--ease-out), padding var(--dur-slow) var(--ease-out);
+}
+.overview-card--graph-hovered .overview-card-body {
+  min-height: 124px;
+  padding: 10px 12px 12px;
+}
+.overview-card--graph .overview-card-icon {
+  bottom: 6px;
+  left: 7px;
+  padding: 5px;
+}
+.overview-card--graph .overview-card-icon svg {
+  width: 20px;
+  height: 20px;
+}
+.overview-card--graph .overview-card-num {
+  font-size: 0.66rem;
+}
+.overview-card--graph .overview-card-title {
   font-size: 0.78rem;
-  font-weight: 600;
+  line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
-.chapter-graph-toplist em {
-  color: var(--text-faint);
-  font-size: 0.72rem;
-  font-style: normal;
-  text-align: right;
+.overview-card--graph-hovered .overview-card-title {
+  font-size: 0.92rem;
+  line-height: 1.25;
+}
+.overview-card--graph-hovered .overview-card-desc {
+  font-size: 0.78rem;
+  line-height: 1.42;
+  -webkit-line-clamp: 4;
 }
 @media (max-width: 1100px) {
-  .chapter-graph-panel { grid-template-columns: 1fr; }
-  .chapter-graph-detail { min-height: 0; }
+  .chapter-graph-panel { min-height: 0; }
 }
-@media (max-width: 640px) {
-  .chapter-graph-head { align-items: flex-start; flex-direction: column; }
-  .chapter-graph-canvas svg { min-width: 700px; }
+
+.chapter-graph-zoom {
+  position: sticky;
+  top: 12px;
+  left: 14px;
+  z-index: 30;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  margin: 12px 0 -48px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(10px);
+}
+.chapter-graph-zoom button {
+  min-width: 32px;
+  height: 28px;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-muted);
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.chapter-graph-zoom button:hover {
+  background: var(--bg-hover);
+  color: var(--text);
 }
 
 /* ── Gallery page ─────────────────────────────────────────────── */

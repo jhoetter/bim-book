@@ -84,7 +84,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 | # | Titel | Teil | Status | Prio | Wörter (Ziel) |
 |---|-------|------|--------|------|----------------|
 | 1 | Architektur als System | I | `Entwurf` | P0 | 2,800–3,200 |
-| 2 | Entwurf, Raum und Funktion | I | `Entwurf` | P0 | 3,000–3,800 ↑ |
+| 2 | Entwurf, Raum und Funktion | I | `Entwurf` | P0 | 4,200–5,000 ↑↑ |
 | 3 | Baustoffe | II | `Entwurf` | P1 | 3,000–3,500 |
 | 4 | Tragwerk: Lasten, Kräfte, Systeme | II | `Entwurf` | P1 | 3,200–3,800 ↑ |
 | 5 | Konstruktion: Gründung, Wand, Decke, Dach | II | `Entwurf` | P1 | 3,800–4,500 ↑ |
@@ -154,9 +154,11 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 ### K02 — Entwurf, Raum und Funktion
 
 - **Status:** `Entwurf`
-- **Zielwörter:** 3,000–3,800 ↑ (erhöht wegen Pläne-lesen-Block)
+- **Zielwörter:** 4,200–5,000 ↑↑ (erhöht wegen Pläne-lesen-Block + räumliche Entwurfsgrundlagen)
 - **Kernfragen:**
   - Wie liest man einen Architekturplan — was ist Grundriss, Schnitt, Ansicht, Detail?
+  - Welche ersten Prinzipien räumlichen Entwerfens muss man kennen?
+  - Wie werden Formen transformiert und Räume zueinander organisiert?
   - Wie entsteht ein Grundriss — welche Kräfte wirken auf ihn ein?
   - Was macht gute Raumplanung aus (Proportion, Orientierung, Erschließung)?
   - Was schreibt der Bebauungsplan vor, bevor der Stift ansetzt?
@@ -165,25 +167,30 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 - **Pflichtabschnitte (H2):**
   - 2.0 Architekturpläne lesen ⚠️ NEU — **für Einsteiger kritisch, für Architekten selbstverständlich**: was ist ein Grundriss (horizontaler Schnitt, ~1,00 m Schnitthöhe), was ist ein Schnitt (vertikaler Schnitt), was ist eine Ansicht (Außenansicht ohne Schnitt), was ist ein Detail (Maßstab 1:10/1:5); Maßstäbe und wann man welchen nutzt (1:100 Grundriss, 1:50 Schnitt, 1:20/1:10 Detail); was gestrichelt vs. durchgezogen bedeutet; Nordreil und Orientierung; Legende; — ohne dieses Verständnis ist der Rest des Buches für Quereinsteiger schwer lesbar
-  - 2.1 Was der Bebauungsplan vorgibt — GRZ, GFZ (Formeln + Beispielrechnung), MBO Gebäudeklassen; Abstandsflächen kurz; B-Plan lesen als Kompetenz
-  - 2.2 Raumplanung: Proportion und Maßstab — Neufert-Grundprinzipien: der Mensch als Maß; Mindest-Deckenhöhen (2,50 m WR, 2,75 m Büro); Türbreiten (0,875 m lichte Breite Standard, 0,90 m barrierefrei); Zimmerproportionen; Möblierbarkeit als Prüfkriterium
-  - 2.3 Erschließungstypen — Zweispänner, Dreispänner, Vierspänner, Laubengang; Tabelle mit: Orientierung, Erschließungsflächenanteil, wirtschaftliche Eignung; DIN 18065 Treppenmaße kurz
-  - 2.4 Barrierefreiheit als Entwurfsprinzip — DIN 18040-2 (Wohngebäude): Wendefläche ≥ 1,50 × 1,50 m, schwellenlose Zugänge, Aufzugmaße (min. 1,10 × 1,40 m Kabine), Türlichtes Maß 0,90 m; Barrierefreiheit als Qualitätsmerkmal, nicht Zusatz
-  - 2.5 Kompaktheit und A/V-Verhältnis — Formel, Beispielrechnung K7, Vergleich EFH, Bedeutung für Energieeffizienz → Vorausgriff Kap. 6
+  - 2.1 Raum, Form und Transformation ⚠️ NEU — Architektur als Gestaltung bewohnbarer Räume, nicht nur Objektform; Primärformen/Volumen (Quader, Zylinder, Kugel/Pyramide als didaktische Grundkörper); geometrische Transformationen: Translation, Rotation, Spiegelung, Array/Wiederholung, Skalierung/Dehnung; additive und subtraktive Transformationen (Anfügen, Einschneiden, Aushöhlen, Durchdringen); immer mit Hinweis: formale Transformation darf nicht Selbstzweck bleiben, sondern muss auf Nutzung, Kontext, Licht, Konstruktion und Maßstab reagieren
+  - 2.2 Raumbeziehungen und Komposition ⚠️ NEU — Raum-in-Raum, angrenzende Räume, überlappende/interlockende Räume, verknüpfte Räume; Organisationsprinzipien: zentral, linear, radial, Cluster, Raster; Ordnungsprinzipien: Achse, Symmetrie, Hierarchie, Rhythmus, Wiederholung; räumliche Kräfte: menschlicher Körper, Boden/Gravitation, Licht/Sonne, Blickbezug innen-außen, Wind/Lüftung, Bewegung/Zirkulation, Funktion und Hülle
+  - 2.3 Was der Bebauungsplan vorgibt — GRZ, GFZ (Formeln + Beispielrechnung), MBO Gebäudeklassen; Abstandsflächen kurz; B-Plan lesen als Kompetenz
+  - 2.4 Raumplanung: Proportion und Maßstab — Neufert-Grundprinzipien: der Mensch als Maß; Mindest-Deckenhöhen (2,50 m WR, 2,75 m Büro); Türbreiten (0,875 m lichte Breite Standard, 0,90 m barrierefrei); Zimmerproportionen; Möblierbarkeit als Prüfkriterium
+  - 2.5 Erschließungstypen — Zweispänner, Dreispänner, Vierspänner, Laubengang; Tabelle mit: Orientierung, Erschließungsflächenanteil, wirtschaftliche Eignung; DIN 18065 Treppenmaße kurz
+  - 2.6 Barrierefreiheit als Entwurfsprinzip — DIN 18040-2 (Wohngebäude): Wendefläche ≥ 1,50 × 1,50 m, schwellenlose Zugänge, Aufzugmaße (min. 1,10 × 1,40 m Kabine), Türlichtes Maß 0,90 m; Barrierefreiheit als Qualitätsmerkmal, nicht Zusatz
+  - 2.7 Kompaktheit und A/V-Verhältnis — Formel, Beispielrechnung K7, Vergleich EFH, Bedeutung für Energieeffizienz → Vorausgriff Kap. 6
 
 - **Einzuführende Begriffe:** `grz`, `gfz`, `mbo` (bereits in terms-registry gesetzt)
 
-- **Bilder (min. 4):**
+- **Bilder (min. 6):**
   - `kap02_planarten` — Erklärungsdiagramm, landscape ⚠️ NEU — vier Darstellungen desselben K7-Ausschnitts: Grundriss, Schnitt, Ansicht, Detail; je mit Maßstab und Schnittlage-Annotation; weißer Hintergrund
+  - `kap02_formtransformationen` — Diagramm, landscape ⚠️ NEU — Grundkörper/Quader mit Transformationen: verschieben, drehen, spiegeln, skalieren, addieren, subtrahieren; je als kleiner räumlicher Schritt mit Pfeil, weißer Hintergrund
+  - `kap02_raumorganisation` — Diagramm, landscape ⚠️ NEU — sechs räumliche Organisationsprinzipien: zentral, linear, radial, Cluster, Raster, Raum-in-Raum; klare kleine Grundriss-/Volumen-Schemata, weißer Hintergrund
   - `kap02_grundriss_eg` — Grundriss (bereits vorhanden als .png) — EG K7, Vierspänner, Maßketten, Wohnungsbezeichnungen
   - `kap02_erschliessungstypen` — Vergleichsdiagramm, landscape — Zwei-/Drei-/Vierspänner nebeneinander, schematisch, Erschließungsfläche farblich, weißer Hintergrund
   - `kap02_av_verhaeltnis` — Vergleich, landscape — kompakter vs. verzweigter Baukörper mit A/V-Kennwerten (bereits spezifiziert in alter Version), weißer Hintergrund
 
 - **Kastanienallee-Boxen:**
-  - nach 2.1: GRZ 0,60 / GFZ 2,4 / GK 4 nach MBO — Rechenweg vollständig
-  - nach 2.3: Vierspänner, Windfang Südseite, drei Wohnungstypen je Geschoss
-  - nach 2.4: Aufzugspflicht K7 — GK 4, 4 Vollgeschosse → Art. 37 BayBO: Aufzug zwingend; 1 Aufzug im Treppenhauskern; Kabine 1,10 × 1,40 m lichte Maße (DIN 18040-2 barrierefrei); Schacht ca. 1,80 × 2,20 m Außenmaß Stahlbeton; Grubenmaß 1,10 m → Kellergeschoss notwendig; maschinenraumlos (MRL) nach DIN EN 81-20
-  - nach 2.5: A/V ≈ 0,38 m⁻¹, Berechnung, Vergleich mit EFH > 0,8 m⁻¹
+  - nach 2.2: K7 als Kombination aus Raster, zentralem Kern, linearem Zugang und Hof-/Straßenbezug; 6×6-m-Tragraster und Vierspänner als räumliche Komposition
+  - nach 2.3: GRZ 0,60 / GFZ 2,4 / GK 4 nach MBO — Rechenweg vollständig
+  - nach 2.5: Vierspänner, Windfang Südseite, drei Wohnungstypen je Geschoss
+  - nach 2.6: Aufzugspflicht K7 — GK 4, 4 Vollgeschosse → Art. 37 BayBO: Aufzug zwingend; 1 Aufzug im Treppenhauskern; Kabine 1,10 × 1,40 m lichte Maße (DIN 18040-2 barrierefrei); Schacht ca. 1,80 × 2,20 m Außenmaß Stahlbeton; Grubenmaß 1,10 m → Kellergeschoss notwendig; maschinenraumlos (MRL) nach DIN EN 81-20
+  - nach 2.7: A/V ≈ 0,38 m⁻¹, Berechnung, Vergleich mit EFH > 0,8 m⁻¹
 
 - **BIM-Brücke:** `IfcSpace` (Raumfläche nach DIN 277); Raumprogramm als Datenanforderung; GFZ-Prüfung automatisierbar aus `IfcBuilding` + `IfcSite`; → Kap. 18, 19
 
@@ -644,26 +651,30 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 - **Status:** `Entwurf`
 - **Zielwörter:** 2,800–3,200
 - **Kernfragen:**
+  - Wie denken Architekten in Problemen, Alternativen und Kriterien?
   - Wie ist ein Bauprojekt organisiert — wer macht was wann?
   - Was leisten die 9 HOAI-Phasen, und warum sind sie so aufgeteilt?
   - Wie passt BIM in die Leistungsphasen?
 
 - **Pflichtabschnitte (H2):**
-  - 15.1 Die neun Leistungsphasen — LP 1 (Grundlagenermittlung), LP 2 (Vorplanung, Kostenschätzung DIN 276), LP 3 (Entwurfsplanung, Kostenberechnung), LP 4 (Genehmigungsplanung, Bauantrag), LP 5 (Ausführungsplanung — die meiste Arbeit, Werkpläne), LP 6 (Vorbereitung Vergabe, LV), LP 7 (Mitwirkung Vergabe), LP 8 (Bauoberleitung — Baustelle), LP 9 (Objektbetreuung, Gewährleistung); je Phase: Ergebnis, beteiligte Fachplaner
-  - 15.2 Honorarberechnung — anrechenbare Kosten (Bau + TGA, nicht Grundstück), Honorarzonen I–V, Mindestsatz; Beispielrechnung K7
-  - 15.3 Fachplaner und ihre Rollen — Tragwerksplanung (LP 2–6), TGA (LP 2–8 je Gewerk), Brandschutz (LP 2–4 + 8), Bauphysik (LP 2–5); wer koordiniert wen (Objektplaner Architekt als Koordinator)
-  - 15.4 BIM in den Leistungsphasen — LOD 100 (LP 1), LOD 200 (LP 2–3), LOD 300 (LP 5), LOD 400 (Ausführung/Vergabe), LOD 500 (as-built); AIA (Auftraggeber-Informations-Anforderungen) als Steuerungsinstrument; BIM-Manager als neue Rolle
-  - 15.5 BIM-Ausführungsplan (BAP/BEP): Inhalt und Struktur ⚠️ NEU — der BAP ist das zentrale Steuerungsdokument eines BIM-Projekts; typische Kapitelstruktur: (1) Projektziele und BIM-Anwendungsfälle, (2) Modellstruktur und Namenskonventionen (Koordinatenursprung, Dateibenennungsschema), (3) LOD-Matrix je Disziplin und Leistungsphase, (4) Software und Dateiformate (IFC-Version, MVD, Exporteinstellungen), (5) CDE-Nutzungsvereinbarungen (Statusworkflow, Benennung nach ISO 19650), (6) Qualitätssicherung (wer prüft was wann — Kollisionsrunde, Modellkoordination), (7) Rollen und Verantwortlichkeiten (BIM-Manager, BIM-Koordinator je Gewerk, BIM-Autoren); Erstellung: AG-seitig AIA → AN-seitig BAP als Antwort darauf; Zeitpunkt: BAP fertig vor LP 3-Start; Praxisproblem: BAP-Vorlage oft copy-paste aus Vorprojekt ohne Anpassung
+  - 15.1 Entwerfen als Problem-Suchprozess ⚠️ NEU — Entwerfen nicht als persönliche Formidee, sondern als Problem Seeking + Problem Solving; Schritte: Recherche, Problemdefinition, Alternativen entwickeln, Alternativen bewerten, Auswahl/Synthese, Kommunikation; Problemdefinition darf Lösung nicht schon vorwegnehmen; Stakeholder, Maßstabsebenen und interdisziplinäre Perspektiven einbeziehen; mindestens drei Alternativen entwickeln; Kriterienmatrix nutzen; Ergebnis kommunizierbar machen
+  - 15.2 Die neun Leistungsphasen — LP 1 (Grundlagenermittlung), LP 2 (Vorplanung, Kostenschätzung DIN 276), LP 3 (Entwurfsplanung, Kostenberechnung), LP 4 (Genehmigungsplanung, Bauantrag), LP 5 (Ausführungsplanung — die meiste Arbeit, Werkpläne), LP 6 (Vorbereitung Vergabe, LV), LP 7 (Mitwirkung Vergabe), LP 8 (Bauoberleitung — Baustelle), LP 9 (Objektbetreuung, Gewährleistung); je Phase: Ergebnis, beteiligte Fachplaner
+  - 15.3 Honorarberechnung — anrechenbare Kosten (Bau + TGA, nicht Grundstück), Honorarzonen I–V, Mindestsatz; Beispielrechnung K7
+  - 15.4 Fachplaner und ihre Rollen — Tragwerksplanung (LP 2–6), TGA (LP 2–8 je Gewerk), Brandschutz (LP 2–4 + 8), Bauphysik (LP 2–5); wer koordiniert wen (Objektplaner Architekt als Koordinator)
+  - 15.5 BIM in den Leistungsphasen — LOD 100 (LP 1), LOD 200 (LP 2–3), LOD 300 (LP 5), LOD 400 (Ausführung/Vergabe), LOD 500 (as-built); AIA (Auftraggeber-Informations-Anforderungen) als Steuerungsinstrument; BIM-Manager als neue Rolle
+  - 15.6 BIM-Ausführungsplan (BAP/BEP): Inhalt und Struktur ⚠️ NEU — der BAP ist das zentrale Steuerungsdokument eines BIM-Projekts; typische Kapitelstruktur: (1) Projektziele und BIM-Anwendungsfälle, (2) Modellstruktur und Namenskonventionen (Koordinatenursprung, Dateibenennungsschema), (3) LOD-Matrix je Disziplin und Leistungsphase, (4) Software und Dateiformate (IFC-Version, MVD, Exporteinstellungen), (5) CDE-Nutzungsvereinbarungen (Statusworkflow, Benennung nach ISO 19650), (6) Qualitätssicherung (wer prüft was wann — Kollisionsrunde, Modellkoordination), (7) Rollen und Verantwortlichkeiten (BIM-Manager, BIM-Koordinator je Gewerk, BIM-Autoren); Erstellung: AG-seitig AIA → AN-seitig BAP als Antwort darauf; Zeitpunkt: BAP fertig vor LP 3-Start; Praxisproblem: BAP-Vorlage oft copy-paste aus Vorprojekt ohne Anpassung
 
 - **Einzuführende Begriffe:** `hoai`, `lod`, `bap`
 
 - **Bilder (min. 2):**
+  - `kap15_entwurfsprozess` — Flussdiagramm, landscape ⚠️ NEU — Recherche → Problemdefinition → Alternativen → Bewertung → Auswahl/Synthese → Kommunikation; Rückkopplungspfeile und Kriterienmatrix-Ausschnitt, weißer Hintergrund
   - `kap15_leistungsphasen` — Zeitstrahl, landscape — LP 1–9 als Balken mit Ergebnis je Phase, Fachplaner-Beteiligung als farbige Linien darunter, weißer Hintergrund
   - `kap15_bim_lod` — Progression, landscape — Gebäudemodell K7 in LOD 100/200/300/500 nebeneinander, zunehmender Detailgrad sichtbar, weißer Hintergrund
 
 - **Kastanienallee-Boxen:**
-  - nach 15.1: Projektzeitplan K7 — LP 1 (3 Monate), LP 2–3 (4 Monate), LP 4 (2 Monate Genehmigung + 8 Monate Wartezeit), LP 5 (6 Monate), LP 6–7 (3 Monate), LP 8 (14 Monate Bauzeit), LP 9 (5 Jahre)
-  - nach 15.4: AIA K7 — welches Modell in welcher LP, LOD-Anforderungen je Disziplin
+  - nach 15.1: Drei frühe Entwurfsalternativen K7 (kompakter Vierspänner, Laubengang, Hofhaus) mit Kriterienmatrix: Wohnqualität, Genehmigungsrisiko, Kosten, Energie, TGA-Koordination
+  - nach 15.2: Projektzeitplan K7 — LP 1 (3 Monate), LP 2–3 (4 Monate), LP 4 (2 Monate Genehmigung + 8 Monate Wartezeit), LP 5 (6 Monate), LP 6–7 (3 Monate), LP 8 (14 Monate Bauzeit), LP 9 (5 Jahre)
+  - nach 15.5: AIA K7 — welches Modell in welcher LP, LOD-Anforderungen je Disziplin
 
 - **BIM-Brücke:** LOD-Konzept zentral; AIA/EIR als Informationsanforderungen; BIM-Manager vs. BIM-Koordinator; → Kap. 17, 20
 

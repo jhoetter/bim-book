@@ -10,8 +10,8 @@ Ein Grundriss sieht für geübte Augen ruhig aus: Linien, Zahlen, Türen, Möbel
 
 !!! ziel "Nach diesem Kapitel können Sie …"
     - Grundriss, Schnitt, Ansicht und Detail voneinander unterscheiden und ihre Maßstäbe einordnen
-    - GRZ, GFZ und Gebäudeklasse mit Formel und Beispielrechnung erklären
-    - Erschließung, Barrierefreiheit und Kompaktheit als Entwurfsentscheidungen bewerten
+    - räumliche Transformationen und Organisationsprinzipien im Entwurf erkennen
+    - Erschließung, Barrierefreiheit, Planungsrecht und Kompaktheit als Entwurfsentscheidungen bewerten
 
 ## 2.0 Architekturpläne lesen
 
@@ -43,7 +43,62 @@ tags: planarten, grundriss, schnitt, ansicht, detail
 -->
 ![Planarten im Vergleich](../assets/illustrations/kap02_planarten.png)
 
-## 2.1 Was der Bebauungsplan vorgibt
+## 2.1 Raum, Form und Transformation
+
+Architektur entwirft nicht zuerst Fassaden, sondern bewohnbare Räume. Eine Wand, ein Dach oder eine Stütze ist nie nur ein Objekt; sie begrenzt, öffnet, verbindet oder gliedert Raum. Darin unterscheidet sich Architektur von Malerei oder Skulptur: Sie erzeugt keine bloße Vorstellung von Raum, sondern eine Situation, in der Menschen gehen, sitzen, warten, arbeiten, schlafen, sehen und gehört werden.
+
+Am Anfang vieler Entwurfsübungen stehen einfache Körper: Quader, Zylinder, Pyramide, Kugel oder Platte. Diese Grundkörper sind keine fertige Architektur, aber sie helfen, räumliche Operationen zu verstehen. Ein Quader kann verschoben, gedreht, gespiegelt, wiederholt, gedehnt, eingeschnitten oder erweitert werden. Der Entwurf beginnt dann nicht mit beliebiger Form, sondern mit nachvollziehbaren Veränderungen.
+
+Translation bedeutet, einen Körper im Raum zu verschieben. Das klingt banal, ist aber eine der häufigsten Entwurfsoperationen: Ein Baukörper rückt von der Straße zurück, ein Kern verschiebt sich aus der Mitte, ein Fensterband wandert an eine Ecke. Rotation dreht eine Form um einen Punkt oder eine Achse. Sie kann Orientierung erzeugen, eine Ecke öffnen oder einen Baukörper auf Sonne, Aussicht oder Stadtraum ausrichten. Spiegelung erzeugt Symmetrie oder Paarung, etwa zwei gleiche Gebäudeflügel um eine Achse.
+
+Wiederholung und Array erzeugen Ordnung. Räume können entlang eines Flurs gereiht, um einen Hof gruppiert oder in einem Raster verteilt werden. Skalierung verändert Höhe, Breite oder Tiefe eines Körpers. Ein Kubus wird zum langen Riegel, eine kompakte Halle zum hohen Turm, eine niedrige Platte zum städtischen Sockel. Dabei bleibt die Formfamilie lesbar, aber ihre räumliche Wirkung ändert sich.
+
+Additive Transformation fügt Volumen hinzu. Ein Eingangsbaukörper hängt am Haupthaus, ein Treppenhaus tritt als eigener Kern hervor, eine Loggia ergänzt den Wohnraum. Subtraktive Transformation nimmt Volumen weg: Hof, Atrium, Einschnitt, Arkade, Dachterrasse, Durchgang. Begriffe wie Schneiden, Aushöhlen, Einschieben oder Anlagern beschreiben keine Dekoration, sondern räumliche Entscheidungen.
+
+Wichtig ist die Grenze dieser formalen Sprache. Ein Körper darf nicht nur deshalb gedreht werden, weil es im Modell interessant aussieht. Jede Transformation muss auf Kräfte reagieren: Grundstück, Sonne, Blick, Wind, Lärm, Erschließung, Tragwerk, Technik, Funktion und menschlicher Maßstab. Reine Formspielerei wird schnell beliebig. Gute Transformation macht eine räumliche Absicht lesbar.
+
+Das ist besonders für digitale Werkzeuge wichtig. Ein 3D-Programm macht Transformationen mühelos: kopieren, drehen, skalieren, deformieren, ausschneiden. Die Leichtigkeit der Operation darf aber nicht mit Entwurfstiefe verwechselt werden. Architekturstudierende lernen im Zeichnen und Modellbau nicht nur Darstellung, sondern Widerstand: Maßstab, Material, Schwerpunkt, Schatten, Handhabung. Digitale Modelle brauchen dieselbe Disziplin. Jede Operation sollte als räumliche Frage formulierbar sein: Was wird geöffnet, was wird geschützt, welcher Weg entsteht, welche Grenze verschiebt sich?
+
+<!-- IMAGE
+name: kap02_formtransformationen
+type: diagram
+size: landscape
+desc: Technisches Diagramm räumlicher Formtransformationen mit einem einfachen Quader als Ausgangsform. Sechs kleine Sequenzen mit Pfeilen: Translation verschiebt den Quader, Rotation dreht ihn, Spiegelung an einer Achse, Skalierung zu einem längeren Riegel, additive Transformation mit angefügtem Volumen, subtraktive Transformation mit eingeschnittenem Hof. Deutsche Labels, klare schwarze Linien, dezente Akzentfarben, weißer Hintergrund, keine Personen.
+caption: Räumliche Transformationen verändern Grundkörper zu Entwurfsformen
+tags: entwurf, formtransformation, rotation, translation, subtraktion
+-->
+![Formtransformationen im Entwurf](../assets/illustrations/kap02_formtransformationen.png)
+
+## 2.2 Raumbeziehungen und Komposition
+
+Architekten entwerfen selten einzelne Räume isoliert. Entscheidend ist, wie Räume zueinander stehen. Ein Raum kann in einem anderen liegen, etwa ein kleiner Sanitärkern in einer großen Halle. Zwei Räume können angrenzen und durch eine Tür, Öffnung oder Schwelle verbunden sein. Räume können sich überlappen, sodass ein gemeinsamer Bereich entsteht. Sie können getrennt sein und über einen Zwischenraum, Flur, Hof oder Steg verknüpft werden.
+
+Diese Beziehungen erzeugen Komposition. Eine zentrale Organisation ordnet kleinere Räume um einen dominanten Mittelpunkt: Hof, Halle, Atrium, Treppenraum oder Platz. Eine lineare Organisation reiht Räume entlang eines Wegs. Eine radiale Organisation kombiniert Zentrum und Arme. Eine Clusterorganisation gruppiert Räume nach Nähe, Funktion oder Identität. Ein Raster ordnet Räume, Stützen, Fassaden und Technik über wiederholte Maße.
+
+Zu diesen Organisationsformen kommen Ordnungsprinzipien. Eine Achse gibt Richtung und Bezug. Symmetrie erzeugt Gleichgewicht, kann aber auch starr wirken. Hierarchie unterscheidet wichtige und untergeordnete Räume. Rhythmus entsteht durch Wiederholung und Variation: Stütze, Fenster, Raum, Tür, Fuge. Wiederholung schafft Lesbarkeit; Abweichung kann Bedeutung markieren.
+
+Räumliche Komposition wird durch Kräfte geprüft. Der Körper braucht Maßstab: Ein Raum muss zum Menschen passen, nicht nur zum Bildschirm. Gravitation gibt oben und unten vor; ein Gebäude steht auf dem Boden, gräbt sich ein oder hebt sich ab. Licht macht Raum sichtbar und verändert ihn im Tageslauf. Der Blick nach außen verbindet Innenraum und Umgebung. Wind und natürliche Lüftung können Räume kühlen oder belasten. Bewegung erzeugt Erinnerung: Man muss verstehen, woher man kommt und wohin man geht.
+
+Funktion ist dabei nicht der Feind von Raum, sondern eine seiner Kräfte. Ein Wohnraum braucht Licht, Möbel und Ausblick; ein Bad braucht Schacht, Abdichtung und Privatheit; ein Treppenhaus braucht Orientierung und Rettungsweg. Die Hülle begrenzt diese Räume und vermittelt zwischen innen und außen. Entwurf entsteht, wenn solche Kräfte nicht nacheinander addiert, sondern räumlich synthetisiert werden.
+
+Ein Entwurfsdiagramm ist deshalb nie nur eine Skizze. Es ist eine Behauptung über Beziehungen: hier ist Zentrum, dort Rand; hier Bewegung, dort Ruhe; hier Öffentlichkeit, dort Privatheit; hier schwere Masse, dort Öffnung. Gute Diagramme sind einfach genug, um Entscheidungen sichtbar zu machen, und offen genug, um später mit Konstruktion, Technik und Recht verbunden zu werden. Schlechte Diagramme bleiben abstrakt und überleben den Kontakt mit Nutzung und Bauphysik nicht.
+
+<!-- IMAGE
+name: kap02_raumorganisation
+type: diagram
+size: landscape
+desc: Übersicht räumlicher Organisationsprinzipien als sechs kleine Grundriss- und Volumenschemata: zentral um einen Hof, linear entlang eines Flurs, radial mit Zentrum und Armen, Cluster aus nahen Raumzellen, regelmäßiges Raster aus Feldern, Raum-in-Raum mit kleinem Kern in großer Halle. Deutsche Labels, Pfeile für Bewegung, dezente Farbakzente, weißer Hintergrund, technisch-clean.
+caption: Raumorganisation ordnet Beziehungen zwischen Räumen
+tags: raumorganisation, achse, raster, cluster, zentralraum
+-->
+![Raumorganisation und Komposition](../assets/illustrations/kap02_raumorganisation.png)
+
+!!! kastanienallee "Kastanienallee 7"
+    Kastanienallee 7 kombiniert mehrere Organisationsprinzipien. Das Tragwerk folgt einem regelmäßigen Raster von ca. 6,0 m × 6,0 m. Der Treppenhaus- und Aufzugskern bildet ein zentrales Orientierungselement. Die vier Wohnungen je Geschoss sind als Cluster um diesen Kern organisiert. Der Eingang mit Windfang erzeugt eine lineare Sequenz von Straße zu Treppenraum. Die Hof- und Straßenseite ordnen Blick, Licht und Lärm. Der Entwurf ist damit kein einzelnes Formmotiv, sondern eine Überlagerung aus Raster, Zentrum, Bewegung, Orientierung und Nutzung.
+
+    Diese Lesart hilft auch bei späteren Änderungen. Wenn eine Wohnung größer, ein Schacht verschoben oder der Eingang anders gelegt wird, betrifft das nicht nur eine Fläche, sondern das Verhältnis von Raster, Kern, Bewegung und Tageslicht. Genau deshalb ist räumliche Komposition ein Prüfwerkzeug, nicht nur eine Entwurfsvokabel im Planungsalltag, in Variantenstudien und in späteren digitalen Modellprüfungen.
+
+## 2.3 Was der Bebauungsplan vorgibt
 
 Bevor ein Grundriss schön, effizient oder möblierbar sein kann, muss er baurechtlich möglich sein. Der Bebauungsplan legt fest, was auf einem Grundstück gebaut werden darf: Art der Nutzung, überbaubare Fläche, Zahl der Vollgeschosse, Baugrenzen, Dachform, manchmal Stellplätze, Begrünung oder Materialien. Für den Entwurf sind vor allem zwei Kennwerte wichtig.
 
@@ -66,7 +121,7 @@ Der häufige Anfängerfehler besteht darin, ::GRZ:: und ::GFZ:: isoliert zu rech
 
     Gebäudeklasse: 4 Vollgeschosse, oberster Aufenthaltsraum unter 13 m, Nutzung als Mehrfamilienhaus. Einordnung: Gebäudeklasse 4 nach Systematik der ::MBO:: beziehungsweise der Landesbauordnung. Die brandschutztechnischen Folgen werden in [Kapitel 9](/chapters/09-brandschutz) vertieft.
 
-## 2.2 Raumplanung: Proportion und Maßstab
+## 2.4 Raumplanung: Proportion und Maßstab
 
 Gute Raumplanung beginnt beim menschlichen Maß. Türen, Flure, Möbel, Bewegungsflächen, Blickachsen und Fensterbrüstungen sind nicht abstrakt; sie werden mit Körpern benutzt. Die klassische Entwurfslehre, etwa bei Neufert, sammelt solche Maße nicht als starre Rezepte, sondern als Erfahrungswerte für Benutzbarkeit.
 
@@ -84,7 +139,7 @@ Zur Raumplanung gehört auch Orientierung. Wohnräume profitieren von Tageslicht
 
 Maßstab bedeutet schließlich, dass ein Gebäude auf mehreren Ebenen funktionieren muss. Der Stadtmaßstab fragt nach Baukörper, Adresse und Nachbarschaft. Der Gebäudemaßstab fragt nach Erschließung, Struktur und Nutzungseinheiten. Der Raummaßstab fragt nach Proportion, Möbeln und Licht. Der Detailmaßstab fragt nach Fuge, Griffhöhe, Schwelle und Anschluss. Gute Planung verliert keine dieser Ebenen aus dem Blick.
 
-## 2.3 Erschließungstypen
+## 2.5 Erschließungstypen
 
 Erschließung ist der Weg vom öffentlichen Raum zur Nutzungseinheit: Straße, Eingang, Windfang, Treppe, Aufzug, Flur, Wohnungstür. Im Wohnungsbau entscheidet sie stark über Wirtschaftlichkeit, Orientierung und Wohnqualität. Jeder Quadratmeter Erschließungsfläche kostet Geld, wird aber nicht direkt als Wohnraum genutzt.
 
@@ -126,7 +181,7 @@ tags: erschliessung, zweispänner, dreispänner, vierspänner, laubengang
 !!! kastanienallee "Kastanienallee 7"
     Kastanienallee 7 ist als Vierspänner organisiert. Ein zentraler Kern mit Treppe und Aufzug erschließt je Geschoss vier Wohnungen. Der Windfang liegt auf der Südseite, damit Eingang, Briefkästen und Treppenhaus klar adressiert sind. Je Vollgeschoss entstehen drei Wohnungstypen: eine 2-Zimmer-Wohnung mit ca. 55 m², eine 3-Zimmer-Wohnung mit ca. 75 m² und eine 4-Zimmer-Wohnung mit ca. 95 m²; über 4 Vollgeschosse ergibt das 4 + 4 + 4 = 12 Wohneinheiten. Die Wirtschaftlichkeit entsteht aus einem kompakten Kern, die Qualität aus Ecklagen, kurzen Wegen und klaren Installationszonen.
 
-## 2.4 Barrierefreiheit als Entwurfsprinzip
+## 2.6 Barrierefreiheit als Entwurfsprinzip
 
 Barrierefreiheit ist keine Sonderausstattung für wenige Nutzer. Sie ist ein Qualitätsprinzip, das Gebäude robuster macht: für ältere Menschen, Kinderwagen, temporäre Verletzungen, Lieferungen, Möbeltransport und Pflege. Wer Barrierefreiheit erst am Ende "nachrüstet", findet meist keinen Platz mehr.
 
@@ -141,7 +196,7 @@ Entwurflich ist Barrierefreiheit am günstigsten, wenn sie im Grundriss steckt. 
 !!! kastanienallee "Kastanienallee 7"
     Kastanienallee 7 hat 4 Vollgeschosse und fällt nach Art. 37 BayBO in die Aufzugspflicht. Der Entwurf sieht deshalb 1 Aufzug im Treppenhauskern vor. Kabinenmaß barrierefrei: 1,10 m × 1,40 m lichte Kabine. Kabinenfläche = 1,10 m × 1,40 m = 1,54 m². Für Schacht, Führung, Türen und Wandstärken wird ein Stahlbeton-Schacht von ca. 1,80 m × 2,20 m angesetzt. Schachtgrundfläche = 1,80 m × 2,20 m = 3,96 m² je Geschoss. Bei 4 Vollgeschossen belegt der Schacht rechnerisch 4 × 3,96 m² = 15,84 m² Geschossfläche, zuzüglich Keller und Dachbereich. Die Aufzugsgrube von ca. 1,10 m Tiefe macht den Keller konstruktiv sinnvoll; die Anlage wird maschinenraumlos nach DIN EN 81-20 geplant.
 
-## 2.5 Kompaktheit und A/V-Verhältnis
+## 2.7 Kompaktheit und A/V-Verhältnis
 
 Kompaktheit beschreibt, wie viel Außenfläche ein Gebäude im Verhältnis zu seinem Volumen hat. Ein kompakter Baukörper verliert bei gleicher Dämmqualität weniger Wärme, hat weniger Fassadenfläche, weniger Anschlüsse und oft geringere Baukosten. Ein stark gegliederter Baukörper kann räumlich reizvoll sein, hat aber mehr Außenfläche, mehr Ecken, mehr Wärmeverluste und mehr Details.
 
