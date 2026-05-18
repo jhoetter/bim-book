@@ -386,6 +386,42 @@
       "generated": "2026-05-18 10:51"
     },
     {
+      "file": "kap07_glaser.png",
+      "chapter": 7,
+      "part": "III",
+      "partTitle": "Teil III – Bauphysik",
+      "chapterTitle": "Feuchteschutz",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Das Glaser-Verfahren vergleicht Dampfdruck und Sättigungsdruck im Bauteil",
+      "tags": [
+        "glaser-verfahren",
+        "tauwasser",
+        "diffusion",
+        "feuchteschutz"
+      ],
+      "chapterPath": "chapters/07-feuchteschutz",
+      "generated": "2026-05-18 10:54"
+    },
+    {
+      "file": "kap07_abdichtung_keller.png",
+      "chapter": 7,
+      "part": "III",
+      "partTitle": "Teil III – Bauphysik",
+      "chapterTitle": "Feuchteschutz",
+      "type": "section",
+      "context": "generic",
+      "caption": "Kellerabdichtung verbindet Beton, Fugen, Dämmung und Wasserführung",
+      "tags": [
+        "abdichtung",
+        "keller",
+        "weiße-wanne",
+        "perimeterdämmung"
+      ],
+      "chapterPath": "chapters/07-feuchteschutz",
+      "generated": "2026-05-18 10:57"
+    },
+    {
       "file": "kap15_entwurfsprozess.png",
       "chapter": 15,
       "part": "V",
