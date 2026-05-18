@@ -1032,6 +1032,42 @@
       ],
       "chapterPath": "chapters/21-bim-praxis",
       "generated": "2026-05-18 15:29"
+    },
+    {
+      "file": "kap22_lca_phasen.png",
+      "chapter": 22,
+      "part": "VII",
+      "partTitle": "Teil VII – Nachhaltigkeit",
+      "chapterTitle": "Nachhaltigkeit & Kreislaufwirtschaft",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "LCA betrachtet Emissionen über den gesamten Lebenszyklus",
+      "tags": [
+        "lca",
+        "embodied-carbon",
+        "epd",
+        "nachhaltigkeit"
+      ],
+      "chapterPath": "chapters/22-nachhaltigkeit",
+      "generated": "2026-05-18 15:32"
+    },
+    {
+      "file": "kap22_materialpass.png",
+      "chapter": 22,
+      "part": "VII",
+      "partTitle": "Teil VII – Nachhaltigkeit",
+      "chapterTitle": "Nachhaltigkeit & Kreislaufwirtschaft",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "Ein Materialpass macht verbaute Ressourcen später auffindbar",
+      "tags": [
+        "materialpass",
+        "epd",
+        "kreislaufwirtschaft",
+        "bim"
+      ],
+      "chapterPath": "chapters/22-nachhaltigkeit",
+      "generated": "2026-05-18 15:34"
     }
   ]
 }
