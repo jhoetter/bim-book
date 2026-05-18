@@ -8,7 +8,9 @@
   },
   "scripts": {
     "dev": "concurrently --names \"api,web\" --prefix-colors \"cyan,blue\" \"cd server && npx tsx src/api-server.ts\" \"cd web && npx vite --port 2100\"",
-    "server": "cd server && npx tsx src/api-server.ts"
+    "server": "cd server && npx tsx src/api-server.ts",
+    "video:chapter": "python3 scripts/generate_chapter_video.py",
+    "video:hybrid": "python3 scripts/render_chapter_hybrid.py"
   },
   "repository": {
     "type": "git",

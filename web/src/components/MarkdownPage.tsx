@@ -11,9 +11,9 @@ import rehypeRaw from 'rehype-raw'
 import 'katex/dist/katex.min.css'
 import 'highlight.js/styles/github.css'
 import { preprocessMarkdown } from '../lib/markdown'
+import { bookmarkKey, useBookmarks } from '../lib/bookmarks'
 import { getBreadcrumb } from '../chapters'
 import { applyTextHighlights, compactContext, getRangeQuote, useTextHighlights } from '../lib/highlights'
-import { bookmarkKey, useBookmarks } from '../lib/bookmarks'
 import { CalcUValue }   from './calculators/CalcUValue'
 import { CalcDewPoint } from './calculators/CalcDewPoint'
 import { CalcSound }    from './calculators/CalcSound'
@@ -25,11 +25,11 @@ import { FormelSammlung } from './FormelSammlung'
 import { IfcReferenz } from './IfcReferenz'
 import { NormenReferenz } from './NormenReferenz'
 import { SelfTestOverview } from './SelfTestOverview'
-import { MarkierungenFull } from './MarkierungenFull'
 import { QuellenReferenz } from './QuellenReferenz'
 import { ImagePlaceholder } from './ImagePlaceholder'
 import { AIHifi } from 'bim-icons'
 import type { Components } from 'react-markdown'
+import { MarkierungenFull } from './MarkierungenFull'
 
 const CALC_COMPONENTS = {
   'calc-u-value':    () => <CalcUValue />,
@@ -97,41 +97,6 @@ function HeadingBookmarkIcon({ filled }: { filled: boolean }) {
   )
 }
 
-function makeHeading(Tag: HeadingTag, ctx: HeadingContext) {
-  return function HeadingWithAnchor({ id, children, ...rest }: ComponentPropsWithoutRef<HeadingTag> & { id?: string }) {
-    const headingTitle = reactNodeText(children).trim()
-    const headingLevel = parseInt(Tag[1], 10)
-    const target = id
-      ? { path: ctx.path, title: ctx.pageTitle, part: ctx.part, headingId: id, headingTitle, headingLevel }
-      : null
-    const isBookmarked = target ? ctx.bookmarks.some(b => bookmarkKey(b) === bookmarkKey(target)) : false
-
-    return (
-      <Tag id={id} className="prose-heading" {...rest}>
-        {children}
-        {id && (
-          <a href={`#${id}`} className="prose-anchor" aria-hidden="true">#</a>
-        )}
-        {target && (
-          <button
-            type="button"
-            className={`prose-bookmark${isBookmarked ? ' prose-bookmark--active' : ''}`}
-            onClick={e => {
-              e.preventDefault()
-              e.stopPropagation()
-              ctx.toggleBookmark(target)
-            }}
-            aria-label={isBookmarked ? 'Abschnittsmarker entfernen' : 'Abschnitt merken'}
-            title={isBookmarked ? 'Abschnittsmarker entfernen' : 'Abschnitt merken'}
-          >
-            <HeadingBookmarkIcon filled={isBookmarked} />
-          </button>
-        )}
-      </Tag>
-    )
-  }
-}
-
 function MarkerIcon() {
   return (
     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -168,6 +133,41 @@ function headingBeforeRange(root: HTMLElement, range: Range) {
   return current
 }
 
+function makeHeading(Tag: HeadingTag, ctx: HeadingContext) {
+  return function HeadingWithAnchor({ id, children, ...rest }: ComponentPropsWithoutRef<HeadingTag> & { id?: string }) {
+    const headingTitle = reactNodeText(children).trim()
+    const headingLevel = parseInt(Tag[1], 10)
+    const target = id
+      ? { path: ctx.path, title: ctx.pageTitle, part: ctx.part, headingId: id, headingTitle, headingLevel }
+      : null
+    const isBookmarked = target ? ctx.bookmarks.some(b => bookmarkKey(b) === bookmarkKey(target)) : false
+
+    return (
+      <Tag id={id} className="prose-heading" {...rest}>
+        {children}
+        {id && (
+          <a href={`#${id}`} className="prose-anchor" aria-hidden="true">#</a>
+        )}
+        {target && (
+          <button
+            type="button"
+            className={`prose-bookmark${isBookmarked ? ' prose-bookmark--active' : ''}`}
+            onClick={e => {
+              e.preventDefault()
+              e.stopPropagation()
+              ctx.toggleBookmark(target)
+            }}
+            aria-label={isBookmarked ? 'Abschnittsmarker entfernen' : 'Abschnitt merken'}
+            title={isBookmarked ? 'Abschnittsmarker entfernen' : 'Abschnitt merken'}
+          >
+            <HeadingBookmarkIcon filled={isBookmarked} />
+          </button>
+        )}
+      </Tag>
+    )
+  }
+}
+
 export function MarkdownPage({ content }: Props) {
   const location = useLocation()
   const processed = preprocessMarkdown(content)
@@ -177,8 +177,8 @@ export function MarkdownPage({ content }: Props) {
   const selPopoverOpenedAtRef = useRef(0)
   const path = location.pathname.replace(/^\//, '') || 'index'
   const { part, chapter } = getBreadcrumb(location.pathname)
-  const { highlights, add: addHighlight, remove: removeHighlight } = useTextHighlights()
   const { bookmarks, toggle: toggleBookmark } = useBookmarks()
+  const { highlights, add: addHighlight, remove: removeHighlight } = useTextHighlights()
   const headingContext = { path, part, pageTitle: chapter ?? 'Überblick', bookmarks, toggleBookmark }
 
   const closeLightbox = useCallback(() => setLightbox(null), [])

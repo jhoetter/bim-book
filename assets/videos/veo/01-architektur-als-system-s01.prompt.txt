@@ -1,0 +1,10 @@
+8-second German educational BIM explainer clip for 'Kapitel 1 – Architektur als System', section '1.1 Wie Bauen komplex wurde'. Visualize the historical shift from a single, knowledgeable Baumeister to a complex, multi-disciplinary building process. Use clean architectural diagrams, motion arrows, and short German labels. Native narration: "Lange Zeit war Bauen in einer Person oder in einer kleinen Werkstatt gebündelt. Der Baumeister kannte Material, Konstruktion, Proportion, Bauablauf und Kosten aus derselben praktischen Erfahrung."
+
+Critical constraints:
+- Generate an 8-second visual explainer clip for a German architecture/BIM learning video.
+- The final hybrid film will mute this clip and use separate exact narration, so visuals must match this narration exactly:
+  "Lange Zeit war Bauen in einer Person oder in einer kleinen Werkstatt gebündelt. Der Baumeister kannte Material, Konstruktion, Proportion, Bauablauf und Kosten aus derselben praktischen Erfahrung."
+- Avoid long paragraphs of text. Use only short German labels if needed.
+- Prefer diagrams, architectural process visuals, arrows, highlighted layers and clean transitions.
+- Do not show irrelevant generic presentation slides or title cards.
+- Keep camera stable; no handheld wobble, no fast pans.

@@ -1,0 +1,11 @@
+8-second German educational BIM explainer clip for 'Kapitel 1 – Architektur als System', section '1.3 Interdependenzen'. Visualize the interdependencies between the building's layers. Show how a change in one layer (e.g., structure) impacts others (e.g., services, envelope). Use clean architectural diagrams, motion arrows, and short German labels.
+
+Critical constraints:
+- Generate an 8-second visual explainer clip for a German architecture/BIM learning video.
+- The final hybrid film will mute this clip and use separate narration.
+- Visual concept to support: "Das Schichtenmodell trennt Schichten, aber es behauptet nicht, dass sie unabhängig sind. Im Gegenteil: Sein Nutzen liegt darin, Abhängigkeiten sichtbar zu machen."
+- Avoid long paragraphs of text. Use only short German labels if needed.
+- Prefer diagrams, architectural process visuals, arrows, highlighted layers and clean transitions.
+- Do not show irrelevant generic presentation slides or title cards.
+- Do not depict real people, celebrities, authors, named theorists, portraits or likenesses.
+- Keep camera stable; no handheld wobble, no fast pans.

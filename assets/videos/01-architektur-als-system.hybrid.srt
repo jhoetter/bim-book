@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:20,030
+Ein Gebäude wirkt von außen oft selbstverständlich: Wände stehen, Fenster sitzen in der Fassade, Türen führen in Räume, auf dem Dach liegt Technik, die man kaum sieht. Erst wenn eine Leitung an der falschen Stelle liegt, ein Sturz zu niedrig geplant wurde.
+
+2
+00:00:20,030 --> 00:00:36,540
+Lange Zeit war Bauen in einer Person oder in einer kleinen Werkstatt gebündelt. Der Baumeister kannte Material, Konstruktion, Proportion, Bauablauf und Kosten aus derselben praktischen Erfahrung.
+
+3
+00:00:36,540 --> 00:00:53,650
+Das Schichtenmodell beschreibt ein Gebäude nicht als ein einziges Objekt, sondern als mehrere Schichten mit unterschiedlicher Lebensdauer, Verantwortung und Änderbarkeit. Die Grundidee wurde besonders durch Frank Duffy und Stewart Brand bekannt.
+
+4
+00:00:53,650 --> 00:01:05,840
+Das Schichtenmodell trennt Schichten, aber es behauptet nicht, dass sie unabhängig sind. Im Gegenteil: Sein Nutzen liegt darin, Abhängigkeiten sichtbar zu machen.
+
+5
+00:01:05,840 --> 00:01:22,590
+Dieses Buch folgt der Logik des Gebäudes. Teil I legt das Fundament: Dieses Kapitel erklärt das System, Kapitel 2 erklärt Entwurf, Raum, Planlesen und grundlegende Flächenkennwerte.
+
+6
+00:01:22,590 --> 00:01:37,700
+Diese Box ist ein Vorausgriff — wer IFC noch nicht kennt, kann sie zunächst überfliegen und nach Kapitel 18 zurückkehren. Im IFC Modell wird ein Gebäude nicht als einzige Geometrie gespeichert.

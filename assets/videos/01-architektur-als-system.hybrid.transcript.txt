@@ -1,0 +1,21 @@
+Kapitel 1 – Architektur als System
+
+Exact rendered narration by scene:
+
+s00 | Kapitel 1 – Architektur als System
+Ein Gebäude wirkt von außen oft selbstverständlich: Wände stehen, Fenster sitzen in der Fassade, Türen führen in Räume, auf dem Dach liegt Technik, die man kaum sieht. Erst wenn eine Leitung an der falschen Stelle liegt, ein Sturz zu niedrig geplant wurde.
+
+s01 | 1.1 Wie Bauen komplex wurde
+Lange Zeit war Bauen in einer Person oder in einer kleinen Werkstatt gebündelt. Der Baumeister kannte Material, Konstruktion, Proportion, Bauablauf und Kosten aus derselben praktischen Erfahrung.
+
+s02 | 1.2 Das Schichtenmodell: Grundidee
+Das Schichtenmodell beschreibt ein Gebäude nicht als ein einziges Objekt, sondern als mehrere Schichten mit unterschiedlicher Lebensdauer, Verantwortung und Änderbarkeit. Die Grundidee wurde besonders durch Frank Duffy und Stewart Brand bekannt.
+
+s03 | 1.3 Interdependenzen zwischen Schichten
+Das Schichtenmodell trennt Schichten, aber es behauptet nicht, dass sie unabhängig sind. Im Gegenteil: Sein Nutzen liegt darin, Abhängigkeiten sichtbar zu machen.
+
+s04 | 1.4 Buchaufbau: Logik des Gebäudes
+Dieses Buch folgt der Logik des Gebäudes. Teil I legt das Fundament: Dieses Kapitel erklärt das System, Kapitel 2 erklärt Entwurf, Raum, Planlesen und grundlegende Flächenkennwerte.
+
+s05 | BIM-Brücke: Schichten im IFC-Modell
+Diese Box ist ein Vorausgriff — wer IFC noch nicht kennt, kann sie zunächst überfliegen und nach Kapitel 18 zurückkehren. Im IFC Modell wird ein Gebäude nicht als einzige Geometrie gespeichert.

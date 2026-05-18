@@ -857,6 +857,20 @@ html, body, #root {
   line-height: 1.55;
 }
 
+.prose figure.chapter-video {
+  margin: 1.2em 0 2.6em;
+}
+
+.prose figure.chapter-video video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  background: #080807;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
 /* ── Image Placeholder Card ───────────────────────────────────── */
 .img-placeholder-card {
   margin: 2.4em 0;
