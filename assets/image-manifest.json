@@ -743,6 +743,42 @@
       ],
       "chapterPath": "chapters/15-hoai",
       "generated": "2026-05-18 10:10"
+    },
+    {
+      "file": "kap16_din276_struktur.png",
+      "chapter": 16,
+      "part": "V",
+      "partTitle": "Teil V – Recht & Prozess",
+      "chapterTitle": "Kosten & Ausschreibung",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "DIN 276 ordnet Gebäudekosten nach Kostengruppen",
+      "tags": [
+        "din276",
+        "kosten",
+        "kostengruppe",
+        "baukosten"
+      ],
+      "chapterPath": "chapters/16-kosten-ausschreibung",
+      "generated": "2026-05-18 14:47"
+    },
+    {
+      "file": "kap16_lv_auszug.png",
+      "chapter": 16,
+      "part": "V",
+      "partTitle": "Teil V – Recht & Prozess",
+      "chapterTitle": "Kosten & Ausschreibung",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "Ein Leistungsverzeichnis macht Entwurf zu bepreisbaren Leistungen",
+      "tags": [
+        "lv",
+        "ausschreibung",
+        "stlb",
+        "kosten"
+      ],
+      "chapterPath": "chapters/16-kosten-ausschreibung",
+      "generated": "2026-05-18 14:50"
     }
   ]
 }
