@@ -458,6 +458,42 @@
       "generated": "2026-05-18 14:12"
     },
     {
+      "file": "kap09_gebaeudeklassen.png",
+      "chapter": 9,
+      "part": "III",
+      "partTitle": "Teil III – Bauphysik",
+      "chapterTitle": "Brandschutz",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "Gebäudeklassen steuern viele Brandschutzanforderungen",
+      "tags": [
+        "brandschutz",
+        "mbo",
+        "gebäudeklassen",
+        "rei"
+      ],
+      "chapterPath": "chapters/09-brandschutz",
+      "generated": "2026-05-18 14:14"
+    },
+    {
+      "file": "kap09_rettungsweg.png",
+      "chapter": 9,
+      "part": "III",
+      "partTitle": "Teil III – Bauphysik",
+      "chapterTitle": "Brandschutz",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Rettungswege sind geometrische und bauliche Schutzsysteme",
+      "tags": [
+        "rettungsweg",
+        "treppenhaus",
+        "brandschutz",
+        "brandabschnitt"
+      ],
+      "chapterPath": "chapters/09-brandschutz",
+      "generated": "2026-05-18 14:17"
+    },
+    {
       "file": "kap15_entwurfsprozess.png",
       "chapter": 15,
       "part": "V",
