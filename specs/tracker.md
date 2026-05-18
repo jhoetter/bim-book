@@ -1016,6 +1016,22 @@ Diese Regeln gelten für jedes Kapitel und werden hier nicht wiederholt — sie 
 6. Erster Abschnitt nach `!!! ziel`: historischer/konzeptueller Kontext — nicht direkt ins Fachvokabular
 7. Zusammenfassung-Abschnitt am Ende: 2–4 Sätze + Querverweise als Linkzeile
 
+### Erweiterbarkeit aller Referenzdateien
+
+**Der bestehende Inhalt von Glossar, Formelsammlung, IFC-Referenz und Normen-Appendix ist kein Limit — er ist ein Ausgangspunkt.**
+
+Beim Schreiben eines Kapitels sollen fehlende Einträge aktiv ergänzt werden:
+
+| Datei | Wann ergänzen | Wie |
+|-------|--------------|-----|
+| `web/src/data/glossar.ts` | Immer wenn ein Fachbegriff gebraucht wird, der noch nicht als `::Term::` verfügbar ist | Neuen Eintrag anlegen (id, term, definition, thema, typ) — dann `::Term::` verwenden |
+| `web/src/data/formulas.ts` | Immer wenn eine Formel im Text mit `^^formel-id^^` referenziert wird, die noch nicht existiert | Neuen Eintrag anlegen, dann `^^formel-id^^` verwenden |
+| `docs/appendix/ifc-referenz.md` | Immer wenn eine IFC-Entität in der BIM-Brücke auftaucht, die noch nicht dokumentiert ist | Eintrag ergänzen: Entität, Beschreibung, wichtigste Properties, typische Fehler |
+| `docs/appendix/normen.md` | Immer wenn eine Norm zitiert wird, die noch nicht im Anhang steht | Eintrag ergänzen: Nummer, Titel, Anwendungsbereich, Fundstelle im Buch |
+| `docs/terms-registry.yaml` | Nach jedem geschriebenen Kapitel | Alle neu eingeführten Begriffe mit `introduced_in` eintragen |
+
+**Reihenfolge beim Schreiben:** Erst prüfen ob der Eintrag existiert — wenn nicht, zuerst anlegen, dann im Kapitel verwenden. Nie `**fett**` als Ersatz für einen fehlenden Glossareintrag.
+
 ---
 
 ## Offene Entscheidungen
