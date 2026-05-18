@@ -332,6 +332,60 @@
       "generated": "2026-05-18 10:41"
     },
     {
+      "file": "kap06_u_wert_berechnung.png",
+      "chapter": 6,
+      "part": "III",
+      "partTitle": "Teil III – Bauphysik",
+      "chapterTitle": "Wärmeschutz & GEG",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "U-Wert-Berechnung einer mehrschichtigen Außenwand",
+      "tags": [
+        "u-wert",
+        "r-wert",
+        "mineralwolle",
+        "wärmeschutz"
+      ],
+      "chapterPath": "chapters/06-waermeschutz-geg",
+      "generated": "2026-05-18 10:45"
+    },
+    {
+      "file": "kap06_waermebruecken.png",
+      "chapter": 6,
+      "part": "III",
+      "partTitle": "Teil III – Bauphysik",
+      "chapterTitle": "Wärmeschutz & GEG",
+      "type": "comparison",
+      "context": "generic",
+      "caption": "Wärmebrücken entstehen besonders an Anschlüssen und Durchdringungen",
+      "tags": [
+        "wärmebrücke",
+        "balkon",
+        "fenster",
+        "außenwandecke"
+      ],
+      "chapterPath": "chapters/06-waermeschutz-geg",
+      "generated": "2026-05-18 10:48"
+    },
+    {
+      "file": "kap06_geg_anforderungen.png",
+      "chapter": 6,
+      "part": "III",
+      "partTitle": "Teil III – Bauphysik",
+      "chapterTitle": "Wärmeschutz & GEG",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "Das GEG bewertet Hülle und Anlagentechnik gemeinsam",
+      "tags": [
+        "geg",
+        "primärenergiefaktor",
+        "transmissionswärmeverlust",
+        "energieausweis"
+      ],
+      "chapterPath": "chapters/06-waermeschutz-geg",
+      "generated": "2026-05-18 10:51"
+    },
+    {
       "file": "kap15_entwurfsprozess.png",
       "chapter": 15,
       "part": "V",
