@@ -10,12 +10,12 @@ Im Bestand beginnt Planung mit Zweifel. Pläne können fehlen, Schächte anders 
 
 !!! ziel "Nach diesem Kapitel können Sie …"
     - Baualtersphasen und typische Konstruktionen grob einordnen
-    - Bestandsaufnahme, Schäden und Schadstoffe als Planungsrisiken erkennen
-    - Scan-to-BIM als Methode mit Grenzen verstehen
+    - ::Bestandsaufnahme::, Schäden und Schadstoffe als Planungsrisiken erkennen
+    - ::Scan-to-BIM:: als Methode mit Grenzen verstehen
 
 ## 23.1 Baualtersphasen
 
-Gründerzeitgebäude von 1880 bis 1920 haben häufig massives Mauerwerk, Holzbalkendecken, hohe Räume und wenig Wärmeschutz. Nachkriegsbauten der 1950er nutzen oft einfache Mauerwerke, Betondecken und geringe Dämmung. Gebäude der 1960er und 1970er zeigen Montagebau, Wärmebrücken, Flachdächer und Schadstoffrisiken.
+Gründerzeitgebäude von 1880 bis 1920 haben häufig massives ::Mauerwerk::, Holzbalkendecken, hohe Räume und wenig Wärmeschutz. Nachkriegsbauten der 1950er nutzen oft einfache Mauerwerke, Betondecken und geringe Dämmung. Gebäude der 1960er und 1970er zeigen Montagebau, Wärmebrücken, Flachdächer und Schadstoffrisiken.
 
 Seit den 1990ern nehmen Dämmung und luftdichtere Fenster zu, aber Details sind oft noch schwächer als im heutigen Neubau. Jede Baualtersphase hat typische Stärken und Schwächen. Sanierung beginnt deshalb mit Hypothesen, die vor Ort geprüft werden.
 
@@ -31,7 +31,7 @@ tags: sanierung, baualter, bestand, konstruktion
 
 ## 23.2 Bestandsaufnahme
 
-As-designed ist der geplante Zustand, as-built der tatsächlich gebaute. In Bestandsgebäuden weichen beide oft ab. Wände wurden versetzt, Leitungen anders geführt, Decken geöffnet, Materialien ersetzt. Eine systematische Bestandsaufnahme dokumentiert Geometrie, Konstruktion, Schäden, Technik, Nutzung und rechtliche Randbedingungen.
+As-designed ist der geplante Zustand, as-built der tatsächlich gebaute. In Bestandsgebäuden weichen beide oft ab. Wände wurden versetzt, Leitungen anders geführt, Decken geöffnet, Materialien ersetzt. Eine systematische ::Bestandsaufnahme:: dokumentiert Geometrie, Konstruktion, Schäden, Technik, Nutzung und rechtliche Randbedingungen.
 
 Typische Überraschungen sind andere Deckenhöhen, unbekannte Träger, nicht dokumentierte Schächte, schadstoffhaltige Baustoffe und feuchte Keller. Jede Unsicherheit sollte als Risiko geführt werden, nicht als Fußnote.
 
@@ -48,13 +48,13 @@ Außendämmung ist bauphysikalisch meist robuster, weil sie die tragende Wand wa
 Fensteraustausch kann Probleme verschärfen. Dichte neue Fenster reduzieren Lüftung, während alte kalte Wände bleiben. Dann kondensiert Feuchte nicht mehr am Fenster, sondern an Laibungen und Ecken. Heizungstausch, Lüftung und Dämmung müssen zusammen geplant werden.
 
 !!! kastanienallee "Kastanienallee 7"
-    Für Kapitel 23 dient nicht der Neubau K7, sondern ein fiktives Gründerzeithaus auf dem Nachbargrundstück. Außenwand: 380 mm Vollziegel, λ grob 0,8 W/(mK). Ohne Dämmung R = 0,38 / 0,8 = 0,475 m²K/W, U überschlägig etwa 1,6 W/(m²K). Eine Innendämmung mit 80 mm Kalziumsilikat, λ = 0,065, ergänzt R = 0,08 / 0,065 = 1,23 m²K/W; der U-Wert sinkt deutlich, aber der Ziegel bleibt kälter. Deshalb braucht die Lösung Feuchtesimulation und luftdichte Anschlüsse.
+    Für Kapitel 23 dient nicht der Neubau K7, sondern ein fiktives Gründerzeithaus auf dem Nachbargrundstück. ::Außenwand:: 380 mm Vollziegel, λ grob 0,8 W/(mK). Ohne Dämmung R = 0,38 / 0,8 = 0,475 m²K/W, U überschlägig etwa 1,6 W/(m²K). Eine Innendämmung mit 80 mm Kalziumsilikat, λ = 0,065, ergänzt R = 0,08 / 0,065 = 1,23 m²K/W; der U-Wert sinkt deutlich, aber der Ziegel bleibt kälter. Deshalb braucht die Lösung Feuchtesimulation und luftdichte Anschlüsse.
 
 ## 23.5 Scan-to-BIM
 
-Laserscanner erfassen Punktwolken mit typischer Genauigkeit von wenigen Millimetern. Aus der Punktwolke entsteht ein as-built-Modell. Dieser Schritt ist oft manuell oder halbautomatisch: Wände, Decken, Öffnungen und Bauteile müssen interpretiert werden.
+Laserscanner erfassen Punktwolken mit typischer Genauigkeit von wenigen Millimetern. Aus der ::Punktwolke:: entsteht ein as-built-Modell. Dieser Schritt ist oft manuell oder halbautomatisch: Wände, Decken, Öffnungen und Bauteile müssen interpretiert werden.
 
-Scan-to-BIM ist stark für Geometrie, aber schwach für Verborgenes. Bewehrung, Schichten, Hohlräume, Schadstoffe und Materialqualität sieht der Scanner nicht. Deshalb bleibt Bestands-BIM eine Kombination aus Messung, Öffnungen, Recherche und Fachwissen.
+::Scan-to-BIM:: ist stark für Geometrie, aber schwach für Verborgenes. Bewehrung, Schichten, Hohlräume, Schadstoffe und Materialqualität sieht der Scanner nicht. Deshalb bleibt Bestands-BIM eine Kombination aus Messung, Öffnungen, Recherche und Fachwissen.
 
 <!-- IMAGE
 name: kap23_scan_to_bim
@@ -76,7 +76,7 @@ Schadstoffe sind ein eigener Risikobereich. Asbest in Putzen, Spachtelmassen, Bo
 
 Energetische Sanierung ist besonders konfliktbeladen. Außendämmung ist bauphysikalisch oft robust, kann aber Fassade, Denkmalschutz, Grundstücksgrenzen oder Details verändern. Innendämmung erhält die Fassade, macht aber Feuchte und Wärmebrücken anspruchsvoller. Fenstertausch verbessert U-Werte, kann aber Schimmelrisiko erhöhen, wenn Lüftung und Laibungen nicht mitgeplant werden.
 
-Scan-to-BIM hilft, löst aber nicht alles. Eine Punktwolke zeigt sichtbare Oberflächen mit hoher Genauigkeit. Sie zeigt keine verdeckten Träger, keine Bewehrung, keine Materialqualität und keine Feuchte in Bauteilen. Das daraus erzeugte Modell ist immer eine Interpretation. Gute Sanierungsplanung kennzeichnet deshalb Unsicherheit: gesichert, vermutet, zu prüfen.
+::Scan-to-BIM:: hilft, löst aber nicht alles. Eine ::Punktwolke:: zeigt sichtbare Oberflächen mit hoher Genauigkeit. Sie zeigt keine verdeckten Träger, keine Bewehrung, keine Materialqualität und keine Feuchte in Bauteilen. Das daraus erzeugte Modell ist immer eine Interpretation. Gute Sanierungsplanung kennzeichnet deshalb Unsicherheit: gesichert, vermutet, zu prüfen.
 
 !!! kastanienallee "Kastanienallee 7"
     Das fiktive Nachbarhaus zur K7 wird als Gründerzeitbau saniert. Außenfassade steht unter Erhaltungsinteresse, deshalb wird Innendämmung geprüft. Eine 60 mm kapillaraktive Innendämmung verbessert die Oberfläche, verschiebt aber den Taupunkt in Richtung Bestandsmauerwerk. Vor Entscheidung werden Schlagregenbelastung, Salzgehalt, Wandfeuchte, Fensteranschluss und Lüftungskonzept untersucht.
@@ -89,11 +89,11 @@ Die zweite Frage betrifft Eingriffstiefe. Wird nur Oberfläche erneuert, oder we
 
 Die dritte Frage ist Bauablauf im bewohnten Bestand. Sind Bewohner im Gebäude? Gibt es Lärmzeiten, Staubschutz, provisorische Versorgung, Rettungswege und Etappierung? Sanierung ist häufig Logistik unter laufender Nutzung. Das unterscheidet sie stark vom Neubau auf freier Baustelle.
 
-Für Scan-to-BIM gilt: Punktwolken sollten nicht in ein scheinbar perfektes Modell übersetzt werden, ohne Toleranz zu zeigen. Bestandswände sind selten gerade, Decken nicht exakt eben, Öffnungen nicht normschön. Ein gutes Bestandsmodell entscheidet, wo Genauigkeit nötig ist und wo eine vereinfachte Darstellung reicht.
+Für ::Scan-to-BIM:: gilt: Punktwolken sollten nicht in ein scheinbar perfektes Modell übersetzt werden, ohne Toleranz zu zeigen. Bestandswände sind selten gerade, Decken nicht exakt eben, Öffnungen nicht normschön. Ein gutes Bestandsmodell entscheidet, wo Genauigkeit nötig ist und wo eine vereinfachte Darstellung reicht.
 
 ## 23.8 Entwicklerperspektive
 
-Sanierungsmodelle brauchen Unsicherheitsdaten. Im Neubau ist ein Bauteil geplant; im Bestand ist ein Bauteil beobachtet, vermutet oder geöffnet. Diese Zustände sollten als Property geführt werden. Ein Sturz, der nur aus einer Punktwolke abgeleitet wurde, hat eine andere Verlässlichkeit als ein freigelegter und geprüfter Stahlträger.
+Sanierungsmodelle brauchen Unsicherheitsdaten. Im Neubau ist ein Bauteil geplant; im Bestand ist ein Bauteil beobachtet, vermutet oder geöffnet. Diese Zustände sollten als ::Properties:: geführt werden. Ein Sturz, der nur aus einer ::Punktwolke:: abgeleitet wurde, hat eine andere Verlässlichkeit als ein freigelegter und geprüfter Stahlträger.
 
 Punktwolken sind große Datenmengen mit begrenzter Semantik. Sie zeigen Punkte, keine Wände. Die Umwandlung in BIM ist Interpretation: Welche Punkte gehören zu einer Wand? Ist die Wand gerade oder verformt? Welche Toleranz wird geglättet? Wird ein schiefes Gebäude exakt schief modelliert oder für Planung vereinfacht? Diese Entscheidungen müssen zum Projektziel passen.
 
@@ -119,6 +119,6 @@ Bestandsmodelle brauchen Unsicherheitskennzeichen. Ein gescannter Raum ist siche
 
 **Sanierung ist Planung unter Unsicherheit mit einem realen, oft widersprüchlichen Gebäude.**
 
-Baualter, Bestandsaufnahme, Schadstoffe, Feuchte und Scan-to-BIM müssen zusammen gelesen werden. Der Bestand ist keine schlechtere Version des Neubaus, sondern eine eigene Planungsdisziplin.
+Baualter, ::Bestandsaufnahme::, Schadstoffe, Feuchte und ::Scan-to-BIM:: müssen zusammen gelesen werden. Der Bestand ist keine schlechtere Version des Neubaus, sondern eine eigene Planungsdisziplin.
 
 Verwandte Kapitel: [Kap. 5](/chapters/05-konstruktion) · [Kap. 6](/chapters/06-waermeschutz-geg) · [Kap. 7](/chapters/07-feuchteschutz) · [Kap. 22](/chapters/22-nachhaltigkeit)

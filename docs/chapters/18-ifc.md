@@ -10,8 +10,8 @@ Eine IFC-Datei wirkt beim ersten Öffnen wie eine Wand aus Großbuchstaben, Zahl
 
 !!! ziel "Nach diesem Kapitel können Sie …"
     - die IFC-Projektstruktur von Projekt bis Raum erklären
-    - Objekte, Properties, Mengen und Beziehungen unterscheiden
-    - STEP-Dateien und IfcOpenShell als Entwicklerzugang einordnen
+    - Objekte, ::Properties::, Mengen und Beziehungen unterscheiden
+    - STEP-Dateien und ::IfcOpenShell:: als Entwicklerzugang einordnen
 
 ## 18.1 Projektstruktur
 
@@ -33,7 +33,7 @@ tags: ifc, ifcproject, ifcspace, hierarchy
 
 Architektur nutzt `IfcWall`, `IfcSlab`, `IfcRoof`, `IfcDoor`, `IfcWindow` und `IfcStair`. Tragwerk nutzt `IfcColumn`, `IfcBeam`, `IfcFooting`. TGA nutzt `IfcFlowSegment`, `IfcFlowTerminal`, `IfcDistributionSystem` und viele spezialisierte Untertypen.
 
-Eine Entität sagt, was ein Objekt ist. Properties sagen, welche Eigenschaften es hat. Typische Exportfehler sind generische `IfcBuildingElementProxy` statt spezifischer Klassen, fehlende Raumzuordnung, leere PropertySets oder verlorene Materialschichten. Für Menschen sieht das Modell noch gut aus; für Software ist es kaum auswertbar.
+Eine Entität sagt, was ein Objekt ist. ::Properties:: sagen, welche Eigenschaften es hat. Typische Exportfehler sind generische `IfcBuildingElementProxy` statt spezifischer Klassen, fehlende Raumzuordnung, leere ::Pset:: oder verlorene Materialschichten. Für Menschen sieht das Modell noch gut aus; für Software ist es kaum auswertbar.
 
 <!-- IMAGE
 name: kap18_entitaeten_uebersicht
@@ -53,10 +53,10 @@ Für Austausch ist einfache, semantische Geometrie besser als komplexe, triangul
 
 ## 18.4 Properties und PropertySets
 
-PropertySets machen IFC maschinenlesbar. `Pset_WallCommon` enthält Eigenschaften wie `FireRating`, `ThermalTransmittance` oder `LoadBearing`. QuantitySets wie `Qto_WallBaseQuantities` enthalten Mengen: Länge, Fläche, Volumen. Benutzerdefinierte Psets sind erlaubt, sollten aber sauber benannt und dokumentiert werden.
+::Pset:: machen IFC maschinenlesbar. `Pset_WallCommon` enthält Eigenschaften wie `FireRating`, `ThermalTransmittance` oder `LoadBearing`. QuantitySets wie `Qto_WallBaseQuantities` enthalten Mengen: Länge, Fläche, Volumen. Benutzerdefinierte Psets sind erlaubt, sollten aber sauber benannt und dokumentiert werden.
 
 !!! kastanienallee "Kastanienallee 7"
-    Eine Außenwand kann als `IfcWall` mit `IfcMaterialLayerSet` modelliert sein: Innenputz 15 mm, Stahlbeton 200 mm, Mineralwolle 160 mm, Armierungsputz, Außenputz. `Pset_WallCommon` enthält `LoadBearing = true`, `IsExternal = true`, `ThermalTransmittance = 0.19` und `FireRating = REI 90`. Mengen kommen aus `Qto_WallBaseQuantities`.
+    Eine ::Außenwand:: kann als `IfcWall` mit `IfcMaterialLayerSet` modelliert sein: Innenputz 15 mm, ::Stahlbeton:: 200 mm, Mineralwolle 160 mm, Armierungsputz, Außenputz. `Pset_WallCommon` enthält `LoadBearing = true`, `IsExternal = true`, `ThermalTransmittance = 0.19` und `FireRating = REI 90`. Mengen kommen aus `Qto_WallBaseQuantities`.
 
 ## 18.5 Beziehungen in IFC
 
@@ -91,11 +91,11 @@ tags: ifc, step, entwickler, ifcwall
 ![STEP-Format annotiert](../assets/illustrations/kap18_step_format.png)
 
 !!! kastanienallee "Kastanienallee 7"
-    Für K7 wird IFC4 als Zielversion festgelegt, weil die Projektstruktur, PropertySets und Materialschichten sauberer nutzbar sind. Wenn ein Fachplaner nur IFC2x3 exportieren kann, wird im BAP festgelegt, welche MVD, welche Exporteinstellungen und welche Prüfschritte gelten.
+    Für K7 wird IFC4 als Zielversion festgelegt, weil die Projektstruktur, ::Pset:: und Materialschichten sauberer nutzbar sind. Wenn ein Fachplaner nur IFC2x3 exportieren kann, wird im BAP festgelegt, welche ::MVD::, welche Exporteinstellungen und welche Prüfschritte gelten.
 
 ## 18.7 Programmatischer Zugriff mit IfcOpenShell
 
-IfcOpenShell ist der de-facto-Standard für IFC-Zugriff in Python. Ein typischer Einstieg lädt eine Datei, filtert Entitäten und liest Properties. Alternativen sind xBIM für .NET und web-ifc für JavaScript.
+::IfcOpenShell:: ist der de-facto-Standard für IFC-Zugriff in Python. Ein typischer Einstieg lädt eine Datei, filtert Entitäten und liest ::Properties::. Alternativen sind xBIM für .NET und web-ifc für JavaScript.
 
 ```python
 import ifcopenshell
@@ -111,9 +111,9 @@ Damit lassen sich eigene Prüfer, Mengenexporte, Datenqualitätsberichte oder Vi
 
 ## 18.8 IFC-Versionen und MVD
 
-IFC2x3 ist in Deutschland noch verbreitet, besonders für Koordination. IFC4 ist aktueller und für Neuprojekte empfehlenswert. IFC4.3 erweitert Infrastruktur und Brücken. Eine Model View Definition legt fest, welcher Ausschnitt des IFC-Schemas für einen Anwendungsfall gilt.
+IFC2x3 ist in Deutschland noch verbreitet, besonders für Koordination. IFC4 ist aktueller und für Neuprojekte empfehlenswert. IFC4.3 erweitert Infrastruktur und Brücken. Eine ::MVD:: legt fest, welcher Ausschnitt des IFC-Schemas für einen Anwendungsfall gilt.
 
-Coordination View 2.0 war lange Standard für IFC2x3-Koordination. Reference View in IFC4 ist eher für referenzierten Austausch gedacht, Design Transfer View für weiterbearbeitbare Übergaben. Die MVD muss im ::BAP:: vereinbart werden, sonst exportieren Beteiligte formal IFC, aber in praktisch unterschiedlichen Sprachen.
+Coordination View 2.0 war lange Standard für IFC2x3-Koordination. Reference View in IFC4 ist eher für referenzierten Austausch gedacht, Design Transfer View für weiterbearbeitbare Übergaben. Die ::MVD:: muss im ::BAP:: vereinbart werden, sonst exportieren Beteiligte formal IFC, aber in praktisch unterschiedlichen Sprachen.
 
 <!-- IMAGE
 name: kap18_mvd_vergleich
@@ -129,7 +129,7 @@ tags: ifc, mvd, reference-view, coordination-view
 
 Mehrere Fachmodelle passen nur zusammen, wenn Koordinaten geklärt sind. `IfcGeometricRepresentationContext` beschreibt das lokale Koordinatensystem und True North. In IFC4 kann `IfcMapConversion` lokale Koordinaten an ein Koordinatenreferenzsystem koppeln. In Deutschland ist EPSG:25832, ETRS89/UTM Zone 32N, häufig relevant.
 
-IFC2x3 speichert oft nur `RefLatitude` und `RefLongitude` an `IfcSite`, was ungenau und unvollständig ist. Für GIS-Kopplung, Stadtmodelle und CDE-Koordination muss der Koordinatenursprung im BAP festgelegt werden. Ohne saubere Georeferenzierung liegen Modelle sichtbar nebeneinander statt übereinander.
+IFC2x3 speichert oft nur `RefLatitude` und `RefLongitude` an `IfcSite`, was ungenau und unvollständig ist. Für GIS-Kopplung, Stadtmodelle und CDE-Koordination muss der Koordinatenursprung im BAP festgelegt werden. Ohne saubere ::Georeferenzierung:: liegen Modelle sichtbar nebeneinander statt übereinander.
 
 <!-- IMAGE
 name: kap18_georeferenzierung
@@ -143,35 +143,35 @@ tags: ifc, georeferenzierung, epsg25832, gis
 
 ## 18.10 IFC-Qualität prüfen
 
-Eine IFC-Datei ist nicht automatisch gut, weil sie sich öffnen lässt. Viele Viewer sind tolerant und zeigen Geometrie auch dann an, wenn Beziehungen, Properties oder Mengen fehlen. Für Koordination kann das kurzfristig reichen; für Auswertung, Kosten, Energie, Brandschutz oder Betrieb reicht es nicht. Qualität muss deshalb gegen den Zweck geprüft werden.
+Eine IFC-Datei ist nicht automatisch gut, weil sie sich öffnen lässt. Viele Viewer sind tolerant und zeigen Geometrie auch dann an, wenn Beziehungen, ::Properties:: oder Mengen fehlen. Für Koordination kann das kurzfristig reichen; für Auswertung, Kosten, Energie, Brandschutz oder Betrieb reicht es nicht. Qualität muss deshalb gegen den Zweck geprüft werden.
 
 Die erste Prüfung ist strukturell. Gibt es genau ein `IfcProject`? Sind `IfcSite`, `IfcBuilding` und `IfcBuildingStorey` vorhanden? Sind Bauteile räumlich enthalten? Gibt es Räume? Haben Elemente eindeutige GlobalIds? Sind Gebäudegeschosse sinnvoll benannt? Diese Fragen wirken einfach, aber fehlerhafte Exporte scheitern oft schon hier.
 
 Die zweite Prüfung ist semantisch. Sind Wände wirklich `IfcWall` und nicht `IfcBuildingElementProxy`? Sind Türen `IfcDoor` und Fenster `IfcWindow`? Sind TGA-Objekte dem passenden System zugeordnet? Gibt es Typen für wiederkehrende Elemente? Sind Materialschichten vorhanden, oder ist eine Wand nur ein Körper ohne Aufbau? Für Software entscheidet diese Semantik, ob sie Regeln anwenden kann.
 
-Die dritte Prüfung betrifft Properties und Mengen. Ein `FireRating` als freier Text ist weniger robust als ein abgestimmter Wert. Ein U-Wert muss an der richtigen Stelle stehen und zur Schichtlogik passen. Mengen sollten nachvollziehbar sein: Länge, Höhe, Fläche, Nettofläche, Volumen. Wenn Mengen fehlen, können sie teilweise aus Geometrie berechnet werden, aber dann entstehen andere Toleranzen als bei autoritativ exportierten QuantitySets.
+Die dritte Prüfung betrifft ::Properties:: und Mengen. Ein `FireRating` als freier Text ist weniger robust als ein abgestimmter Wert. Ein U-Wert muss an der richtigen Stelle stehen und zur Schichtlogik passen. Mengen sollten nachvollziehbar sein: Länge, Höhe, Fläche, Nettofläche, Volumen. Wenn Mengen fehlen, können sie teilweise aus Geometrie berechnet werden, aber dann entstehen andere Toleranzen als bei autoritativ exportierten QuantitySets.
 
 Die vierte Prüfung ist georeferenziert. Teilmodelle müssen denselben Ursprung, dieselbe Nordrichtung und denselben Maßstab haben. Ein Modell, das im Viewer "irgendwo" erscheint, ist für Koordination gefährlich. Besonders bei Infrastruktur, Stadtmodellen und großen Grundstücken ist EPSG-Bezug nicht optional.
 
-IDS macht diese Prüfungen maschinenlesbarer. Eine Information Delivery Specification kann festlegen: Jede Außenwand muss `IsExternal = true`, einen U-Wert, einen Feuerwiderstand und eine DIN-276-Klassifikation tragen. Validatoren prüfen dann nicht Geschmack, sondern Lieferanforderungen. Für Projekte ist das ein wichtiger Schritt vom PDF-BAP zu überprüfbaren Datenanforderungen.
+::IDS:: macht diese Prüfungen maschinenlesbarer. Eine ::IDS:: kann festlegen: Jede ::Außenwand:: muss `IsExternal = true`, einen U-Wert, einen Feuerwiderstand und eine DIN-276-Klassifikation tragen. Validatoren prüfen dann nicht Geschmack, sondern Lieferanforderungen. Für Projekte ist das ein wichtiger Schritt vom PDF-BAP zu überprüfbaren Datenanforderungen.
 
 !!! kastanienallee "Kastanienallee 7"
     Für K7 könnte eine einfache IDS-Regel lauten: Alle `IfcWall` mit `IsExternal = true` müssen `Pset_WallCommon.ThermalTransmittance`, `Pset_WallCommon.FireRating`, `LoadBearing`, ein `IfcMaterialLayerSet` und eine DIN-276-Referenz besitzen. Fehlt eine dieser Angaben, ist das Modell nicht lieferfähig, auch wenn es optisch korrekt aussieht.
 
 ## 18.11 Prüffragen für die Praxis
 
-Beim Empfang einer IFC-Datei sollten Entwickler und Planer immer mit denselben Grundfragen beginnen. Welche IFC-Version liegt vor? Welche MVD wurde exportiert? Aus welchem Autorensystem stammt die Datei? Ist die Datei für Koordination, Auswertung, Übergabe oder Archiv gedacht? Ohne Zweck lässt sich Qualität nicht bewerten.
+Beim Empfang einer IFC-Datei sollten Entwickler und Planer immer mit denselben Grundfragen beginnen. Welche IFC-Version liegt vor? Welche ::MVD:: wurde exportiert? Aus welchem Autorensystem stammt die Datei? Ist die Datei für Koordination, Auswertung, Übergabe oder Archiv gedacht? Ohne Zweck lässt sich Qualität nicht bewerten.
 
 Danach folgt die technische Prüfung. Lässt sich die Datei mit einem Parser öffnen, nicht nur mit einem Viewer? Gibt es Schemafehler? Sind GlobalIds eindeutig? Sind Einheiten korrekt? Stimmen Modellursprung und Nordrichtung? Sind Geschosse und Räume vorhanden? Diese Punkte sind die Grundlage für jede weitere Automatisierung.
 
-Die fachliche Prüfung fragt nach Mindestinformationen. Außenwände brauchen Materialschichten, U-Wert, Brandschutz und Klassifikation. Türen brauchen Maße, Öffnungsrichtung, Raumbezug und gegebenenfalls Feuer- oder Rauchschutz. TGA-Objekte brauchen Systemzuordnung und Typinformation. Räume brauchen Nummer, Name, Fläche und Nutzung. Welche dieser Anforderungen gelten, muss im BAP oder in einer IDS stehen.
+Die fachliche Prüfung fragt nach Mindestinformationen. ::Außenwand:: brauchen Materialschichten, U-Wert, Brandschutz und Klassifikation. Türen brauchen Maße, Öffnungsrichtung, Raumbezug und gegebenenfalls Feuer- oder Rauchschutz. TGA-Objekte brauchen Systemzuordnung und Typinformation. Räume brauchen Nummer, Name, Fläche und Nutzung. Welche dieser Anforderungen gelten, muss im BAP oder in einer ::IDS:: stehen.
 
-Für Softwareentwicklung ist die wichtigste Regel: IFC nicht wie JSON mit festen Pfaden lesen. Dasselbe Konzept kann je nach Export über Typen, Instanzen, PropertySets oder Beziehungen kommen. Robuste Werkzeuge traversieren Relationen, behandeln fehlende Werte kontrolliert und geben verständliche Qualitätsmeldungen aus. Ein gutes IFC-Tool erklärt, warum es eine Information nicht findet.
+Für Softwareentwicklung ist die wichtigste Regel: IFC nicht wie JSON mit festen Pfaden lesen. Dasselbe Konzept kann je nach Export über Typen, Instanzen, ::Pset:: oder Beziehungen kommen. Robuste Werkzeuge traversieren Relationen, behandeln fehlende Werte kontrolliert und geben verständliche Qualitätsmeldungen aus. Ein gutes IFC-Tool erklärt, warum es eine Information nicht findet.
 
 ## Zusammenfassung
 
 **IFC ist ein offenes Beziehungsmodell für Gebäudeinformationen, nicht nur ein 3D-Austauschformat.**
 
-Projektstruktur, Entitäten, Properties, Mengen, Beziehungen, STEP und Georeferenzierung bestimmen, ob Software ein Modell wirklich auswerten kann. Wer IFC versteht, kann BIM-Qualität prüfen statt nur Dateien weiterzureichen.
+Projektstruktur, Entitäten, ::Properties::, Mengen, Beziehungen, STEP und ::Georeferenzierung:: bestimmen, ob Software ein Modell wirklich auswerten kann. Wer IFC versteht, kann BIM-Qualität prüfen statt nur Dateien weiterzureichen.
 
 Verwandte Kapitel: [Kap. 17](/chapters/17-was-bim-wirklich-ist) · [Kap. 19](/chapters/19-klassifikation) · [Kap. 20](/chapters/20-prozess-kollaboration)

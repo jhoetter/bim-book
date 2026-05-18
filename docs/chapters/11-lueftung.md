@@ -64,7 +64,7 @@ tags: lüftung, kanalquerschnitt, schacht, tga
 
 Raumlufttechnische Anlagen im Gewerbe können mehr als Lüften: heizen, kühlen, befeuchten, entfeuchten und filtern. Büros, Schulen, Versammlungsräume oder Labore haben höhere und genauer definierte Außenluftanforderungen. ASR A3.6 gibt Arbeitsstättenanforderungen vor; VDI 6022 behandelt Hygiene.
 
-Für Architekten bedeutet das: RLT braucht Technikflächen, Schächte, Dachgeräte, Ansaug- und Fortluftpunkte, Schalldämpfer und Wartungswege. In Büroprojekten kann Lüftung die Deckenhöhe stärker prägen als das Tragwerk.
+Für Architekten bedeutet das: ::RLT-Anlage:: braucht Technikflächen, Schächte, Dachgeräte, Ansaug- und Fortluftpunkte, Schalldämpfer und Wartungswege. In Büroprojekten kann Lüftung die Deckenhöhe stärker prägen als das Tragwerk.
 
 ## 11.6 Luftqualität planen und betreiben
 

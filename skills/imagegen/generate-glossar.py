@@ -152,6 +152,12 @@ PROMPTS: dict[str, str] = {
         "Sound transmission diagram: sound waves (blue) hitting a wall cross-section, "
         "reduced waves on other side. dB value reduction shown by arrow size decrease."
     ),
+    "schichtenmodell": (
+        "Exploded isometric building layer model: four separated layers of a compact apartment "
+        "building, showing structural frame in gray, building envelope in thermal blue, technical "
+        "building systems as amber pipes and cables, and interior fit-out as light partitions. "
+        "Layered systems concept, clean centered composition."
+    ),
     "step": (
         "File format icon: .ifc file with structured data tree emanating from it. "
         "STEP data format represented as clean code/table lines inside document icon."
@@ -188,6 +194,253 @@ PROMPTS: dict[str, str] = {
         "Thermal conductivity comparison chart: three insulation material blocks side by side "
         "labeled WLG 030, 035, 040, with lambda value scale and heat flow arrow sizes "
         "proportional to conductivity. Blue tones."
+    ),
+    "abstandsflaeche": (
+        "Site plan with a building footprint and translucent setback zones around the walls, "
+        "dimension arrows showing required clear distance to plot boundaries. "
+    ),
+    "aia": (
+        "Client requirements document icon connected to a BIM model, checklist rows flowing into "
+        "a small building data model. "
+    ),
+    "api": (
+        "Two software modules represented as clean boxes exchanging structured data packets "
+        "through a connector bridge. "
+    ),
+    "aussenwand": (
+        "Layered exterior wall cross-section with structural core, blue insulation, plaster "
+        "layers, window opening edge, and exterior/interior sides. "
+    ),
+    "baustoffklasse": (
+        "Material sample tiles arranged by fire reaction, with a small flame icon and protection "
+        "shield, no readable text. "
+    ),
+    "bebauungsplan": (
+        "Simplified zoning map excerpt with plot boundary, buildable area, setback lines, height "
+        "marker, and legend-like geometric symbols without text. "
+    ),
+    "bestandsaufnahme": (
+        "Existing building facade with measurement tools, camera symbol, checklist, and "
+        "highlighted inspected components. "
+    ),
+    "beton": (
+        "Concrete cube sample with aggregate texture, compression arrows pressing from top and "
+        "bottom, structural gray palette. "
+    ),
+    "cde": (
+        "Cloud-like project data hub connected to documents, BIM model, issue marker, and "
+        "approval status symbols. "
+    ),
+    "daemmstoff": (
+        "Three insulation material blocks with porous fiber, foam cells, and rigid board "
+        "textures, heat arrows reduced through them. "
+    ),
+    "datenqualitaet": (
+        "BIM data table with validation checkmarks and one highlighted warning cell connected to "
+        "a small building model. "
+    ),
+    "dgnb": (
+        "Sustainable building certification badge concept with circular evaluation segments "
+        "around a compact building and leaf symbol. "
+    ),
+    "diffusion": (
+        "Wall layer cross-section with tiny vapor particles gradually passing through porous "
+        "material, arrows fading across layers. "
+    ),
+    "din-276": (
+        "Cost structure tree diagram with stacked building cost blocks and numbered group-like "
+        "levels without readable text. "
+    ),
+    "din-277": (
+        "Floor plan area diagram with colored zones for different area categories and dimension "
+        "brackets, no text. "
+    ),
+    "digitaler-zwilling": (
+        "Physical building silhouette mirrored with a digital wireframe twin, sensor dots and "
+        "live data lines between them. "
+    ),
+    "entwaesserung": (
+        "Building plumbing drainage diagram with sloped pipes, vertical stack, roof drain, and "
+        "wastewater arrows. "
+    ),
+    "fernwaerme": (
+        "District heating network pipe entering a building basement heat exchanger, amber warm "
+        "supply and blue return lines. "
+    ),
+    "feuerwiderstandsklasse": (
+        "Wall and slab element between flame and protected room, clock icon indicating duration, "
+        "shield outlines. "
+    ),
+    "flachdach": (
+        "Flat roof section build-up with waterproofing membrane, insulation, slight slope arrow, "
+        "roof drain and parapet edge. "
+    ),
+    "flankenuebertragung": (
+        "Two rooms separated by wall with sound waves traveling around through floor and side "
+        "wall paths, indirect arrows highlighted. "
+    ),
+    "gebaeudeautomation": (
+        "Building cutaway with connected sensors, controller node, lighting, shading and HVAC "
+        "icons linked by thin data lines. "
+    ),
+    "gebaeudeklasse": (
+        "Series of building silhouettes increasing in height with one highlighted class and fire "
+        "safety shield, no text. "
+    ),
+    "georeferenzierung": (
+        "BIM model placed on a map grid with coordinate axes, location pin, and global reference "
+        "marker. "
+    ),
+    "gewerk": (
+        "Construction coordination icon with separate discipline tool symbols arranged around a "
+        "building core. "
+    ),
+    "glas": (
+        "Window glazing panel with layered panes, spacer, sunlight rays and thermal arrows, "
+        "clean technical cross-section. "
+    ),
+    "holz": (
+        "Timber beam and cross-laminated wood panel sample with visible layered grain, "
+        "structural arrows, clean flat style. "
+    ),
+    "ids": (
+        "Validation rules document connected to BIM elements, required property slots checked "
+        "against model objects. "
+    ),
+    "ifcopenshell": (
+        "Open toolbox beside an IFC-like model cube, code brackets and small building elements "
+        "being processed. "
+    ),
+    "informationsstatus": (
+        "Document workflow lane with several status gates, model file moving through review and "
+        "approval checkpoints. "
+    ),
+    "iso-19650": (
+        "International standard document stack connected to a project information workflow and "
+        "BIM model hub. "
+    ),
+    "klassifikation": (
+        "Building objects sorted into a hierarchical taxonomy tree with colored category "
+        "branches and small component icons. "
+    ),
+    "kollisionspruefung": (
+        "Two building services elements intersecting in a model, highlighted clash marker and "
+        "magnifying glass inspection symbol. "
+    ),
+    "kostengruppe": (
+        "Stacked cost blocks forming a hierarchy next to a simplified building, with calculator "
+        "and grouping brackets. "
+    ),
+    "kreislaufwirtschaft": (
+        "Circular arrows around reusable building components, material blocks returning into a "
+        "new building element. "
+    ),
+    "lca": (
+        "Lifecycle loop diagram around a building: material production, construction, operation, "
+        "reuse, with carbon balance icon. "
+    ),
+    "legionellen": (
+        "Domestic hot water pipe with temperature gauge and microscopic bacteria symbols blocked "
+        "by a hygiene shield. "
+    ),
+    "leistungsphase": (
+        "Sequential planning phase timeline with nine abstract steps, architecture documents "
+        "becoming construction output. "
+    ),
+    "leistungsverzeichnis": (
+        "Bill of quantities document with rows, quantity columns, material icons and "
+        "construction package symbol. "
+    ),
+    "luftschall": (
+        "Sound waves traveling through air from a speaker toward a wall, partially reduced on "
+        "the other side. "
+    ),
+    "materialpass": (
+        "Building material inventory passport icon with component blocks, QR-like tag, and reuse "
+        "arrows. "
+    ),
+    "mauerwerk": (
+        "Brick wall section with staggered bond pattern, mortar joints and load arrows "
+        "distributed through masonry. "
+    ),
+    "mvd": (
+        "Large IFC model filtered through a funnel into a smaller purpose-specific model view, "
+        "clean diagram. "
+    ),
+    "photovoltaik": (
+        "Roof-mounted solar panels on flat roof with sun rays and electrical cable path to "
+        "inverter symbol. "
+    ),
+    "properties": (
+        "BIM object with attached property table fields and small key-value tags floating beside "
+        "a wall element. "
+    ),
+    "propertysets": (
+        "Several grouped property cards bundled around a BIM element, connected as organized "
+        "sets. "
+    ),
+    "punktwolke": (
+        "Building facade represented by thousands of blue-gray scan points, with laser scanner "
+        "tripod icon. "
+    ),
+    "raumakustik": (
+        "Interior room with sound rays reflecting and being absorbed by ceiling and wall panels. "
+    ),
+    "rettungsweg": (
+        "Floor plan with highlighted escape path arrows leading from rooms to stair core and "
+        "exterior exit. "
+    ),
+    "rlt-anlage": (
+        "Air handling unit with filters, fan, heat exchanger and duct branches supplying a "
+        "building floor. "
+    ),
+    "rueckbau": (
+        "Building components being carefully disassembled into sorted material stacks with reuse "
+        "arrows. "
+    ),
+    "scan-to-bim": (
+        "Laser scanner capturing an existing building, point cloud transforming into a clean BIM "
+        "model. "
+    ),
+    "sensorik": (
+        "Network of small sensors inside a building sending data points to a central dashboard "
+        "node. "
+    ),
+    "stahlbeton": (
+        "Concrete beam cross-section with embedded steel rebars, compression and tension arrows, "
+        "clean technical detail. "
+    ),
+    "steigschacht": (
+        "Vertical service shaft through multiple floors with water, ventilation and electrical "
+        "runs grouped inside. "
+    ),
+    "tauwasser": (
+        "Wall section with temperature gradient and small condensation droplets appearing in a "
+        "cold layer. "
+    ),
+    "trittschall": (
+        "Footstep impact on floor slab with vibration waves traveling through the floor "
+        "structure to room below. "
+    ),
+    "vorlauf-ruecklauf": (
+        "Heating loop with amber supply pipe and blue return pipe circulating through radiator "
+        "or floor heating manifold. "
+    ),
+    "waermeerzeuger": (
+        "Compact heat generation unit connected to heating distribution, with flame, heat pump "
+        "and network source symbols abstracted. "
+    ),
+    "waermepumpe": (
+        "Heat pump unit extracting blue ambient heat and delivering amber heat to a building "
+        "heating loop. "
+    ),
+    "gaeb": (
+        "Construction tender data exchange icon with bill of quantities document flowing between "
+        "planner and contractor systems. "
+    ),
+    "5d-bim": (
+        "BIM model connected to quantity bars and cost calculator, showing model-to-cost "
+        "relationship. "
     ),
 }
 

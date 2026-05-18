@@ -9,7 +9,7 @@ Ein warmer Raum entsteht nicht im Heizkörper. Er entsteht aus einer Kette von E
 ---
 
 !!! ziel "Nach diesem Kapitel können Sie …"
-    - Wärmeerzeuger und Wärmeverteilung als System erklären
+    - ::Wärmeerzeuger:: und Wärmeverteilung als System erklären
     - Fußbodenheizung, Vorlauftemperatur und hydraulischen Abgleich einordnen
     - Heizlast als Verbindung zwischen Gebäudehülle und TGA verstehen
 
@@ -17,20 +17,20 @@ Ein warmer Raum entsteht nicht im Heizkörper. Er entsteht aus einer Kette von E
 
 Heizung gehört zur ::TGA:: und damit zur veränderlichen technischen Schicht des Gebäudes. Sie beeinflusst aber dauerhafte Entscheidungen: Schachtgrößen, Technikräume, Deckenaufbauten, Dachflächen und Fassadenöffnungen. Ein Architekt muss nicht jede Pumpe auslegen, aber er muss früh fragen: Wo steht der Erzeuger? Wo laufen Leitungen? Welche Temperaturen braucht das System? Wie wird gewartet?
 
-In modernen Gebäuden verschiebt sich die Frage. Früher stand oft der Kessel im Mittelpunkt. Heute ist der Wärmeerzeuger nur ein Teil eines Gesamtsystems aus guter Hülle, niedriger Heizlast, niedrigen Vorlauftemperaturen und intelligenter Regelung. Ein schlecht gedämmtes Gebäude zwingt die Technik zu hohen Temperaturen; ein gutes Gebäude ermöglicht effiziente Systeme.
+In modernen Gebäuden verschiebt sich die Frage. Früher stand oft der Kessel im Mittelpunkt. Heute ist der ::Wärmeerzeuger:: nur ein Teil eines Gesamtsystems aus guter Hülle, niedriger Heizlast, niedrigen Vorlauftemperaturen und intelligenter Regelung. Ein schlecht gedämmtes Gebäude zwingt die Technik zu hohen Temperaturen; ein gutes Gebäude ermöglicht effiziente Systeme.
 
 ## 10.2 Wärmeerzeuger im Vergleich
 
 Gas- und Ölkessel waren lange Standard, verlieren aber durch Klimaziele und GEG-Anforderungen an Zukunftsfähigkeit. Wärmepumpen nutzen Umweltwärme aus Luft, Erdreich oder Wasser. Eine Luft-Wasser-Wärmepumpe erreicht grob COP 3-4, eine Sole-Wasser-Wärmepumpe oft COP 4-5. Entscheidend ist die Jahresarbeitszahl, also die reale Effizienz über ein Jahr.
 
-Fernwärme liefert Wärme aus einem Netz. Im Gebäude steht keine Verbrennung, sondern eine Übergabestation mit Wärmetauscher. Die ökologische Qualität hängt stark vom Netz und seinem ::Primärenergiefaktor:: ab. Biomasse und Pellets können sinnvoll sein, brauchen aber Lager, Anlieferung, Wartung und Emissionsbetrachtung. Solarthermie ergänzt Warmwasser, konkurriert aber mit PV um Dachfläche.
+::Fernwärme:: liefert Wärme aus einem Netz. Im Gebäude steht keine Verbrennung, sondern eine Übergabestation mit Wärmetauscher. Die ökologische Qualität hängt stark vom Netz und seinem ::Primärenergiefaktor:: ab. Biomasse und Pellets können sinnvoll sein, brauchen aber Lager, Anlieferung, Wartung und Emissionsbetrachtung. Solarthermie ergänzt Warmwasser, konkurriert aber mit PV um Dachfläche.
 
 | System | Investition | Betrieb | CO₂-Tendenz | GEG-Eignung |
 |---|---|---|---|---|
 | Gas | niedrig bis mittel | abhängig vom Preis | ungünstig | nur eingeschränkt |
 | Luft-Wasser-Wärmepumpe | mittel | gut bei niedriger Temperatur | gut bei sauberem Strom | gut |
 | Sole-Wasser-Wärmepumpe | hoch | sehr effizient | gut | sehr gut |
-| Fernwärme | niedrig bis mittel | netzabhängig | netzabhängig | gut bei gutem Netz |
+| ::Fernwärme:: | niedrig bis mittel | netzabhängig | netzabhängig | gut bei gutem Netz |
 | Pellets | mittel | Wartung/Lager | biogen, aber Emissionen | fallweise |
 
 <!-- IMAGE
@@ -44,13 +44,13 @@ tags: heizung, wärmeerzeuger, fernwärme, wärmepumpe
 ![Wärmeerzeuger im Vergleich](../assets/illustrations/kap10_waermeerzeuger_vergleich.png)
 
 !!! kastanienallee "Kastanienallee 7"
-    Kastanienallee 7 nutzt Fernwärme. Dadurch entfallen Kessel, Brennstofflager und Abgasführung; im Keller reicht eine Übergabestation mit Wärmetauscher, Regelung und Pumpengruppen. Verglichen mit einer Luft-Wasser-Wärmepumpe spart das Dach- oder Außenflächen für Außengeräte, macht das Projekt aber abhängig vom Netz. Für den GEG-Nachweis zählt der Primärenergiefaktor des Fernwärmenetzes.
+    Kastanienallee 7 nutzt ::Fernwärme::. Dadurch entfallen Kessel, Brennstofflager und Abgasführung; im Keller reicht eine Übergabestation mit Wärmetauscher, Regelung und Pumpengruppen. Verglichen mit einer Luft-Wasser-Wärmepumpe spart das Dach- oder Außenflächen für Außengeräte, macht das Projekt aber abhängig vom Netz. Für den GEG-Nachweis zählt der Primärenergiefaktor des Fernwärmenetzes.
 
 ## 10.3 Wärmeverteilung
 
 Heizkörper arbeiten klassisch mit höheren Temperaturen, etwa 70/55 °C im Altbau. Flächenheizungen arbeiten mit niedrigerem Niveau, etwa 35/28 °C. Die **Fußbodenheizung** (::FBH::) verteilt Wärme über große Fläche und ermöglicht niedrige Vorlauftemperaturen. Das passt gut zu Wärmepumpen und gut gedämmten Gebäuden.
 
-Leitungsnetze brauchen Vorlauf und Rücklauf. Je nach Gebäude werden Ring-, Steig- oder Sternsysteme geplant. Heizkreise mit unterschiedlicher Länge und Widerstand würden ohne Abgleich unterschiedlich viel Wasser bekommen. Der **::Hydraulische Abgleich::** stellt Volumenströme so ein, dass alle Räume die berechnete Wärme erhalten. Seit den jüngeren GEG-Anforderungen ist er im Neubau und bei vielen Modernisierungen Pflicht beziehungsweise Stand der Technik.
+Leitungsnetze brauchen ::Vorlauf und Rücklauf::. Je nach Gebäude werden Ring-, Steig- oder Sternsysteme geplant. Heizkreise mit unterschiedlicher Länge und Widerstand würden ohne Abgleich unterschiedlich viel Wasser bekommen. Der **::Hydraulischer Abgleich::** stellt Volumenströme so ein, dass alle Räume die berechnete Wärme erhalten. Seit den jüngeren GEG-Anforderungen ist er im Neubau und bei vielen Modernisierungen Pflicht beziehungsweise Stand der Technik.
 
 <!-- IMAGE
 name: kap10_heizkreis_schema
@@ -62,7 +62,7 @@ tags: fernwärme, fbh, hydraulischer-abgleich, heizkreis
 -->
 ![Heizkreisschema](../assets/illustrations/kap10_heizkreis_schema.png)
 
-Das Schema zeigt die Verteilung im Gebäude. Im Raum selbst wird daraus ein Bauteilaufbau: Die Heizrohre liegen im Bodenpaket und müssen mit Estrich, Trittschall, Belag und Raumhöhe koordiniert werden.
+Das Schema zeigt die Verteilung im Gebäude. Im Raum selbst wird daraus ein Bauteilaufbau: Die Heizrohre liegen im Bodenpaket und müssen mit Estrich, ::Trittschall::, Belag und Raumhöhe koordiniert werden.
 
 <!-- IMAGE
 name: kap10_fbh_aufbau
@@ -91,11 +91,11 @@ Damit verbindet die Heizlast [Kapitel 6](/chapters/06-waermeschutz-geg) mit der 
 
 ## 10.6 Planungsfragen vor der Gerätewahl
 
-In frühen Projektbesprechungen wird häufig zu schnell über Geräte gesprochen: Wärmepumpe oder Fernwärme, Speichergröße, Hersteller, Regelung. Vorher müssen einfachere Fragen geklärt sein. Wie hoch ist die Heizlast? Welche Vorlauftemperatur ist realistisch? Gibt es genug Platz für Technik, Verteiler und Wartung? Wo laufen Steigleitungen? Wie wird Warmwasser hygienisch erzeugt? Wer betreibt die Anlage später?
+In frühen Projektbesprechungen wird häufig zu schnell über Geräte gesprochen: ::Wärmepumpe:: oder ::Fernwärme::, Speichergröße, Hersteller, Regelung. Vorher müssen einfachere Fragen geklärt sein. Wie hoch ist die Heizlast? Welche Vorlauftemperatur ist realistisch? Gibt es genug Platz für Technik, Verteiler und Wartung? Wo laufen Steigleitungen? Wie wird Warmwasser hygienisch erzeugt? Wer betreibt die Anlage später?
 
-Die Vorlauftemperatur ist dabei der Schlüssel. Eine Wärmepumpe kann technisch hohe Temperaturen liefern, aber ihre Effizienz fällt. Eine Fußbodenheizung mit niedriger Temperatur braucht eine gut gedämmte Hülle und ausreichend Verlegefläche. Ein Raum mit großer Glasfläche, wenig Bodenfläche und hohem Komfortanspruch kann zur Engstelle werden. Deshalb gehören Heizlast und Grundriss zusammen.
+Die Vorlauftemperatur ist dabei der Schlüssel. Eine ::Wärmepumpe:: kann technisch hohe Temperaturen liefern, aber ihre Effizienz fällt. Eine Fußbodenheizung mit niedriger Temperatur braucht eine gut gedämmte Hülle und ausreichend Verlegefläche. Ein Raum mit großer Glasfläche, wenig Bodenfläche und hohem Komfortanspruch kann zur Engstelle werden. Deshalb gehören Heizlast und Grundriss zusammen.
 
-Wartung ist ebenfalls Entwurf. Eine Fernwärmestation braucht Zugang, Abstand vor Regelgruppen, Platz für Wärmemengenzähler und eine klare Leitungsführung. Verteiler in Wohnungen müssen erreichbar bleiben, dürfen aber den Wohnwert nicht stören. Schächte müssen so liegen, dass Vor- und Rücklauf nicht unnötig lang werden. Lange Leitungswege erhöhen Wärmeverluste, Kosten und Reaktionszeiten.
+Wartung ist ebenfalls Entwurf. Eine Fernwärmestation braucht Zugang, Abstand vor Regelgruppen, Platz für Wärmemengenzähler und eine klare Leitungsführung. Verteiler in Wohnungen müssen erreichbar bleiben, dürfen aber den Wohnwert nicht stören. Schächte müssen so liegen, dass ::Vorlauf und Rücklauf:: nicht unnötig lang werden. Lange Leitungswege erhöhen Wärmeverluste, Kosten und Reaktionszeiten.
 
 Warmwasser wird oft unterschätzt. Im Mehrfamilienhaus ist nicht nur die Energiemenge relevant, sondern Hygiene und Abrechnung. Zentrale Systeme brauchen Zirkulation, Dämmung, Temperaturhaltung und regelmäßige Kontrolle. Dezentrale Systeme reduzieren manche Hygienerisiken, verlagern aber Leistung und Wartung in die Wohnung. Die richtige Lösung hängt von Betreiber, Nutzerstruktur und Schachtkonzept ab.
 
@@ -106,7 +106,7 @@ Regelung entscheidet schließlich, ob ein gutes System gut funktioniert. Ein hyd
 
 ## 10.7 Prüffragen für die Praxis
 
-Vor der Festlegung des Heizsystems sollte ein Planungsteam die Heizlast, die gewünschte Vorlauftemperatur, den Warmwasserbedarf und die Betriebsstrategie getrennt prüfen. Ein System kann für Raumheizung sehr effizient sein und bei Warmwasser ungünstig werden. Eine Wärmepumpe kann zur Hülle passen, aber am Schall, am Platz für Außengeräte oder am Stromanschluss scheitern. Fernwärme kann technisch einfach sein, aber abhängig von Netzpreisen und Netzdekarbonisierung.
+Vor der Festlegung des Heizsystems sollte ein Planungsteam die Heizlast, die gewünschte Vorlauftemperatur, den Warmwasserbedarf und die Betriebsstrategie getrennt prüfen. Ein System kann für Raumheizung sehr effizient sein und bei Warmwasser ungünstig werden. Eine ::Wärmepumpe:: kann zur Hülle passen, aber am Schall, am Platz für Außengeräte oder am Stromanschluss scheitern. ::Fernwärme:: kann technisch einfach sein, aber abhängig von Netzpreisen und Netzdekarbonisierung.
 
 Die Rücklauftemperatur ist ein guter Qualitätsindikator. Niedrige Rückläufe verbessern Wärmepumpen, Fernwärmeauskühlung und Brennwertnutzung. Hohe Rückläufe zeigen oft falsche Volumenströme, zu kleine Heizflächen oder schlechte Regelung. Deshalb darf der hydraulische Abgleich nicht als einmalige Pflicht verstanden werden; er ist die Grundlage für stabile Betriebswerte.
 
@@ -118,9 +118,9 @@ Heizungsdaten sind ein gutes Beispiel für Systembeziehungen. Ein Rohrstück all
 
 Für Software ist die Verbindung zwischen Raum und Heizlast zentral. Räume aus dem Architekturmodell liefern Fläche, Volumen, Nutzung und Hüllflächenbezug. Daraus entsteht eine Heizlast. Diese Heizlast bestimmt Heizflächen und Volumenströme. Wenn Räume später geteilt, zusammengelegt oder anders genutzt werden, muss die Technikprüfung reagieren. Ohne stabile Raum-IDs bricht diese Kette.
 
-Auch Betriebsdaten können zurückfließen. Soll-Vorlauf, Ist-Vorlauf, Rücklauf, Pumpenleistung, Ventilstellung und Raumtemperatur zeigen, ob das System wie geplant läuft. Im Neubau reicht ein as-planned-Modell; im Betrieb braucht man ein as-operated-Verständnis. Das ist der Übergang zum digitalen Zwilling in [Kapitel 24](/chapters/24-digitaler-zwilling-ki).
+Auch Betriebsdaten können zurückfließen. Soll-Vorlauf, Ist-Vorlauf, ::Vorlauf und Rücklauf::, Pumpenleistung, Ventilstellung und Raumtemperatur zeigen, ob das System wie geplant läuft. Im Neubau reicht ein as-planned-Modell; im Betrieb braucht man ein as-operated-Verständnis. Das ist der Übergang zum digitalen Zwilling in [Kapitel 24](/chapters/24-digitaler-zwilling-ki).
 
-Ein gutes Prüfwerkzeug für Heizung meldet daher nicht nur Kollisionen. Es fragt: Hat jeder beheizte Raum eine Heizlast? Ist jeder Heizkreis einem Raum zugeordnet? Sind Verteiler zugänglich? Sind Leitungen im richtigen System? Stimmen Vor- und Rücklauf? Sind Dämmungen an Leitungen vorgesehen? Solche Prüfungen sparen spätere Sucharbeit.
+Ein gutes Prüfwerkzeug für Heizung meldet daher nicht nur Kollisionen. Es fragt: Hat jeder beheizte Raum eine Heizlast? Ist jeder Heizkreis einem Raum zugeordnet? Sind Verteiler zugänglich? Sind Leitungen im richtigen System? Stimmen ::Vorlauf und Rücklauf::? Sind Dämmungen an Leitungen vorgesehen? Solche Prüfungen sparen spätere Sucharbeit.
 
 ## BIM-Brücke: Heizung als MEP-Modell
 

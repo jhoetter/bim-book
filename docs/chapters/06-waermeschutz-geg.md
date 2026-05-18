@@ -19,7 +19,7 @@ Wärme verlässt ein Gebäude auf drei Hauptwegen. Transmission ist Wärmefluss 
 
 Das A/V-Verhältnis aus [Kapitel 2](/chapters/02-entwurf-raum-funktion) wirkt direkt auf Transmission. Ein kompakter Baukörper hat weniger Hüllfläche pro Volumen und damit weniger Verlustfläche. Dämmung verbessert jede Fläche, aber sie kann eine ungünstige Geometrie nicht vollständig wegzaubern.
 
-Der zentrale Kennwert ist der **::U-Wert::**. Er beschreibt, wie viel Wärmeleistung pro Quadratmeter Bauteilfläche und Kelvin Temperaturdifferenz hindurchgeht. Je kleiner der ::U-Wert::, desto besser. Fenster mit U = 0,90 W/(m²K) verlieren bei gleicher Fläche mehr Wärme als eine Außenwand mit U = 0,19 W/(m²K).
+Der zentrale Kennwert ist der **::U-Wert::**. Er beschreibt, wie viel Wärmeleistung pro Quadratmeter Bauteilfläche und Kelvin Temperaturdifferenz hindurchgeht. Je kleiner der ::U-Wert::, desto besser. Fenster mit U = 0,90 W/(m²K) verlieren bei gleicher Fläche mehr Wärme als eine ::Außenwand:: mit U = 0,19 W/(m²K).
 
 ## 6.2 U-Wert: Berechnung
 
@@ -45,7 +45,7 @@ tags: u-wert, r-wert, mineralwolle, wärmeschutz
 ![U-Wert-Berechnung](../assets/illustrations/kap06_u_wert_berechnung.png)
 
 !!! kastanienallee "Kastanienallee 7"
-    Vereinfachte Rechnung Außenwand: Innenübergang Rsi = 0,13 m²K/W, Außenübergang Rse = 0,04 m²K/W. Beton 200 mm mit λ = 2,10 W/(mK): R = 0,200 / 2,10 = 0,095 m²K/W. ::Mineralwolle:: WLG 035, 160 mm: R = 0,160 / 0,035 = 4,57 m²K/W. Putzschichten zusammen vereinfacht R = 0,03 m²K/W. Gesamt R = 0,13 + 0,095 + 4,57 + 0,03 + 0,04 = 4,865 m²K/W. U = 1 / 4,865 = 0,206 W/(m²K). Mit optimierten Produktwerten und Detailansatz liegt der Zielwert des Projekts bei rund 0,19 W/(m²K).
+    Vereinfachte Rechnung ::Außenwand:: Innenübergang Rsi = 0,13 m²K/W, Außenübergang Rse = 0,04 m²K/W. ::Beton:: 200 mm mit λ = 2,10 W/(mK): R = 0,200 / 2,10 = 0,095 m²K/W. ::Mineralwolle:: WLG 035, 160 mm: R = 0,160 / 0,035 = 4,57 m²K/W. Putzschichten zusammen vereinfacht R = 0,03 m²K/W. Gesamt R = 0,13 + 0,095 + 4,57 + 0,03 + 0,04 = 4,865 m²K/W. U = 1 / 4,865 = 0,206 W/(m²K). Mit optimierten Produktwerten und Detailansatz liegt der Zielwert des Projekts bei rund 0,19 W/(m²K).
 
 ## 6.3 Wärmebrücken
 
@@ -82,7 +82,7 @@ tags: geg, primärenergiefaktor, transmissionswärmeverlust, energieausweis
 ![GEG-Anforderungslogik](../assets/illustrations/kap06_geg_anforderungen.png)
 
 !!! kastanienallee "Kastanienallee 7"
-    Das Leitbeispiel erreicht einen Primärenergiebedarf von 45 kWh/(m²a). Die Hülle kombiniert Außenwand U ≈ 0,19 W/(m²K), Flachdach U ≈ 0,17 W/(m²K), Fenster U ≈ 0,90 W/(m²K) und kompakte Geometrie mit A/V ≈ 0,38 m⁻¹. Nachgebessert wurde vor allem an Fensteranschlüssen, Dachrand und Schachtbereichen, weil dort Wärmebrücken den rechnerischen Vorteil guter Flächenbauteile sonst schwächen.
+    Das Leitbeispiel erreicht einen Primärenergiebedarf von 45 kWh/(m²a). Die Hülle kombiniert ::Außenwand:: U ≈ 0,19 W/(m²K), ::Flachdach:: U ≈ 0,17 W/(m²K), Fenster U ≈ 0,90 W/(m²K) und kompakte Geometrie mit A/V ≈ 0,38 m⁻¹. Nachgebessert wurde vor allem an Fensteranschlüssen, Dachrand und Schachtbereichen, weil dort Wärmebrücken den rechnerischen Vorteil guter Flächenbauteile sonst schwächen.
 
 ## 6.5 Sommerlicher Wärmeschutz
 
@@ -92,9 +92,9 @@ Der Sonneneintragskennwert beschreibt vereinfacht, wie viel solare Wärme in ein
 
 ## 6.6 Was man im Entwurf früh prüfen muss
 
-Der häufigste Fehler beim Wärmeschutz ist die späte Optimierung einzelner Bauteile. Dann wird eine Außenwand dicker, ein Fenster besser oder ein Wärmeerzeuger effizienter, aber die grundsätzlichen Verluste sind längst durch Geometrie, Orientierung und Anschlussdetails festgelegt. Früh wirksam sind andere Fragen: Wie kompakt ist der Baukörper? Wie groß ist der Fensteranteil je Orientierung? Wo liegen Balkone, Loggien, Attiken, Sockel und auskragende Bauteile? Wie viele Schächte und Durchdringungen schneiden die Hülle?
+Der häufigste Fehler beim Wärmeschutz ist die späte Optimierung einzelner Bauteile. Dann wird eine ::Außenwand:: dicker, ein Fenster besser oder ein Wärmeerzeuger effizienter, aber die grundsätzlichen Verluste sind längst durch Geometrie, Orientierung und Anschlussdetails festgelegt. Früh wirksam sind andere Fragen: Wie kompakt ist der Baukörper? Wie groß ist der Fensteranteil je Orientierung? Wo liegen Balkone, Loggien, Attiken, Sockel und auskragende Bauteile? Wie viele Schächte und Durchdringungen schneiden die Hülle?
 
-Fenster sind ein gutes Beispiel. Große Verglasungen liefern Tageslicht, Ausblick und solare Gewinne. Gleichzeitig haben sie deutlich höhere ::U-Wert::-Werte als opake Bauteile und sind im Sommer kritisch. Ein Fenster mit U = 0,90 W/(m²K) ist gut, verliert aber immer noch etwa das Vier- bis Fünffache einer sehr guten Außenwand. Deshalb muss die Frage nicht lauten, ob Fenster gut oder schlecht sind, sondern ob Größe, Orientierung, Verschattung und Lüftbarkeit zusammenpassen.
+Fenster sind ein gutes Beispiel. Große Verglasungen liefern Tageslicht, Ausblick und solare Gewinne. Gleichzeitig haben sie deutlich höhere ::U-Wert::-Werte als opake Bauteile und sind im Sommer kritisch. Ein Fenster mit U = 0,90 W/(m²K) ist gut, verliert aber immer noch etwa das Vier- bis Fünffache einer sehr guten ::Außenwand::. Deshalb muss die Frage nicht lauten, ob Fenster gut oder schlecht sind, sondern ob Größe, Orientierung, Verschattung und Lüftbarkeit zusammenpassen.
 
 Der Anschluss ist dabei oft wichtiger als der Produktwert. Ein Fenster kann auf dem Datenblatt gut sein und im Gebäude schlecht wirken, wenn es zu weit innen oder außen sitzt, die Laibung ungedämmt bleibt oder der Rollladenkasten die Dämmebene unterbricht. Ähnliches gilt für Attiken: Die Dachabdichtung, die Wärmedämmung und die Fassadendämmung müssen dort als durchgehendes System geplant werden. Ein pauschaler Flächen-U-Wert sagt über diese Punkte wenig aus.
 
@@ -107,7 +107,7 @@ Der GEG-Nachweis sollte daher nicht erst am Ende als Pflichtdokument entstehen. 
 
 ## 6.7 Prüffragen für die Praxis
 
-Vor dem GEG-Nachweis sollten drei einfache Prüffragen beantwortet sein. Erstens: Sind alle Hüllflächen eindeutig erfasst, also Außenwand, Dach, Kellerdecke, Bodenplatte, Fenster, Türen und Wärmebrücken? Zweitens: Sind die Flächenwerte plausibel, oder entstehen aus dem Modell doppelte oder fehlende Flächen? Drittens: Sind die technischen Systeme mit realistischen Temperaturen, Wirkungsgraden und Primärenergiefaktoren angesetzt?
+Vor dem GEG-Nachweis sollten drei einfache Prüffragen beantwortet sein. Erstens: Sind alle Hüllflächen eindeutig erfasst, also ::Außenwand::, Dach, Kellerdecke, Bodenplatte, Fenster, Türen und Wärmebrücken? Zweitens: Sind die Flächenwerte plausibel, oder entstehen aus dem Modell doppelte oder fehlende Flächen? Drittens: Sind die technischen Systeme mit realistischen Temperaturen, Wirkungsgraden und Primärenergiefaktoren angesetzt?
 
 Gerade für Softwareentwickler ist wichtig: Energetische Berechnung ist keine reine Geometrieaufgabe. Zwei Bauteile können gleich aussehen und thermisch verschieden sein, wenn Schichten, Feuchte, Anschlüsse oder Produktwerte unterschiedlich sind. Umgekehrt kann ein detailreiches Modell energetisch unbrauchbar sein, wenn die Bauteile keine thermischen Eigenschaften tragen. Die Datenqualität entscheidet, ob ein Export in Energieprogramme Zeit spart oder zusätzliche Fehler erzeugt.
 

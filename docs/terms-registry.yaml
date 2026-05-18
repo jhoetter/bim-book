@@ -153,3 +153,127 @@ terms:
 
   wlg:
     introduced_in: "03-baustoffe"
+  abstandsflaeche:
+    introduced_in: "14-planungsrecht"
+  aia:
+    introduced_in: "20-prozess-kollaboration"
+  api:
+    introduced_in: "24-digitaler-zwilling-ki"
+  aussenwand:
+    introduced_in: "05-konstruktion"
+  baustoffklasse:
+    introduced_in: "09-brandschutz"
+  bebauungsplan:
+    introduced_in: "14-planungsrecht"
+  bestandsaufnahme:
+    introduced_in: "23-sanierung"
+  beton:
+    introduced_in: "03-baustoffe"
+  cde:
+    introduced_in: "20-prozess-kollaboration"
+  daemmstoff:
+    introduced_in: "03-baustoffe"
+  datenqualitaet:
+    introduced_in: "24-digitaler-zwilling-ki"
+  dgnb:
+    introduced_in: "22-nachhaltigkeit"
+  diffusion:
+    introduced_in: "07-feuchteschutz"
+  din-276:
+    introduced_in: "16-kosten-ausschreibung"
+  din-277:
+    introduced_in: "19-klassifikation"
+  digitaler-zwilling:
+    introduced_in: "24-digitaler-zwilling-ki"
+  entwaesserung:
+    introduced_in: "12-sanitaer"
+  fernwaerme:
+    introduced_in: "10-heizung-waermeversorgung"
+  feuerwiderstandsklasse:
+    introduced_in: "09-brandschutz"
+  flachdach:
+    introduced_in: "05-konstruktion"
+  flankenuebertragung:
+    introduced_in: "08-schallschutz"
+  gebaeudeautomation:
+    introduced_in: "13-elektro"
+  gebaeudeklasse:
+    introduced_in: "09-brandschutz"
+  georeferenzierung:
+    introduced_in: "18-ifc"
+  gewerk:
+    introduced_in: "16-kosten-ausschreibung"
+  glas:
+    introduced_in: "03-baustoffe"
+  holz:
+    introduced_in: "03-baustoffe"
+  ids:
+    introduced_in: "18-ifc"
+  ifcopenshell:
+    introduced_in: "18-ifc"
+  informationsstatus:
+    introduced_in: "20-prozess-kollaboration"
+  iso-19650:
+    introduced_in: "20-prozess-kollaboration"
+  klassifikation:
+    introduced_in: "19-klassifikation"
+  kollisionspruefung:
+    introduced_in: "20-prozess-kollaboration"
+  kostengruppe:
+    introduced_in: "16-kosten-ausschreibung"
+  kreislaufwirtschaft:
+    introduced_in: "22-nachhaltigkeit"
+  lca:
+    introduced_in: "22-nachhaltigkeit"
+  legionellen:
+    introduced_in: "12-sanitaer"
+  leistungsphase:
+    introduced_in: "15-hoai"
+  leistungsverzeichnis:
+    introduced_in: "16-kosten-ausschreibung"
+  luftschall:
+    introduced_in: "08-schallschutz"
+  materialpass:
+    introduced_in: "22-nachhaltigkeit"
+  mauerwerk:
+    introduced_in: "03-baustoffe"
+  mvd:
+    introduced_in: "18-ifc"
+  photovoltaik:
+    introduced_in: "13-elektro"
+  properties:
+    introduced_in: "18-ifc"
+  propertysets:
+    introduced_in: "18-ifc"
+  punktwolke:
+    introduced_in: "23-sanierung"
+  raumakustik:
+    introduced_in: "08-schallschutz"
+  rettungsweg:
+    introduced_in: "09-brandschutz"
+  rlt-anlage:
+    introduced_in: "11-lueftung"
+  rueckbau:
+    introduced_in: "22-nachhaltigkeit"
+  scan-to-bim:
+    introduced_in: "23-sanierung"
+  sensorik:
+    introduced_in: "24-digitaler-zwilling-ki"
+  stahlbeton:
+    introduced_in: "03-baustoffe"
+  steigschacht:
+    introduced_in: "12-sanitaer"
+  tauwasser:
+    introduced_in: "07-feuchteschutz"
+  trittschall:
+    introduced_in: "08-schallschutz"
+  vorlauf-ruecklauf:
+    introduced_in: "10-heizung-waermeversorgung"
+  waermeerzeuger:
+    introduced_in: "10-heizung-waermeversorgung"
+  waermepumpe:
+    introduced_in: "10-heizung-waermeversorgung"
+  gaeb:
+    introduced_in: "16-kosten-ausschreibung"
+  5d-bim:
+    introduced_in: "16-kosten-ausschreibung"

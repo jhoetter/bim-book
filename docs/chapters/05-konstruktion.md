@@ -9,24 +9,24 @@ Ein Gebäude besteht nicht aus abstrakten Bauteilen, sondern aus Schichten, Ansc
 ---
 
 !!! ziel "Nach diesem Kapitel können Sie …"
-    - typische Schichtfolgen von Gründung, Außenwand, Decke und Dach erklären
-    - kritische Anschlussstellen wie Fenster, Flachdach und Aufzugsschacht erkennen
+    - typische Schichtfolgen von Gründung, ::Außenwand::, Decke und Dach erklären
+    - kritische Anschlussstellen wie Fenster, ::Flachdach:: und Aufzugsschacht erkennen
     - Holzbau als eigenes Konstruktionssystem mit Brand-, Schall- und Feuchteanforderungen einordnen
 
 ## 5.1 Gründung
 
 Die Gründung verbindet Gebäude und Baugrund. Bevor man sie plant, muss der Boden bekannt sein. Ein Baugrundgutachten klärt Tragfähigkeit, Grundwasser, Frostempfindlichkeit, Setzungsverhalten und Schadstoffe. Ohne diese Information ist jede Fundamentplanung eine Annahme.
 
-In Deutschland muss die Gründung frostfrei liegen, häufig mindestens etwa 80 cm unter Gelände. Sonst kann gefrierendes Wasser den Boden heben und Bauteile schädigen. Ein Keller verändert die Gründungslogik: Er schafft Technik- und Lagerflächen, braucht aber Abdichtung, Baugrube, Wasserhaltung und mehr Beton. Ohne Keller wird die Bodenplatte einfacher, aber Technik, Fahrräder, Abstellräume und Aufzuggrube brauchen andere Lösungen.
+In Deutschland muss die Gründung frostfrei liegen, häufig mindestens etwa 80 cm unter Gelände. Sonst kann gefrierendes Wasser den Boden heben und Bauteile schädigen. Ein Keller verändert die Gründungslogik: Er schafft Technik- und Lagerflächen, braucht aber Abdichtung, Baugrube, Wasserhaltung und mehr ::Beton::. Ohne Keller wird die Bodenplatte einfacher, aber Technik, Fahrräder, Abstellräume und Aufzuggrube brauchen andere Lösungen.
 
-Bei wasserbeanspruchten Kellern unterscheidet man Weiße Wanne und Schwarze Wanne. Die Weiße Wanne nutzt wasserundurchlässigen Beton mit geregelten Fugen. Die Schwarze Wanne dichtet außen mit Bitumenbahnen oder kunststoffmodifizierten Abdichtungen ab. Perimeterdämmung liegt außen an erdberührten Bauteilen und muss druck- und feuchtebeständig sein, häufig XPS.
+Bei wasserbeanspruchten Kellern unterscheidet man Weiße Wanne und Schwarze Wanne. Die Weiße Wanne nutzt wasserundurchlässigen ::Beton:: mit geregelten Fugen. Die Schwarze Wanne dichtet außen mit Bitumenbahnen oder kunststoffmodifizierten Abdichtungen ab. Perimeterdämmung liegt außen an erdberührten Bauteilen und muss druck- und feuchtebeständig sein, häufig XPS.
 
 !!! kastanienallee "Kastanienallee 7"
     Kastanienallee 7 erhält einen Keller mit Bodenplatte auf verdichtetem Schotter. Für den Aufzug ist eine Grube von ca. 1,10 m unter Fertigfußboden erforderlich; der Keller ist dadurch konstruktiv ohnehin sinnvoll. Angenommen wird eine Weiße Wanne aus WU-Beton mit außenliegender XPS-Perimeterdämmung von 120 mm. Die Bodenplatte trennt Tragwerk, Feuchteschutz und Wärmeschutz: Lasten gehen in den Baugrund, Wasser bleibt außen, Wärmeverluste werden reduziert.
 
 ## 5.2 Außenwand
 
-Außenwände können einschalig, zweischalig oder als Wand mit **Wärmedämmverbundsystem** (::WDVS::) aufgebaut sein. Einschlige Wände versuchen Tragfähigkeit und Wärmeschutz in einem Stein zu lösen. Zweischalige Wände trennen Tragwand, Luftschicht/Dämmung und Vormauerschale. Beim ::WDVS:: trägt die Wand, außen liegt eine Dämmschicht mit Armierung und Putz.
+::Außenwand:: können einschalig, zweischalig oder als Wand mit **Wärmedämmverbundsystem** (::WDVS::) aufgebaut sein. Einschlige Wände versuchen Tragfähigkeit und Wärmeschutz in einem Stein zu lösen. Zweischalige Wände trennen Tragwand, Luftschicht/Dämmung und Vormauerschale. Beim ::WDVS:: trägt die Wand, außen liegt eine Dämmschicht mit Armierung und Putz.
 
 Von innen nach außen folgen häufig Innenoberfläche, tragende Schicht, Dämmung, Armierung und Außenputz. **::Innenputz::** ist die erste Schicht der Innenwandoberfläche und gleicht Unebenheiten aus. **::Armierungsputz::** ist die dünne Mörtelschicht im ::WDVS::, in die ein Gewebe eingelegt wird; sie schützt die Dämmung mechanisch und verteilt Spannungen. Die Reihenfolge ist bauphysikalisch relevant: Außen liegende Dämmung hält die Tragwand warm und reduziert Kondensatrisiken.
 
@@ -55,7 +55,7 @@ tags: fensteranschluss, wärmebrücke, wdvs, detail
 ![Fensteranschluss in der Außenwand](../assets/illustrations/kap05_fensteranschluss.png)
 
 !!! kastanienallee "Kastanienallee 7"
-    Die Referenzwand besteht aus 200 mm Stahlbeton, 160 mm ::Mineralwolle:: WLG 035 und Putzsystem. Schichtfolge innen nach außen: 15 mm ::Innenputz::, 200 mm Stahlbeton, 160 mm Dämmung, 5-8 mm ::Armierungsputz:: mit Gewebe, 3-5 mm Oberputz. Der Dämmwiderstand der ::Mineralwolle:: beträgt R = 0,160 / 0,035 = 4,57 m²K/W. Der resultierende U-Wert liegt bei etwa 0,19 W/(m²K); die genaue Rechnung folgt in [Kapitel 6](/chapters/06-waermeschutz-geg).
+    Die Referenzwand besteht aus 200 mm ::Stahlbeton::, 160 mm ::Mineralwolle:: WLG 035 und Putzsystem. Schichtfolge innen nach außen: 15 mm ::Innenputz::, 200 mm ::Stahlbeton::, 160 mm Dämmung, 5-8 mm ::Armierungsputz:: mit Gewebe, 3-5 mm Oberputz. Der Dämmwiderstand der ::Mineralwolle:: beträgt R = 0,160 / 0,035 = 4,57 m²K/W. Der resultierende U-Wert liegt bei etwa 0,19 W/(m²K); die genaue Rechnung folgt in [Kapitel 6](/chapters/06-waermeschutz-geg).
 
 ## 5.3 Deckenaufbau
 
@@ -77,7 +77,7 @@ tags: deckenaufbau, estrich, fbh, schallschutz
 
 ## 5.3a Aufzugsschacht
 
-Der Aufzugsschacht ist kein Loch im Gebäude, sondern ein eigenes Bauteil. Er besteht im Wohnungsbau häufig aus Stahlbeton und kann zugleich aussteifen. Aus der barrierefreien Kabine von 1,10 m × 1,40 m entstehen mit Führungsschienen, Türen, Wanddicken und Toleranzen schnell Schachtaußenmaße um 1,80 m × 2,20 m.
+Der Aufzugsschacht ist kein Loch im Gebäude, sondern ein eigenes Bauteil. Er besteht im Wohnungsbau häufig aus ::Stahlbeton:: und kann zugleich aussteifen. Aus der barrierefreien Kabine von 1,10 m × 1,40 m entstehen mit Führungsschienen, Türen, Wanddicken und Toleranzen schnell Schachtaußenmaße um 1,80 m × 2,20 m.
 
 Die Wanddicke liegt oft bei mindestens 20 cm, auch wegen Schallschutz. Der Schacht braucht eine Grube, bei Kastanienallee 7 etwa 1,10 m unter EG-Fertigfußboden. Maschinenraumlose Aufzüge haben den Antrieb im Schachtkopf, brauchen aber Kopfraum über dem obersten Halt. DIN EN 81-20 regelt Sicherheitsräume, Türen, Schachtzugänge und technische Anforderungen.
 
@@ -85,7 +85,7 @@ Der Schacht konkurriert mit Treppe, Sanitärschächten, Elektrotrassen und Rettu
 
 ## 5.4 Flachdach
 
-Das Flachdach ist eine horizontale Gebäudehülle. Ein typischer Warmdachaufbau lautet: Tragplatte, **::Dampfbremse::**, Dämmung, Abdichtung, Schutzlage und Nutzungsschicht. Eine ::Dampfbremse:: verlangsamt Dampfdiffusion, damit Feuchte nicht in der kalten Dachzone kondensiert. Eine **::Dampfsperre::** ist deutlich dichter; sie wird verwendet, wenn praktisch kein Dampfdurchgang zulässig ist.
+Das ::Flachdach:: ist eine horizontale Gebäudehülle. Ein typischer Warmdachaufbau lautet: Tragplatte, **::Dampfbremse::**, Dämmung, Abdichtung, Schutzlage und Nutzungsschicht. Eine ::Dampfbremse:: verlangsamt Dampfdiffusion, damit Feuchte nicht in der kalten Dachzone kondensiert. Eine **::Dampfsperre::** ist deutlich dichter; sie wird verwendet, wenn praktisch kein Dampfdurchgang zulässig ist.
 
 Flachdächer brauchen Gefälle, auch wenn sie "flach" heißen. Mindestens 2 Prozent sind eine übliche Zielgröße, damit Wasser zu Einläufen läuft. Attiken fassen das Dach, erzeugen aber Anschlüsse. Entwässerung braucht Hauptabläufe und Notüberläufe. Begrünung und PV erhöhen Nutzwert, Gewicht und Koordinationsbedarf.
 
@@ -102,7 +102,7 @@ tags: flachdach, dampfbremse, abdichtung, pv
 ![Flachdachaufbau](../assets/illustrations/kap05_flachdach.png)
 
 !!! kastanienallee "Kastanienallee 7"
-    Das Flachdach besteht aus Stahlbeton-Tragschicht, bituminöser ::Dampfbremse::, 180 mm PIR-Dämmung, zweilagiger Abdichtung, Schutzlage und extensiver Begrünung von ca. 80-100 mm. Die PV-Anlage mit 30 kWp steht auf ballastierten Unterkonstruktionen. Die Dachfläche beträgt 20 m × 18 m = 360 m²; mit Attika und Technikflächen werden Entwässerung und Notüberlauf so geplant, dass Starkregen nicht in die Konstruktion zurückstaut.
+    Das ::Flachdach:: besteht aus Stahlbeton-Tragschicht, bituminöser ::Dampfbremse::, 180 mm PIR-Dämmung, zweilagiger Abdichtung, Schutzlage und extensiver Begrünung von ca. 80-100 mm. Die PV-Anlage mit 30 kWp steht auf ballastierten Unterkonstruktionen. Die Dachfläche beträgt 20 m × 18 m = 360 m²; mit Attika und Technikflächen werden Entwässerung und Notüberlauf so geplant, dass Starkregen nicht in die Konstruktion zurückstaut.
 
 ## 5.5 Geneigtes Dach
 
@@ -112,11 +112,11 @@ Zwischensparrendämmung nutzt den Raum zwischen den Sparren, ist aber durch Holz
 
 ## 5.6 Holzbau als System
 
-Holzbau ist nicht nur "Beton durch Holz ersetzen". Holzrahmenbau arbeitet mit Stielen, Riegeln, Beplankungen und Dämmung in Gefachen. Er ist hoch vorfertigbar und für fünf Geschosse gut beherrschbar. Brettsperrholz baut mit massiven Wand- und Deckentafeln; höhere Gebäude sind möglich, aber Brand-, Schall- und Anschlussdetails werden anspruchsvoller.
+Holzbau ist nicht nur "::Beton:: durch ::Holz:: ersetzen". Holzrahmenbau arbeitet mit Stielen, Riegeln, Beplankungen und Dämmung in Gefachen. Er ist hoch vorfertigbar und für fünf Geschosse gut beherrschbar. Brettsperrholz baut mit massiven Wand- und Deckentafeln; höhere Gebäude sind möglich, aber Brand-, Schall- und Anschlussdetails werden anspruchsvoller.
 
 Brandschutz im Holzbau funktioniert über Querschnitt, Kapselung und kontrollierten Abbrand. Eine typische Abbrandrate liegt bei etwa 0,65 mm/min. Kapselklassen wie K60 schützen Holzbauteile für eine definierte Zeit vor Brandbeanspruchung. Schallschutz ist schwieriger als im Betonbau, weil leichte Bauteile dem Massegesetz weniger helfen. Lösungen kombinieren Entkopplung, schwere Schüttungen, abgehängte Decken und sorgfältige Flankenplanung.
 
-Feuchte ist die zentrale Dauerhaftigkeitsfrage. Holzfeuchte muss dauerhaft unter etwa 20 Prozent bleiben. Konstruktiver Holzschutz heißt: Wasser vermeiden, schnell abführen, Bauteile trocknungsfähig halten. Kiln-dried-Konstruktionsholz ist technisch kontrollierter, aber auf der Baustelle bleibt Witterungsschutz entscheidend. Ökologisch kann Holz stark sein: Ein Kubikmeter Brettschichtholz bindet grob 250 kg CO₂, solange es im Bauteil verbleibt.
+Feuchte ist die zentrale Dauerhaftigkeitsfrage. Holzfeuchte muss dauerhaft unter etwa 20 Prozent bleiben. Konstruktiver Holzschutz heißt: Wasser vermeiden, schnell abführen, Bauteile trocknungsfähig halten. Kiln-dried-Konstruktionsholz ist technisch kontrollierter, aber auf der Baustelle bleibt Witterungsschutz entscheidend. Ökologisch kann ::Holz:: stark sein: Ein Kubikmeter Brettschichtholz bindet grob 250 kg CO₂, solange es im Bauteil verbleibt.
 
 <!-- IMAGE
 name: kap05_holzbau_systeme

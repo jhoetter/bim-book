@@ -9,15 +9,15 @@ Ein Gebäude kann warm, trocken und standsicher sein und trotzdem schlecht funkt
 ---
 
 !!! ziel "Nach diesem Kapitel können Sie …"
-    - Luftschall, Trittschall und Körperschall unterscheiden
+    - ::Luftschall::, ::Trittschall:: und Körperschall unterscheiden
     - das bewertete Schalldämmmaß R'w einordnen
     - konstruktive Maßnahmen gegen direkte und flankierende Schallübertragung erklären
 
 ## 8.1 Schallarten
 
-Luftschall breitet sich über Luft aus: Stimmen, Musik, Fernseher. Er trifft auf Wände und Decken und versetzt sie in Schwingung. Trittschall entsteht durch Schritte, Stühlerücken oder fallende Gegenstände und gelangt direkt in die Decke. Körperschall entsteht in Bauteilen oder Anlagen, etwa Rohrleitungen, Pumpen, Aufzügen oder Lüftungsgeräten.
+::Luftschall:: breitet sich über Luft aus: Stimmen, Musik, Fernseher. Er trifft auf Wände und Decken und versetzt sie in Schwingung. ::Trittschall:: entsteht durch Schritte, Stühlerücken oder fallende Gegenstände und gelangt direkt in die Decke. Körperschall entsteht in Bauteilen oder Anlagen, etwa Rohrleitungen, Pumpen, Aufzügen oder Lüftungsgeräten.
 
-Flankenübertragung wird oft unterschätzt. Schall geht nicht nur durch die Trennwand, sondern auch über angrenzende Bauteile: Decken, Außenwände, Installationsschächte. Eine gute Wohnungstrennwand kann deshalb in der Messung schlechter abschneiden, wenn flankierende Bauteile schlecht entkoppelt sind.
+::Flankenübertragung:: wird oft unterschätzt. Schall geht nicht nur durch die Trennwand, sondern auch über angrenzende Bauteile: Decken, ::Außenwand::, Installationsschächte. Eine gute Wohnungstrennwand kann deshalb in der Messung schlechter abschneiden, wenn flankierende Bauteile schlecht entkoppelt sind.
 
 <!-- IMAGE
 name: kap08_schallpfade
@@ -31,7 +31,7 @@ tags: schallschutz, luftschall, flankenübertragung, grundriss
 
 ## 8.2 Schalldämmmaß R'w
 
-Das **::Schallschutz R'w::** ist das bewertete Schalldämmmaß eines Bauteils im eingebauten Zustand. Es beschreibt, wie stark Luftschall zwischen zwei Räumen reduziert wird. Ein höherer Wert ist besser. Eine Wohnungstrennwand mit R'w = 53 dB erfüllt typische Mindestanforderungen; erhöhter Schallschutz liegt darüber.
+Das **::Schallschutz R'w::** ist das bewertete Schalldämmmaß eines Bauteils im eingebauten Zustand. Es beschreibt, wie stark ::Luftschall:: zwischen zwei Räumen reduziert wird. Ein höherer Wert ist besser. Eine Wohnungstrennwand mit R'w = 53 dB erfüllt typische Mindestanforderungen; erhöhter Schallschutz liegt darüber.
 
 Das Massegesetz erklärt die Grundtendenz: Verdoppelt man die flächenbezogene Masse eines einschaligen Bauteils, verbessert sich die Schalldämmung grob um 6 dB. Deshalb sind massive Betondecken und schwere Kalksandsteinwände schalltechnisch stark. Leichte Konstruktionen brauchen Entkopplung und mehrschalige Aufbauten.
 
@@ -39,7 +39,7 @@ DIN 4109 legt Mindestanforderungen fest. Für Wohnungstrennwände im Mehrfamilie
 
 ## 8.3 Konstruktive Maßnahmen
 
-Schallschutz nutzt drei Prinzipien: Masse, Entkopplung und Dämpfung. Masse hilft gegen Luftschall. Entkopplung unterbricht Schwingungswege, etwa durch schwimmenden Estrich, elastische Lager oder entkoppelte Vorsatzschalen. Dämpfung reduziert Resonanzen in Hohlräumen und mehrschaligen Konstruktionen.
+Schallschutz nutzt drei Prinzipien: Masse, Entkopplung und Dämpfung. Masse hilft gegen ::Luftschall::. Entkopplung unterbricht Schwingungswege, etwa durch schwimmenden Estrich, elastische Lager oder entkoppelte Vorsatzschalen. Dämpfung reduziert Resonanzen in Hohlräumen und mehrschaligen Konstruktionen.
 
 Der schwimmende Estrich ist ein Standarddetail. Auf der Rohdecke liegt Trittschalldämmung, darauf Estrich ohne starre Verbindung zu Wänden. Randdämmstreifen verhindern Schallbrücken. Werden sie abgeschnitten, durch Mörtel überbrückt oder von Leitungen durchstoßen, verschlechtert sich der Schallschutz.
 
@@ -60,13 +60,13 @@ tags: schallschutz, trittschall, estrich, deckenaufbau
 
 ## 8.4 Schallschutz im Holzbau
 
-Holz ist leicht und deshalb schalltechnisch anspruchsvoller als Beton. Das Massegesetz hilft weniger, und Flankenübertragung über durchlaufende Holzbauteile kann dominant werden. Gute Holzbaudecken arbeiten mit schweren Schüttungen, entkoppelten Unterdecken, elastischen Lagern und sorgfältiger Fugenplanung.
+::Holz:: ist leicht und deshalb schalltechnisch anspruchsvoller als ::Beton::. Das Massegesetz hilft weniger, und ::Flankenübertragung:: über durchlaufende Holzbauteile kann dominant werden. Gute Holzbaudecken arbeiten mit schweren Schüttungen, entkoppelten Unterdecken, elastischen Lagern und sorgfältiger Fugenplanung.
 
 Die Grundlagen des Holzbaus stehen in [Kapitel 5](/chapters/05-konstruktion). Für den Schallschutz ist dort wichtig: Holzbau funktioniert nicht schlechter, aber weniger verzeihend. Kleine starre Verbindungen können große akustische Wirkung haben.
 
 ## 8.5 Raumakustik
 
-Schalldämmung trennt Räume. Raumakustik beschreibt die Klangqualität innerhalb eines Raums. Ein Treppenhaus mit harten Wänden, Betonboden und Glasflächen kann stark hallen, obwohl die Wohnungstrennwände gut sind. Die Nachhallzeit T, oft RT60 genannt, beschreibt, wie lange Schall im Raum ausklingt.
+Schalldämmung trennt Räume. ::Raumakustik:: beschreibt die Klangqualität innerhalb eines Raums. Ein Treppenhaus mit harten Wänden, Betonboden und Glasflächen kann stark hallen, obwohl die Wohnungstrennwände gut sind. Die Nachhallzeit T, oft RT60 genannt, beschreibt, wie lange Schall im Raum ausklingt.
 
 Die Sabine-Formel lautet vereinfacht: T = 0,163 × V / A. V ist Raumvolumen, A die äquivalente Absorptionsfläche. Mehr Absorption durch Akustikdecken, Holzwolleplatten, Mineralfaser, Vorhänge, Teppich oder Möblierung verkürzt den Nachhall. Für Wohnungen sind Werte um 0,5 s angenehm, Treppenhäuser sollten nicht zu hallig werden, Gemeinschaftsräume liegen je nach Nutzung etwa bei 0,8 s.
 
@@ -82,7 +82,7 @@ Der Aufzug ist ein weiterer Sonderfall. Er erzeugt Körperschall über Führunge
 
 Für Holzbau zeigt sich die Bedeutung der Flanken besonders deutlich. Eine Decke kann im Labor gute Werte erreichen, aber im Gebäude über durchlaufende Wände, Installationskanäle oder Schraubverbindungen Schall weitergeben. Deshalb reicht es nicht, einzelne Bauteile aus einem Katalog zu wählen. Der Anschluss entscheidet, ob das System funktioniert. Genau hier unterscheidet sich gute Planung von Produktmontage.
 
-In frühen BIM-Modellen sind Schallschutzanforderungen oft unsichtbar. Wände haben Namen, Dicken und Materialien, aber nicht den Grund, warum sie so aufgebaut sind. Sinnvoll ist daher eine einfache Anforderungsebene: Wohnungstrennwand, Flurwand, Schachtwand, Außenwand, Installationswand. Jede Kategorie erhält Zielwerte für Luftschall, Feuerwiderstand und gegebenenfalls Feuchte. Kollisionsprüfung allein findet keine schlechte Akustik, aber sie kann verhindern, dass Leitungen durch akustisch sensible Bauteile geführt werden.
+In frühen BIM-Modellen sind Schallschutzanforderungen oft unsichtbar. Wände haben Namen, Dicken und Materialien, aber nicht den Grund, warum sie so aufgebaut sind. Sinnvoll ist daher eine einfache Anforderungsebene: Wohnungstrennwand, Flurwand, Schachtwand, ::Außenwand::, Installationswand. Jede Kategorie erhält Zielwerte für ::Luftschall::, Feuerwiderstand und gegebenenfalls Feuchte. Kollisionsprüfung allein findet keine schlechte Akustik, aber sie kann verhindern, dass Leitungen durch akustisch sensible Bauteile geführt werden.
 
 !!! kastanienallee "Kastanienallee 7"
     Für K7 sind drei akustische Zonen maßgeblich. Erstens Wohnung gegen Wohnung: Trennwände und Decken müssen Mindestschutz und möglichst erhöhten Komfort leisten. Zweitens Wohnung gegen Treppenhauskern: Türen, Schachtwände und Aufzug müssen betrachtet werden. Drittens Technik gegen Wohnung: Fernwärmeübergabe, Lüftungsgeräte und Fallleitungen brauchen entkoppelte Lagerung und Schachtplanung. Diese Zonen sollten bereits im Vorentwurf farblich geprüft werden.
@@ -91,7 +91,7 @@ In frühen BIM-Modellen sind Schallschutzanforderungen oft unsichtbar. Wände ha
 
 Schallschutz wird am besten raumweise geprüft. Welche Räume sind schutzbedürftig: Schlafzimmer, Kinderzimmer, Wohnräume, Arbeitsräume? Welche Räume sind laut: Treppenhaus, Technik, Bad, Küche, Aufzug, Garage? Dazwischen müssen Bauteile, Anschlüsse und Schächte zusammenpassen. Eine einzelne Wandanforderung reicht nicht, wenn der lauteste Pfad über Decke oder Schacht läuft.
 
-Bei Wohnungstrennwänden ist die Flanke entscheidend. Läuft eine leichte Außenwand durch beide Wohnungen, kann sie Schall über die Trennwand hinaus übertragen. Wird eine schwere Trennwand auf einen leichten Bodenaufbau gestellt, kann der Anschluss schwach sein. Wird der Estrich über Wohnungstrennwände hinweg durchgehend ausgeführt, entsteht eine direkte Trittschallbrücke. Deshalb müssen Schallfugen und Bauteiltrennungen im Detail klar sein.
+Bei Wohnungstrennwänden ist die Flanke entscheidend. Läuft eine leichte ::Außenwand:: durch beide Wohnungen, kann sie Schall über die Trennwand hinaus übertragen. Wird eine schwere Trennwand auf einen leichten Bodenaufbau gestellt, kann der Anschluss schwach sein. Wird der Estrich über Wohnungstrennwände hinweg durchgehend ausgeführt, entsteht eine direkte Trittschallbrücke. Deshalb müssen Schallfugen und Bauteiltrennungen im Detail klar sein.
 
 Bei technischen Anlagen sollte die Frage lauten: Wird Schwingung erzeugt, und wie wird sie entkoppelt? Pumpen, Lüftungsgeräte, Aufzüge, Fallleitungen und Wärmeerzeuger brauchen elastische Lager, flexible Anschlüsse oder schwere Trennbauteile. Eine Anlage im Keller kann über Rohrleitungen oder Bauteile bis in Wohnungen hörbar werden. Akustik ist also nicht auf den Raum neben der Quelle beschränkt.
 
@@ -115,6 +115,6 @@ Akustische Anforderungen können im Modell als Properties geführt werden, etwa 
 
 **Schallschutz entsteht durch Masse, Entkopplung, Dämpfung und die Kontrolle von Flankenwegen.**
 
-Direkte Bauteilwerte reichen nicht; Anschlüsse, Schächte und Ausführung entscheiden mit. Raumakustik ist ein eigenes Thema: Sie macht Räume nicht leiser nach außen, sondern verständlicher und angenehmer im Inneren.
+Direkte Bauteilwerte reichen nicht; Anschlüsse, Schächte und Ausführung entscheiden mit. ::Raumakustik:: ist ein eigenes Thema: Sie macht Räume nicht leiser nach außen, sondern verständlicher und angenehmer im Inneren.
 
 Verwandte Kapitel: [Kap. 5](/chapters/05-konstruktion) · [Kap. 12](/chapters/12-sanitaer) · [Kap. 18](/chapters/18-ifc)

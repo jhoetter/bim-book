@@ -23,7 +23,7 @@ Stagnation ist ein zentrales Hygienerisiko. Leitungen sollen kurz sein, regelmä
 
 ## 12.2 Warmwasser und Legionellen
 
-Zentrale Warmwasserspeicher müssen hygienisch betrieben werden. Legionellen wachsen besonders in lauwarmem Wasser; deshalb werden zentrale Systeme oft mit 60 °C Speichertemperatur und Zirkulation geplant. Zirkulationsleitungen halten Wasser warm, kosten aber Energie und müssen gedämmt werden.
+Zentrale Warmwasserspeicher müssen hygienisch betrieben werden. ::Legionellen:: wachsen besonders in lauwarmem Wasser; deshalb werden zentrale Systeme oft mit 60 °C Speichertemperatur und Zirkulation geplant. Zirkulationsleitungen halten Wasser warm, kosten aber Energie und müssen gedämmt werden.
 
 Dezentrale Systeme vermeiden große Speicher und lange Zirkulation, brauchen aber elektrische Leistung oder wohnungsnahe Wärmeübergabe. Frischwasserstationen erwärmen Trinkwasser im Durchfluss über einen Wärmetauscher. Sie reduzieren Speichervolumen und können hygienisch vorteilhaft sein.
 
@@ -66,7 +66,7 @@ tags: steigschacht, trinkwasser, abwasser, aufzug
 ![Steigschacht im Mehrfamilienhaus](../assets/illustrations/kap12_steigschacht.png)
 
 !!! kastanienallee "Kastanienallee 7"
-    Kastanienallee 7 nutzt zwei Sanitär-Steigschächte, die je zwei Wohnungen pro Geschoss versorgen. Bei 4 Vollgeschossen ergeben sich 8 angeschlossene Bad-/Küchengruppen je Schachtbereich. Die Kellerverteilung liegt unter den Schächten, damit horizontale Leitungen kurz bleiben. Regenwasser vom Flachdach wird über Dachabläufe geführt und in einer Zisterne von 10.000 l gesammelt.
+    Kastanienallee 7 nutzt zwei Sanitär-Steigschächte, die je zwei Wohnungen pro Geschoss versorgen. Bei 4 Vollgeschossen ergeben sich 8 angeschlossene Bad-/Küchengruppen je Schachtbereich. Die Kellerverteilung liegt unter den Schächten, damit horizontale Leitungen kurz bleiben. Regenwasser vom ::Flachdach:: wird über Dachabläufe geführt und in einer Zisterne von 10.000 l gesammelt.
 
 ## 12.6 Sanitärplanung als Stapelproblem
 
@@ -74,7 +74,7 @@ Sanitär funktioniert am besten, wenn Nassräume übereinander liegen. Dann kön
 
 Trinkwasser ist hygienisch sensibel. Stagnation entsteht, wenn Leitungen selten genutzt werden oder zu viel Wasserinhalt zwischen Verteiler und Entnahmestelle liegt. Die 3-Liter-Regel für Stichleitungen ist eine verbreitete Planungsgrenze. Sie zwingt zu kurzen Wegen und sinnvoller Verbrauchergruppierung. Ein schönes Bad am anderen Ende der Wohnung kann dadurch technisch unklug werden.
 
-Entwässerung folgt anderen Regeln. Abwasser braucht Gefälle, Entlüftung und Reinigungsmöglichkeiten. Eine Sammelleitung mit 1:50 Gefälle verliert auf 10 m Länge 20 cm Höhe. Das klingt wenig, kann im Keller aber über Deckenunterkanten, Türhöhen und Leitungsquerungen entscheiden. Fallleitungen sollen möglichst gerade geführt werden; jeder Verzug erzeugt Platzbedarf, Geräusch und Wartungsrisiko.
+::Entwässerung:: folgt anderen Regeln. Abwasser braucht Gefälle, Entlüftung und Reinigungsmöglichkeiten. Eine Sammelleitung mit 1:50 Gefälle verliert auf 10 m Länge 20 cm Höhe. Das klingt wenig, kann im Keller aber über Deckenunterkanten, Türhöhen und Leitungsquerungen entscheiden. Fallleitungen sollen möglichst gerade geführt werden; jeder Verzug erzeugt Platzbedarf, Geräusch und Wartungsrisiko.
 
 Regenwasser ist nicht nur ein Rohrthema. Dachflächen, Gefälle, Einläufe, Notüberläufe, Retention und Versickerung hängen zusammen. Eine extensive Dachbegrünung hält Wasser zurück, erhöht aber Lasten und braucht Überläufe für Starkregen. Eine Zisterne kann Gartenbewässerung oder WC-Spülung unterstützen, braucht aber Filter, Pumpen und klare Trennung vom Trinkwassernetz.
 
@@ -85,7 +85,7 @@ Barrierefreiheit macht Sanitärplanung räumlich. Eine bodengleiche Dusche brauc
 
 ## 12.7 Prüffragen für die Praxis
 
-Sanitär sollte zuerst im Schnitt geprüft werden, nicht nur im Grundriss. Gibt es genügend Gefälle für Grundleitungen? Liegen Fallleitungen senkrecht übereinander? Können Reinigungsöffnungen erreicht werden? Gibt es Konflikte mit Unterzügen, Fundamenten oder Tiefgaragenhöhen? Entwässerung ist dreidimensional, auch wenn sie im Grundriss oft als einfache Linie erscheint.
+Sanitär sollte zuerst im Schnitt geprüft werden, nicht nur im Grundriss. Gibt es genügend Gefälle für Grundleitungen? Liegen Fallleitungen senkrecht übereinander? Können Reinigungsöffnungen erreicht werden? Gibt es Konflikte mit Unterzügen, Fundamenten oder Tiefgaragenhöhen? ::Entwässerung:: ist dreidimensional, auch wenn sie im Grundriss oft als einfache Linie erscheint.
 
 Trinkwasser wird über Nutzung geprüft. Wo gibt es selten genutzte Entnahmestellen? Wie lang sind Stichleitungen? Wo entstehen Warmwasser- und Zirkulationswege? Sind Temperaturen und Dämmung so geplant, dass Hygiene und Energie zusammenpassen? Ein überdimensioniertes Leitungsnetz kann hygienisch schlechter sein als ein knappes, gut durchströmtes Netz.
 
@@ -99,7 +99,7 @@ Sanitärdaten sind stark netzwerkartig. Trinkwasser fließt unter Druck, Abwasse
 
 Für Trinkwasser kann Software Stagnationsrisiken vorbereiten. Sie kann Leitungslängen, Volumen, selten genutzte Entnahmestellen und Zirkulationsbereiche markieren. Die hygienische Bewertung bleibt fachlich, aber das Modell zeigt die geometrischen Risiken. Besonders in großen Wohngebäuden ist das wertvoll, weil Leitungswege schnell unübersichtlich werden.
 
-Für Entwässerung ist Gefälleprüfung naheliegend. Stimmen Höhen? Gibt es Gegengefälle? Sind Reinigungsöffnungen vorhanden? Liegen Leitungen unter der Rückstauebene? Ist eine Hebeanlage erforderlich? Viele dieser Fragen sind geometrisch oder regelbasiert prüfbar, wenn das Modell Höhen und Systeme sauber enthält.
+Für ::Entwässerung:: ist Gefälleprüfung naheliegend. Stimmen Höhen? Gibt es Gegengefälle? Sind Reinigungsöffnungen vorhanden? Liegen Leitungen unter der Rückstauebene? Ist eine Hebeanlage erforderlich? Viele dieser Fragen sind geometrisch oder regelbasiert prüfbar, wenn das Modell Höhen und Systeme sauber enthält.
 
 Sanitärobjekte sind außerdem Schnittstellen zwischen Architektur und TGA. Ein WC ist nicht nur ein Objekt im Bad, sondern braucht Bewegungsfläche, Wasser, Abwasser, Schallschutz, Vorwand, Abdichtung und Wartung. BIM kann diese Anforderungen zusammenführen, wenn Objekte nicht isoliert modelliert werden.
 

@@ -4,22 +4,22 @@
 
 ---
 
-Feuchte Schäden beginnen selten spektakulär. Erst riecht ein Raum muffig, dann verfärbt sich eine Ecke, später löst sich Putz oder Holz wird weich. Wenn Feuchte im Bauteil bleibt, verliert ein Gebäude langsam seine Sicherheit.
+Feuchte Schäden beginnen selten spektakulär. Erst riecht ein Raum muffig, dann verfärbt sich eine Ecke, später löst sich Putz oder ::Holz:: wird weich. Wenn Feuchte im Bauteil bleibt, verliert ein Gebäude langsam seine Sicherheit.
 
 ---
 
 !!! ziel "Nach diesem Kapitel können Sie …"
-    - Diffusion und Konvektion als Feuchtewege unterscheiden
+    - ::Diffusion:: und Konvektion als Feuchtewege unterscheiden
     - das Prinzip des Glaser-Verfahrens erklären
     - Dampfbremse, Dampfsperre und Abdichtung konstruktiv einordnen
 
 ## 7.1 Diffusion und Konvektion
 
-Wasserdampf bewegt sich durch Bauteile und mit Luftströmungen. Diffusion ist der langsame Transport durch Materialien aufgrund unterschiedlicher Dampfdruckverhältnisse. Konvektion ist Feuchtetransport mit Luft, etwa durch Fugen, Leckagen oder undichte Anschlüsse. Konvektion ist gefährlicher, weil in kurzer Zeit viel Feuchte in kalte Bauteilschichten gelangen kann.
+Wasserdampf bewegt sich durch Bauteile und mit Luftströmungen. ::Diffusion:: ist der langsame Transport durch Materialien aufgrund unterschiedlicher Dampfdruckverhältnisse. Konvektion ist Feuchtetransport mit Luft, etwa durch Fugen, Leckagen oder undichte Anschlüsse. Konvektion ist gefährlicher, weil in kurzer Zeit viel Feuchte in kalte Bauteilschichten gelangen kann.
 
-Der sd-Wert beschreibt die diffusionsäquivalente Luftschichtdicke. Ein hoher sd-Wert bedeutet: Wasserdampf kommt schwer hindurch. Eine ::Dampfbremse:: verlangsamt Diffusion, eine ::Dampfsperre:: blockiert sie weitgehend. Entscheidend ist nicht nur der Wert, sondern die Lage der Schicht und ihre luftdichte Ausführung.
+Der sd-Wert beschreibt die diffusionsäquivalente Luftschichtdicke. Ein hoher sd-Wert bedeutet: Wasserdampf kommt schwer hindurch. Eine ::Dampfbremse:: verlangsamt ::Diffusion::, eine ::Dampfsperre:: blockiert sie weitgehend. Entscheidend ist nicht nur der Wert, sondern die Lage der Schicht und ihre luftdichte Ausführung.
 
-Luftdichtheit ist deshalb Feuchteschutz. Eine kleine Fuge kann mehr Wasser in ein Dach transportieren als Diffusion durch viele Quadratmeter Folie. Anschlüsse an Fenster, Durchdringungen, Steckdosen, Dachränder und Installationen sind die kritischen Stellen.
+Luftdichtheit ist deshalb Feuchteschutz. Eine kleine Fuge kann mehr Wasser in ein Dach transportieren als ::Diffusion:: durch viele Quadratmeter Folie. Anschlüsse an Fenster, Durchdringungen, Steckdosen, Dachränder und Installationen sind die kritischen Stellen.
 
 ## 7.2 Glaser-Verfahren
 
@@ -40,7 +40,7 @@ tags: glaser-verfahren, tauwasser, diffusion, feuchteschutz
 ![Glaser-Verfahren](../assets/illustrations/kap07_glaser.png)
 
 !!! kastanienallee "Kastanienallee 7"
-    Die Außenwand ist wegen außenliegender Dämmung feuchtetechnisch robust. Die Stahlbetonwand bleibt warm, die Dämmebene liegt außen, und die Putzschichten sind vergleichsweise dünn. Im vereinfachten Glaser-Bild sinkt die Temperatur hauptsächlich in der ::Mineralwolle::; der kritische Taupunkt wird nicht in der Tragwand erreicht. Die Konstruktion ist damit deutlich weniger riskant als eine Innendämmung auf kaltem Mauerwerk.
+    Die ::Außenwand:: ist wegen außenliegender Dämmung feuchtetechnisch robust. Die Stahlbetonwand bleibt warm, die Dämmebene liegt außen, und die Putzschichten sind vergleichsweise dünn. Im vereinfachten Glaser-Bild sinkt die Temperatur hauptsächlich in der ::Mineralwolle::; der kritische Taupunkt wird nicht in der Tragwand erreicht. Die Konstruktion ist damit deutlich weniger riskant als eine Innendämmung auf kaltem ::Mauerwerk::.
 
 ## 7.3 Dampfbremse vs. Dampfsperre
 
@@ -54,7 +54,7 @@ Die richtige Frage lautet daher nicht "Sperre oder Bremse?", sondern: Wo liegt d
 
 Schimmel entsteht, wenn Oberflächen lange genug feucht sind und Nährstoffe vorhanden sind. Eine relative Luftfeuchte von 50 bis 55 Prozent ist in Wohnungen meist unkritisch, wenn Oberflächen warm bleiben. Sinkt eine Ecke wegen Wärmebrücke stark ab, kann dort lokal 80 Prozent relative Feuchte entstehen, obwohl die Raumluft normal wirkt.
 
-Als kritische Oberflächentemperatur wird häufig etwa 12,6 °C bei 20 °C Raumluft und 50 Prozent relativer Feuchte genannt. Diese Zahl ist kein Komfortziel, sondern eine Untergrenze zur Schimmelvermeidung. Gute Planung hält Innenoberflächen deutlich wärmer, vermeidet Möbel direkt an kalten Außenwänden und sichert Lüftung.
+Als kritische Oberflächentemperatur wird häufig etwa 12,6 °C bei 20 °C Raumluft und 50 Prozent relativer Feuchte genannt. Diese Zahl ist kein Komfortziel, sondern eine Untergrenze zur Schimmelvermeidung. Gute Planung hält Innenoberflächen deutlich wärmer, vermeidet Möbel direkt an kalten ::Außenwand:: und sichert Lüftung.
 
 Rollladenkästen, Fensterlaibungen, Sockel, Außenecken und ungedämmte Betonbauteile sind typische Problemstellen. In dichten Neubauten kommt Feuchte zusätzlich aus Nutzung: Kochen, Duschen, Wäsche, Pflanzen. Deshalb gehören Wärmeschutz und Lüftung zusammen.
 
@@ -75,7 +75,7 @@ tags: abdichtung, keller, weiße-wanne, perimeterdämmung
 ![Kellerabdichtung](../assets/illustrations/kap07_abdichtung_keller.png)
 
 !!! kastanienallee "Kastanienallee 7"
-    Der Keller wird als Weißer Trog geplant. Außenwand und Bodenplatte bestehen aus WU-Beton, angenommen C30/37, mit geregelten Arbeitsfugen und Fugenbändern. Außen liegt XPS-Perimeterdämmung von 120 mm. Rechenlogik: Die Dämmung liegt außerhalb des Betons, hält die Kellerwand wärmer und schützt die Konstruktion mechanisch. Die Abdichtungsfunktion übernimmt aber nicht das XPS, sondern der WU-Beton mit Fugenplanung.
+    Der Keller wird als Weißer Trog geplant. ::Außenwand:: und Bodenplatte bestehen aus WU-Beton, angenommen C30/37, mit geregelten Arbeitsfugen und Fugenbändern. Außen liegt XPS-Perimeterdämmung von 120 mm. Rechenlogik: Die Dämmung liegt außerhalb des Betons, hält die Kellerwand wärmer und schützt die Konstruktion mechanisch. Die Abdichtungsfunktion übernimmt aber nicht das XPS, sondern der WU-Beton mit Fugenplanung.
 
 ## 7.6 Feuchteschutz als Detaildisziplin
 
@@ -83,7 +83,7 @@ Feuchteschutz scheitert selten am Grundprinzip. Fast jeder versteht, dass Wasser
 
 Ein gutes Detail lässt sich mit dem Finger verfolgen. Die luftdichte Ebene muss ohne Unterbrechung durchlaufen. Die wasserführende Ebene muss Gefälle, Überdeckung und Anschlusshöhen haben. Die Dämmebene muss so geführt werden, dass keine kalten Innenoberflächen entstehen. Wenn eine dieser Linien im Detail verschwindet, ist das ein Warnsignal. CAD-Details werden deshalb nicht gezeichnet, um hübsch auszusehen, sondern um diese Linien zu prüfen.
 
-Bei Innendämmung ist diese Logik besonders streng. Die alte Außenwand wird kälter, weil die Dämmung innen liegt. Feuchte aus dem Raum darf nicht in großen Mengen bis zur kalten Seite gelangen, und die Konstruktion muss trotzdem nach innen oder außen trocknen können. Deshalb sind kapillaraktive Systeme, feuchteadaptive Dampfbremsen und sorgfältige Anschlussplanung wichtig. Eine Innendämmung ist keine dünnere Variante eines WDVS, sondern ein anderes physikalisches System.
+Bei Innendämmung ist diese Logik besonders streng. Die alte ::Außenwand:: wird kälter, weil die Dämmung innen liegt. Feuchte aus dem Raum darf nicht in großen Mengen bis zur kalten Seite gelangen, und die Konstruktion muss trotzdem nach innen oder außen trocknen können. Deshalb sind kapillaraktive Systeme, feuchteadaptive Dampfbremsen und sorgfältige Anschlussplanung wichtig. Eine Innendämmung ist keine dünnere Variante eines WDVS, sondern ein anderes physikalisches System.
 
 Auch Nutzung gehört dazu. Ein Bad ohne ausreichende Lüftung belastet Anschlüsse stärker als ein Wohnzimmer. Eine Küche, in der täglich gekocht wird, erzeugt andere Feuchtespitzen als ein Flur. In dichten Gebäuden verschwinden solche Lasten nicht durch zufällige Undichtigkeiten. Sie müssen über Fensterlüftung, Abluft oder kontrollierte Lüftung abgeführt werden. Deshalb ist Feuchteschutz eng mit [Kapitel 11](/chapters/11-lueftung) verbunden.
 
@@ -93,7 +93,7 @@ Für die Dokumentation ist wichtig, dass feuchterelevante Schichten im Modell ni
 
 Feuchteschutz lässt sich im Entwurf mit einer kleinen Checkliste deutlich verbessern. Gibt es eine durchgehende luftdichte Ebene? Kann Feuchte, die in das Bauteil gelangt, wieder austrocknen? Liegen dampfbremsende Schichten auf der warmen Seite und diffusionsoffenere Schichten eher außen, sofern der Aufbau das verlangt? Sind Durchdringungen, Fensteranschlüsse, Sockel und Dachränder als Details gelöst?
 
-Bei jedem Detail lohnt sich die Frage nach der Fehlertoleranz. Ein Aufbau, der nur funktioniert, wenn jede Foliennaht perfekt und dauerhaft dicht bleibt, ist riskanter als ein Aufbau mit Trocknungsreserve. Eine Konstruktion, die kleine Ausführungstoleranzen verkraftet, ist in der Praxis oft besser als eine rechnerisch brillante, aber empfindliche Lösung. Das gilt besonders bei Holzbau, Innendämmung und Flachdach.
+Bei jedem Detail lohnt sich die Frage nach der Fehlertoleranz. Ein Aufbau, der nur funktioniert, wenn jede Foliennaht perfekt und dauerhaft dicht bleibt, ist riskanter als ein Aufbau mit Trocknungsreserve. Eine Konstruktion, die kleine Ausführungstoleranzen verkraftet, ist in der Praxis oft besser als eine rechnerisch brillante, aber empfindliche Lösung. Das gilt besonders bei Holzbau, Innendämmung und ::Flachdach::.
 
 Auch Bauablauf gehört zum Feuchteschutz. Dämmung, Holzbauteile und Estrich dürfen nicht dauerhaft nass eingebaut oder eingeschlossen werden. Ein dichter Neubau kann während der Bauphase enorme Feuchtemengen enthalten. Ohne Bautrocknung, Lüftung und Feuchtemessung werden Bodenbeläge, Beschichtungen und Holzbauteile zu früh geschlossen. Dann entsteht ein Schaden, obwohl der geplante Aufbau theoretisch korrekt war.
 
@@ -117,6 +117,6 @@ Feuchtesimulation braucht Geometrie und Materialkennwerte. In IFC kann die Lage 
 
 **Feuchteschutz bedeutet, Wasserwege zu verstehen und Trocknungsmöglichkeiten zu sichern.**
 
-Diffusion ist langsam, Konvektion gefährlich, Abdichtung eine eigene Ebene. Gute Konstruktionen vermeiden kalte Oberflächen, führen flüssiges Wasser ab und dokumentieren kritische Schichten sauber.
+::Diffusion:: ist langsam, Konvektion gefährlich, Abdichtung eine eigene Ebene. Gute Konstruktionen vermeiden kalte Oberflächen, führen flüssiges Wasser ab und dokumentieren kritische Schichten sauber.
 
 Verwandte Kapitel: [Kap. 5](/chapters/05-konstruktion) · [Kap. 6](/chapters/06-waermeschutz-geg) · [Kap. 11](/chapters/11-lueftung)
