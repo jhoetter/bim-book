@@ -241,6 +241,97 @@
       "generated": "2026-05-18 10:27"
     },
     {
+      "file": "kap05_wandaufbau.png",
+      "chapter": 5,
+      "part": "II",
+      "partTitle": "Teil II – Baukörper",
+      "chapterTitle": "Konstruktion: Gründung, Wand, Decke, Dach",
+      "type": "section",
+      "context": "generic",
+      "caption": "Außenwand als geordnete Schichtenfolge",
+      "tags": [
+        "wdvs",
+        "innenputz",
+        "armierungsputz",
+        "wandaufbau"
+      ],
+      "chapterPath": "chapters/05-konstruktion",
+      "generated": "2026-05-18 10:30"
+    },
+    {
+      "file": "kap05_fensteranschluss.png",
+      "chapter": 5,
+      "part": "II",
+      "partTitle": "Teil II – Baukörper",
+      "chapterTitle": "Konstruktion: Gründung, Wand, Decke, Dach",
+      "type": "section",
+      "context": "generic",
+      "caption": "Fensteranschlüsse bündeln Wärme-, Feuchte- und Montagerisiken",
+      "tags": [
+        "fensteranschluss",
+        "wärmebrücke",
+        "wdvs",
+        "detail"
+      ],
+      "chapterPath": "chapters/05-konstruktion",
+      "generated": "2026-05-18 10:33"
+    },
+    {
+      "file": "kap05_deckenaufbau.png",
+      "chapter": 5,
+      "part": "II",
+      "partTitle": "Teil II – Baukörper",
+      "chapterTitle": "Konstruktion: Gründung, Wand, Decke, Dach",
+      "type": "section",
+      "context": "generic",
+      "caption": "Deckenaufbau mit Trittschallschutz und Fußbodenheizung",
+      "tags": [
+        "deckenaufbau",
+        "estrich",
+        "fbh",
+        "schallschutz"
+      ],
+      "chapterPath": "chapters/05-konstruktion",
+      "generated": "2026-05-18 10:35"
+    },
+    {
+      "file": "kap05_flachdach.png",
+      "chapter": 5,
+      "part": "II",
+      "partTitle": "Teil II – Baukörper",
+      "chapterTitle": "Konstruktion: Gründung, Wand, Decke, Dach",
+      "type": "section",
+      "context": "generic",
+      "caption": "Flachdachaufbau mit Abdichtung, Begrünung und PV",
+      "tags": [
+        "flachdach",
+        "dampfbremse",
+        "abdichtung",
+        "pv"
+      ],
+      "chapterPath": "chapters/05-konstruktion",
+      "generated": "2026-05-18 10:38"
+    },
+    {
+      "file": "kap05_holzbau_systeme.png",
+      "chapter": 5,
+      "part": "II",
+      "partTitle": "Teil II – Baukörper",
+      "chapterTitle": "Konstruktion: Gründung, Wand, Decke, Dach",
+      "type": "comparison",
+      "context": "generic",
+      "caption": "Holzrahmenbau und CLT sind unterschiedliche Holzbausysteme",
+      "tags": [
+        "holzbau",
+        "holzrahmenbau",
+        "clt",
+        "brandschutz",
+        "schallschutz"
+      ],
+      "chapterPath": "chapters/05-konstruktion",
+      "generated": "2026-05-18 10:41"
+    },
+    {
       "file": "kap15_entwurfsprozess.png",
       "chapter": 15,
       "part": "V",
