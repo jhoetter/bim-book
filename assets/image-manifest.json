@@ -584,6 +584,42 @@
       "generated": "2026-05-18 14:29"
     },
     {
+      "file": "kap12_entwasserungsschema.png",
+      "chapter": 12,
+      "part": "IV",
+      "partTitle": "Teil IV – TGA",
+      "chapterTitle": "Sanitär & Entwässerung",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Entwässerung braucht Gefälle, Rückstausicherung und Revisionspunkte",
+      "tags": [
+        "sanitär",
+        "entwässerung",
+        "fallleitung",
+        "rückstau"
+      ],
+      "chapterPath": "chapters/12-sanitaer",
+      "generated": "2026-05-18 14:32"
+    },
+    {
+      "file": "kap12_steigschacht.png",
+      "chapter": 12,
+      "part": "IV",
+      "partTitle": "Teil IV – TGA",
+      "chapterTitle": "Sanitär & Entwässerung",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Steigschächte funktionieren, wenn Nassräume übereinander liegen",
+      "tags": [
+        "steigschacht",
+        "trinkwasser",
+        "abwasser",
+        "aufzug"
+      ],
+      "chapterPath": "chapters/12-sanitaer",
+      "generated": "2026-05-18 14:35"
+    },
+    {
       "file": "kap15_entwurfsprozess.png",
       "chapter": 15,
       "part": "V",
