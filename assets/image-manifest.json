@@ -187,6 +187,60 @@
       "generated": "2026-05-18 10:17"
     },
     {
+      "file": "kap04_lastabtragung.png",
+      "chapter": 4,
+      "part": "II",
+      "partTitle": "Teil II – Baukörper",
+      "chapterTitle": "Tragwerk: Lasten, Kräfte, Systeme",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Jede Last braucht einen durchgehenden Weg bis in den Baugrund",
+      "tags": [
+        "tragwerk",
+        "lastabtragung",
+        "stützen",
+        "fundament"
+      ],
+      "chapterPath": "chapters/04-tragwerk",
+      "generated": "2026-05-18 10:22"
+    },
+    {
+      "file": "kap04_tragsysteme.png",
+      "chapter": 4,
+      "part": "II",
+      "partTitle": "Teil II – Baukörper",
+      "chapterTitle": "Tragwerk: Lasten, Kräfte, Systeme",
+      "type": "isometric",
+      "context": "generic",
+      "caption": "Tragsysteme verteilen Lasten auf unterschiedliche Weise",
+      "tags": [
+        "massivbau",
+        "skelettbau",
+        "holztafelbau",
+        "tragsystem"
+      ],
+      "chapterPath": "chapters/04-tragwerk",
+      "generated": "2026-05-18 10:25"
+    },
+    {
+      "file": "kap04_deckentypen.png",
+      "chapter": 4,
+      "part": "II",
+      "partTitle": "Teil II – Baukörper",
+      "chapterTitle": "Tragwerk: Lasten, Kräfte, Systeme",
+      "type": "comparison",
+      "context": "generic",
+      "caption": "Deckentypen unterscheiden sich in Gewicht, Spannweite und Durchbruchfreiheit",
+      "tags": [
+        "decke",
+        "flachdecke",
+        "rippendecke",
+        "hohldiele"
+      ],
+      "chapterPath": "chapters/04-tragwerk",
+      "generated": "2026-05-18 10:27"
+    },
+    {
       "file": "kap15_entwurfsprozess.png",
       "chapter": 15,
       "part": "V",
