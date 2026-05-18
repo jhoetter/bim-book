@@ -923,6 +923,42 @@
       ],
       "chapterPath": "chapters/18-ifc",
       "generated": "2026-05-18 15:11"
+    },
+    {
+      "file": "kap19_omniclass_tabellen.png",
+      "chapter": 19,
+      "part": "VI",
+      "partTitle": "Teil VI – BIM",
+      "chapterTitle": "Klassifikation",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "Internationale Klassifikation ist hilfreich, aber im deutschen Alltag nicht allein maßgeblich",
+      "tags": [
+        "klassifikation",
+        "omniclass",
+        "uniclass",
+        "iso12006"
+      ],
+      "chapterPath": "chapters/19-klassifikation",
+      "generated": "2026-05-18 15:14"
+    },
+    {
+      "file": "kap19_mapping.png",
+      "chapter": 19,
+      "part": "VI",
+      "partTitle": "Teil VI – BIM",
+      "chapterTitle": "Klassifikation",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Klassifikation verbindet Modellobjekte mit Kosten und Ausschreibung",
+      "tags": [
+        "ifc",
+        "klassifikation",
+        "din276",
+        "stlb"
+      ],
+      "chapterPath": "chapters/19-klassifikation",
+      "generated": "2026-05-18 15:16"
     }
   ]
 }
