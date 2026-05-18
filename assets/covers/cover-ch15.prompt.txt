@@ -1,0 +1,18 @@
+Generiert: 2026-05-18 10:55
+Typ: cover
+Beschreibung: Dynamic HOAI planning process cover on white background, spanning the full image width without any text or numbers. A sweeping amber (#F59E0B) ribbon arrow runs through the center band from left to right, passing through a sequence of nine abstract phase gates shown as uneven translucent vertical slabs with different densities of technical line work. The slabs vary in width and overlap slightly, creating a clear rhythm rather than a uniform grid. Early phases at left are sparse wireframe outlines, middle phases show denser structural gray (#6B7280) plan fragments, later phases at right become detailed layered construction documents. Most visual weight sits in the central horizontal band; top and bottom edges remain sparse white space. Clean technical architectural illustration, no labels, no text, no digits.
+
+--- QA-Verlauf ---
+
+Versuch 1: ✓ bestanden
+  Korrektur: No corrections needed; the image meets all specified criteria.
+
+--- Finaler Prompt ---
+
+Technical architectural illustration for a professional German textbook. Minimalist, clean design. Pure white background (#FFFFFF), no gradients, no drop shadows. Precise thin lines (1–2px equivalent). Geometric sans-serif font similar to Inter for all labels and annotations. No photorealism, no photographs, no people, no decorative elements. Modern flat design with clear hierarchy. All text and labels in German.
+
+Chapter cover banner illustration for a professional architectural textbook. Pure white background (#FFFFFF) — same clean technical style as all other book illustrations. NO text, NO labels, NO numbers, NO annotations anywhere. COMPOSITION: The image is displayed as a full-width banner at 220px height with a vertical anchor at 40% — the visible crop covers the CENTER BAND of the image (roughly 25%–60% from the top). Concentrate the most visually powerful elements in this central zone; top and bottom edges can be sparse. Use large, bold, clearly readable shapes that fill the full image width. Do NOT use a uniform grid of equal-sized panels. Prefer 1–3 dominant elements in dynamic panoramic arrangement. Use the shared color palette boldly: structural gray (#6B7280) for concrete/steel, thermal blue (#93C5FD) for insulation, TGA amber (#F59E0B) for MEP/materials. Think: the same technical precision as an in-page illustration, scaled up, stripped of labels, composed for visual impact. NOT photorealistic. NOT hand-drawn.
+
+Color palette: structural gray #6B7280, thermal insulation blue #93C5FD, TGA/MEP amber #F59E0B, pure white background #FFFFFF, near-black lines and text #111827.
+
+Subject: Dynamic HOAI planning process cover on white background, spanning the full image width without any text or numbers. A sweeping amber (#F59E0B) ribbon arrow runs through the center band from left to right, passing through a sequence of nine abstract phase gates shown as uneven translucent vertical slabs with different densities of technical line work. The slabs vary in width and overlap slightly, creating a clear rhythm rather than a uniform grid. Early phases at left are sparse wireframe outlines, middle phases show denser structural gray (#6B7280) plan fragments, later phases at right become detailed layered construction documents. Most visual weight sits in the central horizontal band; top and bottom edges remain sparse white space. Clean technical architectural illustration, no labels, no text, no digits.

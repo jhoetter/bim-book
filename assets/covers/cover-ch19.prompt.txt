@@ -1,0 +1,17 @@
+Generiert: 2026-05-18 11:05
+Typ: cover
+Beschreibung: Systematic building classification cover on white background spanning the full image width. Instead of a uniform grid, show a dynamic taxonomy cluster: a central near-black classification spine runs horizontally through the center band, with irregular branching trays holding large abstract building element symbols — wall, column, slab, door, duct, pipe, cable — at varied sizes and offsets. Structural elements use structural gray (#6B7280) hatching, envelope elements use thermal blue (#93C5FD), TGA elements use amber (#F59E0B). Thin near-black connector lines group related symbols into families. The composition is dense in the center band and sparse near the edges, clean and technical, no uniform matrix. No text, no codes, no numbers, no labels.
+
+--- QA-Verlauf ---
+
+Versuch 1: ✓ bestanden
+
+--- Finaler Prompt ---
+
+Technical architectural illustration for a professional German textbook. Minimalist, clean design. Pure white background (#FFFFFF), no gradients, no drop shadows. Precise thin lines (1–2px equivalent). Geometric sans-serif font similar to Inter for all labels and annotations. No photorealism, no photographs, no people, no decorative elements. Modern flat design with clear hierarchy. All text and labels in German.
+
+Chapter cover banner illustration for a professional architectural textbook. Pure white background (#FFFFFF) — same clean technical style as all other book illustrations. NO text, NO labels, NO numbers, NO annotations anywhere. COMPOSITION: The image is displayed as a full-width banner at 220px height with a vertical anchor at 40% — the visible crop covers the CENTER BAND of the image (roughly 25%–60% from the top). Concentrate the most visually powerful elements in this central zone; top and bottom edges can be sparse. Use large, bold, clearly readable shapes that fill the full image width. Do NOT use a uniform grid of equal-sized panels. Prefer 1–3 dominant elements in dynamic panoramic arrangement. Use the shared color palette boldly: structural gray (#6B7280) for concrete/steel, thermal blue (#93C5FD) for insulation, TGA amber (#F59E0B) for MEP/materials. Think: the same technical precision as an in-page illustration, scaled up, stripped of labels, composed for visual impact. NOT photorealistic. NOT hand-drawn.
+
+Color palette: structural gray #6B7280, thermal insulation blue #93C5FD, TGA/MEP amber #F59E0B, pure white background #FFFFFF, near-black lines and text #111827.
+
+Subject: Systematic building classification cover on white background spanning the full image width. Instead of a uniform grid, show a dynamic taxonomy cluster: a central near-black classification spine runs horizontally through the center band, with irregular branching trays holding large abstract building element symbols — wall, column, slab, door, duct, pipe, cable — at varied sizes and offsets. Structural elements use structural gray (#6B7280) hatching, envelope elements use thermal blue (#93C5FD), TGA elements use amber (#F59E0B). Thin near-black connector lines group related symbols into families. The composition is dense in the center band and sparse near the edges, clean and technical, no uniform matrix. No text, no codes, no numbers, no labels.

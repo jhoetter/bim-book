@@ -1,0 +1,26 @@
+Generiert: 2026-05-18 11:24
+Typ: cover
+Beschreibung: Panoramic diagram spanning the full image width on white background showing a physical building and its digital twin as one paired system. Left side: isometric building outline in structural gray (#6B7280) with solid walls and window openings, simplified but architectural. Right side: the same building as a translucent near-black wireframe with amber (#F59E0B) data nodes at sensor locations and thin thermal blue (#93C5FD) connection lines. Between physical and digital model, bold amber bidirectional arrows show data flow through the center band. Composition is precise and technical, dense in the middle with sparse top and bottom, no decorative glow. No text. No labels. No numbers.
+
+--- QA-Verlauf ---
+
+Versuch 1: ✗ nicht bestanden
+  - Background is not pure white (#FFFFFF). It appears slightly off-white or textured.
+  Korrektur: Adjust the background color to a pure white (#FFFFFF) to ensure it meets the requirements.
+
+Versuch 2: ✓ bestanden
+
+--- Finaler Prompt ---
+
+Technical architectural illustration for a professional German textbook. Minimalist, clean design. Pure white background (#FFFFFF), no gradients, no drop shadows. Precise thin lines (1–2px equivalent). Geometric sans-serif font similar to Inter for all labels and annotations. No photorealism, no photographs, no people, no decorative elements. Modern flat design with clear hierarchy. All text and labels in German.
+
+Chapter cover banner illustration for a professional architectural textbook. Pure white background (#FFFFFF) — same clean technical style as all other book illustrations. NO text, NO labels, NO numbers, NO annotations anywhere. COMPOSITION: The image is displayed as a full-width banner at 220px height with a vertical anchor at 40% — the visible crop covers the CENTER BAND of the image (roughly 25%–60% from the top). Concentrate the most visually powerful elements in this central zone; top and bottom edges can be sparse. Use large, bold, clearly readable shapes that fill the full image width. Do NOT use a uniform grid of equal-sized panels. Prefer 1–3 dominant elements in dynamic panoramic arrangement. Use the shared color palette boldly: structural gray (#6B7280) for concrete/steel, thermal blue (#93C5FD) for insulation, TGA amber (#F59E0B) for MEP/materials. Think: the same technical precision as an in-page illustration, scaled up, stripped of labels, composed for visual impact. NOT photorealistic. NOT hand-drawn.
+
+Color palette: structural gray #6B7280, thermal insulation blue #93C5FD, TGA/MEP amber #F59E0B, pure white background #FFFFFF, near-black lines and text #111827.
+
+Subject: Panoramic diagram spanning the full image width on white background showing a physical building and its digital twin as one paired system. Left side: isometric building outline in structural gray (#6B7280) with solid walls and window openings, simplified but architectural. Right side: the same building as a translucent near-black wireframe with amber (#F59E0B) data nodes at sensor locations and thin thermal blue (#93C5FD) connection lines. Between physical and digital model, bold amber bidirectional arrows show data flow through the center band. Composition is precise and technical, dense in the middle with sparse top and bottom, no decorative glow. No text. No labels. No numbers.
+
+KORREKTUREN (aus QA-Prüfung):
+- Background is not pure white (#FFFFFF). It appears slightly off-white or textured.
+
+Bitte korrigiere: Adjust the background color to a pure white (#FFFFFF) to ensure it meets the requirements.
