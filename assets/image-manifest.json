@@ -815,6 +815,114 @@
       ],
       "chapterPath": "chapters/17-was-bim-wirklich-ist",
       "generated": "2026-05-18 14:55"
+    },
+    {
+      "file": "kap18_ifc_hierarchie.png",
+      "chapter": 18,
+      "part": "VI",
+      "partTitle": "Teil VI – BIM",
+      "chapterTitle": "IFC: Die Sprache des digitalen Gebäudes",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "IFC trennt Projektstruktur und räumliches Containment",
+      "tags": [
+        "ifc",
+        "ifcproject",
+        "ifcspace",
+        "hierarchy"
+      ],
+      "chapterPath": "chapters/18-ifc",
+      "generated": "2026-05-18 14:58"
+    },
+    {
+      "file": "kap18_entitaeten_uebersicht.png",
+      "chapter": 18,
+      "part": "VI",
+      "partTitle": "Teil VI – BIM",
+      "chapterTitle": "IFC: Die Sprache des digitalen Gebäudes",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "IFC-Entitäten geben Modellobjekten fachliche Bedeutung",
+      "tags": [
+        "ifc",
+        "entitäten",
+        "architektur",
+        "tga"
+      ],
+      "chapterPath": "chapters/18-ifc",
+      "generated": "2026-05-18 15:01"
+    },
+    {
+      "file": "kap18_beziehungen.png",
+      "chapter": 18,
+      "part": "VI",
+      "partTitle": "Teil VI – BIM",
+      "chapterTitle": "IFC: Die Sprache des digitalen Gebäudes",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "IFC ist ein Beziehungsmodell, nicht nur eine Objektliste",
+      "tags": [
+        "ifc",
+        "relationen",
+        "ifcwall",
+        "properties"
+      ],
+      "chapterPath": "chapters/18-ifc",
+      "generated": "2026-05-18 15:03"
+    },
+    {
+      "file": "kap18_step_format.png",
+      "chapter": 18,
+      "part": "VI",
+      "partTitle": "Teil VI – BIM",
+      "chapterTitle": "IFC: Die Sprache des digitalen Gebäudes",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "STEP-Dateien verketten IFC-Objekte über nummerierte Referenzen",
+      "tags": [
+        "ifc",
+        "step",
+        "entwickler",
+        "ifcwall"
+      ],
+      "chapterPath": "chapters/18-ifc",
+      "generated": "2026-05-18 15:06"
+    },
+    {
+      "file": "kap18_mvd_vergleich.png",
+      "chapter": 18,
+      "part": "VI",
+      "partTitle": "Teil VI – BIM",
+      "chapterTitle": "IFC: Die Sprache des digitalen Gebäudes",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "MVDs erklären, warum IFC-Exporte je nach Anwendungsfall variieren",
+      "tags": [
+        "ifc",
+        "mvd",
+        "reference-view",
+        "coordination-view"
+      ],
+      "chapterPath": "chapters/18-ifc",
+      "generated": "2026-05-18 15:08"
+    },
+    {
+      "file": "kap18_georeferenzierung.png",
+      "chapter": 18,
+      "part": "VI",
+      "partTitle": "Teil VI – BIM",
+      "chapterTitle": "IFC: Die Sprache des digitalen Gebäudes",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Georeferenzierung koppelt lokales Modell und reale Koordinaten",
+      "tags": [
+        "ifc",
+        "georeferenzierung",
+        "epsg25832",
+        "gis"
+      ],
+      "chapterPath": "chapters/18-ifc",
+      "generated": "2026-05-18 15:11"
     }
   ]
 }
