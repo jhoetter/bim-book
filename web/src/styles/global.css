@@ -1685,6 +1685,9 @@ html, body, #root {
     0 0 0 4px color-mix(in srgb, var(--accent) 12%, transparent),
     0 18px 34px hsl(222 24% 9% / 0.14);
 }
+.overview-card--graph-entry-idle {
+  z-index: 10;
+}
 .overview-card--graph-hovered {
   width: 240px;
   min-height: 248px;

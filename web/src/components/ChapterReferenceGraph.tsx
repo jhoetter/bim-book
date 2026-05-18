@@ -276,6 +276,7 @@ export function ChapterReferenceGraph() {
                       'overview-card--graph',
                       active ? 'overview-card--graph-active' : '',
                       isEntry ? 'overview-card--graph-entry' : '',
+                      isEntry && !hoveredId ? 'overview-card--graph-entry-idle' : '',
                       isHovered ? 'overview-card--graph-hovered' : '',
                     ].filter(Boolean).join(' ')}
                     style={{
