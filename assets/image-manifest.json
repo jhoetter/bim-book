@@ -494,6 +494,60 @@
       "generated": "2026-05-18 14:17"
     },
     {
+      "file": "kap10_waermeerzeuger_vergleich.png",
+      "chapter": 10,
+      "part": "IV",
+      "partTitle": "Teil IV – TGA",
+      "chapterTitle": "Heizung & Wärmeversorgung",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "Wärmeerzeuger unterscheiden sich in Effizienz, Platzbedarf und Zukunftsfähigkeit",
+      "tags": [
+        "heizung",
+        "wärmeerzeuger",
+        "fernwärme",
+        "wärmepumpe"
+      ],
+      "chapterPath": "chapters/10-heizung-waermeversorgung",
+      "generated": "2026-05-18 14:19"
+    },
+    {
+      "file": "kap10_heizkreis_schema.png",
+      "chapter": 10,
+      "part": "IV",
+      "partTitle": "Teil IV – TGA",
+      "chapterTitle": "Heizung & Wärmeversorgung",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Wärmeverteilung verbindet Erzeuger, Verteiler und Heizflächen",
+      "tags": [
+        "fernwärme",
+        "fbh",
+        "hydraulischer-abgleich",
+        "heizkreis"
+      ],
+      "chapterPath": "chapters/10-heizung-waermeversorgung",
+      "generated": "2026-05-18 14:22"
+    },
+    {
+      "file": "kap10_fbh_aufbau.png",
+      "chapter": 10,
+      "part": "IV",
+      "partTitle": "Teil IV – TGA",
+      "chapterTitle": "Heizung & Wärmeversorgung",
+      "type": "section",
+      "context": "generic",
+      "caption": "Fußbodenheizung ist Teil des Decken- und Bodenaufbaus",
+      "tags": [
+        "fbh",
+        "estrich",
+        "deckenaufbau",
+        "vorlauftemperatur"
+      ],
+      "chapterPath": "chapters/10-heizung-waermeversorgung",
+      "generated": "2026-05-18 14:24"
+    },
+    {
       "file": "kap15_entwurfsprozess.png",
       "chapter": 15,
       "part": "V",
