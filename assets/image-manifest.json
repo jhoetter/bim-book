@@ -995,6 +995,43 @@
       ],
       "chapterPath": "chapters/20-prozess-kollaboration",
       "generated": "2026-05-18 15:21"
+    },
+    {
+      "file": "kap21_clash_beispiel.png",
+      "chapter": 21,
+      "part": "VI",
+      "partTitle": "Teil VI – BIM",
+      "chapterTitle": "BIM in der Praxis",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Kollisionsprüfung wird erst durch Zuständigkeit und Status wirksam",
+      "tags": [
+        "clash",
+        "bcf",
+        "koordination",
+        "bim"
+      ],
+      "chapterPath": "chapters/21-bim-praxis",
+      "generated": "2026-05-18 15:27"
+    },
+    {
+      "file": "kap21_bim_software_oekosystem.png",
+      "chapter": 21,
+      "part": "VI",
+      "partTitle": "Teil VI – BIM",
+      "chapterTitle": "BIM in der Praxis",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "BIM-Projekte nutzen mehrere Softwarekategorien statt ein einziges Werkzeug",
+      "tags": [
+        "bim",
+        "software",
+        "authoring",
+        "ifc",
+        "opensource"
+      ],
+      "chapterPath": "chapters/21-bim-praxis",
+      "generated": "2026-05-18 15:29"
     }
   ]
 }
