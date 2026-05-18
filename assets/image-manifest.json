@@ -620,6 +620,42 @@
       "generated": "2026-05-18 14:35"
     },
     {
+      "file": "kap13_zaehleranlage.png",
+      "chapter": 13,
+      "part": "IV",
+      "partTitle": "Teil IV – TGA",
+      "chapterTitle": "Elektro & Gebäudeautomation",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Die Zähleranlage ordnet Versorgung und Abrechnung",
+      "tags": [
+        "elektro",
+        "zähleranlage",
+        "hausanschluss",
+        "rcd"
+      ],
+      "chapterPath": "chapters/13-elektro",
+      "generated": "2026-05-18 14:37"
+    },
+    {
+      "file": "kap13_pv_konzept.png",
+      "chapter": 13,
+      "part": "IV",
+      "partTitle": "Teil IV – TGA",
+      "chapterTitle": "Elektro & Gebäudeautomation",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "PV verbindet Dachfläche, Elektroverteilung und Energiemanagement",
+      "tags": [
+        "pv",
+        "elektro",
+        "flachdach",
+        "eigenverbrauch"
+      ],
+      "chapterPath": "chapters/13-elektro",
+      "generated": "2026-05-18 14:40"
+    },
+    {
       "file": "kap15_entwurfsprozess.png",
       "chapter": 15,
       "part": "V",
