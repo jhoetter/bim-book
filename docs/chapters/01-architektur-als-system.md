@@ -8,13 +8,6 @@ Ein Gebäude wirkt von außen oft selbstverständlich: Wände stehen, Fenster si
 
 ---
 
-<!-- CHAPTER_VIDEO:start -->
-<figure class="chapter-video">
-  <video controls preload="metadata" playsinline src="/assets/videos/01-architektur-als-system.hybrid.mp4"></video>
-  <figcaption>KI-generierter Kapitelclip: Kapitel 1 – Architektur als System</figcaption>
-</figure>
-<!-- CHAPTER_VIDEO:end -->
-
 !!! ziel "Nach diesem Kapitel können Sie …"
     - ein Gebäude als System aus vier Schichten mit unterschiedlichen Lebensdauern beschreiben
     - an zwei Beispielen erklären, wie Entscheidungen in einer Schicht andere Schichten verändern
