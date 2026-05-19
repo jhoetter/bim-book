@@ -3,6 +3,7 @@ import { useEffect, useRef, useState, useCallback } from 'react'
 import React from 'react'
 import { WallHifi, HomeIcon } from 'bim-icons'
 import { PARTS, GALLERY_ICON, TOP_PAGES } from '../chapters'
+import { CURRENT_BOOK_BASE, bookPath } from '../books'
 import { bookmarkHref, useBookmarks } from '../lib/bookmarks'
 import { useSelfTestResults } from '../lib/selftests'
 import { getSelfTestForChapter } from '../data/selftests'
@@ -10,8 +11,7 @@ import { search } from '../lib/search'
 import { useTheme, type Theme } from '../lib/theme'
 
 function chapterHref(path: string): string {
-  if (path === 'index') return '/'
-  return `/${path}`
+  return bookPath(path)
 }
 
 const SunIcon = () => (
@@ -118,7 +118,7 @@ export function Sidebar() {
   return (
     <nav className="sidebar">
       <div className="sidebar-header">
-        <NavLink to="/" className="sidebar-brand">
+        <NavLink to={CURRENT_BOOK_BASE} className="sidebar-brand">
           <span className="sidebar-brand-mark" aria-hidden="true">
             <WallHifi size={16} />
           </span>
@@ -138,10 +138,22 @@ export function Sidebar() {
             <span className="sidebar-icon" aria-hidden="true">
               <HomeIcon size={14} strokeWidth={1.5} />
             </span>
-            <span className="sidebar-link-title">Überblick</span>
+            <span className="sidebar-link-title">Buchbibliothek</span>
           </NavLink>
           <NavLink
-            to="/gallery"
+            to={CURRENT_BOOK_BASE}
+            end
+            className={({ isActive }) =>
+              ['sidebar-link', isActive ? 'sidebar-link--active' : ''].join(' ').trim()
+            }
+          >
+            <span className="sidebar-icon" aria-hidden="true">
+              <HomeIcon size={14} strokeWidth={1.5} />
+            </span>
+            <span className="sidebar-link-title">Buchübersicht</span>
+          </NavLink>
+          <NavLink
+            to={`${CURRENT_BOOK_BASE}/gallery`}
             className={({ isActive }) =>
               ['sidebar-link', isActive ? 'sidebar-link--active' : ''].join(' ').trim()
             }
@@ -156,7 +168,7 @@ export function Sidebar() {
             return (
               <NavLink
                 key={chapter.id}
-                to={`/${chapter.path}`}
+                to={bookPath(chapter.path)}
                 className={({ isActive }) =>
                   ['sidebar-link', isActive ? 'sidebar-link--active' : ''].join(' ').trim()
                 }

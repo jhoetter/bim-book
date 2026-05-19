@@ -1,6 +1,7 @@
 import { useLocation } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'
 import { getBreadcrumb } from '../chapters'
+import { normalizeBookPath } from '../books'
 import { BOOKMARK_SYNC_EVENT, bookmarkKey, useBookmarks, type BookmarkChangeDetail } from '../lib/bookmarks'
 import { getCurrentHeadingInfo, scrollToHeading, type HeadingInfo } from '../lib/reading-position'
 
@@ -13,7 +14,7 @@ interface TopbarProps {
 export function Topbar({ onToggle, onOpenPalette }: TopbarProps) {
   const location = useLocation()
   const { part, chapter } = getBreadcrumb(location.pathname)
-  const path = location.pathname.replace(/^\//, '') || 'index'
+  const path = normalizeBookPath(location.pathname)
 
   const { bookmarks, toggle } = useBookmarks()
   const [currentHeading, setCurrentHeading] = useState<HeadingInfo | null>(null)

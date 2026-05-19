@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, useMemo, useCallback } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { PARTS } from '../chapters'
+import { CURRENT_BOOK_BASE, bookPath, normalizeBookPath } from '../books'
 import { bookmarkKey, useBookmarks } from '../lib/bookmarks'
 import { getCurrentHeadingInfo, scrollToHeading, type HeadingInfo } from '../lib/reading-position'
 
@@ -66,7 +67,7 @@ function matchScore(title: string, subtitle: string, q: string): number {
 }
 
 function chapterHref(path: string) {
-  return path === 'index' ? '/' : `/${path}`
+  return bookPath(path)
 }
 
 // ── Main Component ─────────────────────────────────────────────────────────────
@@ -84,7 +85,7 @@ export function CommandPalette({ onClose, onToggleSidebar }: Props) {
 
   useEffect(() => { inputRef.current?.focus() }, [])
 
-  const path      = location.pathname.replace(/^\//, '') || 'index'
+  const path      = normalizeBookPath(location.pathname)
   const { pageTitle, pagePart } = useMemo(() => {
     for (const p of PARTS) {
       const ch = p.chapters.find(c => c.path === path)
@@ -190,7 +191,13 @@ export function CommandPalette({ onClose, onToggleSidebar }: Props) {
 
     const overview: RegularItem = mk({
       kind: 'nav', id: 'overview',
-      label: 'Zur Übersicht',
+      label: 'Zur Buchübersicht',
+      icon: <HomeIcon />,
+      action: () => run(() => navigate(CURRENT_BOOK_BASE)),
+    })
+    const library: RegularItem = mk({
+      kind: 'nav', id: 'library',
+      label: 'Zur Buchbibliothek',
       icon: <HomeIcon />,
       action: () => run(() => navigate('/')),
     })
@@ -198,7 +205,7 @@ export function CommandPalette({ onClose, onToggleSidebar }: Props) {
       kind: 'nav', id: 'gallery',
       label: 'Bildgalerie',
       icon: <GalleryIcon />,
-      action: () => run(() => navigate('/gallery')),
+      action: () => run(() => navigate(`${CURRENT_BOOK_BASE}/gallery`)),
     })
 
     const allChapters: RegularItem[] = []
@@ -220,10 +227,10 @@ export function CommandPalette({ onClose, onToggleSidebar }: Props) {
     if (!q) {
       const aiOpen: AiItem = mk({ kind: 'ai', id: 'ai-open', query: '' , action: openChat })
       const groups: PaletteGroup[] = [
-        { name: 'Schnellzugriff', items: [aiOpen, overview, gallery] },
+        { name: 'Schnellzugriff', items: [aiOpen, library, overview, gallery] },
         { name: 'Aktionen',       items: [jumpToBookmark, bookmark, copyLink, sidebar, exportPdf].filter((item): item is RegularItem => Boolean(item)) },
       ]
-      const flatItems = [aiOpen, overview, gallery, jumpToBookmark, bookmark, copyLink, sidebar, exportPdf].filter((item): item is PaletteItem => Boolean(item))
+      const flatItems = [aiOpen, library, overview, gallery, jumpToBookmark, bookmark, copyLink, sidebar, exportPdf].filter((item): item is PaletteItem => Boolean(item))
       flatItems.forEach((item, i) => { item.flatIdx = i })
       return { groups, flatItems }
     }
@@ -233,7 +240,7 @@ export function CommandPalette({ onClose, onToggleSidebar }: Props) {
     const aiAsk: AiItem = mk({ kind: 'ai', id: 'ai-ask', query: q, action: () => sendToChat(q) })
 
     const navMatches: RegularItem[] = []
-    for (const item of [...[overview, gallery], ...allChapters]) {
+    for (const item of [...[library, overview, gallery], ...allChapters]) {
       const score = matchScore(item.label, item.sublabel ?? '', q)
       if (score > 0) navMatches.push({ ...item, _score: score } as RegularItem & { _score: number })
     }

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { ALL_CHAPTERS } from '../chapters'
 import { SOURCES, type SourceGroup, type SourceKind } from '../data/sources'
 import { FilterPill, toggle } from './FilterPill'
+import { bookPath } from '../books'
 
 type OpenFilter = 'gruppe' | 'typ' | 'kapitel' | null
 
@@ -184,7 +185,7 @@ export function QuellenReferenz() {
                     const chapter = CHAPTER_BY_ID.get(chapterId)
                     if (!chapter) return null
                     return (
-                      <Link key={chapterId} to={`/${chapter.path}`} className="source-chapter-chip">
+                      <Link key={chapterId} to={bookPath(chapter.path)} className="source-chapter-chip">
                         <span className="source-chapter-num">{chapter.num}</span>
                         <span className="source-chapter-title">{chapter.title}</span>
                       </Link>

@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { NavLink } from 'react-router-dom'
 import { createPortal } from 'react-dom'
+import { bookPath } from '../books'
 
 interface ImageEntry {
   file: string
@@ -340,7 +341,7 @@ export function Gallery() {
             </div>
             {lightbox.chapterPath && (
               <NavLink
-                to={`/${lightbox.chapterPath}#img-${lightbox.file.replace(/\.[^.]+$/, '')}`}
+                to={`${bookPath(lightbox.chapterPath)}#img-${lightbox.file.replace(/\.[^.]+$/, '')}`}
                 className="gallery-lightbox-link"
                 onClick={closeLightbox}
               >

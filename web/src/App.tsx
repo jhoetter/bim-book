@@ -6,13 +6,14 @@ import { Topbar } from './components/Topbar'
 import { TableOfContents } from './components/TableOfContents'
 import { MarkdownPage } from './components/MarkdownPage'
 import { Gallery } from './components/Gallery'
-import { Overview } from './components/Overview'
+import { BookPlaceholder, LibraryOverview, Overview } from './components/Overview'
 import { ChatPanel } from './components/ChatPanel'
 import { CommandPalette } from './components/CommandPalette'
 import { PdfPrintView } from './components/PdfPrintView'
 import { ChapterSelfTest } from './components/ChapterSelfTest'
 import { getContent, getNavigation, ALL_CHAPTERS } from './chapters'
 import { getSelfTestForChapter } from './data/selftests'
+import { CURRENT_BOOK_BASE, CURRENT_BOOK_SLUG, bookPath, normalizeBookPath } from './books'
 
 const SIDEBAR_MIN = 180
 const SIDEBAR_MAX = 480
@@ -20,8 +21,7 @@ const SIDEBAR_HIDE_THRESHOLD = 32
 const SIDEBAR_DEFAULT = 248
 
 function chapterHref(path: string): string {
-  if (path === 'index') return '/'
-  return `/${path}`
+  return bookPath(path)
 }
 
 function Pagination({ id }: { id: string }) {
@@ -58,7 +58,7 @@ function Pagination({ id }: { id: string }) {
 function ChapterRoute() {
   const { '*': slug } = useParams()
   const location = useLocation()
-  const path = location.pathname.replace(/^\//, '')
+  const path = normalizeBookPath(location.pathname)
   const content = getContent(path)
   const chapter = ALL_CHAPTERS.find(c => c.path === path)
   const id = chapter?.id ?? (slug ?? '')
@@ -187,9 +187,26 @@ function ChapterRoute() {
   )
 }
 
+function BookLandingRoute() {
+  const { bookSlug } = useParams()
+  if (bookSlug === CURRENT_BOOK_SLUG) return <Overview />
+  return <BookPlaceholder slug={bookSlug} />
+}
+
+function LegacyRedirect() {
+  const location = useLocation()
+  return (
+    <Navigate
+      to={`${CURRENT_BOOK_BASE}${location.pathname}${location.search}${location.hash}`}
+      replace
+    />
+  )
+}
 
 function AppLayout() {
   const location = useLocation()
+  const isCurrentBookPath = location.pathname === CURRENT_BOOK_BASE || location.pathname.startsWith(`${CURRENT_BOOK_BASE}/`)
+  const isLibraryRoot = location.pathname === '/' || (location.pathname.startsWith('/books/') && !isCurrentBookPath)
   const [sidebarOpen, setSidebarOpen] = useState(() => {
     if (typeof window === 'undefined') return true
     if (window.innerWidth < 768) return false
@@ -288,18 +305,18 @@ function AppLayout() {
   return (
     <>
       <div
-        className={`layout${sidebarOpen ? '' : ' layout--collapsed'}`}
+        className={`layout${sidebarOpen ? '' : ' layout--collapsed'}${isLibraryRoot ? ' layout--library' : ''}`}
         style={{ '--sidebar-w': `${sidebarWidth}px` } as React.CSSProperties}
       >
-        <Sidebar />
-        {sidebarOpen && (
+        {!isLibraryRoot && <Sidebar />}
+        {!isLibraryRoot && sidebarOpen && (
           <div
             className="sidebar-backdrop"
             onClick={() => setSidebarOpen(false)}
             aria-hidden="true"
           />
         )}
-        {sidebarOpen && (
+        {!isLibraryRoot && sidebarOpen && (
           <div
             className="sidebar-resize-handle"
             onPointerDown={handleResizeStart}
@@ -308,19 +325,27 @@ function AppLayout() {
             aria-orientation="vertical"
           />
         )}
-        <TableOfContents />
+        {!isLibraryRoot && <TableOfContents />}
         <div className="main-area">
-          <Topbar sidebarOpen={sidebarOpen} onToggle={toggle} onOpenPalette={() => setPaletteOpen(true)} />
+          {!isLibraryRoot && <Topbar sidebarOpen={sidebarOpen} onToggle={toggle} onOpenPalette={() => setPaletteOpen(true)} />}
           <div className="content-area">
             <Routes>
-              <Route path="/" element={<Overview />} />
-              <Route path="/gallery" element={<Gallery />} />
-              <Route path="/glossar" element={<ChapterRoute />} />
-              <Route path="/markierungen" element={<ChapterRoute />} />
-              <Route path="/formelsammlung" element={<ChapterRoute />} />
-              <Route path="/selbsttests" element={<ChapterRoute />} />
-              <Route path="/chapters/*" element={<ChapterRoute />} />
-              <Route path="/appendix/*" element={<ChapterRoute />} />
+              <Route path="/" element={<LibraryOverview />} />
+              <Route path="/books/:bookSlug" element={<BookLandingRoute />} />
+              <Route path="/books/:bookSlug/gallery" element={<Gallery />} />
+              <Route path="/books/:bookSlug/glossar" element={<ChapterRoute />} />
+              <Route path="/books/:bookSlug/markierungen" element={<ChapterRoute />} />
+              <Route path="/books/:bookSlug/formelsammlung" element={<ChapterRoute />} />
+              <Route path="/books/:bookSlug/selbsttests" element={<ChapterRoute />} />
+              <Route path="/books/:bookSlug/chapters/*" element={<ChapterRoute />} />
+              <Route path="/books/:bookSlug/appendix/*" element={<ChapterRoute />} />
+              <Route path="/gallery" element={<LegacyRedirect />} />
+              <Route path="/glossar" element={<LegacyRedirect />} />
+              <Route path="/markierungen" element={<LegacyRedirect />} />
+              <Route path="/formelsammlung" element={<LegacyRedirect />} />
+              <Route path="/selbsttests" element={<LegacyRedirect />} />
+              <Route path="/chapters/*" element={<LegacyRedirect />} />
+              <Route path="/appendix/*" element={<LegacyRedirect />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </div>

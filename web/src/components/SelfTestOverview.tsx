@@ -2,10 +2,7 @@ import { Link } from 'react-router-dom'
 import { SELF_TESTS } from '../data/selftests'
 import { ALL_CHAPTERS } from '../chapters'
 import { useSelfTestResults } from '../lib/selftests'
-
-function chapterHref(path: string): string {
-  return path === 'index' ? '/' : `/${path}`
-}
+import { bookPath } from '../books'
 
 function formatDate(ts: number): string {
   return new Intl.DateTimeFormat('de-DE', {
@@ -53,7 +50,7 @@ export function SelfTestOverview() {
             <div key={test.id} className="selftest-table-row" role="row">
               <div className="selftest-table-main" role="cell">
                 <span className="selftest-table-num">{chapter?.num ? `Kapitel ${chapter.num}` : 'Referenz'}</span>
-                <Link to={chapter ? chapterHref(chapter.path) : '#'}>{chapter?.title ?? test.title}</Link>
+                <Link to={chapter ? bookPath(chapter.path) : '#'}>{chapter?.title ?? test.title}</Link>
               </div>
               <div className="selftest-table-tags" role="cell">
                 {hasSingle && <span className="glossar-tag glossar-tag--typ">Single Choice</span>}
@@ -70,7 +67,7 @@ export function SelfTestOverview() {
                 )}
               </div>
               <div className="selftest-table-actions" role="cell">
-                <Link className="selftest-link" to={chapter ? chapterHref(chapter.path) : '#'}>Öffnen</Link>
+                <Link className="selftest-link" to={chapter ? bookPath(chapter.path) : '#'}>Öffnen</Link>
                 {result && (
                   <button className="selftest-text-btn" onClick={() => clearResult(test.id)}>
                     Zurücksetzen

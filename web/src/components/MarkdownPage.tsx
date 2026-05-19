@@ -13,6 +13,7 @@ import 'highlight.js/styles/github.css'
 import { preprocessMarkdown } from '../lib/markdown'
 import { bookmarkKey, useBookmarks } from '../lib/bookmarks'
 import { getBreadcrumb } from '../chapters'
+import { bookPath, normalizeBookPath } from '../books'
 import { applyTextHighlights, compactContext, getRangeQuote, useTextHighlights } from '../lib/highlights'
 import { CalcUValue }   from './calculators/CalcUValue'
 import { CalcDewPoint } from './calculators/CalcDewPoint'
@@ -70,6 +71,13 @@ interface Props {
 function imgIdFromSrc(src: string): string {
   const filename = src.split('/').pop() ?? src
   return 'img-' + filename.replace(/\.[^.]+$/, '')
+}
+
+function normalizeAssetSrc(src?: string): string | undefined {
+  if (!src) return src
+  if (/^(?:https?:)?\/\//.test(src) || src.startsWith('/') || src.startsWith('data:')) return src
+  const stripped = src.replace(/^(?:\.\.\/|\.\/)+/, '')
+  return stripped.startsWith('assets/') ? `/${stripped}` : src
 }
 
 type HeadingTag = 'h1' | 'h2' | 'h3' | 'h4'
@@ -307,14 +315,15 @@ export function MarkdownPage({ content }: Props) {
             h3: makeHeading('h3', headingContext),
             h4: makeHeading('h4', headingContext),
             img({ src, alt }) {
-              const id = src ? imgIdFromSrc(src) : undefined
+              const resolvedSrc = normalizeAssetSrc(src)
+              const id = resolvedSrc ? imgIdFromSrc(resolvedSrc) : undefined
               return (
                 <figure id={id}>
                   <img
-                    src={src}
+                    src={resolvedSrc}
                     alt={alt ?? ''}
                     loading="lazy"
-                    onClick={() => src && setLightbox({ src, alt: alt ?? '' })}
+                    onClick={() => resolvedSrc && setLightbox({ src: resolvedSrc, alt: alt ?? '' })}
                   />
                   {alt && <figcaption>{alt}</figcaption>}
                 </figure>
@@ -335,10 +344,15 @@ export function MarkdownPage({ content }: Props) {
             a({ href, children, ...rest }) {
               const isExternal = href?.startsWith('http')
               if (href && !isExternal && !href.startsWith('#') && !href.startsWith('mailto:')) {
-                // Convert relative .md paths (../chapters/X.md, ./X.md) to router paths (/chapters/X)
-                const to = href.startsWith('/')
+                // Convert relative .md paths (../chapters/X.md, ./X.md) to the active book route.
+                const raw = href.startsWith('/')
                   ? href
                   : '/' + href.replace(/^(?:\.\.\/|\.\/)+/, '').replace(/\.md(#|$)/, '$1')
+                const [rawPath, rawHash = ''] = raw.split('#')
+                const normalizedPath = normalizeBookPath(rawPath)
+                const to = normalizedPath.startsWith('chapters/') || normalizedPath.startsWith('appendix/') || ['index', 'glossar', 'markierungen', 'formelsammlung', 'selbsttests'].includes(normalizedPath)
+                  ? `${bookPath(normalizedPath)}${rawHash ? `#${rawHash}` : ''}`
+                  : raw
                 return <Link to={to} {...rest}>{children}</Link>
               }
               return (

@@ -70,6 +70,7 @@ import {
   ViewReferenceHifi,
   ValidationRuleHifi,
 } from 'bim-icons'
+import { normalizeBookPath } from './books'
 
 export interface Chapter {
   id: string
@@ -205,8 +206,9 @@ const rawFiles = import.meta.glob('../../docs/**/*.md', {
 }) as Record<string, string>
 
 export function getContent(path: string): string {
-  const key = `../../docs/${path}.md`
-  return (rawFiles[key] as string | undefined) ?? `# Nicht gefunden\n\nDie Seite \`${path}\` existiert noch nicht.`
+  const normalizedPath = normalizeBookPath(path)
+  const key = `../../docs/${normalizedPath}.md`
+  return (rawFiles[key] as string | undefined) ?? `# Nicht gefunden\n\nDie Seite \`${normalizedPath}\` existiert noch nicht.`
 }
 
 export function getChapterDescription(path: string): string {
@@ -284,7 +286,8 @@ export function getChapterReferenceGraph(): ChapterReferenceGraph {
 }
 
 export function findChapterByPath(path: string): Chapter | undefined {
-  return ALL_CHAPTERS.find(c => c.path === path || c.id === path)
+  const normalizedPath = normalizeBookPath(path)
+  return ALL_CHAPTERS.find(c => c.path === normalizedPath || c.id === normalizedPath)
 }
 
 const NAV_CHAPTERS = ALL_CHAPTERS.filter(c => !c.isReferencePage)
@@ -299,7 +302,7 @@ export function getNavigation(id: string): { prev: Chapter | null; next: Chapter
 }
 
 export function getBreadcrumb(pathname: string): { part: string | null; chapter: string | null } {
-  const path = pathname.replace(/^\//, '') || 'index'
+  const path = normalizeBookPath(pathname)
   if (path === 'gallery') return { part: null, chapter: 'Bildgalerie' }
   const chapter = ALL_CHAPTERS.find(c => c.path === path)
   if (!chapter) return { part: null, chapter: null }

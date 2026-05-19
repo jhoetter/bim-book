@@ -23,10 +23,10 @@ Jedes Kapitel endet mit einer **BIM-Brücke** – der konkreten Antwort auf die 
 | III | 6–9 | Gebäudehülle: Bauphysik | ~70 |
 | IV | 10–13 | Technische Gebäudeausrüstung | ~80 |
 | V | 14–17 | Projektprozess: Genehmigung, Planung, Vergabe, Bau | ~70 |
-| VI | 17–21 | BIM: Das digitale Gebäude | ~90 |
-| VII | 22–24 | Nachhaltigkeit, Sanierung & Ausblick | ~60 |
+| VI | 18–22 | BIM: Das digitale Gebäude | ~90 |
+| VII | 23–26 | Nachhaltigkeit, Sanierung & Ausblick | ~70 |
 | – | Anhang | Glossar, Quellen, IFC-Referenz, Normen | ~21 |
-| | **Gesamt** | **24 Kapitel** | **~511 Seiten** |
+| | **Gesamt** | **26 Kapitel** | **~530 Seiten** |
 
 ---
 

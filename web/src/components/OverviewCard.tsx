@@ -1,11 +1,7 @@
 import { useState, type CSSProperties, type FocusEventHandler, type MouseEventHandler } from 'react'
 import { NavLink } from 'react-router-dom'
 import { getChapterDescription, type Chapter } from '../chapters'
-
-function chapterHref(path: string): string {
-  if (path === 'index') return '/'
-  return `/${path}`
-}
+import { bookPath } from '../books'
 
 interface OverviewCardProps {
   chapter: Chapter
@@ -33,7 +29,7 @@ export function OverviewCard({
 
   return (
     <NavLink
-      to={chapterHref(chapter.path)}
+      to={bookPath(chapter.path)}
       className={`overview-card${className ? ` ${className}` : ''}`}
       style={style}
       onMouseEnter={onMouseEnter}

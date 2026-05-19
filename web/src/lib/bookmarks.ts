@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { bookPath } from '../books'
 
 const STORAGE_KEY = 'bim-book-bookmarks'
 const SYNC_EVENT = 'bim-bookmark-change'
@@ -56,7 +57,7 @@ export function bookmarkKey(bookmark: Pick<Bookmark, 'path' | 'headingId'>): str
 }
 
 export function bookmarkHref(bookmark: Pick<Bookmark, 'path' | 'headingId'>): string {
-  const path = bookmark.path === 'index' ? '/' : `/${bookmark.path}`
+  const path = bookPath(bookmark.path)
   return bookmark.headingId ? `${path}#${bookmark.headingId}` : path
 }
 
