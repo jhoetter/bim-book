@@ -60,7 +60,30 @@ Nachbarn sind nicht erst im Genehmigungsverfahren relevant. Ihre Gebäude bestim
 
 Auch Zufahrt und Baustelle gehören zur Vorprüfung. Kann ein Lkw anfahren? Gibt es Platz für Kran, Container und Lager? Muss ein Gehweg gesperrt werden? Gibt es Lieferzeitfenster oder enge Straßen? Solche Fragen wirken früh auf Termin, Kosten und Vergabe. Ein Entwurf, der nur die Endform zeigt, aber den Bauprozess ignoriert, ist unvollständig.
 
-## 4.5 BIM-Brücke: Grundstück als Modellkontext
+## 4.5 Prüfliste vor der Variantenentscheidung
+
+Die Grundstücksprüfung ist der Punkt, an dem viele frühe Entwürfe realistisch oder unrealistisch werden. Ein Lageplan reicht dafür nicht aus. Vor einer belastbaren Variantenentscheidung müssen mehrere Informationsschichten übereinanderliegen: Eigentum, Baurecht, Topografie, Leitungen, Boden, Wasser, Nachbarschaft, Erschließung, Feuerwehr, Baustellenlogistik und Umwelt. Jede Schicht kann die scheinbar beste Form kippen.
+
+Die rechtliche Prüfung beginnt mit Grundbuch, Baulasten und Dienstbarkeiten. Eine Dienstbarkeit kann Zufahrt, Leitungsrecht oder Nutzung einschränken. Eine Baulast kann Abstandsflächen, Stellplätze oder Feuerwehrzufahrten betreffen. Für den Entwurf sind solche Einträge nicht abstrakt: Sie können Baugrenzen faktisch verschieben oder Flächen blockieren, die im ersten Modell frei wirkten.
+
+Die technische Prüfung fragt nach Vermessung, Höhen, Leitungen und Baugrund. Bestandspläne sind keine Vermessung. Gerade bei innerstädtischen Grundstücken können Geländehöhen, Nachbarfundamente, alte Keller, Schächte oder Leitungen entscheidend werden. Ein Bodengutachten ist nicht nur für die Statik wichtig, sondern auch für Kosten, Wasserhaltung, Gründung, Bauzeit und Entsorgung. Altlasten und Kampfmittel sind keine seltenen Sonderfälle, sondern typische Risikothemen bei ehemals gewerblich genutzten Flächen.
+
+Die städtebauliche Prüfung fragt nach Einfügung, Maß der baulichen Nutzung, Abstandsflächen, Nachbarrechten und öffentlicher Wirkung. Im Geltungsbereich eines Bebauungsplans geht es um GRZ, GFZ, Baugrenzen, Dachform, Nutzung und Nebenanlagen. Im unbeplanten Innenbereich nach § 34 BauGB geht es um die Eigenart der näheren Umgebung. Für Einsteiger ist wichtig: Diese Prüfung ist nicht erst Aufgabe des Bauantrags. Sie entscheidet schon, welche Varianten überhaupt ernsthaft verfolgt werden.
+
+Zur Due Diligence gehört auch eine Baustellenperspektive. Gibt es Platz für Kran, Lager, Container, Anlieferung und Gerüst? Muss öffentlicher Raum gesperrt werden? Können Betonmischer wenden? Gibt es Schulwege, Nachbarzufahrten oder Lärmschutzauflagen? Ein Grundstück kann planungsrechtlich bebaubar sein und trotzdem eine teure Baustellenlogistik erzwingen.
+
+!!! kastanienallee "Kastanienallee 7"
+    Bei K7 wird die hohe Ausnutzung nur tragfähig, wenn Baulasten, Abstandsflächen, Feuerwehrzufahrt und Leitungsbestand früh geprüft sind. Der Entwurf darf den Aufzugskern, die Schächte und den Baukörper nicht so setzen, dass später ein Regenwasserkanal, eine Zufahrtsbaulast oder fehlende Aufstellfläche für die Feuerwehr zur kompletten Umplanung führt.
+
+## 4.6 Was in die Grundstücksakte gehört
+
+Eine belastbare Grundstücksakte ist mehr als ein Ordner mit PDF-Dateien. Sie sollte zeigen, welche Information geprüft, ungeprüft, veraltet oder risikobehaftet ist. Der Grundbuchauszug beantwortet Eigentum und Belastungen. Das Baulastenverzeichnis beantwortet öffentlich-rechtliche Verpflichtungen. Der Bebauungsplan oder die planungsrechtliche Vorprüfung beantwortet, was grundsätzlich zulässig ist. Die Vermessung beantwortet, was geometrisch stimmt. Das Bodengutachten beantwortet, welche Gründung und welche Risiken zu erwarten sind.
+
+Wichtig ist der Status jeder Unterlage. Ein alter Leitungsplan ist ein Hinweis, keine Gewissheit. Eine mündliche Auskunft der Behörde ist hilfreich, aber keine Genehmigung. Ein Vorentwurf auf Basis eines nicht vermessenen Lageplans ist nur ein Arbeitstand. Gute Planung markiert solche Unsicherheiten offen. Das schützt nicht vor jeder Überraschung, aber es verhindert, dass Unsicherheit als Planungssicherheit verkauft wird.
+
+Im Büroalltag sollte jede Grundstücksprüfung mit einer Risikomatrix enden. Risiken werden nicht nur gesammelt, sondern bewertet: Eintrittswahrscheinlichkeit, mögliche Kostenfolge, Terminwirkung, nächster Prüfschritt und Verantwortlicher. So wird aus "Altlasten möglich" eine konkrete Aufgabe: historische Nutzung prüfen, Bodengutachter beauftragen, Kostenreserve bilden, Terminrisiko im Projektstart benennen.
+
+## 4.7 BIM-Brücke: Grundstück als Modellkontext
 
 Das Grundstück erscheint im Modell nicht nur als Fläche. Es ist Kontext: `IfcSite`, Höhenbezug, Nordrichtung, Nachbarvolumen, Leitungsinformationen, Geländemodell, Risikoflächen und spätere Baustelleneinrichtung. Nicht alle Informationen müssen als IFC-Objekt modelliert werden, aber sie müssen auffindbar, versioniert und mit dem Modellbezug verbunden sein.
 

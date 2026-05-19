@@ -118,6 +118,19 @@ Datenverfügbarkeit ist der zweite Engpass. Bebauungspläne liegen oft als PDF, 
 
 Der sinnvolle Ansatz ist deshalb hybrid: harte Parameter automatisieren, unklare Punkte markieren, Quellen verlinken und Entscheidungsbedarf dokumentieren. Ein gutes Tool sagt nicht "genehmigt", sondern "GFZ passt, Baugrenze überschritten, ::Abstandsfläche:: unklar, Stellplatzsatzung fehlt". Das ist für Planer bereits wertvoll.
 
+## 18.10 Bauantrag als Dokumentenpaket
+
+Der Bauantrag ist kein einzelnes Formular, sondern ein abgestimmtes Paket aus Zeichnungen, Berechnungen, Beschreibungen und Nachweisen. Für Einsteiger ist wichtig: Die Behörde prüft nicht, ob das Gebäude schön, billig oder optimal detailliert ist. Sie prüft, ob es öffentlich-rechtlich zulässig ist und ob die erforderlichen Nachweise plausibel vorliegen.
+
+Typische Bestandteile sind Antragsformular, amtlicher Lageplan, Bauzeichnungen, Baubeschreibung, Berechnung von GRZ, GFZ, Grundflächen und Vollgeschossen, Stellplatznachweis, Abstandsflächenplan, Brandschutznachweis, Standsicherheitsnachweis oder Prüfauftrag, Entwässerungsunterlagen, Wärmeschutz- oder GEG-Nachweis, Schallschutznachweis, Barrierefreiheitsangaben und je nach Projekt Nachweise zu Baumschutz, Denkmalschutz, Artenschutz oder Erschließung. Welche Unterlagen konkret nötig sind, hängt von Landesbauordnung, Gebäudeklasse, Sonderbauqualität und Kommune ab.
+
+Der Unterschied zwischen Genehmigungsreife und Ausführungsreife ist zentral. Ein Grundriss im Bauantrag zeigt Raum, Nutzung, Rettungsweg, Maße und öffentlich-rechtlich relevante Angaben. Er zeigt aber nicht jeden Wandaufbau, jede Abdichtung, jedes Befestigungsmittel und jede Werkplanung. Wer nach Baugenehmigung direkt bauen möchte, verwechselt zwei Reifegrade. Das führt später zu Nachträgen, Planungsdruck und Baustellenentscheidungen ohne Grundlage.
+
+Die praktische Arbeit besteht oft in Nachforderungen. Die Behörde fragt Unterlagen nach, bittet um Klarstellung oder beteiligt Fachstellen. Das ist kein Ausnahmefall, sondern Teil des Prozesses. Gute Planer halten deshalb eine Nachforderungsliste: Wer liefert welchen Nachweis, bis wann, mit welchem Planstand? Jede Änderung am Bauantrag muss darauf geprüft werden, ob sie andere Nachweise berührt. Eine geänderte Fensteröffnung kann Fassade, Brandschutz, Schallschutz, GEG und Abstandsflächen betreffen.
+
+!!! kastanienallee "Kastanienallee 7"
+    Für K7 ist der Bauantrag besonders eng mit Gebäudeklasse 4, Aufzugspflicht, Stellplätzen, Brandschutz und GRZ/GFZ verbunden. Der Antrag muss zeigen, dass der kompakte Vierspänner rechtlich funktioniert. Die Ausführungsdetails des Aufzugs oder der KWL sind noch nicht vollständig Werkplanung, aber die räumlichen Voraussetzungen müssen im Genehmigungsstand richtig sitzen.
+
 ## BIM-Brücke: Planungsrecht als prüfbare Daten
 
 Planungsrecht lässt sich teilweise modellbasiert prüfen. `IfcSite` liefert Grundstücksbezug, `IfcBuilding` und Geschosse liefern Geometrie, Räume und Flächen liefern Auswertungen. ::GFZ::- und ::GRZ::-Prüfungen sind relativ gut automatisierbar, wenn anrechenbare Flächen sauber klassifiziert sind. ::Abstandsfläche::, Brandschutz und Satzungsauslegung bleiben deutlich schwieriger.

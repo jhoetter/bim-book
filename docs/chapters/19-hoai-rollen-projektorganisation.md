@@ -126,6 +126,19 @@ Für Entwickler heißt das: BIM-Software sollte nicht nur Modellobjekte verwalte
 
 Für Planer ist die wichtigste Konsequenz: Jede digitale Zusatzanforderung braucht Zeit, Honorar und Prüfung. Wenn ein Auftraggeber maschinenlesbare Raumdaten, FM-Assets oder LCA-Materialpässe erwartet, muss das in den Leistungsumfang. Sonst entsteht ein stiller Konflikt zwischen Erwartung und beauftragter Leistung.
 
+## 19.11 Rollenklärung im echten Projekt
+
+Die HOAI beschreibt Leistungsbilder, aber sie organisiert nicht automatisch das Projekt. In der Praxis muss festgelegt werden, wer welche Rolle übernimmt: Bauherr, Objektplaner, Fachplaner, Tragwerksplaner, TGA-Planer, Brandschutzplaner, Vermesser, Bodengutachter, Projektsteuerer, SiGeKo, ausführende Unternehmen, Prüfsachverständige, Behörden und später Betreiber. Jede Rolle hat eigene Informationen, Pflichten und Zeitpunkte.
+
+Der Objektplaner ist häufig die sichtbare Mitte des Projekts, aber nicht der alleinige Wissenshalter. Er koordiniert, integriert und übersetzt. Der Tragwerksplaner verantwortet Standsicherheit. Die TGA-Planung verantwortet technische Systeme. Der Brandschutzplaner formuliert brandschutztechnische Anforderungen. Der Projektsteuerer kann Termine, Kosten, Verträge und Entscheidungsprozesse strukturieren. Diese Rollen dürfen nicht im Kopf des Bauherrn verschwimmen, sonst werden Erwartungen falsch adressiert.
+
+Besonders kritisch sind Leistungsgrenzen. Wer erstellt das Raumprogramm? Wer prüft Fördermittel? Wer führt Nutzerworkshops? Wer schreibt das LV? Wer prüft Werkplanung? Wer pflegt das Modell nach Ausführung? Wer liefert Revisionsdaten? Manche Leistungen sind Grundleistungen, andere besondere Leistungen oder gesonderte Beauftragungen. Wenn diese Grenzen am Anfang nicht geklärt sind, wirken spätere Forderungen wie Selbstverständlichkeiten, obwohl sie nie beauftragt wurden.
+
+Für BIM-Projekte muss zusätzlich die Informationsverantwortung geklärt werden. Wer modelliert welche Fachobjekte? Wer darf Modelle freigeben? Welche Informationen sind in welcher Phase Pflicht? Welche Prüfregeln gelten? Wer koordiniert BCF-Issues? Wer hält den BAP aktuell? Diese Fragen sind keine Softwareeinstellung, sondern Projektorganisation.
+
+!!! kastanienallee "Kastanienallee 7"
+    Bei K7 braucht der Bauherr neben dem Architekten mindestens Tragwerk, TGA, Brandschutz, Vermessung, Baugrund und später SiGeKo. Wenn der Architekt die Projektmitte bildet, muss trotzdem klar bleiben: Der Aufzug kommt mit Hersteller- und Fachplanung, die KWL mit TGA-Konzept, die Brandschutztüren mit Brandschutzanforderung und Werkplanung. Gute Organisation verhindert, dass alles als "Architektenthema" unscharf wird.
+
 ## BIM-Brücke: Prozessdaten sind Projektdaten
 
 BIM ist nicht nur Geometrie, sondern Lieferung von Information zu einem Zeitpunkt. ::LOD::, AIA und ::BAP:: verbinden Fachplanung mit Datenqualität. In [Kapitel 36](/chapters/36-prozess-kollaboration) wird daraus der CDE-Workflow, in [Kapitel 33](/chapters/33-was-bim-wirklich-ist) die BIM-Methode.

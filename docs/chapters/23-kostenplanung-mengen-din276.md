@@ -121,6 +121,19 @@ Trotzdem bleibt kaufmännische Bewertung menschlich. Ein niedriger Einheitspreis
 
 Die beste Kostensteuerung ist früh und grob genug, um Entscheidungen zu beeinflussen, und später genau genug, um Verträge zu tragen. Wer erst nach der Ausschreibung merkt, dass das Budget nicht reicht, hat zu spät gesteuert. Kosten sind deshalb ein Entwurfsthema, nicht nur ein Controllingthema.
 
+## 23.9 Kostenplanung als fortlaufende Entscheidung
+
+Kostenplanung ist nicht die einmalige Zahl, die in einer Präsentation steht. Sie begleitet das Projekt von der ersten Machbarkeit bis zur Schlussrechnung. In jeder Phase ändert sich die Informationsgrundlage: Kostenrahmen, Kostenschätzung, Kostenberechnung, Kostenanschlag und Kostenfeststellung sind keine Synonyme, sondern Reifegrade. Je später das Projekt, desto weniger darf die Zahl auf groben Kennwerten beruhen.
+
+Für Einsteiger ist wichtig, dass Kosten nicht neutral hinter dem Entwurf stehen. Sie formen den Entwurf. Ein kompakter Baukörper, wiederholte Grundrisse, klare Spannweiten, wenige Sonderdetails und einfache TGA-Schächte sind Kostenentscheidungen. Ebenso sind große Auskragungen, geknickte Fassaden, viele Wohnungstypen, kleine Restflächen und späte Materialwechsel Kostentreiber. Gute Kostenplanung macht diese Wirkung sichtbar, bevor sie gebaut ist.
+
+Die Mengenermittlung ist dabei die Brücke zwischen Geometrie und Geld. BGF, Wohnfläche, Hüllfläche, Fensteranteil, Wandlängen, Deckenflächen, Türzahlen, Schächte und Technikflächen werden zu Kostentreibern. Modellmengen helfen, aber sie müssen plausibilisiert werden. Ein Modell kann eine Wandfläche exakt ausgeben und trotzdem die falsche Leistung beschreiben, wenn Öffnungen, Laibungen, Sockel, Nebenleistungen oder Abrechnungsregeln fehlen.
+
+Kostenkontrolle braucht Reserve und Prognose. Die Reserve ist kein freies Polster für Wünsche, sondern Risikobudget. Wenn sie durch Altlasten, Nachträge oder Preissteigerungen verbraucht wird, muss der Bauherr es früh wissen. Die Prognose fragt nicht: Was haben wir bezahlt? Sondern: Was wird das Projekt nach heutigem Kenntnisstand am Ende kosten? Diese Frage ist unangenehm, aber sie ist der Kern seriöser Projektsteuerung.
+
+!!! kastanienallee "Kastanienallee 7"
+    Bei K7 ist die erste Zahl 1.800 m² BGF mal 3.200 Euro je m², also 5,76 Mio. Euro für KG 200-700. Diese Zahl ist ein Startwert, keine Baukostenwahrheit. Sobald Grundriss, Tragwerk, Hülle, TGA, Aufzug und Außenanlagen genauer werden, muss die Kostengliederung nach DIN 276 nachziehen. Der Aufzug ist nicht nur ein Bauteil, sondern wirkt auf Schacht, Technik, Brandschutz, Betrieb und Wartung.
+
 ## BIM-Brücke: 5D-BIM
 
 ::5D-BIM:: koppelt Modellobjekte mit Mengen und Kosten. `IfcQuantitySet` kann Flächen, Volumen und Längen liefern. Klassifikation verbindet Bauteile mit ::DIN 276:: oder STLB-Positionen. GAEB-Dateien übertragen Leistungsverzeichnisse. Die Herausforderung liegt nicht in der Rechenoperation, sondern in sauber modellierten Objekten und eindeutiger Zuordnung.

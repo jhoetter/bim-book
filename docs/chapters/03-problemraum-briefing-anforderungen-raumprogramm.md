@@ -72,7 +72,22 @@ Viele Streitigkeiten entstehen nicht, weil nie entschieden wurde, sondern weil n
 
 Ein Entscheidungslog ist keine Bürokratie. Es schützt das Projekt vor Schleifen. Wenn Variante B wegen Erschließungsfläche verworfen wurde, sollte sie nicht drei Wochen später ohne neue Erkenntnis wieder auftauchen. Wenn der Bauherr einen höheren Standard wählt, muss die Kostenwirkung dokumentiert werden. Wenn eine Anforderung unklar bleibt, muss sie als offen markiert werden.
 
-## 3.5 BIM-Brücke: Anforderungen als Daten
+## 3.5 Briefing als wiederholbarer Arbeitsprozess
+
+Ein gutes Briefing entsteht nicht in einer Sitzung. In der Praxis läuft es in Schleifen: Erstgespräch, erste Ordnung, Rückfrage, Raumprogramm, Variantenprüfung, Korrektur, Freigabe. Jede Schleife macht den Problemraum präziser. Das ist kein Zeichen schlechter Vorbereitung, sondern die normale Arbeitsweise komplexer Projekte. Bauherren wissen oft erst, was sie wirklich wollen, wenn sie die Folgen einer Forderung sehen.
+
+Für das Kundengespräch hilft eine einfache Dreiteilung. Erstens: Muss-Anforderungen. Dazu gehören Recht, Sicherheit, Brandschutz, Barrierefreiheit, Stellplätze, Budgetgrenzen, Terminzwänge und technische Mindestanforderungen. Zweitens: Soll-Anforderungen. Sie beschreiben Ziele, die wichtig sind, aber abgewogen werden können: Wohnungsmix, Fassadenqualität, Energieambition, Flexibilität, Wartungsfreundlichkeit, Vermietbarkeit. Drittens: Wunsch-Anforderungen. Sie beschreiben Atmosphäre, Präferenzen und Bilder: hell, warm, reduziert, robust, hochwertig, urban, privat. Der Architekt übersetzt alle drei Ebenen in prüfbare Kriterien.
+
+Besonders wichtig ist die Unterscheidung zwischen Anforderung und Lösung. "Große Fenster" ist meistens keine Anforderung, sondern eine vermutete Lösung für Licht, Aussicht oder Repräsentation. "Tiefgarage" kann eine Lösung für Stellplätze sein, aber vielleicht lösen Carsharing, Fahrradstellplätze oder ein anderer Wohnungsmix das Problem besser. "Offene Grundrisse" können soziale Großzügigkeit meinen, aber Schallschutz, Möblierung oder spätere Vermietbarkeit verschlechtern. Das Briefing muss deshalb hinter die formulierte Lösung zurückfragen.
+
+Im Planungsalltag wird der Problemraum am besten mit Artefakten geführt. Ein Raumprogramm beschreibt Räume und Flächen. Eine Anforderungsmatrix verknüpft Ziele mit Nachweisen. Eine Stakeholderkarte zeigt Betroffene und Entscheider. Ein Entscheidungslog hält fest, warum etwas verworfen wurde. Ein Änderungslog verhindert, dass neue Wünsche unbemerkt in Kosten und Termine wandern. Diese Dokumente sind nicht bürokratischer Ballast; sie sind das Gedächtnis des Projekts.
+
+Für Anfänger ist der wichtigste Perspektivwechsel: Der Architekt ist in dieser Phase nicht primär jemand, der "eine schöne Lösung findet". Er ist jemand, der eine unklare Situation so strukturiert, dass Lösungen vergleichbar werden. Wenn zwei Varianten diskutiert werden, fragt er nicht nur, welche gefällt. Er fragt: Welche erfüllt die Muss-Kriterien? Welche verletzt das Budget? Welche erhöht Genehmigungsrisiken? Welche hat Reserven für spätere Änderungen? Welche ist für die Nutzer verständlich?
+
+!!! kastanienallee "Kastanienallee 7"
+    In K7 wird der Wunsch "wirtschaftlich, hell, gut vermietbar" in eine Anforderungsmatrix übersetzt. Wirtschaftlich bedeutet: kompakter Baukörper, wiederholbare Grundrisse, kurze Schächte, keine Sonderfassade. Hell bedeutet: Aufenthaltsräume an gut belichteten Fassaden, kontrollierte Raumtiefen, keine innenliegenden Wohnräume. Gut vermietbar bedeutet: klare Wohnungstypen, barrierearmer Zugang, robuste Materialien, niedrige Betriebskosten und nachvollziehbare Nebenkosten. Erst diese Übersetzung macht den Wunsch planbar.
+
+## 3.6 BIM-Brücke: Anforderungen als Daten
 
 Anforderungen können in digitalen Projekten als Daten geführt werden. Räume erhalten Sollflächen, Nutzungen, Ausstattungsanforderungen und Qualitätsziele. Später können Plan und Modell gegen diese Anforderungen geprüft werden: Sind alle Bäder am Schacht? Stimmen Wohnflächen? Haben barrierefreie Wohnungen ausreichende Bewegungsflächen? Sind Technikräume zugänglich?
 

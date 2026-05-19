@@ -53,6 +53,37 @@ tags: kap20, durchbruch, kollision
 
 Koordinationsrunden brauchen klare Issues. Ein gutes Issue beschreibt Ort, Bauteil, Problem, Verantwortlichen, Frist und erwartete Entscheidung. Schlechte Issues lauten: TGA prüfen. Gute Issues lauten: Lüftungskanal Achse B/3 kollidiert mit Unterzug UZ-2. Tragwerk prüft Aussparung bis 14.06., TGA liefert Alternativführung bis 16.06. Das Protokoll ist damit Steuerungswerkzeug, nicht Gesprächsmitschrift.
 
+## 20.5 Koordination als Takt des Planungsbüros
+
+Fachplanerkoordination ist kein gelegentliches "Bitte prüfen". Sie braucht einen Takt. In einem realen Büro gibt es Planläufe mit festen Ausgabeterminen, Prüffristen und Rückläufen. Architektur, Tragwerk, TGA, Brandschutz, Bauphysik und Freianlagen arbeiten nicht nacheinander fertig, sondern entwickeln ihre Planung ineinander. Genau deshalb braucht das Projekt klare Planstände: Vorabzug, Prüfstand, Freigabestand, Ausschreibungsstand, Ausführungsstand.
+
+Ein typischer Koordinationszyklus beginnt mit einer Aufgabenliste: Welche Punkte müssen bis zum nächsten Stand geklärt werden? Danach liefern Fachplaner ihre Pläne oder Modelle. Die Architektur prüft Schnittstellen: Schächte, Durchbrüche, Deckenstärken, Trassen, Abhangdecken, Installationszonen, Rettungswege, Türhöhen, Brandschutzklappen und Wartungsflächen. Dann werden Konflikte in einer Koordinationsliste dokumentiert, nicht nur mündlich besprochen. Jeder Konflikt braucht Ort, Beschreibung, Verantwortlichen, Frist und Entscheidung.
+
+Die häufigsten Fehler entstehen an Stellen, die auf einem Einzelplan plausibel wirken. Der Tragwerksplan zeigt einen Unterzug, die TGA braucht dort eine Lüftungsleitung, der Brandschutz fordert eine klassifizierte Durchführung, die Architektur plant eine lichte Raumhöhe, und der Ausbau braucht eine abgehängte Decke. Kein Beteiligter hat allein "falsch" geplant; falsch ist die fehlende gemeinsame Prüfung. Koordination bedeutet deshalb, Einzelrichtigkeiten zu einer gemeinsam baubaren Lösung zu bringen.
+
+Für Einsteiger ist wichtig: Koordination ist auch soziale Arbeit. Fachplaner verteidigen berechtigte Anforderungen. Der Architekt muss nicht alles selbst besser wissen, aber er muss Widersprüche erkennen, Entscheidungen herbeiführen und dokumentieren. Wenn eine Leitung wegen Raumhöhe nicht geführt werden kann, reicht kein Kommentar "TGA klären". Es braucht eine Entscheidung: anderer Trassenweg, größere Schachtfläche, geänderte Decke, anderer Gerätetyp oder räumliche Anpassung.
+
+!!! kastanienallee "Kastanienallee 7"
+    Bei K7 entscheidet die Schachtkoordination früh über die Qualität des Projekts. Küchen und Bäder liegen übereinander, der Aufzug braucht einen eigenen Schacht, KWL-Leitungen brauchen Platz in Abhangdecken, Fernwärme und Elektro benötigen zugängliche Technikflächen. Ein unkoordinierter Durchbruch im Treppenhauskern wäre nicht nur ein Planungsfehler, sondern später ein Brandschutz-, Kosten- und Terminproblem.
+
+## 20.6 Typische Koordinationsdokumente
+
+In der Praxis besteht Koordination aus wiederkehrenden Dokumenten. Die Planliste zeigt, welche Pläne existieren, welchen Index sie haben, welchen Status sie besitzen und wer sie erhalten hat. Die Pendenzenliste sammelt offene Punkte, die noch keine Lösung haben. Die Kollisionsliste beschreibt konkrete Konflikte zwischen Bauteilen oder Fachmodellen. Die Durchbruchsliste verbindet Tragwerk und TGA. Die Raumbuch- oder Ausstattungsliste verbindet Nutzung, Ausbau und Technik. Ohne diese Listen bleibt Koordination abhängig vom Gedächtnis einzelner Personen.
+
+Ein guter Planlauf hat einen definierten Zweck. Ein Prüfplanlauf dient der fachlichen Rückmeldung. Ein Freigabeplanlauf entscheidet, was weiterverwendet wird. Ein Ausschreibungsstand muss für LV und Mengen stabil genug sein. Ein Ausführungsstand muss auf der Baustelle gelten. Diese Zwecke dürfen nicht vermischt werden. Wenn ein Vorabzug wie ein freigegebener Plan verwendet wird, entsteht Scheinsicherheit.
+
+Besonders wertvoll ist die gemeinsame Prüfung von Schächten und Decken. Schächte sind kleine Räume mit vielen Ansprüchen: Lüftung, Abwasser, Trinkwasser, Elektro, Brandschutz, Schallschutz, Revisionszugang und Montagefolge. Decken sind ebenfalls Konfliktzonen: Tragwerk braucht Höhe, TGA braucht Trassen, Architektur braucht lichte Räume, Brandschutz braucht Abschottungen. Ein Koordinationsmodell muss diese Konflikte sichtbar machen, bevor die Baustelle sie löst.
+
+Softwareentwickler sollten daraus mitnehmen: Ein Koordinationswerkzeug braucht nicht nur Clash-Erkennung. Es braucht Status, Verantwortlichkeit, Frist, Entscheidung, Planbezug und Historie. Ein gelöster Clash ohne dokumentierte Entscheidung ist nur ein verschobenes Problem.
+
+## 20.7 Entscheidungsreife statt Dauerkoordination
+
+Koordination darf nicht endlos offen bleiben. Jeder offene Punkt braucht eine Entscheidungsschwelle: Bis wann muss er gelöst sein, damit der nächste Planstand nicht gefährdet wird? Manche Punkte können in die nächste Phase mitgenommen werden, andere nicht. Eine ungeklärte Fassadenfarbe ist in der Vorplanung weniger kritisch als eine ungeklärte Schachtgröße. Eine ungeklärte Brandschutzanforderung darf nicht bis zur Ausschreibung liegen bleiben.
+
+Der Architekt muss deshalb unterscheiden, welche Konflikte entwurfsrelevant, genehmigungsrelevant, ausschreibungsrelevant oder ausführungsrelevant sind. Diese Einordnung bestimmt die Dringlichkeit. Ein TGA-Konflikt im Technikraum kann vielleicht im Detail gelöst werden. Ein zu kleiner Treppenraum gefährdet Fluchtweg, Statik, Aufzug und Grundriss. Gute Koordination erkennt solche Hebel früh.
+
+Am Ende eines Koordinationstermins sollte nicht nur "wurde besprochen" stehen. Es muss klar sein: entschieden, offen, zu prüfen oder verworfen. Diese vier Zustände sind einfach, aber sie verändern die Projektkultur. Sie zwingen alle Beteiligten, zwischen Gespräch und Entscheidung zu unterscheiden.
+
 ## BIM-Brücke
 
 Die digitale Brücke liegt nicht darin, den analogen Ablauf nur als PDF abzulegen. Sie liegt darin, Vorgänge, Modelle, Dokumente, Entscheidungen und Verantwortlichkeiten miteinander zu verbinden. Ein Issue braucht Ort, Bauteil, Status, Frist und Verantwortlichen. Ein Plan braucht Index und Freigabestatus. Ein Modellobjekt braucht die Information, ob es Entwurf, Ausschreibung, Ausführung oder as-built beschreibt.

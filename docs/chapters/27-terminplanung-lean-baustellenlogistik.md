@@ -53,6 +53,37 @@ tags: kap27, last, planner, board
 
 Material muss nicht nur bestellt, sondern zum richtigen Zeitpunkt am richtigen Ort sein. Kran, Lagerflächen, Zufahrt, Lieferfenster und Schutzmaßnahmen beeinflussen den Terminplan. Eine enge Innenstadtbaustelle kann an Logistik scheitern, obwohl die Bauleistung selbst einfach wirkt.
 
+## 27.5 Terminsteuerung auf der Baustelle
+
+Ein Bauzeitenplan ist nur dann nützlich, wenn er regelmäßig mit der Wirklichkeit verglichen wird. In der Ausführung wird deshalb nicht nur gefragt, was laut Plan passieren sollte, sondern was tatsächlich passiert ist, warum etwas nicht passiert ist und welche Entscheidung für die nächste Woche nötig ist. Terminsteuerung ist ein Kreislauf aus Soll, Ist, Abweichung, Ursache und Maßnahme.
+
+Der kritische Pfad erklärt, welche Vorgänge den Endtermin bestimmen. Nicht jeder Rückstand ist gleich gefährlich. Wenn ein nichtkritisches Gewerk drei Tage Puffer hat, kann ein kurzer Verzug folgenlos bleiben. Wenn Estrich, Trocknung oder Innenputz auf dem kritischen Pfad liegen, verschiebt ein Verzug den Ausbau direkt. Einsteiger müssen deshalb lernen, Termine nicht nur als Kalenderdaten, sondern als Abhängigkeiten zu lesen.
+
+Lean Construction ergänzt den klassischen Terminplan um Verlässlichkeit. Der Gesamtterminplan sagt, was passieren soll. Die Sechs-Wochen-Vorschau prüft, welche Voraussetzungen bald fehlen könnten. Der Wochenplan enthält nur Arbeit, die tatsächlich zugesagt werden kann. Die Hindernisliste sammelt fehlende Pläne, Material, Vorleistungen, Freigaben, Personal oder Zugänglichkeit. Der wichtigste Kennwert ist nicht "wie ehrgeizig ist der Plan", sondern "wie verlässlich werden Zusagen eingehalten".
+
+Logistik entscheidet oft leiser, aber genauso hart. Eine Innenstadtbaustelle kann nicht beliebig Material lagern. Wenn Fenster zu früh kommen, werden sie beschädigt oder blockieren Flächen. Wenn Trockenbaumaterial zu spät kommt, steht der Ausbau. Wenn der Kran abgebaut ist, müssen schwere Geräte anders eingebracht werden. Deshalb muss der Terminplan mit Kranzeiten, Lieferfenstern, Lagerflächen, Schutzmaßnahmen und Verkehrsauflagen verbunden sein.
+
+!!! kastanienallee "Kastanienallee 7"
+    Bei K7 ist die Estrichtrocknung ein klassischer Terminanker. Sie lässt sich nicht beliebig beschleunigen, ohne Feuchteschäden zu riskieren. Der Ausbauplan muss deshalb Lüftung, Heizung, Messpunkte, Belegreifeprüfung und nachfolgende Gewerke sauber koordinieren. Ein scheinbar kleiner Verzug im Estrich kann Parkett, Maler, Küchen, Abnahmen und Übergabe verschieben.
+
+## 27.6 Terminberichte und Gegenmaßnahmen
+
+Terminsteuerung braucht Berichte, die Entscheidungen auslösen. Ein guter Terminbericht zeigt nicht nur Prozentzahlen, sondern konkrete Abweichungen: welcher Vorgang ist betroffen, welche Ursache liegt vor, welcher Puffer ist verbraucht, welche Folge entsteht und welche Maßnahme wird vorgeschlagen. Ohne diese Struktur werden Terminberichte zu farbigen Kalendern ohne Steuerungswirkung.
+
+Gegenmaßnahmen müssen realistisch sein. Mehr Personal hilft nur, wenn Arbeitsfläche, Material, Vorleistung und Koordination vorhanden sind. Parallelisierung hilft nur, wenn Gewerke sich nicht gegenseitig behindern. Wochenendarbeit hilft nur, wenn Genehmigung, Lärmschutz, Personal und Kosten geklärt sind. Beschleunigung ist nie kostenlos; sie verschiebt Aufwand, Risiko oder Qualität.
+
+Lean-Methoden wirken besonders dann, wenn Hindernisse früh entfernt werden. Eine fehlende Freigabe, ein ungeklärtes Detail oder ein nicht bestelltes Produkt blockiert später mehrere Gewerke. Die Hindernisliste ist deshalb ein Führungsinstrument. Sie fragt jede Woche: Was hindert das nächste Arbeitspaket? Wer beseitigt das Hindernis? Bis wann? Was passiert, wenn es nicht gelingt?
+
+Für BIM und 4D-Planung ist entscheidend, nicht jedes Modellobjekt kleinteilig zu verknüpfen. Sinnvoll sind steuerbare Bauabschnitte: Geschoss, Wohnung, Fassade, Schacht, Dach, Technikraum. Ein 4D-Modell soll Abhängigkeiten sichtbar machen, nicht eine Scheingenauigkeit erzeugen, die niemand auf der Baustelle pflegt.
+
+## 27.7 Bauablauf und Qualität
+
+Terminplanung darf Qualität nicht zerstören. Manche Vorgänge brauchen Mindestzeiten: Beton erhärtet, Estrich trocknet, Abdichtungen müssen geprüft werden, Putz braucht Untergrundbedingungen, Beschichtungen brauchen Temperaturfenster. Wenn ein Plan diese Zeiten ignoriert, ist er nicht ambitioniert, sondern falsch.
+
+Qualitätskritische Haltepunkte gehören in den Terminplan. Vor Betonage wird Bewehrung geprüft. Vor Verfüllung wird Abdichtung dokumentiert. Vor Schließen von Schächten werden Leitungen und Brandschutz kontrolliert. Vor Bodenbelag wird Belegreife gemessen. Solche Haltepunkte kosten Zeit, verhindern aber Schäden.
+
+Ein guter Bauzeitenplan zeigt deshalb nicht nur Produktion, sondern auch Prüfung, Trocknung, Freigabe und Dokumentation. Gerade hier verbinden sich Terminplanung und Bauoberleitung: Wer keine Zeit für Kontrolle einplant, darf sich über Mängel nicht wundern.
+
 ## BIM-Brücke
 
 Die digitale Brücke liegt nicht darin, den analogen Ablauf nur als PDF abzulegen. Sie liegt darin, Vorgänge, Modelle, Dokumente, Entscheidungen und Verantwortlichkeiten miteinander zu verbinden. Ein Issue braucht Ort, Bauteil, Status, Frist und Verantwortlichen. Ein Plan braucht Index und Freigabestatus. Ein Modellobjekt braucht die Information, ob es Entwurf, Ausschreibung, Ausführung oder as-built beschreibt.

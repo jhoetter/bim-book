@@ -53,6 +53,37 @@ tags: kap28, baustart, checkliste
 
 Vor Baubeginn werden Verantwortliche, Kommunikationswege, Planstände, Sicherheitsregeln, Termine, Zufahrten, Lagerflächen und Prüfprozesse besprochen. Die Baustartbesprechung setzt die Spielregeln, bevor Ausführung und Improvisation beginnen.
 
+## 28.5 Baustart als kontrollierter Übergang
+
+Der Baustart ist kein einzelner Tag, sondern ein Übergang von Planung zu Produktion. Vor dem ersten Aushub müssen Genehmigung, Ausführungspläne, Prüfstatik, Kampfmittel- und Leitungsthemen, Baustrom, Bauwasser, Baustelleneinrichtung, Versicherungen, SiGe-Unterlagen, Nachbarschaftsinformation und Starttermine geklärt sein. Wenn diese Punkte fehlen, beginnt die Baustelle mit Improvisation.
+
+Der Baustelleneinrichtungsplan ist dabei ein echtes Planungsdokument. Er zeigt Bauzaun, Zufahrt, Kran, Container, Lager, Verkehrswege, Rettungswege, Anschlüsse, Entsorgungsflächen, Gerüstzonen und Schutzbereiche. Auf engen Grundstücken entscheidet dieser Plan über Bauablauf und Kosten. Ein Kranstandort beeinflusst Reichweite, Fundamentierung, Nachbarrechte und Montagefolge. Lagerflächen beeinflussen Lieferlose und Taktung.
+
+Der SiGeKo betrachtet das Projekt aus Sicht von Sicherheit und Gesundheitsschutz. Besonders relevant sind Absturzstellen, Verkehrswege, Kranbetrieb, Gerüst, Arbeiten in Gräben, Gefahrstoffe, gleichzeitige Gewerke und Baustellenzugang. Der Sicherheits- und Gesundheitsschutzplan ist kein Dokument für die Schublade; er muss mit dem tatsächlichen Ablauf zusammenpassen. Wenn Terminplanung und SiGe-Plan auseinanderfallen, entstehen gefährliche Situationen.
+
+Nachbarschaft und Öffentlichkeit gehören ebenfalls zur Vorbereitung. Lärm, Staub, Halteverbote, Gehwegsperrungen, Baum- und Wurzelschutz, Schulwege oder Feuerwehrzufahrten können den Bauablauf prägen. Gute Projekte informieren früh, dokumentieren Zustände vor Baubeginn und halten Ansprechpartner bereit. Das ist kein Marketing, sondern Risikomanagement.
+
+!!! kastanienallee "Kastanienallee 7"
+    Für K7 wird vor Baubeginn festgelegt, wo Kran und Container stehen, wie Betonmischer anfahren, welche Gehwegfläche gesperrt wird und wie Nachbarfassaden dokumentiert werden. Weil das Grundstück innerstädtisch liegt, sind Lieferfenster und Lagerflächen knapper als die Bauleistung selbst. Die Baustelleneinrichtung wird damit zur Voraussetzung des Terminplans.
+
+## 28.6 Dokumentation vor Baubeginn
+
+Vor Baubeginn sollte der Ausgangszustand dokumentiert werden. Dazu gehören Nachbargebäude, Gehwege, Straßen, Bäume, Einfriedungen, Kellerbereiche, bestehende Risse und angrenzende Außenanlagen. Diese Dokumentation schützt beide Seiten: den Bauherrn vor unberechtigten Forderungen und Nachbarn vor nicht erkannten Schäden. Fotos brauchen Datum, Ort und Blickrichtung.
+
+Leitungs- und Kampfmittelthemen müssen vor Erdarbeiten geklärt sein. Leitungspläne sind nicht immer lagegenau. Deshalb braucht es Einweisung, Suchschlitze oder örtliche Markierung, wenn Risiken bestehen. Bei Kampfmittelverdacht sind Freigabe und Vorgehen mit zuständigen Stellen zu klären. Solche Punkte wirken lästig, können aber Baustopp und Gefährdung verhindern.
+
+Auch der Baustarttermin selbst braucht eine Agenda. Wer ist bauleitend ansprechbar? Welche Pläne gelten? Welche Genehmigungen liegen vor? Wo sind Rettungswege und Sammelplätze? Wie werden Lieferungen angemeldet? Wie werden Mängel, Behinderungen und Sicherheitsverstöße gemeldet? Welche Arbeitszeiten gelten? Welche Nachweise muss jedes Unternehmen vorlegen?
+
+Die Baustellenvorbereitung ist damit die erste Qualitätskontrolle der Ausführung. Wenn sie unscharf ist, beginnt das Projekt mit Ausnahmen. Wenn sie klar ist, wissen alle Beteiligten, welche Regeln gelten, bevor der erste Konflikt entsteht.
+
+## 28.7 Baustelleneinrichtung als veränderlicher Zustand
+
+Die Baustelleneinrichtung bleibt nicht über die gesamte Bauzeit gleich. In der Rohbauphase dominieren Kran, Schalung, Bewehrung, Betonlogistik und große Lagerflächen. Im Ausbau verändern sich Wege, Materiallager, Schutzmaßnahmen, Mülltrennung und Zugang zu Wohnungen. Am Ende müssen fertige Oberflächen geschützt und Restarbeiten organisiert werden.
+
+Deshalb sollte der Baustelleneinrichtungsplan in Phasen gedacht werden. Rohbau, Ausbau, Fassadenarbeiten und Außenanlagen haben unterschiedliche Anforderungen. Wenn der Kran abgebaut wird, müssen spätere schwere Einbringungen vorher geplant sein. Wenn Gerüste fallen, müssen Fassadenmängel vorher geprüft sein. Wenn Außenanlagen beginnen, ändern sich Zufahrt und Lager.
+
+Diese Dynamik gehört in Termin- und Logistikbesprechungen. Ein statischer Plan am Bauzaun reicht nicht. Die Baustelle ist ein temporäres Produktionssystem, und ihre Organisation muss mit dem Baufortschritt mitlaufen.
+
 ## BIM-Brücke
 
 Die digitale Brücke liegt nicht darin, den analogen Ablauf nur als PDF abzulegen. Sie liegt darin, Vorgänge, Modelle, Dokumente, Entscheidungen und Verantwortlichkeiten miteinander zu verbinden. Ein Issue braucht Ort, Bauteil, Status, Frist und Verantwortlichen. Ein Plan braucht Index und Freigabestatus. Ein Modellobjekt braucht die Information, ob es Entwurf, Ausschreibung, Ausführung oder as-built beschreibt.

@@ -69,7 +69,19 @@ tags: kap02, kosten, termin, qualitaet, dreieck
 !!! kastanienallee "Kastanienallee 7"
     Für K7 wird im Starttermin festgelegt: keine experimentelle Fassadenkonstruktion, keine komplexe Tiefgarage, wiederholbare Wohnungstypen, zentrale Schächte und ein kompaktes Tragwerksraster. Das ist keine gestalterische Kapitulation, sondern eine Machbarkeitsentscheidung. Der Bauherr will ein wirtschaftliches MFH, kein Sonderbauprojekt mit hohem Ausführungsrisiko.
 
-## 2.5 BIM-Brücke: Der Projektraum beginnt am Tag eins
+## 2.5 Das erste Mandat praktisch führen
+
+Das erste Gespräch hat zwei Ebenen. Auf der sichtbaren Ebene wird über Grundstück, Nutzung, Budget und Wünsche gesprochen. Auf der zweiten Ebene prüft der Architekt, ob der Auftrag überhaupt führbar ist. Gibt es einen entscheidungsfähigen Bauherrn? Ist das Grundstück gesichert? Ist das Budget eine harte Grenze oder eine Wunschzahl? Gibt es eine Bank, einen Fördermittelgeber, einen politischen Beschluss oder eine Erbengemeinschaft, die später zustimmen muss? Je früher diese Fragen geklärt werden, desto weniger wird der Entwurf zum Stellvertreter für ungelöste Organisation.
+
+Ein professioneller Projektstart arbeitet deshalb mit einem klaren Fragenraster. Zuerst kommt der Anlass: Warum soll gebaut, umgebaut oder saniert werden? Dann kommen Nutzung und Zielgruppe: Wer wird das Gebäude verwenden, kaufen, mieten, betreiben oder instand halten? Danach folgen Grundstück, Recht, Kosten, Termine und Risiken. Zum Schluss wird festgelegt, was bis zur nächsten Besprechung geklärt wird. Ein Erstgespräch ohne nächste Prüfschritte bleibt ein Ideenaustausch; ein Erstgespräch mit Prüfschritten wird zum Projektbeginn.
+
+Typische Frühdokumente sind Projektsteckbrief, Kontaktliste, Entscheidungsstruktur, erste Risikoliste, grobe Terminlandkarte und Annahmenliste. Die Annahmenliste ist besonders wichtig. In ihr steht zum Beispiel: "Bebauungsplan erlaubt vier Vollgeschosse, noch zu prüfen"; "Baugrund normal tragfähig, Bodengutachten fehlt"; "Kostenrahmen KG 200-700 auf Basis BGF-Kennwert, noch keine Kostenberechnung"; "Aufzugspflicht wegen vier Vollgeschossen wahrscheinlich". Solche Sätze verhindern, dass grobe Annahmen später als zugesicherte Planung missverstanden werden.
+
+Ein weiterer praktischer Punkt ist der Umgang mit Referenzbildern. Bauherren bringen häufig Fotos, Moodboards oder Beispiele aus anderen Projekten mit. Diese Bilder sind wertvoll, aber gefährlich, wenn sie als direkte Vorgabe gelesen werden. Der Architekt muss fragen, was genau daran gemeint ist: Materialstimmung, Raumhöhe, Fensterformat, Licht, Grundrissfreiheit, Außenraum, Preisniveau oder sozialer Eindruck? Ein Bild von einer großzügigen Wohnküche kann eine räumliche Qualität meinen, aber auch eine nicht finanzierte Flächenmehrung auslösen.
+
+Am Ende des Projektstarts sollte ein klares Zwischenergebnis stehen: Welche Variante wird geprüft, welche Risiken sind offen, welche Unterlagen fehlen, welche Entscheidung ist noch nicht möglich? Gerade Einsteiger unterschätzen, wie oft Architektur nicht am Zeichnen scheitert, sondern an unklaren Freigaben. Gute Büros behandeln Projektstart deshalb wie eine kleine eigene Phase: kurz, konzentriert, dokumentiert und mit sichtbaren Go/No-Go-Punkten.
+
+## 2.6 BIM-Brücke: Der Projektraum beginnt am Tag eins
 
 Digitale Projektarbeit beginnt nicht erst mit dem Modell. Bereits der Projektstart erzeugt Informationen: Ziele, Anforderungen, Termine, Risiken, Beteiligte, Entscheidungsstände. Diese Daten gehören in eine gemeinsame Struktur, sonst verschwinden sie in E-Mails und Besprechungsnotizen. Eine einfache ::CDE:: kann schon früh Projektsteckbrief, Protokolle, Pläne, Prüfstände und Entscheidungen sammeln.
 

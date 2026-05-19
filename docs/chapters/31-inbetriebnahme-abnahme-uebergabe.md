@@ -53,6 +53,37 @@ tags: kap31, revisionsunterlagenliste
 
 Zur Übergabe gehören Schlüssel, Zählerstände, Einweisungen, Wartungsverträge, Bedienungsunterlagen, Restmängelliste und Ansprechpartner. Nutzer brauchen andere Informationen als Betreiber. Eine Wohnungsübergabe erklärt Oberflächen und Bedienung; eine Betreiberübergabe erklärt Anlagen, Wartung und Dokumentation.
 
+## 31.5 Übergabe ist mehr als Schlüsselübergabe
+
+Viele Projekte verlieren am Ende Qualität, weil die Übergabe zu spät vorbereitet wird. Inbetriebnahme, Abnahme, Mängelbeseitigung, Revisionsunterlagen, Bedienungseinweisung und Betreiberpflichten greifen ineinander. Wenn die TGA erst kurz vor Einzug getestet wird, fehlen oft Zeit, Fachpersonal und ruhige Bedingungen für saubere Einstellungen. Dann funktioniert das Gebäude formal, aber nicht stabil.
+
+Inbetriebnahme beginnt mit einzelnen Anlagen und endet mit dem Zusammenspiel. Heizung, Lüftung, Warmwasser, Elektro, Brandschutztechnik, Aufzug, PV, Gebäudeautomation und Zählerkonzept müssen nicht nur eingeschaltet, sondern geprüft, gemessen und dokumentiert werden. Hydraulischer Abgleich, Luftmengenmessung, Brandschutzklappenprüfung, Sicherheitsbeleuchtung, Aufzugsabnahme und Nutzerfunktionen sind unterschiedliche Prüfwelten. Der Architekt muss nicht jede Messung selbst durchführen, aber er muss wissen, welche Nachweise vor Übergabe vorliegen müssen.
+
+Die Abnahme ist rechtlich ein Kipppunkt. Mit ihr beginnt regelmäßig die Gewährleistungsfrist, die Beweislast verschiebt sich, und die Vergütung wird fällig. Deshalb muss das Abnahmeprotokoll klar sein: welche Leistung, welcher Bereich, welche Beteiligten, welche Mängel, welche Vorbehalte, welche Fristen. Wesentliche Mängel können eine Abnahme verhindern. Unwesentliche Mängel führen meist zur Abnahme mit Vorbehalt und Mängelliste.
+
+Die Übergabe an Betreiber und Nutzer braucht eigene Unterlagen. Dazu gehören Revisionspläne, Wartungsanleitungen, Prüfprotokolle, Fachunternehmererklärungen, Schlüssel- und Schließplan, Bedienungsanleitungen, Wartungsverträge, Brandschutzordnung, Flucht- und Rettungspläne, Einweisungstermine und Restmängelliste. Ohne diese Unterlagen beginnt der Betrieb blind.
+
+!!! kastanienallee "Kastanienallee 7"
+    Bei K7 werden vor Übergabe die KWL-Luftmengen je Wohnung gemessen, die Fernwärmeübergabe dokumentiert, der Aufzug abgenommen, Rauchwarnmelder und Brandschutztüren geprüft und die Schließanlage übergeben. Für die Hausverwaltung sind Revisionsunterlagen und Wartungsintervalle mindestens so wichtig wie die fertigen Oberflächen.
+
+## 31.6 Mängelliste, Restarbeiten und Einzug
+
+Kurz vor Übergabe überlagern sich technische, rechtliche und menschliche Erwartungen. Nutzer sehen fertige Oberflächen und wollen einziehen. Unternehmer wollen abrechnen. Der Bauherr will den Termin halten. Gleichzeitig sind oft Restarbeiten offen. Die Aufgabe der Bauleitung ist, diese Lage nüchtern zu strukturieren.
+
+Die Mängelliste muss zwischen wesentlichen Mängeln, unwesentlichen Mängeln und Restleistungen unterscheiden. Eine fehlende Brandschutztür oder nicht funktionsfähige Lüftung kann die Nutzung verhindern. Eine kleine Lackstelle an einer Innentür ist ärgerlich, verhindert aber meist keine Abnahme. Diese Einordnung muss fachlich begründet und im Protokoll festgehalten werden.
+
+Restarbeiten brauchen Fristen und Verantwortliche. "Wird erledigt" ist keine Steuerung. Besser ist: Ort, Leistung, Unternehmen, Frist, Nachkontrolle. Bei bewohnten Gebäuden kommt Koordination mit Nutzern hinzu: Zugang zu Wohnungen, Schutz fertiger Oberflächen, Lärm, Reinigung und Kommunikation.
+
+Die Einweisung ist Teil der Übergabequalität. Nutzer und Betreiber müssen verstehen, wie Heizung, Lüftung, Sonnenschutz, Müll, Fahrradraum, Schließanlage, Aufzug und Notfälle funktionieren. Viele spätere "Mängel" sind Bedienungs- oder Kommunikationsprobleme. Gute Übergabe reduziert diese Reibung.
+
+## 31.7 Probebetrieb und Monitoring
+
+Bei komplexeren technischen Anlagen reicht eine einmalige Einschaltung nicht. Ein Probebetrieb zeigt, ob Systeme über mehrere Tage oder Wochen stabil funktionieren. Lüftung, Heizung, Regelung, Warmwasser, Aufzug, PV und Brandschutztechnik reagieren auf Nutzung, Wetter, Lasten und Bedienung. Manche Fehler zeigen sich erst im Zusammenspiel.
+
+Monitoring kann helfen, die Übergabe zu objektivieren. Temperaturen, Luftmengen, Energieverbräuche, Störmeldungen oder Anlagenlaufzeiten zeigen, ob die Anlage im erwarteten Bereich arbeitet. Das ersetzt keine Abnahme, liefert aber eine bessere Grundlage als subjektive Eindrücke.
+
+Für Wohngebäude ist die Nutzerkommunikation entscheidend. Eine KWL-Anlage wird schnell als Mangel empfunden, wenn Nutzer Filterwechsel, Betriebsstufen oder Geräusche nicht verstehen. Eine gute Übergabe erklärt deshalb nicht nur Technik, sondern Verhalten: Lüften, Heizen, Verschattung, Wartungsmeldung und Ansprechpartner.
+
 ## BIM-Brücke
 
 Die digitale Brücke liegt nicht darin, den analogen Ablauf nur als PDF abzulegen. Sie liegt darin, Vorgänge, Modelle, Dokumente, Entscheidungen und Verantwortlichkeiten miteinander zu verbinden. Ein Issue braucht Ort, Bauteil, Status, Frist und Verantwortlichen. Ein Plan braucht Index und Freigabestatus. Ein Modellobjekt braucht die Information, ob es Entwurf, Ausschreibung, Ausführung oder as-built beschreibt.

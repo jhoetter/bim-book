@@ -70,7 +70,30 @@ Skizzen sind Kommunikationsmittel. Sie erlauben dem Bauherrn, über Prioritäten
 
 Im Gespräch muss der Architekt vermeiden, jede Skizze als Lieblingslösung zu verkaufen. Variantenbesprechungen sind Arbeitsgespräche. Was spricht für diese Lösung? Welche Risiken entstehen? Was müsste geprüft werden? Welche Idee wird verworfen, welche übernommen? Die Dokumentation dieses Gesprächs gehört in das Entscheidungslog.
 
-## 5.5 BIM-Brücke: Konzeptmodell und Variantenstand
+## 5.5 Vom Skizzenblatt zum belastbaren Vorentwurf
+
+Die frühe Skizzenarbeit hat eine eigene Reihenfolge. Zuerst werden Kräfte des Ortes eingetragen: Sonne, Lärm, Zufahrt, Blick, Nachbarn, Höhen, Grenzen. Dann entstehen Nutzungsfelder: öffentlich, halböffentlich, privat, laut, ruhig, dienend, repräsentativ. Danach wird Erschließung geprüft: Wo kommt man an, wo ist der Kern, wo entstehen kurze Wege, wo kann die Feuerwehr anleitern? Erst wenn diese Fragen eine Richtung haben, lohnt sich der erste Grundriss.
+
+Gute Büros zeichnen in dieser Phase mehrere Arten von Skizzen nebeneinander. Ein Lage-Diagramm zeigt Beziehungen zum Umfeld. Ein Massenmodell zeigt Höhe, Tiefe und Volumen. Ein Erschließungsschema zeigt Eingang, Treppe, Aufzug, Fluchtwege und Anlieferung. Ein Funktionsschema zeigt, welche Nutzungen zusammengehören. Ein Lichtdiagramm zeigt Orientierung, Verschattung und Überhitzungsrisiko. Ein Tragwerksraster skizziert, ob die räumliche Idee konstruktiv plausibel ist.
+
+Die Qualität einer Skizze liegt nicht in ihrer Schönheit, sondern in ihrer Frage. Eine gute Skizze macht eine These sichtbar: "Kern in der Mitte spart Fläche"; "Laubengang verbessert Belichtung, verschlechtert Privatheit"; "Hofhaus schafft Ruhe, kostet aber Fassadenfläche"; "kompakter Vierspänner ist wirtschaftlich, muss aber tiefe Mittelzonen vermeiden". Der Bauherr kann darüber sprechen, weil die Konsequenzen sichtbar werden.
+
+Variantenkritik braucht Kriterien. Sonst gewinnt oft die Variante mit der schönsten Perspektive. Die Kriterien müssen aus dem Briefing kommen: Wohnqualität, Kosten, Genehmigungsrisiko, Energie, Tragwerk, TGA, Bauzeit, Betrieb und Änderungsfähigkeit. Eine Variantenmatrix ist dabei kein Ersatz für Entwurfserfahrung, aber sie zwingt die Diskussion aus dem reinen Geschmack heraus. Sie zeigt auch, warum eine gute Idee verworfen wird, wenn sie an anderer Stelle zu viel Schaden anrichtet.
+
+Der Übergang zum Vorentwurf geschieht, wenn eine Variante nicht mehr nur Idee, sondern prüfbarer Stand ist. Dann werden Maßstab, Flächen, Geschosshöhen, Raster, Schachtlagen, Rettungswege, Baukörper, Fassadenlogik und Kostenkennwerte zusammengeführt. Genau hier beginnt die Nähe zum späteren Detailmodell: Was als Pfeil im Erschließungsdiagramm begann, wird zum Treppenhauskern; was als Bubble für Bäder begann, wird zur Schachtzone; was als Sonnenpfeil begann, wird zu Fensteranteil, Sonnenschutz und sommerlichem Wärmeschutz.
+
+!!! kastanienallee "Kastanienallee 7"
+    Die Variantenkritik für K7 zeigt, warum der kompakte Vierspänner trotz weniger spektakulärer Form stark ist. Er bündelt Treppe, Aufzug und Schächte, hält die Flurflächen niedrig, wiederholt Wohnungstypen und macht TGA, Tragwerk und Kosten steuerbar. Die Skizze ist damit nicht "weniger Entwurf", sondern die konzentrierte Entscheidung über das spätere Gebäude.
+
+## 5.6 Skizzen richtig präsentieren
+
+Eine frühe Entwurfspräsentation sollte nicht so tun, als sei das Gebäude schon entschieden. Sie muss die Denkarbeit sichtbar machen. Gute Präsentationen beginnen deshalb mit Ort und Anforderungen, nicht mit der Lieblingsperspektive. Erst wird gezeigt, welche Kräfte wirken. Dann werden zwei oder drei Varianten erklärt. Danach werden Kriterien und Konsequenzen diskutiert. Erst am Ende steht eine Empfehlung.
+
+Für Bauherren ist diese Reihenfolge wichtig, weil sie Entscheidungskompetenz aufbaut. Wer nur fertige Bilder sieht, entscheidet nach Geschmack. Wer Diagramme und Varianten sieht, versteht, warum eine Lösung plausibel ist. Der Architekt muss dabei klare Sprache verwenden: "Diese Variante spart Erschließungsfläche, hat aber tiefere Wohnungen"; "diese Variante verbessert Belichtung, kostet aber mehr Fassade"; "diese Variante reduziert Genehmigungsrisiko, verschenkt aber Wohnfläche".
+
+Auch verworfene Varianten sind wertvoll. Sie zeigen, dass der Entwurf nicht zufällig entstanden ist. In späteren Konflikten kann das Entscheidungslog erklären, warum etwa ein Laubengang, eine andere Kernlage oder ein Hofhaus nicht weiterverfolgt wurde. Das verhindert Rücksprünge und stärkt die fachliche Argumentation.
+
+## 5.7 BIM-Brücke: Konzeptmodell und Variantenstand
 
 Ein frühes digitales Modell ist nützlich, wenn es dieselbe Offenheit behält wie eine Skizze. Es sollte Baukörper, Geschosse, Räume, Nordrichtung, Gelände und Nachbarvolumen zeigen, aber keine falsche Detailgenauigkeit behaupten. In Varianten können BGF, Hüllfläche, A/V-Verhältnis, Verschattung und grobe Kostenkennwerte verglichen werden.
 

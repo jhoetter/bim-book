@@ -53,6 +53,37 @@ tags: kap22, werkplanung, prueflauf
 
 Wenn ein Unternehmen ein anderes Produkt vorschlägt, muss technische Gleichwertigkeit geprüft werden: Maße, Brandverhalten, Schallschutz, U-Wert, Wartung, Zulassung, Verfügbarkeit, Kosten und Aussehen. Eine RFI-Frage darf nicht im E-Mail-Nebel verschwinden; sie braucht Nummer, Bezug, Antwort, Termin und Planfolge.
 
+## 22.5 Der Freigabeprozess als Qualitätsfilter
+
+Bemusterung und Werkplanung sind die Stelle, an der Planung in konkrete Produkte übergeht. Der Architekt legt nicht mehr nur fest, dass eine Tür, ein Boden oder ein Fassadenelement geplant ist. Er prüft, welches konkrete Produkt mit welchem Farbton, welcher Oberfläche, welchem Beschlag, welchem Prüfzeugnis und welcher Einbausituation verwendet wird. Diese Entscheidung wirkt auf Kosten, Lieferzeit, Gewährleistung und spätere Wartung.
+
+Die Werkplanung der Unternehmen ist keine zweite Entwurfsplanung. Sie zeigt, wie der Unternehmer seine Leistung auf Grundlage der Ausführungsplanung herstellt: Fassadenelemente, Geländer, Stahlbauanschlüsse, Fensterteilungen, Einbauküchen, Lüftungsgeräte, Schaltschränke oder Aufzugsdetails. Der Architekt prüft diese Unterlagen auf Übereinstimmung mit Vertrag, Planung und Schnittstellen. Er übernimmt damit nicht automatisch die Herstellungsverantwortung des Unternehmers, aber er darf erkennbare Widersprüche nicht durchwinken.
+
+Ein sauberer Freigabeprozess unterscheidet Prüfvermerke. "Freigegeben" bedeutet: Ausführung darf auf dieser Grundlage erfolgen. "Freigegeben mit Anmerkungen" bedeutet: Ausführung nur unter Beachtung der markierten Punkte. "Nicht freigegeben" bedeutet: erneute Vorlage erforderlich. Gefährlich sind unklare Vermerke wie "zur Kenntnis" auf Unterlagen, die faktisch eine Ausführungsentscheidung enthalten. Solche Grauzonen erzeugen Streit.
+
+Bemusterungen sollten nicht erst stattfinden, wenn der Unternehmer bestellen muss. Fliesen, Parkett, Sanitärobjekte, Schalterprogramme, Türdrücker, Fassadenfarbe, Fensterprofile und Briefkastenanlagen haben Lieferzeiten. Jede späte Änderung kann Termin und Kosten beeinflussen. Deshalb braucht das Projekt einen Bemusterungsplan: Was wird wann entschieden, wer nimmt teil, welche Muster bleiben als Referenz auf der Baustelle, und welche Entscheidung wird im Protokoll festgehalten?
+
+!!! kastanienallee "Kastanienallee 7"
+    Bei K7 werden Bodenbeläge, Wohnungseingangstüren, Sanitärkeramik, Schalterprogramm, Fassadenputz und Aufzugskabine bemustert. Die Entscheidung "robust und vermietbar" wird konkret: keine empfindlichen Sonderoberflächen, gut ersetzbare Standardprodukte, klare Farbpalette und dokumentierte Herstellerdaten für spätere Instandhaltung.
+
+## 22.6 Bemusterung, Kosten und Termine
+
+Bemusterung wirkt oft wie Geschmacksfrage, ist aber Kosten- und Terminsteuerung. Ein anderer Fliesenbelag kann andere Aufbauhöhen, andere Lieferzeiten, andere Fugen, andere Rutschhemmung und andere Reinigungskosten bedeuten. Ein anderes Fensterprofil kann Statik, Sonnenschutz, Schallschutz, U-Wert und Laibungsdetail ändern. Deshalb müssen Bemusterungsentscheidungen immer gegen Vertrag, Kosten und Planung geprüft werden.
+
+Der Ablauf sollte früh festgelegt sein. Zuerst werden bemusterungspflichtige Bauteile identifiziert: sichtbare Oberflächen, Türen, Beschläge, Sanitär, Elektro, Leuchten, Fassadenmaterial, Geländer, Aufzug, Außenanlagen. Dann wird festgelegt, wann Muster vorliegen müssen. Danach werden Entscheidungen protokolliert und mit Produktdaten, Farbnummer, Hersteller, System, Prüfzeugnis und Freigabestatus verbunden. Ein Foto allein reicht nicht.
+
+Werkplanung muss ebenfalls terminiert werden. Fassaden, Fenster, Stahlbau, Aufzug, Lüftungsgeräte, Verteiler und Einbaumöbel haben Vorlauf. Wenn Werkpläne zu spät geprüft werden, entsteht ein künstlicher Konflikt: Entweder wird ungeprüft bestellt oder der Termin rutscht. Gute Terminpläne enthalten deshalb Planvorlauf, Prüffrist, Korrekturlauf, Bestellung, Fertigung und Montage.
+
+Typisch problematisch sind "gleichwertige" Produkte. Gleichwertigkeit bedeutet nicht nur ähnliches Aussehen. Sie betrifft Leistung, Maße, Zulassung, Prüfzeugnisse, Wartung, Gewährleistung, Kompatibilität und Betrieb. Der Architekt muss solche Vorschläge systematisch prüfen, sonst wird aus einer scheinbaren Einsparung ein technischer Bruch.
+
+## 22.7 Muster als Vertragsreferenz
+
+Ein freigegebenes Muster sollte auf der Baustelle oder digital eindeutig referenziert bleiben. Sonst wird später unklar, ob die ausgeführte Oberfläche, Farbe oder Qualität dem vereinbarten Stand entspricht. Bei sichtbaren Bauteilen kann ein Musterstück mit Datum, Freigabevermerk und Raum- oder Bauteilbezug helfen. Bei Produkten braucht es Datenblatt, Typnummer und Herstellerangabe.
+
+Musterflächen sind besonders wichtig, wenn Verarbeitung und Untergrund die Qualität prägen: Putz, Sichtbeton, Fugenbild, Fliesen, Parkett, Beschichtungen oder Fassadenoberflächen. Ein kleines Produktmuster reicht dann nicht. Erst eine Musterfläche zeigt Anschlüsse, Ebenheit, Farbe im Licht, Fugen, Kanten und handwerkliche Ausführung. Sie schafft eine gemeinsame Referenz für Bauherr, Architekt und Unternehmer.
+
+Bei Miet- oder Eigentumswohnungsbau kommt ein weiterer Punkt hinzu: Sonderwünsche. Wenn Käufer andere Beläge, Sanitärobjekte oder Elektroausstattung wünschen, müssen Kosten, Termine, Gewährleistung und Schnittstellen kontrolliert werden. Ohne Sonderwunschprozess zerstören Einzelfreigaben den Bauablauf.
+
 ## BIM-Brücke
 
 Die digitale Brücke liegt nicht darin, den analogen Ablauf nur als PDF abzulegen. Sie liegt darin, Vorgänge, Modelle, Dokumente, Entscheidungen und Verantwortlichkeiten miteinander zu verbinden. Ein Issue braucht Ort, Bauteil, Status, Frist und Verantwortlichen. Ein Plan braucht Index und Freigabestatus. Ein Modellobjekt braucht die Information, ob es Entwurf, Ausschreibung, Ausführung oder as-built beschreibt.

@@ -128,6 +128,19 @@ Digitales Bautagebuch und CDE verbinden Dokumente mit Orten und Verantwortlichke
 
 Nach ::LP:: 8 muss das Modell den tatsächlich gebauten Stand aufnehmen. Diese As-built-Dokumentation ist mehr als Planablage. Sie hält ausgeführte Abweichungen, Revisionsstände, Produktdaten, Wartungszugänge und relevante Seriennummern fest. Ein LOD-500-Modell ist Grundlage für ::LP:: 9, Betreiberübergabe und den digitalen Zwilling in Kap. 26.
 
+## 29.6 Mängelmanagement und Fotodokumentation
+
+Baukontrolle ist keine Daueranwesenheit. Der bauüberwachende Architekt prüft stichprobenartig, risikoorientiert und an kritischen Zeitpunkten. Gerade deshalb muss er wissen, wann eine Kontrolle nötig ist: Bewehrung vor Betonage, Abdichtung vor Verfüllung, Brandschutzabschottung vor Schließen der Decke, Gefälle vor Belag, Luftdichtheit vor Verkleidung, Schallschutzdetails vor Estrich und technische Einbauten vor Abhangdecke.
+
+Fotos sind dabei keine Erinnerungshilfe, sondern Beweismittel. Ein gutes Baustellenfoto zeigt nicht nur eine Stelle, sondern Ort, Datum, Blickrichtung, Bauteil, Maßstab und Kontext. Wenn eine Abdichtung fotografiert wird, muss später erkennbar sein, welches Bauteil, welcher Anschluss und welcher Planstand gemeint waren. Deshalb werden Fotos idealerweise mit Planmarkierung, Issue, Bauteilbezug und Verantwortlichem verknüpft.
+
+Mängelmanagement braucht klare Sprache. "Schlecht ausgeführt" hilft niemandem. Besser ist: "Fensteranschluss Wohnung 2.03, Westfassade: äußeres Dichtband unterbrochen, Anschluss an Fensterbank fehlt, Ausführung nicht gemäß Detail A-521 Index C; Nachbesserung vor Putzarbeiten bis 14.06." Ein Mangel braucht Ort, Beschreibung, Sollbezug, Frist, Verantwortlichen und Status. Ohne diese Struktur wird die Baustelle zur mündlichen Erinnerungsmaschine.
+
+Das Bautagebuch ergänzt die Mängelliste. Es hält Wetter, Personal, Gewerke, Leistungsstand, besondere Vorkommnisse, Anordnungen, Behinderungen und Kontrollen fest. Bei späteren Streitigkeiten ist es oft wichtiger als ein nachträglich geschriebenes Gutachten, weil es den damaligen Kenntnisstand dokumentiert. Elektronische Bautagebücher sind deshalb nicht nur bequem, sondern fachlich sinnvoll.
+
+!!! kastanienallee "Kastanienallee 7"
+    In K7 wird vor dem Schließen der Installationsschächte fotografisch dokumentiert, welche Leitungen, Brandschutzabschottungen und Revisionsöffnungen vorhanden sind. Wenn später eine Wohnung Feuchte oder Geräusche meldet, ist nachvollziehbar, was tatsächlich eingebaut wurde. Diese Dokumentation ist die Brücke zwischen Bauoberleitung, Gewährleistung und späterem Betrieb.
+
 ## BIM-Brücke: 4D auf der Baustelle
 
 4D-BIM verbindet Modellelemente mit Aufgaben, Reihenfolgen und Terminen. `IfcTask` kann einen Vorgang beschreiben, `IfcRelSequence` die Abhängigkeit. In der Praxis bleibt entscheidend, dass Terminplan, Modell und Baustellendokumentation dieselbe Realität meinen: ein Bauteil, ein Ort, ein Status, eine Frist.

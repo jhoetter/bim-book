@@ -53,6 +53,37 @@ tags: kap26, vertragsrangfolge
 
 Ein Claim-Log führt Nachträge, Behinderungen, Bedenken und Bauherrenänderungen mit Status, Kosten, Terminfolge und Entscheidung. Ohne Log verliert das Projekt den Überblick. Gute Nachtragsprüfung verlangt Massennachweis, Preisprüfung, Vertragsbezug und klare Entscheidung.
 
+## 26.5 Nachtragsprüfung ohne Bauchgefühl
+
+Nachträge sind nicht automatisch illegitim. Bauprojekte ändern sich, und manche Leistungen waren im Vertrag tatsächlich nicht enthalten. Gefährlich wird es, wenn Nachträge weder rechtlich noch mengenmäßig noch preislich sauber geprüft werden. Dann verschwimmt die Grenze zwischen berechtigter Zusatzleistung, Planungsfehler, Mengenänderung und Unternehmerrisiko.
+
+Die Prüfung beginnt mit der Anspruchsgrundlage. Hat der Auftraggeber eine geänderte Leistung angeordnet? Ist eine zusätzliche Leistung notwendig geworden, die im Vertrag nicht enthalten war? War die Leistung vielleicht doch Nebenleistung nach VOB/C? Liegt eine Behinderung vor? Oder handelt es sich um eine Erschwernis, die der Unternehmer kalkulieren musste? Ohne diese erste Einordnung ist jede Preisprüfung zu früh.
+
+Danach folgt die Mengenprüfung. Welche Pläne, Aufmaße, Lieferscheine, Wiegescheine, Fotos oder Bautagebucheinträge belegen die Menge? Bei Erdarbeiten, Abbruch, Schadstoffen und Bestandsmaßnahmen ist diese Dokumentation besonders wichtig, weil die Leistung nach Ausführung kaum noch sichtbar ist. Wer belasteten Boden abfahren lässt, muss Entsorgungsnachweise und Massenbelege sichern, nicht nur die Rechnung prüfen.
+
+Erst dann kommt die Preisprüfung. Einheitspreise aus dem Hauptvertrag sind ein Anker, aber nicht immer passend. Neue Leistungen brauchen Herleitung: Lohn, Material, Gerät, Nachunternehmer, Zuschläge, Bauzeitfolgen. Der Architekt muss keine juristische Entscheidung ersetzen, aber er muss dem Bauherrn fachlich sagen können, ob Menge, Leistung und Preis plausibel sind. Bei größeren Nachträgen gehört der Projektsteuerer oder Fachanwalt früh dazu.
+
+!!! kastanienallee "Kastanienallee 7"
+    Wenn bei K7 belasteter Boden auftaucht, ist der Nachtrag nicht mit einem Satz erledigt. Zu prüfen sind Bodengutachten, Aushubbereich, Deklarationsanalyse, Deponieklasse, Wiegescheine, Transportentfernung, vereinbarte Bodenklassen, Stillstandszeiten und Auswirkung auf den Terminplan. Erst danach lässt sich entscheiden, welcher Anteil berechtigt ist.
+
+## 26.6 Änderungsmanagement im laufenden Projekt
+
+Änderungen sind besonders gefährlich, wenn sie informell beginnen. Ein Bauherr sagt auf der Baustelle, eine Wand solle doch anders stehen. Ein Nutzer wünscht mehr Steckdosen. Ein Fachplaner ändert eine Trasse. Ein Unternehmer schlägt ein anderes Produkt vor. Jede dieser Änderungen kann Kosten, Termin, Genehmigung, Brandschutz, Schallschutz, Gewährleistung oder andere Gewerke berühren.
+
+Deshalb braucht das Projekt ein Änderungslog. Es erfasst Anlass, Beschreibung, Auslöser, betroffene Pläne, betroffene Gewerke, Kostenfolge, Terminfolge, Prüfer, Entscheidung und Freigabestatus. Eine Änderung darf erst in die Ausführung, wenn klar ist, wer sie angeordnet hat und welche Folgen akzeptiert wurden. Sonst wird die Baustelle zum Ort unkontrollierter Entwurfsfortschreibung.
+
+Nachträge sollten ebenfalls in einem Nachtragslog geführt werden. Wichtig sind Eingangsdatum, Anspruchsgrund, Kurzbeschreibung, Betrag, Status, Prüfergebnis, verhandelte Summe und Freigabe. So sieht der Bauherr nicht nur einzelne Nachtragsangebote, sondern die Entwicklung des Projektbudgets. Besonders bei vielen kleinen Nachträgen ist diese Übersicht entscheidend.
+
+Ein praktischer Grundsatz lautet: erst klären, dann bauen. Es gibt Notfälle, in denen sofort entschieden werden muss. Aber der Normalfall sollte keine mündliche Anordnung ohne Dokumentation sein. Jede unklare Änderung wird später zu einer Erinnerungslücke zwischen Bauherr, Architekt und Unternehmer.
+
+## 26.7 Bedenkenanzeigen ernst nehmen
+
+Eine Bedenkenanzeige ist kein Angriff auf die Planung, sondern ein wichtiges Warnsignal. Der Unternehmer teilt mit, dass er gegen die vorgesehene Ausführung fachliche, technische oder rechtliche Bedenken hat. Das kann falschen Untergrund, unklare Vorleistung, ungeeignetes Material, fehlende Abdichtung, Witterung oder eine nicht ausführbare Detailvorgabe betreffen.
+
+Der Architekt muss solche Hinweise prüfen und beantworten. Ignorieren ist gefährlich. Wenn die Bedenken berechtigt sind und trotzdem weitergebaut wird, entstehen Haftungs- und Qualitätsrisiken. Wenn sie unberechtigt sind, muss das ebenfalls dokumentiert werden, damit der Unternehmer nicht später jede Folge auf die Planung schiebt.
+
+Auch Behinderungsanzeigen brauchen Prüfung. Ein Unternehmer ist nicht schon deshalb im Recht, weil er Behinderung meldet. Es muss geklärt werden, was ihn hindert, seit wann, wodurch, wie lange und ob er selbst zur Minderung beitragen kann. Gute Dokumentation trennt echte Behinderung von allgemeiner Baustellenunzufriedenheit.
+
 ## BIM-Brücke
 
 Die digitale Brücke liegt nicht darin, den analogen Ablauf nur als PDF abzulegen. Sie liegt darin, Vorgänge, Modelle, Dokumente, Entscheidungen und Verantwortlichkeiten miteinander zu verbinden. Ein Issue braucht Ort, Bauteil, Status, Frist und Verantwortlichen. Ein Plan braucht Index und Freigabestatus. Ein Modellobjekt braucht die Information, ob es Entwurf, Ausschreibung, Ausführung oder as-built beschreibt.

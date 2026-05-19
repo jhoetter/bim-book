@@ -53,6 +53,37 @@ tags: kap21, detailmodell, transformation
 
 Bevor Pläne ausgegeben werden, müssen sie gegen Raumprogramm, Statik, TGA, Brandschutz, Schallschutz und Ausschreibung geprüft werden. Häufige Fehler sind nicht abgestimmte Höhen, fehlende Revisionsöffnungen, widersprüchliche Türnummern, veraltete Grundrisse in Details oder Bauteilaufbauten, die nicht zu Kosten und LV passen.
 
+## 21.5 Was Bauunterlagen wirklich leisten müssen
+
+Ausführungsplanung ist die Übersetzung einer genehmigten Idee in baubare Information. Sie beantwortet nicht nur "wo ist die Wand?", sondern auch: Wie dick ist sie, woraus besteht sie, woran schließt sie an, welche Toleranzen sind erlaubt, welche Öffnung braucht welches Gewerk, welche Oberfläche ist sichtbar, welche Leistung gehört in welches LV und welcher Planstand gilt auf der Baustelle?
+
+Ein vollständiges Bauunterlagenpaket besteht aus mehreren Ebenen. Übersichtspläne zeigen Grundrisse, Schnitte und Ansichten im Ausführungsmaßstab. Detailpläne zeigen Anschlüsse an Sockel, Fenster, Dach, Balkon, Treppe, Aufzug, Brandabschnitt und Installationsschacht. Tür-, Fenster-, Raum- und Materiallisten übersetzen Geometrie in bestellbare Bauteile. Durchbruchspläne verbinden TGA und Tragwerk. Schal- und Bewehrungspläne kommen aus der Tragwerksplanung. Schemata erklären TGA-Funktion. Ohne diese Ebenen bleibt das Modell räumlich interessant, aber für die Baustelle zu ungenau.
+
+Der wichtigste Unterschied zur Genehmigungsplanung ist die Verantwortung für Eindeutigkeit. Die Behörde prüft öffentlich-rechtliche Zulässigkeit. Die Baustelle braucht handwerkliche Umsetzbarkeit. Eine genehmigte Treppe kann trotzdem schlecht detailliert sein. Ein genehmigter Fassadenschnitt kann ungeklärte Abdichtung haben. Ein genehmigter Technikraum kann zu klein für Wartung sein. LP 5 ist deshalb nicht "mehr Linien", sondern Klärung von Material, Maß, Folge und Schnittstelle.
+
+Praktisch gefährlich sind unklare Planstände. Wenn auf der Baustelle ein alter Grundriss, ein neuer Detailplan und eine nicht nachgezogene Türliste kursieren, wird gebaut, was gerade am plausibelsten wirkt. Deshalb brauchen Pläne Index, Datum, Status und Verteiler. Änderungen müssen auffallen: Wolken, Änderungsnotizen, Revisionslisten und klare Austauschregeln. Eine CDE hilft nur, wenn sie diszipliniert benutzt wird.
+
+!!! kastanienallee "Kastanienallee 7"
+    Beim Fensteranschluss von K7 wird die Entwurfsidee "helle Wohnungen" zur Detailkette: Rohbauöffnung, Fensterprofil, Laibungsdämmung, Abdichtungsebene, Fensterbank, Sonnenschutzführung, Absturzsicherung, Putzanschluss, Schallschutzanforderung, U-Wert und Reinigungszugang. Erst wenn diese Kette geplant ist, kann das Fenster ausgeschrieben, gefertigt und kontrolliert werden.
+
+## 21.6 Typische Planfehler in LP 5
+
+Viele Ausführungsfehler entstehen nicht, weil ein Detail komplett fehlt, sondern weil mehrere Detailaussagen nicht zusammenpassen. Der Grundriss zeigt eine Tür, die Türliste eine andere Höhe, der Brandschutznachweis eine Klassifikation, der Ausbauplan einen anderen Bodenaufbau und das LV eine Standardposition. Auf der Baustelle entscheidet dann jemand nach Plausibilität. Das ist teuer, weil es die Planungsverantwortung in die Ausführung verschiebt.
+
+Ein zweiter Fehler ist falsche Genauigkeit. Ein Modell mit millimetergenauen Bauteilen wirkt präzise, kann aber fachlich unreif sein, wenn Anschlussdetails, Toleranzen und Montagefolge fehlen. Umgekehrt kann eine klare 2D-Detailzeichnung fachlich belastbarer sein als ein übermodellierter Anschluss ohne Abdichtungslogik. Ausführungsplanung ist deshalb Informationsreife, nicht bloß Geometriedichte.
+
+Ein dritter Fehler ist fehlende Schnittstellenplanung. Rohbauöffnungen müssen zu Fenster, Tür, TGA und Ausbau passen. Abdichtungen müssen wissen, woran sie anschließen. Brandschutzabschottungen brauchen Leitungsbelegung und Klassifikation. Aufzug, Treppenhaus, Schächte und Abhangdecken müssen gemeinsam geplant werden. Jede Schnittstelle braucht eine führende Zeichnung oder eine eindeutig referenzierte Entscheidung.
+
+Vor Planfreigabe hilft eine interne Prüfrunde. Stimmen Achsen, Höhen, Raumstempel, Türnummern, Schnitte, Detailverweise, Listen und Index? Sind Änderungen gegenüber dem vorherigen Stand markiert? Sind Fachplanerstände eingearbeitet? Sind offene Punkte sichtbar? Diese Prüfung klingt banal, spart aber auf der Baustelle Tage.
+
+## 21.7 Detailtiefe nach Risiko staffeln
+
+Nicht jedes Bauteil braucht dieselbe zeichnerische Tiefe. Wiederholte Standardwände können über Wandtypen, Regelaufbauten und Ausführungspläne ausreichend beschrieben werden. Kritische Anschlüsse brauchen Details. Kritisch sind vor allem Übergänge zwischen außen und innen, nass und trocken, warm und kalt, brandabschnittsbildend und nicht brandabschnittsbildend, tragend und nicht tragend. Dort entstehen die Schäden.
+
+Ein sinnvoller Detailplan-Katalog wird aus Risiken abgeleitet: Sockel, Fenster, Dachrand, Balkon, Terrasse, Nassraum, Brandschutztür, Schacht, Treppe, Aufzug, Tiefgaragenanschluss, Attika, Durchdringung, Fuge. Für jedes Detail sollte klar sein, welche Gewerke betroffen sind und welcher Plan führend ist. Ein Detail ohne Gewerkebeachtung ist nur eine Zeichnung.
+
+Die Ausführungsplanung muss außerdem prüfbar bleiben. Überladene Pläne sind nicht automatisch besser. Wenn jede Information auf einem Blatt liegt, findet die Baustelle nichts. Gute Bauunterlagen trennen Grundriss, Detail, Liste und Schema, verknüpfen sie aber eindeutig über Nummern und Verweise.
+
 ## BIM-Brücke
 
 Die digitale Brücke liegt nicht darin, den analogen Ablauf nur als PDF abzulegen. Sie liegt darin, Vorgänge, Modelle, Dokumente, Entscheidungen und Verantwortlichkeiten miteinander zu verbinden. Ein Issue braucht Ort, Bauteil, Status, Frist und Verantwortlichen. Ein Plan braucht Index und Freigabestatus. Ein Modellobjekt braucht die Information, ob es Entwurf, Ausschreibung, Ausführung oder as-built beschreibt.

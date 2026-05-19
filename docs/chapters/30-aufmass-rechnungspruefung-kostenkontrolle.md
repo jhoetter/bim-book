@@ -53,6 +53,37 @@ tags: kap30, kostenprognose
 
 Häufige Fehler sind ungeprüfte Mengen aus Unternehmeraufmaß, doppelt abgerechnete Nebenleistungen, nicht beauftragte Nachträge, veraltete Einheitspreise und fehlende Kostenprognose. Rechnungsprüfung muss deshalb eng mit LV, Vertrag, Nachtragslog und Bautagebuch verbunden sein.
 
+## 30.5 Rechnungsprüfung als Projektsteuerung
+
+Rechnungsprüfung ist kein nachgelagerter Verwaltungsakt. Sie ist eine der wichtigsten Kontrollen, ob Leistung, Menge, Vertrag und Kostenstand zusammenpassen. Jede Abschlagsrechnung sagt implizit: Diese Leistung wurde in dieser Menge erbracht und darf jetzt bezahlt werden. Der Architekt prüft deshalb nicht nur Rechenwege, sondern auch Leistungsstand, Vertragsbezug und Nachweise.
+
+Das Aufmaß ist der Mengennachweis. Bei sichtbaren Leistungen kann es mit Plan, Foto und örtlicher Prüfung abgeglichen werden. Bei verdeckten Leistungen muss es rechtzeitig erfolgen: Bewehrung vor Betonage, Abdichtung vor Verfüllung, Leitungen vor Schließen der Schächte, Dämmung vor Verkleidung. Wenn solche Leistungen verschwinden, bleibt später nur Dokumentation. Fehlt sie, wird die Rechnung zum Streitfall.
+
+Eine gute Kostenkontrolle unterscheidet gebundene Kosten, geprüfte Rechnungen, offene Nachträge, Prognosen und Reserve. Der Bauherr muss nicht nur wissen, was bisher bezahlt wurde, sondern was das Projekt voraussichtlich am Ende kostet. Ein scheinbar entspannter Kostenstand kann trügen, wenn große Nachträge noch ungeprüft sind oder Schlussrechnungen erfahrungsgemäß höher ausfallen.
+
+Die Prüffristen sind praktisch relevant. Rechnungen müssen zeitnah geprüft werden, sonst entstehen Verzögerungen, Skonto-Verluste, Streit oder Fälligkeitsprobleme. Gleichzeitig darf Geschwindigkeit nicht dazu führen, dass unklare Mengen freigegeben werden. Gute Büros arbeiten deshalb mit Prüfvermerken: anerkannt, gekürzt, zurückgestellt, Nachweis fehlt, fachlich klären, Nachtrag erforderlich.
+
+!!! kastanienallee "Kastanienallee 7"
+    Bei K7 prüft der Architekt eine Rohbau-Abschlagsrechnung gegen Aufmaß, Betoniertagebuch, Schalpläne, Lieferscheine und Leistungsstand. Eine abgerechnete Stahlbetonwand ist nicht nur eine Modellfläche, sondern eine tatsächlich geschalte, bewehrte und betonierte Leistung. Wenn Durchbrüche fehlen oder Massen abweichen, muss das vor Zahlungsfreigabe auffallen.
+
+## 30.6 Prüfroutine für Architekten
+
+Eine belastbare Rechnungsprüfung folgt einer Routine. Zuerst wird geprüft, ob die Rechnung zum Auftrag gehört und formal vollständig ist. Dann wird die Leistung dem LV, Nachtrag oder einer Anordnung zugeordnet. Danach wird der Leistungsstand örtlich oder anhand von Dokumentation geprüft. Erst dann werden Mengen, Einheitspreise, Nachlässe, Sicherheitseinbehalte, Skonto und Umsatzsteuer kontrolliert.
+
+Bei Abschlagsrechnungen ist besondere Vorsicht nötig. Abschläge sind vorläufig, aber sie erzeugen Zahlungsfluss. Wenn zu viel bezahlt wird, verliert der Bauherr Druckmittel. Wenn berechtigte Rechnungen zu spät bezahlt werden, entstehen Konflikte und Liquiditätsprobleme bei Unternehmen. Die Prüfung muss daher korrekt und zügig sein.
+
+Kostenkontrolle verbindet Rechnungen mit dem Budget. Jede geprüfte Rechnung reduziert nicht nur eine offene Auftragssumme, sondern verändert den Kostenstand. Nachträge, noch nicht beauftragte Restleistungen und Risiken müssen in einer Prognose sichtbar bleiben. Ein Projekt kann formal "im Budget" erscheinen, obwohl offene Nachträge den Rahmen bereits sprengen würden.
+
+Für BIM-basierte Kostenkontrolle ist die Trennung von Modellmenge, Vertragsmenge und Abrechnungsmenge zentral. Die Modellmenge hilft bei Plausibilität. Vertragsmenge steht im LV. Abrechnungsmenge ergibt sich nach Regeln und Aufmaß. Wer diese drei Zahlen vermischt, baut ein digitales Kontrollsystem mit falschem Vertrauen.
+
+## 30.7 Was bei Schlussrechnungen anders ist
+
+Die Schlussrechnung beendet das Abrechnungsverhältnis nicht automatisch, aber sie bündelt die endgültige Forderung. Sie muss alle Abschläge, Nachträge, Mengen, Einbehalte und Restforderungen zusammenführen. Für die Prüfung ist deshalb wichtig, ob alle früheren Kürzungen, offenen Nachweise und Nachtragsentscheidungen berücksichtigt wurden.
+
+Bei Schlussrechnungen tauchen häufig Mengenverschiebungen auf. Positionen werden anders ausgeschöpft als erwartet, Bedarfspositionen erscheinen, Nachträge werden nachgereicht oder Stundenlohnzettel gesammelt vorgelegt. Der Architekt muss dann nicht nur rechnen, sondern die Projektgeschichte kennen: Was wurde wann angeordnet, geprüft, anerkannt oder zurückgewiesen?
+
+Kostenkontrolle endet erst, wenn Kostenfeststellung und Dokumentation abgeschlossen sind. Die DIN-276-Kostenfeststellung ist nicht nur Buchhaltung, sondern Erfahrungswissen für kommende Projekte. Sie zeigt, welche Kostengruppen stabil waren und wo Abweichungen entstanden sind.
+
 ## BIM-Brücke
 
 Die digitale Brücke liegt nicht darin, den analogen Ablauf nur als PDF abzulegen. Sie liegt darin, Vorgänge, Modelle, Dokumente, Entscheidungen und Verantwortlichkeiten miteinander zu verbinden. Ein Issue braucht Ort, Bauteil, Status, Frist und Verantwortlichen. Ein Plan braucht Index und Freigabestatus. Ein Modellobjekt braucht die Information, ob es Entwurf, Ausschreibung, Ausführung oder as-built beschreibt.
