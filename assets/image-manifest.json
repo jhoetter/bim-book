@@ -2,24 +2,6 @@
   "version": 1,
   "images": [
     {
-      "file": "kap01_schichtenmodell.png",
-      "chapter": 1,
-      "part": "I",
-      "partTitle": "Teil I – Fundament",
-      "chapterTitle": "Architektur als System",
-      "type": "isometric",
-      "context": "generic",
-      "caption": "Ein Gebäude als vier Schichten mit unterschiedlichen Lebensdauern",
-      "tags": [
-        "schichtenmodell",
-        "systemdenken",
-        "kastanienallee7",
-        "lebensdauer"
-      ],
-      "chapterPath": "chapters/01-architektur-als-system",
-      "generated": "2026-05-18 07:41"
-    },
-    {
       "file": "kap01_interdependenzen.png",
       "chapter": 1,
       "part": "I",
@@ -38,115 +20,40 @@
       "generated": "2026-05-18 07:43"
     },
     {
-      "file": "kap02_problemklaerung.png",
-      "chapter": 2,
+      "file": "kap01_schichtenmodell.png",
+      "chapter": 1,
       "part": "I",
       "partTitle": "Teil I – Fundament",
-      "chapterTitle": "Entwurf, Raum und Funktion",
-      "type": "diagram",
+      "chapterTitle": "Architektur als System",
+      "type": "isometric",
       "context": "generic",
-      "caption": "Früher Entwurf übersetzt ein offenes Problem in eine begründete Entscheidung",
+      "caption": "Ein Gebäude als vier Schichten mit unterschiedlichen Lebensdauern",
       "tags": [
-        "problemklaerung",
-        "entwurfsprozess",
-        "raumprogramm",
-        "varianten"
-      ],
-      "chapterPath": "chapters/02-entwurf-raum-funktion",
-      "generated": "2026-05-19"
-    },
-    {
-      "file": "kap02_variantenmatrix.png",
-      "chapter": 2,
-      "part": "I",
-      "partTitle": "Teil I – Fundament",
-      "chapterTitle": "Entwurf, Raum und Funktion",
-      "type": "infographic",
-      "context": "generic",
-      "caption": "Eine Variantenmatrix macht Entwurfsentscheidungen diskutierbar",
-      "tags": [
-        "varianten",
-        "kriterienmatrix",
-        "vorplanung",
-        "kastanienallee"
-      ],
-      "chapterPath": "chapters/02-entwurf-raum-funktion",
-      "generated": "2026-05-19"
-    },
-    {
-      "file": "kap02_planarten.png",
-      "chapter": 2,
-      "part": "I",
-      "partTitle": "Teil I – Fundament",
-      "chapterTitle": "Entwurf, Raum und Funktion",
-      "type": "diagram",
-      "context": "generic",
-      "caption": "Grundriss, Schnitt, Ansicht und Detail zeigen dasselbe Gebäude mit unterschiedlicher Absicht",
-      "tags": [
-        "planarten",
-        "grundriss",
-        "schnitt",
-        "ansicht",
-        "detail"
-      ],
-      "chapterPath": "chapters/02-entwurf-raum-funktion",
-      "generated": "2026-05-18 07:45"
-    },
-    {
-      "file": "kap02_formtransformationen.png",
-      "chapter": 2,
-      "part": "I",
-      "partTitle": "Teil I – Fundament",
-      "chapterTitle": "Entwurf, Raum und Funktion",
-      "type": "diagram",
-      "context": "generic",
-      "caption": "Räumliche Transformationen verändern Grundkörper zu Entwurfsformen",
-      "tags": [
-        "entwurf",
-        "formtransformation",
-        "rotation",
-        "translation",
-        "subtraktion"
-      ],
-      "chapterPath": "chapters/02-entwurf-raum-funktion",
-      "generated": "2026-05-18 09:58"
-    },
-    {
-      "file": "kap02_raumorganisation.png",
-      "chapter": 2,
-      "part": "I",
-      "partTitle": "Teil I – Fundament",
-      "chapterTitle": "Entwurf, Raum und Funktion",
-      "type": "diagram",
-      "context": "generic",
-      "caption": "Raumorganisation ordnet Beziehungen zwischen Räumen",
-      "tags": [
-        "raumorganisation",
-        "achse",
-        "raster",
-        "cluster",
-        "zentralraum"
-      ],
-      "chapterPath": "chapters/02-entwurf-raum-funktion",
-      "generated": "2026-05-18 10:01"
-    },
-    {
-      "file": "kap02_grundriss_eg.png",
-      "chapter": 2,
-      "part": "I",
-      "partTitle": "Teil I – Fundament",
-      "chapterTitle": "Entwurf, Raum und Funktion",
-      "type": "floorplan",
-      "context": "generic",
-      "caption": "Erdgeschossgrundriss des Leitbeispiels als Vierspänner",
-      "tags": [
-        "grundriss",
+        "schichtenmodell",
+        "systemdenken",
         "kastanienallee7",
-        "vierspänner",
-        "erschliessung"
+        "lebensdauer"
+      ],
+      "chapterPath": "chapters/01-architektur-als-system",
+      "generated": "2026-05-18 07:41"
+    },
+    {
+      "file": "kap02_av_verhaeltnis.png",
+      "chapter": 2,
+      "part": "I",
+      "partTitle": "Teil I – Fundament",
+      "chapterTitle": "Entwurf, Raum und Funktion",
+      "type": "comparison",
+      "context": "generic",
+      "caption": "Kompakte Baukörper haben weniger Hüllfläche je Volumen",
+      "tags": [
+        "av-verhältnis",
+        "kompaktheit",
+        "wärmeschutz",
+        "energie"
       ],
       "chapterPath": "chapters/02-entwurf-raum-funktion",
-      "generated": "2026-05-19"
+      "generated": "2026-05-18 07:50"
     },
     {
       "file": "kap02_erschliessungstypen.png",
@@ -168,40 +75,167 @@
       "generated": "2026-05-18 07:48"
     },
     {
-      "file": "kap02_av_verhaeltnis.png",
+      "file": "kap02_formtransformationen.png",
       "chapter": 2,
       "part": "I",
       "partTitle": "Teil I – Fundament",
       "chapterTitle": "Entwurf, Raum und Funktion",
-      "type": "comparison",
+      "type": "diagram",
       "context": "generic",
-      "caption": "Kompakte Baukörper haben weniger Hüllfläche je Volumen",
+      "caption": "Räumliche Transformationen verändern Grundkörper zu Entwurfsformen",
       "tags": [
-        "av-verhältnis",
-        "kompaktheit",
-        "wärmeschutz",
-        "energie"
+        "entwurf",
+        "formtransformation",
+        "rotation",
+        "translation",
+        "subtraktion"
       ],
       "chapterPath": "chapters/02-entwurf-raum-funktion",
-      "generated": "2026-05-18 07:50"
+      "generated": "2026-05-18 09:58"
     },
     {
-      "file": "kap03_materialvergleich.png",
-      "chapter": 3,
-      "part": "II",
-      "partTitle": "Teil II – Baukörper",
-      "chapterTitle": "Baustoffe",
+      "file": "kap02_grundriss_eg.png",
+      "chapter": 2,
+      "part": "I",
+      "partTitle": "Teil I – Fundament",
+      "chapterTitle": "Entwurf, Raum und Funktion",
+      "type": "floorplan",
+      "context": "generic",
+      "caption": "Erdgeschossgrundriss des Leitbeispiels als Vierspänner",
+      "tags": [
+        "grundriss",
+        "kastanienallee7",
+        "vierspänner",
+        "erschliessung"
+      ],
+      "chapterPath": "chapters/02-entwurf-raum-funktion",
+      "generated": "2026-05-19"
+    },
+    {
+      "file": "kap02_kosten_termin_qualitaet_dreieck.png",
+      "chapter": 2,
+      "part": "I",
+      "partTitle": "Teil I",
+      "chapterTitle": "Projektstart, Bauherr & Machbarkeit",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Kosten, Termin und Qualität müssen früh gegeneinander abgewogen werden",
+      "tags": [
+        "kap02",
+        "kosten",
+        "termin",
+        "qualitaet",
+        "dreieck"
+      ],
+      "chapterPath": "chapters/02-projektstart-bauherr-machbarkeit",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap02_planarten.png",
+      "chapter": 2,
+      "part": "I",
+      "partTitle": "Teil I – Fundament",
+      "chapterTitle": "Entwurf, Raum und Funktion",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Grundriss, Schnitt, Ansicht und Detail zeigen dasselbe Gebäude mit unterschiedlicher Absicht",
+      "tags": [
+        "planarten",
+        "grundriss",
+        "schnitt",
+        "ansicht",
+        "detail"
+      ],
+      "chapterPath": "chapters/02-entwurf-raum-funktion",
+      "generated": "2026-05-18 07:45"
+    },
+    {
+      "file": "kap02_problemklaerung.png",
+      "chapter": 2,
+      "part": "I",
+      "partTitle": "Teil I – Fundament",
+      "chapterTitle": "Entwurf, Raum und Funktion",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Früher Entwurf übersetzt ein offenes Problem in eine begründete Entscheidung",
+      "tags": [
+        "problemklaerung",
+        "entwurfsprozess",
+        "raumprogramm",
+        "varianten"
+      ],
+      "chapterPath": "chapters/02-entwurf-raum-funktion",
+      "generated": "2026-05-19"
+    },
+    {
+      "file": "kap02_projektstart_machbarkeit.png",
+      "chapter": 2,
+      "part": "I",
+      "partTitle": "Teil I",
+      "chapterTitle": "Projektstart, Bauherr & Machbarkeit",
+      "type": "infographic",
+      "context": "kastanienallee",
+      "caption": "Ein Projektstart-Canvas macht den offenen Auftrag prüfbar",
+      "tags": [
+        "kap02",
+        "projektstart",
+        "machbarkeit"
+      ],
+      "chapterPath": "chapters/02-projektstart-bauherr-machbarkeit",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap02_raumorganisation.png",
+      "chapter": 2,
+      "part": "I",
+      "partTitle": "Teil I – Fundament",
+      "chapterTitle": "Entwurf, Raum und Funktion",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Raumorganisation ordnet Beziehungen zwischen Räumen",
+      "tags": [
+        "raumorganisation",
+        "achse",
+        "raster",
+        "cluster",
+        "zentralraum"
+      ],
+      "chapterPath": "chapters/02-entwurf-raum-funktion",
+      "generated": "2026-05-18 10:01"
+    },
+    {
+      "file": "kap02_variantenmatrix.png",
+      "chapter": 2,
+      "part": "I",
+      "partTitle": "Teil I – Fundament",
+      "chapterTitle": "Entwurf, Raum und Funktion",
       "type": "infographic",
       "context": "generic",
-      "caption": "Baustoffe unterscheiden sich in mehreren Kennwerten gleichzeitig",
+      "caption": "Eine Variantenmatrix macht Entwurfsentscheidungen diskutierbar",
       "tags": [
-        "baustoffe",
-        "materialvergleich",
-        "kennwerte",
-        "eurocode"
+        "varianten",
+        "kriterienmatrix",
+        "vorplanung",
+        "kastanienallee"
       ],
-      "chapterPath": "chapters/03-baustoffe",
-      "generated": "2026-05-18 10:12"
+      "chapterPath": "chapters/02-entwurf-raum-funktion",
+      "generated": "2026-05-19"
+    },
+    {
+      "file": "kap03_anforderungsmatrix.png",
+      "chapter": 3,
+      "part": "I",
+      "partTitle": "Teil I",
+      "chapterTitle": "Problemraum: Briefing, Anforderungen, Raumprogramm",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Eine Anforderungsmatrix übersetzt Alltagssprache in Planungskriterien",
+      "tags": [
+        "kap03",
+        "anforderungsmatrix"
+      ],
+      "chapterPath": "chapters/03-problemraum-briefing-anforderungen-raumprogramm",
+      "generated": "2026-05-19 23:23"
     },
     {
       "file": "kap03_clt_vs_beton.png",
@@ -241,40 +275,56 @@
       "generated": "2026-05-18 10:17"
     },
     {
-      "file": "kap04_lastabtragung.png",
-      "chapter": 4,
-      "part": "II",
-      "partTitle": "Teil II – Baukörper",
-      "chapterTitle": "Tragwerk: Lasten, Kräfte, Systeme",
-      "type": "diagram",
+      "file": "kap03_erstgespraech_briefing.png",
+      "chapter": 3,
+      "part": "I",
+      "partTitle": "Teil I",
+      "chapterTitle": "Problemraum: Briefing, Anforderungen, Raumprogramm",
+      "type": "infographic",
       "context": "generic",
-      "caption": "Jede Last braucht einen durchgehenden Weg bis in den Baugrund",
+      "caption": "Das Erstgespräch sammelt Wünsche, aber der Entwurf braucht prüfbare Anforderungen",
       "tags": [
-        "tragwerk",
-        "lastabtragung",
-        "stützen",
-        "fundament"
+        "kap03",
+        "erstgespraech",
+        "briefing"
       ],
-      "chapterPath": "chapters/04-tragwerk",
-      "generated": "2026-05-18 10:22"
+      "chapterPath": "chapters/03-problemraum-briefing-anforderungen-raumprogramm",
+      "generated": "2026-05-19 23:23"
     },
     {
-      "file": "kap04_tragsysteme.png",
-      "chapter": 4,
+      "file": "kap03_materialvergleich.png",
+      "chapter": 3,
       "part": "II",
       "partTitle": "Teil II – Baukörper",
-      "chapterTitle": "Tragwerk: Lasten, Kräfte, Systeme",
-      "type": "isometric",
+      "chapterTitle": "Baustoffe",
+      "type": "infographic",
       "context": "generic",
-      "caption": "Tragsysteme verteilen Lasten auf unterschiedliche Weise",
+      "caption": "Baustoffe unterscheiden sich in mehreren Kennwerten gleichzeitig",
       "tags": [
-        "massivbau",
-        "skelettbau",
-        "holztafelbau",
-        "tragsystem"
+        "baustoffe",
+        "materialvergleich",
+        "kennwerte",
+        "eurocode"
       ],
-      "chapterPath": "chapters/04-tragwerk",
-      "generated": "2026-05-18 10:25"
+      "chapterPath": "chapters/03-baustoffe",
+      "generated": "2026-05-18 10:12"
+    },
+    {
+      "file": "kap03_stakeholder_zielkonflikte.png",
+      "chapter": 3,
+      "part": "I",
+      "partTitle": "Teil I",
+      "chapterTitle": "Problemraum: Briefing, Anforderungen, Raumprogramm",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Stakeholder machen sichtbar, warum Entwurf nicht nur Geschmack ist",
+      "tags": [
+        "kap03",
+        "stakeholder",
+        "zielkonflikte"
+      ],
+      "chapterPath": "chapters/03-problemraum-briefing-anforderungen-raumprogramm",
+      "generated": "2026-05-19 23:23"
     },
     {
       "file": "kap04_deckentypen.png",
@@ -295,40 +345,93 @@
       "generated": "2026-05-18 10:27"
     },
     {
-      "file": "kap05_wandaufbau.png",
-      "chapter": 5,
-      "part": "II",
-      "partTitle": "Teil II – Baukörper",
-      "chapterTitle": "Konstruktion: Gründung, Wand, Decke, Dach",
-      "type": "section",
+      "file": "kap04_due_diligence_check.png",
+      "chapter": 4,
+      "part": "I",
+      "partTitle": "Teil I",
+      "chapterTitle": "Grundstück, Vorprüfung & Due Diligence",
+      "type": "infographic",
       "context": "generic",
-      "caption": "Außenwand als geordnete Schichtenfolge",
+      "caption": "Due Diligence macht unsichtbare Grundstücksrisiken sichtbar",
       "tags": [
-        "wdvs",
-        "innenputz",
-        "armierungsputz",
-        "wandaufbau"
+        "kap04",
+        "due",
+        "diligence",
+        "check"
       ],
-      "chapterPath": "chapters/05-konstruktion",
-      "generated": "2026-05-18 10:30"
+      "chapterPath": "chapters/04-grundstueck-vorpruefung-due-diligence",
+      "generated": "2026-05-19 23:23"
     },
     {
-      "file": "kap05_fensteranschluss.png",
-      "chapter": 5,
+      "file": "kap04_lastabtragung.png",
+      "chapter": 4,
       "part": "II",
       "partTitle": "Teil II – Baukörper",
-      "chapterTitle": "Konstruktion: Gründung, Wand, Decke, Dach",
-      "type": "section",
+      "chapterTitle": "Tragwerk: Lasten, Kräfte, Systeme",
+      "type": "diagram",
       "context": "generic",
-      "caption": "Fensteranschlüsse bündeln Wärme-, Feuchte- und Montagerisiken",
+      "caption": "Jede Last braucht einen durchgehenden Weg bis in den Baugrund",
       "tags": [
-        "fensteranschluss",
-        "wärmebrücke",
-        "wdvs",
-        "detail"
+        "tragwerk",
+        "lastabtragung",
+        "stützen",
+        "fundament"
       ],
-      "chapterPath": "chapters/05-konstruktion",
-      "generated": "2026-05-18 10:33"
+      "chapterPath": "chapters/04-tragwerk",
+      "generated": "2026-05-18 10:22"
+    },
+    {
+      "file": "kap04_risikokarte_grundstueck.png",
+      "chapter": 4,
+      "part": "I",
+      "partTitle": "Teil I",
+      "chapterTitle": "Grundstück, Vorprüfung & Due Diligence",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Eine Grundstücksrisikokarte verbindet Dokumente mit räumlicher Planung",
+      "tags": [
+        "kap04",
+        "risikokarte",
+        "grundstueck"
+      ],
+      "chapterPath": "chapters/04-grundstueck-vorpruefung-due-diligence",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap04_tragsysteme.png",
+      "chapter": 4,
+      "part": "II",
+      "partTitle": "Teil II – Baukörper",
+      "chapterTitle": "Tragwerk: Lasten, Kräfte, Systeme",
+      "type": "isometric",
+      "context": "generic",
+      "caption": "Tragsysteme verteilen Lasten auf unterschiedliche Weise",
+      "tags": [
+        "massivbau",
+        "skelettbau",
+        "holztafelbau",
+        "tragsystem"
+      ],
+      "chapterPath": "chapters/04-tragwerk",
+      "generated": "2026-05-18 10:25"
+    },
+    {
+      "file": "kap05_bubble_erschliessung_sonne.png",
+      "chapter": 5,
+      "part": "I",
+      "partTitle": "Teil I",
+      "chapterTitle": "Standortanalyse, Grobskizzen & Varianten",
+      "type": "comparison",
+      "context": "generic",
+      "caption": "Frühe Diagramme beantworten unterschiedliche Entwurfsfragen",
+      "tags": [
+        "kap05",
+        "bubble",
+        "erschliessung",
+        "sonne"
+      ],
+      "chapterPath": "chapters/05-standortanalyse-grobskizzen-varianten",
+      "generated": "2026-05-19 23:23"
     },
     {
       "file": "kap05_deckenaufbau.png",
@@ -347,6 +450,24 @@
       ],
       "chapterPath": "chapters/05-konstruktion",
       "generated": "2026-05-18 10:35"
+    },
+    {
+      "file": "kap05_fensteranschluss.png",
+      "chapter": 5,
+      "part": "II",
+      "partTitle": "Teil II – Baukörper",
+      "chapterTitle": "Konstruktion: Gründung, Wand, Decke, Dach",
+      "type": "section",
+      "context": "generic",
+      "caption": "Fensteranschlüsse bündeln Wärme-, Feuchte- und Montagerisiken",
+      "tags": [
+        "fensteranschluss",
+        "wärmebrücke",
+        "wdvs",
+        "detail"
+      ],
+      "chapterPath": "chapters/05-konstruktion",
+      "generated": "2026-05-18 10:33"
     },
     {
       "file": "kap05_flachdach.png",
@@ -386,6 +507,76 @@
       "generated": "2026-05-18 10:41"
     },
     {
+      "file": "kap05_standortanalyse_skizzenblatt.png",
+      "chapter": 5,
+      "part": "I",
+      "partTitle": "Teil I",
+      "chapterTitle": "Standortanalyse, Grobskizzen & Varianten",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Standortanalyse übersetzt Ort in Entwurfsparameter",
+      "tags": [
+        "kap05",
+        "standortanalyse",
+        "skizzenblatt"
+      ],
+      "chapterPath": "chapters/05-standortanalyse-grobskizzen-varianten",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap05_variantenkritik_k7.png",
+      "chapter": 5,
+      "part": "I",
+      "partTitle": "Teil I",
+      "chapterTitle": "Standortanalyse, Grobskizzen & Varianten",
+      "type": "infographic",
+      "context": "kastanienallee",
+      "caption": "Variantenkritik macht Entwurfsentscheidungen nachvollziehbar",
+      "tags": [
+        "kap05",
+        "variantenkritik",
+        "k7"
+      ],
+      "chapterPath": "chapters/05-standortanalyse-grobskizzen-varianten",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap05_wandaufbau.png",
+      "chapter": 5,
+      "part": "II",
+      "partTitle": "Teil II – Baukörper",
+      "chapterTitle": "Konstruktion: Gründung, Wand, Decke, Dach",
+      "type": "section",
+      "context": "generic",
+      "caption": "Außenwand als geordnete Schichtenfolge",
+      "tags": [
+        "wdvs",
+        "innenputz",
+        "armierungsputz",
+        "wandaufbau"
+      ],
+      "chapterPath": "chapters/05-konstruktion",
+      "generated": "2026-05-18 10:30"
+    },
+    {
+      "file": "kap06_geg_anforderungen.png",
+      "chapter": 6,
+      "part": "III",
+      "partTitle": "Teil III – Bauphysik",
+      "chapterTitle": "Wärmeschutz & GEG",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "Das GEG bewertet Hülle und Anlagentechnik gemeinsam",
+      "tags": [
+        "geg",
+        "primärenergiefaktor",
+        "transmissionswärmeverlust",
+        "energieausweis"
+      ],
+      "chapterPath": "chapters/06-waermeschutz-geg",
+      "generated": "2026-05-18 10:51"
+    },
+    {
       "file": "kap06_u_wert_berechnung.png",
       "chapter": 6,
       "part": "III",
@@ -422,22 +613,22 @@
       "generated": "2026-05-18 10:48"
     },
     {
-      "file": "kap06_geg_anforderungen.png",
-      "chapter": 6,
+      "file": "kap07_abdichtung_keller.png",
+      "chapter": 7,
       "part": "III",
       "partTitle": "Teil III – Bauphysik",
-      "chapterTitle": "Wärmeschutz & GEG",
-      "type": "infographic",
+      "chapterTitle": "Feuchteschutz",
+      "type": "section",
       "context": "generic",
-      "caption": "Das GEG bewertet Hülle und Anlagentechnik gemeinsam",
+      "caption": "Kellerabdichtung verbindet Beton, Fugen, Dämmung und Wasserführung",
       "tags": [
-        "geg",
-        "primärenergiefaktor",
-        "transmissionswärmeverlust",
-        "energieausweis"
+        "abdichtung",
+        "keller",
+        "weiße-wanne",
+        "perimeterdämmung"
       ],
-      "chapterPath": "chapters/06-waermeschutz-geg",
-      "generated": "2026-05-18 10:51"
+      "chapterPath": "chapters/07-feuchteschutz",
+      "generated": "2026-05-18 10:57"
     },
     {
       "file": "kap07_glaser.png",
@@ -458,22 +649,22 @@
       "generated": "2026-05-18 10:54"
     },
     {
-      "file": "kap07_abdichtung_keller.png",
-      "chapter": 7,
+      "file": "kap08_deckenaufbau_schall.png",
+      "chapter": 8,
       "part": "III",
       "partTitle": "Teil III – Bauphysik",
-      "chapterTitle": "Feuchteschutz",
+      "chapterTitle": "Schallschutz",
       "type": "section",
       "context": "generic",
-      "caption": "Kellerabdichtung verbindet Beton, Fugen, Dämmung und Wasserführung",
+      "caption": "Trittschalldämmung wirkt nur, wenn der Estrich wirklich schwimmt",
       "tags": [
-        "abdichtung",
-        "keller",
-        "weiße-wanne",
-        "perimeterdämmung"
+        "schallschutz",
+        "trittschall",
+        "estrich",
+        "deckenaufbau"
       ],
-      "chapterPath": "chapters/07-feuchteschutz",
-      "generated": "2026-05-18 10:57"
+      "chapterPath": "chapters/08-schallschutz",
+      "generated": "2026-05-18 14:12"
     },
     {
       "file": "kap08_schallpfade.png",
@@ -492,24 +683,6 @@
       ],
       "chapterPath": "chapters/08-schallschutz",
       "generated": "2026-05-18 14:09"
-    },
-    {
-      "file": "kap08_deckenaufbau_schall.png",
-      "chapter": 8,
-      "part": "III",
-      "partTitle": "Teil III – Bauphysik",
-      "chapterTitle": "Schallschutz",
-      "type": "section",
-      "context": "generic",
-      "caption": "Trittschalldämmung wirkt nur, wenn der Estrich wirklich schwimmt",
-      "tags": [
-        "schallschutz",
-        "trittschall",
-        "estrich",
-        "deckenaufbau"
-      ],
-      "chapterPath": "chapters/08-schallschutz",
-      "generated": "2026-05-18 14:12"
     },
     {
       "file": "kap09_gebaeudeklassen.png",
@@ -548,22 +721,22 @@
       "generated": "2026-05-18 14:17"
     },
     {
-      "file": "kap10_waermeerzeuger_vergleich.png",
+      "file": "kap10_fbh_aufbau.png",
       "chapter": 10,
       "part": "IV",
       "partTitle": "Teil IV – TGA",
       "chapterTitle": "Heizung & Wärmeversorgung",
-      "type": "infographic",
+      "type": "section",
       "context": "generic",
-      "caption": "Wärmeerzeuger unterscheiden sich in Effizienz, Platzbedarf und Zukunftsfähigkeit",
+      "caption": "Fußbodenheizung ist Teil des Decken- und Bodenaufbaus",
       "tags": [
-        "heizung",
-        "wärmeerzeuger",
-        "fernwärme",
-        "wärmepumpe"
+        "fbh",
+        "estrich",
+        "deckenaufbau",
+        "vorlauftemperatur"
       ],
       "chapterPath": "chapters/10-heizung-waermeversorgung",
-      "generated": "2026-05-18 14:19"
+      "generated": "2026-05-18 14:24"
     },
     {
       "file": "kap10_heizkreis_schema.png",
@@ -584,40 +757,22 @@
       "generated": "2026-05-18 14:22"
     },
     {
-      "file": "kap10_fbh_aufbau.png",
+      "file": "kap10_waermeerzeuger_vergleich.png",
       "chapter": 10,
       "part": "IV",
       "partTitle": "Teil IV – TGA",
       "chapterTitle": "Heizung & Wärmeversorgung",
-      "type": "section",
+      "type": "infographic",
       "context": "generic",
-      "caption": "Fußbodenheizung ist Teil des Decken- und Bodenaufbaus",
+      "caption": "Wärmeerzeuger unterscheiden sich in Effizienz, Platzbedarf und Zukunftsfähigkeit",
       "tags": [
-        "fbh",
-        "estrich",
-        "deckenaufbau",
-        "vorlauftemperatur"
+        "heizung",
+        "wärmeerzeuger",
+        "fernwärme",
+        "wärmepumpe"
       ],
       "chapterPath": "chapters/10-heizung-waermeversorgung",
-      "generated": "2026-05-18 14:24"
-    },
-    {
-      "file": "kap11_kwl_schema.png",
-      "chapter": 11,
-      "part": "IV",
-      "partTitle": "Teil IV – TGA",
-      "chapterTitle": "Lüftung & Raumluftqualität",
-      "type": "diagram",
-      "context": "generic",
-      "caption": "KWL führt Luft gezielt nach Nutzung und Feuchte",
-      "tags": [
-        "kwl",
-        "lüftung",
-        "wärmerückgewinnung",
-        "wohnung"
-      ],
-      "chapterPath": "chapters/11-lueftung",
-      "generated": "2026-05-18 14:27"
+      "generated": "2026-05-18 14:19"
     },
     {
       "file": "kap11_kanalquerschnitte.png",
@@ -636,6 +791,24 @@
       ],
       "chapterPath": "chapters/11-lueftung",
       "generated": "2026-05-18 14:29"
+    },
+    {
+      "file": "kap11_kwl_schema.png",
+      "chapter": 11,
+      "part": "IV",
+      "partTitle": "Teil IV – TGA",
+      "chapterTitle": "Lüftung & Raumluftqualität",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "KWL führt Luft gezielt nach Nutzung und Feuchte",
+      "tags": [
+        "kwl",
+        "lüftung",
+        "wärmerückgewinnung",
+        "wohnung"
+      ],
+      "chapterPath": "chapters/11-lueftung",
+      "generated": "2026-05-18 14:27"
     },
     {
       "file": "kap12_entwasserungsschema.png",
@@ -674,24 +847,6 @@
       "generated": "2026-05-18 14:35"
     },
     {
-      "file": "kap13_zaehleranlage.png",
-      "chapter": 13,
-      "part": "IV",
-      "partTitle": "Teil IV – TGA",
-      "chapterTitle": "Elektro & Gebäudeautomation",
-      "type": "diagram",
-      "context": "generic",
-      "caption": "Die Zähleranlage ordnet Versorgung und Abrechnung",
-      "tags": [
-        "elektro",
-        "zähleranlage",
-        "hausanschluss",
-        "rcd"
-      ],
-      "chapterPath": "chapters/13-elektro",
-      "generated": "2026-05-18 14:37"
-    },
-    {
       "file": "kap13_pv_konzept.png",
       "chapter": 13,
       "part": "IV",
@@ -708,6 +863,24 @@
       ],
       "chapterPath": "chapters/13-elektro",
       "generated": "2026-05-18 14:40"
+    },
+    {
+      "file": "kap13_zaehleranlage.png",
+      "chapter": 13,
+      "part": "IV",
+      "partTitle": "Teil IV – TGA",
+      "chapterTitle": "Elektro & Gebäudeautomation",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Die Zähleranlage ordnet Versorgung und Abrechnung",
+      "tags": [
+        "elektro",
+        "zähleranlage",
+        "hausanschluss",
+        "rcd"
+      ],
+      "chapterPath": "chapters/13-elektro",
+      "generated": "2026-05-18 14:37"
     },
     {
       "file": "kap14_baurecht_hierarchie.png",
@@ -746,23 +919,6 @@
       "generated": "2026-05-18 14:45"
     },
     {
-      "file": "kap15_leistungsphasen.png",
-      "chapter": 15,
-      "part": "V",
-      "partTitle": "Teil V – Projektprozess",
-      "chapterTitle": "HOAI: Phasen, Leistungen, Koordination",
-      "type": "infographic",
-      "context": "generic",
-      "caption": "Die Leistungsphasen ordnen Entscheidungen und Lieferstände",
-      "tags": [
-        "hoai",
-        "leistungsphasen",
-        "planungsprozess"
-      ],
-      "chapterPath": "chapters/15-hoai",
-      "generated": "2026-05-18 10:06"
-    },
-    {
       "file": "kap15_bim_lod.png",
       "chapter": 15,
       "part": "V",
@@ -779,6 +935,23 @@
       ],
       "chapterPath": "chapters/15-hoai",
       "generated": "2026-05-18 10:10"
+    },
+    {
+      "file": "kap15_leistungsphasen.png",
+      "chapter": 15,
+      "part": "V",
+      "partTitle": "Teil V – Projektprozess",
+      "chapterTitle": "HOAI: Phasen, Leistungen, Koordination",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "Die Leistungsphasen ordnen Entscheidungen und Lieferstände",
+      "tags": [
+        "hoai",
+        "leistungsphasen",
+        "planungsprozess"
+      ],
+      "chapterPath": "chapters/15-hoai",
+      "generated": "2026-05-18 10:06"
     },
     {
       "file": "kap16_din276_struktur.png",
@@ -835,24 +1008,6 @@
       "generated": "2026-05-19"
     },
     {
-      "file": "kap17_netzplan_prinzip.png",
-      "chapter": 17,
-      "part": "V",
-      "partTitle": "Teil V – Projektprozess",
-      "chapterTitle": "Bauprojektmanagement & Bauoberleitung",
-      "type": "diagram",
-      "context": "generic",
-      "caption": "Der Netzplan zeigt, welche Verzögerung wirklich den Endtermin trifft",
-      "tags": [
-        "netzplan",
-        "cpm",
-        "puffer",
-        "kritischer-pfad"
-      ],
-      "chapterPath": "chapters/17-bauprojektmanagement-bauoberleitung",
-      "generated": "2026-05-19"
-    },
-    {
       "file": "kap17_kostenkontrolle.png",
       "chapter": 17,
       "part": "V",
@@ -866,6 +1021,24 @@
         "din276",
         "nachtrag",
         "prognose"
+      ],
+      "chapterPath": "chapters/17-bauprojektmanagement-bauoberleitung",
+      "generated": "2026-05-19"
+    },
+    {
+      "file": "kap17_netzplan_prinzip.png",
+      "chapter": 17,
+      "part": "V",
+      "partTitle": "Teil V – Projektprozess",
+      "chapterTitle": "Bauprojektmanagement & Bauoberleitung",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Der Netzplan zeigt, welche Verzögerung wirklich den Endtermin trifft",
+      "tags": [
+        "netzplan",
+        "cpm",
+        "puffer",
+        "kritischer-pfad"
       ],
       "chapterPath": "chapters/17-bauprojektmanagement-bauoberleitung",
       "generated": "2026-05-19"
@@ -907,19 +1080,19 @@
       "generated": "2026-05-19"
     },
     {
-      "file": "kap19_ifc_hierarchie.png",
+      "file": "kap19_beziehungen.png",
       "chapter": 19,
       "part": "VI",
       "partTitle": "Teil VI – BIM",
       "chapterTitle": "IFC: Die Sprache des digitalen Gebäudes",
       "type": "diagram",
       "context": "generic",
-      "caption": "IFC trennt Projektstruktur und räumliches Containment",
+      "caption": "IFC ist ein Beziehungsmodell, nicht nur eine Objektliste",
       "tags": [
         "ifc",
-        "ifcproject",
-        "ifcspace",
-        "hierarchy"
+        "relationen",
+        "ifcwall",
+        "properties"
       ],
       "chapterPath": "chapters/19-ifc",
       "generated": "2026-05-19"
@@ -943,37 +1116,37 @@
       "generated": "2026-05-19"
     },
     {
-      "file": "kap19_beziehungen.png",
+      "file": "kap19_georeferenzierung.png",
       "chapter": 19,
       "part": "VI",
       "partTitle": "Teil VI – BIM",
       "chapterTitle": "IFC: Die Sprache des digitalen Gebäudes",
       "type": "diagram",
       "context": "generic",
-      "caption": "IFC ist ein Beziehungsmodell, nicht nur eine Objektliste",
+      "caption": "Georeferenzierung koppelt lokales Modell und reale Koordinaten",
       "tags": [
         "ifc",
-        "relationen",
-        "ifcwall",
-        "properties"
+        "georeferenzierung",
+        "epsg25832",
+        "gis"
       ],
       "chapterPath": "chapters/19-ifc",
       "generated": "2026-05-19"
     },
     {
-      "file": "kap19_step_format.png",
+      "file": "kap19_ifc_hierarchie.png",
       "chapter": 19,
       "part": "VI",
       "partTitle": "Teil VI – BIM",
       "chapterTitle": "IFC: Die Sprache des digitalen Gebäudes",
-      "type": "infographic",
+      "type": "diagram",
       "context": "generic",
-      "caption": "STEP-Dateien verketten IFC-Objekte über nummerierte Referenzen",
+      "caption": "IFC trennt Projektstruktur und räumliches Containment",
       "tags": [
         "ifc",
-        "step",
-        "entwickler",
-        "ifcwall"
+        "ifcproject",
+        "ifcspace",
+        "hierarchy"
       ],
       "chapterPath": "chapters/19-ifc",
       "generated": "2026-05-19"
@@ -997,21 +1170,73 @@
       "generated": "2026-05-19"
     },
     {
-      "file": "kap19_georeferenzierung.png",
+      "file": "kap19_step_format.png",
       "chapter": 19,
       "part": "VI",
       "partTitle": "Teil VI – BIM",
       "chapterTitle": "IFC: Die Sprache des digitalen Gebäudes",
-      "type": "diagram",
+      "type": "infographic",
       "context": "generic",
-      "caption": "Georeferenzierung koppelt lokales Modell und reale Koordinaten",
+      "caption": "STEP-Dateien verketten IFC-Objekte über nummerierte Referenzen",
       "tags": [
         "ifc",
-        "georeferenzierung",
-        "epsg25832",
-        "gis"
+        "step",
+        "entwickler",
+        "ifcwall"
       ],
       "chapterPath": "chapters/19-ifc",
+      "generated": "2026-05-19"
+    },
+    {
+      "file": "kap20_durchbruch_kollision.png",
+      "chapter": 20,
+      "part": "V",
+      "partTitle": "Teil V",
+      "chapterTitle": "Fachplanerkoordination, Planlauf & BIM-Koordination",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "20.3 Kollisionen, Durchbrüche und Schächte",
+      "tags": [
+        "kap20",
+        "durchbruch",
+        "kollision"
+      ],
+      "chapterPath": "chapters/20-fachplanerkoordination-planlauf-bim-koordination",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap20_koordination_planlauf.png",
+      "chapter": 20,
+      "part": "V",
+      "partTitle": "Teil V",
+      "chapterTitle": "Fachplanerkoordination, Planlauf & BIM-Koordination",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "20.1 Warum Koordination eigene Arbeit ist",
+      "tags": [
+        "kap20",
+        "koordination",
+        "planlauf"
+      ],
+      "chapterPath": "chapters/20-fachplanerkoordination-planlauf-bim-koordination",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap20_mapping.png",
+      "chapter": 20,
+      "part": "VI",
+      "partTitle": "Teil VI – BIM",
+      "chapterTitle": "Klassifikation",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Klassifikation verbindet Modellobjekte mit Kosten und Ausschreibung",
+      "tags": [
+        "ifc",
+        "klassifikation",
+        "din276",
+        "stlb"
+      ],
+      "chapterPath": "chapters/20-klassifikation",
       "generated": "2026-05-19"
     },
     {
@@ -1028,24 +1253,6 @@
         "omniclass",
         "uniclass",
         "iso12006"
-      ],
-      "chapterPath": "chapters/20-klassifikation",
-      "generated": "2026-05-19"
-    },
-    {
-      "file": "kap20_mapping.png",
-      "chapter": 20,
-      "part": "VI",
-      "partTitle": "Teil VI – BIM",
-      "chapterTitle": "Klassifikation",
-      "type": "diagram",
-      "context": "generic",
-      "caption": "Klassifikation verbindet Modellobjekte mit Kosten und Ausschreibung",
-      "tags": [
-        "ifc",
-        "klassifikation",
-        "din276",
-        "stlb"
       ],
       "chapterPath": "chapters/20-klassifikation",
       "generated": "2026-05-19"
@@ -1069,6 +1276,23 @@
       "generated": "2026-05-19"
     },
     {
+      "file": "kap21_detailmodell_transformation.png",
+      "chapter": 21,
+      "part": "V",
+      "partTitle": "Teil V",
+      "chapterTitle": "Ausführungsplanung & Bauunterlagen",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "21.3 Details und Schnittstellen",
+      "tags": [
+        "kap21",
+        "detailmodell",
+        "transformation"
+      ],
+      "chapterPath": "chapters/21-ausfuehrungsplanung-bauunterlagen",
+      "generated": "2026-05-19 23:23"
+    },
+    {
       "file": "kap21_iso19650_struktur.png",
       "chapter": 21,
       "part": "VI",
@@ -1084,6 +1308,59 @@
         "tidp"
       ],
       "chapterPath": "chapters/21-prozess-kollaboration",
+      "generated": "2026-05-19"
+    },
+    {
+      "file": "kap21_planpaket_lp5.png",
+      "chapter": 21,
+      "part": "V",
+      "partTitle": "Teil V",
+      "chapterTitle": "Ausführungsplanung & Bauunterlagen",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "21.1 Von Genehmigungsreife zu Baureife",
+      "tags": [
+        "kap21",
+        "planpaket",
+        "lp5"
+      ],
+      "chapterPath": "chapters/21-ausfuehrungsplanung-bauunterlagen",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap22_bemusterung_freigabe.png",
+      "chapter": 22,
+      "part": "V",
+      "partTitle": "Teil V",
+      "chapterTitle": "Bemusterung, Werkplanung & Freigaben",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "22.1 Bemusterung als Qualitätsentscheidung",
+      "tags": [
+        "kap22",
+        "bemusterung",
+        "freigabe"
+      ],
+      "chapterPath": "chapters/22-bemusterung-werkplanung-freigaben",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap22_bim_software_oekosystem.png",
+      "chapter": 22,
+      "part": "VI",
+      "partTitle": "Teil VI – BIM",
+      "chapterTitle": "BIM in der Praxis",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "BIM-Projekte nutzen mehrere Softwarekategorien statt ein einziges Werkzeug",
+      "tags": [
+        "bim",
+        "software",
+        "authoring",
+        "ifc",
+        "opensource"
+      ],
+      "chapterPath": "chapters/22-bim-praxis",
       "generated": "2026-05-19"
     },
     {
@@ -1105,23 +1382,21 @@
       "generated": "2026-05-19"
     },
     {
-      "file": "kap22_bim_software_oekosystem.png",
+      "file": "kap22_werkplanung_prueflauf.png",
       "chapter": 22,
-      "part": "VI",
-      "partTitle": "Teil VI – BIM",
-      "chapterTitle": "BIM in der Praxis",
+      "part": "V",
+      "partTitle": "Teil V",
+      "chapterTitle": "Bemusterung, Werkplanung & Freigaben",
       "type": "infographic",
       "context": "generic",
-      "caption": "BIM-Projekte nutzen mehrere Softwarekategorien statt ein einziges Werkzeug",
+      "caption": "22.3 Freigabe mit Verantwortung",
       "tags": [
-        "bim",
-        "software",
-        "authoring",
-        "ifc",
-        "opensource"
+        "kap22",
+        "werkplanung",
+        "prueflauf"
       ],
-      "chapterPath": "chapters/22-bim-praxis",
-      "generated": "2026-05-19"
+      "chapterPath": "chapters/22-bemusterung-werkplanung-freigaben",
+      "generated": "2026-05-19 23:23"
     },
     {
       "file": "kap23_lca_phasen.png",
@@ -1160,24 +1435,6 @@
       "generated": "2026-05-19"
     },
     {
-      "file": "kap24_massnahmen_taxonomie.png",
-      "chapter": 24,
-      "part": "VII",
-      "partTitle": "Teil VII – Nachhaltigkeit",
-      "chapterTitle": "Sanierung",
-      "type": "infographic",
-      "context": "generic",
-      "caption": "Bestandsmaßnahmen unterscheiden sich nach Eingriffstiefe, Genehmigung und Rechtsfolgen",
-      "tags": [
-        "sanierung",
-        "modernisierung",
-        "instandsetzung",
-        "bestand"
-      ],
-      "chapterPath": "chapters/24-sanierung",
-      "generated": "2026-05-19"
-    },
-    {
       "file": "kap24_baualtersphasen.png",
       "chapter": 24,
       "part": "VII",
@@ -1191,6 +1448,42 @@
         "baualter",
         "bestand",
         "konstruktion"
+      ],
+      "chapterPath": "chapters/24-sanierung",
+      "generated": "2026-05-19"
+    },
+    {
+      "file": "kap24_lv_mengen_pipeline.png",
+      "chapter": 24,
+      "part": "VI",
+      "partTitle": "Teil VI",
+      "chapterTitle": "Leistungsverzeichnis, STLB & GAEB",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "24.1 Aufbau eines LV",
+      "tags": [
+        "kap24",
+        "lv",
+        "mengen",
+        "pipeline"
+      ],
+      "chapterPath": "chapters/24-leistungsverzeichnis-stlb-gaeb",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap24_massnahmen_taxonomie.png",
+      "chapter": 24,
+      "part": "VII",
+      "partTitle": "Teil VII – Nachhaltigkeit",
+      "chapterTitle": "Sanierung",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "Bestandsmaßnahmen unterscheiden sich nach Eingriffstiefe, Genehmigung und Rechtsfolgen",
+      "tags": [
+        "sanierung",
+        "modernisierung",
+        "instandsetzung",
+        "bestand"
       ],
       "chapterPath": "chapters/24-sanierung",
       "generated": "2026-05-19"
@@ -1214,20 +1507,35 @@
       "generated": "2026-05-19"
     },
     {
-      "file": "kap25_projektarten_uebersicht.png",
+      "file": "kap25_bieterfragenliste.png",
+      "chapter": 25,
+      "part": "VI",
+      "partTitle": "Teil VI",
+      "chapterTitle": "Ausschreibung, Bieterkommunikation & Vergabe",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "25.3 Angebotsprüfung und Preisspiegel",
+      "tags": [
+        "kap25",
+        "bieterfragenliste"
+      ],
+      "chapterPath": "chapters/25-ausschreibung-bieterkommunikation-vergabe",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap25_neubau_vs_bestand.png",
       "chapter": 25,
       "part": "VII",
       "partTitle": "Teil VII – Nachhaltigkeit",
       "chapterTitle": "Projektarten: Neubau, Bestand, Denkmal",
-      "type": "infographic",
+      "type": "diagram",
       "context": "generic",
-      "caption": "Die Projektart setzt den Rahmen für Planung, Genehmigung und BIM-Strategie",
+      "caption": "Neubau plant vorwärts, Bestand plant iterativ mit Befunden",
       "tags": [
-        "projektarten",
         "neubau",
         "bestand",
-        "denkmal",
-        "sonderbau"
+        "planungsprozess",
+        "scan-to-bim"
       ],
       "chapterPath": "chapters/25-projektarten-neubau-bestand-denkmal",
       "generated": "2026-05-19"
@@ -1251,19 +1559,37 @@
       "generated": "2026-05-19"
     },
     {
-      "file": "kap25_neubau_vs_bestand.png",
+      "file": "kap25_preisspiegel_vergabevermerk.png",
+      "chapter": 25,
+      "part": "VI",
+      "partTitle": "Teil VI",
+      "chapterTitle": "Ausschreibung, Bieterkommunikation & Vergabe",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "25.1 Vergabeeinheiten und Bieterliste",
+      "tags": [
+        "kap25",
+        "preisspiegel",
+        "vergabevermerk"
+      ],
+      "chapterPath": "chapters/25-ausschreibung-bieterkommunikation-vergabe",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap25_projektarten_uebersicht.png",
       "chapter": 25,
       "part": "VII",
       "partTitle": "Teil VII – Nachhaltigkeit",
       "chapterTitle": "Projektarten: Neubau, Bestand, Denkmal",
-      "type": "diagram",
+      "type": "infographic",
       "context": "generic",
-      "caption": "Neubau plant vorwärts, Bestand plant iterativ mit Befunden",
+      "caption": "Die Projektart setzt den Rahmen für Planung, Genehmigung und BIM-Strategie",
       "tags": [
+        "projektarten",
         "neubau",
         "bestand",
-        "planungsprozess",
-        "scan-to-bim"
+        "denkmal",
+        "sonderbau"
       ],
       "chapterPath": "chapters/25-projektarten-neubau-bestand-denkmal",
       "generated": "2026-05-19"
@@ -1303,6 +1629,209 @@
       ],
       "chapterPath": "chapters/26-digitaler-zwilling-ki",
       "generated": "2026-05-19"
+    },
+    {
+      "file": "kap26_nachtrag_claim_log.png",
+      "chapter": 26,
+      "part": "VI",
+      "partTitle": "Teil VI",
+      "chapterTitle": "Bauverträge, Änderungen & Nachträge",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "26.1 Vertragsgrundlagen",
+      "tags": [
+        "kap26",
+        "nachtrag",
+        "claim",
+        "log"
+      ],
+      "chapterPath": "chapters/26-bauvertraege-aenderungen-nachtraege",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap26_vertragsrangfolge.png",
+      "chapter": 26,
+      "part": "VI",
+      "partTitle": "Teil VI",
+      "chapterTitle": "Bauverträge, Änderungen & Nachträge",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "26.3 Bedenken und Behinderung",
+      "tags": [
+        "kap26",
+        "vertragsrangfolge"
+      ],
+      "chapterPath": "chapters/26-bauvertraege-aenderungen-nachtraege",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap27_bauzeitenplan_taktplanung.png",
+      "chapter": 27,
+      "part": "VI",
+      "partTitle": "Teil VI",
+      "chapterTitle": "Terminplanung, Lean & Baustellenlogistik",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "27.1 Gantt und Netzplan",
+      "tags": [
+        "kap27",
+        "bauzeitenplan",
+        "taktplanung"
+      ],
+      "chapterPath": "chapters/27-terminplanung-lean-baustellenlogistik",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap27_last_planner_board.png",
+      "chapter": 27,
+      "part": "VI",
+      "partTitle": "Teil VI",
+      "chapterTitle": "Terminplanung, Lean & Baustellenlogistik",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "27.3 Last Planner System",
+      "tags": [
+        "kap27",
+        "last",
+        "planner",
+        "board"
+      ],
+      "chapterPath": "chapters/27-terminplanung-lean-baustellenlogistik",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap28_baustart_checkliste.png",
+      "chapter": 28,
+      "part": "VI",
+      "partTitle": "Teil VI",
+      "chapterTitle": "Baustellenvorbereitung, SiGeKo & Baustelleneinrichtung",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "28.3 Nachbarschaft und Verkehr",
+      "tags": [
+        "kap28",
+        "baustart",
+        "checkliste"
+      ],
+      "chapterPath": "chapters/28-baustellenvorbereitung-sigeko-baustelleneinrichtung",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap28_baustelleneinrichtung_logistik.png",
+      "chapter": 28,
+      "part": "VI",
+      "partTitle": "Teil VI",
+      "chapterTitle": "Baustellenvorbereitung, SiGeKo & Baustelleneinrichtung",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "28.1 Baustelleneinrichtungsplan",
+      "tags": [
+        "kap28",
+        "baustelleneinrichtung",
+        "logistik"
+      ],
+      "chapterPath": "chapters/28-baustellenvorbereitung-sigeko-baustelleneinrichtung",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap30_aufmass_rechnungspruefung.png",
+      "chapter": 30,
+      "part": "VII",
+      "partTitle": "Teil VII",
+      "chapterTitle": "Aufmaß, Rechnungsprüfung & Kostenkontrolle",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "30.1 Aufmaß als Mengennachweis",
+      "tags": [
+        "kap30",
+        "aufmass",
+        "rechnungspruefung"
+      ],
+      "chapterPath": "chapters/30-aufmass-rechnungspruefung-kostenkontrolle",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap30_kostenprognose.png",
+      "chapter": 30,
+      "part": "VII",
+      "partTitle": "Teil VII",
+      "chapterTitle": "Aufmaß, Rechnungsprüfung & Kostenkontrolle",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "30.3 Kostenstand und Prognose",
+      "tags": [
+        "kap30",
+        "kostenprognose"
+      ],
+      "chapterPath": "chapters/30-aufmass-rechnungspruefung-kostenkontrolle",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap31_inbetriebnahme_uebergabe.png",
+      "chapter": 31,
+      "part": "VII",
+      "partTitle": "Teil VII",
+      "chapterTitle": "Inbetriebnahme, Abnahme & Übergabe",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "31.1 Inbetriebnahme der TGA",
+      "tags": [
+        "kap31",
+        "inbetriebnahme",
+        "uebergabe"
+      ],
+      "chapterPath": "chapters/31-inbetriebnahme-abnahme-uebergabe",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap31_revisionsunterlagenliste.png",
+      "chapter": 31,
+      "part": "VII",
+      "partTitle": "Teil VII",
+      "chapterTitle": "Inbetriebnahme, Abnahme & Übergabe",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "31.3 Abnahme",
+      "tags": [
+        "kap31",
+        "revisionsunterlagenliste"
+      ],
+      "chapterPath": "chapters/31-inbetriebnahme-abnahme-uebergabe",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap32_fm_uebergabe.png",
+      "chapter": 32,
+      "part": "VII",
+      "partTitle": "Teil VII",
+      "chapterTitle": "Gewährleistung, Objektbetreuung & As-built",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "32.3 Wartung und Betreiberpflichten",
+      "tags": [
+        "kap32",
+        "fm",
+        "uebergabe"
+      ],
+      "chapterPath": "chapters/32-gewaehrleistung-objektbetreuung-as-built",
+      "generated": "2026-05-19 23:23"
+    },
+    {
+      "file": "kap32_gewaehrleistung_asbuilt.png",
+      "chapter": 32,
+      "part": "VII",
+      "partTitle": "Teil VII",
+      "chapterTitle": "Gewährleistung, Objektbetreuung & As-built",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "32.1 LP 9 und Gewährleistung",
+      "tags": [
+        "kap32",
+        "gewaehrleistung",
+        "asbuilt"
+      ],
+      "chapterPath": "chapters/32-gewaehrleistung-objektbetreuung-as-built",
+      "generated": "2026-05-19 23:23"
     }
   ]
 }

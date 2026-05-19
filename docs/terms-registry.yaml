@@ -264,6 +264,74 @@ terms:
     introduced_in: "16-sanitaer"
   leistungsphase:
     introduced_in: "19-hoai-rollen-projektorganisation"
+  projektstart:
+    introduced_in: "02-projektstart-bauherr-machbarkeit"
+  machbarkeit:
+    introduced_in: "02-projektstart-bauherr-machbarkeit"
+  briefing:
+    introduced_in: "03-problemraum-briefing-anforderungen-raumprogramm"
+  raumprogramm:
+    introduced_in: "03-problemraum-briefing-anforderungen-raumprogramm"
+  anforderungsmatrix:
+    introduced_in: "03-problemraum-briefing-anforderungen-raumprogramm"
+  stakeholder:
+    introduced_in: "03-problemraum-briefing-anforderungen-raumprogramm"
+  zielkonflikt:
+    introduced_in: "03-problemraum-briefing-anforderungen-raumprogramm"
+  entscheidungslog:
+    introduced_in: "03-problemraum-briefing-anforderungen-raumprogramm"
+  due-diligence:
+    introduced_in: "04-grundstueck-vorpruefung-due-diligence"
+  standortanalyse:
+    introduced_in: "05-standortanalyse-grobskizzen-varianten"
+  grobskizze:
+    introduced_in: "05-standortanalyse-grobskizzen-varianten"
+  variantenmatrix:
+    introduced_in: "05-standortanalyse-grobskizzen-varianten"
+  fachplanerkoordination:
+    introduced_in: "20-fachplanerkoordination-planlauf-bim-koordination"
+  planlauf:
+    introduced_in: "20-fachplanerkoordination-planlauf-bim-koordination"
+  durchbruchsliste:
+    introduced_in: "20-fachplanerkoordination-planlauf-bim-koordination"
+  bemusterung:
+    introduced_in: "22-bemusterung-werkplanung-freigaben"
+  werkplanung:
+    introduced_in: "22-bemusterung-werkplanung-freigaben"
+  freigabe:
+    introduced_in: "22-bemusterung-werkplanung-freigaben"
+  rfi:
+    introduced_in: "22-bemusterung-werkplanung-freigaben"
+  stlb-bau:
+    introduced_in: "24-leistungsverzeichnis-stlb-gaeb"
+  bieterkommunikation:
+    introduced_in: "25-ausschreibung-bieterkommunikation-vergabe"
+  preisspiegel:
+    introduced_in: "25-ausschreibung-bieterkommunikation-vergabe"
+  vergabevorschlag:
+    introduced_in: "25-ausschreibung-bieterkommunikation-vergabe"
+  bauvertrag:
+    introduced_in: "26-bauvertraege-aenderungen-nachtraege"
+  taktplanung:
+    introduced_in: "27-terminplanung-lean-baustellenlogistik"
+  last-planner-system:
+    introduced_in: "27-terminplanung-lean-baustellenlogistik"
+  sige-ko:
+    introduced_in: "28-baustellenvorbereitung-sigeko-baustelleneinrichtung"
+  baustelleneinrichtung:
+    introduced_in: "28-baustellenvorbereitung-sigeko-baustelleneinrichtung"
+  aufmass:
+    introduced_in: "30-aufmass-rechnungspruefung-kostenkontrolle"
+  rechnungspruefung:
+    introduced_in: "30-aufmass-rechnungspruefung-kostenkontrolle"
+  inbetriebnahme:
+    introduced_in: "31-inbetriebnahme-abnahme-uebergabe"
+  abnahme:
+    introduced_in: "31-inbetriebnahme-abnahme-uebergabe"
+  gewaehrleistung:
+    introduced_in: "32-gewaehrleistung-objektbetreuung-as-built"
+  as-built:
+    introduced_in: "32-gewaehrleistung-objektbetreuung-as-built"
   leistungsverzeichnis:
     introduced_in: "23-kostenplanung-mengen-din276"
   luftschall:
