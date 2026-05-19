@@ -1,297 +1,160 @@
-import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
-import { getChapterReferenceGraph, type ChapterGraphNode } from '../chapters'
+import { useMemo, useState } from 'react'
+import { NavLink } from 'react-router-dom'
+import { getChapterReferenceGraph, type ChapterGraphEdge, type ChapterGraphNode } from '../chapters'
 import { OverviewCard } from './OverviewCard'
+import { bookPath } from '../books'
 
-const WIDTH = 1500
-const HEIGHT = 920
-const CANVAS_PAD = 220
-const TOTAL_WIDTH = WIDTH + CANVAS_PAD * 2
-const TOTAL_HEIGHT = HEIGHT + CANVAS_PAD * 2
-const CX = WIDTH / 2
-const CY = HEIGHT / 2 + 10
-const RX = 600
-const RY = 335
-const BASE_RENDER_SCALE = 0.82
-const MIN_ZOOM = 0.75
-const MAX_ZOOM = 1.75
-const ZOOM_STEP = 0.15
-
-interface PositionedNode extends ChapterGraphNode {
-  x: number
-  y: number
-  angle: number
-}
-
-interface EdgeCurve {
-  path: string
-  arrows: {
-    x: number
-    y: number
-    rotation: number
-  }[]
-}
-
-interface PartBand {
+interface PartGroup {
   partTitle: string
-  title: string
-  path: string
-  labelX: number
-  labelY: number
-  labelAnchor: 'start' | 'middle' | 'end'
+  shortTitle: string
+  nodes: ChapterGraphNode[]
 }
 
-function pointOnEllipse(angle: number, rx: number, ry: number): { x: number; y: number } {
-  return {
-    x: CX + Math.cos(angle) * rx,
-    y: CY + Math.sin(angle) * ry,
+function shortPartTitle(title: string): string {
+  return title
+    .replace(/^Teil /, '')
+    .replace(' – ', ' · ')
+}
+
+function groupByPart(nodes: ChapterGraphNode[]): PartGroup[] {
+  const groups: PartGroup[] = []
+  for (const node of nodes) {
+    const current = groups[groups.length - 1]
+    if (current?.partTitle === node.partTitle) current.nodes.push(node)
+    else groups.push({
+      partTitle: node.partTitle,
+      shortTitle: shortPartTitle(node.partTitle),
+      nodes: [node],
+    })
   }
+  return groups
 }
 
-function partTitleLabel(title: string): string {
-  return title.replace(' – ', ': ')
-}
-
-function makePartBands(nodes: PositionedNode[]): PartBand[] {
-  const groups: { title: string; start: number; end: number }[] = []
-  for (let index = 0; index < nodes.length; index += 1) {
-    const previous = groups[groups.length - 1]
-    if (previous?.title === nodes[index].partTitle) previous.end = index
-    else groups.push({ title: nodes[index].partTitle, start: index, end: index })
-  }
-
-  return groups.map(group => {
-    const startAngle = -Math.PI / 2 + (Math.PI * 2 * (group.start - 0.42)) / nodes.length
-    const endAngle = -Math.PI / 2 + (Math.PI * 2 * (group.end + 0.42)) / nodes.length
-    const start = pointOnEllipse(startAngle, RX + 118, RY + 84)
-    const end = pointOnEllipse(endAngle, RX + 118, RY + 84)
-    const midAngle = (startAngle + endAngle) / 2
-    const label = pointOnEllipse(midAngle, RX + 132, RY + 101)
-    const largeArc = endAngle - startAngle > Math.PI ? 1 : 0
-    const anchor = Math.abs(Math.cos(midAngle)) < 0.2
-      ? 'middle'
-      : Math.cos(midAngle) > 0 ? 'start' : 'end'
-
-    return {
-      partTitle: group.title,
-      title: partTitleLabel(group.title),
-      path: `M ${start.x} ${start.y} A ${RX + 118} ${RY + 84} 0 ${largeArc} 1 ${end.x} ${end.y}`,
-      labelX: label.x,
-      labelY: label.y,
-      labelAnchor: anchor,
-    }
-  })
-}
-
-function getEdgeCurve(source: PositionedNode, target: PositionedNode, count: number): EdgeCurve {
-  const mx = (source.x + target.x) / 2
-  const my = (source.y + target.y) / 2
-  const dx = target.x - source.x
-  const dy = target.y - source.y
-  const length = Math.max(Math.hypot(dx, dy), 1)
-  const curve = Math.min(120, Math.max(42, length * 0.13))
-  const qx = mx - (dy / length) * curve
-  const qy = my + (dx / length) * curve
-  const arrowCount = Math.min(5, Math.max(2, Math.ceil(count / 2)))
-  const arrows = Array.from({ length: arrowCount }, (_, index) => {
-    const t = (index + 1) / (arrowCount + 1)
-    const inv = 1 - t
-    const x = inv * inv * source.x + 2 * inv * t * qx + t * t * target.x
-    const y = inv * inv * source.y + 2 * inv * t * qy + t * t * target.y
-    const tx = 2 * inv * (qx - source.x) + 2 * t * (target.x - qx)
-    const ty = 2 * inv * (qy - source.y) + 2 * t * (target.y - qy)
-    return {
-      x,
-      y,
-      rotation: Math.atan2(ty, tx) * 180 / Math.PI,
-    }
-  })
-
-  return {
-    path: `M ${source.x} ${source.y} Q ${qx} ${qy} ${target.x} ${target.y}`,
-    arrows,
-  }
+function edgeTargets(edges: ChapterGraphEdge[], id: string, direction: 'incoming' | 'outgoing'): ChapterGraphEdge[] {
+  return edges
+    .filter(edge => direction === 'incoming' ? edge.targetId === id : edge.sourceId === id)
+    .sort((a, b) => b.count - a.count)
 }
 
 export function ChapterReferenceGraph() {
   const graph = useMemo(() => getChapterReferenceGraph(), [])
-  const [hoveredId, setHoveredId] = useState<string | null>(null)
-  const [zoom, setZoom] = useState(1)
-  const canvasRef = useRef<HTMLDivElement | null>(null)
-  const didCenter = useRef(false)
-  const renderScale = zoom * BASE_RENDER_SCALE
-
-  useEffect(() => {
-    const canvas = canvasRef.current
-    if (!canvas || didCenter.current) return
-    didCenter.current = true
-    requestAnimationFrame(() => {
-      canvas.scrollLeft = Math.max(0, (canvas.scrollWidth - canvas.clientWidth) / 2)
-      canvas.scrollTop = Math.max(0, (canvas.scrollHeight - canvas.clientHeight) / 2)
-    })
-  }, [])
-
-  const setClampedZoom = (next: number | ((current: number) => number)) => {
-    setZoom(current => {
-      const value = typeof next === 'function' ? next(current) : next
-      return Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, value))
-    })
-  }
-
-  const positioned = useMemo(() => {
-    return graph.nodes.map((node, index): PositionedNode => {
-      const angle = -Math.PI / 2 + (Math.PI * 2 * index) / graph.nodes.length
-      const x = CX + Math.cos(angle) * RX
-      const y = CY + Math.sin(angle) * RY
-      return {
-        ...node,
-        x,
-        y,
-        angle,
-      }
-    })
-  }, [graph.nodes])
-
-  const partBands = useMemo(() => makePartBands(positioned), [positioned])
+  const groups = useMemo(() => groupByPart(graph.nodes), [graph.nodes])
+  const [focusedId, setFocusedId] = useState<string | null>(null)
 
   const byId = useMemo(
-    () => new Map(positioned.map(node => [node.chapter.id, node])),
-    [positioned],
+    () => new Map(graph.nodes.map(node => [node.chapter.id, node])),
+    [graph.nodes],
   )
-  const activePartTitle = hoveredId ? byId.get(hoveredId)?.partTitle : null
 
+  const focused = focusedId ? byId.get(focusedId) ?? null : null
+  const incoming = focused ? edgeTargets(graph.edges, focused.chapter.id, 'incoming') : []
+  const outgoing = focused ? edgeTargets(graph.edges, focused.chapter.id, 'outgoing') : []
   const connectedIds = new Set<string>()
-  if (hoveredId) {
-    for (const edge of graph.edges) {
-      if (edge.sourceId === hoveredId) connectedIds.add(edge.targetId)
-      if (edge.targetId === hoveredId) connectedIds.add(edge.sourceId)
-    }
+  for (const edge of [...incoming, ...outgoing]) {
+    connectedIds.add(edge.sourceId)
+    connectedIds.add(edge.targetId)
   }
 
   return (
     <section className="chapter-graph-section" aria-labelledby="chapter-graph-title">
       <div className="chapter-graph-head">
         <div>
-          <h2 id="chapter-graph-title" className="overview-part-label">Querverweis-Graph</h2>
+          <h2 id="chapter-graph-title" className="overview-part-label">Kapitelkarte</h2>
           <p className="chapter-graph-summary">
-            {graph.nodes.length} Kapitel, {graph.edges.length} Verbindungen, {graph.totalLinks} gesetzte Kapitelverweise
+            {graph.nodes.length} Kapitel in {groups.length} Teilen, {graph.edges.length} Querverweis-Beziehungen, {graph.totalLinks} gesetzte Kapitelverweise
           </p>
         </div>
       </div>
 
-      <div className="chapter-graph-panel">
-        <div
-          ref={canvasRef}
-          className="chapter-graph-canvas"
-          onMouseLeave={() => setHoveredId(null)}
-          onWheel={(event) => {
-            if (!event.ctrlKey && !event.metaKey) return
-            event.preventDefault()
-            setClampedZoom(current => current + (event.deltaY < 0 ? ZOOM_STEP : -ZOOM_STEP))
-          }}
-        >
-          <div className="chapter-graph-zoom" aria-label="Zoom">
-            <button type="button" onClick={() => setClampedZoom(current => current - ZOOM_STEP)} aria-label="Graph verkleinern">−</button>
-            <button type="button" onClick={() => setClampedZoom(1)} aria-label="Zoom zurücksetzen">{Math.round(zoom * 100)}%</button>
-            <button type="button" onClick={() => setClampedZoom(current => current + ZOOM_STEP)} aria-label="Graph vergrößern">+</button>
-          </div>
-          <div
-            className="chapter-graph-stage"
-            style={{
-              width: `${TOTAL_WIDTH * renderScale}px`,
-              height: `${TOTAL_HEIGHT * renderScale}px`,
-              '--graph-zoom': zoom,
-            } as CSSProperties}
-          >
-            <svg viewBox={`0 0 ${TOTAL_WIDTH} ${TOTAL_HEIGHT}`} role="img" aria-label="Netzwerk der Kapitel-Querverweise">
-              <g className="chapter-graph-parts" aria-hidden="true" transform={`translate(${CANVAS_PAD} ${CANVAS_PAD})`}>
-                {partBands.map(part => (
-                  <g
-                    key={part.title}
-                    className={[
-                      'chapter-graph-part',
-                      activePartTitle
-                        ? part.partTitle === activePartTitle ? 'chapter-graph-part--active' : 'chapter-graph-part--dimmed'
-                        : '',
-                    ].filter(Boolean).join(' ')}
-                  >
-                    <path d={part.path} className="chapter-graph-part-band" />
-                    <text
-                      x={part.labelX}
-                      y={part.labelY}
-                      textAnchor={part.labelAnchor}
-                      className="chapter-graph-part-label"
-                    >
-                      {part.title}
-                    </text>
-                  </g>
-                ))}
-              </g>
-              <g className="chapter-graph-edges" transform={`translate(${CANVAS_PAD} ${CANVAS_PAD})`}>
-                {graph.edges.map(edge => {
-                  const source = byId.get(edge.sourceId)
-                  const target = byId.get(edge.targetId)
-                  if (!source || !target) return null
-                  const curve = getEdgeCurve(source, target, edge.count)
-                  const relation = !hoveredId
-                    ? 'idle'
-                    : edge.sourceId === hoveredId ? 'outgoing'
-                      : edge.targetId === hoveredId ? 'incoming'
-                        : 'dimmed'
-                  return (
-                    <g
-                      key={`${edge.sourceId}-${edge.targetId}`}
-                      className={`chapter-graph-edge-wrap chapter-graph-edge-wrap--${relation}`}
-                    >
-                      <path
-                        d={curve.path}
-                        className="chapter-graph-edge"
-                        strokeWidth={Math.min(8, 1.2 + edge.count * 1.05)}
+      <div className="chapter-map-shell">
+        <div className="chapter-map-scroll" onMouseLeave={() => setFocusedId(null)}>
+          <div className="chapter-map-grid" aria-label="Kapitel nach Buchteilen">
+            {groups.map(group => (
+              <section key={group.partTitle} className="chapter-map-part" aria-label={group.partTitle}>
+                <div className="chapter-map-part-head">
+                  <span>{group.shortTitle}</span>
+                  <span>{group.nodes.length}</span>
+                </div>
+                <div className="chapter-map-part-list">
+                  {group.nodes.map(node => {
+                    const isFocused = focused?.chapter.id === node.chapter.id
+                    const isConnected = connectedIds.has(node.chapter.id)
+                    return (
+                      <OverviewCard
+                        key={node.chapter.id}
+                        chapter={node.chapter}
+                        showDescription={false}
+                        badge={node.chapter.num === '1' ? 'Einstieg' : undefined}
+                        className={[
+                          'overview-card--map',
+                          isFocused ? 'overview-card--map-focused' : '',
+                          focused && isConnected && !isFocused ? 'overview-card--map-connected' : '',
+                          focused && !isConnected && !isFocused ? 'overview-card--map-muted' : '',
+                        ].filter(Boolean).join(' ')}
+                        onMouseEnter={() => setFocusedId(node.chapter.id)}
+                        onFocus={() => setFocusedId(node.chapter.id)}
                       />
-                      {curve.arrows.map((arrow, index) => (
-                        <path
-                          key={index}
-                          d="M -7 -5 L 1 0 L -7 5"
-                          className="chapter-graph-edge-arrow"
-                          transform={`translate(${arrow.x} ${arrow.y}) rotate(${arrow.rotation})`}
-                          strokeWidth={Math.min(3.5, 1.2 + edge.count * 0.35)}
-                        />
-                      ))}
-                    </g>
-                  )
-                })}
-              </g>
-            </svg>
-            <div className="chapter-graph-card-layer" aria-label="Kapitel im Querverweis-Graphen">
-              {positioned.map(node => {
-                const isEntry = node.chapter.num === '1'
-                const isHovered = hoveredId === node.chapter.id
-                const active = !hoveredId || isHovered || connectedIds.has(node.chapter.id) || isEntry
-                return (
-                  <OverviewCard
-                    key={node.chapter.id}
-                    chapter={node.chapter}
-                    badge={isEntry ? 'Einstieg' : undefined}
-                    showDescription={isHovered}
-                    className={[
-                      'overview-card--graph',
-                      active ? 'overview-card--graph-active' : '',
-                      isEntry ? 'overview-card--graph-entry' : '',
-                      isEntry && !hoveredId ? 'overview-card--graph-entry-idle' : '',
-                      isHovered ? 'overview-card--graph-hovered' : '',
-                    ].filter(Boolean).join(' ')}
-                    style={{
-                      left: `${((node.x + CANVAS_PAD) / TOTAL_WIDTH) * 100}%`,
-                      top: `${((node.y + CANVAS_PAD) / TOTAL_HEIGHT) * 100}%`,
-                    }}
-                    onMouseEnter={() => setHoveredId(node.chapter.id)}
-                    onFocus={() => setHoveredId(node.chapter.id)}
-                  />
-                )
-              })}
-            </div>
+                    )
+                  })}
+                </div>
+              </section>
+            ))}
           </div>
         </div>
 
+        <aside className="chapter-map-focus" aria-label="Fokussiertes Kapitel">
+          {focused ? (
+            <>
+              <p className="chapter-map-focus-kicker">Fokus</p>
+              <h3>Kap. {focused.chapter.num} · {focused.chapter.title}</h3>
+              <p className="chapter-map-focus-meta">
+                {focused.incoming} eingehende, {focused.outgoing} ausgehende Verweise
+              </p>
+
+              <div className="chapter-map-links">
+                <div>
+                  <h4>Verweist auf</h4>
+                  {outgoing.length > 0 ? (
+                    outgoing.slice(0, 8).map(edge => {
+                      const target = byId.get(edge.targetId)
+                      if (!target) return null
+                      return (
+                        <NavLink key={`${edge.sourceId}-${edge.targetId}`} to={bookPath(target.chapter.path)}>
+                          <span>Kap. {target.chapter.num}</span>
+                          <strong>{target.chapter.title}</strong>
+                          <em>{edge.count}×</em>
+                        </NavLink>
+                      )
+                    })
+                  ) : (
+                    <p>Keine ausgehenden Kapitelverweise.</p>
+                  )}
+                </div>
+
+                <div>
+                  <h4>Wird referenziert von</h4>
+                  {incoming.length > 0 ? (
+                    incoming.slice(0, 8).map(edge => {
+                      const source = byId.get(edge.sourceId)
+                      if (!source) return null
+                      return (
+                        <NavLink key={`${edge.sourceId}-${edge.targetId}`} to={bookPath(source.chapter.path)}>
+                          <span>Kap. {source.chapter.num}</span>
+                          <strong>{source.chapter.title}</strong>
+                          <em>{edge.count}×</em>
+                        </NavLink>
+                      )
+                    })
+                  ) : (
+                    <p>Keine eingehenden Kapitelverweise.</p>
+                  )}
+                </div>
+              </div>
+            </>
+          ) : (
+            <p className="chapter-map-empty">Ein Kapitel fokussieren, um seine Querverweise zu sehen.</p>
+          )}
+        </aside>
       </div>
     </section>
   )
