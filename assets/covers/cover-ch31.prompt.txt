@@ -1,3 +1,29 @@
-Technical architectural chapter cover illustration for a professional German textbook. Pure white background, no gradients, no text, no labels, no numbers, no people, no photorealism. Minimal precise linework, bold architectural geometry, panoramic composition for a wide chapter banner. Palette: structural gray #6B7280, thermal blue #93C5FD, TGA/data amber #F59E0B, near-black #111827.
+Generiert: 2026-05-20 00:04
+Typ: cover
+Beschreibung: Panoramic commissioning, acceptance and handover cover for a professional architecture/BIM textbook. A cutaway technical room and residential floor span the full width: pipes, ducts, electrical panels, and ventilation units in structural gray with amber and blue system lines. Circular test loops, check paths, and handover document stacks are shown as abstract geometry around the systems. Include pressure test gauges as unlabeled circles, balancing valves, and as-built documentation sheets, all integrated in a precise architectural technical composition. Pure white background before background removal. No text. No labels. No numbers.
 
-Subject: Standalone panoramic commissioning cover: building systems, circular test loops and check geometry, no text, no labels.
+--- QA-Verlauf ---
+
+Versuch 1: ✗ nicht bestanden
+  - Presence of text in the form of check marks and lists on documents.
+  - Composition includes labels and symbols resembling annotations.
+  Korrektur: Remove any text, symbols, or marks from the documents and other elements. Ensure no annotations, check marks, or list indicators are present within the composition. The illustration should be purely visual without any indication of labeling.
+
+Versuch 2: ✓ bestanden
+  Korrektur: No changes needed; the image meets all criteria.
+
+--- Finaler Prompt ---
+
+Technical architectural illustration for a professional German textbook. Minimalist, clean design. Pure white background (#FFFFFF), no gradients, no drop shadows. Precise thin lines (1–2px equivalent). Geometric sans-serif font similar to Inter for all labels and annotations. No photorealism, no photographs, no people, no decorative elements. Modern flat design with clear hierarchy. All text and labels in German.
+
+Chapter cover banner illustration for a professional architectural textbook. Pure white background (#FFFFFF) — same clean technical style as all other book illustrations. NO text, NO labels, NO numbers, NO annotations anywhere. COMPOSITION: The image is displayed as a full-width banner at 220px height with a vertical anchor at 40% — the visible crop covers the CENTER BAND of the image (roughly 25%–60% from the top). Concentrate the most visually powerful elements in this central zone; top and bottom edges can be sparse. Use large, bold, clearly readable shapes that fill the full image width. Do NOT use a uniform grid of equal-sized panels. Prefer 1–3 dominant elements in dynamic panoramic arrangement. Use the shared color palette boldly: structural gray (#6B7280) for concrete/steel, thermal blue (#93C5FD) for insulation, TGA amber (#F59E0B) for MEP/materials. Think: the same technical precision as an in-page illustration, scaled up, stripped of labels, composed for visual impact. NOT photorealistic. NOT hand-drawn.
+
+Color palette: structural gray #6B7280, thermal insulation blue #93C5FD, TGA/MEP amber #F59E0B, pure white background #FFFFFF, near-black lines and text #111827.
+
+Subject: Panoramic commissioning, acceptance and handover cover for a professional architecture/BIM textbook. A cutaway technical room and residential floor span the full width: pipes, ducts, electrical panels, and ventilation units in structural gray with amber and blue system lines. Circular test loops, check paths, and handover document stacks are shown as abstract geometry around the systems. Include pressure test gauges as unlabeled circles, balancing valves, and as-built documentation sheets, all integrated in a precise architectural technical composition. Pure white background before background removal. No text. No labels. No numbers.
+
+KORREKTUREN (aus QA-Prüfung):
+- Presence of text in the form of check marks and lists on documents.
+- Composition includes labels and symbols resembling annotations.
+
+Bitte korrigiere: Remove any text, symbols, or marks from the documents and other elements. Ensure no annotations, check marks, or list indicators are present within the composition. The illustration should be purely visual without any indication of labeling.

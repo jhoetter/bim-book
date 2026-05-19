@@ -41,3 +41,5 @@ Slight atmospheric gradient at top and bottom edges. No text. No labels. No dime
 - Always use at least one accent color: amber (TGA/materials), blue (insulation/technical), gray (structure)
 - The visible banner crop shows roughly the CENTER 35% of the image height — put the best content there
 - Fill the full width; narrow/centered compositions look weak at 1536px wide
+- Current cover workflow uses `skills/imagegen/generate.py --type cover`: generate on a pure white background, then remove the white background to transparency. This lets the same cover work on dark overview cards and light pages.
+- Match the established covers with rich architectural detail: building sections, hatching, realistic technical linework, system overlays and material texture. Avoid sparse local-vector diagrams for covers.

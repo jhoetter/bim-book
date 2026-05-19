@@ -47,19 +47,20 @@ python3 skills/imagegen/generate.py \
 | `floorplan` | Grundrisse, Lagepläne | Querformat | Weißer Hintergrund, mit Beschriftung |
 | `comparison` | Materialvergleiche, Systemalternativen | Querformat | Weißer Hintergrund, mit Beschriftung |
 | `infographic` | Prozeßübersichten, HOAI-Phasen, Normenzusammenfassungen | Querformat | Weißer Hintergrund, mit Beschriftung |
-| `cover` | Kapitel-Titelbanner | Querformat | **Dunkelgrauer Hintergrund (#1B2030), keine Beschriftung, automatisch → `assets/covers/`** |
+| `cover` | Kapitel-Titelbanner | Querformat | **Weißer Hintergrund vor Freistellung, keine Beschriftung, automatisch → `assets/covers/`** |
 
 #### Cover-Typ: Automatisches Verhalten
 - Ausgabe automatisch in `assets/covers/` (kein `--output-dir` nötig)
-- Hintergrundentfernung automatisch deaktiviert (weißes Line-Work auf dunklem BG bleibt intakt)
+- Hintergrundentfernung bleibt aktiv: weiße Flächen werden transparent, damit die Cover auf hellen und dunklen Karten funktionieren
 - Kein Manifest-Eintrag (Cover erscheinen nicht in der Galerie)
-- Cover-spezifische QA: prüft visuellen Impact, kein Text, dunkler Hintergrund, keine Grid-Layouts
+- Cover-spezifische QA: prüft visuellen Impact, kein Text, zentrale Banner-Komposition, keine Grid-Layouts
 
 #### Tipps für gute Cover-Beschreibungen
 - **Zeig das Kapitelthema durch eine starke Bildkomposition**, kein Grid von gleich großen Feldern
 - Die sichtbare Zone im Banner ist die **Bildmitte** (~25–60% von oben) — platziere die wichtigsten Elemente dort
 - Nutze **1–3 dominante Elemente** in dynamischer Anordnung über die volle Breite
-- Amber (#F59E0B), Blau (#93C5FD) oder Grau (#6B7280) als Akzentfarben einsetzen — nicht nur weiß-auf-dunkel
+- Amber (#F59E0B), Blau (#93C5FD) oder Grau (#6B7280) als Akzentfarben einsetzen
+- Detailreiche technische Banner erzeugen: Hatching, Gebäudebezug, Material-/Systemtiefe und klare perspektivische Tiefe statt abstrakter Vektor-Icons
 - Kein Text, keine Maßketten, keine Beschriftungen
 
 ### Dry Run (Prompt prüfen ohne API-Aufruf)

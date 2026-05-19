@@ -1,3 +1,33 @@
-Technical architectural chapter cover illustration for a professional German textbook. Pure white background, no gradients, no text, no labels, no numbers, no people, no photorealism. Minimal precise linework, bold architectural geometry, panoramic composition for a wide chapter banner. Palette: structural gray #6B7280, thermal blue #93C5FD, TGA/data amber #F59E0B, near-black #111827.
+Generiert: 2026-05-20 00:14
+Typ: cover
+Beschreibung: Panoramic IFC data schema cover for a professional architecture/BIM textbook. A precise isometric building fragment on one side connects to a hierarchical object tree and nested entity boxes across the full width. Nodes, containment branches, and relationship lines flow from site to building to storeys to elements, but all boxes are empty with no text. Use structural gray model geometry, amber relationship lines, blue property sets, and near-black technical outlines. Dense architectural-data composition, not a generic network. Pure white background before background removal. No text. No labels. No numbers.
 
-Subject: Standalone panoramic IFC cover: hierarchy tree, object boxes and small model fragment, no text, no labels.
+--- QA-Verlauf ---
+
+Versuch 1: ✗ nicht bestanden
+  - Background is not purely white (#FFFFFF) before background removal
+  - Top and bottom edges are not as sparse as required
+  Korrektur: Ensure the background is pure white (#FFFFFF). Increase sparsity of elements at the top and bottom edges by reducing density or size of elements in these areas.
+
+Versuch 2: ✗ nicht bestanden
+  - Background is not pure white; appears slightly gray
+  - Visual elements not concentrated in the center band
+  Korrektur: Adjust the background color to pure white (#FFFFFF) for clarity and consistency. Rebalance the composition so that the majority of visual elements are focused in the center band, leaving the top and bottom edges more sparse to guide the viewer's eye across the image.
+
+Versuch 3: ✓ bestanden
+
+--- Finaler Prompt ---
+
+Technical architectural illustration for a professional German textbook. Minimalist, clean design. Pure white background (#FFFFFF), no gradients, no drop shadows. Precise thin lines (1–2px equivalent). Geometric sans-serif font similar to Inter for all labels and annotations. No photorealism, no photographs, no people, no decorative elements. Modern flat design with clear hierarchy. All text and labels in German.
+
+Chapter cover banner illustration for a professional architectural textbook. Pure white background (#FFFFFF) — same clean technical style as all other book illustrations. NO text, NO labels, NO numbers, NO annotations anywhere. COMPOSITION: The image is displayed as a full-width banner at 220px height with a vertical anchor at 40% — the visible crop covers the CENTER BAND of the image (roughly 25%–60% from the top). Concentrate the most visually powerful elements in this central zone; top and bottom edges can be sparse. Use large, bold, clearly readable shapes that fill the full image width. Do NOT use a uniform grid of equal-sized panels. Prefer 1–3 dominant elements in dynamic panoramic arrangement. Use the shared color palette boldly: structural gray (#6B7280) for concrete/steel, thermal blue (#93C5FD) for insulation, TGA amber (#F59E0B) for MEP/materials. Think: the same technical precision as an in-page illustration, scaled up, stripped of labels, composed for visual impact. NOT photorealistic. NOT hand-drawn.
+
+Color palette: structural gray #6B7280, thermal insulation blue #93C5FD, TGA/MEP amber #F59E0B, pure white background #FFFFFF, near-black lines and text #111827.
+
+Subject: Panoramic IFC data schema cover for a professional architecture/BIM textbook. A precise isometric building fragment on one side connects to a hierarchical object tree and nested entity boxes across the full width. Nodes, containment branches, and relationship lines flow from site to building to storeys to elements, but all boxes are empty with no text. Use structural gray model geometry, amber relationship lines, blue property sets, and near-black technical outlines. Dense architectural-data composition, not a generic network. Pure white background before background removal. No text. No labels. No numbers.
+
+KORREKTUREN (aus QA-Prüfung):
+- Background is not pure white; appears slightly gray
+- Visual elements not concentrated in the center band
+
+Bitte korrigiere: Adjust the background color to pure white (#FFFFFF) for clarity and consistency. Rebalance the composition so that the majority of visual elements are focused in the center band, leaving the top and bottom edges more sparse to guide the viewer's eye across the image.
