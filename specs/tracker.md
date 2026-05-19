@@ -1,6 +1,6 @@
 # Buch-Tracker: Vom Entwurf zum Modell
 
-Last updated: 2026-05-19 (Umnummerierung auf 26 Kapitel: K16 Bauprojektmanagement, K24.0 Bestandsmaßnahmen, K25 Projektarten)
+Last updated: 2026-05-19 (Projektprozess finalisiert: K16 Ausschreibung/Vergabe, K17 Bauoberleitung; Teil V als Projektprozess)
 
 Zweck: Master-Planungsdokument für alle 26 Kapitel. Kein Prosatext — nur Skizze: was muss rein, welche Bilder, welche Begriffe, welche Quellen. Writing Agents lesen diesen Tracker vor dem Schreiben eines Kapitels.
 
@@ -51,7 +51,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 |-------|---------|----------|----|
 | Pläne lesen (Grundriss/Schnitt/Ansicht/Detail) fehlt komplett — für IT-Einsteiger kritisch | **hoch** | Kap. 2 | OE-06 |
 | Holzbau fragmentiert über Kap. 3, 5, 8, 23 — kein kohärentes Bild | **hoch** | Kap. 5 | OE-08 |
-| Bauablauf / Gewerkekoordination zu dünn (~10% von Kap. 17) | **mittel** | Kap. 17 | — |
+| Bauablauf / Gewerkekoordination zu dünn — jetzt in K17 Bauoberleitung und K16 Vergabe kontextualisiert | **mittel** | Kap. 16, 17 | — |
 | Kap. 19 (IFC) zu kurz für Zielgruppe — Kernkapitel für Entwickler | **hoch** | Kap. 19 | — |
 | Kap. 4 (Tragwerk) ohne durchgerechnetes Zahlenbeispiel | **mittel** | Kap. 4 | — |
 | Kap. 6 (Wärmeschutz) nutzt digitales Format nicht — interaktive Tabelle fehlt | **niedrig** | Kap. 6 | — |
@@ -63,8 +63,36 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 | BAP-Inhalt nicht erklärt — Begriff in K15 eingeführt, aber Kapitelgliederung und Erstellungsprozess fehlen | **mittel** | Kap. 15 | — |
 | Innenausbau nicht systematisch — Trockenbau, Deckenraster, Unterdecken, Bodenbeläge (jenseits Estrich) fehlen | **mittel** | Kap. 5 | OE-09 |
 | Stellplatznachweis / Außenanlagen fehlen — Versickerung, Pkw-Zufahrt, Stellplatzsatzung Bayern | **niedrig** | Kap. 2, 14 | OE-10 |
-| Bauprojektmanagement fehlt als eigenständiges Thema — LP 8 (Bauoberleitung) zu abstrakt in K15.2; Terminplanung/Netzplan/kritischer Pfad/Kostenkontrolle auf Baustelle nirgends erklärt | **mittel** | Kap. 15, 16 | OE-11 |
-| Projektarten-Systematik fehlt komplett — Neubau vs. Bestand vs. Denkmal nicht als Rahmung; Bestandsmaßnahmen-Begriffe (Renovierung/Modernisierung/Sanierung/Umbau usw.) nirgends definiert | **mittel** | Kap. 24 | OE-12 |
+| Bauprojektmanagement war als eigenständiges Thema zu schwach — jetzt in K17 mit LP 8, Netzplan, kritischem Pfad, Nachtrag, Bautagebuch und Bauoberleitung geführt | **mittel** | Kap. 15, 17 | OE-11 |
+| Projektarten-Systematik war zu spät sichtbar — K01 rahmt das MFH-Leitbeispiel, K24 definiert Bestandsmaßnahmen, K25 systematisiert Neubau/Bestand/Denkmal | **mittel** | Kap. 1, 24, 25 | OE-12 |
+| Architekt als Problemlöser / Briefing / Bauherrengespräch stand zu spät — jetzt in K02 vor Planlesen, Raum, Bauphysik und BIM verankert | **hoch** | Kap. 2, 15 | OE-13 |
+| Standortanalyse (Sonne, Wind, Lärm, Topografie, Blick, Zufahrt, Nachbarschaft) war kein eigener methodischer Block — jetzt K02.1 | **hoch** | Kap. 2 | OE-14 |
+| Entwurfsdiagramme und Variantenkommunikation waren zu schwach — jetzt K02.2 mit Bubble-Diagramm, Erschließung, Sonne/Blick, Massenmodell, Kriterienmatrix | **hoch** | Kap. 2 | OE-15 |
+| Bauantrag war zu abstrakt — K14 ergänzt konkrete Unterlagen, Nachweise, Genehmigungsreife vs. Ausführungsreife und BIM-to-Permit | **mittel** | Kap. 14 | OE-16 |
+| Reale Vergabepraxis war zu dünn — K16 ergänzt Firmenfindung, private vs. öffentliche Vergabe, Preisspiegel, Bietergespräch, Zuschlag, GU vs. Einzelvergabe | **mittel** | Kap. 16 | OE-17 |
+
+---
+
+## Gliederungsreview 2026-05-19
+
+**Befund:** Die Kapitelnummern müssen nicht erneut global umgestellt werden. Die didaktische Reihenfolge ist aber nur dann stimmig, wenn architektonisches Problemlösen vor den technischen Schichten steht. K15 ist als HOAI-/Prozesskapitel zu spät für die erste Erklärung von Bauherrengespräch, Raumprogramm, Ort, Varianten und Entscheidung.
+
+**Entscheidung:** Keine globale Umnummerierung jenseits K16/K17-Tausch. Stattdessen wird K02 erweitert und als frühes Entwurfs- und Problemklärungs-Kapitel geführt. K15 verweist auf K02 und behandelt nur noch HOAI, Rollen, Honorar, Leistungsphasen und BIM-Lieferlogik. K14 erhält konkrete Bauantrags- und BIM-to-Permit-Inhalte. K16 erhält reale Vergabepraxis und Angebotsprüfung. K17 folgt danach als Construction Administration / Bauoberleitung.
+
+| Thema aus User-Prompt | Zielkapitel | Umsetzung |
+|---|---|---|
+| Architekt muss Probleme lösen, nicht nur Modelle bauen | K02 | neuer Abschnitt 2.0: Problemklärung, Bauherr, Budget, Nutzung, Kriterien |
+| Kunde/Briefing/Raumprogramm | K02 | Raumprogramm, Anforderungen, Zielkonflikte, Kriterienmatrix |
+| Sonne am Frühstückstisch, Abendsonne, Meerblick, Wind | K02 | Standortanalyse mit Sonne, Wind, Blick, Lärm, Topografie |
+| Skizzen, Diagramme, Varianten 1–5, Entscheidung für Variante | K02 | Varianten, Bubble-/Erschließungs-/Sonnen-/Blickdiagramme, Massenmodell |
+| Bauantrag konkret | K14 | Bauantrag als Paket aus Lageplan, Bauzeichnungen, Nachweisen, Formularen |
+| BIM erzeugt Bauantrag? | K14 | BIM-to-Permit: was automatisierbar ist und was Auslegung bleibt |
+| Handwerker finden / Kontakte vs. Ausschreibung | K16 | private vs. öffentliche Vergabe, Marktarbeit, Firmenanfrage |
+| Angebotsprüfung / wer bekommt Auftrag | K16 | Preisspiegel, Bietergespräch, Zuschlagsentscheidung |
+| Gantt, Bauzeitenplan, Baustellendokumentation, Fotos, Mängel | K17 | Bauoberleitung / Construction Administration |
+| Renovierung/Bestand/Denkmal | K24/K25 | bereits umgesetzt, bleibt dort |
+
+**Quellenhinweis:** Für diese Erweiterung relevante lokale Referenzen aus `~/Desktop/architecture books`: Ching `Architecture: Form, Space and Order`, Ching `Architectural Graphics`, Neufert `Bauentwurfslehre`, `Basics Technisches Zeichnen`, Brandt/Franssen `Basics Ausschreibung`, HOAI-Praxis/HOAI 2021, MBO/BauGB/GEG, Kochendörfer/Liebchen/Viering und Würfele/Bielefeld/Gralla.
 
 ---
 
@@ -73,7 +101,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 | # | Titel | Teil | Status | Prio | Wörter (Ziel) |
 |---|-------|------|--------|------|----------------|
 | 1 | Architektur als System | I | `Entwurf` | P0 | 2,800–3,200 |
-| 2 | Entwurf, Raum und Funktion | I | `Entwurf` | P0 | 4,200–5,000 ↑↑ |
+| 2 | Entwurf, Raum und Funktion | I | `Entwurf` | P0 | 5,400–6,200 ↑↑ |
 | 3 | Baustoffe | II | `Entwurf` | P1 | 3,000–3,500 |
 | 4 | Tragwerk: Lasten, Kräfte, Systeme | II | `Entwurf` | P1 | 3,200–3,800 ↑ |
 | 5 | Konstruktion: Gründung, Wand, Decke, Dach | II | `Entwurf` | P1 | 3,800–4,500 ↑ |
@@ -85,10 +113,10 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 | 11 | Lüftung & Raumluftqualität | IV | `Entwurf` | P1 | 2,500–3,000 |
 | 12 | Sanitär & Entwässerung | IV | `Entwurf` | P1 | 2,200–2,800 |
 | 13 | Elektro & Gebäudeautomation | IV | `Entwurf` | P1 | 2,500–3,000 |
-| 14 | Planungsrecht | V | `Entwurf` | P1 | 2,500–3,000 |
-| 15 | HOAI: Phasen, Leistungen, Honorar | V | `Entwurf` | P1 | 2,800–3,200 |
-| 16 | Bauprojektmanagement & Bauoberleitung | V | `Entwurf` | P1 | 2,500–3,000 |
-| 17 | Kosten & Ausschreibung | V | `Entwurf` | P1 | 2,800–3,200 ↑ |
+| 14 | Planungsrecht | V | `Entwurf` | P1 | 3,000–3,600 ↑ |
+| 15 | HOAI: Phasen, Leistungen, Honorar | V | `Entwurf` | P1 | 2,700–3,200 |
+| 16 | Kosten & Ausschreibung | V | `Entwurf` | P1 | 3,200–3,800 ↑ |
+| 17 | Bauprojektmanagement & Bauoberleitung | V | `Entwurf` | P1 | 2,500–3,000 |
 | 18 | Was BIM wirklich ist | VI | `Entwurf` | P1 | 2,200–2,800 |
 | 19 | IFC: Die Sprache des digitalen Gebäudes | VI | `Entwurf` | P1 | 4,000–5,000 ↑↑ |
 | 20 | Klassifikation | VI | `Entwurf` | P1 | 2,000–2,500 ↓ |
@@ -119,7 +147,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
   - 1.1 Wie Bauen komplex wurde — historischer Bogen: mittelalterlicher Baumeister → Industrialisierung (Stahl, Beton) → TGA als 40–60% der Baukosten; endet mit: Konsequenz = gemeinsame Sprache braucht man
   - 1.2 Das Schichtenmodell — Frank Duffy / Stewart Brand "Shearing Layers"; vier Schichten mit je eigenem H3: Tragstruktur (80–200 J.), Gebäudehülle (30–50 J.), TGA (15–25 J.), Innenausbau (5–15 J.); je: Lebensdauer, Materialien, Entwurfskonsequenz
   - 1.3 Interdependenzen — mind. 2 Beispiele zeigen wie Entscheidung in Schicht A alle anderen betrifft: (1) Fußbodenheizung-Entscheidung → Auflast, Vorlauftemp, Estrich-Einschränkung; (2) Installationsschacht-Lage → Grundrissfreiheit
-  - 1.4 Wie dieses Buch aufgebaut ist — Buchstruktur als Schichtenmodell-Logik; alle 7 Teile + je ein Kapitel-Link pro Teil; kein Anhang hier
+  - 1.4 Wie dieses Buch aufgebaut ist — Buchstruktur als Schichtenmodell-Logik; alle 7 Teile + je ein Kapitel-Link pro Teil; erklärt kurz, warum K7 als MFH-Leitbeispiel gewählt wurde und warum Projektarten erst in K25 systematisiert werden; kein Anhang hier
 
 - **Einzuführende Begriffe:** `schichtenmodell`, `tga` (beide hier — terms-registry bereits gesetzt)
 
@@ -145,8 +173,11 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 ### K02 — Entwurf, Raum und Funktion
 
 - **Status:** `Entwurf`
-- **Zielwörter:** 4,200–5,000 ↑↑ (erhöht wegen Pläne-lesen-Block + räumliche Entwurfsgrundlagen)
+- **Zielwörter:** 5,400–6,200 ↑↑ (erhöht wegen Problemklärung, Standortanalyse, Varianten + Pläne-lesen-Block)
 - **Kernfragen:**
+  - Wie wird aus Bauherrenwunsch, Ort, Budget und Recht eine architektonische Aufgabenstellung?
+  - Wie analysiert man Grundstück, Sonne, Wind, Lärm, Topografie, Blick und Nachbarschaft?
+  - Wie helfen Raumprogramm, Entwurfsdiagramme, Varianten und Kriterienmatrix bei Entscheidungen?
   - Wie liest man einen Architekturplan — was ist Grundriss, Schnitt, Ansicht, Detail?
   - Welche ersten Prinzipien räumlichen Entwerfens muss man kennen?
   - Wie werden Formen transformiert und Räume zueinander organisiert?
@@ -157,18 +188,24 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
   - Was bedeutet Barrierefreiheit als Entwurfsprinzip?
 
 - **Pflichtabschnitte (H2):**
-  - 2.0 Architekturpläne lesen ⚠️ NEU — **für Einsteiger kritisch, für Architekten selbstverständlich**: was ist ein Grundriss (horizontaler Schnitt, ~1,00 m Schnitthöhe), was ist ein Schnitt (vertikaler Schnitt), was ist eine Ansicht (Außenansicht ohne Schnitt), was ist ein Detail (Maßstab 1:10/1:5); Maßstäbe und wann man welchen nutzt (1:100 Grundriss, 1:50 Schnitt, 1:20/1:10 Detail); was gestrichelt vs. durchgezogen bedeutet; Nordreil und Orientierung; Legende; — ohne dieses Verständnis ist der Rest des Buches für Quereinsteiger schwer lesbar
-  - 2.1 Raum, Form und Transformation ⚠️ NEU — Architektur als Gestaltung bewohnbarer Räume, nicht nur Objektform; Primärformen/Volumen (Quader, Zylinder, Kugel/Pyramide als didaktische Grundkörper); geometrische Transformationen: Translation, Rotation, Spiegelung, Array/Wiederholung, Skalierung/Dehnung; additive und subtraktive Transformationen (Anfügen, Einschneiden, Aushöhlen, Durchdringen); immer mit Hinweis: formale Transformation darf nicht Selbstzweck bleiben, sondern muss auf Nutzung, Kontext, Licht, Konstruktion und Maßstab reagieren
-  - 2.2 Raumbeziehungen und Komposition ⚠️ NEU — Raum-in-Raum, angrenzende Räume, überlappende/interlockende Räume, verknüpfte Räume; Organisationsprinzipien: zentral, linear, radial, Cluster, Raster; Ordnungsprinzipien: Achse, Symmetrie, Hierarchie, Rhythmus, Wiederholung; räumliche Kräfte: menschlicher Körper, Boden/Gravitation, Licht/Sonne, Blickbezug innen-außen, Wind/Lüftung, Bewegung/Zirkulation, Funktion und Hülle
-  - 2.3 Was der Bebauungsplan vorgibt — GRZ, GFZ (Formeln + Beispielrechnung), MBO Gebäudeklassen; Abstandsflächen kurz; B-Plan lesen als Kompetenz
-  - 2.4 Raumplanung: Proportion und Maßstab — Neufert-Grundprinzipien: der Mensch als Maß; Mindest-Deckenhöhen (2,50 m WR, 2,75 m Büro); Türbreiten (0,875 m lichte Breite Standard, 0,90 m barrierefrei); Zimmerproportionen; Möblierbarkeit als Prüfkriterium
-  - 2.5 Erschließungstypen — Zweispänner, Dreispänner, Vierspänner, Laubengang; Tabelle mit: Orientierung, Erschließungsflächenanteil, wirtschaftliche Eignung; DIN 18065 Treppenmaße kurz
-  - 2.6 Barrierefreiheit als Entwurfsprinzip — DIN 18040-2 (Wohngebäude): Wendefläche ≥ 1,50 × 1,50 m, schwellenlose Zugänge, Aufzugmaße (min. 1,10 × 1,40 m Kabine), Türlichtes Maß 0,90 m; Barrierefreiheit als Qualitätsmerkmal, nicht Zusatz
-  - 2.7 Kompaktheit und A/V-Verhältnis — Formel, Beispielrechnung K7, Vergleich EFH, Bedeutung für Energieeffizienz → Vorausgriff Kap. 6
+  - 2.0 Architektur als Problemklärung ⚠️ NEU — **muss früh kommen, nicht erst K15**: Bauherrengespräch, Briefing, Raumprogramm, Budget, Nutzung, Stakeholder, Zielkonflikte; Wünsche in prüfbare Anforderungen übersetzen ("viel Licht" → Orientierung, Fensteranteil, Raumtiefe, Verschattung, sommerlicher Wärmeschutz); Kriterienmatrix als Gesprächswerkzeug
+  - 2.1 Standortanalyse und Randbedingungen ⚠️ NEU — Sonne, Wind, Lärm, Topografie, Boden, Vegetation, Zufahrt, Nachbarschaft, Blick, Adresse; Beispiel "Haus am Meer": Frühstückssonne, Abendsonne, Windschutz, Blick und Überhitzung als konkurrierende Entwurfsparameter; digitale Seite: `IfcSite`, Nordrichtung, Höhenbezug, Nachbarvolumen, Sonnenstand
+  - 2.2 Varianten, Diagramme und Entscheidung ⚠️ NEU — Bubble-Diagramm, Funktionsdiagramm, Erschließungsdiagramm, Sonnen-/Blickdiagramm, Massenmodell; mindestens drei echte Varianten; Kriterien: Wohnqualität, Kosten, Genehmigungsrisiko, Energie, TGA, Bauzeit; Entscheidung dokumentieren, nicht nur "gefällt besser"
+  - 2.3 Architekturpläne lesen ⚠️ NEU — **für Einsteiger kritisch, für Architekten selbstverständlich**: was ist ein Grundriss (horizontaler Schnitt, ~1,00 m Schnitthöhe), was ist ein Schnitt (vertikaler Schnitt), was ist eine Ansicht (Außenansicht ohne Schnitt), was ist ein Detail (Maßstab 1:10/1:5); Maßstäbe und wann man welchen nutzt (1:100 Grundriss, 1:50 Schnitt, 1:20/1:10 Detail); was gestrichelt vs. durchgezogen bedeutet; Nordpfeil und Orientierung; Legende
+  - 2.4 Raum, Form und Transformation ⚠️ NEU — Architektur als Gestaltung bewohnbarer Räume, nicht nur Objektform; Primärformen/Volumen; Translation, Rotation, Spiegelung, Array/Wiederholung, Skalierung/Dehnung; additive und subtraktive Transformationen; formale Transformation muss auf Nutzung, Kontext, Licht, Konstruktion und Maßstab reagieren
+  - 2.5 Raumbeziehungen und Komposition ⚠️ NEU — Raum-in-Raum, angrenzende Räume, überlappende/interlockende Räume, verknüpfte Räume; Organisationsprinzipien: zentral, linear, radial, Cluster, Raster; Ordnungsprinzipien: Achse, Symmetrie, Hierarchie, Rhythmus, Wiederholung; räumliche Kräfte: Mensch, Licht/Sonne, Blick, Wind/Lüftung, Bewegung/Zirkulation, Funktion und Hülle
+  - 2.6 Was der Bebauungsplan vorgibt — GRZ, GFZ (Formeln + Beispielrechnung), MBO Gebäudeklassen; Abstandsflächen kurz; B-Plan lesen als Kompetenz
+  - 2.7 Raumplanung: Proportion und Maßstab — Neufert-Grundprinzipien: der Mensch als Maß; Mindest-Deckenhöhen (2,50 m WR, 2,75 m Büro); Türbreiten (0,875 m lichte Breite Standard, 0,90 m barrierefrei); Zimmerproportionen; Möblierbarkeit als Prüfkriterium
+  - 2.8 Erschließungstypen — Zweispänner, Dreispänner, Vierspänner, Laubengang; Tabelle mit: Orientierung, Erschließungsflächenanteil, wirtschaftliche Eignung; DIN 18065 Treppenmaße kurz
+  - 2.9 Barrierefreiheit als Entwurfsprinzip — DIN 18040-2 (Wohngebäude): Wendefläche ≥ 1,50 × 1,50 m, schwellenlose Zugänge, Aufzugmaße (min. 1,10 × 1,40 m Kabine), Türlichtes Maß 0,90 m; Barrierefreiheit als Qualitätsmerkmal, nicht Zusatz
+  - 2.10 Kompaktheit und A/V-Verhältnis — Formel, Beispielrechnung K7, Vergleich EFH, Bedeutung für Energieeffizienz → Vorausgriff Kap. 6
 
 - **Einzuführende Begriffe:** `grz`, `gfz`, `mbo` (bereits in terms-registry gesetzt)
 
 - **Bilder (min. 6):**
+  - `kap02_problemklaerung` — Flussdiagramm, landscape ⚠️ NEU — Bauherrengespräch → Raumprogramm → Standortanalyse → Kriterien → Varianten → Entscheidung; Rückkopplungspfeile, weißer Hintergrund
+  - `kap02_standortanalyse` — Standortdiagramm, landscape ⚠️ NEU — Grundstück mit Sonnenlauf, Windrose, Lärmseite, Blickachse, Zufahrt, Nachbarbebauung, Topografie; weiße technische Darstellung
+  - `kap02_variantenmatrix` — Matrix/Diagramm, landscape ⚠️ NEU — drei K7-Varianten (Vierspänner, Laubengang, Hofhaus) gegen Kriterien Wohnqualität, Kosten, Energie, Genehmigungsrisiko, TGA; weißer Hintergrund
   - `kap02_planarten` — Erklärungsdiagramm, landscape ⚠️ NEU — vier Darstellungen desselben K7-Ausschnitts: Grundriss, Schnitt, Ansicht, Detail; je mit Maßstab und Schnittlage-Annotation; weißer Hintergrund
   - `kap02_formtransformationen` — Diagramm, landscape ⚠️ NEU — Grundkörper/Quader mit Transformationen: verschieben, drehen, spiegeln, skalieren, addieren, subtrahieren; je als kleiner räumlicher Schritt mit Pfeil, weißer Hintergrund
   - `kap02_raumorganisation` — Diagramm, landscape ⚠️ NEU — sechs räumliche Organisationsprinzipien: zentral, linear, radial, Cluster, Raster, Raum-in-Raum; klare kleine Grundriss-/Volumen-Schemata, weißer Hintergrund
@@ -177,15 +214,17 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
   - `kap02_av_verhaeltnis` — Vergleich, landscape — kompakter vs. verzweigter Baukörper mit A/V-Kennwerten (bereits spezifiziert in alter Version), weißer Hintergrund
 
 - **Kastanienallee-Boxen:**
-  - nach 2.2: K7 als Kombination aus Raster, zentralem Kern, linearem Zugang und Hof-/Straßenbezug; 6×6-m-Tragraster und Vierspänner als räumliche Komposition
-  - nach 2.3: GRZ 0,60 / GFZ 2,4 / GK 4 nach MBO — Rechenweg vollständig
-  - nach 2.5: Vierspänner, Windfang Südseite, drei Wohnungstypen je Geschoss
-  - nach 2.6: Aufzugspflicht K7 — GK 4, 4 Vollgeschosse → Art. 37 BayBO: Aufzug zwingend; 1 Aufzug im Treppenhauskern; Kabine 1,10 × 1,40 m lichte Maße (DIN 18040-2 barrierefrei); Schacht ca. 1,80 × 2,20 m Außenmaß Stahlbeton; Grubenmaß 1,10 m → Kellergeschoss notwendig; maschinenraumlos (MRL) nach DIN EN 81-20
-  - nach 2.7: A/V ≈ 0,38 m⁻¹, Berechnung, Vergleich mit EFH > 0,8 m⁻¹
+  - nach 2.1: K7-Randbedingungen — kompaktes innerstädtisches Grundstück, Straße Süd, Hof Nord, GRZ/GFZ ausgeschöpft, GK4/Aufzugspflicht
+  - nach 2.2: Drei frühe Entwurfsalternativen K7 (kompakter Vierspänner, Laubengang, Hofhaus) mit Kriterienmatrix: Wohnqualität, Genehmigungsrisiko, Kosten, Energie, TGA-Koordination
+  - nach 2.5: K7 als Kombination aus Raster, zentralem Kern, linearem Zugang und Hof-/Straßenbezug; 6×6-m-Tragraster und Vierspänner als räumliche Komposition
+  - nach 2.6: GRZ 0,60 / GFZ 2,4 / GK 4 nach MBO — Rechenweg vollständig
+  - nach 2.8: Vierspänner, Windfang Südseite, drei Wohnungstypen je Geschoss
+  - nach 2.9: Aufzugspflicht K7 — GK 4, 4 Vollgeschosse → Art. 37 BayBO: Aufzug zwingend; 1 Aufzug im Treppenhauskern; Kabine 1,10 × 1,40 m lichte Maße (DIN 18040-2 barrierefrei); Schacht ca. 1,80 × 2,20 m Außenmaß Stahlbeton; Grubenmaß 1,10 m → Kellergeschoss notwendig; maschinenraumlos (MRL) nach DIN EN 81-20
+  - nach 2.10: A/V ≈ 0,38 m⁻¹, Berechnung, Vergleich mit EFH > 0,8 m⁻¹
 
 - **BIM-Brücke:** `IfcSpace` (Raumfläche nach DIN 277); Raumprogramm als Datenanforderung; GFZ-Prüfung automatisierbar aus `IfcBuilding` + `IfcSite`; → Kap. 19, 20
 
-- **Quellen:** Neufert (Normmaße, Erschließung, Barrierefreiheit), Ching (Proportion, Raum), FK1 (Grundrissorganisation)
+- **Quellen:** Neufert (Normmaße, Erschließung, Barrierefreiheit, Raumprogramme), Ching Form/Space/Order (Raum, Komposition, Site Context, Licht/Blick), Ching Architectural Graphics (Diagramm, Planlesbarkeit, Darstellung), Basics Technisches Zeichnen (Planarten und Konventionen), FK1 (Grundrissorganisation)
 
 - **Normen:** DIN 18065 (Treppen), DIN 18040-2 (Barrierefreiheit Wohngebäude), BauNVO §19 (GRZ-Anrechnung)
 
@@ -603,25 +642,31 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 ### K14 — Planungsrecht
 
 - **Status:** `Entwurf`
-- **Zielwörter:** 2,500–3,000
+- **Zielwörter:** 3,000–3,600 ↑
 - **Kernfragen:**
   - Wer darf wo was bauen — wie ist das Baurecht aufgebaut?
   - Wie liest man einen Bebauungsplan, bevor der Stift ansetzt?
-  - Was passiert im Genehmigungsverfahren?
+  - Was passiert im Genehmigungsverfahren, und wie sieht ein Bauantrag konkret aus?
+  - Was kann ein BIM-Modell für den Bauantrag liefern — und was bleibt rechtliche Auslegung?
   - *(IT-Perspektive)* Wie ist Planungsrecht ein Constraint-System, das BIM-Modelle von außen beschränkt — und welche dieser Constraints sind heute schon automatisierbar prüfbar?
 
 - **Pflichtabschnitte (H2):**
   - 14.1 Das Baurecht-System — dreistufig: BauGB (Bundesrecht) → LBO/MBO (Landesrecht) → örtliche Satzungen; BauNVO als Verordnung zum BauGB; **IT-Einstieg:** Planungsrecht als Constraint-System — der B-Plan definiert Parameter (GRZ, GFZ, Traufhöhe, Nutzungsart), das Modell muss diese einhalten; GFZ-Prüfung ist heute aus IFC-Flächen automatisierbar; vollautomatische Code-Compliance (alle Abstandsflächen, alle Brandschutzanforderungen aus Modell) ist ein offenes Forschungsfeld (→ Kap. 26 für Ausblick)
   - 14.2 Bebauungsplan lesen — Festsetzungen: Art der Nutzung (WA, WR, MI, GE, GI), GRZ, GFZ, Traufhöhe, Firsthöhe, Baugrenzen, Baulinien; was fehlt wenn kein B-Plan: §34 (Innenbereich, Einfügen), §35 (Außenbereich, Privilegierung)
-  - 14.3 Genehmigungsverfahren — Beteiligte: Bauherr, Entwurfsverfasser (mit Bauvorlageberechtigung), Nachbarn (Abstandsflächen), TÖB; vereinfachtes vs. reguläres Verfahren; Zeitablauf 3–12 Monate; Baulast
-  - 14.4 Abstandsflächen — Berechnung: Wandhöhe × Faktor (0,4 in WA, 1,0 bei Wandhöhe > 16 m); Mindestabstand 3 m; Zusammenrechnung bei Grundstücksgrenzen; Ausnahmen
-  - 14.5 Sonderthemen — Denkmalschutz (Einschränkungen + Ausnahmen im GEG); Teilungsgenehmigung; Nachbarzustimmung; Bebauungsplanänderung; Befreiungen §31 BauGB
+  - 14.3 Genehmigungsverfahren und Bauantrag konkret ⚠️ ERWEITERT — Beteiligte: Bauherr, bauvorlageberechtigter Entwurfsverfasser, Behörde, Nachbarn, TÖB; vereinfachtes vs. reguläres Verfahren; Zeitablauf 3–12 Monate; Baulast; konkrete Bauantragsunterlagen: amtlicher Lageplan, Grundrisse/Schnitte/Ansichten, Baubeschreibung, GRZ/GFZ/Vollgeschoss-Berechnung, Stellplatznachweis, Brandschutz, Standsicherheit, Entwässerung, Schall/Wärme/Barrierefreiheit je nach Projekt; Unterschied Genehmigungsreife vs. Ausführungsreife
+  - 14.4 Digitaler Bauantrag und BIM-to-Permit ⚠️ NEU — digitale Portale sind oft PDF-/Formularprozesse, nicht automatisch Modellprüfung; BIM kann Flächen, Höhen, Geschosse, Abstände, Baugrenzen und einfache Regelchecks liefern; Grenzen: §34 Einfügen, Ortsbild, Brandschutzabwägung, Befreiung, lokale Satzungsauslegung; Software braucht Modell + maschinenlesbare Regelquelle + nachvollziehbare Nachweislogik
+  - 14.5 Abstandsflächen — Berechnung: Wandhöhe × Faktor (0,4 in WA, 1,0 bei Wandhöhe > 16 m); Mindestabstand 3 m; Zusammenrechnung bei Grundstücksgrenzen; Ausnahmen
+  - 14.6 Sonderthemen — Denkmalschutz (Einschränkungen + Ausnahmen im GEG); Teilungsgenehmigung; Nachbarzustimmung; Bebauungsplanänderung; Befreiungen §31 BauGB
+  - 14.7 Planungsrecht als Entwurfsfilter — rechtliche Hüllkurve und Variantenfilter; nicht erst vor Einreichung prüfen
+  - 14.8 Prüffragen für die Praxis — Satzungen, Stellplätze, Feuerwehr, Versickerung, Baumschutz, Baulasten, Nachweise
+  - 14.9 Entwicklerperspektive — harte Parameter vs. Auslegung; digitale Prüfung als Ampel mit Quelle und Begründung
 
 - **Einzuführende Begriffe:** `hoai` (kurze Einführung, Vertiefung in Kap. 15), `mbo` (schon eingeführt in Kap. 2), `vob` (hier erste kurze Erwähnung)
 
 - **Bilder (min. 2):**
   - `kap14_baurecht_hierarchie` — Pyramidendiagramm, portrait — BauGB → LBO → örtliche Satzungen, mit Beispielen je Ebene, weißer Hintergrund
   - `kap14_bebauungsplan_legende` — Planausschnitt + Legende, landscape — schematischer B-Plan-Auszug mit allen gängigen Festsetzungen annotiert, weißer Hintergrund
+  - `kap14_bauantrag_paket` — Dokumentenpaket/Flow, landscape ⚠️ NEU — Bauantrag als Mappe aus Lageplan, Bauzeichnungen, Baubeschreibung, Berechnungen und Nachweisen; digitaler Einreichungsweg daneben
 
 - **Kastanienallee-Boxen:**
   - nach 14.2: B-Plan K7 — WA (allgemeines Wohngebiet), GRZ 0,6 (Ausnahmewert), GFZ 2,4; Traufhöhe 13 m als Grenze für GK 4
@@ -629,7 +674,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 - **BIM-Brücke:** Planungsrecht als Datenanforderung (GFZ-Prüfung automatisierbar); `IfcSite` und Geländemodell; GIS-Schnittstellen; Building Permits als BIM-Use-Case; → Kap. 19, 20
 
-- **Quellen:** BauGB als Primärquelle, MBO, BauNVO
+- **Quellen:** BauGB als Primärquelle, MBO, BauNVO, HOAI 2021 Praxisquellen, lokale Normen/Gesetze aus `12_Normen-und-Gesetze`
 
 - **Normen:** BauGB, BauNVO, MBO/LBO (länderspezifisch)
 
@@ -640,44 +685,90 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 ### K15 — HOAI: Phasen, Leistungen, Koordination
 
 - **Status:** `Entwurf`
-- **Zielwörter:** 2,800–3,200
+- **Zielwörter:** 2,700–3,200 (Ausführungsplanung als Prozessbrücke ergänzt)
 - **Kernfragen:**
-  - Wie denken Architekten in Problemen, Alternativen und Kriterien?
   - Wie ist ein Bauprojekt organisiert — wer macht was wann?
   - Was leisten die 9 HOAI-Phasen, und warum sind sie so aufgeteilt?
+  - Wie wird aus Entwurf eine genehmigungsfähige, ausführbare und ausschreibbare Planung?
   - Wie passt BIM in die Leistungsphasen?
 
 - **Pflichtabschnitte (H2):**
-  - 15.1 Entwerfen als Problem-Suchprozess ⚠️ NEU — Entwerfen nicht als persönliche Formidee, sondern als Problem Seeking + Problem Solving; Schritte: Recherche, Problemdefinition, Alternativen entwickeln, Alternativen bewerten, Auswahl/Synthese, Kommunikation; Problemdefinition darf Lösung nicht schon vorwegnehmen; Stakeholder, Maßstabsebenen und interdisziplinäre Perspektiven einbeziehen; mindestens drei Alternativen entwickeln; Kriterienmatrix nutzen; Ergebnis kommunizierbar machen
-  - 15.2 Die neun Leistungsphasen — LP 1 (Grundlagenermittlung), LP 2 (Vorplanung, Kostenschätzung DIN 276), LP 3 (Entwurfsplanung, Kostenberechnung), LP 4 (Genehmigungsplanung, Bauantrag), LP 5 (Ausführungsplanung — die meiste Arbeit, Werkpläne), LP 6 (Vorbereitung Vergabe, LV), LP 7 (Mitwirkung Vergabe), LP 8 (Bauoberleitung — Baustelle), LP 9 (Objektbetreuung, Gewährleistung); je Phase: Ergebnis, beteiligte Fachplaner
+  - 15.1 HOAI als Prozessrahmen ⚠️ GEÄNDERT — Entwurfslogik/Problemklärung steht jetzt in K02; hier: Wie wird aus räumlicher Arbeit ein vertraglich und organisatorisch geführter Prozess? Unterschied Idee, Genehmigungsplanung, Ausführungsplanung, Ausschreibung und Bauüberwachung; Phase = Informationsreife + Verantwortlichkeit
+  - 15.2 Die neun Leistungsphasen — LP 1 (Grundlagenermittlung), LP 2 (Vorplanung, Kostenschätzung DIN 276), LP 3 (Entwurfsplanung, Kostenberechnung), LP 4 (Genehmigungsplanung, Bauantrag), LP 5 (Ausführungsplanung — Werkpläne, Details, Koordination), LP 6 (Vorbereitung Vergabe, LV), LP 7 (Mitwirkung Vergabe), LP 8 (Bauoberleitung), LP 9 (Objektbetreuung, Gewährleistung); je Phase: Ergebnis, beteiligte Fachplaner
   - 15.3 Honorarberechnung — anrechenbare Kosten (Bau + TGA, nicht Grundstück), Honorarzonen I–V, Mindestsatz; Beispielrechnung K7
   - 15.4 Fachplaner und ihre Rollen — Tragwerksplanung (LP 2–6), TGA (LP 2–8 je Gewerk), Brandschutz (LP 2–4 + 8), Bauphysik (LP 2–5); wer koordiniert wen (Objektplaner Architekt als Koordinator)
-  - 15.5 BIM in den Leistungsphasen — LOD 100 (LP 1), LOD 200 (LP 2–3), LOD 300 (LP 5), LOD 400 (Ausführung/Vergabe), LOD 500 (as-built); AIA (Auftraggeber-Informations-Anforderungen) als Steuerungsinstrument; BIM-Manager als neue Rolle
-  - 15.6 BIM-Ausführungsplan (BAP/BEP): Inhalt und Struktur ⚠️ NEU — der BAP ist das zentrale Steuerungsdokument eines BIM-Projekts; typische Kapitelstruktur: (1) Projektziele und BIM-Anwendungsfälle, (2) Modellstruktur und Namenskonventionen (Koordinatenursprung, Dateibenennungsschema), (3) LOD-Matrix je Disziplin und Leistungsphase, (4) Software und Dateiformate (IFC-Version, MVD, Exporteinstellungen), (5) CDE-Nutzungsvereinbarungen (Statusworkflow, Benennung nach ISO 19650), (6) Qualitätssicherung (wer prüft was wann — Kollisionsrunde, Modellkoordination), (7) Rollen und Verantwortlichkeiten (BIM-Manager, BIM-Koordinator je Gewerk, BIM-Autoren); Erstellung: AG-seitig AIA → AN-seitig BAP als Antwort darauf; Zeitpunkt: BAP fertig vor LP 3-Start; Praxisproblem: BAP-Vorlage oft copy-paste aus Vorprojekt ohne Anpassung
+  - 15.5 Ausführungsplanung und Bauunterlagen ⚠️ NEU — LP 5 als Design Development / Construction Documents: Werkpläne, Detailzeichnungen, Türlisten, Raumbücher, Durchbruchsplanung, TGA-Koordination, Brandschutzdetails, Material- und Bauteilfestlegungen; was in Plänen, Modell, Listen und Freigaben stehen muss, damit daraus LV, Bauantrag-Nachträge und Baustellenanweisungen werden können; Abgrenzung Genehmigungsplanung (rechtlich plausibel) vs. Ausführungsplanung (baubar, prüfbar, ausschreibbar)
+  - 15.6 BIM in den Leistungsphasen — LOD 100 (LP 1), LOD 200 (LP 2–3), LOD 300 (LP 5), LOD 400 (Ausführung/Vergabe), LOD 500 (as-built); AIA (Auftraggeber-Informations-Anforderungen) als Steuerungsinstrument; BIM-Manager als neue Rolle
+  - 15.7 BIM-Ausführungsplan (BAP/BEP): Inhalt und Struktur — der BAP ist das zentrale Steuerungsdokument eines BIM-Projekts; typische Kapitelstruktur: Projektziele, BIM-Anwendungsfälle, Modellstruktur, Namenskonventionen, LOD-Matrix, Software und Formate, CDE-Workflow, Qualitätssicherung, Rollen und Verantwortlichkeiten; Erstellung: AG-seitig AIA → AN-seitig BAP; Zeitpunkt: vor LP 3-Start
+  - 15.8 Warum die Reihenfolge zählt — Problemraum (K02) → Genehmigungsrahmen (K14) → Leistungsphasen/Ausführungsplanung (K15) → Kosten und Vergabe (K16) → Bauoberleitung (K17); Rücksprünge erklären, aber Prozesslogik bleibt erkennbar
+  - 15.9 Prüffragen für die Praxis — welche Phase liefert welche Entscheidung, welche Unterlage, welche Kostenstufe, welche Modellreife?
+  - 15.10 Entwicklerperspektive — Leistungsphasen als Zustandsmodell: Informationsreife, Freigabestatus, Verantwortlichkeiten, Modellversionen und Prüfregeln
 
 - **Einzuführende Begriffe:** `hoai`, `lod`, `bap`
 
 - **Bilder (min. 2):**
-  - `kap15_entwurfsprozess` — Flussdiagramm, landscape ⚠️ NEU — Recherche → Problemdefinition → Alternativen → Bewertung → Auswahl/Synthese → Kommunikation; Rückkopplungspfeile und Kriterienmatrix-Ausschnitt, weißer Hintergrund
   - `kap15_leistungsphasen` — Zeitstrahl, landscape — LP 1–9 als Balken mit Ergebnis je Phase, Fachplaner-Beteiligung als farbige Linien darunter, weißer Hintergrund
   - `kap15_bim_lod` — Progression, landscape — Gebäudemodell K7 in LOD 100/200/300/500 nebeneinander, zunehmender Detailgrad sichtbar, weißer Hintergrund
 
 - **Kastanienallee-Boxen:**
-  - nach 15.1: Drei frühe Entwurfsalternativen K7 (kompakter Vierspänner, Laubengang, Hofhaus) mit Kriterienmatrix: Wohnqualität, Genehmigungsrisiko, Kosten, Energie, TGA-Koordination
   - nach 15.2: Projektzeitplan K7 — LP 1 (3 Monate), LP 2–3 (4 Monate), LP 4 (2 Monate Genehmigung + 8 Monate Wartezeit), LP 5 (6 Monate), LP 6–7 (3 Monate), LP 8 (14 Monate Bauzeit), LP 9 (5 Jahre)
-  - nach 15.5: AIA K7 — welches Modell in welcher LP, LOD-Anforderungen je Disziplin
+  - nach 15.5: Ausführungsplanung K7 — typische Unterlagen: Schal- und Bewehrungskoordination, TGA-Schachtführung, Türliste, Brandschutzdetails, Dachaufbau, Aufzugsdetails
+  - nach 15.6: AIA K7 — welches Modell in welcher LP, LOD-Anforderungen je Disziplin
 
-- **BIM-Brücke:** LOD-Konzept zentral; AIA/EIR als Informationsanforderungen; BIM-Manager vs. BIM-Koordinator; → Kap. 18, 20
+- **BIM-Brücke:** LOD-Konzept zentral; AIA/EIR als Informationsanforderungen; BAP/BEP als Projektspielregel; Modellreife darf nicht mit Planungsreife verwechselt werden; → Kap. 18, 20, 21
 
-- **Quellen:** HOAI 2021 als Primärquelle, ISO19650
+- **Quellen:** HOAI 2021 als Primärquelle, ISO19650, HOAI-Praxis-Kommentare
 
-- **Normen:** HOAI 2021, DIN 276 (Kosten)
+- **Normen:** HOAI 2021, DIN 276 (Kosten), ISO 19650 (Informationsmanagement)
 
-- **Querverweise:** → Kap. 16 (Bauprojektmanagement, LP 8 detail), Kap. 17 (Kosten und LV), Kap. 18 (Was BIM ist), Kap. 21 (CDE und ISO 19650)
+- **Querverweise:** → Kap. 2 (Entwurf als Problemklärung), Kap. 14 (Bauantrag), Kap. 16 (Kosten und LV), Kap. 17 (Bauprojektmanagement, LP 8 detail), Kap. 18 (Was BIM ist), Kap. 21 (CDE und ISO 19650)
 
 ---
 
-### K16 — Bauprojektmanagement & Bauoberleitung
+### K16 — Kosten & Ausschreibung
+
+- **Status:** `Entwurf`
+- **Zielwörter:** 3,200–3,800 ↑
+- **Kernfragen:**
+  - Was kostet ein Gebäude wirklich, und wie ermittelt man das?
+  - Was ist ein Leistungsverzeichnis, und wie entsteht es aus Ausführungsplanung und Modell?
+  - Wie findet und bewertet man ausführende Unternehmen realistisch?
+  - Was regelt die VOB im Bauvertrag?
+  - Wie hängen Ausschreibung, Vergabe, Bauablauf und spätere Bauoberleitung zusammen?
+
+- **Pflichtabschnitte (H2):**
+  - 16.1 Kostenermittlung nach DIN 276 — Kostengliederung KG 100–700; Kostenkennwerte in €/m² BGF; Schätzung (LP 2) → Berechnung (LP 3) → Anschlag (LP 6/7) → Feststellung (Abschluss); Kosten als Entwurfsparameter, nicht nur Controlling
+  - 16.2 Leistungsverzeichnis und Ausschreibung — STLB-Bau; LV-Aufbau: OZ, Menge, Einheit, Kurztext, Langtext, Einheitspreis, Gesamtpreis; Ausführungsplanung als Voraussetzung; private Vergabe vs. öffentliche Vergabe (UVgO, VgV); bekannte Firmen anfragen ist möglich, aber Vergleichbarkeit und Dokumentation bleiben nötig
+  - 16.3 Vergabepraxis und Angebotsprüfung ⚠️ NEU — Firmen finden, Eignung prüfen, Submission, Preisspiegel, rechnerische/formale/technische Prüfung, auffällige Einheitspreise, Bietergespräch, Zuschlagsentscheidung; Vergabestrukturen: Einzelvergabe vs. Generalunternehmer vs. Generalübernehmer/Totalunternehmer; Wirkung auf Kostenrisiko, Koordination und Rolle des Architekten
+  - 16.4 VOB/B Grundlagen — Vertragstypen: Einheitspreisvertrag, Pauschalvertrag, GU-Vertrag; Nachträge (geänderte/zusätzliche Leistung §1/2 VOB/B); Abnahme; Gewährleistung 4 vs. 5 Jahre
+  - 16.5 Baustellenablauf und Gewerkekoordination — Reihenfolge der Gewerke als Vorschau auf K17: Rohbau → Dach/Dichtheit → TGA-Rohinstallation → Innenausbau; kritischer Pfad, Behinderungsanzeige und Bauzeitenplan hier nur einordnen, Details in K17
+  - 16.6 Vom Modell zur Baustelle — Modellmengen sind keine fertigen LV-Positionen; Nebenleistungen, Gerüste, Schutzmaßnahmen, Toleranzen, Abrechnungsregeln und Schnittstellen müssen beschrieben werden; 5D-BIM als Mapping-Problem
+  - 16.7 Prüffragen für die Praxis — Bezugsgrößen, Kostengruppen, Risikopuffer, Schnittstellen, Vorbemerkungen, Nachtragsrisiken, Modellmengen prüfen
+  - 16.8 Entwicklerperspektive — transparente Kostenpipeline: Modellversion, Mengenregel, Klassifikation, Preisquelle, Änderungsverfolgung
+
+- **Einzuführende Begriffe:** `vob`, `din-276`, `kostengruppe`, `leistungsverzeichnis`, `gewerk`
+
+- **Bilder (min. 3):**
+  - `kap16_din276_struktur` — Baumdiagramm, portrait — KG 100–700 mit typischen Kostenanteilen (% vom Gesamt), weißer Hintergrund
+  - `kap16_lv_auszug` — Tabellendarstellung, landscape — LV-Ausschnitt 3–4 Positionen Mauerwerk mit OZ, Menge, Einheit, Kurztext; schematisch, weißer Hintergrund
+  - `kap16_preisspiegel` — Vergleichstabelle, landscape ⚠️ NEU — drei Bieter, Positionen, Ausreißer markiert, Zuschlagsentscheidung nachvollziehbar; weißer Hintergrund
+
+- **Kastanienallee-Boxen:**
+  - nach 16.1: Kostenschätzung K7 — BGF 1.800 m² × 3.200 €/m² = 5,76 Mio. €; Aufschlüsselung KG 300/400/500/700
+  - nach 16.3: Preisspiegel K7 — Rohbauangebote mit auffälligen Einheitspreisen; Bietergespräch; Zuschlag an technisch plausibles wirtschaftlichstes Angebot
+  - nach 16.4: Vertragsstruktur K7 — Einheitspreisverträge Rohbau + TGA-Gewerke; GU-Option wurde geprüft aber verworfen
+
+- **BIM-Brücke:** 5D-BIM (Kosten im Modell); Mengenermittlung aus `IfcQuantitySet`; LV-Positionen aus Modellobjekten; GAEB-Format DA86; → Kap. 19, 20
+
+- **Quellen:** VOB/B als Primärquelle, DIN 276, Brandt/Franssen `Basics Ausschreibung`, VOB im Bild, HOAI-Praxis
+
+- **Normen:** DIN 276 (Kosten), VOB/A+B+C, UVgO, VgV
+
+- **Querverweise:** → Kap. 15 (Ausführungsplanung und Kostenstufen), Kap. 17 (Bauoberleitung), Kap. 20 (Klassifikation und STLB)
+
+---
+
+### K17 — Bauprojektmanagement & Bauoberleitung
 
 - **Status:** `Entwurf`
 - **Zielwörter:** 2,500–3,000
@@ -689,67 +780,31 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
   - Was ist eine Behinderungsanzeige — und warum ist sie rechtlich so entscheidend?
 
 - **Pflichtabschnitte (H2):**
-  - 16.1 Was Bauprojektmanagement bedeutet — Abgrenzung: Projektmanagement (Terminplanung, Kostenkontrolle, Risikomanagement, Kommunikation) vs. Objektplanung (fachliche Planungsleistung LP 1–7); wer übernimmt was: Architekt als Objektplaner, Projektsteuerer als PM-Dienstleister (§ 31 HOAI); in kleineren Projekten oft dieselbe Person; Überblick: was fällt unter LP 8 (Bauoberleitung), was unter LP 9 (Objektbetreuung); Abgrenzung Bauleiter Architekt vs. Bauleiter Unternehmen (verantwortlicher Bauleiter nach LBO)
-  - 16.2 Terminplanung — Instrumente im Überblick: (1) Balkenplan/Gantt-Diagramm (Gewerke als Zeilen, Zeit als x-Achse; einfach, universell verständlich); (2) Netzplan (Vorgänger-Nachfolger-Beziehungen mit Pufferzeiten; komplex aber aussagekräftig); kritischer Pfad (CPM): Kette von Vorgängen ohne Puffer → jede Verzögerung hier verzögert den Gesamttermin; wie man den kritischen Pfad abliest und was er für die Bauleitung bedeutet; Soll-Ist-Vergleich: wöchentliches Update des Bauzeitenplans; Terminverzug früh erkennen und dokumentieren; Zusammenhang mit Vertragsfristen: vereinbarte Fertigstellungstermine, Verzugszinsen, Vertragsstrafe (§ 5 VOB/B)
-  - 16.3 Kostenkontrolle auf der Baustelle — Soll-Ist-Vergleich nach DIN 276: Kostenanschlag (LP 6/7) vs. Kostenentwicklung auf der Baustelle; Nachtragsprüfung: wann ist ein Nachtrag berechtigt (§ 1 Abs. 3 VOB/B: geänderte Leistung, § 2 Abs. 6: zusätzliche Leistung); Prüfpflicht des Architekten; wie man ein Nachtragsangebot strukturiert prüft (Massenprüfung, Preisangemessenheit); typische Kostenfallen: unerwartete Bodenverhältnisse, Planänderungen nach LP 5, Koordinationsfehler TGA; Budget-Reserve (Unvorhergesehenes): üblich 5–10% der Bausumme; wann Bauherr informieren, wie dokumentieren
-  - 16.4 Bauoberleitung: die tägliche Arbeit (LP 8) — was der Architekt auf der Baustelle tut: Überwachung der Ausführung auf Übereinstimmung mit Genehmigungsplanung, Ausführungsplanung und LV; Baubesprechungen (wöchentlich, Teilnehmer, Protokollpflicht); Bautagebuch als Beweisdokument; was darin stehen muss: Wetter, Arbeiter, Leistungsstand, Anordnungen, Mängelrügen; Stichproben vs. kontinuierliche Überwachung (der Architekt kann nicht alles sehen — Haftungsfragen); Koordination der Fachplaner auf der Baustelle: wer löst Widersprüche zwischen TGA-Plan und Rohbaumaß; Behinderungsanzeige nach § 6 VOB/B: was sie ist (schriftliche Erklärung des Unternehmers, dass er gehindert ist), warum der Architekt sie prüfen und ggf. bestätigen oder abweisen muss, Fristrelevanz; Abnahme: förmliche Abnahme nach § 12 VOB/B, Abnahmeprotokoll, Mängelliste, Abnahmeverweigerung wegen wesentlicher Mängel; Teilabnahmen je Gewerk
-  - 16.5 BIM in der Bauphase — 4D-BIM: Terminplanung im Modell (Vorgänge verknüpft mit Modellelementen); Baufortschrittskontrolle mit Punktwolken und Drohnenaufnahmen; digitales Bautagebuch (CDE-Integration); as-built-Dokumentation: was muss nach LP 8 im Modell aktualisiert werden (ausgeführte Abweichungen, Revisionsstand); Übergabe as-built-Modell an LP 9 und FM
+  - 17.1 Was Bauprojektmanagement bedeutet — Abgrenzung: Projektmanagement (Terminplanung, Kostenkontrolle, Risikomanagement, Kommunikation) vs. Objektplanung; Architekt als Objektplaner, Projektsteuerer als PM-Dienstleister (§ 31 HOAI); LP 8 = Bauoberleitung, LP 9 = Objektbetreuung; Abgrenzung Bauleiter Architekt vs. Bauleiter Unternehmen/verantwortlicher Bauleiter nach LBO
+  - 17.2 Terminplanung — Balkenplan/Gantt, Netzplan, Critical Path Method; FA/FE/SA/SE, Gesamtpuffer, kritischer Pfad; Soll-Ist-Vergleich; Vertragsfristen nach § 5 VOB/B
+  - 17.3 Kostenkontrolle auf der Baustelle — Soll-Ist-Vergleich nach DIN 276; Nachtragsprüfung nach § 1 Abs. 3 und § 2 Abs. 6 VOB/B; Massenprüfung, Preisangemessenheit, Risikobudget, Bauherr informieren
+  - 17.4 Bauoberleitung: die tägliche Arbeit (LP 8) — Überwachung der Ausführung auf Übereinstimmung mit Genehmigung, Ausführungsplanung und LV; Baubesprechung, Protokoll, Bautagebuch, Mängelrüge, Behinderungsanzeige, Abnahme, Teilabnahmen
+  - 17.5 BIM in der Bauphase — 4D-BIM, Punktwolken/Drohnen, digitales Bautagebuch, BCF-Mängeltickets, as-built/LOD 500, Übergabe an LP 9/FM
 
 - **Einzuführende Begriffe:** `bauoberleitung`, `oba`, `bauzeitenplan`, `kritischer-pfad`, `behinderungsanzeige`, `bautagebuch`, `nachtrag`
 
 - **Bilder (min. 3):**
-  - `kap16_bauzeitenplan` — Gantt-Diagramm, landscape — K7 Bauablauf: Rohbau → Dach → TGA-Rohinstallation → Innenausbau → Außenanlagen; Gewerke als farbige Balken, kritischer Pfad hervorgehoben, Puffer sichtbar; weißer Hintergrund
-  - `kap16_netzplan_prinzip` — Netzplandiagramm, landscape — schematisches Beispiel mit 6–8 Vorgängen, Pufferzeit und kritischem Pfad (rot), Frühest-/Spätesttermin je Knoten; weißer Hintergrund
-  - `kap16_kostenkontrolle` — Diagramm, landscape — Kostenverlauf K7 von Anschlag bis Abschluss: Soll (geplant), Ist (fortlaufend), Prognose Endkosten; Nachtragsvolumen als Farbblock; weißer Hintergrund
+  - `kap17_bauzeitenplan` — Gantt-Diagramm, landscape — K7 Bauablauf: Rohbau → Dach → TGA-Rohinstallation → Innenausbau → Außenanlagen; Gewerke als farbige Balken, kritischer Pfad hervorgehoben, Puffer sichtbar; weißer Hintergrund
+  - `kap17_netzplan_prinzip` — Netzplandiagramm, landscape — schematisches Beispiel mit 6–8 Vorgängen, Pufferzeit und kritischem Pfad (rot), Frühest-/Spätesttermin je Knoten; weißer Hintergrund
+  - `kap17_kostenkontrolle` — Diagramm, landscape — Kostenverlauf K7 von Anschlag bis Abschluss: Soll, Ist, Prognose Endkosten; Nachtragsvolumen als Farbblock; weißer Hintergrund
 
 - **Kastanienallee-Boxen:**
-  - nach 16.2: Bauzeitenplan K7 — Rohbau 6 Monate, Dach/Dichtheit 1 Monat, TGA-Rohinstallation (parallel Rohbau) 4 Monate, Innenausbau-Sequenz 5 Monate (Estrich → KWL-Endmontage → Elektriker → Maler → Böden); Gesamtbauzeit 14 Monate; kritischer Pfad läuft über Rohbau → Estrich → Innenputz/Trockenbau → Fußbodenbelag
-  - nach 16.3: Nachtragsbeispiel K7 — unerwartete Altlast im Bodenaushub (Teereinschlüsse), Entsorgungsnachtrag: Massenprüfung (m³ belasteter Boden), Preisprüfung (€/t Sonderentsorgung), Freigabe durch Architekten mit Auflagenprotokoll
-  - nach 16.4: Baubesprechungsprotokoll K7 — Woche 14, Rohbaurückstand 3 Tage wegen Kranausfalls; Behinderungsanzeige Rohbauer; Konsequenz auf nachfolgende Gewerke dokumentiert
+  - nach 17.2: Bauzeitenplan K7 — Rohbau 6 Monate, Dach/Dichtheit 1 Monat, TGA-Rohinstallation parallel, Innenausbau-Sequenz; Gesamtbauzeit 14 Monate; kritischer Pfad Rohbau → Estrich → Innenputz/Trockenbau → Fußbodenbelag
+  - nach 17.3: Nachtragsbeispiel K7 — Altlast im Bodenaushub; Entsorgungsnachtrag; Massenprüfung, Preisprüfung, Freigabe mit Auflagenprotokoll
+  - nach 17.4: Baubesprechungsprotokoll K7 — Woche 14, Rohbaurückstand 3 Tage wegen Kranausfalls; Behinderungsanzeige; Auswirkung auf nachfolgende Gewerke dokumentiert
 
-- **BIM-Brücke:** 4D-BIM — `IfcTask`, `IfcRelSequence` (Aufgaben und Reihenfolge in IFC4); Verknüpfung Modellobjekte mit Bauablaufvorgängen; BCF für Mängel auf der Baustelle (Aufnahme am Tablet, Zuordnung zu Modellelement); → Kap. 18, 20
+- **BIM-Brücke:** 4D-BIM — `IfcTask`, `IfcRelSequence`; BCF für Mängel auf der Baustelle; → Kap. 18, 21, 26
 
-- **Quellen:** Kochendörfer/Liebchen/Viering (Bau-Projekt-Management, Kap. Terminplanung + Kostenkontrolle), Würfele/Bielefeld/Gralla (Bauobjektüberwachung, Kap. ÖBA + Dokumentation)
+- **Quellen:** Kochendörfer/Liebchen/Viering (Bau-Projekt-Management), Würfele/Bielefeld/Gralla (Bauobjektüberwachung)
 
-- **Normen:** VOB/B § 4 (Ausführung), § 5 (Ausführungsfristen), § 6 (Behinderung), § 12 (Abnahme), § 14 (Abrechnung); HOAI 2021 Anlage 10 (LP 8 Grundleistungen Objektplanung); BayBO Art. 54 / MBO § 59 (verantwortlicher Bauleiter)
+- **Normen:** VOB/B § 4, § 5, § 6, § 12, § 14; HOAI 2021 Anlage 10 (LP 8 Objektplanung); BayBO Art. 54 / MBO § 59 (verantwortlicher Bauleiter)
 
-- **Querverweise:** → Kap. 15 (HOAI LP-Überblick), Kap. 17 (Kosten + VOB/B), Kap. 18 (BIM), Kap. 21 (CDE, Dokumentation)
-
----
-
-### K17 — Kosten & Ausschreibung
-
-- **Status:** `Entwurf`
-- **Zielwörter:** 2,800–3,200 ↑
-- **Kernfragen:**
-  - Was kostet ein Gebäude wirklich, und wie ermittelt man das?
-  - Was ist ein Leistungsverzeichnis, und wie entsteht es?
-  - Was regelt die VOB im Bauvertrag?
-  - In welcher Reihenfolge bauen die Gewerke, und was passiert wenn einer im Verzug ist?
-
-- **Pflichtabschnitte (H2):**
-  - 17.1 Kostenermittlung nach DIN 276 — Kostengliederung KG 100–700; Kostenkennwerte in €/m² BGF für MFH (Rohbau ca. 600–900 €/m², Gesamtbau 2.500–4.000 €/m²); Schätzung (LP 2) → Berechnung (LP 3) → Anschlag (LP 6) → Feststellung (Abschluss)
-  - 17.2 Leistungsverzeichnis und Ausschreibung — STLB-Bau: Standardtexte je Gewerk; LV-Aufbau: OZ, Menge, Einheit, Kurztext, Einheitspreis, Gesamtpreis; öffentliche Vergabe (UVgO, VgV) vs. freie Vergabe
-  - 17.3 VOB/B Grundlagen — Vertragstypen: Einheitspreisvertrag (Mengen offen), Pauschalvertrag (Festpreis), GU-Vertrag; Nachträge (wann berechtigt: geänderte/zusätzliche Leistung §1/2 VOB/B); Abnahme (förmlich, fiktiv); Gewährleistung 4 vs. 5 Jahre
-  - 17.4 Baustellenablauf und Gewerkekoordination ⚠️ AUSGEBAUT — was Quereinsteiger am meisten überrascht: Reihenfolge der Gewerke ist nicht flexibel; Rohbau → Dach/Dichtheit → Innenausbau-Reihenfolge (Estrich vor Trockenbau? oder umgekehrt?); was ein Bauzeitenplan (Balkenprogramm) ist und wer ihn macht; kritischer Pfad (was verzögert alles andere?); Behinderungsanzeige: wann und warum schriftlich; Abnahme je Gewerk vs. Gesamtabnahme; Mängelprotokoll und Beseitigungsfristen; Baustelleneinrichtungsplan: Kranstandort, Materiallager, Zufahrt
-
-- **Einzuführende Begriffe:** `vob`
-
-- **Bilder (min. 2):**
-  - `kap17_din276_struktur` — Baumdiagramm, portrait — KG 100–700 mit typischen Kostenanteilen (% vom Gesamt), weißer Hintergrund
-  - `kap17_lv_auszug` — Tabellendarstellung, landscape — LV-Ausschnitt 3–4 Positionen Mauerwerk mit OZ, Menge, Einheit, Kurztext; schematisch, weißer Hintergrund
-
-- **Kastanienallee-Boxen:**
-  - nach 17.1: Kostenschätzung K7 — BGF 1.800 m² × 3.200 €/m² = 5,76 Mio. €; Aufschlüsselung KG 300/400/500/700
-  - nach 17.3: Vertragsstruktur K7 — Einheitspreisverträge Rohbau + TGA-Gewerke; GU-Option wurde geprüft aber verworfen
-
-- **BIM-Brücke:** 5D-BIM (Kosten im Modell); Mengenermittlung aus `IfcQuantitySet`; LV-Positionen aus Modellobjekten; GAEB-Format DA86; → Kap. 19, 20
-
-- **Quellen:** VOB/B als Primärquelle, DIN 276
-
-- **Normen:** DIN 276 (Kosten), VOB/A+B+C, UVgO, VgV
-
-- **Querverweise:** → Kap. 15 (HOAI Leistungsphasen und Kostenstufen), Kap. 20 (Klassifikation und STLB)
+- **Querverweise:** → Kap. 15 (HOAI LP-Überblick), Kap. 16 (Kosten + VOB/B), Kap. 18 (BIM), Kap. 21 (CDE, Dokumentation), Kap. 26 (Digitaler Zwilling)
 
 ---
 
@@ -844,7 +899,7 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 - **Pflichtabschnitte (H2):**
   - 20.1 Das Problem — gleiche Objekte, unterschiedliche Namen in verschiedenen Modellen; Chaos bei automatischer Auswertung (Mengen, Kosten, FM); Lösung: externe Klassifikationssysteme; konkretes Beispiel: "Außenwand" in Revit vs. "Tragende Außenwand" in Ausschreibung vs. KG 331 in DIN 276
-  - 20.2 Deutsche Klassifikation im Kern — **Schwerpunkt**: DIN 277 (Flächen und Rauminhalte: BGF, NUF, VF — die Basis aller Flächenberechnungen); DIN 276 (Kosten: KG 100–700, wie in Kap. 17); STLB-Bau (Leistungstexte für Ausschreibung); wie die drei zusammenspielen; was ein BIM-Entwickler kennen muss
+  - 20.2 Deutsche Klassifikation im Kern — **Schwerpunkt**: DIN 277 (Flächen und Rauminhalte: BGF, NUF, VF — die Basis aller Flächenberechnungen); DIN 276 (Kosten: KG 100–700, wie in Kap. 16); STLB-Bau (Leistungstexte für Ausschreibung); wie die drei zusammenspielen; was ein BIM-Entwickler kennen muss
   - 20.3 Internationale Systeme im Überblick — OmniClass (14 Tabellen, US): Table 21 (Elements) und Table 41 (Materials) als die für BIM relevantesten; Uniclass 2015 (UK): nur wenn internationale Projekte; ISO 12006-2 als gemeinsames Framework dahinter; Empfehlung: wer nur in DE arbeitet braucht OmniClass nicht zu kennen
   - 20.4 Verbindung IFC ↔ Klassifikation — `IfcClassificationReference`; wie man ein IFC-Objekt mit DIN 276 / STLB referenziert; Mapping-Tabellen; Mehrsprachigkeit als Dauerproblems; IDS (Information Delivery Specification) als modernerer Ansatz
 
@@ -857,13 +912,13 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 - **Kastanienallee-Boxen:**
   - nach 20.5: Klassifikation an K7-Außenwand — OmniClass Table 21 Code + Uniclass Pr-Code + DIN276 KG 331
 
-- **BIM-Brücke:** `IfcClassificationReference`; Mengenermittlung aus klassifizierten Objekten; → Kap. 17 (Kosten aus Modell)
+- **BIM-Brücke:** `IfcClassificationReference`; Mengenermittlung aus klassifizierten Objekten; → Kap. 16 (Kosten aus Modell)
 
 - **Quellen:** OmniClass-Tabellen (im Ordner 09_Digital-und-BIM/OmniClass), Uniclass-Dokumente
 
 - **Normen:** DIN 277, DIN 276, ISO 12006-2 (Klassifikation von Bauwerken)
 
-- **Querverweise:** → Kap. 17 (Kosten und STLB), Kap. 19 (IFC), Kap. 21 (CDE und Klassifikation)
+- **Querverweise:** → Kap. 16 (Kosten und STLB), Kap. 19 (IFC), Kap. 21 (CDE und Klassifikation)
 
 ---
 
@@ -1139,7 +1194,12 @@ Beim Schreiben eines Kapitels sollen fehlende Einträge aktiv ergänzt werden:
 | OE-06 | "Pläne lesen" (Grundriss/Schnitt/Ansicht/Detail): als eigenes Mini-Kapitel 2a oder als Block 2.0 in Kap. 2? | Kap. 2 | Block 2.0 in Kap. 2 — eigenes Kapitel übertreibt |
 | OE-07 | Kap. 26 eigenständig oder als Ausblick-Abschnitt am Ende von Kap. 22 integrieren? | Kap. 22 + 26 | Eigenständig lassen, aber kürzer (→ 1,200–1,800 W) |
 | OE-08 | Holzbau: eigenes Kapitel 5a (zwischen Kap. 5 und 6) oder stark ausgebauter Abschnitt 5.6 in Kap. 5? | Kap. 5 | Abschnitt 5.6 — eigenes Kapitel sprengt die Struktur |
-| OE-09 | Innenausbau (Trockenbau-Systemwände, Deckenraster, Unterdecken, Bodenbeläge über Estrich) als eigener Abschnitt 5.7 in Kap. 5 oder in Kap. 17 (Ausschreibung)? Relevant für LOD 300–400 und 5D-BIM. | Kap. 5, 17 | Noch offen — bisher fehlt Trockenbau komplett im Tracker |
+| OE-09 | Innenausbau (Trockenbau-Systemwände, Deckenraster, Unterdecken, Bodenbeläge über Estrich) als eigener Abschnitt 5.7 in Kap. 5 oder in Kap. 16 (Ausschreibung)? Relevant für LOD 300–400 und 5D-BIM. | Kap. 5, 16 | Noch offen — bisher fehlt Trockenbau komplett im Tracker |
 | OE-10 | Stellplatznachweis und Außenanlagen (Versickerung, Pkw-Zufahrtsquerschnitt, Stellplatzsatzung Bayern) als Ergänzung in Kap. 2.1 oder Kap. 14.5? K7 mit GRZ 0,6 braucht Vollständigkeit für die Genehmigungsfähigkeit. | Kap. 2, 14 | Noch offen — K7 ohne Stellplatznachweis ist formal unvollständig |
-| OE-11 | K16: Bauprojektmanagement als eigenständiges Kapitel oder als ausgebaute LP-8-Sektion in K15.2? Eigenständiges Kapitel gibt dem Thema Raum (Netzplan, Nachtragsmanagement, Dokumentation), fragmentiert aber Teil V auf 4 Kapitel. | Kap. 15, 16 | Entscheidung: Eigenes Kapitel K16 — LP 8 + Terminplanung + Dokumentation trägt 2.500+ Wörter; K15.2 verweist knapp auf K16 |
-| OE-12 | K25: Projektarten-Kapitel am Ende von Teil VII (nach K24) oder als Rahmungskapitel früher im Buch (z. B. nach K01 als K01a)? Im jetzigen Aufbau fehlt dem Leser die Einordnung am Anfang, dass das Buch auf den Typus MFH fokussiert. | Kap. 1, 25 | Entscheidung: K25 bleibt Teil VII als Vertiefung; K01 erhält später einen expliziten Absatz „Was dieses Buch nicht behandelt: EFH, Sonderbau, Denkmal — aber Kap. 25 gibt die Systematik" |
+| OE-11 | K17: Bauprojektmanagement als eigenständiges Kapitel oder als ausgebaute LP-8-Sektion in K15.2? Eigenständiges Kapitel gibt dem Thema Raum (Netzplan, Nachtragsmanagement, Dokumentation), fragmentiert aber Teil V auf 4 Kapitel. | Kap. 15, 17 | Entscheidung: Eigenes Kapitel K17 — LP 8 + Terminplanung + Dokumentation trägt 2.500+ Wörter; K15.2 verweist knapp auf K17 |
+| OE-12 | K25: Projektarten-Kapitel am Ende von Teil VII (nach K24) oder als Rahmungskapitel früher im Buch (z. B. nach K01 als K01a)? Im jetzigen Aufbau fehlt dem Leser die Einordnung am Anfang, dass das Buch auf den Typus MFH fokussiert. | Kap. 1, 25 | Entscheidung: K25 bleibt Teil VII als Vertiefung; K01 erklärt jetzt kurz, warum K7 als MFH-Leitbeispiel gewählt ist und verweist auf K25 |
+| OE-13 | Architekt als Problemlöser früh oder erst im HOAI-Prozess erklären? | Kap. 2, 15 | Entscheidung: Früh in K02. K15 bleibt Prozess-/Leistungsphasen-Kapitel und verweist zurück |
+| OE-14 | Standortanalyse als eigener Block oder in Planungsrecht/Entwurf verstreuen? | Kap. 2 | Entscheidung: K02.1 als eigener methodischer Block, weil Ort und Problemraum vor der Form kommen |
+| OE-15 | Varianten, Skizzen und Diagramme als Randthema oder als Kern des frühen Entwurfs? | Kap. 2 | Entscheidung: K02.2 als Pflichtabschnitt mit Variantenlogik, Diagrammen und Kriterienmatrix |
+| OE-16 | Bauantrag abstrakt halten oder konkrete Unterlagen und BIM-to-Permit erklären? | Kap. 14 | Entscheidung: K14.3/K14.4 konkretisieren Bauantragspaket, Genehmigungsreife und digitale Grenzen |
+| OE-17 | Vergabe nur als VOB/LV erklären oder reale Vergabepraxis ergänzen? | Kap. 16 | Entscheidung: K16.3 ergänzt Firmenfindung, Preisspiegel, Bietergespräch, Zuschlagsentscheidung und Vergabestrukturen |

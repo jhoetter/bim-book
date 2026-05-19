@@ -18,8 +18,8 @@
 #   13-elektro
 #   14-planungsrecht
 #   15-hoai
-#   16-bauprojektmanagement-bauoberleitung
-#   17-kosten-ausschreibung
+#   16-kosten-ausschreibung
+#   17-bauprojektmanagement-bauoberleitung
 #   18-was-bim-wirklich-ist
 #   19-ifc
 #   20-klassifikation
@@ -145,7 +145,7 @@ terms:
     introduced_in: "06-waermeschutz-geg"
 
   vob:
-    introduced_in: "16-bauprojektmanagement-bauoberleitung"
+    introduced_in: "16-kosten-ausschreibung"
 
   wdvs:
     introduced_in: "05-konstruktion"
@@ -174,13 +174,13 @@ terms:
   beton:
     introduced_in: "03-baustoffe"
   bauoberleitung:
-    introduced_in: "16-bauprojektmanagement-bauoberleitung"
+    introduced_in: "17-bauprojektmanagement-bauoberleitung"
   bauzeitenplan:
-    introduced_in: "16-bauprojektmanagement-bauoberleitung"
+    introduced_in: "17-bauprojektmanagement-bauoberleitung"
   bautagebuch:
-    introduced_in: "16-bauprojektmanagement-bauoberleitung"
+    introduced_in: "17-bauprojektmanagement-bauoberleitung"
   behinderungsanzeige:
-    introduced_in: "16-bauprojektmanagement-bauoberleitung"
+    introduced_in: "17-bauprojektmanagement-bauoberleitung"
   cde:
     introduced_in: "21-prozess-kollaboration"
   daemmstoff:
@@ -194,7 +194,7 @@ terms:
   diffusion:
     introduced_in: "07-feuchteschutz"
   din-276:
-    introduced_in: "16-bauprojektmanagement-bauoberleitung"
+    introduced_in: "16-kosten-ausschreibung"
   din-277:
     introduced_in: "20-klassifikation"
   digitaler-zwilling:
@@ -216,7 +216,7 @@ terms:
   georeferenzierung:
     introduced_in: "19-ifc"
   gewerk:
-    introduced_in: "16-bauprojektmanagement-bauoberleitung"
+    introduced_in: "16-kosten-ausschreibung"
   glas:
     introduced_in: "03-baustoffe"
   holz:
@@ -238,9 +238,9 @@ terms:
   kollisionspruefung:
     introduced_in: "21-prozess-kollaboration"
   kostengruppe:
-    introduced_in: "17-kosten-ausschreibung"
+    introduced_in: "16-kosten-ausschreibung"
   kritischer-pfad:
-    introduced_in: "16-bauprojektmanagement-bauoberleitung"
+    introduced_in: "17-bauprojektmanagement-bauoberleitung"
   kreislaufwirtschaft:
     introduced_in: "23-nachhaltigkeit"
   lca:
@@ -250,7 +250,7 @@ terms:
   leistungsphase:
     introduced_in: "15-hoai"
   leistungsverzeichnis:
-    introduced_in: "17-kosten-ausschreibung"
+    introduced_in: "16-kosten-ausschreibung"
   luftschall:
     introduced_in: "08-schallschutz"
   materialpass:
@@ -264,9 +264,9 @@ terms:
   modulbau:
     introduced_in: "25-projektarten-neubau-bestand-denkmal"
   nachtrag:
-    introduced_in: "16-bauprojektmanagement-bauoberleitung"
+    introduced_in: "17-bauprojektmanagement-bauoberleitung"
   oba:
-    introduced_in: "16-bauprojektmanagement-bauoberleitung"
+    introduced_in: "17-bauprojektmanagement-bauoberleitung"
   photovoltaik:
     introduced_in: "13-elektro"
   properties:
@@ -308,6 +308,6 @@ terms:
   waermepumpe:
     introduced_in: "10-heizung-waermeversorgung"
   gaeb:
-    introduced_in: "17-kosten-ausschreibung"
+    introduced_in: "16-kosten-ausschreibung"
   5d-bim:
-    introduced_in: "17-kosten-ausschreibung"
+    introduced_in: "16-kosten-ausschreibung"

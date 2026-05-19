@@ -1,6 +1,6 @@
 # Kapitel 14 – Planungsrecht
 
-*Teil V – Recht & Prozess*
+*Teil V – Projektprozess*
 
 ---
 
@@ -11,7 +11,7 @@ Ein Grundstück wirkt frei, bis man seine Regeln liest. Eine Linie im ::Bebauung
 !!! ziel "Nach diesem Kapitel können Sie …"
     - BauGB, BauNVO, Landesbauordnung und Satzungen als Regelhierarchie einordnen
     - Bebauungspläne mit GRZ, GFZ, Baugrenzen und Nutzungsart lesen
-    - Genehmigung, ::Abstandsfläche:: und Befreiungen als Entwurfsbedingungen verstehen
+    - Bauantrag, digitale Genehmigung, ::Abstandsfläche:: und Befreiungen als Entwurfsbedingungen verstehen
 
 ## 14.1 Das Baurecht-System
 
@@ -56,22 +56,34 @@ Am Genehmigungsverfahren sind Bauherr, bauvorlageberechtigter Entwurfsverfasser,
 
 Der Bauantrag enthält Lageplan, Bauzeichnungen, Baubeschreibung, Standsicherheits- und Brandschutznachweise sowie weitere Nachweise. Die Dauer schwankt stark: drei Monate sind möglich, zwölf Monate ebenfalls. Baulasten können erforderlich werden, wenn öffentlich-rechtliche Verpflichtungen auf einem Grundstück gesichert werden müssen.
 
+Konkret ist der Bauantrag ein Paket aus Zeichnungen, Formularen und Nachweisen. Dazu gehören regelmäßig amtlicher Lageplan, Bauzeichnungen mit Grundrissen, Schnitten und Ansichten, Baubeschreibung, Berechnung von Grundfläche und Geschossfläche, Stellplatznachweis, Brandschutznachweis, Standsicherheitsnachweis, Entwässerungsangaben und je nach Vorhaben Schallschutz, Wärmeschutz, Barrierefreiheit, Baumbestand oder Denkmalschutz. Die Liste wirkt trocken, ist aber Entwurfsarbeit: Jeder Nachweis prüft, ob die räumliche Idee öffentlich-rechtlich tragfähig ist.
+
+Für Planer ist wichtig, dass Bauantragspläne keine Entwurfsskizzen mehr sind. Sie müssen eindeutig genug sein, damit die Behörde prüfen kann. Gleichzeitig sind sie noch nicht automatisch ausführungsreif. Ein genehmigter Grundriss sagt, wo Wand, Tür und Nutzung liegen; die detaillierte Schichtung, Durchbruchsplanung und Ausführungstoleranz folgen in der Ausführungsplanung.
+
 !!! kastanienallee "Kastanienallee 7"
     Für Kastanienallee 7 wird ein reguläres Verfahren angenommen. Grund: GK 4, Aufzug, Tiefgarage/ Stellplätze, Brandschutz- und Schallschutzanforderungen. Zeitablauf: Einreichung nach Entwurfsplanung, formale Vollständigkeitsprüfung, Beteiligung der Fachstellen, Nachforderungen, Genehmigung. Wegen der hohen ::GRZ:: wird die Nachbar- und Satzungslage früh geprüft.
 
-## 14.4 Abstandsflächen
+## 14.4 Digitaler Bauantrag und BIM-to-Permit
+
+Digitale Bauanträge ersetzen zunächst Papierwege, nicht automatisch die fachliche Prüfung. Viele Portale nehmen PDF-Pläne, Formulare und Nachweise digital entgegen. Das ist organisatorisch hilfreich, aber noch kein vollautomatischer Modellcheck. Ein BIM-Modell kann Geometrie, Flächen, Geschosse und Bauteile liefern; die Behörde braucht jedoch prüfbare, rechtlich eindeutige Unterlagen.
+
+BIM-to-Permit ist deshalb ein realistischer, aber begrenzter Anwendungsfall. Gut automatisierbar sind harte Parameter: Grundstücksfläche, überbaute Fläche, Geschossfläche, Gebäudehöhe, Anzahl Vollgeschosse, Abstände zu Baugrenzen oder einfache Kollisionsprüfungen mit Schutzzonen. Schwieriger sind Brandschutzbewertungen, Befreiungen, Ortsbild, Nachbarschaft, Einfügen nach §34 BauGB und Auslegung lokaler Satzungen.
+
+Für Software ist die wichtigste Einsicht: Genehmigungsfähigkeit entsteht aus Modell, Regelquelle und Nachweislogik. Ein `IfcSite` allein kennt nicht den Bebauungsplan. Ein Raumobjekt allein weiß nicht, ob seine Fläche nach Wohnflächenverordnung, DIN 277 oder BauNVO relevant ist. Digitale Genehmigung braucht deshalb maschinenlesbare Regeln, saubere Modellklassifikation und menschlich nachvollziehbare Begründungen.
+
+## 14.5 Abstandsflächen
 
 ::Abstandsfläche:: sichern Belichtung, Belüftung, Brandschutzabstand und städtebauliche Ordnung. Ihre Tiefe hängt von der Wandhöhe und einem Faktor ab, in Wohngebieten häufig 0,4 H, mindestens jedoch 3 m. Landesrechtliche Details weichen ab, deshalb muss immer die konkrete Landesbauordnung gelesen werden.
 
 ::Abstandsfläche:: sind geometrisch, aber nicht trivial. Dachformen, Gelände, Grenzgaragen, Balkone, Vorbauten und Baulinien verändern die Berechnung. Ein Gebäude kann nach ::GRZ:: und ::GFZ:: zulässig wirken und trotzdem an ::Abstandsfläche:: scheitern. Genau deshalb gehört die Prüfung in den Vorentwurf.
 
-## 14.5 Sonderthemen
+## 14.6 Sonderthemen
 
 Denkmalschutz kann Gestalt, Material, Fenster und energetische Maßnahmen begrenzen. Das GEG enthält Ausnahmen, wenn Anforderungen die Substanz oder Erscheinung unverhältnismäßig beeinträchtigen. Nachbarzustimmungen können Konflikte lösen, ersetzen aber nicht jede öffentlich-rechtliche Zulässigkeit.
 
 Befreiungen nach §31 BauGB erlauben Abweichungen vom ::Bebauungsplan::, wenn Grundzüge der Planung nicht berührt sind und öffentliche Belange gewahrt bleiben. Sie sind kein Anspruch auf Wunschplanung, sondern ein begründeter Antrag. Teilungsgenehmigung, Stellplatznachweis und Außenanlagen gehören ebenfalls zum genehmigungsfähigen Gesamtbild.
 
-## 14.6 Planungsrecht als Entwurfsfilter
+## 14.7 Planungsrecht als Entwurfsfilter
 
 Planungsrecht sollte nicht erst geprüft werden, wenn der Entwurf fertig aussieht. Es ist ein Filter, der von Beginn an entscheidet, welche Varianten überhaupt sinnvoll sind. Ein Gebäude kann funktional, schön und wirtschaftlich wirken und trotzdem scheitern, wenn es außerhalb der Baugrenze liegt, die ::Abstandsfläche:: verletzt oder eine unzulässige Nutzung vorsieht.
 
@@ -86,7 +98,7 @@ Für digitale Werkzeuge ist Planungsrecht reizvoll und schwierig zugleich. Manch
 !!! kastanienallee "Kastanienallee 7"
     Für K7 wird die rechtliche Prüfung als Variantenfilter genutzt. Variante A überschreitet die Baugrenze im Hof um 1,20 m und wird verworfen. Variante B bleibt innerhalb der Baugrenze, erreicht mit 4 Vollgeschossen die GFZ 2,4 und hält die Traufhöhe von 13 m ein. Die Differenz ist kein gestalterisches Detail: Nur Variante B ist ohne frühe Befreiungsstrategie belastbar.
 
-## 14.7 Prüffragen für die Praxis
+## 14.8 Prüffragen für die Praxis
 
 Eine belastbare planungsrechtliche Prüfung beginnt mit Dokumentenlage. Liegt ein ::Bebauungsplan:: vor? Gibt es textliche Festsetzungen, Gestaltungssatzungen, Stellplatzsatzungen, Baumschutzsatzungen, Denkmalschutz oder Baulasten? Welche Landesbauordnung gilt? Welche Gemeinde ist zuständig? Ohne diese Quellen ist jede Entwurfsaussage vorläufig.
 
@@ -96,7 +108,7 @@ Stellplätze und Außenanlagen dürfen nicht vergessen werden. Ein Gebäude kann
 
 Digitale Prüfung kann hier viel leisten, wenn die Regeln als Parameter vorliegen. Ein Modell kann Flächen summieren, Höhen vergleichen und Baugrenzen prüfen. Schwieriger sind Ausnahmen, Befreiungen und Ermessensentscheidungen. Gute Software sollte deshalb Ergebnisse als Ampel mit Begründung zeigen, nicht als scheinbar absolute Genehmigungszusage.
 
-## 14.8 Entwicklerperspektive
+## 14.9 Entwicklerperspektive
 
 Planungsrecht ist für Software verführerisch, weil viele Regeln formal wirken. GRZ, GFZ, Höhen und Baugrenzen lassen sich tatsächlich parametrisieren. Ein Modell kann Grundstücksfläche, überbaute Fläche und Geschossfläche berechnen. Es kann Baukörper mit Baugrenzen schneiden und Höhen gegen festgelegte Ebenen prüfen. Diese Use-Cases sind realistisch.
 
@@ -110,10 +122,14 @@ Der sinnvolle Ansatz ist deshalb hybrid: harte Parameter automatisieren, unklare
 
 Planungsrecht lässt sich teilweise modellbasiert prüfen. `IfcSite` liefert Grundstücksbezug, `IfcBuilding` und Geschosse liefern Geometrie, Räume und Flächen liefern Auswertungen. ::GFZ::- und ::GRZ::-Prüfungen sind relativ gut automatisierbar, wenn anrechenbare Flächen sauber klassifiziert sind. ::Abstandsfläche::, Brandschutz und Satzungsauslegung bleiben deutlich schwieriger.
 
+## Normen und Grundlagen
+
+BauGB und BauNVO bestimmen, ob und wie ein Grundstück planungsrechtlich bebaut werden darf. MBO und Landesbauordnungen regeln bauordnungsrechtliche Anforderungen wie Abstandsflächen, Rettungswege und Verfahrensarten. Bauvorlagenverordnungen definieren, welche Unterlagen ein Bauantrag enthalten muss. Das GEG wirkt ergänzend, wenn energetische Nachweise genehmigungs- oder prüfrelevant werden.
+
 ## Zusammenfassung
 
 **Planungsrecht ist kein Hindernis nach dem Entwurf, sondern die Regelmenge, aus der ein zulässiger Entwurf entsteht.**
 
 ::Bebauungsplan::, Bauordnung, Satzungen und Genehmigungsverfahren müssen früh gelesen werden. Nur dann werden ::GRZ::, ::GFZ::, ::Gebäudeklasse::, ::Abstandsfläche:: und Nutzung zu steuerbaren Parametern statt späten Überraschungen.
 
-Verwandte Kapitel: [Kap. 2](/chapters/02-entwurf-raum-funktion) · [Kap. 9](/chapters/09-brandschutz) · [Kap. 15](/chapters/15-hoai)
+Verwandte Kapitel: [Kap. 2](/chapters/02-entwurf-raum-funktion) · [Kap. 9](/chapters/09-brandschutz) · [Kap. 15](/chapters/15-hoai) · [Kap. 16](/chapters/16-kosten-ausschreibung)

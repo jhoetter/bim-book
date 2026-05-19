@@ -4,16 +4,76 @@
 
 ---
 
-Ein Grundriss sieht für geübte Augen ruhig aus: Linien, Zahlen, Türen, Möbel, ein paar Pfeile. Für Einsteiger ist er eher eine verdichtete Sprache, in der jede Linie etwas anderes bedeuten kann. Wer Entwurf verstehen will, muss zuerst lernen, diese Sprache zu lesen.
+Ein Bauherr kommt selten mit einem fertigen Gebäudeproblem. Er kommt mit Wünschen, einem Grundstück, einem Budget, Bildern im Kopf und offenen Widersprüchen. Wer Entwurf verstehen will, muss deshalb zuerst lernen, wie Architekten aus unscharfen Anforderungen, Ort, Recht und Nutzung eine räumliche Aufgabenstellung machen.
 
 ---
 
 !!! ziel "Nach diesem Kapitel können Sie …"
+    - Architektur als Problemklärung aus Bauherrenwünschen, Ort, Budget, Nutzung und Recht verstehen
+    - Standortanalyse, Raumprogramm und Varianten als frühe Entwurfswerkzeuge einordnen
     - Grundriss, Schnitt, Ansicht und Detail voneinander unterscheiden und ihre Maßstäbe einordnen
     - räumliche Transformationen und Organisationsprinzipien im Entwurf erkennen
     - Erschließung, Barrierefreiheit, Planungsrecht und Kompaktheit als Entwurfsentscheidungen bewerten
 
-## 2.0 Architekturpläne lesen
+## 2.0 Architektur als Problemklärung
+
+Architektur beginnt nicht mit einer Lieblingsform. Sie beginnt mit einer Klärung: Was soll dieses Gebäude leisten, für wen, an welchem Ort, mit welchem Budget und unter welchen Grenzen? Diese Frage ist wichtiger als sie klingt. Wer sie zu eng stellt, bekommt schnell eine schöne Antwort auf das falsche Problem.
+
+Ein Einfamilienhaus am Meer ist ein gutes Beispiel. Der Bauherr wünscht Frühstückssonne am Esstisch, Abendsonne im Wohnraum, Blick zum Wasser und Schutz vor Wind. Daraus entsteht noch kein Grundriss. Zuerst müssen Richtung, Sonnenlauf, Wind, Geländehöhen, Nachbarn, Zufahrt, Baurecht, Kosten und Alltag zusammen gelesen werden. Vielleicht liegt der beste Essplatz nicht dort, wo der erste Blick ihn vermutet. Vielleicht braucht der Wohnraum eine tiefere Loggia, weil der Westwind sonst jede Abendsonne unbenutzbar macht.
+
+Diese Klärung heißt nicht, dass der Architekt nur Wünsche abfragt. Er übersetzt Wünsche in prüfbare Anforderungen. "Viel Licht" wird zu Orientierung, Fensteranteil, Raumtiefe, Verschattung und sommerlichem Wärmeschutz. "Offenes Wohnen" wird zu Tragstruktur, Akustik, Küchenlüftung und Rückzugsbereichen. "Günstig bauen" wird zu Kompaktheit, Spannweiten, Wiederholung, Materialwahl und Vergabestrategie. Der Entwurf ist also Problemlösen durch räumliche Ordnung.
+
+Am Anfang steht deshalb ein Raumprogramm. Es beschreibt Räume, Flächen, Beziehungen, Qualitäten und Prioritäten. Ein gutes Raumprogramm sagt nicht nur "Wohnzimmer 30 m²", sondern auch: hell, zusammen mit Küche nutzbar, Blick zum Garten, nicht direkt an lauter Straße, Platz für Esstisch mit sechs Personen. Für Mehrfamilienhäuser kommen Zielmieten, Wohnungsmix, Barrierefreiheit, Erschließungsflächen und Betriebskosten hinzu.
+
+Gleichzeitig braucht jede frühe Planung Kriterien. Typische Kriterien sind Tageslicht, Orientierung, Kosten, Genehmigungsrisiko, Energie, Flexibilität, Tragwerk, TGA, Bauzeit und Betrieb. Kriterien verhindern nicht, dass entworfen wird; sie machen sichtbar, woran Varianten gemessen werden. Ohne Kriterien wird das Gespräch mit dem Bauherrn schnell Geschmackssache.
+
+<!-- IMAGE
+name: kap02_problemklaerung
+type: diagram
+size: landscape
+desc: Flussdiagramm des frühen Entwurfsprozesses: Bauherrengespräch, Raumprogramm, Standortanalyse, Kriterien, Varianten, Entscheidung. Nummerierte Kästen, Rückkopplungshinweis, weißer Hintergrund.
+caption: Früher Entwurf übersetzt ein offenes Problem in eine begründete Entscheidung
+tags: problemklaerung, entwurfsprozess, raumprogramm, varianten
+-->
+![Früher Entwurfsprozess von Problemklärung bis Entscheidung](../assets/illustrations/kap02_problemklaerung.png)
+
+## 2.1 Standortanalyse und Randbedingungen
+
+Der Ort ist kein Hintergrundbild. Er ist ein aktiver Teil des Entwurfs. Eine belastbare Standortanalyse fragt nach Sonne, Wind, Lärm, Topografie, Boden, Vegetation, Zufahrt, Nachbarschaft, Blickbeziehungen, Adresse und öffentlichem Raum. Manche Faktoren sind hart messbar, andere müssen beobachtet und bewertet werden.
+
+Sonne wirkt auf Wohnqualität und Energie. Ostlicht passt gut zu Frühstück und Schlafräumen, Südlicht liefert stabile Tageslichtversorgung, Westlicht kann wertvoll und zugleich überhitzungsanfällig sein. Nordlicht ist gleichmäßiger, aber weniger wärmend. Wind entscheidet über Aufenthaltsqualität im Freien, natürliche Lüftung und Witterungsschutz. Lärm kann Grundrisse drehen: Schlafräume weg von Straße, Laubengang als Puffer, Nebenräume an laute Seite.
+
+Topografie verändert alles, was im Plan flach aussieht. Ein Hang erzeugt Sockel, Rampen, Stützwände, Entwässerung, Ausblicke und Baukosten. Ein ebenes Grundstück ist einfacher, aber nicht automatisch besser. Auch Nachbarschaft ist Entwurfsstoff: Wo entstehen Einblicke? Wo braucht es Abstand? Welche Kante bildet Adresse? Welche Höhe fügt sich ein?
+
+Für digitale Werkzeuge bedeutet Standortanalyse, dass das Modell früh mehr braucht als Wände. `IfcSite`, Geländemodell, Nordrichtung, Höhenbezug, Nachbarvolumen, Lärmquellen und Sonnenstand sind keine Dekoration. Sie entscheiden, ob Varianten sinnvoll bewertet werden können. Ein Modell ohne Ort ist für frühe Entwurfsentscheidungen oft zu arm.
+
+!!! kastanienallee "Kastanienallee 7"
+    Für Kastanienallee 7 werden vor dem ersten Grundriss fünf Randbedingungen festgehalten: kompaktes innerstädtisches Grundstück, Straße im Süden, Hof im Norden, hohe Ausnutzung mit ::GRZ:: 0,60 und ::GFZ:: 2,40, Gebäudeklasse 4 mit Aufzugspflicht. Daraus folgt kein fertiger Vierspänner, aber ein enger Suchraum: Der Kern muss effizient liegen, die Wohnungen brauchen trotz Tiefe gute Belichtung, und TGA-Schächte dürfen die Wohnflächenquote nicht zerstören.
+
+## 2.2 Varianten, Diagramme und Entscheidung
+
+Frühe Entwürfe entstehen selten als ein einziger Sprung. Sie werden als Varianten untersucht. Eine Variante verändert nicht nur die Fassade, sondern eine Grundentscheidung: Kernlage, Baukörpertiefe, Erschließung, Orientierung, Freiraum, Tragstruktur oder Umgang mit Bestand. Drei ernsthafte Varianten sind oft besser als zehn dekorative Abwandlungen.
+
+Diagramme helfen, diese Varianten zu denken. Ein Bubble-Diagramm zeigt Nähebeziehungen: Küche nahe Essen, Bad nahe Schacht, Eingang nahe Treppe. Ein Erschließungsdiagramm zeigt Wege und Schwellen. Ein Sonnen- und Blickdiagramm zeigt, welche Räume wohin orientiert werden. Ein Massenmodell prüft Baukörper, Höhe, Abstand und Schatten. Diese Skizzen sind nicht weniger fachlich als ein sauberer Plan; sie machen die Entscheidungsebene sichtbar.
+
+Die Auswahl einer Variante ist selten rein mathematisch. Eine Matrix kann Kosten, Wohnqualität, Energie, Genehmigungsrisiko und TGA-Koordination vergleichbar machen. Trotzdem bleibt architektonisches Urteil nötig. Eine Variante kann in der Fläche schlechter sein, aber einen besseren Hof, klarere Adresse oder robustere Bauweise liefern. Wichtig ist, dass die Entscheidung begründet und dokumentiert wird.
+
+<!-- IMAGE
+name: kap02_variantenmatrix
+type: infographic
+size: landscape
+desc: Variantenmatrix für Kastanienallee 7 mit drei Varianten: Vierspänner, Laubengang, Hofhaus. Kriterien: Wohnqualität, Kosten, Energie, Genehmigung, TGA. Bewertung farbcodiert, Entscheidung hervorgehoben, weißer Hintergrund.
+caption: Eine Variantenmatrix macht Entwurfsentscheidungen diskutierbar
+tags: varianten, kriterienmatrix, vorplanung, kastanienallee
+-->
+![Variantenmatrix Kastanienallee 7](../assets/illustrations/kap02_variantenmatrix.png)
+
+!!! kastanienallee "Kastanienallee 7"
+    In der Vorplanung werden drei Varianten geprüft. Variante A: kompakter Vierspänner mit zentralem Kern. Vorteile: geringe Erschließungsfläche, klare Schächte, gutes A/V-Verhältnis. Risiken: sorgfältige Belichtung der mittleren Bereiche nötig. Variante B: Laubengang. Vorteile: einfache horizontale Erschließung und klare Wohnungseingänge. Risiken: Privatheit, Witterung, Schallschutz und Fassadenlänge. Variante C: kleines Hofhaus. Vorteile: starke räumliche Mitte und gute Orientierung. Risiken: höhere Hüllfläche, kompliziertere ::Abstandsfläche:: und teurere Fassade.
+
+    Die Entscheidung fällt nicht, weil Variante A zuerst gezeichnet wurde, sondern weil sie Kriterien am robustesten erfüllt: gute Wohnflächenquote, geringe Genehmigungsrisiken, einfache TGA-Steigzonen und kompakte Hülle. Aus Variante C werden bessere Eckwohnungen und eine klarere Eingangssequenz übernommen.
+
+## 2.3 Architekturpläne lesen
 
 Architekturpläne sind keine Bilder eines Gebäudes, sondern Schnitte durch eine räumliche Situation. Sie reduzieren ein dreidimensionales Gebäude auf eine lesbare Darstellung. Genau deshalb sind sie mächtig und gefährlich zugleich: Wer die Konventionen kennt, erkennt Raum, Material und Absicht; wer sie nicht kennt, verwechselt leicht eine Schnittkante mit einer Ansichtslinie oder eine gestrichelte Kante mit einem vorhandenen Bauteil.
 
@@ -43,7 +103,7 @@ tags: planarten, grundriss, schnitt, ansicht, detail
 -->
 ![Planarten im Vergleich](../assets/illustrations/kap02_planarten.png)
 
-## 2.1 Raum, Form und Transformation
+## 2.4 Raum, Form und Transformation
 
 Architektur entwirft nicht zuerst Fassaden, sondern bewohnbare Räume. Eine Wand, ein Dach oder eine Stütze ist nie nur ein Objekt; sie begrenzt, öffnet, verbindet oder gliedert Raum. Darin unterscheidet sich Architektur von Malerei oder Skulptur: Sie erzeugt keine bloße Vorstellung von Raum, sondern eine Situation, in der Menschen gehen, sitzen, warten, arbeiten, schlafen, sehen und gehört werden.
 
@@ -69,7 +129,7 @@ tags: entwurf, formtransformation, rotation, translation, subtraktion
 -->
 ![Formtransformationen im Entwurf](../assets/illustrations/kap02_formtransformationen.png)
 
-## 2.2 Raumbeziehungen und Komposition
+## 2.5 Raumbeziehungen und Komposition
 
 Architekten entwerfen selten einzelne Räume isoliert. Entscheidend ist, wie Räume zueinander stehen. Ein Raum kann in einem anderen liegen, etwa ein kleiner Sanitärkern in einer großen Halle. Zwei Räume können angrenzen und durch eine Tür, Öffnung oder Schwelle verbunden sein. Räume können sich überlappen, sodass ein gemeinsamer Bereich entsteht. Sie können getrennt sein und über einen Zwischenraum, Flur, Hof oder Steg verknüpft werden.
 
@@ -98,7 +158,7 @@ tags: raumorganisation, achse, raster, cluster, zentralraum
 
     Diese Lesart hilft auch bei späteren Änderungen. Wenn eine Wohnung größer, ein Schacht verschoben oder der Eingang anders gelegt wird, betrifft das nicht nur eine Fläche, sondern das Verhältnis von Raster, Kern, Bewegung und Tageslicht. Genau deshalb ist räumliche Komposition ein Prüfwerkzeug, nicht nur eine Entwurfsvokabel im Planungsalltag, in Variantenstudien und in späteren digitalen Modellprüfungen.
 
-## 2.3 Was der Bebauungsplan vorgibt
+## 2.6 Was der Bebauungsplan vorgibt
 
 Bevor ein Grundriss schön, effizient oder möblierbar sein kann, muss er baurechtlich möglich sein. Der Bebauungsplan legt fest, was auf einem Grundstück gebaut werden darf: Art der Nutzung, überbaubare Fläche, Zahl der Vollgeschosse, Baugrenzen, Dachform, manchmal Stellplätze, Begrünung oder Materialien. Für den Entwurf sind vor allem zwei Kennwerte wichtig.
 
@@ -121,7 +181,7 @@ Der häufige Anfängerfehler besteht darin, ::GRZ:: und ::GFZ:: isoliert zu rech
 
     Gebäudeklasse: 4 Vollgeschosse, oberster Aufenthaltsraum unter 13 m, Nutzung als Mehrfamilienhaus. Einordnung: Gebäudeklasse 4 nach Systematik der ::MBO:: beziehungsweise der Landesbauordnung. Die brandschutztechnischen Folgen werden in [Kapitel 9](/chapters/09-brandschutz) vertieft.
 
-## 2.4 Raumplanung: Proportion und Maßstab
+## 2.7 Raumplanung: Proportion und Maßstab
 
 Gute Raumplanung beginnt beim menschlichen Maß. Türen, Flure, Möbel, Bewegungsflächen, Blickachsen und Fensterbrüstungen sind nicht abstrakt; sie werden mit Körpern benutzt. Die klassische Entwurfslehre, etwa bei Neufert, sammelt solche Maße nicht als starre Rezepte, sondern als Erfahrungswerte für Benutzbarkeit.
 
@@ -139,7 +199,7 @@ Zur Raumplanung gehört auch Orientierung. Wohnräume profitieren von Tageslicht
 
 Maßstab bedeutet schließlich, dass ein Gebäude auf mehreren Ebenen funktionieren muss. Der Stadtmaßstab fragt nach Baukörper, Adresse und Nachbarschaft. Der Gebäudemaßstab fragt nach Erschließung, Struktur und Nutzungseinheiten. Der Raummaßstab fragt nach Proportion, Möbeln und Licht. Der Detailmaßstab fragt nach Fuge, Griffhöhe, Schwelle und Anschluss. Gute Planung verliert keine dieser Ebenen aus dem Blick.
 
-## 2.5 Erschließungstypen
+## 2.8 Erschließungstypen
 
 Erschließung ist der Weg vom öffentlichen Raum zur Nutzungseinheit: Straße, Eingang, Windfang, Treppe, Aufzug, Flur, Wohnungstür. Im Wohnungsbau entscheidet sie stark über Wirtschaftlichkeit, Orientierung und Wohnqualität. Jeder Quadratmeter Erschließungsfläche kostet Geld, wird aber nicht direkt als Wohnraum genutzt.
 
@@ -181,7 +241,7 @@ tags: erschliessung, zweispänner, dreispänner, vierspänner, laubengang
 !!! kastanienallee "Kastanienallee 7"
     Kastanienallee 7 ist als Vierspänner organisiert. Ein zentraler Kern mit Treppe und Aufzug erschließt je Geschoss vier Wohnungen. Der Windfang liegt auf der Südseite, damit Eingang, Briefkästen und Treppenhaus klar adressiert sind. Je Vollgeschoss entstehen drei Wohnungstypen: eine 2-Zimmer-Wohnung mit ca. 55 m², eine 3-Zimmer-Wohnung mit ca. 75 m² und eine 4-Zimmer-Wohnung mit ca. 95 m²; über 4 Vollgeschosse ergibt das 4 + 4 + 4 = 12 Wohneinheiten. Die Wirtschaftlichkeit entsteht aus einem kompakten Kern, die Qualität aus Ecklagen, kurzen Wegen und klaren Installationszonen.
 
-## 2.6 Barrierefreiheit als Entwurfsprinzip
+## 2.9 Barrierefreiheit als Entwurfsprinzip
 
 Barrierefreiheit ist keine Sonderausstattung für wenige Nutzer. Sie ist ein Qualitätsprinzip, das Gebäude robuster macht: für ältere Menschen, Kinderwagen, temporäre Verletzungen, Lieferungen, Möbeltransport und Pflege. Wer Barrierefreiheit erst am Ende "nachrüstet", findet meist keinen Platz mehr.
 
@@ -196,7 +256,7 @@ Entwurflich ist Barrierefreiheit am günstigsten, wenn sie im Grundriss steckt. 
 !!! kastanienallee "Kastanienallee 7"
     Kastanienallee 7 hat 4 Vollgeschosse und fällt nach Art. 37 BayBO in die Aufzugspflicht. Der Entwurf sieht deshalb 1 Aufzug im Treppenhauskern vor. Kabinenmaß barrierefrei: 1,10 m × 1,40 m lichte Kabine. Kabinenfläche = 1,10 m × 1,40 m = 1,54 m². Für Schacht, Führung, Türen und Wandstärken wird ein Stahlbeton-Schacht von ca. 1,80 m × 2,20 m angesetzt. Schachtgrundfläche = 1,80 m × 2,20 m = 3,96 m² je Geschoss. Bei 4 Vollgeschossen belegt der Schacht rechnerisch 4 × 3,96 m² = 15,84 m² Geschossfläche, zuzüglich Keller und Dachbereich. Die Aufzugsgrube von ca. 1,10 m Tiefe macht den Keller konstruktiv sinnvoll; die Anlage wird maschinenraumlos nach DIN EN 81-20 geplant.
 
-## 2.7 Kompaktheit und A/V-Verhältnis
+## 2.10 Kompaktheit und A/V-Verhältnis
 
 Kompaktheit beschreibt, wie viel Außenfläche ein Gebäude im Verhältnis zu seinem Volumen hat. Ein kompakter Baukörper verliert bei gleicher Dämmqualität weniger Wärme, hat weniger Fassadenfläche, weniger Anschlüsse und oft geringere Baukosten. Ein stark gegliederter Baukörper kann räumlich reizvoll sein, hat aber mehr Außenfläche, mehr Ecken, mehr Wärmeverluste und mehr Details.
 
@@ -233,8 +293,8 @@ Auch ::GRZ:: und ::GFZ:: lassen sich teilweise automatisiert prüfen, wenn Model
 
 ## Zusammenfassung
 
-**Entwurf beginnt nicht mit freier Form, sondern mit lesbaren Plänen, rechtlichen Grenzen, menschlichen Maßen und räumlichen Entscheidungen.**
+**Entwurf beginnt nicht mit freier Form, sondern mit Problemklärung, Ort, Varianten, lesbaren Plänen, rechtlichen Grenzen, menschlichen Maßen und räumlichen Entscheidungen.**
 
-Grundriss, Schnitt, Ansicht und Detail zeigen verschiedene Seiten derselben Planung. ::GRZ::, ::GFZ:: und ::MBO:: setzen den Rahmen, Proportion und Möblierbarkeit machen Räume nutzbar, Erschließung und Barrierefreiheit machen Gebäude zugänglich. Das A/V-Verhältnis zeigt schließlich, dass Form auch energetische Folgen hat.
+Bauherrenwünsche, Standortanalyse und Raumprogramm werden erst durch Varianten und Kriterien projektfähig. Grundriss, Schnitt, Ansicht und Detail zeigen verschiedene Seiten derselben Planung. ::GRZ::, ::GFZ:: und ::MBO:: setzen den Rahmen, Proportion und Möblierbarkeit machen Räume nutzbar, Erschließung und Barrierefreiheit machen Gebäude zugänglich. Das A/V-Verhältnis zeigt schließlich, dass Form auch energetische Folgen hat.
 
-Verwandte Kapitel: [Kap. 1](/chapters/01-architektur-als-system) · [Kap. 6](/chapters/06-waermeschutz-geg) · [Kap. 9](/chapters/09-brandschutz) · [Kap. 14](/chapters/14-planungsrecht) · [Kastanienallee 7](/appendix/kastanienallee7)
+Verwandte Kapitel: [Kap. 1](/chapters/01-architektur-als-system) · [Kap. 6](/chapters/06-waermeschutz-geg) · [Kap. 9](/chapters/09-brandschutz) · [Kap. 14](/chapters/14-planungsrecht) · [Kap. 15](/chapters/15-hoai) · [Kastanienallee 7](/appendix/kastanienallee7)

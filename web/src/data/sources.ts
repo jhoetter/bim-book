@@ -95,7 +95,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Ausbau Atlas',
     group: 'Atlas-Reihe',
     kind: 'Buch',
-    chapters: ['05-konstruktion', '08-schallschutz', '17-kosten-ausschreibung'],
+    chapters: ['05-konstruktion', '08-schallschutz', '16-kosten-ausschreibung'],
     note: 'Innenausbau, Trockenbau, Oberflächen, Ausbaugewerke und Detailanschlüsse.',
   },
   {
@@ -365,7 +365,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Basics Ausschreibung',
     group: 'Recht und Verträge',
     kind: 'Buch',
-    chapters: ['15-hoai', '17-kosten-ausschreibung'],
+    chapters: ['15-hoai', '16-kosten-ausschreibung'],
     note: 'Leistungsverzeichnisse, Ausschreibungslogik und Vergabegrundlagen.',
   },
   {
@@ -374,7 +374,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'HOAI 2021',
     group: 'Recht und Verträge',
     kind: 'Norm/Gesetz',
-    chapters: ['15-hoai', '17-kosten-ausschreibung'],
+    chapters: ['15-hoai', '16-kosten-ausschreibung'],
     note: 'Leistungsphasen, Honorartafeln und Vertragsrahmen.',
   },
   {
@@ -392,7 +392,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'HOAI 2021 verstehen',
     group: 'Recht und Verträge',
     kind: 'Buch',
-    chapters: ['15-hoai', '16-bauprojektmanagement-bauoberleitung'],
+    chapters: ['15-hoai', '17-bauprojektmanagement-bauoberleitung'],
     note: 'Praxisbezogene Erläuterung der HOAI-Leistungsbilder, besonderen Leistungen und Projektrollen.',
   },
   {
@@ -401,7 +401,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'VOB im Bild',
     group: 'Recht und Verträge',
     kind: 'Buch',
-    chapters: ['16-bauprojektmanagement-bauoberleitung', '17-kosten-ausschreibung'],
+    chapters: ['16-kosten-ausschreibung', '17-bauprojektmanagement-bauoberleitung'],
     note: 'Ausführungsregeln, Abrechnung und typische Leistungsabgrenzungen.',
   },
   {
@@ -410,7 +410,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Baustelleneinrichtung',
     group: 'Bauausführung',
     kind: 'Buch',
-    chapters: ['16-bauprojektmanagement-bauoberleitung', '17-kosten-ausschreibung'],
+    chapters: ['16-kosten-ausschreibung', '17-bauprojektmanagement-bauoberleitung'],
     note: 'Baustellenlogistik, Bauablauf, temporäre Anlagen und Kostenbezug.',
   },
   {
@@ -419,7 +419,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Bau-Projekt-Management',
     group: 'Bauausführung',
     kind: 'Buch',
-    chapters: ['16-bauprojektmanagement-bauoberleitung', '25-projektarten-neubau-bestand-denkmal'],
+    chapters: ['17-bauprojektmanagement-bauoberleitung', '25-projektarten-neubau-bestand-denkmal'],
     note: 'Projektmanagement-Grundlagen, Termin- und Kostensteuerung, Projektstrukturen und Änderungsmanagement.',
   },
   {
@@ -428,7 +428,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Bauobjektüberwachung',
     group: 'Bauausführung',
     kind: 'Buch',
-    chapters: ['16-bauprojektmanagement-bauoberleitung'],
+    chapters: ['17-bauprojektmanagement-bauoberleitung'],
     note: 'Objektüberwachung, Bautagebuch, Baubesprechungen, Abnahme, Dokumentation und Haftungsfragen.',
   },
   {
@@ -437,7 +437,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Standard Detailsammlung',
     group: 'Bauausführung',
     kind: 'Buch',
-    chapters: ['05-konstruktion', '17-kosten-ausschreibung'],
+    chapters: ['05-konstruktion', '16-kosten-ausschreibung'],
     note: 'Detailvorlagen und Ausführungsstandards für Konstruktion und Ausschreibung.',
   },
   {
@@ -482,7 +482,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Agile Digitalisierung im Baubetrieb',
     group: 'Digital und BIM',
     kind: 'Buch',
-    chapters: ['16-bauprojektmanagement-bauoberleitung', '22-bim-praxis', '26-digitaler-zwilling-ki'],
+    chapters: ['17-bauprojektmanagement-bauoberleitung', '22-bim-praxis', '26-digitaler-zwilling-ki'],
     note: 'Digitale Methoden im Baubetrieb, Datenflüsse, Baustellenprozesse und organisatorischer Wandel.',
   },
   {
@@ -572,7 +572,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'OmniClass 22',
     group: 'Digital und BIM',
     kind: 'Standard/Daten',
-    chapters: ['17-kosten-ausschreibung', '20-klassifikation'],
+    chapters: ['16-kosten-ausschreibung', '20-klassifikation'],
     note: 'Arbeitsresultate und Leistungszuordnung.',
   },
   {
@@ -770,7 +770,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'MBO 2024',
     group: 'Normen und Gesetze',
     kind: 'Norm/Gesetz',
-    chapters: ['09-brandschutz', '14-planungsrecht', '16-bauprojektmanagement-bauoberleitung', '24-sanierung', '25-projektarten-neubau-bestand-denkmal'],
+    chapters: ['09-brandschutz', '14-planungsrecht', '17-bauprojektmanagement-bauoberleitung', '24-sanierung', '25-projektarten-neubau-bestand-denkmal'],
     note: 'Gebäudeklassen, Rettungswege, Abstandsflächen und bauordnungsrechtliche Grundstruktur.',
   },
   {

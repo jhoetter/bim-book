@@ -1,6 +1,6 @@
-# Kapitel 16 – Bauprojektmanagement & Bauoberleitung
+# Kapitel 17 – Bauprojektmanagement & Bauoberleitung
 
-*Teil V – Recht & Prozess*
+*Teil V – Projektprozess*
 
 ---
 
@@ -13,7 +13,7 @@ Auf der Baustelle zeigt sich, ob Planung wirklich baubar war. Entscheidungen, di
     - Bauzeitenplan, Netzplan und kritischen Pfad erklären
     - Nachträge, Behinderungsanzeigen, Bautagebuch und Abnahme fachlich einordnen
 
-## 16.1 Was Bauprojektmanagement bedeutet
+## 17.1 Was Bauprojektmanagement bedeutet
 
 Früher konnte ein Baumeister viele Entscheidungen selbst überblicken. Moderne Gebäude sind anders: Tragwerk, Brandschutz, Schallschutz, Energie, Heizung, Lüftung, Sanitär, Elektro, Aufzug, Außenanlagen, Finanzierung, Genehmigung und Verträge greifen ineinander. Je mehr Beteiligte ein Projekt hat, desto weniger reicht fachliche Planung allein. Es braucht eine zweite Ebene, die Termine, Kosten, Risiken, Kommunikation und Entscheidungen zusammenhält.
 
@@ -35,42 +35,42 @@ Ohne diese Ordnung werden technische Fragen zu persönlichen Abstimmungen. Mit i
 
 Das ist der Unterschied zwischen Improvisation und belastbarer professioneller Steuerung.
 
-## 16.2 Terminplanung
+## 17.2 Terminplanung
 
 Ein Terminplan ist kein Kalender mit Wunschdaten. Er ist ein Modell des Bauablaufs. Er zeigt, welche Vorgänge voneinander abhängen, welche Reihenfolge technisch zwingend ist und wo Puffer liegen. Ohne Terminplanung wird Bauleitung reaktiv: Man merkt erst, dass etwas fehlt, wenn das nächste Gewerk bereits vor der Tür steht.
 
 Das einfachste Werkzeug ist der **::Bauzeitenplan::** als Balkenplan oder Gantt-Diagramm. Gewerke stehen als Zeilen, Zeit läuft von links nach rechts. Für Baubesprechungen ist das stark, weil jeder sieht, wann Rohbau, Dach, TGA-Rohinstallation, Estrich, Ausbau und Außenanlagen laufen sollen. Die Schwäche: Ein Balkenplan zeigt Abhängigkeiten oft nur indirekt. Man sieht, dass Estrich vor Bodenbelag liegt, aber nicht immer, welche Verzögerung den Endtermin wirklich verschiebt.
 
 <!-- IMAGE
-name: kap16_bauzeitenplan
+name: kap17_bauzeitenplan
 type: infographic
 size: landscape
 desc: Gantt-Diagramm K7 Bauablauf: Rohbau 6 Monate, Dach 1 Monat, TGA-Rohinstallation parallel zum Rohbau 4 Monate, Estrich, Trocknung, Innenputz, KWL-Endmontage, Elektriker, Maler, Böden, Außenanlagen; Gewerke als farbige Balken; kritischer Pfad hervorgehoben Rohbau -> Estrich -> Innenputz -> Fußbodenbelag; Puffertage sichtbar; weißer Hintergrund.
 caption: Der Bauzeitenplan macht Reihenfolge, Parallelität und Puffer sichtbar
 tags: bauzeitenplan, gantt, terminplanung, kritischer-pfad
 -->
-![Bauzeitenplan Kastanienallee 7](../assets/illustrations/kap16_bauzeitenplan.png)
+![Bauzeitenplan Kastanienallee 7](../assets/illustrations/kap17_bauzeitenplan.png)
 
 Für komplexere Abhängigkeiten nutzt man den Netzplan, oft mit der Critical Path Method. Jeder Vorgang hat einen frühesten Anfang (FA), ein frühestes Ende (FE), einen spätesten Anfang (SA) und ein spätestes Ende (SE). Der Gesamtpuffer ergibt sich aus GP = SA - FA. Wenn GP = 0 ist, liegt der Vorgang auf dem kritischen Pfad (::Kritischer Pfad::). Jede Verzögerung dort verschiebt den Endtermin um dieselbe Dauer, solange keine Gegenmaßnahme gelingt.
 
 Man liest einen Netzplan von links nach rechts und dann rückwärts. Vorwärts wird ermittelt, wann ein Vorgang frühestens beginnen und enden kann. Rückwärts wird ermittelt, wann er spätestens beginnen und enden darf, ohne den Endtermin zu gefährden. Der Unterschied ist der Puffer. Für die Bauleitung ist diese Zahl wichtiger als die optische Länge eines Balkens. Ein Vorgang mit drei Tagen Dauer und null Puffer ist kritischer als ein Vorgang mit drei Wochen Dauer und zwei Wochen Puffer.
 
 <!-- IMAGE
-name: kap16_netzplan_prinzip
+name: kap17_netzplan_prinzip
 type: diagram
 size: landscape
 desc: Netzplan-Schemadiagramm mit acht Vorgängen; je Knoten FA und FE oben, SA und SE unten, Puffer rechts; kritischer Pfad rot; zwei nicht-kritische Pfade mit sichtbaren Puffern; deutsche Labels; weißer Hintergrund.
 caption: Der Netzplan zeigt, welche Verzögerung wirklich den Endtermin trifft
 tags: netzplan, cpm, puffer, kritischer-pfad
 -->
-![Netzplan mit kritischem Pfad](../assets/illustrations/kap16_netzplan_prinzip.png)
+![Netzplan mit kritischem Pfad](../assets/illustrations/kap17_netzplan_prinzip.png)
 
 Der Terminplan wird wöchentlich fortgeschrieben. Soll-Ist-Vergleich bedeutet: geplanter Leistungsstand gegen tatsächlichen Leistungsstand. Wenn der Rohbau in Woche 14 drei Tage zurückliegt, ist das noch keine Katastrophe. Entscheidend ist, ob der Rückstand auf dem kritischen Pfad liegt und ob Folgegewerke betroffen sind. Terminverzug muss schriftlich dokumentiert werden, weil Vertragsfristen nach § 5 ::VOB::/B verbindlich sein können. Vertragsstrafen sind nur wirksam, wenn sie vereinbart wurden; in der Praxis werden sie gedeckelt, häufig bei höchstens 5 % der Auftragssumme.
 
 !!! kastanienallee "Kastanienallee 7"
     Für K7 beträgt die Bauzeit in ::LP:: 8 vierzehn Monate. Der Rohbau läuft sechs Monate, Dach und Dichtheit einen Monat, die TGA-Rohinstallation vier Monate teilweise parallel zu den oberen Rohbaugeschossen. Der Innenausbau dauert rund fünf Monate in fester Reihenfolge: Estrich, vier Wochen Trocknungszeit, KWL-Endmontage, Elektriker-Unterputz, Innenputz und Trockenbau, Maler, Parkett und Fliesen. Der kritische Pfad läuft über Rohbau, Estrich, Innenputz und Fußbodenbelag. Ein Verzug im Estrich verschiebt die folgenden Ausbaugewerke nahezu 1:1.
 
-## 16.3 Kostenkontrolle auf der Baustelle
+## 17.3 Kostenkontrolle auf der Baustelle
 
 Kostenkontrolle beginnt nicht erst mit der Schlussrechnung. Die Soll-Linie ist der Kostenanschlag aus Vergabe und Beauftragung. Er ist nach **::DIN 276::** gegliedert und wird während der Ausführung gegen Aufträge, Nachträge, geprüfte Rechnungen und Prognosen gehalten. Damit entsteht nicht nur die Frage: Was wurde bezahlt? Sondern: Was wird das Projekt am Ende voraussichtlich kosten?
 
@@ -79,14 +79,14 @@ Der wichtigste Störfaktor ist der **::Nachtrag::**. Ein Nachtrag ist nicht auto
 Diese Prüfung hat zwei technische Kerne. Erstens die Massenprüfung: Stimmen die Mengen, Aufmaße, Wiegescheine oder Lieferscheine? Zweitens die Preisprüfung: Sind Einheitspreise, Zuschläge, Geräteansätze und Entsorgungskosten angemessen? Würfele, Bielefeld und Gralla betonen für die Bauobjektüberwachung, dass Dokumentation und Schriftverkehr gerade bei vertragsrelevanten Vorgängen lückenlos sein müssen.[^bauobjektueberwachung-wuerfele]
 
 <!-- IMAGE
-name: kap16_kostenkontrolle
+name: kap17_kostenkontrolle
 type: chart
 size: landscape
 desc: Liniendiagramm Kostenkontrolle: x-Achse Zeit von LP 6 bis LP 9, y-Achse Kosten in Euro; drei Linien Soll Kostenanschlag, Ist kumuliert mit Sprüngen bei Nachträgen, Prognose Endkosten ab Jetzt-Punkt; Nachtragsvolumen als farbiger Flächenblock; weißer Hintergrund.
 caption: Kostenkontrolle verbindet Soll, Ist und Prognose der Endkosten
 tags: kostenkontrolle, din276, nachtrag, prognose
 -->
-![Kostenkontrolle mit Nachtragsvolumen](../assets/illustrations/kap16_kostenkontrolle.png)
+![Kostenkontrolle mit Nachtragsvolumen](../assets/illustrations/kap17_kostenkontrolle.png)
 
 Typische Kostenfallen sind unerwartete Bodenverhältnisse, Kontamination, Fels, Grundwasser, Planänderungen nach ::LP:: 5 und Koordinationsfehler zwischen TGA und Rohbau. Besonders teuer werden Änderungen, wenn bereits gebaut wurde: Ein vergessener Deckendurchbruch im Plan ist im Modell ein Issue, auf der Baustelle ein Kernbohrgerät, Staubschutz, Lärm, Statikprüfung und Terminrisiko.
 
@@ -97,7 +97,7 @@ Kostenkontrolle braucht deshalb eine Prognose, nicht nur eine Buchhaltung. Berei
 !!! kastanienallee "Kastanienallee 7"
     In Woche 8 stößt der Bagger beim Aushub auf Teereinschlüsse, vermutlich von einer früheren Tankstellennutzung. Der Rohbauer meldet einen Entsorgungsnachtrag: 320 m³ belasteter Boden, Sonderentsorgung Deponieklasse III und zusätzlicher Transport, zusammen 68.000 € netto. Die Architektenprüfung verlangt Aushubprotokoll, Wiegescheine und Marktpreisvergleich. Die Reserve von 10 % der Kostenschätzung beträgt 576.000 €; nach Freigabe ist sie um 68.000 € reduziert. Der Bauherr wird informiert, der Kostenbericht fortgeschrieben.
 
-## 16.4 Bauoberleitung: die tägliche Arbeit
+## 17.4 Bauoberleitung: die tägliche Arbeit
 
 Die ::Bauoberleitung:: in ::LP:: 8 bedeutet nicht, dass der Architekt jeden Handgriff permanent überwacht. Er prüft stichprobenartig, koordiniert, dokumentiert und greift ein, wenn Ausführung, Planung oder Vertrag auseinanderlaufen. Trotzdem haftet er für erkennbare Mängel, wenn er sie bei ordnungsgemäßer Überwachung hätte bemerken müssen. Vorsätzliches Wegsehen ist etwas anderes als ein verdeckter Mangel, aber beides zeigt: Bauüberwachung ist fachliche Verantwortung, nicht nur Anwesenheit.
 
@@ -118,7 +118,7 @@ Zwischen Mängelrüge und Abnahme liegt viel Alltagsarbeit. Ein Mangel muss so b
 !!! kastanienallee "Kastanienallee 7"
     In Woche 14 meldet der Rohbauer drei Tage Rückstand wegen Kranausfalls. Die Hydraulik ist defekt, der Kran ist für Schalung und Bewehrung betriebsnotwendig. Der Unternehmer stellt eine Behinderungsanzeige. Der Architekt prüft Wartungsnachweise, Ausfallzeit und Auswirkungen, bestätigt die Behinderung und dokumentiert sie in Bautagebuch und Protokoll. Dachdecker und TGA-Rohinstallation werden um drei Tage verschoben. Weil vier Tage Puffer vorhanden sind, entsteht kein kritischer-Pfad-Effekt.
 
-## 16.5 BIM in der Bauphase
+## 17.5 BIM in der Bauphase
 
 In der Bauphase wird BIM praktisch, wenn Termin, Modell, Dokumentation und Mängel zusammengeführt werden. 4D-BIM verknüpft Vorgänge aus dem Terminplan mit Modellelementen. In IFC4 können `IfcTask` Aufgaben und `IfcRelSequence` Abhängigkeiten abbilden. Ein Viewer kann dann zeigen, welche Bauteile zu welchem Zeitpunkt geplant, begonnen oder fertiggestellt sein sollten.
 
@@ -148,7 +148,7 @@ Art. 54 BayBO und § 59 ::MBO:: ordnen die Rolle des verantwortlichen Bauleiters
 
 Terminplan, Kostenkontrolle, Bauoberleitung, Bautagebuch, Behinderungsanzeige und Abnahme sind keine Bürokratie neben dem Bauen. Sie sind die Werkzeuge, mit denen Qualität, Zeit, Kosten und Verantwortung auf der Baustelle nachvollziehbar bleiben.
 
-Verwandte Kapitel: [Kap. 15](/chapters/15-hoai) · [Kap. 17](/chapters/17-kosten-ausschreibung) · [Kap. 18](/chapters/18-was-bim-wirklich-ist) · [Kap. 21](/chapters/21-prozess-kollaboration) · [Kap. 26](/chapters/26-digitaler-zwilling-ki)
+Verwandte Kapitel: [Kap. 15](/chapters/15-hoai) · [Kap. 16](/chapters/16-kosten-ausschreibung) · [Kap. 18](/chapters/18-was-bim-wirklich-ist) · [Kap. 21](/chapters/21-prozess-kollaboration) · [Kap. 26](/chapters/26-digitaler-zwilling-ki)
 
 [^bau-projekt-management-kochendoerfer]: Kochendörfer, Liebchen & Viering: *Bau-Projekt-Management*, 6. Auflage.
 [^bauobjektueberwachung-wuerfele]: Würfele, Bielefeld & Gralla: *Bauobjektüberwachung*, 3. Auflage.

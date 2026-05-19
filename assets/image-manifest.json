@@ -38,6 +38,42 @@
       "generated": "2026-05-18 07:43"
     },
     {
+      "file": "kap02_problemklaerung.png",
+      "chapter": 2,
+      "part": "I",
+      "partTitle": "Teil I – Fundament",
+      "chapterTitle": "Entwurf, Raum und Funktion",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Früher Entwurf übersetzt ein offenes Problem in eine begründete Entscheidung",
+      "tags": [
+        "problemklaerung",
+        "entwurfsprozess",
+        "raumprogramm",
+        "varianten"
+      ],
+      "chapterPath": "chapters/02-entwurf-raum-funktion",
+      "generated": "2026-05-19"
+    },
+    {
+      "file": "kap02_variantenmatrix.png",
+      "chapter": 2,
+      "part": "I",
+      "partTitle": "Teil I – Fundament",
+      "chapterTitle": "Entwurf, Raum und Funktion",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "Eine Variantenmatrix macht Entwurfsentscheidungen diskutierbar",
+      "tags": [
+        "varianten",
+        "kriterienmatrix",
+        "vorplanung",
+        "kastanienallee"
+      ],
+      "chapterPath": "chapters/02-entwurf-raum-funktion",
+      "generated": "2026-05-19"
+    },
+    {
       "file": "kap02_planarten.png",
       "chapter": 2,
       "part": "I",
@@ -55,43 +91,6 @@
       ],
       "chapterPath": "chapters/02-entwurf-raum-funktion",
       "generated": "2026-05-18 07:45"
-    },
-    {
-      "file": "kap02_erschliessungstypen.png",
-      "chapter": 2,
-      "part": "I",
-      "partTitle": "Teil I – Fundament",
-      "chapterTitle": "Entwurf, Raum und Funktion",
-      "type": "comparison",
-      "context": "generic",
-      "caption": "Typische Erschließungssysteme im Geschosswohnungsbau",
-      "tags": [
-        "erschliessung",
-        "zweispänner",
-        "dreispänner",
-        "vierspänner",
-        "laubengang"
-      ],
-      "chapterPath": "chapters/02-entwurf-raum-funktion",
-      "generated": "2026-05-18 07:48"
-    },
-    {
-      "file": "kap02_av_verhaeltnis.png",
-      "chapter": 2,
-      "part": "I",
-      "partTitle": "Teil I – Fundament",
-      "chapterTitle": "Entwurf, Raum und Funktion",
-      "type": "comparison",
-      "context": "generic",
-      "caption": "Kompakte Baukörper haben weniger Hüllfläche je Volumen",
-      "tags": [
-        "av-verhältnis",
-        "kompaktheit",
-        "wärmeschutz",
-        "energie"
-      ],
-      "chapterPath": "chapters/02-entwurf-raum-funktion",
-      "generated": "2026-05-18 07:50"
     },
     {
       "file": "kap02_formtransformationen.png",
@@ -130,6 +129,61 @@
       ],
       "chapterPath": "chapters/02-entwurf-raum-funktion",
       "generated": "2026-05-18 10:01"
+    },
+    {
+      "file": "kap02_grundriss_eg.png",
+      "chapter": 2,
+      "part": "I",
+      "partTitle": "Teil I – Fundament",
+      "chapterTitle": "Entwurf, Raum und Funktion",
+      "type": "floorplan",
+      "context": "generic",
+      "caption": "Erdgeschossgrundriss des Leitbeispiels als Vierspänner",
+      "tags": [
+        "grundriss",
+        "kastanienallee7",
+        "vierspänner",
+        "erschliessung"
+      ],
+      "chapterPath": "chapters/02-entwurf-raum-funktion",
+      "generated": "2026-05-19"
+    },
+    {
+      "file": "kap02_erschliessungstypen.png",
+      "chapter": 2,
+      "part": "I",
+      "partTitle": "Teil I – Fundament",
+      "chapterTitle": "Entwurf, Raum und Funktion",
+      "type": "comparison",
+      "context": "generic",
+      "caption": "Typische Erschließungssysteme im Geschosswohnungsbau",
+      "tags": [
+        "erschliessung",
+        "zweispänner",
+        "dreispänner",
+        "vierspänner",
+        "laubengang"
+      ],
+      "chapterPath": "chapters/02-entwurf-raum-funktion",
+      "generated": "2026-05-18 07:48"
+    },
+    {
+      "file": "kap02_av_verhaeltnis.png",
+      "chapter": 2,
+      "part": "I",
+      "partTitle": "Teil I – Fundament",
+      "chapterTitle": "Entwurf, Raum und Funktion",
+      "type": "comparison",
+      "context": "generic",
+      "caption": "Kompakte Baukörper haben weniger Hüllfläche je Volumen",
+      "tags": [
+        "av-verhältnis",
+        "kompaktheit",
+        "wärmeschutz",
+        "energie"
+      ],
+      "chapterPath": "chapters/02-entwurf-raum-funktion",
+      "generated": "2026-05-18 07:50"
     },
     {
       "file": "kap03_materialvergleich.png",
@@ -659,7 +713,7 @@
       "file": "kap14_baurecht_hierarchie.png",
       "chapter": 14,
       "part": "V",
-      "partTitle": "Teil V – Recht & Prozess",
+      "partTitle": "Teil V – Projektprozess",
       "chapterTitle": "Planungsrecht",
       "type": "diagram",
       "context": "generic",
@@ -677,7 +731,7 @@
       "file": "kap14_bebauungsplan_legende.png",
       "chapter": 14,
       "part": "V",
-      "partTitle": "Teil V – Recht & Prozess",
+      "partTitle": "Teil V – Projektprozess",
       "chapterTitle": "Planungsrecht",
       "type": "diagram",
       "context": "generic",
@@ -692,28 +746,10 @@
       "generated": "2026-05-18 14:45"
     },
     {
-      "file": "kap15_entwurfsprozess.png",
-      "chapter": 15,
-      "part": "V",
-      "partTitle": "Teil V – Recht & Prozess",
-      "chapterTitle": "HOAI: Phasen, Leistungen, Koordination",
-      "type": "diagram",
-      "context": "generic",
-      "caption": "Entwerfen ist ein iterativer Prozess aus Problemklärung, Varianten und begründeter Auswahl",
-      "tags": [
-        "entwurfsprozess",
-        "problemdefinition",
-        "alternativen",
-        "kriterienmatrix"
-      ],
-      "chapterPath": "chapters/15-hoai",
-      "generated": "2026-05-18 10:04"
-    },
-    {
       "file": "kap15_leistungsphasen.png",
       "chapter": 15,
       "part": "V",
-      "partTitle": "Teil V – Recht & Prozess",
+      "partTitle": "Teil V – Projektprozess",
       "chapterTitle": "HOAI: Phasen, Leistungen, Koordination",
       "type": "infographic",
       "context": "generic",
@@ -730,7 +766,7 @@
       "file": "kap15_bim_lod.png",
       "chapter": 15,
       "part": "V",
-      "partTitle": "Teil V – Recht & Prozess",
+      "partTitle": "Teil V – Projektprozess",
       "chapterTitle": "HOAI: Phasen, Leistungen, Koordination",
       "type": "comparison",
       "context": "generic",
@@ -748,7 +784,7 @@
       "file": "kap16_din276_struktur.png",
       "chapter": 16,
       "part": "V",
-      "partTitle": "Teil V – Recht & Prozess",
+      "partTitle": "Teil V – Projektprozess",
       "chapterTitle": "Kosten & Ausschreibung",
       "type": "infographic",
       "context": "generic",
@@ -766,7 +802,7 @@
       "file": "kap16_lv_auszug.png",
       "chapter": 16,
       "part": "V",
-      "partTitle": "Teil V – Recht & Prozess",
+      "partTitle": "Teil V – Projektprozess",
       "chapterTitle": "Kosten & Ausschreibung",
       "type": "infographic",
       "context": "generic",
@@ -781,8 +817,62 @@
       "generated": "2026-05-18 14:50"
     },
     {
-      "file": "kap17_bim_dimensionen.png",
+      "file": "kap17_bauzeitenplan.png",
       "chapter": 17,
+      "part": "V",
+      "partTitle": "Teil V – Projektprozess",
+      "chapterTitle": "Bauprojektmanagement & Bauoberleitung",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "Der Bauzeitenplan macht Reihenfolge, Parallelität und Puffer sichtbar",
+      "tags": [
+        "bauzeitenplan",
+        "gantt",
+        "terminplanung",
+        "kritischer-pfad"
+      ],
+      "chapterPath": "chapters/17-bauprojektmanagement-bauoberleitung",
+      "generated": "2026-05-19"
+    },
+    {
+      "file": "kap17_netzplan_prinzip.png",
+      "chapter": 17,
+      "part": "V",
+      "partTitle": "Teil V – Projektprozess",
+      "chapterTitle": "Bauprojektmanagement & Bauoberleitung",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Der Netzplan zeigt, welche Verzögerung wirklich den Endtermin trifft",
+      "tags": [
+        "netzplan",
+        "cpm",
+        "puffer",
+        "kritischer-pfad"
+      ],
+      "chapterPath": "chapters/17-bauprojektmanagement-bauoberleitung",
+      "generated": "2026-05-19"
+    },
+    {
+      "file": "kap17_kostenkontrolle.png",
+      "chapter": 17,
+      "part": "V",
+      "partTitle": "Teil V – Projektprozess",
+      "chapterTitle": "Bauprojektmanagement & Bauoberleitung",
+      "type": "chart",
+      "context": "generic",
+      "caption": "Kostenkontrolle verbindet Soll, Ist und Prognose der Endkosten",
+      "tags": [
+        "kostenkontrolle",
+        "din276",
+        "nachtrag",
+        "prognose"
+      ],
+      "chapterPath": "chapters/17-bauprojektmanagement-bauoberleitung",
+      "generated": "2026-05-19"
+    },
+    {
+      "file": "kap18_bim_dimensionen.png",
+      "chapter": 18,
       "part": "VI",
       "partTitle": "Teil VI – BIM",
       "chapterTitle": "Was BIM wirklich ist",
@@ -795,12 +885,12 @@
         "5d",
         "facility-management"
       ],
-      "chapterPath": "chapters/17-was-bim-wirklich-ist",
-      "generated": "2026-05-18 14:53"
+      "chapterPath": "chapters/18-was-bim-wirklich-ist",
+      "generated": "2026-05-19"
     },
     {
-      "file": "kap17_prozessvergleich.png",
-      "chapter": 17,
+      "file": "kap18_prozessvergleich.png",
+      "chapter": 18,
       "part": "VI",
       "partTitle": "Teil VI – BIM",
       "chapterTitle": "Was BIM wirklich ist",
@@ -813,12 +903,12 @@
         "koordination",
         "bcf"
       ],
-      "chapterPath": "chapters/17-was-bim-wirklich-ist",
-      "generated": "2026-05-18 14:55"
+      "chapterPath": "chapters/18-was-bim-wirklich-ist",
+      "generated": "2026-05-19"
     },
     {
-      "file": "kap18_ifc_hierarchie.png",
-      "chapter": 18,
+      "file": "kap19_ifc_hierarchie.png",
+      "chapter": 19,
       "part": "VI",
       "partTitle": "Teil VI – BIM",
       "chapterTitle": "IFC: Die Sprache des digitalen Gebäudes",
@@ -831,12 +921,12 @@
         "ifcspace",
         "hierarchy"
       ],
-      "chapterPath": "chapters/18-ifc",
-      "generated": "2026-05-18 14:58"
+      "chapterPath": "chapters/19-ifc",
+      "generated": "2026-05-19"
     },
     {
-      "file": "kap18_entitaeten_uebersicht.png",
-      "chapter": 18,
+      "file": "kap19_entitaeten_uebersicht.png",
+      "chapter": 19,
       "part": "VI",
       "partTitle": "Teil VI – BIM",
       "chapterTitle": "IFC: Die Sprache des digitalen Gebäudes",
@@ -849,12 +939,12 @@
         "architektur",
         "tga"
       ],
-      "chapterPath": "chapters/18-ifc",
-      "generated": "2026-05-18 15:01"
+      "chapterPath": "chapters/19-ifc",
+      "generated": "2026-05-19"
     },
     {
-      "file": "kap18_beziehungen.png",
-      "chapter": 18,
+      "file": "kap19_beziehungen.png",
+      "chapter": 19,
       "part": "VI",
       "partTitle": "Teil VI – BIM",
       "chapterTitle": "IFC: Die Sprache des digitalen Gebäudes",
@@ -867,12 +957,12 @@
         "ifcwall",
         "properties"
       ],
-      "chapterPath": "chapters/18-ifc",
-      "generated": "2026-05-18 15:03"
+      "chapterPath": "chapters/19-ifc",
+      "generated": "2026-05-19"
     },
     {
-      "file": "kap18_step_format.png",
-      "chapter": 18,
+      "file": "kap19_step_format.png",
+      "chapter": 19,
       "part": "VI",
       "partTitle": "Teil VI – BIM",
       "chapterTitle": "IFC: Die Sprache des digitalen Gebäudes",
@@ -885,12 +975,12 @@
         "entwickler",
         "ifcwall"
       ],
-      "chapterPath": "chapters/18-ifc",
-      "generated": "2026-05-18 15:06"
+      "chapterPath": "chapters/19-ifc",
+      "generated": "2026-05-19"
     },
     {
-      "file": "kap18_mvd_vergleich.png",
-      "chapter": 18,
+      "file": "kap19_mvd_vergleich.png",
+      "chapter": 19,
       "part": "VI",
       "partTitle": "Teil VI – BIM",
       "chapterTitle": "IFC: Die Sprache des digitalen Gebäudes",
@@ -903,12 +993,12 @@
         "reference-view",
         "coordination-view"
       ],
-      "chapterPath": "chapters/18-ifc",
-      "generated": "2026-05-18 15:08"
+      "chapterPath": "chapters/19-ifc",
+      "generated": "2026-05-19"
     },
     {
-      "file": "kap18_georeferenzierung.png",
-      "chapter": 18,
+      "file": "kap19_georeferenzierung.png",
+      "chapter": 19,
       "part": "VI",
       "partTitle": "Teil VI – BIM",
       "chapterTitle": "IFC: Die Sprache des digitalen Gebäudes",
@@ -921,12 +1011,12 @@
         "epsg25832",
         "gis"
       ],
-      "chapterPath": "chapters/18-ifc",
-      "generated": "2026-05-18 15:11"
+      "chapterPath": "chapters/19-ifc",
+      "generated": "2026-05-19"
     },
     {
-      "file": "kap19_omniclass_tabellen.png",
-      "chapter": 19,
+      "file": "kap20_omniclass_tabellen.png",
+      "chapter": 20,
       "part": "VI",
       "partTitle": "Teil VI – BIM",
       "chapterTitle": "Klassifikation",
@@ -939,12 +1029,12 @@
         "uniclass",
         "iso12006"
       ],
-      "chapterPath": "chapters/19-klassifikation",
-      "generated": "2026-05-18 15:14"
+      "chapterPath": "chapters/20-klassifikation",
+      "generated": "2026-05-19"
     },
     {
-      "file": "kap19_mapping.png",
-      "chapter": 19,
+      "file": "kap20_mapping.png",
+      "chapter": 20,
       "part": "VI",
       "partTitle": "Teil VI – BIM",
       "chapterTitle": "Klassifikation",
@@ -957,12 +1047,12 @@
         "din276",
         "stlb"
       ],
-      "chapterPath": "chapters/19-klassifikation",
-      "generated": "2026-05-18 15:16"
+      "chapterPath": "chapters/20-klassifikation",
+      "generated": "2026-05-19"
     },
     {
-      "file": "kap20_cde_workflow.png",
-      "chapter": 20,
+      "file": "kap21_cde_workflow.png",
+      "chapter": 21,
       "part": "VI",
       "partTitle": "Teil VI – BIM",
       "chapterTitle": "Prozess & Kollaboration",
@@ -975,12 +1065,12 @@
         "workflow",
         "shared"
       ],
-      "chapterPath": "chapters/20-prozess-kollaboration",
-      "generated": "2026-05-18 15:19"
+      "chapterPath": "chapters/21-prozess-kollaboration",
+      "generated": "2026-05-19"
     },
     {
-      "file": "kap20_iso19650_struktur.png",
-      "chapter": 20,
+      "file": "kap21_iso19650_struktur.png",
+      "chapter": 21,
       "part": "VI",
       "partTitle": "Teil VI – BIM",
       "chapterTitle": "Prozess & Kollaboration",
@@ -993,12 +1083,12 @@
         "midp",
         "tidp"
       ],
-      "chapterPath": "chapters/20-prozess-kollaboration",
-      "generated": "2026-05-18 15:21"
+      "chapterPath": "chapters/21-prozess-kollaboration",
+      "generated": "2026-05-19"
     },
     {
-      "file": "kap21_clash_beispiel.png",
-      "chapter": 21,
+      "file": "kap22_clash_beispiel.png",
+      "chapter": 22,
       "part": "VI",
       "partTitle": "Teil VI – BIM",
       "chapterTitle": "BIM in der Praxis",
@@ -1011,12 +1101,12 @@
         "koordination",
         "bim"
       ],
-      "chapterPath": "chapters/21-bim-praxis",
-      "generated": "2026-05-18 15:27"
+      "chapterPath": "chapters/22-bim-praxis",
+      "generated": "2026-05-19"
     },
     {
-      "file": "kap21_bim_software_oekosystem.png",
-      "chapter": 21,
+      "file": "kap22_bim_software_oekosystem.png",
+      "chapter": 22,
       "part": "VI",
       "partTitle": "Teil VI – BIM",
       "chapterTitle": "BIM in der Praxis",
@@ -1030,12 +1120,12 @@
         "ifc",
         "opensource"
       ],
-      "chapterPath": "chapters/21-bim-praxis",
-      "generated": "2026-05-18 15:29"
+      "chapterPath": "chapters/22-bim-praxis",
+      "generated": "2026-05-19"
     },
     {
-      "file": "kap22_lca_phasen.png",
-      "chapter": 22,
+      "file": "kap23_lca_phasen.png",
+      "chapter": 23,
       "part": "VII",
       "partTitle": "Teil VII – Nachhaltigkeit",
       "chapterTitle": "Nachhaltigkeit & Kreislaufwirtschaft",
@@ -1048,12 +1138,12 @@
         "epd",
         "nachhaltigkeit"
       ],
-      "chapterPath": "chapters/22-nachhaltigkeit",
-      "generated": "2026-05-18 15:32"
+      "chapterPath": "chapters/23-nachhaltigkeit",
+      "generated": "2026-05-19"
     },
     {
-      "file": "kap22_materialpass.png",
-      "chapter": 22,
+      "file": "kap23_materialpass.png",
+      "chapter": 23,
       "part": "VII",
       "partTitle": "Teil VII – Nachhaltigkeit",
       "chapterTitle": "Nachhaltigkeit & Kreislaufwirtschaft",
@@ -1066,12 +1156,30 @@
         "kreislaufwirtschaft",
         "bim"
       ],
-      "chapterPath": "chapters/22-nachhaltigkeit",
-      "generated": "2026-05-18 15:34"
+      "chapterPath": "chapters/23-nachhaltigkeit",
+      "generated": "2026-05-19"
     },
     {
-      "file": "kap23_baualtersphasen.png",
-      "chapter": 23,
+      "file": "kap24_massnahmen_taxonomie.png",
+      "chapter": 24,
+      "part": "VII",
+      "partTitle": "Teil VII – Nachhaltigkeit",
+      "chapterTitle": "Sanierung",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "Bestandsmaßnahmen unterscheiden sich nach Eingriffstiefe, Genehmigung und Rechtsfolgen",
+      "tags": [
+        "sanierung",
+        "modernisierung",
+        "instandsetzung",
+        "bestand"
+      ],
+      "chapterPath": "chapters/24-sanierung",
+      "generated": "2026-05-19"
+    },
+    {
+      "file": "kap24_baualtersphasen.png",
+      "chapter": 24,
       "part": "VII",
       "partTitle": "Teil VII – Nachhaltigkeit",
       "chapterTitle": "Sanierung",
@@ -1084,12 +1192,12 @@
         "bestand",
         "konstruktion"
       ],
-      "chapterPath": "chapters/23-sanierung",
-      "generated": "2026-05-18 15:37"
+      "chapterPath": "chapters/24-sanierung",
+      "generated": "2026-05-19"
     },
     {
-      "file": "kap23_scan_to_bim.png",
-      "chapter": 23,
+      "file": "kap24_scan_to_bim.png",
+      "chapter": 24,
       "part": "VII",
       "partTitle": "Teil VII – Nachhaltigkeit",
       "chapterTitle": "Sanierung",
@@ -1102,12 +1210,67 @@
         "sanierung",
         "bestand"
       ],
-      "chapterPath": "chapters/23-sanierung",
-      "generated": "2026-05-18 15:40"
+      "chapterPath": "chapters/24-sanierung",
+      "generated": "2026-05-19"
     },
     {
-      "file": "kap24_digitaler_zwilling.png",
-      "chapter": 24,
+      "file": "kap25_projektarten_uebersicht.png",
+      "chapter": 25,
+      "part": "VII",
+      "partTitle": "Teil VII – Nachhaltigkeit",
+      "chapterTitle": "Projektarten: Neubau, Bestand, Denkmal",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "Die Projektart setzt den Rahmen für Planung, Genehmigung und BIM-Strategie",
+      "tags": [
+        "projektarten",
+        "neubau",
+        "bestand",
+        "denkmal",
+        "sonderbau"
+      ],
+      "chapterPath": "chapters/25-projektarten-neubau-bestand-denkmal",
+      "generated": "2026-05-19"
+    },
+    {
+      "file": "kap25_neubautypen_matrix.png",
+      "chapter": 25,
+      "part": "VII",
+      "partTitle": "Teil VII – Nachhaltigkeit",
+      "chapterTitle": "Projektarten: Neubau, Bestand, Denkmal",
+      "type": "infographic",
+      "context": "generic",
+      "caption": "Neubautypen unterscheiden sich nach Größe, Wiederholung und Koordinationsaufwand",
+      "tags": [
+        "neubau",
+        "gebaeudetyp",
+        "mfh",
+        "modulbau"
+      ],
+      "chapterPath": "chapters/25-projektarten-neubau-bestand-denkmal",
+      "generated": "2026-05-19"
+    },
+    {
+      "file": "kap25_neubau_vs_bestand.png",
+      "chapter": 25,
+      "part": "VII",
+      "partTitle": "Teil VII – Nachhaltigkeit",
+      "chapterTitle": "Projektarten: Neubau, Bestand, Denkmal",
+      "type": "diagram",
+      "context": "generic",
+      "caption": "Neubau plant vorwärts, Bestand plant iterativ mit Befunden",
+      "tags": [
+        "neubau",
+        "bestand",
+        "planungsprozess",
+        "scan-to-bim"
+      ],
+      "chapterPath": "chapters/25-projektarten-neubau-bestand-denkmal",
+      "generated": "2026-05-19"
+    },
+    {
+      "file": "kap26_digitaler_zwilling.png",
+      "chapter": 26,
       "part": "VII",
       "partTitle": "Teil VII – Nachhaltigkeit",
       "chapterTitle": "Digitaler Zwilling & KI",
@@ -1120,12 +1283,12 @@
         "bim",
         "datenpipeline"
       ],
-      "chapterPath": "chapters/24-digitaler-zwilling-ki",
-      "generated": "2026-05-18 15:42"
+      "chapterPath": "chapters/26-digitaler-zwilling-ki",
+      "generated": "2026-05-19"
     },
     {
-      "file": "kap24_ki_reifegrad.png",
-      "chapter": 24,
+      "file": "kap26_ki_reifegrad.png",
+      "chapter": 26,
       "part": "VII",
       "partTitle": "Teil VII – Nachhaltigkeit",
       "chapterTitle": "Digitaler Zwilling & KI",
@@ -1138,8 +1301,8 @@
         "reifegrad",
         "bauwirtschaft"
       ],
-      "chapterPath": "chapters/24-digitaler-zwilling-ki",
-      "generated": "2026-05-18 15:45"
+      "chapterPath": "chapters/26-digitaler-zwilling-ki",
+      "generated": "2026-05-19"
     }
   ]
 }

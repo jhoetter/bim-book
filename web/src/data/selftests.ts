@@ -739,59 +739,12 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-16-bauprojektmanagement-bauoberleitung',
-    chapterId: '16-bauprojektmanagement-bauoberleitung',
-    title: 'Selbsttest: Bauprojektmanagement & Bauoberleitung',
-    questions: [
-      {
-        id: 'q16-kritischer-pfad',
-        type: 'single',
-        prompt: 'Was bedeutet ein Vorgang auf dem kritischen Pfad?',
-        options: [
-          { id: 'a', text: 'Er hat keinen Gesamtpuffer; seine Verzögerung verschiebt den Endtermin.' },
-          { id: 'b', text: 'Er ist besonders teuer, aber terminlich beliebig.' },
-          { id: 'c', text: 'Er darf ohne Dokumentation verschoben werden.' },
-          { id: 'd', text: 'Er betrifft nur gestalterische Entscheidungen.' },
-        ],
-        correctOptionIds: ['a'],
-        explanation: 'Der kritische Pfad besteht aus Vorgängen ohne Puffer. Verzögerungen wirken direkt auf den Projektendtermin.',
-      },
-      {
-        id: 'q16-bauoberleitung',
-        type: 'multiple',
-        prompt: 'Welche Aufgaben gehören typischerweise zur Bauoberleitung in LP 8?',
-        options: [
-          { id: 'a', text: 'Ausführung stichprobenartig mit Planung und Vertrag abgleichen' },
-          { id: 'b', text: 'Baubesprechungen und Protokolle führen' },
-          { id: 'c', text: 'Bautagebuch und Mängel dokumentieren' },
-          { id: 'd', text: 'Jeden Handgriff eines Unternehmers dauerhaft ersetzen' },
-          { id: 'e', text: 'Nachträge fachlich und rechnerisch prüfen' },
-        ],
-        correctOptionIds: ['a', 'b', 'c', 'e'],
-        explanation: 'LP 8 überwacht, koordiniert, dokumentiert und prüft. Die Ausführung selbst bleibt Aufgabe der Unternehmen.',
-      },
-      {
-        id: 'q16-behinderung',
-        type: 'single',
-        prompt: 'Warum ist eine Behinderungsanzeige relevant?',
-        options: [
-          { id: 'a', text: 'Sie dokumentiert einen Hinderungsgrund und kann Vertragsfristen beeinflussen.' },
-          { id: 'b', text: 'Sie ersetzt die Abnahme.' },
-          { id: 'c', text: 'Sie macht jeden Nachtrag automatisch unbegründet.' },
-          { id: 'd', text: 'Sie ist nur ein internes Fotoprotokoll.' },
-        ],
-        correctOptionIds: ['a'],
-        explanation: 'Eine berechtigte Behinderung kann Ausführungsfristen verschieben und muss deshalb geprüft und dokumentiert werden.',
-      },
-    ],
-  },
-  {
-    id: 'test-17-kosten-ausschreibung',
-    chapterId: '17-kosten-ausschreibung',
+    id: 'test-16-kosten-ausschreibung',
+    chapterId: '16-kosten-ausschreibung',
     title: 'Selbsttest: Kosten & Ausschreibung',
     questions: [
       {
-        id: 'q17-din276',
+        id: 'q16-din276',
         type: 'single',
         prompt: 'Wozu dient die DIN 276 in der Kostenplanung?',
         options: [
@@ -804,7 +757,7 @@ export const SELF_TESTS: SelfTest[] = [
         explanation: 'Die DIN 276 ordnet Kosten in Kostengruppen und macht Kostenstände vergleichbar.',
       },
       {
-        id: 'q17-lv',
+        id: 'q16-lv',
         type: 'multiple',
         prompt: 'Was gehört zu einer brauchbaren Ausschreibung?',
         options: [
@@ -818,7 +771,7 @@ export const SELF_TESTS: SelfTest[] = [
         explanation: 'Ausschreibungen müssen Leistungen, Mengen, Qualitäten und Randbedingungen nachvollziehbar beschreiben.',
       },
       {
-        id: 'q17-kostenstand',
+        id: 'q16-kostenstand',
         type: 'single',
         prompt: 'Warum sollten Kosten im Projektverlauf fortgeschrieben werden?',
         options: [
@@ -829,6 +782,53 @@ export const SELF_TESTS: SelfTest[] = [
         ],
         correctOptionIds: ['a'],
         explanation: 'Kostenplanung ist ein laufender Abgleich zwischen Planungstiefe, Mengen, Qualitäten, Markt und Entscheidungen.',
+      },
+    ],
+  },
+  {
+    id: 'test-17-bauprojektmanagement-bauoberleitung',
+    chapterId: '17-bauprojektmanagement-bauoberleitung',
+    title: 'Selbsttest: Bauprojektmanagement & Bauoberleitung',
+    questions: [
+      {
+        id: 'q17-kritischer-pfad',
+        type: 'single',
+        prompt: 'Was bedeutet ein Vorgang auf dem kritischen Pfad?',
+        options: [
+          { id: 'a', text: 'Er hat keinen Gesamtpuffer; seine Verzögerung verschiebt den Endtermin.' },
+          { id: 'b', text: 'Er ist besonders teuer, aber terminlich beliebig.' },
+          { id: 'c', text: 'Er darf ohne Dokumentation verschoben werden.' },
+          { id: 'd', text: 'Er betrifft nur gestalterische Entscheidungen.' },
+        ],
+        correctOptionIds: ['a'],
+        explanation: 'Der kritische Pfad besteht aus Vorgängen ohne Puffer. Verzögerungen wirken direkt auf den Projektendtermin.',
+      },
+      {
+        id: 'q17-bauoberleitung',
+        type: 'multiple',
+        prompt: 'Welche Aufgaben gehören typischerweise zur Bauoberleitung in LP 8?',
+        options: [
+          { id: 'a', text: 'Ausführung stichprobenartig mit Planung und Vertrag abgleichen' },
+          { id: 'b', text: 'Baubesprechungen und Protokolle führen' },
+          { id: 'c', text: 'Bautagebuch und Mängel dokumentieren' },
+          { id: 'd', text: 'Jeden Handgriff eines Unternehmers dauerhaft ersetzen' },
+          { id: 'e', text: 'Nachträge fachlich und rechnerisch prüfen' },
+        ],
+        correctOptionIds: ['a', 'b', 'c', 'e'],
+        explanation: 'LP 8 überwacht, koordiniert, dokumentiert und prüft. Die Ausführung selbst bleibt Aufgabe der Unternehmen.',
+      },
+      {
+        id: 'q17-behinderung',
+        type: 'single',
+        prompt: 'Warum ist eine Behinderungsanzeige relevant?',
+        options: [
+          { id: 'a', text: 'Sie dokumentiert einen Hinderungsgrund und kann Vertragsfristen beeinflussen.' },
+          { id: 'b', text: 'Sie ersetzt die Abnahme.' },
+          { id: 'c', text: 'Sie macht jeden Nachtrag automatisch unbegründet.' },
+          { id: 'd', text: 'Sie ist nur ein internes Fotoprotokoll.' },
+        ],
+        correctOptionIds: ['a'],
+        explanation: 'Eine berechtigte Behinderung kann Ausführungsfristen verschieben und muss deshalb geprüft und dokumentiert werden.',
       },
     ],
   },

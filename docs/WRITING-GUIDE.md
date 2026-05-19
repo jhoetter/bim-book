@@ -379,12 +379,12 @@ Richtig — jedes Kapitel einzeln verlinkt, mit dem Thema als Linktext:
 ```markdown
 Planungsrecht: [Kapitel 14](/chapters/14-planungsrecht) ·
 HOAI: [Kapitel 15](/chapters/15-hoai) ·
-Kosten: [Kapitel 17](/chapters/17-kosten-ausschreibung)
+Kosten: [Kapitel 16](/chapters/16-kosten-ausschreibung)
 ```
 
 Falsch — unklickbarer Bereich:
 ```markdown
-Teil V (Kapitel 14–16)   ← NIE SO
+Teil V (Kapitel 14–17)   ← NIE SO
 ```
 
 Richtig — thematisch benannte Einzellinks im Fließtext:

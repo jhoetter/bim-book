@@ -130,11 +130,13 @@ Teil III behandelt die bauphysikalischen Anforderungen an Hülle und Räume. [Ka
 
 Teil IV widmet sich der ::TGA::. [Kapitel 10](/chapters/10-heizung-waermeversorgung) behandelt Heizung und Wärmeversorgung, [Kapitel 11](/chapters/11-lueftung) Lüftung, [Kapitel 12](/chapters/12-sanitaer) Sanitär und Entwässerung, [Kapitel 13](/chapters/13-elektro) Elektro und Gebäudeautomation. Hier wird sichtbar, wie stark Technik den Raum braucht.
 
-Teil V erklärt den rechtlichen und wirtschaftlichen Rahmen. [Kapitel 14](/chapters/14-planungsrecht) ordnet Planungsrecht ein, [Kapitel 15](/chapters/15-hoai) die Leistungsphasen und Honorare, [Kapitel 16](/chapters/16-bauprojektmanagement-bauoberleitung) Bauprojektmanagement und Bauoberleitung, [Kapitel 17](/chapters/17-kosten-ausschreibung) Kosten und Ausschreibung. Diese Themen wirken trocken, entscheiden aber, ob ein Entwurf genehmigungsfähig, beauftragbar und baubar ist.
+Teil V folgt dem Projektprozess. [Kapitel 14](/chapters/14-planungsrecht) ordnet Planungsrecht und Bauantrag ein, [Kapitel 15](/chapters/15-hoai) die Leistungsphasen, Ausführungsplanung und Honorare, [Kapitel 16](/chapters/16-kosten-ausschreibung) Kosten, Ausschreibung und Vergabe, [Kapitel 17](/chapters/17-bauprojektmanagement-bauoberleitung) Bauprojektmanagement und Bauoberleitung. Diese Themen wirken trocken, entscheiden aber, ob ein Entwurf genehmigungsfähig, beauftragbar und baubar ist.
 
 Teil VI führt in die digitale Methode. [Kapitel 18](/chapters/18-was-bim-wirklich-ist) erklärt, was BIM als Arbeitsweise bedeutet. [Kapitel 19](/chapters/19-ifc) erklärt IFC als offene Datenstruktur. [Kapitel 20](/chapters/20-klassifikation) behandelt Klassifikation, [Kapitel 21](/chapters/21-prozess-kollaboration) Zusammenarbeit und gemeinsame Datenumgebungen, [Kapitel 22](/chapters/22-bim-praxis) die Anwendung in der Praxis.
 
 Teil VII weitet den Blick auf Zukunfts- und Bestandsthemen. [Kapitel 23](/chapters/23-nachhaltigkeit) behandelt Nachhaltigkeit und Kreislaufwirtschaft, [Kapitel 24](/chapters/24-sanierung) die Sanierung, [Kapitel 25](/chapters/25-projektarten-neubau-bestand-denkmal) Projektarten, [Kapitel 26](/chapters/26-digitaler-zwilling-ki) digitale Zwillinge und KI. Auch diese Themen lassen sich besser verstehen, wenn man das Gebäude vorher als Schichtsystem gelesen hat.
+
+Das Leitbeispiel ist bewusst ein Mehrfamilienhaus und kein Einfamilienhaus, Krankenhaus oder Denkmal. Ein MFH wie die Kastanienallee 7 ist komplex genug für Brandschutz, Aufzug, TGA-Koordination, Ausschreibung, Bauoberleitung und BIM, aber noch überschaubar genug, um die Zusammenhänge Schritt für Schritt zu verfolgen. Andere Projektarten verändern den Startpunkt und die Risiken; [Kapitel 25](/chapters/25-projektarten-neubau-bestand-denkmal) ordnet diese Unterschiede später systematisch ein.
 
 ## BIM-Brücke: Schichten als Modellstruktur
 

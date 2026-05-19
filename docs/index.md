@@ -22,7 +22,7 @@ Jedes Kapitel endet mit einer **BIM-Brücke** – der konkreten Antwort auf die 
 | II | 3–5 | Baukörper: Struktur und Material | ~90 |
 | III | 6–9 | Gebäudehülle: Bauphysik | ~70 |
 | IV | 10–13 | Technische Gebäudeausrüstung | ~80 |
-| V | 14–16 | Planung, Recht & Prozess | ~60 |
+| V | 14–17 | Projektprozess: Genehmigung, Planung, Vergabe, Bau | ~70 |
 | VI | 17–21 | BIM: Das digitale Gebäude | ~90 |
 | VII | 22–24 | Nachhaltigkeit, Sanierung & Ausblick | ~60 |
 | – | Anhang | Glossar, Quellen, IFC-Referenz, Normen | ~21 |

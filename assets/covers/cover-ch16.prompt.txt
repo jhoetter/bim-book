@@ -1,1 +1,18 @@
-Cover Kapitel 16: Bauprojektmanagement - Termine · Kosten · Baustelle
+Generiert: 2026-05-18 10:57
+Typ: cover
+Beschreibung: Abstract cost and tendering cover on white background spanning the full image width. A bold central cost breakdown bar runs horizontally through the center band, subdivided into unequal segments of varying widths for major construction packages; segments use structural gray (#6B7280) hatching, thermal blue (#93C5FD), amber (#F59E0B), and near-black outlines. Above and below the bar, irregular proportional vertical blocks and fine quantity-takeoff line fragments cluster around the center, with more density in the middle and sparse top and bottom edges. Dynamic data-visualization composition, not a uniform grid. Clean technical architectural illustration. No text, no numbers, no labels.
+
+--- QA-Verlauf ---
+
+Versuch 1: ✓ bestanden
+  Korrektur: No corrections needed; the design meets all specified criteria.
+
+--- Finaler Prompt ---
+
+Technical architectural illustration for a professional German textbook. Minimalist, clean design. Pure white background (#FFFFFF), no gradients, no drop shadows. Precise thin lines (1–2px equivalent). Geometric sans-serif font similar to Inter for all labels and annotations. No photorealism, no photographs, no people, no decorative elements. Modern flat design with clear hierarchy. All text and labels in German.
+
+Chapter cover banner illustration for a professional architectural textbook. Pure white background (#FFFFFF) — same clean technical style as all other book illustrations. NO text, NO labels, NO numbers, NO annotations anywhere. COMPOSITION: The image is displayed as a full-width banner at 220px height with a vertical anchor at 40% — the visible crop covers the CENTER BAND of the image (roughly 25%–60% from the top). Concentrate the most visually powerful elements in this central zone; top and bottom edges can be sparse. Use large, bold, clearly readable shapes that fill the full image width. Do NOT use a uniform grid of equal-sized panels. Prefer 1–3 dominant elements in dynamic panoramic arrangement. Use the shared color palette boldly: structural gray (#6B7280) for concrete/steel, thermal blue (#93C5FD) for insulation, TGA amber (#F59E0B) for MEP/materials. Think: the same technical precision as an in-page illustration, scaled up, stripped of labels, composed for visual impact. NOT photorealistic. NOT hand-drawn.
+
+Color palette: structural gray #6B7280, thermal insulation blue #93C5FD, TGA/MEP amber #F59E0B, pure white background #FFFFFF, near-black lines and text #111827.
+
+Subject: Abstract cost and tendering cover on white background spanning the full image width. A bold central cost breakdown bar runs horizontally through the center band, subdivided into unequal segments of varying widths for major construction packages; segments use structural gray (#6B7280) hatching, thermal blue (#93C5FD), amber (#F59E0B), and near-black outlines. Above and below the bar, irregular proportional vertical blocks and fine quantity-takeoff line fragments cluster around the center, with more density in the middle and sparse top and bottom edges. Dynamic data-visualization composition, not a uniform grid. Clean technical architectural illustration. No text, no numbers, no labels.

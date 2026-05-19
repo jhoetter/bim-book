@@ -163,12 +163,12 @@ export const PARTS: Part[] = [
     ],
   },
   {
-    title: 'Teil V – Recht & Prozess',
+    title: 'Teil V – Projektprozess',
     chapters: [
       { id: '14-planungsrecht', num: '14', title: 'Planungsrecht', path: 'chapters/14-planungsrecht', icon: ProjectInfoIcon, pageIcon: ProjectInfoHifi, coverImage: '/assets/covers/cover-ch14.png' },
       { id: '15-hoai', num: '15', title: 'HOAI: Phasen, Leistungen, Koordination', path: 'chapters/15-hoai', icon: PhaseIcon, pageIcon: PhaseHifi, coverImage: '/assets/covers/cover-ch15.png' },
-      { id: '16-bauprojektmanagement-bauoberleitung', num: '16', title: 'Bauprojektmanagement & Bauoberleitung', path: 'chapters/16-bauprojektmanagement-bauoberleitung', icon: ProjectInfoIcon, pageIcon: ProjectInfoHifi, coverImage: '/assets/covers/cover-ch16.png' },
-      { id: '17-kosten-ausschreibung', num: '17', title: 'Kosten & Ausschreibung', path: 'chapters/17-kosten-ausschreibung', icon: QuantityTakeoffIcon, pageIcon: QuantityTakeoffHifi, coverImage: '/assets/covers/cover-ch17.png' },
+      { id: '16-kosten-ausschreibung', num: '16', title: 'Kosten & Ausschreibung', path: 'chapters/16-kosten-ausschreibung', icon: QuantityTakeoffIcon, pageIcon: QuantityTakeoffHifi, coverImage: '/assets/covers/cover-ch16.png' },
+      { id: '17-bauprojektmanagement-bauoberleitung', num: '17', title: 'Bauprojektmanagement & Bauoberleitung', path: 'chapters/17-bauprojektmanagement-bauoberleitung', icon: ProjectInfoIcon, pageIcon: ProjectInfoHifi, coverImage: '/assets/covers/cover-ch17.png' },
     ],
   },
   {

@@ -120,4 +120,4 @@ Genau deshalb gehört ::Klassifikation:: früh in den BAP.
 
 Für Deutschland sind ::DIN 277::, ::DIN 276:: und STLB-Bau wichtiger als abstrakte internationale Vollständigkeit. IFC liefert mit `IfcClassificationReference` die technische Verbindung.
 
-Verwandte Kapitel: [Kap. 17](/chapters/17-kosten-ausschreibung) · [Kap. 19](/chapters/19-ifc) · [Kap. 21](/chapters/21-prozess-kollaboration)
+Verwandte Kapitel: [Kap. 16](/chapters/16-kosten-ausschreibung) · [Kap. 19](/chapters/19-ifc) · [Kap. 21](/chapters/21-prozess-kollaboration)
