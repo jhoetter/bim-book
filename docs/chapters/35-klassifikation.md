@@ -1,6 +1,6 @@
-# Kapitel 20 – Klassifikation
+# Kapitel 35 – Klassifikation
 
-*Teil VI – BIM*
+*Teil VIII – BIM-Datenmethode*
 
 ---
 
@@ -13,19 +13,19 @@ Ein Modell kann viele Wände enthalten und trotzdem nicht wissen, welche davon :
     - ::DIN 277::, ::DIN 276:: und STLB-Bau als deutsche Kernsysteme einordnen
     - `IfcClassificationReference` als Verbindung zwischen Modell und Ordnungssystem verstehen
 
-## 20.1 Das Problem
+## 35.1 Das Problem
 
 Ein Objekt kann in Revit "AW_StB_WDVS_360" heißen, in der Ausschreibung "::Außenwand:: ::Stahlbeton:: mit WDVS" und in der Kostenplanung KG 331. Für Menschen ist die Zuordnung möglich, für Software nicht zuverlässig. ::Klassifikation:: schafft externe Codes, die unabhängig vom lokalen Namen sind.
 
 Ohne ::Klassifikation:: werden Mengen, Kosten, FM-Daten und Nachhaltigkeitsauswertungen schnell manuell. Jeder Export braucht Mapping-Tabellen, und jedes Büro benennt Bauteile anders. Das ist ein Datenqualitätsproblem, kein Schönheitsfehler.
 
-## 20.2 Deutsche Klassifikation im Kern
+## 35.2 Deutsche Klassifikation im Kern
 
 ::DIN 277:: ordnet Flächen und Rauminhalte: BGF, NUF, VF, TF und weitere Flächenarten. Sie ist Grundlage für Flächenberechnung, Wirtschaftlichkeit und Genehmigungsunterlagen. ::DIN 276:: ordnet Kosten in Kostengruppen und verbindet Mengen mit Budgetsteuerung.
 
 STLB-Bau liefert standardisierte Leistungstexte für Ausschreibung. Zusammen bilden diese Systeme eine pragmatische Kette: Raumflächen nach ::DIN 277::, Kosten nach ::DIN 276::, Leistungen nach STLB. Wer BIM-Software für Deutschland baut, muss diese drei kennen.
 
-## 20.3 Internationale Systeme
+## 35.3 Internationale Systeme
 
 OmniClass ist ein US-amerikanisches Klassifikationssystem mit mehreren Tabellen. Für BIM sind besonders Table 21 Elements und Table 41 Materials relevant. Uniclass 2015 ist im Vereinigten Königreich wichtig. ISO 12006-2 liefert einen Rahmen für ::Klassifikation:: im Bauwesen.
 
@@ -41,7 +41,7 @@ tags: klassifikation, omniclass, uniclass, iso12006
 -->
 ![OmniClass-Überblick](../assets/illustrations/kap20_omniclass_tabellen.png)
 
-## 20.4 Verbindung IFC und Klassifikation
+## 35.4 Verbindung IFC und Klassifikation
 
 IFC verbindet Objekte mit ::Klassifikation:: über `IfcClassificationReference`. Eine Wand kann dadurch auf ::DIN 276:: KG 331, eine STLB-Position oder einen OmniClass-Code verweisen. Diese Referenz ist maschinenlesbar und bleibt unabhängig vom Bauteilnamen.
 
@@ -60,7 +60,7 @@ tags: ifc, klassifikation, din276, stlb
 !!! kastanienallee "Kastanienallee 7"
     Die K7-Außenwand kann dreifach referenziert werden: ::DIN 276:: KG 331 für ::Außenwand::, ein STLB-Bau-Leistungstext für Stahlbetonwand mit WDVS und optional OmniClass Table 21 für Außenwandelemente. Für die Kostenrechnung zählt ::DIN 276::; für internationale Datenübergabe kann OmniClass zusätzlich nützlich sein.
 
-## 20.5 Klassifikation praktisch anwenden
+## 35.5 Klassifikation praktisch anwenden
 
 ::Klassifikation:: wird schnell abstrakt, wenn sie nur als Code-System erklärt wird. Ihr Nutzen zeigt sich in Auswertungen. Eine Kostenabfrage fragt nicht: Welche Objekte heißen zufällig "::Außenwand::"? Sie fragt: Welche Elemente gehören zur ::Kostengruppe:: 331 ::Außenwand::? Eine Flächenauswertung fragt nicht: Welche Räume haben den Namen "Wohnen"? Sie fragt: Welche Flächenart nach ::DIN 277:: liegt vor?
 
@@ -75,7 +75,7 @@ Für Entwickler ist wichtig: ::Klassifikation:: darf nicht nur im Namen stehen. 
 !!! kastanienallee "Kastanienallee 7"
     Die K7-Außenwand kann gleichzeitig als `IfcWall`, ::DIN 276:: KG 331 ::Außenwand::, STLB-nahe Fassadenleistung und Materialpass-Objekt klassifiziert werden. Für Kosten zählt KG 331, für Ausschreibung der Leistungstext, für LCA die Materialschichten. Ohne diese Trennung würde eine spätere Auswertung entweder zu grob oder widersprüchlich.
 
-## 20.6 Prüffragen für die Praxis
+## 35.6 Prüffragen für die Praxis
 
 Vor einer Klassifikationsstrategie muss geklärt werden, wofür klassifiziert wird. Kostenplanung braucht andere Codes als Facility Management. Ausschreibung braucht andere Strukturen als Materialpass. Nachhaltigkeitsauswertung braucht Material- und Produktbezug. Ein einziges universelles Klassifikationsschema klingt attraktiv, wird aber in der Praxis schnell zu grob oder zu kompliziert.
 
@@ -85,7 +85,7 @@ Die dritte Frage lautet: Wer pflegt die Codes? Wenn Architekten, Fachplaner, Kos
 
 Schließlich muss ::Klassifikation:: geprüft werden. Ein Modell kann hunderte Objekte ohne Code enthalten und trotzdem im Viewer vollständig aussehen. Prüfregeln sollten melden, welche Objekte keinen DIN-276-Code, keine DIN-277-Flächenart oder keine STLB-Zuordnung haben. Erst dann wird ::Klassifikation:: von einer Theorie zu einer nutzbaren Datenqualität.
 
-## 20.7 Entwicklerperspektive
+## 35.7 Entwicklerperspektive
 
 ::Klassifikation:: ist in Software ein Identitätsproblem. Namen sind instabil: "::Außenwand::", "AW", "Fassade", "Exterior Wall" oder "Basic Wall 200mm" können dasselbe meinen. Codes sind stabiler, wenn sie sauber referenziert werden. Deshalb sollten Klassifikationen als strukturierte Objekte gespeichert werden, nicht als Textpräfix im Namen.
 
@@ -120,4 +120,4 @@ Genau deshalb gehört ::Klassifikation:: früh in den BAP.
 
 Für Deutschland sind ::DIN 277::, ::DIN 276:: und STLB-Bau wichtiger als abstrakte internationale Vollständigkeit. IFC liefert mit `IfcClassificationReference` die technische Verbindung.
 
-Verwandte Kapitel: [Kap. 16](/chapters/16-kosten-ausschreibung) · [Kap. 19](/chapters/19-ifc) · [Kap. 21](/chapters/21-prozess-kollaboration)
+Verwandte Kapitel: [Kap. 23](/chapters/23-kostenplanung-mengen-din276) · [Kap. 34](/chapters/34-ifc) · [Kap. 36](/chapters/36-prozess-kollaboration)

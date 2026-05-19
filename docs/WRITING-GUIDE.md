@@ -377,9 +377,9 @@ sie können nicht angeklickt werden und sind daher für ein digitales Buch wertl
 
 Richtig — jedes Kapitel einzeln verlinkt, mit dem Thema als Linktext:
 ```markdown
-Planungsrecht: [Kapitel 14](/chapters/14-planungsrecht) ·
-HOAI: [Kapitel 15](/chapters/15-hoai) ·
-Kosten: [Kapitel 16](/chapters/16-kosten-ausschreibung)
+Planungsrecht: [Kapitel 18](/chapters/18-planungsrecht-bauantrag) ·
+HOAI: [Kapitel 19](/chapters/19-hoai-rollen-projektorganisation) ·
+Kosten: [Kapitel 23](/chapters/23-kostenplanung-mengen-din276)
 ```
 
 Falsch — unklickbarer Bereich:
@@ -389,12 +389,12 @@ Teil V (Kapitel 14–17)   ← NIE SO
 
 Richtig — thematisch benannte Einzellinks im Fließtext:
 ```markdown
-…wie in [Kapitel 6](/chapters/06-waermeschutz-geg) berechnet.
+…wie in [Kapitel 10](/chapters/10-waermeschutz-geg) berechnet.
 ```
 
 Standard-Linkziele:
 ```markdown
-[Kap. 6](/chapters/06-waermeschutz-geg)
+[Kap. 10](/chapters/10-waermeschutz-geg)
 [IFC-Schnellreferenz](/appendix/ifc-referenz)
 [Kastanienallee 7](/appendix/kastanienallee7)
 [Glossar](/glossar)

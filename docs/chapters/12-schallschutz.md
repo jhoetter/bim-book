@@ -1,4 +1,4 @@
-# Kapitel 8 – Schallschutz
+# Kapitel 12 – Schallschutz
 
 *Teil III – Bauphysik*
 
@@ -13,7 +13,7 @@ Ein Gebäude kann warm, trocken und standsicher sein und trotzdem schlecht funkt
     - das bewertete Schalldämmmaß R'w einordnen
     - konstruktive Maßnahmen gegen direkte und flankierende Schallübertragung erklären
 
-## 8.1 Schallarten
+## 12.1 Schallarten
 
 ::Luftschall:: breitet sich über Luft aus: Stimmen, Musik, Fernseher. Er trifft auf Wände und Decken und versetzt sie in Schwingung. ::Trittschall:: entsteht durch Schritte, Stühlerücken oder fallende Gegenstände und gelangt direkt in die Decke. Körperschall entsteht in Bauteilen oder Anlagen, etwa Rohrleitungen, Pumpen, Aufzügen oder Lüftungsgeräten.
 
@@ -29,7 +29,7 @@ tags: schallschutz, luftschall, flankenübertragung, grundriss
 -->
 ![Schallpfade zwischen Wohnungen](../assets/illustrations/kap08_schallpfade.png)
 
-## 8.2 Schalldämmmaß R'w
+## 12.2 Schalldämmmaß R'w
 
 Das **::Schallschutz R'w::** ist das bewertete Schalldämmmaß eines Bauteils im eingebauten Zustand. Es beschreibt, wie stark ::Luftschall:: zwischen zwei Räumen reduziert wird. Ein höherer Wert ist besser. Eine Wohnungstrennwand mit R'w = 53 dB erfüllt typische Mindestanforderungen; erhöhter Schallschutz liegt darüber.
 
@@ -37,7 +37,7 @@ Das Massegesetz erklärt die Grundtendenz: Verdoppelt man die flächenbezogene M
 
 DIN 4109 legt Mindestanforderungen fest. Für Wohnungstrennwände im Mehrfamilienhaus wird häufig R'w ≥ 53 dB angesetzt, für Decken R'w ≥ 54 dB und Trittschallpegel L'n,w ≤ 53 dB. VDI 4100 beschreibt Stufen erhöhten Schallschutzes. Mindestschutz ist nicht automatisch Komfort.
 
-## 8.3 Konstruktive Maßnahmen
+## 12.3 Konstruktive Maßnahmen
 
 Schallschutz nutzt drei Prinzipien: Masse, Entkopplung und Dämpfung. Masse hilft gegen ::Luftschall::. Entkopplung unterbricht Schwingungswege, etwa durch schwimmenden Estrich, elastische Lager oder entkoppelte Vorsatzschalen. Dämpfung reduziert Resonanzen in Hohlräumen und mehrschaligen Konstruktionen.
 
@@ -58,13 +58,13 @@ tags: schallschutz, trittschall, estrich, deckenaufbau
 !!! kastanienallee "Kastanienallee 7"
     Der Deckenaufbau besteht aus 220 mm Stahlbetondecke, 30 mm Trittschalldämmung, 20 mm Systemplatte für Fußbodenheizung, 65 mm Heizestrich und 15 mm Belag. Aufbauhöhe über Rohdecke: 30 + 20 + 65 + 15 = 130 mm. Die Masse der Betondecke plus schwimmender Estrich ermöglicht einen Trittschallpegel L'n,w von ca. 48 dB und liegt damit besser als das Mindestniveau von 53 dB.
 
-## 8.4 Schallschutz im Holzbau
+## 12.4 Schallschutz im Holzbau
 
 ::Holz:: ist leicht und deshalb schalltechnisch anspruchsvoller als ::Beton::. Das Massegesetz hilft weniger, und ::Flankenübertragung:: über durchlaufende Holzbauteile kann dominant werden. Gute Holzbaudecken arbeiten mit schweren Schüttungen, entkoppelten Unterdecken, elastischen Lagern und sorgfältiger Fugenplanung.
 
-Die Grundlagen des Holzbaus stehen in [Kapitel 5](/chapters/05-konstruktion). Für den Schallschutz ist dort wichtig: Holzbau funktioniert nicht schlechter, aber weniger verzeihend. Kleine starre Verbindungen können große akustische Wirkung haben.
+Die Grundlagen des Holzbaus stehen in [Kapitel 9](/chapters/09-konstruktion). Für den Schallschutz ist dort wichtig: Holzbau funktioniert nicht schlechter, aber weniger verzeihend. Kleine starre Verbindungen können große akustische Wirkung haben.
 
-## 8.5 Raumakustik
+## 12.5 Raumakustik
 
 Schalldämmung trennt Räume. ::Raumakustik:: beschreibt die Klangqualität innerhalb eines Raums. Ein Treppenhaus mit harten Wänden, Betonboden und Glasflächen kann stark hallen, obwohl die Wohnungstrennwände gut sind. Die Nachhallzeit T, oft RT60 genannt, beschreibt, wie lange Schall im Raum ausklingt.
 
@@ -72,7 +72,7 @@ Die Sabine-Formel lautet vereinfacht: T = 0,163 × V / A. V ist Raumvolumen, A d
 
 DIN 18041 ist vor allem für Räume mit Kommunikationsanforderungen relevant, etwa Unterricht, Versammlung und Gemeinschaft. Im Wohnungsbau hilft sie als Orientierung für Treppenhäuser, Eingänge und gemeinschaftliche Räume.
 
-## 8.6 Planungsfehler, die man hören kann
+## 12.6 Planungsfehler, die man hören kann
 
 Schallschutz ist besonders empfindlich gegenüber kleinen Ausführungsfehlern. Ein schwimmender Estrich funktioniert nur, wenn er an keiner Stelle starr mit Wand, Rohr, Türzarge oder Treppenlauf verbunden ist. Eine einzige Schallbrücke kann den gemessenen Trittschallschutz deutlich verschlechtern. Deshalb sind Randdämmstreifen keine Baustellennebensache, sondern Teil der akustischen Konstruktion.
 
@@ -87,7 +87,7 @@ In frühen BIM-Modellen sind Schallschutzanforderungen oft unsichtbar. Wände ha
 !!! kastanienallee "Kastanienallee 7"
     Für K7 sind drei akustische Zonen maßgeblich. Erstens Wohnung gegen Wohnung: Trennwände und Decken müssen Mindestschutz und möglichst erhöhten Komfort leisten. Zweitens Wohnung gegen Treppenhauskern: Türen, Schachtwände und Aufzug müssen betrachtet werden. Drittens Technik gegen Wohnung: Fernwärmeübergabe, Lüftungsgeräte und Fallleitungen brauchen entkoppelte Lagerung und Schachtplanung. Diese Zonen sollten bereits im Vorentwurf farblich geprüft werden.
 
-## 8.7 Prüffragen für die Praxis
+## 12.7 Prüffragen für die Praxis
 
 Schallschutz wird am besten raumweise geprüft. Welche Räume sind schutzbedürftig: Schlafzimmer, Kinderzimmer, Wohnräume, Arbeitsräume? Welche Räume sind laut: Treppenhaus, Technik, Bad, Küche, Aufzug, Garage? Dazwischen müssen Bauteile, Anschlüsse und Schächte zusammenpassen. Eine einzelne Wandanforderung reicht nicht, wenn der lauteste Pfad über Decke oder Schacht läuft.
 
@@ -97,7 +97,7 @@ Bei technischen Anlagen sollte die Frage lauten: Wird Schwingung erzeugt, und wi
 
 Für digitale Modelle ist die Herausforderung, dass Schallpfade nicht automatisch aus Geometrie folgen. Software kann Räume, Bauteile und Anforderungen verknüpfen, aber die Bewertung braucht Fachregeln. Sinnvoll ist eine akustische Zonenplanung: laute Bereiche, ruhige Bereiche, Trennbauteile und kritische Flanken werden im Modell markiert. Dann können Planer gezielt prüfen, statt auf spätere Messungen zu warten.
 
-## 8.8 Entwicklerperspektive
+## 12.8 Entwicklerperspektive
 
 Schallschutz ist für Software schwieriger als viele andere Prüfungen, weil die entscheidenden Wege nicht immer direkt sichtbar sind. Eine Wand kann geometrisch zwischen zwei Räumen liegen, aber der relevante Schallpfad kann über Decke, Fassade oder Schacht laufen. Ein einfaches Regelwerk "Trennwand dicker als X" greift deshalb zu kurz.
 
@@ -117,4 +117,4 @@ Akustische Anforderungen können im Modell als Properties geführt werden, etwa 
 
 Direkte Bauteilwerte reichen nicht; Anschlüsse, Schächte und Ausführung entscheiden mit. ::Raumakustik:: ist ein eigenes Thema: Sie macht Räume nicht leiser nach außen, sondern verständlicher und angenehmer im Inneren.
 
-Verwandte Kapitel: [Kap. 5](/chapters/05-konstruktion) · [Kap. 12](/chapters/12-sanitaer) · [Kap. 19](/chapters/19-ifc)
+Verwandte Kapitel: [Kap. 9](/chapters/09-konstruktion) · [Kap. 16](/chapters/16-sanitaer) · [Kap. 34](/chapters/34-ifc)

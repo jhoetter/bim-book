@@ -1,4 +1,4 @@
-# Kapitel 5 – Konstruktion: Gründung, Wand, Decke, Dach
+# Kapitel 9 – Konstruktion: Gründung, Wand, Decke, Dach
 
 *Teil II – Baukörper*
 
@@ -13,7 +13,7 @@ Ein Gebäude besteht nicht aus abstrakten Bauteilen, sondern aus Schichten, Ansc
     - kritische Anschlussstellen wie Fenster, ::Flachdach:: und Aufzugsschacht erkennen
     - Holzbau als eigenes Konstruktionssystem mit Brand-, Schall- und Feuchteanforderungen einordnen
 
-## 5.1 Gründung
+## 9.1 Gründung
 
 Die Gründung verbindet Gebäude und Baugrund. Bevor man sie plant, muss der Boden bekannt sein. Ein Baugrundgutachten klärt Tragfähigkeit, Grundwasser, Frostempfindlichkeit, Setzungsverhalten und Schadstoffe. Ohne diese Information ist jede Fundamentplanung eine Annahme.
 
@@ -24,13 +24,13 @@ Bei wasserbeanspruchten Kellern unterscheidet man Weiße Wanne und Schwarze Wann
 !!! kastanienallee "Kastanienallee 7"
     Kastanienallee 7 erhält einen Keller mit Bodenplatte auf verdichtetem Schotter. Für den Aufzug ist eine Grube von ca. 1,10 m unter Fertigfußboden erforderlich; der Keller ist dadurch konstruktiv ohnehin sinnvoll. Angenommen wird eine Weiße Wanne aus WU-Beton mit außenliegender XPS-Perimeterdämmung von 120 mm. Die Bodenplatte trennt Tragwerk, Feuchteschutz und Wärmeschutz: Lasten gehen in den Baugrund, Wasser bleibt außen, Wärmeverluste werden reduziert.
 
-## 5.2 Außenwand
+## 9.2 Außenwand
 
 ::Außenwand:: können einschalig, zweischalig oder als Wand mit **Wärmedämmverbundsystem** (::WDVS::) aufgebaut sein. Einschlige Wände versuchen Tragfähigkeit und Wärmeschutz in einem Stein zu lösen. Zweischalige Wände trennen Tragwand, Luftschicht/Dämmung und Vormauerschale. Beim ::WDVS:: trägt die Wand, außen liegt eine Dämmschicht mit Armierung und Putz.
 
 Von innen nach außen folgen häufig Innenoberfläche, tragende Schicht, Dämmung, Armierung und Außenputz. **::Innenputz::** ist die erste Schicht der Innenwandoberfläche und gleicht Unebenheiten aus. **::Armierungsputz::** ist die dünne Mörtelschicht im ::WDVS::, in die ein Gewebe eingelegt wird; sie schützt die Dämmung mechanisch und verteilt Spannungen. Die Reihenfolge ist bauphysikalisch relevant: Außen liegende Dämmung hält die Tragwand warm und reduziert Kondensatrisiken.
 
-Dampfdiffusion wird später in [Kapitel 7](/chapters/07-feuchteschutz) vertieft. Als Grundregel gilt: Bauteile sollen so geplant werden, dass Feuchte nicht eingeschlossen wird. Schichten müssen nicht immer "nach außen offener" sein, aber der Feuchtehaushalt muss berechnet oder konstruktiv robust sein. Fensteranschlüsse sind kritisch, weil hier Wand, Rahmen, Dämmung, Abdichtung, Sonnenschutz und Innenoberfläche zusammenkommen.
+Dampfdiffusion wird später in [Kapitel 11](/chapters/11-feuchteschutz) vertieft. Als Grundregel gilt: Bauteile sollen so geplant werden, dass Feuchte nicht eingeschlossen wird. Schichten müssen nicht immer "nach außen offener" sein, aber der Feuchtehaushalt muss berechnet oder konstruktiv robust sein. Fensteranschlüsse sind kritisch, weil hier Wand, Rahmen, Dämmung, Abdichtung, Sonnenschutz und Innenoberfläche zusammenkommen.
 
 <!-- IMAGE
 name: kap05_wandaufbau
@@ -55,9 +55,9 @@ tags: fensteranschluss, wärmebrücke, wdvs, detail
 ![Fensteranschluss in der Außenwand](../assets/illustrations/kap05_fensteranschluss.png)
 
 !!! kastanienallee "Kastanienallee 7"
-    Die Referenzwand besteht aus 200 mm ::Stahlbeton::, 160 mm ::Mineralwolle:: WLG 035 und Putzsystem. Schichtfolge innen nach außen: 15 mm ::Innenputz::, 200 mm ::Stahlbeton::, 160 mm Dämmung, 5-8 mm ::Armierungsputz:: mit Gewebe, 3-5 mm Oberputz. Der Dämmwiderstand der ::Mineralwolle:: beträgt R = 0,160 / 0,035 = 4,57 m²K/W. Der resultierende U-Wert liegt bei etwa 0,19 W/(m²K); die genaue Rechnung folgt in [Kapitel 6](/chapters/06-waermeschutz-geg).
+    Die Referenzwand besteht aus 200 mm ::Stahlbeton::, 160 mm ::Mineralwolle:: WLG 035 und Putzsystem. Schichtfolge innen nach außen: 15 mm ::Innenputz::, 200 mm ::Stahlbeton::, 160 mm Dämmung, 5-8 mm ::Armierungsputz:: mit Gewebe, 3-5 mm Oberputz. Der Dämmwiderstand der ::Mineralwolle:: beträgt R = 0,160 / 0,035 = 4,57 m²K/W. Der resultierende U-Wert liegt bei etwa 0,19 W/(m²K); die genaue Rechnung folgt in [Kapitel 10](/chapters/10-waermeschutz-geg).
 
-## 5.3 Deckenaufbau
+## 9.3 Deckenaufbau
 
 Eine Decke ist mehr als eine Tragplatte. Über der Rohdecke liegen Trittschalldämmung, eventuell Installationen, Heizrohre, Estrich und Bodenbelag. Unter der Decke können Putz, Unterdecke, Leuchten, Lüftung oder Sprinkler liegen. Der Aufbau bestimmt Schallschutz, Raumhöhe, Türanschlüsse und Bauablauf.
 
@@ -75,7 +75,7 @@ tags: deckenaufbau, estrich, fbh, schallschutz
 -->
 ![Deckenaufbau mit Fußbodenheizung](../assets/illustrations/kap05_deckenaufbau.png)
 
-## 5.3a Aufzugsschacht
+## 9.3a Aufzugsschacht
 
 Der Aufzugsschacht ist kein Loch im Gebäude, sondern ein eigenes Bauteil. Er besteht im Wohnungsbau häufig aus ::Stahlbeton:: und kann zugleich aussteifen. Aus der barrierefreien Kabine von 1,10 m × 1,40 m entstehen mit Führungsschienen, Türen, Wanddicken und Toleranzen schnell Schachtaußenmaße um 1,80 m × 2,20 m.
 
@@ -83,7 +83,7 @@ Die Wanddicke liegt oft bei mindestens 20 cm, auch wegen Schallschutz. Der Schac
 
 Der Schacht konkurriert mit Treppe, Sanitärschächten, Elektrotrassen und Rettungswegen. TGA-Leitungen gehören nicht durch den Aufzugsschacht. Die Lage muss in LP 2 oder LP 3 feststehen, weil sie Tragwerk, Grundriss, Keller und Dach berührt.
 
-## 5.4 Flachdach
+## 9.4 Flachdach
 
 Das ::Flachdach:: ist eine horizontale Gebäudehülle. Ein typischer Warmdachaufbau lautet: Tragplatte, **::Dampfbremse::**, Dämmung, Abdichtung, Schutzlage und Nutzungsschicht. Eine ::Dampfbremse:: verlangsamt Dampfdiffusion, damit Feuchte nicht in der kalten Dachzone kondensiert. Eine **::Dampfsperre::** ist deutlich dichter; sie wird verwendet, wenn praktisch kein Dampfdurchgang zulässig ist.
 
@@ -104,13 +104,13 @@ tags: flachdach, dampfbremse, abdichtung, pv
 !!! kastanienallee "Kastanienallee 7"
     Das ::Flachdach:: besteht aus Stahlbeton-Tragschicht, bituminöser ::Dampfbremse::, 180 mm PIR-Dämmung, zweilagiger Abdichtung, Schutzlage und extensiver Begrünung von ca. 80-100 mm. Die PV-Anlage mit 30 kWp steht auf ballastierten Unterkonstruktionen. Die Dachfläche beträgt 20 m × 18 m = 360 m²; mit Attika und Technikflächen werden Entwässerung und Notüberlauf so geplant, dass Starkregen nicht in die Konstruktion zurückstaut.
 
-## 5.5 Geneigtes Dach
+## 9.5 Geneigtes Dach
 
 Das geneigte Dach ist im Mehrfamilienhaus nicht immer die wirtschaftlichste Lösung, aber im Einfamilienhaus und Bestand sehr verbreitet. Sparren tragen von Traufe zu First, Pfetten unterstützen Sparren, Kehlbalken stabilisieren größere Spannweiten. Die Dachdeckung liegt auf Lattung, darunter folgen Unterdeckung, Dämmung, Luftdichtheit und Innenbekleidung.
 
 Zwischensparrendämmung nutzt den Raum zwischen den Sparren, ist aber durch Holzanteile wärmetechnisch unterbrochen. Aufsparrendämmung liegt oberhalb der Sparren und reduziert Wärmebrücken, ist aber teurer und verändert Anschlusshöhen. Dachdeckungen reichen von Ziegel und Betonstein über Metall bis Schiefer. Entscheidend sind Regensicherheit, Hinterlüftung, Schneelast, Anschlüsse und Durchdringungen.
 
-## 5.6 Holzbau als System
+## 9.6 Holzbau als System
 
 Holzbau ist nicht nur "::Beton:: durch ::Holz:: ersetzen". Holzrahmenbau arbeitet mit Stielen, Riegeln, Beplankungen und Dämmung in Gefachen. Er ist hoch vorfertigbar und für fünf Geschosse gut beherrschbar. Brettsperrholz baut mit massiven Wand- und Deckentafeln; höhere Gebäude sind möglich, aber Brand-, Schall- und Anschlussdetails werden anspruchsvoller.
 
@@ -132,7 +132,7 @@ tags: holzbau, holzrahmenbau, clt, brandschutz, schallschutz
 
 Konstruktionsaufbauten werden in IFC über Bauteile und Materialschichten beschrieben. `IfcWall`, `IfcSlab` und `IfcRoof` tragen Geometrie; `IfcMaterialLayerSet` beschreibt die Schichten. Das ist für Wärmeschutz, Kosten, Mengen und Nachhaltigkeit entscheidend.
 
-Der Unterschied zwischen LOD 200 und LOD 400 zeigt sich hier deutlich. In LOD 200 reicht ein Wandtyp mit grober Dicke. In LOD 300 müssen Schichten, Öffnungen und relevante Anschlüsse stimmen. In LOD 400 kommen montagefähige Details, Befestigungen und exakte Produkte hinzu. IFC und LOD werden in [Kapitel 19](/chapters/19-ifc) und [Kapitel 15](/chapters/15-hoai) vertieft.
+Der Unterschied zwischen LOD 200 und LOD 400 zeigt sich hier deutlich. In LOD 200 reicht ein Wandtyp mit grober Dicke. In LOD 300 müssen Schichten, Öffnungen und relevante Anschlüsse stimmen. In LOD 400 kommen montagefähige Details, Befestigungen und exakte Produkte hinzu. IFC und LOD werden in [Kapitel 34](/chapters/34-ifc) und [Kapitel 19](/chapters/19-hoai-rollen-projektorganisation) vertieft.
 
 ## Zusammenfassung
 
@@ -140,4 +140,4 @@ Der Unterschied zwischen LOD 200 und LOD 400 zeigt sich hier deutlich. In LOD 20
 
 Gründung, Wand, Decke und Dach funktionieren nur, wenn Schichtfolge und Anschlüsse stimmen. Kritische Details entstehen an Übergängen: Sockel, Fenster, Dachrand, Schacht, Aufzug, Leitungsdurchbruch. Wer diese Punkte früh plant, vermeidet späte Kollisionen und Bauschäden.
 
-Verwandte Kapitel: [Kap. 3](/chapters/03-baustoffe) · [Kap. 4](/chapters/04-tragwerk) · [Kap. 6](/chapters/06-waermeschutz-geg) · [Kap. 7](/chapters/07-feuchteschutz) · [Kap. 8](/chapters/08-schallschutz)
+Verwandte Kapitel: [Kap. 7](/chapters/07-baustoffe) · [Kap. 8](/chapters/08-tragwerk) · [Kap. 10](/chapters/10-waermeschutz-geg) · [Kap. 11](/chapters/11-feuchteschutz) · [Kap. 12](/chapters/12-schallschutz)

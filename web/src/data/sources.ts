@@ -32,7 +32,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Atlas Baustoff',
     group: 'Atlas-Reihe',
     kind: 'Buch',
-    chapters: ['03-baustoffe', '05-konstruktion'],
+    chapters: ['07-baustoffe', '09-konstruktion'],
     note: 'Materialeigenschaften, Baustoffgruppen und konstruktive Einordnung.',
   },
   {
@@ -41,7 +41,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Flachdach Atlas',
     group: 'Atlas-Reihe',
     kind: 'Buch',
-    chapters: ['05-konstruktion', '06-waermeschutz-geg', '07-feuchteschutz'],
+    chapters: ['09-konstruktion', '10-waermeschutz-geg', '11-feuchteschutz'],
     note: 'Dachaufbauten, Entwässerung, Abdichtung und bauphysikalische Risiken.',
   },
   {
@@ -50,7 +50,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Atlas Geneigte Dächer',
     group: 'Atlas-Reihe',
     kind: 'Buch',
-    chapters: ['05-konstruktion', '07-feuchteschutz'],
+    chapters: ['09-konstruktion', '11-feuchteschutz'],
     note: 'Dachformen, Schichten, Anschlüsse und konstruktive Regeln für geneigte Dächer.',
   },
   {
@@ -59,7 +59,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Atlas Holzbau',
     group: 'Atlas-Reihe',
     kind: 'Buch',
-    chapters: ['03-baustoffe', '04-tragwerk', '05-konstruktion', '08-schallschutz', '09-brandschutz', '24-sanierung'],
+    chapters: ['07-baustoffe', '08-tragwerk', '09-konstruktion', '12-schallschutz', '13-brandschutz', '39-sanierung'],
     note: 'Mehrgeschossige Holzbauweisen, Detailprinzipien, Brand- und Schallschutz.',
   },
   {
@@ -68,7 +68,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Atlas Stahlbau',
     group: 'Atlas-Reihe',
     kind: 'Buch',
-    chapters: ['03-baustoffe', '04-tragwerk', '05-konstruktion'],
+    chapters: ['07-baustoffe', '08-tragwerk', '09-konstruktion'],
     note: 'Stahlbausysteme, Verbindungen, Tragsysteme und Fassadenbezug.',
   },
   {
@@ -77,7 +77,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Atlas Recycling',
     group: 'Atlas-Reihe',
     kind: 'Buch',
-    chapters: ['23-nachhaltigkeit', '24-sanierung', '26-digitaler-zwilling-ki'],
+    chapters: ['38-nachhaltigkeit', '39-sanierung', '41-digitaler-zwilling-ki'],
     note: 'Kreislaufwirtschaft, Rückbau, Materialpässe und Urban Mining.',
   },
   {
@@ -86,7 +86,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Atlas Sanierung',
     group: 'Atlas-Reihe',
     kind: 'Buch',
-    chapters: ['05-konstruktion', '07-feuchteschutz', '24-sanierung'],
+    chapters: ['09-konstruktion', '11-feuchteschutz', '39-sanierung'],
     note: 'Bestandsanalyse, Sanierungsdetails und Eingriffe in bestehende Bauteile.',
   },
   {
@@ -95,7 +95,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Ausbau Atlas',
     group: 'Atlas-Reihe',
     kind: 'Buch',
-    chapters: ['05-konstruktion', '08-schallschutz', '16-kosten-ausschreibung'],
+    chapters: ['09-konstruktion', '12-schallschutz', '23-kostenplanung-mengen-din276'],
     note: 'Innenausbau, Trockenbau, Oberflächen, Ausbaugewerke und Detailanschlüsse.',
   },
   {
@@ -104,7 +104,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Energie Atlas',
     group: 'Atlas-Reihe',
     kind: 'Buch',
-    chapters: ['06-waermeschutz-geg', '10-heizung-waermeversorgung', '11-lueftung', '23-nachhaltigkeit'],
+    chapters: ['10-waermeschutz-geg', '14-heizung-waermeversorgung', '15-lueftung', '38-nachhaltigkeit'],
     note: 'Energiekonzepte, Gebäudehülle, technische Systeme und Nachhaltigkeitsbezug.',
   },
   {
@@ -113,7 +113,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Fassaden Atlas',
     group: 'Atlas-Reihe',
     kind: 'Buch',
-    chapters: ['05-konstruktion', '06-waermeschutz-geg', '07-feuchteschutz'],
+    chapters: ['09-konstruktion', '10-waermeschutz-geg', '11-feuchteschutz'],
     note: 'Fassadensysteme, Öffnungen, Anschlüsse und Hüllflächenlogik.',
   },
   {
@@ -122,7 +122,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Glasbau Atlas',
     group: 'Atlas-Reihe',
     kind: 'Buch',
-    chapters: ['03-baustoffe', '05-konstruktion', '06-waermeschutz-geg'],
+    chapters: ['07-baustoffe', '09-konstruktion', '10-waermeschutz-geg'],
     note: 'Glas als Baustoff, Fassaden, Tageslicht, U-Werte und Anschlüsse.',
   },
   {
@@ -131,7 +131,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Mauerwerk Atlas',
     group: 'Atlas-Reihe',
     kind: 'Buch',
-    chapters: ['03-baustoffe', '04-tragwerk', '05-konstruktion', '06-waermeschutz-geg'],
+    chapters: ['07-baustoffe', '08-tragwerk', '09-konstruktion', '10-waermeschutz-geg'],
     note: 'Mauerwerksarten, Wandaufbauten, Tragverhalten und Hülleneigenschaften.',
   },
   {
@@ -140,7 +140,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Sichtbeton Atlas',
     group: 'Atlas-Reihe',
     kind: 'Buch',
-    chapters: ['03-baustoffe', '04-tragwerk', '05-konstruktion'],
+    chapters: ['07-baustoffe', '08-tragwerk', '09-konstruktion'],
     note: 'Betonoberflächen, Schalung, Ausführung und Qualitätsanforderungen.',
   },
   {
@@ -149,7 +149,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Ching - Form, Space and Order',
     group: 'Grundlagen und Entwurf',
     kind: 'Buch',
-    chapters: ['01-architektur-als-system', '02-entwurf-raum-funktion'],
+    chapters: ['01-architektur-als-system', '06-plaene-raum-funktion-entwurfslogik'],
     note: 'Raumordnung, Proportion, Grundprinzipien architektonischer Komposition.',
   },
   {
@@ -158,7 +158,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Neufert',
     group: 'Grundlagen und Entwurf',
     kind: 'Buch',
-    chapters: ['02-entwurf-raum-funktion', '12-sanitaer', '14-planungsrecht'],
+    chapters: ['06-plaene-raum-funktion-entwurfslogik', '16-sanitaer', '18-planungsrecht-bauantrag'],
     note: 'Planungsmaße, Nutzungsanforderungen, Sanitär, Erschließung und Raumprogramme.',
   },
   {
@@ -167,7 +167,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Bildwörterbuch',
     group: 'Grundlagen und Entwurf',
     kind: 'Buch',
-    chapters: ['01-architektur-als-system', '03-baustoffe', '04-tragwerk', '05-konstruktion'],
+    chapters: ['01-architektur-als-system', '07-baustoffe', '08-tragwerk', '09-konstruktion'],
     note: 'Begriffe, Bauteile und historische Terminologie für Glossar und Grundlagentexte.',
   },
   {
@@ -176,7 +176,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Das Baubuch',
     group: 'Grundlagen und Entwurf',
     kind: 'Buch',
-    chapters: ['03-baustoffe', '05-konstruktion', '06-waermeschutz-geg', '07-feuchteschutz'],
+    chapters: ['07-baustoffe', '09-konstruktion', '10-waermeschutz-geg', '11-feuchteschutz'],
     note: 'Massivbau, Wandaufbauten, Mauerwerk, Bauphysik und Ausführungsbezug.',
   },
   {
@@ -185,7 +185,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Frick/Knöll 1',
     group: 'Baukonstruktion',
     kind: 'Buch',
-    chapters: ['03-baustoffe', '04-tragwerk', '05-konstruktion'],
+    chapters: ['07-baustoffe', '08-tragwerk', '09-konstruktion'],
     note: 'Grundlagen der Baukonstruktion: Gründung, Wand, Decke, Dach und Treppe.',
   },
   {
@@ -194,7 +194,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Frick/Knöll 2',
     group: 'Baukonstruktion',
     kind: 'Buch',
-    chapters: ['05-konstruktion', '07-feuchteschutz', '08-schallschutz'],
+    chapters: ['09-konstruktion', '11-feuchteschutz', '12-schallschutz'],
     note: 'Detailkonstruktionen, Anschlüsse, Ausbau und bauphysikalische Schnittstellen.',
   },
   {
@@ -203,7 +203,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Dachkonstruktionen',
     group: 'Baukonstruktion',
     kind: 'Buch',
-    chapters: ['05-konstruktion', '07-feuchteschutz'],
+    chapters: ['09-konstruktion', '11-feuchteschutz'],
     note: 'Dachtragwerke, Dachformen und konstruktive Details.',
   },
   {
@@ -212,7 +212,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Ingenieurbau und Hochbau',
     group: 'Baukonstruktion',
     kind: 'Buch',
-    chapters: ['04-tragwerk', '05-konstruktion'],
+    chapters: ['08-tragwerk', '09-konstruktion'],
     note: 'Tragsysteme, Lastabtragung und konstruktiver Hochbau.',
   },
   {
@@ -221,7 +221,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Holzbauplanung',
     group: 'Holzbau',
     kind: 'Leitfaden',
-    chapters: ['03-baustoffe', '05-konstruktion', '24-sanierung'],
+    chapters: ['07-baustoffe', '09-konstruktion', '39-sanierung'],
     note: 'Planungsgrundlagen für Holzbau, Systemwahl und Ausführungsprinzipien.',
   },
   {
@@ -230,7 +230,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Mischbauweise',
     group: 'Holzbau',
     kind: 'Leitfaden',
-    chapters: ['04-tragwerk', '05-konstruktion'],
+    chapters: ['08-tragwerk', '09-konstruktion'],
     note: 'Holz-Hybrid-Konstruktionen und Anschlüsse zwischen Materialsystemen.',
   },
   {
@@ -239,7 +239,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'BS-Holz EC5',
     group: 'Holzbau',
     kind: 'Leitfaden',
-    chapters: ['04-tragwerk'],
+    chapters: ['08-tragwerk'],
     note: 'Bemessungslogik für Brettschichtholz und Eurocode-5-Bezug.',
   },
   {
@@ -248,7 +248,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Navigationshilfe EC5',
     group: 'Holzbau',
     kind: 'Leitfaden',
-    chapters: ['04-tragwerk'],
+    chapters: ['08-tragwerk'],
     note: 'Orientierung in Eurocode 5 für Holzbaubemessung.',
   },
   {
@@ -257,7 +257,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Brandschutz Holzbau',
     group: 'Holzbau',
     kind: 'Leitfaden',
-    chapters: ['09-brandschutz', '24-sanierung'],
+    chapters: ['13-brandschutz', '39-sanierung'],
     note: 'Brandverhalten, Kapselung, Rettungswege und Gebäudeklassen im Holzbau.',
   },
   {
@@ -266,7 +266,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Flachdächer Holzbau',
     group: 'Holzbau',
     kind: 'Leitfaden',
-    chapters: ['05-konstruktion', '07-feuchteschutz'],
+    chapters: ['09-konstruktion', '11-feuchteschutz'],
     note: 'Flachdachaufbauten, Holzschutz und Feuchterisiken im Holzbau.',
   },
   {
@@ -275,7 +275,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Schallschutz Holzbau',
     group: 'Holzbau',
     kind: 'Leitfaden',
-    chapters: ['08-schallschutz'],
+    chapters: ['12-schallschutz'],
     note: 'Luft- und Trittschallschutz bei leichten und mehrschichtigen Holzbauteilen.',
   },
   {
@@ -284,7 +284,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Wärmebrücken Holzbau',
     group: 'Holzbau',
     kind: 'Leitfaden',
-    chapters: ['06-waermeschutz-geg'],
+    chapters: ['10-waermeschutz-geg'],
     note: 'Wärmebrücken, Anschlussdetails und rechnerische Bewertung.',
   },
   {
@@ -293,7 +293,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Brettsperrholz',
     group: 'Holzbau',
     kind: 'Leitfaden',
-    chapters: ['03-baustoffe', '04-tragwerk', '05-konstruktion'],
+    chapters: ['07-baustoffe', '08-tragwerk', '09-konstruktion'],
     note: 'CLT/Brettsperrholz als Material, Tragwerk und Bauteilsystem.',
   },
   {
@@ -302,7 +302,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Holz als Baustoff',
     group: 'Holzbau',
     kind: 'Leitfaden',
-    chapters: ['03-baustoffe', '04-tragwerk'],
+    chapters: ['07-baustoffe', '08-tragwerk'],
     note: 'Materialeigenschaften, Holzwerkstoffe und konstruktive Verwendung.',
   },
   {
@@ -311,7 +311,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Holzschutz',
     group: 'Holzbau',
     kind: 'Leitfaden',
-    chapters: ['05-konstruktion', '07-feuchteschutz', '24-sanierung'],
+    chapters: ['09-konstruktion', '11-feuchteschutz', '39-sanierung'],
     note: 'Konstruktiver Holzschutz, Feuchtevermeidung und Dauerhaftigkeit.',
   },
   {
@@ -320,7 +320,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Zeichnungen Holzrahmenbau',
     group: 'Holzbau',
     kind: 'Leitfaden',
-    chapters: ['05-konstruktion', '08-schallschutz', '09-brandschutz'],
+    chapters: ['09-konstruktion', '12-schallschutz', '13-brandschutz'],
     note: 'Detailzeichnungen und Anschlussbeispiele für Holzrahmenbau.',
   },
   {
@@ -329,7 +329,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Haustechnik',
     group: 'Gebäudetechnik',
     kind: 'Buch',
-    chapters: ['10-heizung-waermeversorgung', '11-lueftung', '12-sanitaer', '13-elektro'],
+    chapters: ['14-heizung-waermeversorgung', '15-lueftung', '16-sanitaer', '17-elektro'],
     note: 'Grundlagen für Heizung, Lüftung, Sanitär und Elektro in Gebäuden.',
   },
   {
@@ -338,7 +338,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Nachhaltige Gebäudetechnik',
     group: 'Gebäudetechnik',
     kind: 'Buch',
-    chapters: ['10-heizung-waermeversorgung', '11-lueftung', '13-elektro', '23-nachhaltigkeit'],
+    chapters: ['14-heizung-waermeversorgung', '15-lueftung', '17-elektro', '38-nachhaltigkeit'],
     note: 'Technische Systeme mit Energie-, Effizienz- und Nachhaltigkeitsschwerpunkt.',
   },
   {
@@ -347,7 +347,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Bausanierung',
     group: 'Sanierung und Denkmalpflege',
     kind: 'Buch',
-    chapters: ['07-feuchteschutz', '23-nachhaltigkeit', '24-sanierung'],
+    chapters: ['11-feuchteschutz', '38-nachhaltigkeit', '39-sanierung'],
     note: 'Schäden, Diagnose, Instandsetzung und Bestandsmaßnahmen.',
   },
   {
@@ -356,7 +356,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Denkmal und Energie',
     group: 'Sanierung und Denkmalpflege',
     kind: 'Leitfaden',
-    chapters: ['06-waermeschutz-geg', '23-nachhaltigkeit', '24-sanierung'],
+    chapters: ['10-waermeschutz-geg', '38-nachhaltigkeit', '39-sanierung'],
     note: 'Energetische Verbesserung im Bestand mit denkmalpflegerischem Bezug.',
   },
   {
@@ -365,7 +365,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Basics Ausschreibung',
     group: 'Recht und Verträge',
     kind: 'Buch',
-    chapters: ['15-hoai', '16-kosten-ausschreibung'],
+    chapters: ['19-hoai-rollen-projektorganisation', '23-kostenplanung-mengen-din276'],
     note: 'Leistungsverzeichnisse, Ausschreibungslogik und Vergabegrundlagen.',
   },
   {
@@ -374,7 +374,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'HOAI 2021',
     group: 'Recht und Verträge',
     kind: 'Norm/Gesetz',
-    chapters: ['15-hoai', '16-kosten-ausschreibung'],
+    chapters: ['19-hoai-rollen-projektorganisation', '23-kostenplanung-mengen-din276'],
     note: 'Leistungsphasen, Honorartafeln und Vertragsrahmen.',
   },
   {
@@ -383,7 +383,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'HOAI Praxis',
     group: 'Recht und Verträge',
     kind: 'Buch',
-    chapters: ['15-hoai'],
+    chapters: ['19-hoai-rollen-projektorganisation'],
     note: 'Praktische Einordnung der Leistungsbilder, Grundleistungen und Besonderen Leistungen.',
   },
   {
@@ -392,7 +392,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'HOAI 2021 verstehen',
     group: 'Recht und Verträge',
     kind: 'Buch',
-    chapters: ['15-hoai', '17-bauprojektmanagement-bauoberleitung'],
+    chapters: ['19-hoai-rollen-projektorganisation', '29-bauoberleitung-baukontrolle-maengelmanagement'],
     note: 'Praxisbezogene Erläuterung der HOAI-Leistungsbilder, besonderen Leistungen und Projektrollen.',
   },
   {
@@ -401,7 +401,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'VOB im Bild',
     group: 'Recht und Verträge',
     kind: 'Buch',
-    chapters: ['16-kosten-ausschreibung', '17-bauprojektmanagement-bauoberleitung'],
+    chapters: ['23-kostenplanung-mengen-din276', '29-bauoberleitung-baukontrolle-maengelmanagement'],
     note: 'Ausführungsregeln, Abrechnung und typische Leistungsabgrenzungen.',
   },
   {
@@ -410,7 +410,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Baustelleneinrichtung',
     group: 'Bauausführung',
     kind: 'Buch',
-    chapters: ['16-kosten-ausschreibung', '17-bauprojektmanagement-bauoberleitung'],
+    chapters: ['23-kostenplanung-mengen-din276', '29-bauoberleitung-baukontrolle-maengelmanagement'],
     note: 'Baustellenlogistik, Bauablauf, temporäre Anlagen und Kostenbezug.',
   },
   {
@@ -419,7 +419,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Bau-Projekt-Management',
     group: 'Bauausführung',
     kind: 'Buch',
-    chapters: ['17-bauprojektmanagement-bauoberleitung', '25-projektarten-neubau-bestand-denkmal'],
+    chapters: ['29-bauoberleitung-baukontrolle-maengelmanagement', '40-projektarten-neubau-bestand-denkmal'],
     note: 'Projektmanagement-Grundlagen, Termin- und Kostensteuerung, Projektstrukturen und Änderungsmanagement.',
   },
   {
@@ -428,7 +428,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Bauobjektüberwachung',
     group: 'Bauausführung',
     kind: 'Buch',
-    chapters: ['17-bauprojektmanagement-bauoberleitung'],
+    chapters: ['29-bauoberleitung-baukontrolle-maengelmanagement'],
     note: 'Objektüberwachung, Bautagebuch, Baubesprechungen, Abnahme, Dokumentation und Haftungsfragen.',
   },
   {
@@ -437,7 +437,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Standard Detailsammlung',
     group: 'Bauausführung',
     kind: 'Buch',
-    chapters: ['05-konstruktion', '16-kosten-ausschreibung'],
+    chapters: ['09-konstruktion', '23-kostenplanung-mengen-din276'],
     note: 'Detailvorlagen und Ausführungsstandards für Konstruktion und Ausschreibung.',
   },
   {
@@ -446,7 +446,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Architectural Graphics',
     group: 'Zeichnen und Darstellung',
     kind: 'Buch',
-    chapters: ['02-entwurf-raum-funktion', '18-was-bim-wirklich-ist'],
+    chapters: ['06-plaene-raum-funktion-entwurfslogik', '33-was-bim-wirklich-ist'],
     note: 'Planarten, Darstellung, Zeichnungskonventionen und Lesbarkeit.',
   },
   {
@@ -455,7 +455,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Basics Technisches Zeichnen',
     group: 'Zeichnen und Darstellung',
     kind: 'Buch',
-    chapters: ['02-entwurf-raum-funktion', '18-was-bim-wirklich-ist'],
+    chapters: ['06-plaene-raum-funktion-entwurfslogik', '33-was-bim-wirklich-ist'],
     note: 'Zeichnungsarten, Maßstab, Schnitte, Ansichten und Planlayout.',
   },
   {
@@ -464,7 +464,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Revit 2026',
     group: 'Digital und BIM',
     kind: 'Buch',
-    chapters: ['18-was-bim-wirklich-ist', '19-ifc', '21-prozess-kollaboration', '22-bim-praxis'],
+    chapters: ['33-was-bim-wirklich-ist', '34-ifc', '36-prozess-kollaboration', '37-bim-praxis'],
     note: 'Praxisbezug zu Modellierung, Familien, Plänen, Auswertung und Export.',
   },
   {
@@ -473,7 +473,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Grundlagen BIM-Arbeitsmethode',
     group: 'Digital und BIM',
     kind: 'Buch',
-    chapters: ['18-was-bim-wirklich-ist', '21-prozess-kollaboration', '22-bim-praxis'],
+    chapters: ['33-was-bim-wirklich-ist', '36-prozess-kollaboration', '37-bim-praxis'],
     note: 'BIM-Methode, Rollen, Informationsanforderungen und modellbasierte Zusammenarbeit.',
   },
   {
@@ -482,7 +482,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Agile Digitalisierung im Baubetrieb',
     group: 'Digital und BIM',
     kind: 'Buch',
-    chapters: ['17-bauprojektmanagement-bauoberleitung', '22-bim-praxis', '26-digitaler-zwilling-ki'],
+    chapters: ['29-bauoberleitung-baukontrolle-maengelmanagement', '37-bim-praxis', '41-digitaler-zwilling-ki'],
     note: 'Digitale Methoden im Baubetrieb, Datenflüsse, Baustellenprozesse und organisatorischer Wandel.',
   },
   {
@@ -491,7 +491,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'CDE nach ISO 19650',
     group: 'Digital und BIM',
     kind: 'Standard/Daten',
-    chapters: ['18-was-bim-wirklich-ist', '21-prozess-kollaboration'],
+    chapters: ['33-was-bim-wirklich-ist', '36-prozess-kollaboration'],
     note: 'Informationsmanagement, CDE, Status, Freigaben und Lieferprozesse.',
   },
   {
@@ -500,7 +500,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'DIN SPEC 91391-1 DE',
     group: 'Digital und BIM',
     kind: 'Standard/Daten',
-    chapters: ['21-prozess-kollaboration'],
+    chapters: ['36-prozess-kollaboration'],
     note: 'Anforderungen an gemeinsame Datenumgebungen im deutschen BIM-Kontext.',
   },
   {
@@ -509,7 +509,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'DIN SPEC 91391-1 EN',
     group: 'Digital und BIM',
     kind: 'Standard/Daten',
-    chapters: ['21-prozess-kollaboration'],
+    chapters: ['36-prozess-kollaboration'],
     note: 'Englische Fassung zur CDE-Begrifflichkeit und internationalen Anschlussfähigkeit.',
   },
   {
@@ -518,7 +518,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'IFC 4.3',
     group: 'Digital und BIM',
     kind: 'Standard/Daten',
-    chapters: ['19-ifc', '20-klassifikation', '22-bim-praxis', '26-digitaler-zwilling-ki'],
+    chapters: ['34-ifc', '35-klassifikation', '37-bim-praxis', '41-digitaler-zwilling-ki'],
     note: 'Entitäten, Property Sets, Geometrie, Georeferenzierung und Austauschlogik.',
   },
   {
@@ -527,7 +527,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'OmniClass Intro',
     group: 'Digital und BIM',
     kind: 'Standard/Daten',
-    chapters: ['20-klassifikation'],
+    chapters: ['35-klassifikation'],
     note: 'Einordnung des OmniClass-Klassifikationssystems.',
   },
   {
@@ -536,7 +536,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'OmniClass 11',
     group: 'Digital und BIM',
     kind: 'Standard/Daten',
-    chapters: ['20-klassifikation'],
+    chapters: ['35-klassifikation'],
     note: 'Klassifikation von Bauwerken nach Funktion.',
   },
   {
@@ -545,7 +545,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'OmniClass 12',
     group: 'Digital und BIM',
     kind: 'Standard/Daten',
-    chapters: ['20-klassifikation'],
+    chapters: ['35-klassifikation'],
     note: 'Klassifikation von Bauwerken nach Form.',
   },
   {
@@ -554,7 +554,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'OmniClass 13',
     group: 'Digital und BIM',
     kind: 'Standard/Daten',
-    chapters: ['20-klassifikation'],
+    chapters: ['35-klassifikation'],
     note: 'Raumklassifikation nach Nutzung und Funktion.',
   },
   {
@@ -563,7 +563,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'OmniClass 21',
     group: 'Digital und BIM',
     kind: 'Standard/Daten',
-    chapters: ['19-ifc', '20-klassifikation'],
+    chapters: ['34-ifc', '35-klassifikation'],
     note: 'Elementklassifikation für Bauteile und Modellstruktur.',
   },
   {
@@ -572,7 +572,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'OmniClass 22',
     group: 'Digital und BIM',
     kind: 'Standard/Daten',
-    chapters: ['16-kosten-ausschreibung', '20-klassifikation'],
+    chapters: ['23-kostenplanung-mengen-din276', '35-klassifikation'],
     note: 'Arbeitsresultate und Leistungszuordnung.',
   },
   {
@@ -581,7 +581,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'OmniClass 23',
     group: 'Digital und BIM',
     kind: 'Standard/Daten',
-    chapters: ['20-klassifikation', '22-bim-praxis'],
+    chapters: ['35-klassifikation', '37-bim-praxis'],
     note: 'Produktklassifikation für Bauteile und Komponenten.',
   },
   {
@@ -590,7 +590,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'OmniClass 31',
     group: 'Digital und BIM',
     kind: 'Standard/Daten',
-    chapters: ['15-hoai', '20-klassifikation'],
+    chapters: ['19-hoai-rollen-projektorganisation', '35-klassifikation'],
     note: 'Phasenklassifikation und Bezug zu Planungsprozessen.',
   },
   {
@@ -599,7 +599,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'OmniClass 32',
     group: 'Digital und BIM',
     kind: 'Standard/Daten',
-    chapters: ['15-hoai', '20-klassifikation'],
+    chapters: ['19-hoai-rollen-projektorganisation', '35-klassifikation'],
     note: 'Dienstleistungen und Planungsleistungen im Klassifikationssystem.',
   },
   {
@@ -608,7 +608,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'OmniClass 33',
     group: 'Digital und BIM',
     kind: 'Standard/Daten',
-    chapters: ['18-was-bim-wirklich-ist', '20-klassifikation', '21-prozess-kollaboration'],
+    chapters: ['33-was-bim-wirklich-ist', '35-klassifikation', '36-prozess-kollaboration'],
     note: 'Disziplinen, Rollen und Fachmodellbezug.',
   },
   {
@@ -617,7 +617,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'OmniClass 34',
     group: 'Digital und BIM',
     kind: 'Standard/Daten',
-    chapters: ['15-hoai', '21-prozess-kollaboration'],
+    chapters: ['19-hoai-rollen-projektorganisation', '36-prozess-kollaboration'],
     note: 'Rollen, Verantwortlichkeiten und Organisationsbezug.',
   },
   {
@@ -626,7 +626,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'OmniClass 36',
     group: 'Digital und BIM',
     kind: 'Standard/Daten',
-    chapters: ['18-was-bim-wirklich-ist', '20-klassifikation', '21-prozess-kollaboration'],
+    chapters: ['33-was-bim-wirklich-ist', '35-klassifikation', '36-prozess-kollaboration'],
     note: 'Informationsarten, Dokumente und Datenobjekte.',
   },
   {
@@ -635,7 +635,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'OmniClass 41',
     group: 'Digital und BIM',
     kind: 'Standard/Daten',
-    chapters: ['03-baustoffe', '20-klassifikation', '23-nachhaltigkeit'],
+    chapters: ['07-baustoffe', '35-klassifikation', '38-nachhaltigkeit'],
     note: 'Materialklassifikation für Baustoffe, Bauteilschichten und Auswertungen.',
   },
   {
@@ -644,7 +644,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'OmniClass 49',
     group: 'Digital und BIM',
     kind: 'Standard/Daten',
-    chapters: ['19-ifc', '20-klassifikation', '22-bim-praxis'],
+    chapters: ['34-ifc', '35-klassifikation', '37-bim-praxis'],
     note: 'Eigenschaften, Property-Strukturen und Auswertungslogik.',
   },
   {
@@ -653,7 +653,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Uniclass 2015',
     group: 'Digital und BIM',
     kind: 'Standard/Daten',
-    chapters: ['20-klassifikation'],
+    chapters: ['35-klassifikation'],
     note: 'Klassifikationstabellen für Systeme, Produkte, Räume, Rollen und Aktivitäten.',
   },
   {
@@ -662,7 +662,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Zürcher & Frank',
     group: 'Bauphysik',
     kind: 'Buch',
-    chapters: ['06-waermeschutz-geg', '07-feuchteschutz', '08-schallschutz'],
+    chapters: ['10-waermeschutz-geg', '11-feuchteschutz', '12-schallschutz'],
     note: 'Bauphysikalische Grundlagen zu Wärme, Feuchte, Energie und Behaglichkeit.',
   },
   {
@@ -671,7 +671,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Villmann Bauphysik',
     group: 'Bauphysik',
     kind: 'Skript',
-    chapters: ['06-waermeschutz-geg', '07-feuchteschutz', '08-schallschutz'],
+    chapters: ['10-waermeschutz-geg', '11-feuchteschutz', '12-schallschutz'],
     note: 'Rechengrundlagen, Wärmeschutz, Feuchteschutz und Schallschutz.',
   },
   {
@@ -680,7 +680,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Praxisbeispiele Bauphysik',
     group: 'Bauphysik',
     kind: 'Buch',
-    chapters: ['06-waermeschutz-geg', '07-feuchteschutz', '24-sanierung'],
+    chapters: ['10-waermeschutz-geg', '11-feuchteschutz', '39-sanierung'],
     note: 'Praxisnahe bauphysikalische Beispiele, Anschlüsse, Feuchte- und Wärmeschutz im Bestand.',
   },
   {
@@ -689,7 +689,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Tragwerkslehre I',
     group: 'Tragwerkslehre',
     kind: 'Skript',
-    chapters: ['04-tragwerk'],
+    chapters: ['08-tragwerk'],
     note: 'Statik-Grundlagen, Kräfte, Lager, Schnittgrößen und Lastabtragung.',
   },
   {
@@ -698,7 +698,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Tragwerkslehre Staffa',
     group: 'Tragwerkslehre',
     kind: 'Skript',
-    chapters: ['04-tragwerk'],
+    chapters: ['08-tragwerk'],
     note: 'Didaktischer Zugang zu Tragwerksprinzipien und Lastpfaden.',
   },
   {
@@ -707,7 +707,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Grundlagen Tragwerksplanung',
     group: 'Tragwerkslehre',
     kind: 'Buch',
-    chapters: ['04-tragwerk', '25-projektarten-neubau-bestand-denkmal'],
+    chapters: ['08-tragwerk', '40-projektarten-neubau-bestand-denkmal'],
     note: 'Tragwerksgrundlagen und Einordnung unterschiedlicher Gebäudetypen und Eingriffe.',
   },
   {
@@ -716,7 +716,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Barrierefrei ByAK',
     group: 'Normen und Gesetze',
     kind: 'Leitfaden',
-    chapters: ['02-entwurf-raum-funktion', '12-sanitaer', '14-planungsrecht'],
+    chapters: ['06-plaene-raum-funktion-entwurfslogik', '16-sanitaer', '18-planungsrecht-bauantrag'],
     note: 'Planungsanforderungen für barrierefreie Wohnungen und Erschließung.',
   },
   {
@@ -725,7 +725,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Barrierefrei Wohnungen',
     group: 'Normen und Gesetze',
     kind: 'Leitfaden',
-    chapters: ['02-entwurf-raum-funktion', '12-sanitaer', '14-planungsrecht'],
+    chapters: ['06-plaene-raum-funktion-entwurfslogik', '16-sanitaer', '18-planungsrecht-bauantrag'],
     note: 'Wohnungsbezogene Auslegung, Bewegungsflächen und praktische Planungshinweise.',
   },
   {
@@ -734,7 +734,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'GEG 2024',
     group: 'Normen und Gesetze',
     kind: 'Norm/Gesetz',
-    chapters: ['06-waermeschutz-geg', '10-heizung-waermeversorgung', '14-planungsrecht', '23-nachhaltigkeit', '24-sanierung', '25-projektarten-neubau-bestand-denkmal'],
+    chapters: ['10-waermeschutz-geg', '14-heizung-waermeversorgung', '18-planungsrecht-bauantrag', '38-nachhaltigkeit', '39-sanierung', '40-projektarten-neubau-bestand-denkmal'],
     note: 'Energetische Anforderungen, Nachweislogik und Pflichten im Neubau.',
   },
   {
@@ -743,7 +743,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'GEG kompakt',
     group: 'Normen und Gesetze',
     kind: 'Leitfaden',
-    chapters: ['06-waermeschutz-geg', '10-heizung-waermeversorgung', '23-nachhaltigkeit'],
+    chapters: ['10-waermeschutz-geg', '14-heizung-waermeversorgung', '38-nachhaltigkeit'],
     note: 'Praxisnahe GEG-Einordnung und Erklärung der Anforderungen.',
   },
   {
@@ -752,7 +752,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'HOAI Gesetzestext',
     group: 'Normen und Gesetze',
     kind: 'Norm/Gesetz',
-    chapters: ['15-hoai'],
+    chapters: ['19-hoai-rollen-projektorganisation'],
     note: 'Gesetzliche Fassung für Leistungsphasen und Honorarrahmen.',
   },
   {
@@ -761,7 +761,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'Leitfaden Barrierefrei',
     group: 'Normen und Gesetze',
     kind: 'Leitfaden',
-    chapters: ['02-entwurf-raum-funktion', '12-sanitaer', '14-planungsrecht'],
+    chapters: ['06-plaene-raum-funktion-entwurfslogik', '16-sanitaer', '18-planungsrecht-bauantrag'],
     note: 'Barrierefreie Planung im öffentlichen und wohnungsnahen Kontext.',
   },
   {
@@ -770,7 +770,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'MBO 2024',
     group: 'Normen und Gesetze',
     kind: 'Norm/Gesetz',
-    chapters: ['09-brandschutz', '14-planungsrecht', '17-bauprojektmanagement-bauoberleitung', '24-sanierung', '25-projektarten-neubau-bestand-denkmal'],
+    chapters: ['13-brandschutz', '18-planungsrecht-bauantrag', '29-bauoberleitung-baukontrolle-maengelmanagement', '39-sanierung', '40-projektarten-neubau-bestand-denkmal'],
     note: 'Gebäudeklassen, Rettungswege, Abstandsflächen und bauordnungsrechtliche Grundstruktur.',
   },
   {
@@ -779,7 +779,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'BGB Modernisierung',
     group: 'Normen und Gesetze',
     kind: 'Norm/Gesetz',
-    chapters: ['24-sanierung'],
+    chapters: ['39-sanierung'],
     note: 'Modernisierungsmaßnahmen, Ankündigung, Duldung und Modernisierungsmieterhöhung.',
   },
   {
@@ -788,7 +788,7 @@ export const SOURCES: SourceEntry[] = [
     shortTitle: 'BayDSchG',
     group: 'Normen und Gesetze',
     kind: 'Norm/Gesetz',
-    chapters: ['25-projektarten-neubau-bestand-denkmal'],
+    chapters: ['40-projektarten-neubau-bestand-denkmal'],
     note: 'Erlaubnispflicht und behördliche Abstimmung bei Eingriffen in Baudenkmäler.',
   },
 ]

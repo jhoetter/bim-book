@@ -1,6 +1,6 @@
-# Kapitel 24 – Sanierung
+# Kapitel 39 – Sanierung
 
-*Teil VII – Nachhaltigkeit*
+*Teil IX – Bestand, Nachhaltigkeit & Betrieb*
 
 ---
 
@@ -14,7 +14,7 @@ Im Bestand beginnt Planung mit Zweifel. Pläne können fehlen, Schächte anders 
     - ::Bestandsaufnahme::, Schäden und Schadstoffe als Planungsrisiken erkennen
     - ::Scan-to-BIM:: als Methode mit Grenzen verstehen
 
-## 24.0 Bestandsmaßnahmen: Begriffe präzise
+## 39.0 Bestandsmaßnahmen: Begriffe präzise
 
 Im Alltag wird fast jeder Eingriff an einem älteren Gebäude "Sanierung" genannt. Für Planung, Vertrag, Genehmigung, Energieanforderungen und Mietrecht reicht dieses Wort nicht. Vor der ersten Ausschreibung muss klar sein, ob nur Oberflächen erneuert werden, ob ein Schaden behoben wird, ob der Gebrauchswert steigt, ob Bauteile energetisch verändert werden oder ob eine neue Nutzung entsteht.
 
@@ -67,7 +67,7 @@ tags: sanierung, modernisierung, instandsetzung, bestand
 
 In Ausschreibungen, Verträgen und Bauanträgen sollte die präzise Terminologie stehen. "Sanierung" als Sammelbegriff führt zu Unklarheiten bei Leistungsumfang, Kosten, Genehmigungspflicht und Mietrecht. Im Streitfall werden solche Unklarheiten schnell zu Nachträgen, Verzögerungen oder unwirksamen Modernisierungsankündigungen.[^bgb-modernisierung]
 
-## 24.1 Baualtersphasen
+## 39.1 Baualtersphasen
 
 Gründerzeitgebäude von 1880 bis 1920 haben häufig massives ::Mauerwerk::, Holzbalkendecken, hohe Räume und wenig Wärmeschutz. Nachkriegsbauten der 1950er nutzen oft einfache Mauerwerke, Betondecken und geringe Dämmung. Gebäude der 1960er und 1970er zeigen Montagebau, Wärmebrücken, Flachdächer und Schadstoffrisiken.
 
@@ -83,19 +83,19 @@ tags: sanierung, baualter, bestand, konstruktion
 -->
 ![Baualtersphasen](../assets/illustrations/kap24_baualtersphasen.png)
 
-## 24.2 Bestandsaufnahme
+## 39.2 Bestandsaufnahme
 
 As-designed ist der geplante Zustand, as-built der tatsächlich gebaute. In Bestandsgebäuden weichen beide oft ab. Wände wurden versetzt, Leitungen anders geführt, Decken geöffnet, Materialien ersetzt. Eine systematische ::Bestandsaufnahme:: dokumentiert Geometrie, Konstruktion, Schäden, Technik, Nutzung und rechtliche Randbedingungen.
 
 Typische Überraschungen sind andere Deckenhöhen, unbekannte Träger, nicht dokumentierte Schächte, schadstoffhaltige Baustoffe und feuchte Keller. Jede Unsicherheit sollte als Risiko geführt werden, nicht als Fußnote.
 
-## 24.3 Typische Bauschäden
+## 39.3 Typische Bauschäden
 
 Feuchtigkeit kann aufsteigend, eindringend oder kondensierend sein. Aufsteigende Feuchte zeigt sich im Sockel, eindringende Feuchte an Rissen, Dach oder Fassade, Kondensat an Wärmebrücken. Risse können harmlos sein oder statische Ursachen haben; ihre Breite, Richtung und Entwicklung sind entscheidend.
 
 Schadstoffe sind ein eigenes Sanierungsthema. Asbest wurde bis 1993 in vielen Produkten eingesetzt, PCB in Fugenmassen und Farben, Lindan in Holzschutzmitteln. Schadstoffuntersuchungen gehören vor Abbruch und Umbau zur Sorgfalt.
 
-## 24.4 Energetische Sanierung
+## 39.4 Energetische Sanierung
 
 Außendämmung ist bauphysikalisch meist robuster, weil sie die tragende Wand warm hält. Innendämmung ist bei Denkmal, Grenzbebauung oder Fassadenerhalt nötig, aber feuchtetechnisch riskanter. Der Taupunkt wandert nach innen; sd-Wert, kapillare Aktivität und Anschlussdetails werden kritisch.
 
@@ -104,7 +104,7 @@ Fensteraustausch kann Probleme verschärfen. Dichte neue Fenster reduzieren Lüf
 !!! kastanienallee "Kastanienallee 7"
     Für Kapitel 24 dient nicht der Neubau K7, sondern ein fiktives Gründerzeithaus auf dem Nachbargrundstück. ::Außenwand:: 380 mm Vollziegel, λ grob 0,8 W/(mK). Ohne Dämmung R = 0,38 / 0,8 = 0,475 m²K/W, U überschlägig etwa 1,6 W/(m²K). Eine Innendämmung mit 80 mm Kalziumsilikat, λ = 0,065, ergänzt R = 0,08 / 0,065 = 1,23 m²K/W; der U-Wert sinkt deutlich, aber der Ziegel bleibt kälter. Deshalb braucht die Lösung Feuchtesimulation und luftdichte Anschlüsse.
 
-## 24.5 Scan-to-BIM
+## 39.5 Scan-to-BIM
 
 Laserscanner erfassen Punktwolken mit typischer Genauigkeit von wenigen Millimetern. Aus der ::Punktwolke:: entsteht ein as-built-Modell. Dieser Schritt ist oft manuell oder halbautomatisch: Wände, Decken, Öffnungen und Bauteile müssen interpretiert werden.
 
@@ -120,7 +120,7 @@ tags: scan-to-bim, punktwolke, sanierung, bestand
 -->
 ![Scan-to-BIM Prozess](../assets/illustrations/kap24_scan_to_bim.png)
 
-## 24.6 Warum Sanierung andere Planung ist
+## 39.6 Warum Sanierung andere Planung ist
 
 Im Neubau beginnt Planung mit Annahmen, die man noch verändern kann. In der Sanierung beginnt sie mit einem Bestand, der bereits entschieden hat: Achsen, Höhen, Material, Schäden, Leitungswege, Nachbarn, Tragreserven. Der Entwurf muss diese Realität zuerst verstehen, bevor er sie verändert. Wer zu früh gestaltet, plant gegen ein Gebäude, das er noch nicht kennt.
 
@@ -135,7 +135,7 @@ Energetische Sanierung ist besonders konfliktbeladen. Außendämmung ist bauphys
 !!! kastanienallee "Kastanienallee 7"
     Das fiktive Nachbarhaus zur K7 wird als Gründerzeitbau saniert. Außenfassade steht unter Erhaltungsinteresse, deshalb wird Innendämmung geprüft. Eine 60 mm kapillaraktive Innendämmung verbessert die Oberfläche, verschiebt aber den Taupunkt in Richtung Bestandsmauerwerk. Vor Entscheidung werden Schlagregenbelastung, Salzgehalt, Wandfeuchte, Fensteranschluss und Lüftungskonzept untersucht.
 
-## 24.7 Prüffragen für die Praxis
+## 39.7 Prüffragen für die Praxis
 
 Vor jeder Sanierungsplanung steht die Frage nach dem Wissensstand. Welche Bauteile sind durch Pläne belegt, welche durch Aufmaß, welche durch Sondage, welche nur vermutet? Diese Unterscheidung sollte dokumentiert werden. Ein Bestandsmodell ohne Unsicherheitskennzeichnung sieht präziser aus, als es ist.
 
@@ -145,7 +145,7 @@ Die dritte Frage ist Bauablauf im bewohnten Bestand. Sind Bewohner im Gebäude? 
 
 Für ::Scan-to-BIM:: gilt: Punktwolken sollten nicht in ein scheinbar perfektes Modell übersetzt werden, ohne Toleranz zu zeigen. Bestandswände sind selten gerade, Decken nicht exakt eben, Öffnungen nicht normschön. Ein gutes Bestandsmodell entscheidet, wo Genauigkeit nötig ist und wo eine vereinfachte Darstellung reicht.
 
-## 24.8 Entwicklerperspektive
+## 39.8 Entwicklerperspektive
 
 Sanierungsmodelle brauchen Unsicherheitsdaten. Im Neubau ist ein Bauteil geplant; im Bestand ist ein Bauteil beobachtet, vermutet oder geöffnet. Diese Zustände sollten als ::Properties:: geführt werden. Ein Sturz, der nur aus einer ::Punktwolke:: abgeleitet wurde, hat eine andere Verlässlichkeit als ein freigelegter und geprüfter Stahlträger.
 
@@ -185,7 +185,7 @@ Die Landesbauordnungen regeln, wann Umbau, Nutzungsänderung, Aufstockung oder A
 
 Baualter, ::Bestandsaufnahme::, Schadstoffe, Feuchte und ::Scan-to-BIM:: müssen zusammen gelesen werden. Der Bestand ist keine schlechtere Version des Neubaus, sondern eine eigene Planungsdisziplin.
 
-Verwandte Kapitel: [Kap. 5](/chapters/05-konstruktion) · [Kap. 6](/chapters/06-waermeschutz-geg) · [Kap. 7](/chapters/07-feuchteschutz) · [Kap. 23](/chapters/23-nachhaltigkeit) · [Kap. 25](/chapters/25-projektarten-neubau-bestand-denkmal)
+Verwandte Kapitel: [Kap. 9](/chapters/09-konstruktion) · [Kap. 10](/chapters/10-waermeschutz-geg) · [Kap. 11](/chapters/11-feuchteschutz) · [Kap. 38](/chapters/38-nachhaltigkeit) · [Kap. 40](/chapters/40-projektarten-neubau-bestand-denkmal)
 
 [^bausanierung-stahr]: Stahr (Hrsg.): *Bausanierung*, 4. Auflage.
 [^bgb-modernisierung]: Bürgerliches Gesetzbuch, §§ 555b-555f und § 559 BGB.

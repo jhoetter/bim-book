@@ -1,4 +1,4 @@
-# Kapitel 11 – Lüftung & Raumluftqualität
+# Kapitel 15 – Lüftung & Raumluftqualität
 
 *Teil IV – TGA*
 
@@ -13,13 +13,13 @@ Ein Raum kann frisch aussehen und trotzdem schlechte Luft haben. CO₂, Feuchte 
     - kontrollierte Wohnraumlüftung mit Wärmerückgewinnung beschreiben
     - zentrale und dezentrale Systeme im Grundriss unterscheiden
 
-## 11.1 Warum gut gedämmte Gebäude mechanisch lüften müssen
+## 15.1 Warum gut gedämmte Gebäude mechanisch lüften müssen
 
 Früher waren Gebäude undicht. Fensterfugen, Rollladenkästen, Kamine und Leckagen tauschten Luft aus, oft unkontrolliert und energetisch schlecht. Moderne Gebäude sind luftdicht. Das spart Energie und schützt Bauteile, bedeutet aber: Feuchte, CO₂ und Schadstoffe verschwinden nicht mehr automatisch.
 
-Fensterlüftung kann funktionieren, wenn Nutzer regelmäßig und richtig lüften. Sie ist aber unzuverlässig, besonders nachts, bei Abwesenheit, Lärm, Kälte oder Sicherheitsbedenken. Feuchte aus Duschen, Kochen und Wäsche muss sicher abgeführt werden, damit [Kapitel 7](/chapters/07-feuchteschutz) nicht zum Schadensfall wird.
+Fensterlüftung kann funktionieren, wenn Nutzer regelmäßig und richtig lüften. Sie ist aber unzuverlässig, besonders nachts, bei Abwesenheit, Lärm, Kälte oder Sicherheitsbedenken. Feuchte aus Duschen, Kochen und Wäsche muss sicher abgeführt werden, damit [Kapitel 11](/chapters/11-feuchteschutz) nicht zum Schadensfall wird.
 
-## 11.2 Kontrollierte Wohnraumlüftung
+## 15.2 Kontrollierte Wohnraumlüftung
 
 Die **Kontrollierte Wohnraumlüftung** (::KWL::) führt Abluft aus Küche, Bad und WC ab und bringt Zuluft in Wohn- und Schlafräume. Überströmzonen wie Flure verbinden die Bereiche. Mit Wärmerückgewinnung kann ein Gegenstrom-Wärmetauscher mehr als 80 Prozent der Wärme aus der Abluft auf die Zuluft übertragen.
 
@@ -35,7 +35,7 @@ tags: kwl, lüftung, wärmerückgewinnung, wohnung
 -->
 ![Schema kontrollierte Wohnraumlüftung](../assets/illustrations/kap11_kwl_schema.png)
 
-## 11.3 Zentral vs. dezentral
+## 15.3 Zentral vs. dezentral
 
 Eine zentrale Lüftungsanlage versorgt mehrere Wohnungen oder ein ganzes Gebäude über ein Gerät und ein Kanalnetz. Wartung konzentriert sich auf einen Ort, Luftmengen lassen sich gut regeln, aber Schächte und Deckenräume müssen groß genug sein. Brandschutz, Schallschutz und Hygiene werden komplex.
 
@@ -44,7 +44,7 @@ Dezentrale Geräte sitzen je Wohnung oder je Raum. Sie vermeiden große gemeinsa
 !!! kastanienallee "Kastanienallee 7"
     Kastanienallee 7 nutzt dezentrale ::KWL:: je Wohnung, insgesamt 12 Geräte. Küche und Bad sind Abluftbereiche, Wohn- und Schlafräume Zuluftbereiche. Außenluft und Fortluft werden über kurze Wege geführt; große vertikale Hauptkanäle entfallen. Dafür müssen Wartungszugang, Filterwechsel und Schallschutz in jeder Wohnung geplant werden.
 
-## 11.4 Schächte und Grundrissplanung
+## 15.4 Schächte und Grundrissplanung
 
 Luft braucht Platz. Ein Rechteckkanal 200 mm × 100 mm kann ungefähr 100 m³/h führen, abhängig von Geschwindigkeit und Druckverlust. Mehr Luft bedeutet größere Querschnitte oder höhere Geschwindigkeit, die Schall erzeugt. Deckenabhängungen und Schächte sind deshalb keine Restflächen.
 
@@ -60,13 +60,13 @@ tags: lüftung, kanalquerschnitt, schacht, tga
 -->
 ![Lüftungskanalquerschnitte](../assets/illustrations/kap11_kanalquerschnitte.png)
 
-## 11.5 RLT-Anlagen für Gewerbe
+## 15.5 RLT-Anlagen für Gewerbe
 
 Raumlufttechnische Anlagen im Gewerbe können mehr als Lüften: heizen, kühlen, befeuchten, entfeuchten und filtern. Büros, Schulen, Versammlungsräume oder Labore haben höhere und genauer definierte Außenluftanforderungen. ASR A3.6 gibt Arbeitsstättenanforderungen vor; VDI 6022 behandelt Hygiene.
 
 Für Architekten bedeutet das: ::RLT-Anlage:: braucht Technikflächen, Schächte, Dachgeräte, Ansaug- und Fortluftpunkte, Schalldämpfer und Wartungswege. In Büroprojekten kann Lüftung die Deckenhöhe stärker prägen als das Tragwerk.
 
-## 11.6 Luftqualität planen und betreiben
+## 15.6 Luftqualität planen und betreiben
 
 Lüftung ist nicht fertig, wenn Kanäle gezeichnet sind. Ein System muss im Betrieb leise, zugfrei, hygienisch und wartbar bleiben. Zu hohe Luftgeschwindigkeiten erzeugen Geräusche. Schlechte Filterwartung verschlechtert Luftqualität und Druckverlust. Falsch platzierte Außenluftöffnungen können Gerüche oder Abgase ansaugen. Zu kurze Wege zwischen Fortluft und Außenluft führen zu Kurzschlussströmungen.
 
@@ -81,7 +81,7 @@ Die Inbetriebnahme ist ein eigener Schritt. Luftmengen werden gemessen, Ventile 
 !!! kastanienallee "Kastanienallee 7"
     Bei K7 bekommt jede Wohnung ein eigenes Lüftungsgerät. Für eine 3-Zimmer-Wohnung mit 3 Personen kann der Nennvolumenstrom überschlägig 3 × 25 m³/h = 75 m³/h betragen. Das Gerät muss diesen Volumenstrom leise liefern, Filterzugang im Wohnungsflur ermöglichen und Außenluft sowie Fortluft ohne Kurzschluss führen. Diese Anforderungen sind im Grundriss genauso real wie eine Wand oder Tür.
 
-## 11.7 Prüffragen für die Praxis
+## 15.7 Prüffragen für die Praxis
 
 Eine Lüftungsplanung sollte immer mit dem Raum beginnen. Welche Räume brauchen Zuluft, welche Abluft, welche Überströmung? Sind Türen, Flure und Grundriss so organisiert, dass Luft tatsächlich von saubereren zu belasteteren Bereichen wandert? Gibt es Räume ohne sinnvollen Luftweg? Werden Nutzer die Anlage verstehen und warten können?
 
@@ -91,7 +91,7 @@ Hygiene ist der dritte Prüfpunkt. Außenluftansaugungen dürfen nicht neben For
 
 Schließlich braucht jedes System eine Einregulierung. Soll-Volumenströme müssen gemessen und eingestellt werden. Bewohner oder Betreiber brauchen Informationen zu Betriebsstufen und Filterwechsel. Ohne Inbetriebnahmeprotokoll bleibt unklar, ob Planung und Realität übereinstimmen. Genau diese Soll-Ist-Logik kann ein BIM-Modell unterstützen, wenn Luftmengen und Anlagenkennzeichen als Daten gepflegt sind.
 
-## 11.8 Entwicklerperspektive
+## 15.8 Entwicklerperspektive
 
 Lüftungsmodelle verbinden Geometrie, Berechnung und Betrieb. Ein Kanal hat Querschnitt und Lage, aber auch Luftmenge, Druckverlust, Systemzuordnung, Brandschutzanforderung und Wartungszugang. Ein Luftauslass gehört zu einem Raum und zu einem Luftsystem. Ein Gerät hat Filter, Ventilator, Wärmetauscher, Kondensatanschluss und Schallwerte. Ohne diese Beziehungen bleibt das Modell eine 3D-Trasse.
 
@@ -117,4 +117,4 @@ Lüftungsobjekte heißen in IFC zum Beispiel `IfcDuctSegment`, `IfcAirTerminal` 
 
 Dichte Gebäude brauchen ein Konzept, nicht nur Fenster. Ob zentral oder dezentral, entscheidet sich an Schachtflächen, Wartung, Brandschutz, Schall und Betreiberlogik.
 
-Verwandte Kapitel: [Kap. 7](/chapters/07-feuchteschutz) · [Kap. 10](/chapters/10-heizung-waermeversorgung) · [Kap. 19](/chapters/19-ifc)
+Verwandte Kapitel: [Kap. 11](/chapters/11-feuchteschutz) · [Kap. 14](/chapters/14-heizung-waermeversorgung) · [Kap. 34](/chapters/34-ifc)

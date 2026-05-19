@@ -1,6 +1,6 @@
-# Kapitel 19 – IFC: Die Sprache des digitalen Gebäudes
+# Kapitel 34 – IFC: Die Sprache des digitalen Gebäudes
 
-*Teil VI – BIM*
+*Teil VIII – BIM-Datenmethode*
 
 ---
 
@@ -13,7 +13,7 @@ Eine IFC-Datei wirkt beim ersten Öffnen wie eine Wand aus Großbuchstaben, Zahl
     - Objekte, ::Properties::, Mengen und Beziehungen unterscheiden
     - STEP-Dateien und ::IfcOpenShell:: als Entwicklerzugang einordnen
 
-## 19.1 Projektstruktur
+## 34.1 Projektstruktur
 
 ::IFC:: organisiert ein Modell hierarchisch: `IfcProject` enthält `IfcSite`, das Grundstück. Darin liegt `IfcBuilding`, darunter `IfcBuildingStorey` und `IfcSpace`. Bauteile werden meist einem Geschoss über `IfcRelContainedInSpatialStructure` zugeordnet. Aggregation, etwa Gebäude zu Geschossen, läuft über `IfcRelAggregates`.
 
@@ -29,7 +29,7 @@ tags: ifc, ifcproject, ifcspace, hierarchy
 -->
 ![IFC-Hierarchie](../assets/illustrations/kap19_ifc_hierarchie.png)
 
-## 19.2 Die wichtigsten Entitäten
+## 34.2 Die wichtigsten Entitäten
 
 Architektur nutzt `IfcWall`, `IfcSlab`, `IfcRoof`, `IfcDoor`, `IfcWindow` und `IfcStair`. Tragwerk nutzt `IfcColumn`, `IfcBeam`, `IfcFooting`. TGA nutzt `IfcFlowSegment`, `IfcFlowTerminal`, `IfcDistributionSystem` und viele spezialisierte Untertypen.
 
@@ -45,20 +45,20 @@ tags: ifc, entitäten, architektur, tga
 -->
 ![IFC-Entitäten Übersicht](../assets/illustrations/kap19_entitaeten_uebersicht.png)
 
-## 19.3 Geometrierepräsentation
+## 34.3 Geometrierepräsentation
 
 IFC speichert Geometrie unterschiedlich. `SweptSolid` beschreibt extrudierte Profile und ist für Wände, Stützen oder einfache Decken robust. Brep beschreibt komplexe Oberflächen über Begrenzungsflächen. CSG und Clipping nutzen Boolesche Operationen und Schnitte. In STEP erkennt man Extrusionen an Entitäten wie `IFCEXTRUDEDAREASOLID`.
 
 Für Austausch ist einfache, semantische Geometrie besser als komplexe, triangulierte Form. Ein schönes Freiformmodell kann im Export schwer lesbar werden. Gute IFC-Modelle sind nicht maximal detailliert, sondern zweckgerecht repräsentiert.
 
-## 19.4 Properties und PropertySets
+## 34.4 Properties und PropertySets
 
 ::Pset:: machen IFC maschinenlesbar. `Pset_WallCommon` enthält Eigenschaften wie `FireRating`, `ThermalTransmittance` oder `LoadBearing`. QuantitySets wie `Qto_WallBaseQuantities` enthalten Mengen: Länge, Fläche, Volumen. Benutzerdefinierte Psets sind erlaubt, sollten aber sauber benannt und dokumentiert werden.
 
 !!! kastanienallee "Kastanienallee 7"
     Eine ::Außenwand:: kann als `IfcWall` mit `IfcMaterialLayerSet` modelliert sein: Innenputz 15 mm, ::Stahlbeton:: 200 mm, Mineralwolle 160 mm, Armierungsputz, Außenputz. `Pset_WallCommon` enthält `LoadBearing = true`, `IsExternal = true`, `ThermalTransmittance = 0.19` und `FireRating = REI 90`. Mengen kommen aus `Qto_WallBaseQuantities`.
 
-## 19.5 Beziehungen in IFC
+## 34.5 Beziehungen in IFC
 
 Beziehungen sind der Kern von IFC. `IfcRelAssociatesMaterial` verbindet Elemente mit Materialien. `IfcRelDefinesByType` verbindet Instanzen mit Typen. `IfcRelConnectsElements` beschreibt Anschlüsse. `IfcRelSpaceBoundary` verbindet Räume mit umgebenden Bauteilen.
 
@@ -74,7 +74,7 @@ tags: ifc, relationen, ifcwall, properties
 -->
 ![IFC-Beziehungen](../assets/illustrations/kap19_beziehungen.png)
 
-## 19.6 STEP-Format manuell lesen
+## 34.6 STEP-Format manuell lesen
 
 **STEP** (::STEP::) ist das textuelle Serialisierungsformat, in dem viele IFC-Dateien gespeichert werden. Jede Zeile hat eine Nummer und eine Entität: `#123 = IFCWALL(...)`. Referenzen auf andere Zeilen beginnen mit `#`. Eine Wand verweist also auf Geometrie, OwnerHistory, Placement und Beziehungen über andere Einträge.
 
@@ -93,7 +93,7 @@ tags: ifc, step, entwickler, ifcwall
 !!! kastanienallee "Kastanienallee 7"
     Für K7 wird IFC4 als Zielversion festgelegt, weil die Projektstruktur, ::Pset:: und Materialschichten sauberer nutzbar sind. Wenn ein Fachplaner nur IFC2x3 exportieren kann, wird im BAP festgelegt, welche ::MVD::, welche Exporteinstellungen und welche Prüfschritte gelten.
 
-## 19.7 Programmatischer Zugriff mit IfcOpenShell
+## 34.7 Programmatischer Zugriff mit IfcOpenShell
 
 ::IfcOpenShell:: ist der de-facto-Standard für IFC-Zugriff in Python. Ein typischer Einstieg lädt eine Datei, filtert Entitäten und liest ::Properties::. Alternativen sind xBIM für .NET und web-ifc für JavaScript.
 
@@ -109,7 +109,7 @@ for wall in model.by_type("IfcWall"):
 
 Damit lassen sich eigene Prüfer, Mengenexporte, Datenqualitätsberichte oder Viewer bauen. Entscheidend ist, nicht nur Geometrie zu lesen, sondern Beziehungen und Psets.
 
-## 19.8 IFC-Versionen und MVD
+## 34.8 IFC-Versionen und MVD
 
 IFC2x3 ist in Deutschland noch verbreitet, besonders für Koordination. IFC4 ist aktueller und für Neuprojekte empfehlenswert. IFC4.3 erweitert Infrastruktur und Brücken. Eine ::MVD:: legt fest, welcher Ausschnitt des IFC-Schemas für einen Anwendungsfall gilt.
 
@@ -125,7 +125,7 @@ tags: ifc, mvd, reference-view, coordination-view
 -->
 ![MVD-Vergleich](../assets/illustrations/kap19_mvd_vergleich.png)
 
-## 19.9 Georeferenzierung und CRS
+## 34.9 Georeferenzierung und CRS
 
 Mehrere Fachmodelle passen nur zusammen, wenn Koordinaten geklärt sind. `IfcGeometricRepresentationContext` beschreibt das lokale Koordinatensystem und True North. In IFC4 kann `IfcMapConversion` lokale Koordinaten an ein Koordinatenreferenzsystem koppeln. In Deutschland ist EPSG:25832, ETRS89/UTM Zone 32N, häufig relevant.
 
@@ -141,7 +141,7 @@ tags: ifc, georeferenzierung, epsg25832, gis
 -->
 ![IFC-Georeferenzierung](../assets/illustrations/kap19_georeferenzierung.png)
 
-## 19.10 IFC-Qualität prüfen
+## 34.10 IFC-Qualität prüfen
 
 Eine IFC-Datei ist nicht automatisch gut, weil sie sich öffnen lässt. Viele Viewer sind tolerant und zeigen Geometrie auch dann an, wenn Beziehungen, ::Properties:: oder Mengen fehlen. Für Koordination kann das kurzfristig reichen; für Auswertung, Kosten, Energie, Brandschutz oder Betrieb reicht es nicht. Qualität muss deshalb gegen den Zweck geprüft werden.
 
@@ -158,7 +158,7 @@ Die vierte Prüfung ist georeferenziert. Teilmodelle müssen denselben Ursprung,
 !!! kastanienallee "Kastanienallee 7"
     Für K7 könnte eine einfache IDS-Regel lauten: Alle `IfcWall` mit `IsExternal = true` müssen `Pset_WallCommon.ThermalTransmittance`, `Pset_WallCommon.FireRating`, `LoadBearing`, ein `IfcMaterialLayerSet` und eine DIN-276-Referenz besitzen. Fehlt eine dieser Angaben, ist das Modell nicht lieferfähig, auch wenn es optisch korrekt aussieht.
 
-## 19.11 Prüffragen für die Praxis
+## 34.11 Prüffragen für die Praxis
 
 Beim Empfang einer IFC-Datei sollten Entwickler und Planer immer mit denselben Grundfragen beginnen. Welche IFC-Version liegt vor? Welche ::MVD:: wurde exportiert? Aus welchem Autorensystem stammt die Datei? Ist die Datei für Koordination, Auswertung, Übergabe oder Archiv gedacht? Ohne Zweck lässt sich Qualität nicht bewerten.
 
@@ -174,4 +174,4 @@ Für Softwareentwicklung ist die wichtigste Regel: IFC nicht wie JSON mit festen
 
 Projektstruktur, Entitäten, ::Properties::, Mengen, Beziehungen, STEP und ::Georeferenzierung:: bestimmen, ob Software ein Modell wirklich auswerten kann. Wer IFC versteht, kann BIM-Qualität prüfen statt nur Dateien weiterzureichen.
 
-Verwandte Kapitel: [Kap. 18](/chapters/18-was-bim-wirklich-ist) · [Kap. 20](/chapters/20-klassifikation) · [Kap. 21](/chapters/21-prozess-kollaboration)
+Verwandte Kapitel: [Kap. 33](/chapters/33-was-bim-wirklich-ist) · [Kap. 35](/chapters/35-klassifikation) · [Kap. 36](/chapters/36-prozess-kollaboration)

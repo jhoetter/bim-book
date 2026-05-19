@@ -1,6 +1,6 @@
-# Kapitel 22 – BIM in der Praxis
+# Kapitel 37 – BIM in der Praxis
 
-*Teil VI – BIM*
+*Teil VIII – BIM-Datenmethode*
 
 ---
 
@@ -13,13 +13,13 @@ BIM klingt in Präsentationen sauberer als im Projektalltag. Dort treffen Modell
     - typische BIM-Fehler erkennen
     - IFC-Validierung und Open-Source-Werkzeuge einordnen
 
-## 22.1 Authoring-Software
+## 37.1 Authoring-Software
 
 Authoring-Software erstellt Fachmodelle. Revit ist in Deutschland stark verbreitet, besonders wegen Familien, Parametern und MEP-Integration. Archicad, Vectorworks und Allplan sind ebenfalls relevant. Jedes System hat eigene Stärken, Datenlogiken und Exportprobleme.
 
 Das Authoring-Modell ist nicht automatisch das Austauschmodell. Ein Revit-Projekt kann intern sauber funktionieren und trotzdem schlechte IFC liefern, wenn Kategorien, Phasen, Typen oder Export-Mappings nicht stimmen. Deshalb gehören Exporttests früh in den ::BAP::.
 
-## 22.2 Koordinations- und Prüftools
+## 37.2 Koordinations- und Prüftools
 
 Koordinationswerkzeuge wie Navisworks, Solibri oder BIMcollab führen Teilmodelle zusammen. Sie prüfen Kollisionen, Abstände, Klassifikationen und Regeln. Ein Koordinationsmodell ist kein neues Mastermodell, sondern ein Prüfstand.
 
@@ -35,13 +35,13 @@ tags: clash, bcf, koordination, bim
 -->
 ![Clash-Beispiel](../assets/illustrations/kap22_clash_beispiel.png)
 
-## 22.3 Analysetools
+## 37.3 Analysetools
 
 Analysewerkzeuge nutzen Modellgeometrie und Daten für Fachfragen. Energieanalyse kann über gbXML oder IFC Flächen und Räume übernehmen. Statikprogramme wie RFEM oder andere Systeme brauchen analytische Strukturmodelle. Tageslichtsimulation arbeitet mit Geometrie, Materialien und Himmelsmodellen.
 
 Die Schnittstelle ist oft der kritische Punkt. Ein Architekturmodell enthält nicht automatisch die analytischen Linien eines Tragwerks. Ein Energiemodell braucht geschlossene Zonen und plausible Bauteilwerte. BIM reduziert Eingabearbeit, ersetzt aber keine fachliche Modellaufbereitung.
 
-## 22.4 Facility Management
+## 37.4 Facility Management
 
 Für den Betrieb zählen andere Daten als für die Planung: Wartungsintervalle, Seriennummern, Anlagenkennzeichen, Räume, Hersteller, Gewährleistungsfristen. COBie ist ein Austauschformat für solche Übergabedaten. CAFM-Systeme verwalten Assets, Wartung und Flächen.
 
@@ -50,19 +50,19 @@ Wenn FM-Daten erst am Projektende gesammelt werden, fehlen sie oft. Wartungsdate
 !!! kastanienallee "Kastanienallee 7"
     Der BIM-Workflow führt von ::LP:: 2 bis FM: Vorplanung als Raummodell, Entwurf als koordiniertes Architektur-/Tragwerk-/TGA-Modell, ::LP:: 5 als Kollisions- und Ausführungsmodell, Übergabe als Asset-Liste für Aufzug, Lüftungsgeräte, Wärmemengenzähler, PV-Wechselrichter und Brandschutzelemente. Der Betreiber braucht keine Bewehrungsstäbe, aber eindeutige wartbare Anlagen.
 
-## 22.5 Häufige BIM-Fehler
+## 37.5 Häufige BIM-Fehler
 
 Der häufigste Fehler ist ein Modell ohne Daten. Es sieht gut aus, enthält aber leere Psets. Zweitens fehlen Klassifikationen: Bauteile sind nicht Kosten, Gewerken oder FM-Assets zugeordnet. Drittens ist der IFC-Export schlecht: Schichten fehlen, Geometrie wird Proxy, Räume sind offen.
 
 Weitere Fehler sind fehlende ::AIA::, zu späte Koordination, uneinheitliche Koordinaten und ungeprüfte Modellstände. BIM scheitert selten an einem großen technischen Problem; es scheitert an vielen kleinen unklaren Verantwortlichkeiten.
 
-## 22.5a IFC-Validierungstools
+## 37.5a IFC-Validierungstools
 
 IFC-Dateien sollten validiert werden, bevor sie Grundlage einer Entscheidung werden. Der buildingSMART Validation Service prüft Schema, ::MVD:: und normative Regeln. IDS-Dateien beschreiben maschinenlesbar, welche Objekte welche ::Properties:: haben müssen.
 
 Solibri, BIMcollab ZOOM, xBIM Toolkit und ::IfcOpenShell:: können je nach Umfang prüfen, filtern oder eigene Regeln ausführen. Für Entwickler ist wichtig: Eigene IFC-Ausgaben werden nicht per Sichtprüfung validiert, sondern gegen Schema, ::MVD:: und projektspezifische ::IDS::.
 
-## 22.6 Open-Source-Ökosystem
+## 37.6 Open-Source-Ökosystem
 
 ::IfcOpenShell:: bietet Python-Zugriff auf IFC. BlenderBIM beziehungsweise Bonsai erweitert Blender um BIM-Funktionalität. xBIM ist für .NET relevant, web-ifc für JavaScript und Browseranwendungen. FreeCAD bietet BIM-Funktionen im Open-Source-CAD-Kontext.
 
@@ -78,7 +78,7 @@ tags: bim, software, authoring, ifc, opensource
 -->
 ![BIM-Software-Ökosystem](../assets/illustrations/kap22_bim_software_oekosystem.png)
 
-## 22.7 Ein realistischer BIM-Projektablauf
+## 37.7 Ein realistischer BIM-Projektablauf
 
 Ein BIM-Projekt beginnt nicht mit Modellieren, sondern mit Anforderungen. Der Auftraggeber definiert, wofür BIM genutzt wird: Koordination, Mengen, Kosten, Energie, FM, Genehmigung, LCA oder Betrieb. Daraus entstehen ::AIA::, BAP, Modellstruktur, Prüfregeln und Liefertermine. Erst dann ist klar, welche Software und welche Detaillierung sinnvoll sind.
 
@@ -93,7 +93,7 @@ Nach Übergabe endet BIM nicht automatisch. Für FM braucht der Betreiber andere
 !!! kastanienallee "Kastanienallee 7"
     K7 nutzt Revit oder Archicad für Architektur, ein Tragwerkswerkzeug mit IFC-Export, TGA-Authoring für MEP, Solibri oder BIMcollab für Prüfung und BCF für Aufgaben. In ::LP:: 3 werden Schächte, Kerne, Räume und Hauptbauteile koordiniert. In ::LP:: 5 werden Trassen und Durchbrüche freigegeben. Für Betrieb werden Aufzug, KWL-Geräte, Zähler, PV-Wechselrichter und Fernwärmestation als Assets übergeben.
 
-## 22.8 Prüffragen für die Praxis
+## 37.8 Prüffragen für die Praxis
 
 Bei der Softwareauswahl sollte nicht die Funktionsliste entscheiden, sondern der Arbeitsfluss. Kann das Authoring-Tool die benötigten Bauteile und ::Properties:: sauber erzeugen? Kann es IFC in der vereinbarten Version exportieren? Kann das Koordinationstool BCF zuverlässig austauschen? Kann das Prüfwerkzeug Regeln so formulieren, dass Planer sie verstehen?
 
@@ -103,7 +103,7 @@ Die dritte Frage betrifft Modellierungsdisziplin. Zu viel Detaillierung erzeugt 
 
 Schließlich braucht jedes Projekt eine Fehlerkultur. Clash-Reports sind kein Schuldprotokoll, sondern ein Koordinationswerkzeug. Viele Kollisionen bedeuten am Anfang nicht automatisch schlechte Planung; sie zeigen, dass Systeme sichtbar werden. Schlecht ist, wenn Kollisionen wiederkehren, nicht entschieden oder ohne Verantwortlichen geschlossen werden.
 
-## 22.9 Entwicklerperspektive
+## 37.9 Entwicklerperspektive
 
 BIM-Werkzeuge sollten zuerst reale Arbeitslast reduzieren. Ein Planer braucht nicht noch eine Plattform, die Daten doppelt abfragt. Er braucht Werkzeuge, die vorhandene Modellinformationen prüfen, verständlich melden und in den bestehenden Prozess zurückspielen. Integration ist deshalb wichtiger als isolierte Funktionsfülle.
 
@@ -129,4 +129,4 @@ Das beste BIM-Setup ist das, das im Projektalltag tatsächlich genutzt, geprüft
 
 Authoring, Prüfung, Analyse und Betrieb brauchen unterschiedliche Werkzeuge. Wer klare Anforderungen, frühe Exporttests und Validierung einplant, verhindert die meisten teuren BIM-Enttäuschungen.
 
-Verwandte Kapitel: [Kap. 18](/chapters/18-was-bim-wirklich-ist) · [Kap. 19](/chapters/19-ifc) · [Kap. 21](/chapters/21-prozess-kollaboration) · [Kap. 26](/chapters/26-digitaler-zwilling-ki)
+Verwandte Kapitel: [Kap. 33](/chapters/33-was-bim-wirklich-ist) · [Kap. 34](/chapters/34-ifc) · [Kap. 36](/chapters/36-prozess-kollaboration) · [Kap. 41](/chapters/41-digitaler-zwilling-ki)

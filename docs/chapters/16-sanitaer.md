@@ -1,4 +1,4 @@
-# Kapitel 12 – Sanitär & Entwässerung
+# Kapitel 16 – Sanitär & Entwässerung
 
 *Teil IV – TGA*
 
@@ -13,7 +13,7 @@ Wasser ist im Gebäude selbstverständlich, solange es an der richtigen Stelle b
     - Hygieneanforderungen an Warmwasser und Stagnation erklären
     - Leitungsführung als Entwurfsaufgabe erkennen
 
-## 12.1 Trinkwasserinstallation
+## 16.1 Trinkwasserinstallation
 
 Trinkwasser kommt über Hausanschluss und Hauswasserstation ins Gebäude. Dort sitzen Absperrung, Filter, Druckminderer und Zähler. In höheren Gebäuden werden Druckzonen oder Druckerhöhungsanlagen nötig; im normalen Mehrfamilienhaus reicht oft der Netzdruck.
 
@@ -21,13 +21,13 @@ Rohrmaterialien sind Edelstahl, Kupfer und Kunststoffe wie PE-Xa oder Mehrschich
 
 Stagnation ist ein zentrales Hygienerisiko. Leitungen sollen kurz sein, regelmäßig durchströmt werden und keine toten Enden bilden. Die 3-Liter-Regel für Stichleitungen ist eine wichtige Planungsgröße: Wenig stehendes Wasser reduziert hygienische Risiken.
 
-## 12.2 Warmwasser und Legionellen
+## 16.2 Warmwasser und Legionellen
 
 Zentrale Warmwasserspeicher müssen hygienisch betrieben werden. ::Legionellen:: wachsen besonders in lauwarmem Wasser; deshalb werden zentrale Systeme oft mit 60 °C Speichertemperatur und Zirkulation geplant. Zirkulationsleitungen halten Wasser warm, kosten aber Energie und müssen gedämmt werden.
 
 Dezentrale Systeme vermeiden große Speicher und lange Zirkulation, brauchen aber elektrische Leistung oder wohnungsnahe Wärmeübergabe. Frischwasserstationen erwärmen Trinkwasser im Durchfluss über einen Wärmetauscher. Sie reduzieren Speichervolumen und können hygienisch vorteilhaft sein.
 
-## 12.3 Entwässerung
+## 16.3 Entwässerung
 
 Abwasser fließt nicht unter Druck, sondern mit Gefälle. Schmutzwasser aus WC, Dusche, Bad und Küche läuft über Anschlussleitungen in Fallleitungen, dann in Sammel- und Grundleitungen. Fallleitungen haben häufig DN 100, Sammelleitungen brauchen ausreichendes Gefälle, etwa 1:50 als Größenordnung.
 
@@ -43,13 +43,13 @@ tags: sanitär, entwässerung, fallleitung, rückstau
 -->
 ![Entwässerungsschema](../assets/illustrations/kap12_entwasserungsschema.png)
 
-## 12.4 Sanitärobjekte und Barrierefreiheit
+## 16.4 Sanitärobjekte und Barrierefreiheit
 
 Sanitärräume sind klein, aber maßlich anspruchsvoll. WC, Waschtisch, Dusche, Wanne, Bewegungsflächen, Türanschlag und Installationswand müssen zusammenpassen. Eine bodengleiche Dusche braucht Gefälle, Abdichtung, Ablaufhöhe und Schallschutz. Barrierefreie Duschen benötigen Bewegungsflächen von 1,50 m × 1,50 m.
 
 DIN 18040-2 wirkt hier konkret. Türbreiten, Wendeflächen, seitliche Anfahrbarkeit und schwellenlose Ausführung sind keine nachträglichen Accessoires. Ein Bad wird barrierefrei geplant, indem Schächte, Vorwände und Türlagen früh richtig sitzen.
 
-## 12.5 Leitungsführung als Entwurfsthema
+## 16.5 Leitungsführung als Entwurfsthema
 
 Sanitärplanung beginnt mit der Lage von Nassräumen. Übereinanderliegende Bäder und Küchen sparen Leitungslänge, reduzieren Schächte und vereinfachen Brandschutz. Versetzte Nassräume erzeugen horizontale Leitungswege, abgehängte Decken und Schallrisiken.
 
@@ -68,7 +68,7 @@ tags: steigschacht, trinkwasser, abwasser, aufzug
 !!! kastanienallee "Kastanienallee 7"
     Kastanienallee 7 nutzt zwei Sanitär-Steigschächte, die je zwei Wohnungen pro Geschoss versorgen. Bei 4 Vollgeschossen ergeben sich 8 angeschlossene Bad-/Küchengruppen je Schachtbereich. Die Kellerverteilung liegt unter den Schächten, damit horizontale Leitungen kurz bleiben. Regenwasser vom ::Flachdach:: wird über Dachabläufe geführt und in einer Zisterne von 10.000 l gesammelt.
 
-## 12.6 Sanitärplanung als Stapelproblem
+## 16.6 Sanitärplanung als Stapelproblem
 
 Sanitär funktioniert am besten, wenn Nassräume übereinander liegen. Dann können Steigleitungen kurz, Fallleitungen senkrecht und Schächte kompakt bleiben. Sobald Bäder und Küchen geschossweise wandern, entstehen Verzüge, abgehängte Decken, Schallschutzprobleme und teure Sonderlösungen. Der Grundriss bestimmt deshalb die Sanitärkosten stärker, als man im ersten Entwurf sieht.
 
@@ -83,7 +83,7 @@ Barrierefreiheit macht Sanitärplanung räumlich. Eine bodengleiche Dusche brauc
 !!! kastanienallee "Kastanienallee 7"
     K7 bündelt Küchen und Bäder an zwei Steigschachtlinien. Pro Geschoss versorgt ein Schacht zwei Wohnungen; über 4 Vollgeschosse entstehen je Schacht 8 Bäder/Küchen-Gruppen. Wird ein Bad um 2 m verschoben, betrifft das nicht nur dieses Bad, sondern Fallleitung, Schallschutz, Deckenabhängung und Revisionszugang in allen Geschossen. Diese Stapelwirkung ist der wichtigste Sanitärhebel im Wohnungsbau.
 
-## 12.7 Prüffragen für die Praxis
+## 16.7 Prüffragen für die Praxis
 
 Sanitär sollte zuerst im Schnitt geprüft werden, nicht nur im Grundriss. Gibt es genügend Gefälle für Grundleitungen? Liegen Fallleitungen senkrecht übereinander? Können Reinigungsöffnungen erreicht werden? Gibt es Konflikte mit Unterzügen, Fundamenten oder Tiefgaragenhöhen? ::Entwässerung:: ist dreidimensional, auch wenn sie im Grundriss oft als einfache Linie erscheint.
 
@@ -93,7 +93,7 @@ Schallschutz gehört zur Sanitärplanung. Fallleitungen neben Schlafräumen, WC-
 
 Barrierefreiheit muss früh geometrisch geprüft werden. Eine bodengleiche Dusche braucht nicht nur eine Fläche, sondern Gefälle, Abdichtung, Ablaufhöhe und Türbewegung. Ein unterfahrbarer Waschtisch braucht Leitungsführung, die nicht im Kniebereich stört. Ein WC mit Bewegungsfläche braucht Rohbauabmessungen, nicht nur Sanitärobjekte aus einer Bibliothek. Im Modell sollten diese Bewegungsflächen als eigene Prüfgeometrie sichtbar sein.
 
-## 12.8 Entwicklerperspektive
+## 16.8 Entwicklerperspektive
 
 Sanitärdaten sind stark netzwerkartig. Trinkwasser fließt unter Druck, Abwasser mit Gefälle, Regenwasser nach Dachgeometrie und Rückstauebene. Ein Rohr ist nur verständlich, wenn Richtung, Medium, Dimension, Gefälle, System und angeschlossene Objekte bekannt sind. Ein generisches Rohrmodell ohne Systemlogik ist für Berechnung und Prüfung wenig wert.
 
@@ -121,4 +121,4 @@ Sanitärobjekte werden als `IfcSanitaryTerminal`, Rohrleitungen als `IfcPipeSegm
 
 Wasser muss kurz, sauber und wartbar geführt werden; Abwasser braucht Gefälle und Rückstauschutz. Gute Grundrisse stapeln Nassräume und trennen Sanitärschächte klar von Aufzug und Tragwerk.
 
-Verwandte Kapitel: [Kap. 1](/chapters/01-architektur-als-system) · [Kap. 8](/chapters/08-schallschutz) · [Kap. 11](/chapters/11-lueftung)
+Verwandte Kapitel: [Kap. 1](/chapters/01-architektur-als-system) · [Kap. 12](/chapters/12-schallschutz) · [Kap. 15](/chapters/15-lueftung)

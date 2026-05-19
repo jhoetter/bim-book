@@ -23,7 +23,7 @@ Der Gebäudetyp entspricht der häufigsten Neubauform im deutschen Wohnungsbau: 
 | Dach | Flachdach, extensiv begrünt (80 mm), PV-Anlage 30 kWp |
 | Erschließung | 1 Treppenhaus, 1 Aufzug (Barrierefreiheit GK 4) |
 
-Grundlagen der Gebäudetypologie: [Kap. 1](/chapters/01-architektur-als-system) · Entwurf und Grundrissorganisation: [Kap. 2](/chapters/02-entwurf-raum-funktion)
+Grundlagen der Gebäudetypologie: [Kap. 1](/chapters/01-architektur-als-system) · Entwurf und Grundrissorganisation: [Kap. 6](/chapters/06-plaene-raum-funktion-entwurfslogik)
 
 ## Wohnungsschlüssel
 
@@ -47,7 +47,7 @@ Vier Wohnungen pro Geschoss mit drei Typen — das ergibt über alle vier Vollge
 
 Primärenergiebedarf: **45 kWh/(m²a)** (Nachweis nach GEG, Referenzgebäudeverfahren).
 
-U-Wert-Berechnung Schritt für Schritt: [Kap. 6](/chapters/06-waermeschutz-geg) · Feuchteschutz Glaser-Verfahren: [Kap. 7](/chapters/07-feuchteschutz)
+U-Wert-Berechnung Schritt für Schritt: [Kap. 10](/chapters/10-waermeschutz-geg) · Feuchteschutz Glaser-Verfahren: [Kap. 11](/chapters/11-feuchteschutz)
 
 ## TGA-Übersicht
 
@@ -58,10 +58,10 @@ U-Wert-Berechnung Schritt für Schritt: [Kap. 6](/chapters/06-waermeschutz-geg) 
 - **E-Mobilität:** 10 Ladepunkte Tiefgarage (22 kW), KfW-433-gefördert
 - **PV:** 30 kWp Flachdach, Eigenverbrauch Allgemeinstrom, Überschuss Einspeisung
 
-Heizung und Fernwärme: [Kap. 10](/chapters/10-heizung-waermeversorgung) · Lüftung KWL: [Kap. 11](/chapters/11-lueftung) · Sanitär Frischwasser: [Kap. 12](/chapters/12-sanitaer) · Elektro: [Kap. 13](/chapters/13-elektro)
+Heizung und Fernwärme: [Kap. 14](/chapters/14-heizung-waermeversorgung) · Lüftung KWL: [Kap. 15](/chapters/15-lueftung) · Sanitär Frischwasser: [Kap. 16](/chapters/16-sanitaer) · Elektro: [Kap. 17](/chapters/17-elektro)
 
 ## BIM-Modell
 
 Das IFC-Modell umfasst alle Gewerke in einer gemeinsamen räumlichen Struktur: 6 Geschosse, ~80 Räume, vollständige TGA-Objekte — Grundlage für Kollisionskoordination (BCF), Flächenauswertung (IfcSpace) und Kostenermittlung (DIN 276).
 
-IFC-Grundlagen: [Kap. 19](/chapters/19-ifc) · Vollständige Entitätenreferenz: [IFC-Schnellreferenz](/appendix/ifc-referenz)
+IFC-Grundlagen: [Kap. 34](/chapters/34-ifc) · Vollständige Entitätenreferenz: [IFC-Schnellreferenz](/appendix/ifc-referenz)

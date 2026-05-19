@@ -1,6 +1,6 @@
-# Kapitel 2 – Entwurf, Raum und Funktion
+# Kapitel 6 – Pläne, Raum, Funktion & Entwurfslogik
 
-*Teil I – Fundament*
+*Teil I – Fundament, Projektstart & Entwurf*
 
 ---
 
@@ -15,7 +15,7 @@ Ein Bauherr kommt selten mit einem fertigen Gebäudeproblem. Er kommt mit Wünsc
     - räumliche Transformationen und Organisationsprinzipien im Entwurf erkennen
     - Erschließung, Barrierefreiheit, Planungsrecht und Kompaktheit als Entwurfsentscheidungen bewerten
 
-## 2.0 Architektur als Problemklärung
+## 6.0 Architektur als Problemklärung
 
 Architektur beginnt nicht mit einer Lieblingsform. Sie beginnt mit einer Klärung: Was soll dieses Gebäude leisten, für wen, an welchem Ort, mit welchem Budget und unter welchen Grenzen? Diese Frage ist wichtiger als sie klingt. Wer sie zu eng stellt, bekommt schnell eine schöne Antwort auf das falsche Problem.
 
@@ -37,7 +37,7 @@ tags: problemklaerung, entwurfsprozess, raumprogramm, varianten
 -->
 ![Früher Entwurfsprozess von Problemklärung bis Entscheidung](../assets/illustrations/kap02_problemklaerung.png)
 
-## 2.1 Standortanalyse und Randbedingungen
+## 6.1 Standortanalyse und Randbedingungen
 
 Der Ort ist kein Hintergrundbild. Er ist ein aktiver Teil des Entwurfs. Eine belastbare Standortanalyse fragt nach Sonne, Wind, Lärm, Topografie, Boden, Vegetation, Zufahrt, Nachbarschaft, Blickbeziehungen, Adresse und öffentlichem Raum. Manche Faktoren sind hart messbar, andere müssen beobachtet und bewertet werden.
 
@@ -50,7 +50,7 @@ Für digitale Werkzeuge bedeutet Standortanalyse, dass das Modell früh mehr bra
 !!! kastanienallee "Kastanienallee 7"
     Für Kastanienallee 7 werden vor dem ersten Grundriss fünf Randbedingungen festgehalten: kompaktes innerstädtisches Grundstück, Straße im Süden, Hof im Norden, hohe Ausnutzung mit ::GRZ:: 0,60 und ::GFZ:: 2,40, Gebäudeklasse 4 mit Aufzugspflicht. Daraus folgt kein fertiger Vierspänner, aber ein enger Suchraum: Der Kern muss effizient liegen, die Wohnungen brauchen trotz Tiefe gute Belichtung, und TGA-Schächte dürfen die Wohnflächenquote nicht zerstören.
 
-## 2.2 Varianten, Diagramme und Entscheidung
+## 6.2 Varianten, Diagramme und Entscheidung
 
 Frühe Entwürfe entstehen selten als ein einziger Sprung. Sie werden als Varianten untersucht. Eine Variante verändert nicht nur die Fassade, sondern eine Grundentscheidung: Kernlage, Baukörpertiefe, Erschließung, Orientierung, Freiraum, Tragstruktur oder Umgang mit Bestand. Drei ernsthafte Varianten sind oft besser als zehn dekorative Abwandlungen.
 
@@ -73,7 +73,7 @@ tags: varianten, kriterienmatrix, vorplanung, kastanienallee
 
     Die Entscheidung fällt nicht, weil Variante A zuerst gezeichnet wurde, sondern weil sie Kriterien am robustesten erfüllt: gute Wohnflächenquote, geringe Genehmigungsrisiken, einfache TGA-Steigzonen und kompakte Hülle. Aus Variante C werden bessere Eckwohnungen und eine klarere Eingangssequenz übernommen.
 
-## 2.3 Architekturpläne lesen
+## 6.3 Architekturpläne lesen
 
 Architekturpläne sind keine Bilder eines Gebäudes, sondern Schnitte durch eine räumliche Situation. Sie reduzieren ein dreidimensionales Gebäude auf eine lesbare Darstellung. Genau deshalb sind sie mächtig und gefährlich zugleich: Wer die Konventionen kennt, erkennt Raum, Material und Absicht; wer sie nicht kennt, verwechselt leicht eine Schnittkante mit einer Ansichtslinie oder eine gestrichelte Kante mit einem vorhandenen Bauteil.
 
@@ -103,7 +103,7 @@ tags: planarten, grundriss, schnitt, ansicht, detail
 -->
 ![Planarten im Vergleich](../assets/illustrations/kap02_planarten.png)
 
-## 2.4 Raum, Form und Transformation
+## 6.4 Raum, Form und Transformation
 
 Architektur entwirft nicht zuerst Fassaden, sondern bewohnbare Räume. Eine Wand, ein Dach oder eine Stütze ist nie nur ein Objekt; sie begrenzt, öffnet, verbindet oder gliedert Raum. Darin unterscheidet sich Architektur von Malerei oder Skulptur: Sie erzeugt keine bloße Vorstellung von Raum, sondern eine Situation, in der Menschen gehen, sitzen, warten, arbeiten, schlafen, sehen und gehört werden.
 
@@ -129,7 +129,7 @@ tags: entwurf, formtransformation, rotation, translation, subtraktion
 -->
 ![Formtransformationen im Entwurf](../assets/illustrations/kap02_formtransformationen.png)
 
-## 2.5 Raumbeziehungen und Komposition
+## 6.5 Raumbeziehungen und Komposition
 
 Architekten entwerfen selten einzelne Räume isoliert. Entscheidend ist, wie Räume zueinander stehen. Ein Raum kann in einem anderen liegen, etwa ein kleiner Sanitärkern in einer großen Halle. Zwei Räume können angrenzen und durch eine Tür, Öffnung oder Schwelle verbunden sein. Räume können sich überlappen, sodass ein gemeinsamer Bereich entsteht. Sie können getrennt sein und über einen Zwischenraum, Flur, Hof oder Steg verknüpft werden.
 
@@ -158,7 +158,7 @@ tags: raumorganisation, achse, raster, cluster, zentralraum
 
     Diese Lesart hilft auch bei späteren Änderungen. Wenn eine Wohnung größer, ein Schacht verschoben oder der Eingang anders gelegt wird, betrifft das nicht nur eine Fläche, sondern das Verhältnis von Raster, Kern, Bewegung und Tageslicht. Genau deshalb ist räumliche Komposition ein Prüfwerkzeug, nicht nur eine Entwurfsvokabel im Planungsalltag, in Variantenstudien und in späteren digitalen Modellprüfungen.
 
-## 2.6 Was der Bebauungsplan vorgibt
+## 6.6 Was der Bebauungsplan vorgibt
 
 Bevor ein Grundriss schön, effizient oder möblierbar sein kann, muss er baurechtlich möglich sein. Der Bebauungsplan legt fest, was auf einem Grundstück gebaut werden darf: Art der Nutzung, überbaubare Fläche, Zahl der Vollgeschosse, Baugrenzen, Dachform, manchmal Stellplätze, Begrünung oder Materialien. Für den Entwurf sind vor allem zwei Kennwerte wichtig.
 
@@ -168,7 +168,7 @@ Die **Geschossflächenzahl** (::GFZ::) beschreibt, wie viel Geschossfläche im V
 
 Daneben ordnet die **Musterbauordnung** (::MBO::) Gebäude in Gebäudeklassen ein. Diese Klassen hängen unter anderem von Höhe, Nutzungseinheiten und Flächengrößen ab. Sie wirken auf Brandschutz, Rettungswege, Anforderungen an Bauteile und technische Ausstattung. Die ::MBO:: ist selbst ein Muster; verbindlich sind die Landesbauordnungen. Trotzdem ist sie als gemeinsame Systematik wichtig, weil viele Regeln in ähnlicher Form in den Ländern erscheinen.
 
-Abstandsflächen gehören ebenfalls zum frühen Entwurf. Sie sichern Belichtung, Belüftung, Brandschutzabstände und städtebauliche Ordnung. Für dieses Kapitel genügt das Prinzip: Ein Gebäude darf nicht beliebig dicht an die Grenze rücken, nur weil ::GRZ:: und ::GFZ:: rechnerisch passen. [Kapitel 14](/chapters/14-planungsrecht) vertieft das Planungsrecht.
+Abstandsflächen gehören ebenfalls zum frühen Entwurf. Sie sichern Belichtung, Belüftung, Brandschutzabstände und städtebauliche Ordnung. Für dieses Kapitel genügt das Prinzip: Ein Gebäude darf nicht beliebig dicht an die Grenze rücken, nur weil ::GRZ:: und ::GFZ:: rechnerisch passen. [Kapitel 18](/chapters/18-planungsrecht-bauantrag) vertieft das Planungsrecht.
 
 Einen Bebauungsplan liest man daher nicht wie eine Liste einzelner Werte, sondern als räumliche Anleitung. Baugrenzen zeigen, wo das Gebäude stehen darf; Baulinien können festlegen, wo es stehen muss. Vollgeschosse begrenzen die Höhe indirekt, Dachform und Traufhöhe tun es direkter. Nutzungsart und Stellplatzanforderungen wirken auf Erdgeschoss, Zufahrt und Freiflächen. Ein Entwurf ist erst belastbar, wenn diese Angaben zusammen geprüft wurden.
 
@@ -179,9 +179,9 @@ Der häufige Anfängerfehler besteht darin, ::GRZ:: und ::GFZ:: isoliert zu rech
 
     Geschossfläche der 4 Vollgeschosse: 4 × 360 m² = 1.440 m². Rechnung zur ::GFZ:: ergibt: 1.440 m² / 600 m² = 2,40. Die angenommene ::GFZ:: 2,4 wird ebenfalls vollständig ausgeschöpft. Das Gebäude ist damit dicht, aber rechnerisch passend.
 
-    Gebäudeklasse: 4 Vollgeschosse, oberster Aufenthaltsraum unter 13 m, Nutzung als Mehrfamilienhaus. Einordnung: Gebäudeklasse 4 nach Systematik der ::MBO:: beziehungsweise der Landesbauordnung. Die brandschutztechnischen Folgen werden in [Kapitel 9](/chapters/09-brandschutz) vertieft.
+    Gebäudeklasse: 4 Vollgeschosse, oberster Aufenthaltsraum unter 13 m, Nutzung als Mehrfamilienhaus. Einordnung: Gebäudeklasse 4 nach Systematik der ::MBO:: beziehungsweise der Landesbauordnung. Die brandschutztechnischen Folgen werden in [Kapitel 13](/chapters/13-brandschutz) vertieft.
 
-## 2.7 Raumplanung: Proportion und Maßstab
+## 6.7 Raumplanung: Proportion und Maßstab
 
 Gute Raumplanung beginnt beim menschlichen Maß. Türen, Flure, Möbel, Bewegungsflächen, Blickachsen und Fensterbrüstungen sind nicht abstrakt; sie werden mit Körpern benutzt. Die klassische Entwurfslehre, etwa bei Neufert, sammelt solche Maße nicht als starre Rezepte, sondern als Erfahrungswerte für Benutzbarkeit.
 
@@ -199,7 +199,7 @@ Zur Raumplanung gehört auch Orientierung. Wohnräume profitieren von Tageslicht
 
 Maßstab bedeutet schließlich, dass ein Gebäude auf mehreren Ebenen funktionieren muss. Der Stadtmaßstab fragt nach Baukörper, Adresse und Nachbarschaft. Der Gebäudemaßstab fragt nach Erschließung, Struktur und Nutzungseinheiten. Der Raummaßstab fragt nach Proportion, Möbeln und Licht. Der Detailmaßstab fragt nach Fuge, Griffhöhe, Schwelle und Anschluss. Gute Planung verliert keine dieser Ebenen aus dem Blick.
 
-## 2.8 Erschließungstypen
+## 6.8 Erschließungstypen
 
 Erschließung ist der Weg vom öffentlichen Raum zur Nutzungseinheit: Straße, Eingang, Windfang, Treppe, Aufzug, Flur, Wohnungstür. Im Wohnungsbau entscheidet sie stark über Wirtschaftlichkeit, Orientierung und Wohnqualität. Jeder Quadratmeter Erschließungsfläche kostet Geld, wird aber nicht direkt als Wohnraum genutzt.
 
@@ -241,7 +241,7 @@ tags: erschliessung, zweispänner, dreispänner, vierspänner, laubengang
 !!! kastanienallee "Kastanienallee 7"
     Kastanienallee 7 ist als Vierspänner organisiert. Ein zentraler Kern mit Treppe und Aufzug erschließt je Geschoss vier Wohnungen. Der Windfang liegt auf der Südseite, damit Eingang, Briefkästen und Treppenhaus klar adressiert sind. Je Vollgeschoss entstehen drei Wohnungstypen: eine 2-Zimmer-Wohnung mit ca. 55 m², eine 3-Zimmer-Wohnung mit ca. 75 m² und eine 4-Zimmer-Wohnung mit ca. 95 m²; über 4 Vollgeschosse ergibt das 4 + 4 + 4 = 12 Wohneinheiten. Die Wirtschaftlichkeit entsteht aus einem kompakten Kern, die Qualität aus Ecklagen, kurzen Wegen und klaren Installationszonen.
 
-## 2.9 Barrierefreiheit als Entwurfsprinzip
+## 6.9 Barrierefreiheit als Entwurfsprinzip
 
 Barrierefreiheit ist keine Sonderausstattung für wenige Nutzer. Sie ist ein Qualitätsprinzip, das Gebäude robuster macht: für ältere Menschen, Kinderwagen, temporäre Verletzungen, Lieferungen, Möbeltransport und Pflege. Wer Barrierefreiheit erst am Ende "nachrüstet", findet meist keinen Platz mehr.
 
@@ -256,7 +256,7 @@ Entwurflich ist Barrierefreiheit am günstigsten, wenn sie im Grundriss steckt. 
 !!! kastanienallee "Kastanienallee 7"
     Kastanienallee 7 hat 4 Vollgeschosse und fällt nach Art. 37 BayBO in die Aufzugspflicht. Der Entwurf sieht deshalb 1 Aufzug im Treppenhauskern vor. Kabinenmaß barrierefrei: 1,10 m × 1,40 m lichte Kabine. Kabinenfläche = 1,10 m × 1,40 m = 1,54 m². Für Schacht, Führung, Türen und Wandstärken wird ein Stahlbeton-Schacht von ca. 1,80 m × 2,20 m angesetzt. Schachtgrundfläche = 1,80 m × 2,20 m = 3,96 m² je Geschoss. Bei 4 Vollgeschossen belegt der Schacht rechnerisch 4 × 3,96 m² = 15,84 m² Geschossfläche, zuzüglich Keller und Dachbereich. Die Aufzugsgrube von ca. 1,10 m Tiefe macht den Keller konstruktiv sinnvoll; die Anlage wird maschinenraumlos nach DIN EN 81-20 geplant.
 
-## 2.10 Kompaktheit und A/V-Verhältnis
+## 6.10 Kompaktheit und A/V-Verhältnis
 
 Kompaktheit beschreibt, wie viel Außenfläche ein Gebäude im Verhältnis zu seinem Volumen hat. Ein kompakter Baukörper verliert bei gleicher Dämmqualität weniger Wärme, hat weniger Fassadenfläche, weniger Anschlüsse und oft geringere Baukosten. Ein stark gegliederter Baukörper kann räumlich reizvoll sein, hat aber mehr Außenfläche, mehr Ecken, mehr Wärmeverluste und mehr Details.
 
@@ -264,7 +264,7 @@ Der Kennwert dafür ist das A/V-Verhältnis: Außenfläche A der thermischen Hü
 
 Für eine überschlägige Rechnung genügt ein vereinfachter Quader. Außenwandfläche, Dachfläche und Bodenfläche bilden die Hüllfläche. Das ist noch keine vollständige energetische Bilanz, aber ein gutes Entwurfsgefühl. Ein Einfamilienhaus hat oft A/V-Werte über 0,8 m⁻¹, ein kompaktes Mehrfamilienhaus kann deutlich darunter liegen.
 
-Kompaktheit ist kein Selbstzweck. Sehr kompakte Gebäude können tiefe Grundrisse, schlechtere Belichtung oder monotone Wohnungen erzeugen. Gute Planung sucht deshalb nicht den kleinsten Wert um jeden Preis, sondern ein sinnvolles Verhältnis aus Energie, Tageslicht, Orientierung, Erschließung und Wohnqualität. [Kapitel 6](/chapters/06-waermeschutz-geg) zeigt später, wie aus Hüllfläche, U-Werten und Temperaturdifferenzen Wärmeverluste werden.
+Kompaktheit ist kein Selbstzweck. Sehr kompakte Gebäude können tiefe Grundrisse, schlechtere Belichtung oder monotone Wohnungen erzeugen. Gute Planung sucht deshalb nicht den kleinsten Wert um jeden Preis, sondern ein sinnvolles Verhältnis aus Energie, Tageslicht, Orientierung, Erschließung und Wohnqualität. [Kapitel 10](/chapters/10-waermeschutz-geg) zeigt später, wie aus Hüllfläche, U-Werten und Temperaturdifferenzen Wärmeverluste werden.
 
 <!-- IMAGE
 name: kap02_av_verhaeltnis
@@ -289,7 +289,7 @@ Im digitalen Modell wird ein Raum nicht nur als beschriftete Fläche gezeichnet.
 
 Für Planer ist das hilfreich, weil dieselben Räume in vielen Auswertungen auftauchen. Die Wohnflächenberechnung, die Türliste, die Lüftungsplanung, der Schallschutz, die Kosten und später die Vermietung greifen auf Raumdaten zu. Wenn Räume nur als Text im Plan stehen, müssen diese Informationen mehrfach abgeschrieben werden. Wenn Räume als Datenobjekte sauber gepflegt sind, können Änderungen konsistenter weitergegeben werden.
 
-Auch ::GRZ:: und ::GFZ:: lassen sich teilweise automatisiert prüfen, wenn Modellstruktur und Datenqualität stimmen. `IfcSite` beschreibt das Grundstück, `IfcBuilding` das Gebäude, Geschosse und Räume liefern Flächen. Die Schwierigkeit liegt nicht in der Formel, sondern in der richtigen Zuordnung: Welche Flächen sind anrechenbar? Welche Bauteile zählen zur Grundfläche? Welche Geschosse sind Vollgeschosse? Diese Fragen verbinden Modellierung mit Planungsrecht und Klassifikation; die digitale Vertiefung folgt in [Kapitel 19](/chapters/19-ifc) und [Kapitel 20](/chapters/20-klassifikation).
+Auch ::GRZ:: und ::GFZ:: lassen sich teilweise automatisiert prüfen, wenn Modellstruktur und Datenqualität stimmen. `IfcSite` beschreibt das Grundstück, `IfcBuilding` das Gebäude, Geschosse und Räume liefern Flächen. Die Schwierigkeit liegt nicht in der Formel, sondern in der richtigen Zuordnung: Welche Flächen sind anrechenbar? Welche Bauteile zählen zur Grundfläche? Welche Geschosse sind Vollgeschosse? Diese Fragen verbinden Modellierung mit Planungsrecht und Klassifikation; die digitale Vertiefung folgt in [Kapitel 34](/chapters/34-ifc) und [Kapitel 35](/chapters/35-klassifikation).
 
 ## Zusammenfassung
 
@@ -297,4 +297,4 @@ Auch ::GRZ:: und ::GFZ:: lassen sich teilweise automatisiert prüfen, wenn Model
 
 Bauherrenwünsche, Standortanalyse und Raumprogramm werden erst durch Varianten und Kriterien projektfähig. Grundriss, Schnitt, Ansicht und Detail zeigen verschiedene Seiten derselben Planung. ::GRZ::, ::GFZ:: und ::MBO:: setzen den Rahmen, Proportion und Möblierbarkeit machen Räume nutzbar, Erschließung und Barrierefreiheit machen Gebäude zugänglich. Das A/V-Verhältnis zeigt schließlich, dass Form auch energetische Folgen hat.
 
-Verwandte Kapitel: [Kap. 1](/chapters/01-architektur-als-system) · [Kap. 6](/chapters/06-waermeschutz-geg) · [Kap. 9](/chapters/09-brandschutz) · [Kap. 14](/chapters/14-planungsrecht) · [Kap. 15](/chapters/15-hoai) · [Kastanienallee 7](/appendix/kastanienallee7)
+Verwandte Kapitel: [Kap. 1](/chapters/01-architektur-als-system) · [Kap. 10](/chapters/10-waermeschutz-geg) · [Kap. 13](/chapters/13-brandschutz) · [Kap. 18](/chapters/18-planungsrecht-bauantrag) · [Kap. 19](/chapters/19-hoai-rollen-projektorganisation) · [Kastanienallee 7](/appendix/kastanienallee7)

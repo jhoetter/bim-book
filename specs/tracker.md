@@ -1,14 +1,14 @@
 # Buch-Tracker: Vom Entwurf zum Modell
 
-Last updated: 2026-05-19 (Projektprozess finalisiert: K16 Ausschreibung/Vergabe, K17 Bauoberleitung; Teil V als Projektprozess)
+Last updated: 2026-05-19 (exhaustiver Prozessausbau geplant: Zielstruktur 41 Kapitel mit durchgehender Büro-, Genehmigungs-, Vergabe-, Baustellen- und Übergabe-Praxis)
 
-Zweck: Master-Planungsdokument für alle 26 Kapitel. Kein Prosatext — nur Skizze: was muss rein, welche Bilder, welche Begriffe, welche Quellen. Writing Agents lesen diesen Tracker vor dem Schreiben eines Kapitels.
+Zweck: Master-Planungsdokument für das Buch. Kein Prosatext — nur Skizze: was muss rein, welche Bilder, welche Begriffe, welche Quellen. Writing Agents lesen diesen Tracker vor dem Schreiben eines Kapitels. **Maßgeblich ist ab 2026-05-19 die Zielstruktur mit 41 Kapiteln; der aktuelle Dateistand hat noch 26 Kapitel und wird in einem eigenen Umsetzungsschritt migriert.**
 
 **Zielgruppe (maßgeblich für Ton, Tiefe und Beispielwahl):**
 - **Primär:** Technisch versierte Einsteiger ohne Baugrundlage (Informatiker, Softwareentwickler, Ingenieure aus anderen Disziplinen) **und** Architekturstudenten im frühen Studium, denen die digitale Systematik fehlt. Beiden Gruppen fehlt jeweils eine Seite des Ganzen — das Buch schließt diese Lücke.
 - **Sekundär:** Architekten und Fachplaner in der Praxis, die BIM-Methodik systematisch durchdringen wollen — und BIM-Software-Entwickler, die ihre Werkzeuge besser auf den Berufsalltag der Planer abstimmen möchten. Diese Gruppe liest mit, um festzustellen: der Autor kennt das Handwerk. Das schafft Vertrauen und Glaubwürdigkeit für die begleitende Software.
 
-**Konsequenz für Kapiteltiefe:** Architektonische Grundlagen (Baustoffe, Konstruktion, TGA, Statik, Bauphysik) müssen vollständig und präzise erklärt werden — nicht als Zusammenfassung für Experten, sondern als solides Fundament für Einsteiger, das Architekten als fachlich korrekt erkennen.
+**Konsequenz für Kapiteltiefe:** Architektonische Grundlagen (Baustoffe, Konstruktion, TGA, Statik, Bauphysik) müssen vollständig und präzise erklärt werden — nicht als Zusammenfassung für Experten, sondern als solides Fundament für Einsteiger, das Architekten als fachlich korrekt erkennen. Der Projektprozess muss gleich tief werden: Problemraum, Bauherrengespräch, Skizzen, Genehmigung, Ausführungsplanung, Ausschreibung, Vergabe, Terminplanung, Lean, Baustelle, Fotodokumentation und Mängel sollen so konkret sein, dass Leser den Ablauf wie in einem langen Architekturbüro-Praktikum nachvollziehen können.
 
 Leitbeispiel: **Kastanienallee 7** — viergeschossiges MFH, 12 Wohneinheiten, Stahlbeton-Skelett, Fernwärme + KWL, Flachdach mit PV, Vierspänner, GRZ 0,6, GFZ 2,4, Gebäudeklasse 4 nach MBO, **aufzugspflichtig nach Art. 37 BayBO** (4 Vollgeschosse; 1 Aufzug im Treppenhauskern, Kabine 1,10 × 1,40 m lichte Maße nach DIN 18040-2, maschinenraumlos).
 
@@ -23,8 +23,8 @@ Leitbeispiel: **Kastanienallee 7** — viergeschossiges MFH, 12 Wohneinheiten, S
 
 Priorität:
 - `P0` — Teil I: ohne diese Kapitel funktioniert das Buch nicht als Einheit
-- `P1` — Teile II–VI: Kerninhalt
-- `P2` — Teil VII + Anhang: Vertiefung/Ausblick
+- `P1` — Teile II–VIII: Kerninhalt
+- `P2` — Teil IX + Anhang: Vertiefung/Ausblick
 
 ---
 
@@ -37,7 +37,7 @@ Die vollständige Quellenliste liegt als filterbare Referenzseite in der Web-App
 
 Die Liste erfasst die Fachbibliothek aus Atlas-Reihe, Grundlagen/Entwurf, Baukonstruktion, Holzbau, Gebäudetechnik, Sanierung/Denkmalpflege, Recht/Verträge, Bauausführung, Zeichnen/Darstellung, Digital/BIM, Bauphysik, Tragwerkslehre sowie Normen/Gesetze. Jede Quelle trägt dort eine kurze Verwendungseinordnung und die Kapitel, in denen sie inhaltlich sinnvoll vorkommt.
 
-Erweiterte lokale Referenzen liegen unter `~/Desktop/architecture books`, insbesondere `13_Projektmanagement` (Kochendörfer/Liebchen/Viering; Würfele/Bielefeld/Gralla), `05_Sanierung-und-Denkmalpflege` (Stahr; Denkmal und Energie), `09_Digital-und-BIM` und `12_Normen-und-Gesetze`.
+Erweiterte lokale Referenzen liegen unter `~/Desktop/architecture books`, insbesondere `01_Grundlagen-und-Entwurf` (Ching; Neufert), `08_Zeichnen-und-Darstellung` (Ching Architectural Graphics; Basics Technisches Zeichnen), `06_Recht-und-Vertraege` (HOAI; Basics Ausschreibung; VOB im Bild), `07_Bauausfuehrung` (Baustelleneinrichtung; Standard Detailsammlung), `13_Projektmanagement` (Kochendörfer/Liebchen/Viering; Würfele/Bielefeld/Gralla), `05_Sanierung-und-Denkmalpflege` (Stahr; Denkmal und Energie), `09_Digital-und-BIM` und `12_Normen-und-Gesetze`.
 
 **Schreibregel:** Kapitel behalten ihre knappen `Quellen`-Zeilen als Arbeitsnotiz. Für neue oder überarbeitete Kapitel soll die konkrete Auswahl aus `web/src/data/sources.ts` übernommen werden; die App-Seite `/appendix/quellen` bleibt das vollständige Verzeichnis.
 
@@ -45,7 +45,7 @@ Erweiterte lokale Referenzen liegen unter `~/Desktop/architecture books`, insbes
 
 ## Strukturelle Lücken & Review-Notizen
 
-Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mit einer offenen Entscheidung (OE) verknüpft.
+Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mit einer offenen Entscheidung (OE) verknüpft. Frühere Kapitelnummern beziehen sich teilweise auf den 26-Kapitel-Dateistand; die neuen OE-18 bis OE-34 beziehen sich auf die 41-Kapitel-Zielstruktur.
 
 | Lücke | Schwere | Betrifft | OE |
 |-------|---------|----------|----|
@@ -70,10 +70,29 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 | Entwurfsdiagramme und Variantenkommunikation waren zu schwach — jetzt K02.2 mit Bubble-Diagramm, Erschließung, Sonne/Blick, Massenmodell, Kriterienmatrix | **hoch** | Kap. 2 | OE-15 |
 | Bauantrag war zu abstrakt — K14 ergänzt konkrete Unterlagen, Nachweise, Genehmigungsreife vs. Ausführungsreife und BIM-to-Permit | **mittel** | Kap. 14 | OE-16 |
 | Reale Vergabepraxis war zu dünn — K16 ergänzt Firmenfindung, private vs. öffentliche Vergabe, Preisspiegel, Bietergespräch, Zuschlag, GU vs. Einzelvergabe | **mittel** | Kap. 16 | OE-17 |
+| Prozesskapitel sind trotz Ergänzung zu komprimiert — Problemraum, Skizzen, Bauantrag, LP 5, LV/Vergabe, Termin/Lean und Baukontrolle brauchen je eigene Kapitel | **sehr hoch** | Kap. 2, 14–17 | OE-18 |
+| Kundengespräch, Briefing, Raumprogramm, Stakeholder, Budget, Zielkonflikte und Entscheidungslog fehlen als echte Arbeitsmethode | **sehr hoch** | neu K02 | OE-19 |
+| Grobskizzen, Bubble-Diagramme, Sonnen-/Blick-/Lärm-Diagramme, Variantenkritik und Kundenkommunikation brauchen sichtbare Bildstrecke | **sehr hoch** | neu K03 | OE-20 |
+| Übersetzung vom Vorentwurf in Detailmodell, Planpakete, Raumbuch, Tür-/Fensterlisten, Freigaben und RFI fehlt als eigener LP-5-Block | **sehr hoch** | neu K18 | OE-21 |
+| Bauantrag braucht Vollständigkeitslogik, Bauvorlageberechtigung, Nachweise, digitale Portale, Nachforderungen und Behördenkommunikation statt Kurzüberblick | **sehr hoch** | neu K16 | OE-22 |
+| Ausschreibung und Vergabe brauchen getrennte Kapitel: LV/Mengen/GAEB/STLB einerseits, Bieterfragen/Preisspiegel/Vergabevermerk/Vertrag andererseits | **sehr hoch** | neu K19, K20 | OE-23 |
+| Terminplanung muss Gantt, Netzplan, kritischen Pfad, Taktplanung, Last Planner, Baustelleneinrichtung und Logistik zusammen erklären | **sehr hoch** | neu K21 | OE-24 |
+| Baukontrolle muss konkrete Baustellenroutine zeigen: Begehung, Fotos, Bautagebuch, Mängelkarte, BCF-Ticket, Fristen, Abnahme, Gewährleistung | **sehr hoch** | neu K22 | OE-25 |
+| Machbarkeitsprüfung vor dem Entwurf fehlt: Grundstück, Grundbuch, Baulasten, Leitungen, Vermessung, Boden, Altlasten, Kampfmittel, Nachbarn, Finanzierung | **sehr hoch** | neu K02, K04 | OE-26 |
+| Fachplanerkoordination ist zu implizit: Planlauf, Prüfstatus, Kollisionsrunden, Durchbruchsplanung, Freigaben und Planrevisionen brauchen eigenes Kapitel | **sehr hoch** | neu K20 | OE-27 |
+| Werk- und Montageplanung der Unternehmen fehlt: was plant der Architekt, was prüft er nur, was wird freigegeben, was bleibt Unternehmerverantwortung | **sehr hoch** | neu K22 | OE-28 |
+| Änderungs- und Nachtragsmanagement ist zu spät und zu dünn: Bauherrenänderung, Planänderung, geänderte/zusätzliche Leistung, Bedenkenanmeldung, Claim-Log | **sehr hoch** | neu K26 | OE-29 |
+| Baustellenvorbereitung fehlt als eigene Praxisphase: SiGeKo, Bauwasser/Baustrom, Verkehrssicherung, Nachbarschaft, Baustelleneinrichtung, Baustartbesprechung | **hoch** | neu K28 | OE-30 |
+| Aufmaß, Rechnungsprüfung und laufende Kostenkontrolle fehlen als tägliche LP-8-Arbeit | **hoch** | neu K30 | OE-31 |
+| Inbetriebnahme und Übergabe fehlen: TGA-Funktionsprüfungen, Einregulierung, Revisionsunterlagen, Betreiberhandbuch, Einweisung, Restmängel | **sehr hoch** | neu K31 | OE-32 |
+| LP 9 / Gewährleistung / Objektbetreuung fehlt als praktischer Prozess: Mängel nach Bezug, Fristen, Verjährung, Wartung, as-built und FM-Übergabe | **hoch** | neu K32 | OE-33 |
+| Bürorealität fehlt: Dateibenennung, Planlisten, CDE-Status, Protokolle, E-Mail-Disziplin, Entscheidungs- und Freigabelogik | **hoch** | alle Prozesskapitel | OE-34 |
 
 ---
 
-## Gliederungsreview 2026-05-19
+## Gliederungsreview 2026-05-19 (überholt)
+
+**Hinweis:** Dieser Review dokumentiert die erste, kleinere Korrektur der 26-Kapitel-Fassung. Er bleibt als Verlauf erhalten, ist aber durch den folgenden exhaustiven Prozessausbau überholt. Maßgeblich ist die 41-Kapitel-Zielstruktur im nächsten Abschnitt.
 
 **Befund:** Die Kapitelnummern müssen nicht erneut global umgestellt werden. Die didaktische Reihenfolge ist aber nur dann stimmig, wenn architektonisches Problemlösen vor den technischen Schichten steht. K15 ist als HOAI-/Prozesskapitel zu spät für die erste Erklärung von Bauherrengespräch, Raumprogramm, Ort, Varianten und Entscheidung.
 
@@ -96,7 +115,554 @@ Erkannte Schwachstellen nach Gliederungsanalyse (2026-05-18). Jede Lücke ist mi
 
 ---
 
-## Kapitel-Übersicht
+## Exhaustiver Prozessausbau 2026-05-19 — maßgebliche Zielstruktur
+
+**Befund:** Auch die 31-Kapitel-Zwischenstruktur war noch nicht vollständig. Sie trennte Problemraum, Skizzen, Bauantrag, Ausführungsplanung, LV/Vergabe, Termin und Baukontrolle, ließ aber mehrere reale Praxisphasen weiterhin implizit: Machbarkeit vor dem Entwurf, Grundstücks- und Due-Diligence-Prüfung, Fachplanerkoordination, Werkplanung der Unternehmen, Bemusterung/Freigaben, Nachtrags- und Änderungsmanagement, Baustellenvorbereitung, Aufmaß/Rechnungsprüfung, Inbetriebnahme, Übergabe und Gewährleistung.
+
+**Entscheidung:** Das Buch wird auf **41 Kapitel** erweitert. Diese Struktur ist für die Umsetzung maßgeblich. Sie bleibt innerhalb des Buchfokus "Architektur & BIM", deckt aber den gesamten Architekturprozess so ab, dass Leser den praktischen Büro- und Baustellenablauf nachvollziehen können.
+
+### Exhaustiveness-Standard
+
+Ein Prozesskapitel gilt erst als ausreichend tief, wenn es fünf Ebenen abdeckt:
+
+1. **Situation:** Was passiert real im Büro, im Termin, bei der Behörde, beim Bieter oder auf der Baustelle?
+2. **Dokumente:** Welche Pläne, Listen, Protokolle, Nachweise, Verträge, Tickets oder Freigaben entstehen?
+3. **Entscheidungen:** Wer entscheidet was, mit welcher Verantwortung und welcher Folge für Kosten, Termine, Qualität und Haftung?
+4. **Typische Fehler:** Was geht in der Praxis regelmäßig schief, und wie erkennt/vermeidet man es?
+5. **BIM-/Datenbrücke:** Welche Information kann modellbasiert geführt werden, was bleibt menschliche Prüfung, und wo liegen Schnittstellen zu CDE, IFC, BCF, GAEB, IDS oder FM?
+
+### Zielstruktur 41 Kapitel
+
+| # | Titel | Teil | Status | Prio | Wörter (Ziel) |
+|---|-------|------|--------|------|----------------|
+| 1 | Architektur als System | I – Fundament, Projektstart & Entwurf | `Entwurf` | P0 | 2,800–3,200 |
+| 2 | Projektstart, Bauherr & Machbarkeit | I – Fundament, Projektstart & Entwurf | `Entwurf` | P0 | 4,500–6,000 |
+| 3 | Problemraum: Briefing, Anforderungen, Raumprogramm | I – Fundament, Projektstart & Entwurf | `Entwurf` | P0 | 5,000–6,500 |
+| 4 | Grundstück, Vorprüfung & Due Diligence | I – Fundament, Projektstart & Entwurf | `Entwurf` | P0 | 5,000–6,500 |
+| 5 | Standortanalyse, Grobskizzen & Varianten | I – Fundament, Projektstart & Entwurf | `Entwurf` | P0 | 5,000–6,500 |
+| 6 | Pläne, Raum, Funktion & Entwurfslogik | I – Fundament, Projektstart & Entwurf | `Migration aus alt K02` | P0 | 4,500–6,000 |
+| 7 | Baustoffe | II – Baukörper | `Migration aus alt K03` | P1 | 3,000–3,500 |
+| 8 | Tragwerk: Lasten, Kräfte, Systeme | II – Baukörper | `Migration aus alt K04` | P1 | 3,200–3,800 |
+| 9 | Konstruktion: Gründung, Wand, Decke, Dach | II – Baukörper | `Migration aus alt K05` | P1 | 3,800–4,500 |
+| 10 | Wärmeschutz & GEG | III – Bauphysik | `Migration aus alt K06` | P1 | 2,800–3,200 |
+| 11 | Feuchteschutz | III – Bauphysik | `Migration aus alt K07` | P1 | 2,200–2,800 |
+| 12 | Schallschutz | III – Bauphysik | `Migration aus alt K08` | P1 | 2,000–2,500 |
+| 13 | Brandschutz | III – Bauphysik | `Migration aus alt K09` | P1 | 2,500–3,200 |
+| 14 | Heizung & Wärmeversorgung | IV – TGA | `Migration aus alt K10` | P1 | 2,800–3,200 |
+| 15 | Lüftung & Raumluftqualität | IV – TGA | `Migration aus alt K11` | P1 | 2,500–3,000 |
+| 16 | Sanitär & Entwässerung | IV – TGA | `Migration aus alt K12` | P1 | 2,200–2,800 |
+| 17 | Elektro & Gebäudeautomation | IV – TGA | `Migration aus alt K13` | P1 | 2,500–3,000 |
+| 18 | Planungsrecht & Bauantrag im Detail | V – Genehmigung & Planungsreife | `Ausbau aus alt K14` | P1 | 5,500–7,000 |
+| 19 | HOAI, Rollen & Projektorganisation | V – Genehmigung & Planungsreife | `Ausbau aus alt K15` | P1 | 4,500–6,000 |
+| 20 | Fachplanerkoordination, Planlauf & BIM-Koordination | V – Genehmigung & Planungsreife | `Entwurf` | P1 | 5,000–6,500 |
+| 21 | Ausführungsplanung & Bauunterlagen | V – Genehmigung & Planungsreife | `Entwurf` | P1 | 5,500–7,000 |
+| 22 | Bemusterung, Werkplanung & Freigaben | V – Genehmigung & Planungsreife | `Entwurf` | P1 | 4,500–6,000 |
+| 23 | Kostenplanung, Mengen & DIN 276 | VI – Ausschreibung, Vergabe & Bauvorbereitung | `Ausbau aus alt K16` | P1 | 4,500–6,000 |
+| 24 | Leistungsverzeichnis, STLB & GAEB | VI – Ausschreibung, Vergabe & Bauvorbereitung | `Entwurf` | P1 | 5,000–6,500 |
+| 25 | Ausschreibung, Bieterkommunikation & Vergabe | VI – Ausschreibung, Vergabe & Bauvorbereitung | `Entwurf` | P1 | 5,000–6,500 |
+| 26 | Bauverträge, Änderungen & Nachträge | VI – Ausschreibung, Vergabe & Bauvorbereitung | `Entwurf` | P1 | 5,000–6,500 |
+| 27 | Terminplanung, Lean & Baustellenlogistik | VI – Ausschreibung, Vergabe & Bauvorbereitung | `Entwurf` | P1 | 5,500–7,000 |
+| 28 | Baustellenvorbereitung, SiGeKo & Baustelleneinrichtung | VI – Ausschreibung, Vergabe & Bauvorbereitung | `Entwurf` | P1 | 4,500–6,000 |
+| 29 | Bauoberleitung, Baukontrolle & Mängelmanagement | VII – Bauausführung, Übergabe & Betriebsvorbereitung | `Ausbau aus alt K17` | P1 | 6,000–7,500 |
+| 30 | Aufmaß, Rechnungsprüfung & Kostenkontrolle | VII – Bauausführung, Übergabe & Betriebsvorbereitung | `Entwurf` | P1 | 4,500–6,000 |
+| 31 | Inbetriebnahme, Abnahme & Übergabe | VII – Bauausführung, Übergabe & Betriebsvorbereitung | `Entwurf` | P1 | 5,000–6,500 |
+| 32 | Gewährleistung, Objektbetreuung & As-built | VII – Bauausführung, Übergabe & Betriebsvorbereitung | `Entwurf` | P1 | 4,000–5,500 |
+| 33 | Was BIM wirklich ist | VIII – BIM-Datenmethode | `Migration aus alt K18` | P1 | 2,200–2,800 |
+| 34 | IFC: Die Sprache des digitalen Gebäudes | VIII – BIM-Datenmethode | `Migration aus alt K19` | P1 | 4,000–5,000 |
+| 35 | Klassifikation | VIII – BIM-Datenmethode | `Migration aus alt K20` | P1 | 2,000–2,500 |
+| 36 | Prozess & Kollaboration: CDE, ISO 19650 | VIII – BIM-Datenmethode | `Migration aus alt K21` | P1 | 2,500–3,200 |
+| 37 | BIM in der Praxis | VIII – BIM-Datenmethode | `Migration aus alt K22` | P1 | 2,500–3,200 |
+| 38 | Nachhaltigkeit & Kreislaufwirtschaft | IX – Bestand, Nachhaltigkeit & Betrieb | `Migration aus alt K23` | P2 | 2,500–3,200 |
+| 39 | Sanierung | IX – Bestand, Nachhaltigkeit & Betrieb | `Migration aus alt K24` | P2 | 2,800–3,400 |
+| 40 | Projektarten: Neubau, Bestand, Denkmal | IX – Bestand, Nachhaltigkeit & Betrieb | `Migration aus alt K25` | P2 | 2,000–2,800 |
+| 41 | Digitaler Zwilling & KI | IX – Bestand, Nachhaltigkeit & Betrieb | `Migration aus alt K26` | P2 | 2,000–3,000 |
+
+### Migrationsplan Alt → Neu
+
+| Aktueller Stand | Zielstruktur | Maßnahme |
+|---|---|---|
+| alt K01 Architektur als System | neu K01 | bleibt |
+| alt K02 Entwurf, Raum und Funktion | neu K02–K06 | aufspalten und stark erweitern: Projektstart/Machbarkeit; Briefing/Anforderungen; Grundstück/Due Diligence; Standort/Skizzen/Varianten; Planlesen/Raum/Funktion |
+| alt K03–K13 Technik | neu K07–K17 | mechanisch +4 verschieben, Querverweise aktualisieren |
+| alt K14 Planungsrecht | neu K18 | Bauantrag und Genehmigungsprozess stark ausbauen |
+| alt K15 HOAI | neu K19–K22 | Rollen/HOAI, Fachplanerkoordination, Ausführungsplanung, Bemusterung/Werkplanung trennen |
+| alt K16 Kosten & Ausschreibung | neu K23–K26 | Kosten/Mengen, LV, Ausschreibung/Vergabe, Vertrag/Nachtrag trennen |
+| alt K17 Bauprojektmanagement & Bauoberleitung | neu K27–K32 | Termin/Lean/Logistik, Baustellenvorbereitung, Baukontrolle, Rechnungsprüfung, Inbetriebnahme, Gewährleistung trennen |
+| alt K18–K22 BIM | neu K33–K37 | mechanisch +15 verschieben, Prozessverweise korrigieren |
+| alt K23–K26 Ausblick | neu K38–K41 | mechanisch +15 verschieben, Digitaler Zwilling auf Übergabe/As-built/FM beziehen |
+
+### Vollständigkeitsmatrix Prozesswissen
+
+| Prozessfeld | Muss im Buch konkret vorkommen | Zielkapitel |
+|---|---|---|
+| Bauherrenstart | Erstkontakt, Projektanlass, Budget, Finanzierung, Entscheidungsfähigkeit, Vollmachten, Projektziele, Erfolgskriterien | K02 |
+| Machbarkeit | grobe Baumasse, Kostenrahmen, Terminrahmen, Genehmigungsrisiko, Grundstücksrisiken, Varianten für "go/no-go" | K02 |
+| Briefing | Raumprogramm, Nutzungsszenarien, Anforderungen, Wunsch vs. Pflicht, Zielkonflikte, Änderungslog | K03 |
+| Grundstück/Due Diligence | Grundbuch, Baulasten, Dienstbarkeiten, Leitungsabfrage, Vermessung, Bodengutachten, Altlasten, Kampfmittel, Nachbarrechte | K04 |
+| Standortanalyse | Sonne, Wind, Lärm, Blick, Topografie, Zufahrt, Feuerwehr, Nachbarschaft, Baumbestand, Mikroklima | K05 |
+| Skizzen & Varianten | Bubble, Funktionsdiagramm, Massenmodell, Erschließung, Sonnen-/Blickdiagramm, Variantenkritik, Bauherrengespräch | K05 |
+| Planlesen | Grundriss, Schnitt, Ansicht, Detail, Maßstab, Linienarten, Planstand, Raumstempel, Planrevision | K06 |
+| Genehmigung | Bauvorlageberechtigung, Bauvorlagen, Nachweise, Fachstellen, TÖB, Nachforderungen, Auflagen, digitale Einreichung | K18 |
+| Rollen | Bauherr, Architekt, Fachplaner, Projektsteuerer, SiGeKo, Unternehmer, Behörde, Nutzer, Betreiber, BIM-Rollen | K19 |
+| Fachkoordination | Planlauf, Kollisionsrunde, Prüfvermerk, BCF, Durchbrüche, Schächte, Brandschutz-/TGA-/Tragwerksabstimmung | K20 |
+| Ausführungsplanung | 1:50-Pläne, Details, Raumbuch, Tür-/Fensterlisten, Materialfestlegung, Schacht-/Durchbruchsplanung | K21 |
+| Werkplanung/Freigaben | Unternehmerplanung, Freigabelauf, Bemusterung, Musterflächen, Produktdatenblätter, technische Gleichwertigkeit | K22 |
+| Kosten/Mengen | DIN 276, Kostenstufen, Mengenherkunft, Modellmenge vs. Abrechnungsmenge, Kostenprognose | K23 |
+| LV | Vorbemerkungen, Positionen, STLB, GAEB, VOB/C, Nebenleistungen, Schnittstellen, funktional vs. detailliert | K24 |
+| Vergabe | Bieterliste, Eignung, Fristen, Bieterfragen, Nachsendung, Submission, Preisspiegel, Vergabevermerk | K25 |
+| Vertrag/Nachtrag | VOB/B, Einheitspreis/Pauschale, Änderungswunsch, Bedenken, Behinderung, geänderte/zusätzliche Leistung, Claim-Log | K26 |
+| Termin/Lean | Gantt, Netzplan, kritischer Pfad, Taktplanung, Last Planner, Wochenvorschau, Soll-Ist, Puffer | K27 |
+| Baustellenvorbereitung | Baustelleneinrichtungsplan, Kran, Lager, Bauwasser/-strom, Verkehrssicherung, SiGeKo, Nachbarn, Startbesprechung | K28 |
+| Baukontrolle | Begehung, Fotodokumentation, Bautagebuch, Baubesprechung, Mängelticket, BCF, Fristen, Nachkontrolle | K29 |
+| Rechnungen | Aufmaß, Abschlagsrechnung, Prüffristen, Kostenfortschreibung, Nachtragsprüfung, Mittelabfluss | K30 |
+| Inbetriebnahme | TGA-Funktionsprüfung, Einregulierung, Probebetrieb, Sachverständigenabnahmen, Dokumentation, Nutzereinweisung | K31 |
+| Übergabe | Abnahmeprotokoll, Restmängel, Revisionsunterlagen, Bedienungsanleitungen, Schlüssel, Betreiberhandbuch | K31 |
+| Gewährleistung | LP 9, Mängel nach Bezug, Fristen, Wartungsverträge, Verjährung, Gewährleistungsbegehung | K32 |
+| As-built/FM | Revisionsmodell, LOD 500, COBie/FM-Daten, Anlagenkennzeichnung, Wartungsintervalle, Digitaler Zwilling | K32, K41 |
+
+### Dokumenten- und Artefaktkatalog
+
+Jeder dieser Artefakte soll mindestens einmal als Screenshot-ähnliches Bild, Tabelle, Beispielauszug oder K7-Box vorkommen:
+
+`Projektsteckbrief`, `Erstgespraechsprotokoll`, `Raumprogramm`, `Anforderungskatalog`, `Entscheidungsmatrix`, `Grundbuch-/Baulasten-Check`, `Leitungsabfrage`, `Vermessungsplan`, `Bodengutachten-Auszug`, `Standortanalyse-Skizzenblatt`, `Variantenmatrix`, `Bauantragsmappe`, `Nachforderungsschreiben`, `Planliste`, `Planpruefliste`, `BCF-Kollisionsbericht`, `Durchbruchsliste`, `Raumbuch`, `Tuerliste`, `Fensterliste`, `Detailkatalog`, `Bemusterungsprotokoll`, `Produktdatenblatt-Pruefung`, `Freigabeliste`, `Kostenberechnung`, `LV-Auszug`, `GAEB-Export`, `Bieterfragenliste`, `Preisspiegel`, `Vergabevermerk`, `Bauvertrag-Deckblatt`, `Nachtragspruefblatt`, `Aenderungslog`, `Bauzeitenplan`, `Taktplan`, `Last-Planner-Board`, `Baustelleneinrichtungsplan`, `SiGe-Plan-Auszug`, `Bautagebuch`, `Baubesprechungsprotokoll`, `Fotodokumentation`, `Maengelliste`, `Aufmassblatt`, `Rechnungspruefvermerk`, `Inbetriebnahmeprotokoll`, `Abnahmeprotokoll`, `Revisionsunterlagenliste`, `Betreiberhandbuch`, `Gewaehrleistungslog`, `As-built-Modelluebergabe`
+
+### Neue Prozess-Bildstrecke
+
+| Bildname | Zielkapitel | Inhalt |
+|---|---|---|
+| `kap02_projektstart_machbarkeit` | K02 | Projektstart-Canvas: Anlass, Grundstück, Budget, Termin, Beteiligte, Risiken, Go/No-Go |
+| `kap02_kosten_termin_qualitaet_dreieck` | K02 | Magisches Dreieck für K7 mit konkreten Zielkonflikten |
+| `kap03_erstgespraech_briefing` | K03 | Besprechungstisch mit Raumprogramm, Wunschliste, Budget, Referenzbildern, Zielkonflikten |
+| `kap03_anforderungsmatrix` | K03 | Wunsch → prüfbare Anforderung → Entwurfsparameter → Nachweis/Planstand |
+| `kap03_stakeholder_zielkonflikte` | K03 | Stakeholder-Map mit Bauherr, Nutzer, Nachbarn, Behörde, Fachplanern, Bank, Betreiber |
+| `kap04_due_diligence_check` | K04 | Grundstücksprüfung als Checkliste: Grundbuch, Baulast, Leitung, Vermessung, Boden, Altlast, Kampfmittel |
+| `kap04_risikokarte_grundstueck` | K04 | Lageplan mit Baugrenze, Leitungstrasse, Baum, Zufahrt, Altlastenverdacht, Nachbarfenster |
+| `kap05_standortanalyse_skizzenblatt` | K05 | Skizzenblatt mit Sonne, Wind, Lärm, Blick, Topografie, Zufahrt, Nachbarschaft |
+| `kap05_bubble_erschliessung_sonne` | K05 | Bubble-, Erschließungs- und Sonnen-/Blickdiagramm nebeneinander |
+| `kap05_variantenkritik_k7` | K05 | Varianten A/B/C mit Massenmodell, Matrix und Bauherrennotizen |
+| `kap06_planarten_leselogik` | K06 | Grundriss, Schnitt, Ansicht, Detail mit Lesereihenfolge und Planstatus |
+| `kap18_bauantrag_paket` | K18 | Bauantragsmappe/digitales Portal mit Plänen, Nachweisen, Formularen |
+| `kap18_genehmigungsworkflow` | K18 | Vorprüfung → Einreichung → Vollständigkeit → Fachstellen/TÖB → Nachforderung → Genehmigung |
+| `kap20_koordination_planlauf` | K20 | Planlauf-Diagramm: Fachplanerstände, Prüffristen, BCF-Issues, Freigaben |
+| `kap20_durchbruch_kollision` | K20 | TGA-Durchbruch mit Tragwerk/Brandschutz-Prüfstatus |
+| `kap21_planpaket_lp5` | K21 | Plan- und Dokumentensatz LP 5: 1:50, Details, Raumbuch, Türliste, Durchbruchsliste |
+| `kap21_detailmodell_transformation` | K21 | Entwurfsmodell → Ausführungsmodell mit Schichten, Anschlüssen, Toleranzen |
+| `kap22_bemusterung_freigabe` | K22 | Bemusterungsboard: Material, Farbe, Produktdatenblatt, Freigabestatus |
+| `kap22_werkplanung_prueflauf` | K22 | Unternehmer-Werkplan → Architektenprüfung → Freigabe mit Vorbehalt |
+| `kap23_kostenstufen_din276` | K23 | Kostenschätzung, Kostenberechnung, Kostenanschlag, Kostenfeststellung als Zeitachse |
+| `kap24_lv_mengen_pipeline` | K24 | Modellobjekt → Menge → DIN 276 → STLB/LV → GAEB → Angebot |
+| `kap25_preisspiegel_vergabevermerk` | K25 | Preisspiegel mit Ausreißern, Bieterfrage, Vergabevorschlag |
+| `kap26_nachtrag_claim_log` | K26 | Änderungsanordnung → Nachtrag → Prüfung → Entscheidung → Kosten-/Terminfolge |
+| `kap27_bauzeitenplan_taktplanung` | K27 | Gantt, Netzplan und Taktplan nebeneinander für K7 |
+| `kap28_baustelleneinrichtung_logistik` | K28 | Kran, Zufahrt, Lagerflächen, Container, Materialfluss, Bauwasser/-strom, Nachbarschaft |
+| `kap29_fotodokumentation_mangel_bcf` | K29 | Foto → Markierung → Mängelticket → BCF/Modellelement → Zuständigkeit → Frist |
+| `kap30_aufmass_rechnungspruefung` | K30 | Aufmaßblatt, Rechnung, geprüfte Menge, Freigabe/Kürzung |
+| `kap31_inbetriebnahme_uebergabe` | K31 | TGA-Funktionsprüfung, Revisionsunterlagen, Einweisung, Abnahmeprotokoll |
+| `kap32_gewaehrleistung_asbuilt` | K32 | Gewährleistungslog + as-built-Modell + FM-Übergabedaten |
+
+### Neue Begriffe für den exhaustiven Prozessausbau
+
+Diese Begriffe müssen beim Schreiben in `docs/terms-registry.yaml` und `web/src/data/glossar.ts` ergänzt werden. Schreibweise als Slug vorläufig:
+
+`machbarkeitsstudie`, `projektsteckbrief`, `kostenrahmen`, `terminrahmen`, `briefing`, `raumprogramm`, `anforderungskatalog`, `zielkonflikt`, `stakeholder`, `entscheidungslog`, `grundbuch`, `baulast`, `dienstbarkeit`, `leitungsabfrage`, `vermessungsplan`, `bodengutachten`, `altlast`, `kampfmittelsondierung`, `vorentwurf`, `variantenstudie`, `bubble-diagramm`, `funktionsdiagramm`, `standortanalyse`, `bauvorlage`, `bauvorlageberechtigung`, `bauvorlagenverordnung`, `toeb`, `nachforderung`, `auflage`, `planlauf`, `planliste`, `pruefvermerk`, `kollisionspruefung`, `durchbruchsliste`, `ausfuehrungsplanung`, `planpaket`, `raumbuch`, `tuerliste`, `fensterliste`, `detailkatalog`, `bemusterung`, `musterflaeche`, `werkplanung`, `montageplanung`, `freigabe`, `freigabe-mit-vorbehalt`, `produktdatenblatt`, `rfi`, `gaeb`, `stlb-bau`, `leistungsbeschreibung`, `nebenleistung`, `preisspiegel`, `vergabevermerk`, `bieterfrage`, `submission`, `bauvertrag`, `einheitspreisvertrag`, `pauschalvertrag`, `bedenkenanmeldung`, `nachtrag`, `aenderungsmanagement`, `claim-log`, `taktplanung`, `last-planner-system`, `baustelleneinrichtung`, `baulogistik`, `sigeko`, `verkehrssicherung`, `baustartbesprechung`, `maengelmanagement`, `abnahmeprotokoll`, `fotodokumentation`, `bcf-ticket`, `aufmass`, `abschlagsrechnung`, `rechnungspruefung`, `kostenprognose`, `inbetriebnahme`, `einregulierung`, `probebetrieb`, `revisionsunterlagen`, `betreiberhandbuch`, `gewaehrleistung`, `verjaehrungsfrist`, `as-built-dokumentation`, `fm-uebergabe`
+
+### Bibliotheksgrundlage für die neuen Prozesskapitel
+
+| Kapitel | Primäre lokale Referenzen |
+|---|---|
+| K02 Projektstart/Machbarkeit | Kochendörfer/Liebchen/Viering Projektvorbereitung, Projektziele, Risiko, Kostenrahmen; HOAI LP 1; Neufert für erste Kennwerte |
+| K03 Briefing/Anforderungen | Kochendörfer/Liebchen/Viering Raum- und Funktionsprogramm; Ching `Form, Space and Order`; Neufert |
+| K04 Grundstück/Due Diligence | BauGB/BauNVO/MBO; lokale Normen/Gesetze; Vermessungs-/Bodengutachten-Logik aus Projektmanagementquellen |
+| K05 Skizzen/Varianten | Ching `Architectural Graphics`; Ching `Form, Space and Order`; `Basics Technisches Zeichnen`; Neufert |
+| K06 Planlesen/Raum | `Basics Technisches Zeichnen`; Ching `Architectural Graphics`; Neufert |
+| K18 Bauantrag | MBO/LBO/Bauvorlagenlogik; BauGB/BauNVO; HOAI 2021; GEG; Brandschutz-/Standsicherheitsnachweise |
+| K19 Rollen/HOAI | HOAI 2021 Textausgabe; Siemon/Averhaus; HOAI Praxis; ISO 19650 |
+| K20 Fachkoordination | ISO 19650; DIN SPEC 91391; Revit/Authoring-Referenzen; Würfele/Bielefeld/Gralla für Dokumentation |
+| K21 Ausführungsplanung | HOAI Anlage 10; `Standard Detailsammlung`; Ching `Architectural Graphics`; Revit/Authoring-Referenzen |
+| K22 Bemusterung/Werkplanung | VOB/B/C; Würfele/Bielefeld/Gralla; Standard Detailsammlung; Produktdaten-/Freigabelogik |
+| K23 Kosten | DIN 276; Kochendörfer/Liebchen/Viering Kostenmanagement; Brandt/Franssen |
+| K24 LV | Brandt/Franssen `Basics Ausschreibung`; VOB im Bild; STLB-Bau/GAEB; DIN 276 |
+| K25 Vergabe | Brandt/Franssen; VOB/A; HOAI Praxis; Kochendörfer/Liebchen/Viering Vergabestrukturen |
+| K26 Vertrag/Nachtrag | VOB/B; VOB im Bild; Kochendörfer/Liebchen/Viering Änderungs-/Nachtragsprüfung; Würfele/Bielefeld/Gralla |
+| K27 Termin/Lean | Kochendörfer/Liebchen/Viering Terminmanagement; Hofstadler/Motzko Lean/Takt/Last Planner; Bau-Projekt-Management |
+| K28 Baustellenvorbereitung | `Baustelleneinrichtung`; Hofstadler/Motzko Baulogistik; SiGeKo/Arbeitsschutz-Grundlagen |
+| K29 Baukontrolle/Mängel | Würfele/Bielefeld/Gralla `Bauobjektüberwachung`; VOB/B; HOAI LP 8; ISO 19650/CDE/BCF |
+| K30 Aufmaß/Rechnung | VOB/B/C; Würfele/Bielefeld/Gralla; Kochendörfer/Liebchen/Viering Kostenkontrolle |
+| K31 Inbetriebnahme/Übergabe | Würfele/Bielefeld/Gralla; TGA-Quellen; VOB/B Abnahme; FM-Übergabelogik |
+| K32 Gewährleistung/As-built | HOAI LP 9; VOB/B/BGB Gewährleistung; ISO 19650-3 Asset Information; COBie/FM-Quellen |
+
+### Maßgebliche neue Kapitel-Specs K02–K06 und K18–K32
+
+#### K02 — Projektstart, Bauherr & Machbarkeit
+
+- **Ziel:** Leser verstehen, was passiert, bevor überhaupt entworfen wird: Auftrag klären, Projektziele festlegen, Machbarkeit prüfen, Risiken sichtbar machen.
+- **Pflichtabschnitte:** Projektanlass; Bauherrentypen; Budget/Kostenrahmen; Terminrahmen; Finanzierung und Entscheidungsfähigkeit; Projektsteckbrief; erste Machbarkeitsstudie; Go/No-Go; typische Bürorealität im Erstkontakt.
+- **K7-Box:** Bauherr hat Grundstück, Ziel 12 WE, Kostenrahmen 5,76 Mio. EUR, Fertigstellung in 24 Monaten ab Planungsstart, Risiko: hohe Ausnutzung, GK4/Aufzug, TGA-Koordination.
+- **Bilder/Artefakte:** Projektsteckbrief K7, Machbarkeitscanvas, Kosten-Termin-Qualität-Dreieck.
+- **Typische Fehler:** Budgetwunsch nicht dokumentiert; Bauherr nicht entscheidungsfähig; Grundstücksrisiken ignoriert; Terminversprechen ohne Genehmigungsrisiko.
+- **BIM-Brücke:** frühes Anforderungsmodell, AIA-Light, CDE-Projektraum ab Tag 1.
+
+#### K03 — Problemraum: Briefing, Anforderungen, Raumprogramm
+
+- **Ziel:** Leser verstehen, wie Wünsche in prüfbare Anforderungen übersetzt werden.
+- **Pflichtabschnitte:** Erstgespräch; Nutzerinterviews; Raumprogramm; Soll-/Muss-/Kann-Anforderungen; Qualitäten; Zielkonflikte; Entscheidungslog; Änderungsmanagement ab Vorplanung.
+- **Praxisdetail:** "Viel Licht" wird Orientierung/Fensteranteil/Raumtiefe/Verschattung; "günstig" wird Kompaktheit/Spannweite/Wiederholung/Vergabestrategie; "flexibel" wird Raster/Schacht/Trennwand/Systemtrennung.
+- **K7-Box:** Wohnungsmix, Wohnflächenquote, Erschließungsflächenquote, Schachtlogik, Aufzug, PV, Fernwärme, KWL, niedrige Betriebskosten.
+- **Bilder/Artefakte:** Erstgesprächsprotokoll, Anforderungsmatrix, Stakeholder-/Zielkonfliktkarte.
+- **BIM-Brücke:** Raumprogramm als strukturierte `IfcSpace`-Sollwerte; Anforderungen als prüfbare Properties; Entscheidungshistorie in CDE.
+
+#### K04 — Grundstück, Vorprüfung & Due Diligence
+
+- **Ziel:** Leser verstehen, welche Grundstücksinformationen vor einem belastbaren Entwurf geprüft werden müssen.
+- **Pflichtabschnitte:** Grundbuch; Baulasten; Dienstbarkeiten; Bebauungsplan/§34/§35-Vorprüfung; Vermessung; Leitungsabfrage; Bodengutachten; Grundwasser; Altlasten; Kampfmittel; Baumbestand; Nachbarrechte; Bestandsschutz bei Bestandsprojekten.
+- **Praxisdetail:** Ein schöner Entwurf kann an einer Leitungstrasse, Baulast, Altlast, fehlender Feuerwehrzufahrt oder falscher Vermessung scheitern.
+- **K7-Box:** Due-Diligence-Check: Leitungen im Gehweg, Bodenklasse, keine Baulast, Baumbestand im Hof, Altlastenverdacht ausgeschlossen, Vermessung als Modellgrundlage.
+- **Bilder/Artefakte:** Due-Diligence-Checkliste, Risikokarte Grundstück, Dokumentenquellenplan.
+- **BIM-Brücke:** `IfcSite`, Georeferenzierung, Vermessungspunkt, Leitungs-/GIS-Layer, Risikoflächen als Modellkontext.
+
+#### K05 — Standortanalyse, Grobskizzen & Varianten
+
+- **Ziel:** Leser sehen, wie Architekten Probleme zeichnerisch untersuchen und mit Bauherren diskutieren.
+- **Pflichtabschnitte:** Ortsbegehung; Sonne/Wind/Lärm/Blick/Topografie; Skizzenarten; Bubble-Diagramm; Funktionsdiagramm; Erschließungsdiagramm; Massenmodell; Varianten A/B/C; Variantenkritik; Entscheidung.
+- **K7-Box:** Vierspänner, Laubengang und Hofhaus als Varianten; Entscheidung zugunsten Vierspänner plus übernommene Qualitäten aus verworfenen Varianten.
+- **Bilder/Artefakte:** Standortanalyse-Skizzenblatt, Diagrammtypen, Variantenmatrix.
+- **BIM-Brücke:** Konzeptmodell mit `IfcSite`, Nordrichtung, Nachbarvolumen, Sonnen-/Schattenanalyse.
+
+#### K06 — Pläne, Raum, Funktion & Entwurfslogik
+
+- **Ziel:** Leser können Architekturzeichnungen lesen und Planstände unterscheiden.
+- **Pflichtabschnitte:** Grundriss, Schnitt, Ansicht, Detail; Maßstäbe; Linienarten; Raumorganisation; Formtransformation; Erschließung; Barrierefreiheit; Kompaktheit; Planstatus und Revision.
+- **K7-Box:** K7-Grundriss lesen: Straße/Hof, Treppenhaus/Aufzug, Wohnungstypen, Schächte, Rettungswege, Möblierbarkeit.
+- **Bilder/Artefakte:** Planarten-Leselogik, Planrevisionen, Grundriss mit Leseanleitung.
+- **BIM-Brücke:** Planableitung aus Modell, Raumstempel, Plan-/Modellstand als Informationsreife.
+
+#### K18 — Planungsrecht & Bauantrag im Detail
+
+- **Ziel:** Leser verstehen den Bauantrag als Paket, Prüfverfahren und Behördenkommunikation.
+- **Pflichtabschnitte:** BauGB/BauNVO/LBO; Bauvorlageberechtigung; Bauvorlagenverordnung; Bauantragsunterlagen; Nachweise; Fachstellen/TÖB; Nachbarn; Vollständigkeitsprüfung; Nachforderungen; Auflagen; digitaler Bauantrag; BIM-to-Permit.
+- **K7-Box:** Lageplan, Bauzeichnungen, Baubeschreibung, GRZ/GFZ/Vollgeschoss, Stellplatz, Brandschutz GK4, Barrierefreiheit/Aufzug, Entwässerung, GEG, Schallschutz.
+- **Bilder/Artefakte:** Bauantragsmappe, Genehmigungsworkflow, Nachforderungsschreiben.
+- **BIM-Brücke:** harte Regelchecks vs. Auslegung; Modell + Regelquelle + Nachweislogik.
+
+#### K19 — HOAI, Rollen & Projektorganisation
+
+- **Ziel:** Leser verstehen Rollen, Verantwortlichkeiten, Leistungsphasen und Projektorganisation.
+- **Pflichtabschnitte:** Bauherr, Architekt, Fachplaner, Projektsteuerer, SiGeKo, Unternehmer, Behörde, Nutzer, Betreiber; HOAI LP 1–9; Grundleistungen/besondere Leistungen; Organigramm; Kommunikationsmatrix; BAP/AIA.
+- **K7-Box:** Projektorganigramm K7 und wer in welcher Phase welches Lieferobjekt schuldet.
+- **Bilder/Artefakte:** Rollenmatrix, Informationslieferplan, Kommunikationsmatrix.
+- **BIM-Brücke:** BIM-Rollen, CDE-Rechte, Informationsanforderungen, Modellverantwortung.
+
+#### K20 — Fachplanerkoordination, Planlauf & BIM-Koordination
+
+- **Ziel:** Leser verstehen, wie Architektur, Tragwerk, TGA, Brandschutz und BIM-Koordination praktisch zusammenarbeiten.
+- **Pflichtabschnitte:** Planlauf; Planliste; Prüfstatus; Koordinationsrunden; BCF-Issues; Kollisionsprüfung; Durchbruchsplanung; Schachtkoordination; Brandschutzabschottung; Freigaben; Planrevisionen; Protokolldisziplin.
+- **K7-Box:** Lüftungskanal kollidiert mit Unterzug; Lösung über Schachtverschiebung, Deckendurchbruch, Brandschutzprüfung, Planrevision.
+- **Bilder/Artefakte:** Planlaufdiagramm, BCF-Issue, Durchbruchsliste, Kollisionsbericht.
+- **BIM-Brücke:** CDE-Status, Koordinationsmodell, BCF, Clash-Regeln, IDS.
+
+#### K21 — Ausführungsplanung & Bauunterlagen
+
+- **Ziel:** Leser verstehen, wie aus Genehmigungsplanung baubare Unterlagen entstehen.
+- **Pflichtabschnitte:** LP 5; 1:50-Pläne; Details; Raumbuch; Tür-/Fensterlisten; Materialfestlegung; Rohbauöffnungen; Schacht-/Durchbruchsplanung; Abdichtungsdetails; Brandschutzdetails; Planprüflisten.
+- **K7-Box:** Fensteranschluss und Wohnungstür als vollständige Detailkette von Entwurfsabsicht bis Werkplananforderung.
+- **Bilder/Artefakte:** LP-5-Planpaket, Detailmodell-Transformation, Türliste/Raumbuch-Auszug.
+- **BIM-Brücke:** LOD/LOI, modellbasierte Listen, Planableitung, Freigabestatus.
+
+#### K22 — Bemusterung, Werkplanung & Freigaben
+
+- **Ziel:** Leser verstehen, welche Entscheidungen nach der Ausführungsplanung noch getroffen und geprüft werden.
+- **Pflichtabschnitte:** Bemusterung; Musterflächen; Produktdatenblätter; technische Gleichwertigkeit; Werkplanung; Montageplanung; Unternehmerverantwortung; Freigabe mit/ohne Vorbehalt; RFI; Prüf- und Freigabelog.
+- **K7-Box:** Fassadenputz, Wohnungseingangstür, KWL-Gerät und Geländer als Bemusterungs-/Werkplanfälle.
+- **Bilder/Artefakte:** Bemusterungsprotokoll, Werkplan-Prüflauf, Freigabeliste.
+- **BIM-Brücke:** Produktdaten als Properties, Freigabeworkflow in CDE, Revisionsverknüpfung zum Modell.
+
+#### K23 — Kostenplanung, Mengen & DIN 276
+
+- **Ziel:** Leser verstehen Kosten als laufende Steuerung über Projektphasen.
+- **Pflichtabschnitte:** DIN 276; Kostenrahmen, -schätzung, -berechnung, -anschlag, -feststellung; Kostenkennwerte; Mengenherkunft; Kostenprognose; Risikobudget.
+- **K7-Box:** Kostenentwicklung K7 vom Rahmen 5,76 Mio. EUR bis Kostenberechnung und Risikoreserve.
+- **Bilder/Artefakte:** Kostenstufen-Zeitachse, DIN-276-Struktur, Kostenprognose.
+- **BIM-Brücke:** Modellmengen, `IfcQuantitySet`, Klassifikation, 5D-Grundlage.
+
+#### K24 — Leistungsverzeichnis, STLB & GAEB
+
+- **Ziel:** Leser verstehen, wie Planung in bepreisbare Vertragsleistung übersetzt wird.
+- **Pflichtabschnitte:** LV-Aufbau; Vorbemerkungen; Positionen; STLB-Bau; GAEB; VOB/C; Nebenleistungen; Schnittstellen; funktionale vs. detaillierte Leistungsbeschreibung; Modellmenge vs. Abrechnungsmenge.
+- **K7-Box:** Außenwand als Modellobjekt wird zu Rohbau-, Dämm-, Putz-, Laibungs-, Gerüst- und Sockelposition.
+- **Bilder/Artefakte:** LV-Auszug, Mengenpipeline, GAEB-Austausch.
+- **BIM-Brücke:** 5D-Mapping, STLB/Klassifikation, GAEB-Versionierung.
+
+#### K25 — Ausschreibung, Bieterkommunikation & Vergabe
+
+- **Ziel:** Leser verstehen den Weg von Ausschreibungsunterlagen zu beauftragten Firmen.
+- **Pflichtabschnitte:** Vergabeeinheiten; Bieterliste; Eignung; private/öffentliche Vergabe; Fristen; Bieterfragen; Nachsendungen; Submission; Angebotsprüfung; Preisspiegel; Aufklärungsgespräch; Vergabevorschlag; Vergabevermerk; Zuschlag.
+- **K7-Box:** Rohbauvergabe mit drei Angeboten, auffälligem Einheitspreis, Bieterfrage und dokumentierter Zuschlagsentscheidung.
+- **Bilder/Artefakte:** Bieterfragenliste, Preisspiegel, Vergabevermerk.
+- **BIM-Brücke:** digitale Vergabeplattform, GAEB, CDE-Ausschreibungsstand.
+
+#### K26 — Bauverträge, Änderungen & Nachträge
+
+- **Ziel:** Leser verstehen, wie Vertragslogik, Änderungen und Nachträge Kosten und Termine verändern.
+- **Pflichtabschnitte:** VOB/B-Grundlagen; Einheitspreis-/Pauschalvertrag; Vertragsunterlagenrangfolge; Bedenkenanmeldung; Behinderung; geänderte Leistung; zusätzliche Leistung; Bauherrenänderung; Nachtragsangebot; Nachtragsprüfung; Claim-Log.
+- **K7-Box:** Altlastenfund oder geänderter Fassadenputz als Nachtrag mit Massennachweis, Preisprüfung, Terminfolge.
+- **Bilder/Artefakte:** Nachtragsprüfblatt, Änderungslog, Vertragsunterlagenrangfolge.
+- **BIM-Brücke:** Änderungsverfolgung aus Modellrevision, Kosten-/Terminfolge als Issue.
+
+#### K27 — Terminplanung, Lean & Baustellenlogistik
+
+- **Ziel:** Leser verstehen Bauzeit als Abhängigkeits- und Steuerungsmodell.
+- **Pflichtabschnitte:** Terminrahmen; Gantt; Netzplan/CPM; kritischer Pfad; Soll-Ist; Taktplanung; Last Planner; Wochenvorschau; Bauzeitenrisiken; Materialfluss.
+- **K7-Box:** 14 Monate Bauzeit, Rohbau 6 Monate, Dach, TGA, Estrich/Trocknung, Ausbau, kritischer Pfad.
+- **Bilder/Artefakte:** Gantt/Netz/Takt-Vergleich, Last-Planner-Board.
+- **BIM-Brücke:** 4D-BIM, `IfcTask`, `IfcRelSequence`, Baufortschrittsmodell.
+
+#### K28 — Baustellenvorbereitung, SiGeKo & Baustelleneinrichtung
+
+- **Ziel:** Leser verstehen, was vor dem ersten Bagger organisatorisch und logistisch vorbereitet wird.
+- **Pflichtabschnitte:** Baustelleneinrichtungsplan; Kran; Lager; Zufahrt; Nachbarschaft; Baustrom/Bauwasser; Verkehrssicherung; Feuerwehr; SiGeKo; Arbeitsschutz; Baustartbesprechung; Beweissicherung Nachbargebäude.
+- **K7-Box:** enge Innenstadtbaustelle mit Kranstandort, Lieferfenstern, Gehwegsicherung, Container, Materiallager und Nachbarinformation.
+- **Bilder/Artefakte:** Baustelleneinrichtungsplan, SiGe-Plan-Auszug, Baustartcheckliste.
+- **BIM-Brücke:** 4D/Logistikmodell, temporäre Objekte, Sicherheitszonen, Lieferplanung.
+
+#### K29 — Bauoberleitung, Baukontrolle & Mängelmanagement
+
+- **Ziel:** Leser verstehen die tägliche Baustellenarbeit des Architekten.
+- **Pflichtabschnitte:** LP 8; Bauleiterrollen; Begehung; Fotodokumentation; Bautagebuch; Baubesprechung; Protokoll; Mängelanzeige; BCF-Ticket; Fristen; Nachkontrolle; Behinderung; Abnahmevorbereitung.
+- **K7-Box:** Mangel Brandschutzdurchdringung: Foto, Planbezug, BCF, Frist, Nachkontrolle.
+- **Bilder/Artefakte:** Fotodokumentation, Mängelticket, Bautagebuch, Baubesprechungsprotokoll.
+- **BIM-Brücke:** modellverortete Fotos, BCF, CDE-Workflow.
+
+#### K30 — Aufmaß, Rechnungsprüfung & Kostenkontrolle
+
+- **Ziel:** Leser verstehen die finanzielle Baustellensteuerung im Alltag.
+- **Pflichtabschnitte:** Aufmaß; Abschlagsrechnung; Prüffristen; Mengenprüfung; Preisprüfung; Kostenstand; Prognose Endkosten; Nachtragskosten; Mittelabfluss; Zahlungsfreigabe.
+- **K7-Box:** Rohbau-Abschlagsrechnung: Betonmenge, Bewehrung, Aufmaß, geprüfte Kürzung, Kostenprognose.
+- **Bilder/Artefakte:** Aufmaßblatt, Rechnungsprüfvermerk, Kostenprognose.
+- **BIM-Brücke:** Modellmengen als Prüfhilfe, aber nicht alleiniger Zahlungsnachweis.
+
+#### K31 — Inbetriebnahme, Abnahme & Übergabe
+
+- **Ziel:** Leser verstehen, warum Fertigstellung mehr ist als "Bau ist optisch fertig".
+- **Pflichtabschnitte:** TGA-Funktionsprüfung; Einregulierung; Probebetrieb; Sachverständigenabnahmen; Brandschutzdokumentation; Restleistungen; Abnahme; Vorbehalte; Schlüssel; Einweisung; Revisionsunterlagen; Betreiberhandbuch.
+- **K7-Box:** KWL-Einregulierung, Fernwärmeübergabe, Aufzugsabnahme, Brandschutztüren, Wohnungsübergaben.
+- **Bilder/Artefakte:** Inbetriebnahmeprotokoll, Abnahmeprotokoll, Revisionsunterlagenliste.
+- **BIM-Brücke:** Anlagenkennzeichnung, Revisionsdaten, Asset Information Model.
+
+#### K32 — Gewährleistung, Objektbetreuung & As-built
+
+- **Ziel:** Leser verstehen, was nach Bezug passiert und wie aus Bauprojektinformationen Betriebsinformationen werden.
+- **Pflichtabschnitte:** LP 9; Gewährleistungsfristen VOB/B vs. BGB; Mängel nach Bezug; Wartungsverträge; Gewährleistungsbegehung; Verjährungsmanagement; as-built-Modell; FM-Übergabe; Digitaler Zwilling als Ausblick.
+- **K7-Box:** Feuchtefleck nach erstem Winter, KWL-Wartung, Aufzugsmangel, Gewährleistungslog und as-built-Korrektur.
+- **Bilder/Artefakte:** Gewährleistungslog, as-built-Übergabe, FM-Datenblatt.
+- **BIM-Brücke:** LOD 500, COBie, ISO 19650-3, FM-Assetdaten, K41 Digitaler Zwilling.
+
+---
+
+## Prozess-Tiefenausbau 2026-05-19 (überholt: 31-Kapitel-Zwischenschritt)
+
+**Befund:** Die 26-Kapitel-Fassung deckt die Projektphasen grundsätzlich ab, aber nicht in der gewünschten Tiefe. K02 trägt inzwischen Problemklärung, Standortanalyse, Varianten, Planlesen und Raumlehre gleichzeitig; K14–K17 tragen Bauantrag, HOAI, LP 5, Kosten, LV, Vergabe, Terminplanung, Bauleitung und Mängel in vier Kapiteln. Das ist didaktisch zu stark verdichtet. Für das Ziel "wie ein ausführliches Praktikum bei einem Architekten" braucht der Prozess eine eigene, breitere Spange.
+
+**Entscheidung:** Das Buch wird auf **31 Kapitel** erweitert. Der technische Kern bleibt erhalten, aber der Prozess wird in zwei eigene Teile aufgespalten:
+
+- **Teil V — Entwurf, Genehmigung & Planungsreife:** Problemraum wird früh aufgebaut; Bauantrag und Ausführungsplanung bekommen je eigene Kapitel.
+- **Teil VI — Ausschreibung, Vergabe & Baustelle:** LV/Mengen, Vergabe/Verträge, Termin/Lean/Logistik und Baukontrolle werden getrennt erklärt.
+- **Teil VII — BIM-Datenmethode:** die bisherigen BIM-Kapitel wandern nach hinten, weil Leser vorher den realen Prozess kennen sollen, den BIM abbildet.
+- **Teil VIII — Bestand, Nachhaltigkeit & Betrieb:** Nachhaltigkeit, Sanierung, Projektarten und Digitaler Zwilling bleiben als Transfer- und Ausblicksteil.
+
+**Umsetzungsstatus:** Diese 31-Kapitel-Struktur ist nicht mehr maßgeblich. Sie bleibt nur als Verlauf der Gliederungsentwicklung erhalten. Maßgeblich ist die 41-Kapitel-Zielstruktur im Abschnitt "Exhaustiver Prozessausbau".
+
+### Überholte Zielstruktur 31 Kapitel
+
+| # | Titel | Teil | Status | Prio | Wörter (Ziel) |
+|---|-------|------|--------|------|----------------|
+| 1 | Architektur als System | I – Fundament | `Entwurf` | P0 | 2,800–3,200 |
+| 2 | Problemraum: Bauherr, Briefing, Anforderungen | I – Fundament | `Neu/zu schreiben` | P0 | 4,500–6,000 |
+| 3 | Standortanalyse, Grobskizzen & Varianten | I – Fundament | `Neu/zu schreiben` | P0 | 5,000–6,500 |
+| 4 | Pläne, Raum, Funktion & Entwurfslogik | I – Fundament | `Migration aus alt K02` | P0 | 4,500–6,000 |
+| 5 | Baustoffe | II – Baukörper | `Entwurf` | P1 | 3,000–3,500 |
+| 6 | Tragwerk: Lasten, Kräfte, Systeme | II – Baukörper | `Entwurf` | P1 | 3,200–3,800 |
+| 7 | Konstruktion: Gründung, Wand, Decke, Dach | II – Baukörper | `Entwurf` | P1 | 3,800–4,500 |
+| 8 | Wärmeschutz & GEG | III – Bauphysik | `Entwurf` | P1 | 2,800–3,200 |
+| 9 | Feuchteschutz | III – Bauphysik | `Entwurf` | P1 | 2,200–2,800 |
+| 10 | Schallschutz | III – Bauphysik | `Entwurf` | P1 | 2,000–2,500 |
+| 11 | Brandschutz | III – Bauphysik | `Entwurf` | P1 | 2,000–2,500 |
+| 12 | Heizung & Wärmeversorgung | IV – TGA | `Entwurf` | P1 | 2,800–3,200 |
+| 13 | Lüftung & Raumluftqualität | IV – TGA | `Entwurf` | P1 | 2,500–3,000 |
+| 14 | Sanitär & Entwässerung | IV – TGA | `Entwurf` | P1 | 2,200–2,800 |
+| 15 | Elektro & Gebäudeautomation | IV – TGA | `Entwurf` | P1 | 2,500–3,000 |
+| 16 | Planungsrecht & Bauantrag im Detail | V – Entwurf, Genehmigung & Planungsreife | `Ausbau aus alt K14` | P1 | 5,000–6,500 |
+| 17 | HOAI, Rollen & Projektorganisation | V – Entwurf, Genehmigung & Planungsreife | `Ausbau aus alt K15` | P1 | 4,000–5,000 |
+| 18 | Ausführungsplanung & Bauunterlagen | V – Entwurf, Genehmigung & Planungsreife | `Neu/zu schreiben` | P1 | 5,000–6,500 |
+| 19 | Kosten, Mengen & Leistungsverzeichnis | VI – Ausschreibung, Vergabe & Baustelle | `Ausbau aus alt K16` | P1 | 5,000–6,500 |
+| 20 | Ausschreibung, Vergabe & Bauverträge | VI – Ausschreibung, Vergabe & Baustelle | `Neu/zu schreiben` | P1 | 5,000–6,500 |
+| 21 | Terminplanung, Lean & Baustellenlogistik | VI – Ausschreibung, Vergabe & Baustelle | `Neu/zu schreiben` | P1 | 5,000–6,500 |
+| 22 | Bauoberleitung, Baukontrolle & Mängelmanagement | VI – Ausschreibung, Vergabe & Baustelle | `Ausbau aus alt K17` | P1 | 6,000–7,500 |
+| 23 | Was BIM wirklich ist | VII – BIM-Datenmethode | `Migration aus alt K18` | P1 | 2,200–2,800 |
+| 24 | IFC: Die Sprache des digitalen Gebäudes | VII – BIM-Datenmethode | `Migration aus alt K19` | P1 | 4,000–5,000 |
+| 25 | Klassifikation | VII – BIM-Datenmethode | `Migration aus alt K20` | P1 | 2,000–2,500 |
+| 26 | Prozess & Kollaboration: CDE, ISO 19650 | VII – BIM-Datenmethode | `Migration aus alt K21` | P1 | 2,500–3,000 |
+| 27 | BIM in der Praxis | VII – BIM-Datenmethode | `Migration aus alt K22` | P1 | 2,200–2,800 |
+| 28 | Nachhaltigkeit & Kreislaufwirtschaft | VIII – Bestand, Nachhaltigkeit & Betrieb | `Migration aus alt K23` | P2 | 2,500–3,000 |
+| 29 | Sanierung | VIII – Bestand, Nachhaltigkeit & Betrieb | `Migration aus alt K24` | P2 | 2,800–3,400 |
+| 30 | Projektarten: Neubau, Bestand, Denkmal | VIII – Bestand, Nachhaltigkeit & Betrieb | `Migration aus alt K25` | P2 | 2,000–2,500 |
+| 31 | Digitaler Zwilling & KI | VIII – Bestand, Nachhaltigkeit & Betrieb | `Migration aus alt K26` | P2 | 1,800–2,500 |
+
+### Migrationsplan Alt → Neu
+
+| Aktueller Stand | Zielstruktur | Maßnahme |
+|---|---|---|
+| alt K01 Architektur als System | neu K01 | bleibt |
+| alt K02 Entwurf, Raum und Funktion | neu K02, K03, K04 | in drei Kapitel aufspalten: Problemraum; Standort/Skizzen/Varianten; Planlesen/Raum/Funktion |
+| alt K03–K13 Technik | neu K05–K15 | mechanisch +2 verschieben, Querverweise aktualisieren |
+| alt K14 Planungsrecht | neu K16 | stark ausbauen: Bauantrag, Bauvorlagen, Nachweise, digitale Einreichung, Nachforderungen |
+| alt K15 HOAI | neu K17 und neu K18 | Rollen/HOAI in K17, LP 5/Bauunterlagen als eigenes K18 |
+| alt K16 Kosten & Ausschreibung | neu K19 und neu K20 | Kosten/LV/Mengen in K19, Ausschreibung/Vergabe/Vertrag in K20 |
+| alt K17 Bauprojektmanagement & Bauoberleitung | neu K21 und neu K22 | Termin/Lean/Logistik in K21, Baukontrolle/Mängel/Abnahme in K22 |
+| alt K18–K22 BIM | neu K23–K27 | mechanisch +5 verschieben, Prozessverweise korrigieren |
+| alt K23–K26 Ausblick | neu K28–K31 | mechanisch +5 verschieben, Digitaler Zwilling auf 1,800–2,500 Wörter erweitern |
+
+### Neue Prozess-Bildstrecke
+
+Diese Bilder sind nicht dekorativ. Sie müssen reale Arbeitsmittel zeigen, die Architekten, Bauherren, Behörden, Bieter und Bauleiter im Prozess benutzen.
+
+| Bildname | Zielkapitel | Inhalt |
+|---|---|---|
+| `kap02_erstgespraech_briefing` | K02 | Besprechungstisch als Dokumenten- und Anforderungslandschaft: Grundstück, Budget, Wunschliste, Raumprogramm, Zielkonflikte, Entscheidungsmatrix |
+| `kap02_anforderungsmatrix` | K02 | Tabelle: Wunsch → prüfbare Anforderung → Entwurfsparameter → Nachweis/Planstand; Beispiel Licht, Budget, Barrierefreiheit, Lärm, Wohnfläche |
+| `kap02_stakeholder_zielkonflikte` | K02 | Stakeholder-Map mit Bauherr, Nutzer, Nachbarn, Behörde, Fachplanern, Bank, Betreiber; Zielkonflikte als Pfeile |
+| `kap03_standortanalyse_skizzenblatt` | K03 | Hand-/Tablet-Skizzenblatt mit Sonne, Wind, Lärm, Blick, Topografie, Zufahrt, Nachbarschaft, Baugrenze |
+| `kap03_bubble_erschliessung_sonne` | K03 | Drei frühe Diagrammtypen nebeneinander: Bubble, Erschließung, Sonne/Blick |
+| `kap03_variantenkritik_k7` | K03 | Varianten A/B/C für K7 mit Skizze, Massenmodell und Bewertungsmatrix |
+| `kap04_planarten_leselogik` | K04 | Grundriss, Schnitt, Ansicht, Detail desselben Ausschnitts mit Lesereihenfolge |
+| `kap16_bauantrag_paket` | K16 | Bauantragsmappe/digitales Portal: Lageplan, Bauzeichnungen, Baubeschreibung, Berechnungen, Nachweise, Formulare |
+| `kap16_genehmigungsworkflow` | K16 | Workflow: Vorprüfung → Einreichung → Vollständigkeit → Fachstellen/TÖB → Nachforderung → Genehmigung/Auflagen |
+| `kap18_planpaket_lp5` | K18 | Plan- und Dokumentensatz LP 5: Grundriss 1:50, Details 1:10, Raumbuch, Türliste, Schlitz-/Durchbruchsplanung, Freigabeliste |
+| `kap18_detailmodell_transformation` | K18 | Übergang von Entwurfsmodell zu Ausführungsmodell: generische Wand → Schichten, Anschlüsse, Toleranzen, TGA-Kollisionen |
+| `kap19_lv_mengen_pipeline` | K19 | Modellobjekt → Menge → DIN 276 → STLB-/LV-Position → GAEB; Unterschiede Modellmenge vs. Abrechnungsmenge |
+| `kap20_preisspiegel_vergabevermerk` | K20 | Preisspiegel mit Ausreißern, Bieterfrage, Vergabevorschlag, Bauvertrag |
+| `kap21_bauzeitenplan_taktplanung` | K21 | Gantt, Netzplan und Taktplan nebeneinander für K7; kritischer Pfad und Puffer sichtbar |
+| `kap21_baustelleneinrichtung_logistik` | K21 | Baustelleneinrichtungsplan K7: Kran, Zufahrt, Lagerflächen, Container, Materialfluss, Feuerwehr, Nachbarschaft |
+| `kap22_fotodokumentation_mangel_bcf` | K22 | Baustellenfoto mit Markierung → Mängelticket → BCF/Modellelement → Zuständigkeit → Frist |
+| `kap22_abnahme_maengelmatrix` | K22 | Abnahmebegehung mit Protokoll, Mängelliste, Restleistungen, Vorbehalte, Gewährleistungsbeginn |
+
+### Neue Begriffe für den Prozess-Tiefenausbau
+
+Diese Begriffe müssen beim Schreiben in `docs/terms-registry.yaml` und `web/src/data/glossar.ts` ergänzt werden. Schreibweise als Slug vorläufig:
+
+`briefing`, `raumprogramm`, `anforderungskatalog`, `zielkonflikt`, `stakeholder`, `entscheidungslog`, `vorentwurf`, `variantenstudie`, `bubble-diagramm`, `funktionsdiagramm`, `standortanalyse`, `bauvorlage`, `bauvorlageberechtigung`, `bauvorlagenverordnung`, `nachforderung`, `ausfuehrungsplanung`, `planpaket`, `raumbuch`, `tuerliste`, `fensterliste`, `freigabe`, `rfi`, `gaeb`, `stlb-bau`, `leistungsbeschreibung`, `preisspiegel`, `vergabevermerk`, `bieterfrage`, `submission`, `taktplanung`, `last-planner-system`, `baustelleneinrichtung`, `baulogistik`, `maengelmanagement`, `abnahmeprotokoll`, `fotodokumentation`, `bcf-ticket`, `as-built-dokumentation`
+
+### Bibliotheksgrundlage für die neuen Prozesskapitel
+
+| Kapitel | Primäre lokale Referenzen |
+|---|---|
+| K02 Problemraum | Ching `Architecture: Form, Space and Order`; Neufert `Bauentwurfslehre`; Kochendörfer/Liebchen/Viering, Raum- und Funktionsprogramm / Projektvorbereitung |
+| K03 Skizzen & Varianten | Ching `Architectural Graphics`; Ching `Form, Space and Order`; `Basics Technisches Zeichnen`; Neufert |
+| K04 Pläne & Entwurfslogik | `Basics Technisches Zeichnen`; Ching `Architectural Graphics`; Neufert |
+| K16 Bauantrag | MBO / Landesbauordnungssystematik; BauGB/BauNVO; HOAI 2021; lokale Bauvorlagenlogik als Kapitelrecherche je Bundesland |
+| K17 HOAI/Rollen | HOAI 2021 Textausgabe; Siemon/Averhaus; HOAI Praxis; ISO 19650 für Informationsrollen |
+| K18 Ausführungsplanung | HOAI Anlage 10; `Standard Detailsammlung`; Ching `Architectural Graphics`; Revit/Authoring-Referenzen für Modellreife |
+| K19 LV/Mengen | Brandt/Franssen `Basics Ausschreibung`; VOB im Bild; DIN 276; STLB-Bau/GAEB; K20 Klassifikation später als Vertiefung |
+| K20 Vergabe/Verträge | Brandt/Franssen; VOB/A/B/C; HOAI Praxis; Kochendörfer/Liebchen/Viering Projektorganisation und Vergabestrukturen |
+| K21 Termin/Lean/Logistik | Kochendörfer/Liebchen/Viering Terminmanagement; Hofstadler/Motzko `Agile Digitalisierung im Baubetrieb`; `Baustelleneinrichtung` |
+| K22 Baukontrolle/Mängel | Würfele/Bielefeld/Gralla `Bauobjektüberwachung`; VOB/B; HOAI Anlage 10 LP 8; ISO 19650/CDE/BCF für digitale Dokumentation |
+
+### Maßgebliche neue Kapitel-Specs für K02–K04 und K16–K22
+
+#### K02 — Problemraum: Bauherr, Briefing, Anforderungen
+
+- **Ziel:** Leser sollen verstehen, wie aus unscharfen Wünschen eine prüfbare Aufgabenstellung entsteht.
+- **Pflichtabschnitte:** Erstgespräch; Bauherr/Nutzer/Betreiber als verschiedene Stimmen; Raumprogramm; Anforderungen vs. Wünsche; Budget und Kostenziel; Grundstück und rechtliche Vorgaben als Constraints; Zielkonflikte; Kriterienmatrix; Entscheidungslog.
+- **Praxisdetail:** typische Fragen im Kundengespräch: Wer nutzt das Gebäude? Was darf es kosten? Welche Lebensdauer wird erwartet? Welche Räume sind unverhandelbar? Was ist wichtiger: Fläche, Qualität, Tempo, Energie, Flexibilität, Vermietbarkeit? Welche Bilder/Referenzen bringt der Bauherr mit, und wie übersetzt man sie fachlich?
+- **K7-Box:** Bauherr will 12 Wohnungen, wirtschaftliche Wohnfläche, Fernwärme, PV, Aufzug, geringe Betriebskosten, keine komplizierte Sonderlösung. Daraus entstehen messbare Anforderungen: Wohnungsmix, Erschließungsflächenquote, Schachtlogik, GFZ-Ausnutzung, Baukostenrahmen.
+- **Bilder:** `kap02_erstgespraech_briefing`, `kap02_anforderungsmatrix`, `kap02_stakeholder_zielkonflikte`.
+- **BIM-Brücke:** Anforderungen als Informationsanforderungen: AIA/EIR, Raumprogramm als strukturierte Daten, `IfcSpace`-Sollwerte, Entscheidungshistorie in CDE.
+
+#### K03 — Standortanalyse, Grobskizzen & Varianten
+
+- **Ziel:** Leser sollen sehen, wie Architekten Probleme zeichnerisch untersuchen und mit Bauherren besprechbar machen.
+- **Pflichtabschnitte:** Ortsbegehung; Sonne, Wind, Lärm, Topografie, Blick, Zufahrt, Nachbarschaft; Skizzenarten; Bubble-Diagramm; Funktionsdiagramm; Erschließungsdiagramm; Massenmodell; Varianten A/B/C; Variantenkritik; Entscheidung und Dokumentation.
+- **Praxisdetail:** Jede Skizze beantwortet eine Frage. Bubble-Diagramm: Nähebeziehungen. Sonnen-/Blickdiagramm: Orientierung. Massenmodell: Volumen, Schatten, Baurecht. Erschließungsskizze: Wege, Adressen, Rettungslogik. Variantenbesprechung: nicht "schön/unschön", sondern Kriterien und Konsequenzen.
+- **K7-Box:** drei Varianten: kompakter Vierspänner, Laubengang, Hofhaus. Zeige, warum Vierspänner gewinnt und welche Ideen aus den anderen Varianten übernommen werden.
+- **Bilder:** `kap03_standortanalyse_skizzenblatt`, `kap03_bubble_erschliessung_sonne`, `kap03_variantenkritik_k7`.
+- **BIM-Brücke:** Konzeptmodell als frühes Datenmodell: `IfcSite`, Nordrichtung, Nachbarvolumen, Raumgruppen, Simulations-Inputs.
+
+#### K04 — Pläne, Raum, Funktion & Entwurfslogik
+
+- **Ziel:** Leser sollen Architekturzeichnungen lesen und den Übergang von Skizze zu Grundriss/Schnitt/Ansicht/Detail verstehen.
+- **Pflichtabschnitte:** Grundriss als horizontaler Schnitt; Schnitt als vertikales Denken; Ansicht; Detail; Maßstäbe; Linienarten; Raumorganisation; Formtransformation; Proportion; Erschließungstypen; Barrierefreiheit; Kompaktheit/A/V.
+- **Praxisdetail:** Erst Orientierung lesen, dann Struktur, dann Nutzung, dann Maße/Details. Planstände unterscheiden: Skizze, Vorentwurf, Genehmigungsplan, Ausführungsplan.
+- **K7-Box:** K7-Grundriss als lesbarer Plan: Straße/Hof, Treppenhaus/Aufzug, Wohnungstypen, Schächte, Rettungswege, Möblierbarkeit.
+- **Bilder:** `kap04_planarten_leselogik`, vorhandene K02-Grundrissbilder migrieren und neu nummerieren.
+- **BIM-Brücke:** Plan und Modell als zwei Darstellungsformen derselben Informationsreife; `IfcSpace`, Geschosse, Raumstempel, Schnitte aus Modell.
+
+#### K16 — Planungsrecht & Bauantrag im Detail
+
+- **Ziel:** Leser sollen einen Bauantrag als konkretes Unterlagenpaket, Prüfverfahren und Kommunikationsprozess verstehen.
+- **Pflichtabschnitte:** Rechtsquellenhierarchie; B-Plan/BauGB §34/§35; LBO/MBO; Bauvorlageberechtigung; Bauvorlagenverordnung; Bauantragsunterlagen; Nachweise; Nachbarbeteiligung; Fachstellen/TÖB; Vollständigkeitsprüfung; Nachforderungen; Auflagen; digitaler Bauantrag; BIM-to-Permit.
+- **Praxisdetail:** Unterschied Genehmigungsreife vs. Ausführungsreife. Bauantragsplan zeigt öffentlich-rechtliche Zulässigkeit; er ist noch kein Werkplan. Erkläre, wer was unterschreibt und welche Haftung/Verantwortung daraus folgt.
+- **K7-Box:** Bauantrag K7: Lageplan, Bauzeichnungen, Baubeschreibung, GRZ/GFZ/Vollgeschoss, Stellplatz, Brandschutz GK4, Barrierefreiheit/Aufzug, Entwässerung, GEG-Nachweis, Schallschutz je nach Landesrecht.
+- **Bilder:** `kap16_bauantrag_paket`, `kap16_genehmigungsworkflow`.
+- **BIM-Brücke:** harte Regelchecks vs. Auslegung; Modell + Regelquelle + Nachweislogik; Grenzen bei §34, Befreiung, Ortsbild, Brandschutzabwägung.
+
+#### K17 — HOAI, Rollen & Projektorganisation
+
+- **Ziel:** Leser sollen verstehen, wer im Projekt was tut, welche Rolle der Architekt hat und wie Leistungsphasen als Informationsreife funktionieren.
+- **Pflichtabschnitte:** Bauherr, Architekt, Fachplaner, Tragwerksplaner, TGA, Brandschutz, Vermesser, Bodengutachter, Projektsteuerer, SiGeKo, Unternehmen, Behörde; HOAI LP 1–9; Grundleistungen vs. besondere Leistungen; Projektorganisation; Kommunikationswege; BAP/AIA als BIM-Erweiterung.
+- **Praxisdetail:** Kleine Projekte: Architekt koordiniert viel selbst. Größere Projekte: Generalplaner, Projektsteuerung, BIM-Management. Rollen nicht mit Personen verwechseln; eine Person kann mehrere Rollen tragen, die Verantwortlichkeiten bleiben getrennt.
+- **K7-Box:** Projektorganisation K7 mit Architekt als Objektplaner, TGA-Planer, Tragwerksplaner, Brandschutzplaner, Vermesser, Bodengutachter, Bauherr, ausführende Gewerke.
+- **Bilder:** Projektorganigramm, Informationslieferplan nach LP.
+- **BIM-Brücke:** AIA/EIR, BAP, Informationslieferplan, CDE-Rechte, Modellverantwortung.
+
+#### K18 — Ausführungsplanung & Bauunterlagen
+
+- **Ziel:** Leser sollen verstehen, wie aus genehmigtem Entwurf ein baubares, prüfbares, ausschreibbares Plan- und Modellpaket wird.
+- **Pflichtabschnitte:** LP 5; Planpaket 1:50; Details 1:20/1:10/1:5; Schnitte und Leitdetails; Raumbuch; Tür-/Fensterlisten; Material- und Bauteilfestlegungen; Schlitz- und Durchbruchsplanung; TGA-Koordination; Brandschutzdetails; Freigaben; Planlauf; RFI.
+- **Praxisdetail:** Ausführungsplanung entscheidet Anschlüsse, Toleranzen, Reihenfolge und Schnittstellen. Sie ist nicht "mehr Details" im abstrakten Sinn, sondern die Übersetzung von Entwurf in Handwerk, Material, Maß und Zuständigkeit.
+- **K7-Box:** K7-Fensteranschluss, Schachtkoordination und Wohnungstürliste als Beispiel: ein Entwurfsfenster wird zu Rohbauöffnung, Fensterprofil, Laibung, Abdichtung, Sonnenschutz, Brüstung, Absturzsicherung, U-Wert, Schallschutz.
+- **Bilder:** `kap18_planpaket_lp5`, `kap18_detailmodell_transformation`.
+- **BIM-Brücke:** LOD/LOI 300–400, Kollisionsprüfung, modellbasierte Listen, Planableitung, Freigabe-Workflow in CDE.
+
+#### K19 — Kosten, Mengen & Leistungsverzeichnis
+
+- **Ziel:** Leser sollen verstehen, wie Kosten, Mengen und LV-Positionen aus Planung entstehen, ohne Modellmengen mit Vertragsleistungen zu verwechseln.
+- **Pflichtabschnitte:** DIN 276; Kostenschätzung/Kostenberechnung/Kostenanschlag/Kostenfeststellung; Mengen aus Plan und Modell; LV-Aufbau; Vorbemerkungen; STLB-Bau; GAEB; Nebenleistungen; Abrechnungsregeln; Einheitspreis vs. Pauschale; 5D-BIM.
+- **Praxisdetail:** Eine Wand im Modell wird im LV zu mehreren Leistungen. Modellmenge ist nicht automatisch Abrechnungsmenge. Öffnungen, Laibungen, Verschnitt, Nebenleistungen und VOB/C-Regeln verändern die Kalkulation.
+- **K7-Box:** Außenwand K7: Modellfläche → Rohbauwand, Dämmung, Putz, Laibungen, Gerüst, Sockel, Anschlussdetails; zeige, wo Mengen abweichen.
+- **Bilder:** `kap19_lv_mengen_pipeline`, LV-Auszug mit Kommentaren.
+- **BIM-Brücke:** `IfcQuantitySet`, DIN 276, STLB/GAEB, Klassifikation, 5D-Mapping.
+
+#### K20 — Ausschreibung, Vergabe & Bauverträge
+
+- **Ziel:** Leser sollen den realen Weg von Ausschreibungsunterlagen zu beauftragten Firmen verstehen.
+- **Pflichtabschnitte:** Ausschreibungsstrategie; Vergabeeinheiten; Fachlos/Einzelvergabe/GU/TU; private vs. öffentliche Vergabe; Bieterliste; Eignung; Fristen; Bieterfragen; Submission; Angebotsprüfung; Preisspiegel; Aufklärungsgespräch; Vergabevorschlag; Vergabevermerk; Zuschlag; Bauvertrag; VOB/A/B/C.
+- **Praxisdetail:** Architekten nutzen bei privaten Projekten oft bekannte Firmen, aber Vergleichbarkeit und Dokumentation bleiben wichtig. Öffentliche Vergabe verlangt Gleichbehandlung und strengere Nachvollziehbarkeit. Billigster Preis ist nicht automatisch wirtschaftlichster Zuschlag.
+- **K7-Box:** Rohbauvergabe K7 mit drei Angeboten, auffälligem Einheitspreis, Bieterfrage, Preisspiegel und dokumentierter Zuschlagsentscheidung.
+- **Bilder:** `kap20_preisspiegel_vergabevermerk`.
+- **BIM-Brücke:** digitale Vergabeplattform, GAEB-Datenaustausch, LV-Versionierung, CDE-Ausschreibungsstand.
+
+#### K21 — Terminplanung, Lean & Baustellenlogistik
+
+- **Ziel:** Leser sollen verstehen, wie Bauzeit geplant, visualisiert, gesteuert und mit Baustellenlogistik verbunden wird.
+- **Pflichtabschnitte:** Terminrahmen; Balkenplan/Gantt; Netzplan/CPM; FA/FE/SA/SE/GP; kritischer Pfad; Soll-Ist-Fortschreibung; Taktplanung; Last Planner System; Lean Construction; Baustelleneinrichtungsplan; Kran, Lager, Zufahrt, Materialfluss; Bauzeitenrisiken.
+- **Praxisdetail:** Terminplanung ist nicht nur ein Kalender. Sie ist ein Abhängigkeitsmodell: Estrich braucht Trocknung, TGA braucht Durchbrüche, Fassade braucht Gerüst, Innenausbau braucht dichte Hülle. Lean ergänzt das durch zuverlässige Zusagen und kurze Steuerungszyklen.
+- **K7-Box:** 14 Monate Bauzeit, Rohbau 6 Monate, Dach/Dichtheit, TGA-Rohinstallation, Estrich/Trocknung, Ausbau, Außenanlagen. Zeige kritischen Pfad und Puffer.
+- **Bilder:** `kap21_bauzeitenplan_taktplanung`, `kap21_baustelleneinrichtung_logistik`.
+- **BIM-Brücke:** 4D-BIM, `IfcTask`, `IfcRelSequence`, Modellfortschritt, Baustellensimulation.
+
+#### K22 — Bauoberleitung, Baukontrolle & Mängelmanagement
+
+- **Ziel:** Leser sollen die tägliche Baustellenarbeit des Architekten nachvollziehen: prüfen, dokumentieren, koordinieren, entscheiden, abnehmen.
+- **Pflichtabschnitte:** LP 8; Bauleiter Architekt vs. verantwortlicher Bauleiter Unternehmen; Baustellenbegehung; Fotodokumentation; Bautagebuch; Baubesprechung; Protokoll; Planfreigaben; Mängelanzeige; Behinderungsanzeige; Nachtrag; Rechnungsprüfung; Abnahme; Gewährleistung LP 9; digitale Mängeltools.
+- **Praxisdetail:** Der Architekt überwacht stichprobenartig, aber systematisch. Er fotografiert nicht wahllos, sondern beweis- und ortsbezogen: was, wo, wann, durch wen, welcher Planstand, welche Abweichung, welche Frist. Mängel brauchen Verantwortliche und Nachverfolgung.
+- **K7-Box:** Woche 14 Kranstörung und Woche 32 Mangel an Wohnungstrennwand/Brandschutzdurchdringung: Foto, Markierung im Plan/Modell, BCF-Ticket, Frist, Nachkontrolle, Protokoll.
+- **Bilder:** `kap22_fotodokumentation_mangel_bcf`, `kap22_abnahme_maengelmatrix`.
+- **BIM-Brücke:** digitales Bautagebuch, BCF, modellverortete Fotos, CDE-Workflow, as-built-Dokumentation für K31.
+
+---
+
+## Kapitel-Übersicht (aktueller Dateistand — Migrationsreferenz)
+
+Hinweis: Diese Tabelle beschreibt den heute vorhandenen 26-Kapitel-Dateistand. Sie bleibt nur als Migrationsreferenz erhalten, bis die Zielstruktur oben umgesetzt ist.
 
 | # | Titel | Teil | Status | Prio | Wörter (Ziel) |
 |---|-------|------|--------|------|----------------|
@@ -1203,3 +1769,20 @@ Beim Schreiben eines Kapitels sollen fehlende Einträge aktiv ergänzt werden:
 | OE-15 | Varianten, Skizzen und Diagramme als Randthema oder als Kern des frühen Entwurfs? | Kap. 2 | Entscheidung: K02.2 als Pflichtabschnitt mit Variantenlogik, Diagrammen und Kriterienmatrix |
 | OE-16 | Bauantrag abstrakt halten oder konkrete Unterlagen und BIM-to-Permit erklären? | Kap. 14 | Entscheidung: K14.3/K14.4 konkretisieren Bauantragspaket, Genehmigungsreife und digitale Grenzen |
 | OE-17 | Vergabe nur als VOB/LV erklären oder reale Vergabepraxis ergänzen? | Kap. 16 | Entscheidung: K16.3 ergänzt Firmenfindung, Preisspiegel, Bietergespräch, Zuschlagsentscheidung und Vergabestrukturen |
+| OE-18 | Reicht die 26-/31-Kapitel-Struktur für ein praktikumsnahes Prozessverständnis? | Gesamtstruktur | Entscheidung: Nein. Maßgeblich ist Zielstruktur 41 Kapitel mit eigener Vorentwurfs-, Genehmigungs-, Vergabe-, Bauausführungs- und Übergabe-Spange |
+| OE-19 | Problemraum als Abschnitt in K02 oder eigenes Kapitel? | neu K03 | Entscheidung: Eigenes Kapitel. Briefing, Raumprogramm, Budget, Stakeholder und Zielkonflikte tragen 5.000–6.500 Wörter |
+| OE-20 | Standortanalyse, Grobskizzen und Varianten als Abschnitt oder eigenes Kapitel? | neu K05 | Entscheidung: Eigenes Kapitel mit Bildstrecke; Skizzen sind das zentrale Kommunikationsmittel des frühen Entwurfs |
+| OE-21 | Ausführungsplanung in HOAI-Kapitel belassen oder eigenes Kapitel? | neu K21 | Entscheidung: Eigenes Kapitel. LP 5/Bauunterlagen sind der Übergang vom Entwurfsmodell zur Baustelle |
+| OE-22 | Bauantrag als Planungsrechtsabschnitt oder eigenes tiefes Genehmigungskapitel? | neu K18 | Entscheidung: Planungsrecht bleibt dort, aber K18 wird auf 5.500–7.000 Wörter erweitert und erklärt das konkrete Bauantragspaket |
+| OE-23 | Ausschreibung und Vergabe zusammen oder trennen? | neu K24, K25 | Entscheidung: Trennen. K24 = LV/STLB/GAEB; K25 = Bieterkommunikation, Preisspiegel, Vergabevermerk |
+| OE-24 | Terminplanung in Bauoberleitung belassen oder eigenes Kapitel? | neu K27 | Entscheidung: Eigenes Kapitel. Gantt, Netzplan, Taktplanung, Last Planner und Baustellenlogistik brauchen gemeinsame Erklärung vor LP 8 |
+| OE-25 | Bauoberleitung weiterhin Termin/Kosten mittragen lassen oder auf Kontrolle/Mängel/Abnahme fokussieren? | neu K29 | Entscheidung: K29 fokussiert Baukontrolle, Fotos, Bautagebuch, BCF/Mängel und Nachkontrolle |
+| OE-26 | Machbarkeit/Due Diligence als Teil von Problemraum oder eigene Kapitel? | neu K02, K04 | Entscheidung: Trennen. K02 = Projektstart/Machbarkeit; K04 = Grundstück/Due Diligence |
+| OE-27 | Fachplanerkoordination in Ausführungsplanung integrieren oder eigenes Kapitel? | neu K20 | Entscheidung: Eigenes Kapitel, weil Planlauf, Durchbrüche, Kollisionen, Prüfstatus und CDE-Workflow Kernpraxis sind |
+| OE-28 | Werkplanung/Bemusterung in LP 5 integrieren oder eigenes Kapitel? | neu K22 | Entscheidung: Eigenes Kapitel, weil Unternehmerplanung und Freigaben in der Praxis ein eigener Verantwortungsbereich sind |
+| OE-29 | Nachträge bei Bauoberleitung oder bei Verträgen erklären? | neu K26 | Entscheidung: Eigenes Vertrags-/Nachtragskapitel vor der Bauausführung; Baustelle verweist darauf zurück |
+| OE-30 | Baustellenvorbereitung als Teil von Terminplanung oder eigenes Kapitel? | neu K28 | Entscheidung: Eigenes Kapitel mit SiGeKo, Baustelleneinrichtung, Verkehrssicherung, Bauwasser/-strom und Nachbarschaft |
+| OE-31 | Aufmaß/Rechnungsprüfung in Bauoberleitung integrieren oder eigenes Kapitel? | neu K30 | Entscheidung: Eigenes Kapitel, weil Kostenkontrolle während LP 8 eigene Dokumente und Prüfpflichten hat |
+| OE-32 | Inbetriebnahme/Übergabe als Abnahmeabschnitt oder eigenes Kapitel? | neu K31 | Entscheidung: Eigenes Kapitel, weil TGA-Prüfungen, Revisionsunterlagen, Einweisung und Betreiberübergabe sonst zu kurz bleiben |
+| OE-33 | Gewährleistung/Objektbetreuung im Ausblick oder eigenes Kapitel? | neu K32 | Entscheidung: Eigenes Kapitel als Brücke von LP 9 zu As-built, FM und Digitalem Zwilling |
+| OE-34 | Bürorealität als eigenes Kapitel oder Querschnitt? | alle Prozesskapitel | Entscheidung: Querschnittspflicht in K02–K32: Planlisten, CDE-Status, Protokolle, Freigaben, Entscheidungslog und typische Fehler müssen jeweils konkret vorkommen |

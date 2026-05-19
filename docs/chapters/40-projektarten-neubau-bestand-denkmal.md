@@ -1,6 +1,6 @@
-# Kapitel 25 – Projektarten: Neubau, Bestand, Denkmal
+# Kapitel 40 – Projektarten: Neubau, Bestand, Denkmal
 
-*Teil VII – Nachhaltigkeit*
+*Teil IX – Bestand, Nachhaltigkeit & Betrieb*
 
 ---
 
@@ -13,7 +13,7 @@ Das Buch folgt einem Mehrfamilienhaus-Neubau, weil daran viele Grundfragen sicht
     - typische Neubautypen und ihre Planungslogik unterscheiden
     - Neubau, Bestand und Denkmal fachlich abgrenzen
 
-## 25.1 Projektart als Rahmenbedingung
+## 40.1 Projektart als Rahmenbedingung
 
 Bevor der erste Strich gesetzt wird, muss klar sein, welche Art von Projekt vorliegt. Die Projektart bestimmt nicht nur die Form des Gebäudes, sondern die Planungsstrategie. Ein Neubau auf freiem Grundstück beginnt mit Baurecht, Raumprogramm und Varianten. Ein Neubau im Bestandsquartier beginnt zusätzlich mit Nachbarschaft, Baulückenlogik, Erschließung und Baustellenlogistik. Eine Sanierung beginnt mit Aufmaß, Befund und Unsicherheit.
 
@@ -33,7 +33,7 @@ tags: projektarten, neubau, bestand, denkmal, sonderbau
 -->
 ![Projektarten im Überblick](../assets/illustrations/kap25_projektarten_uebersicht.png)
 
-## 25.2 Neubautypen im Überblick
+## 40.2 Neubautypen im Überblick
 
 Auch innerhalb des Neubaus unterscheiden sich Projekte stark. Ein Einfamilienhaus ist meist überschaubar, mit wenigen Fachplanern und direkter Bauherrenkommunikation. Ein Geschosswohnungsbau ist stärker wirtschaftlich getrieben und technisch dichter. Ein Krankenhaus oder eine Schule ist ein Sonderbau mit eigenem Regelwerk und intensivem Behördendialog.
 
@@ -65,7 +65,7 @@ Auch die Rolle des Architekten verschiebt sich. Im EFH ist er oft Übersetzer zw
 !!! kastanienallee "Kastanienallee 7"
     K7 ist ein Mehrfamilienhaus der ::Gebäudeklasse:: 4 mit 12 Wohneinheiten, vier Vollgeschossen, Stahlbeton-Skelett, Fernwärme, KWL, PV, Vierspänner und Aufzug. Genau deshalb eignet sich dieser Typ als Leitbeispiel: Aufzugspflicht, Brandschutz GK 4, TGA-Koordination, Wirtschaftlichkeit, LP 8 und BIM kommen alle vor. Ein EFH hätte keinen Aufzug, meist einfachere Genehmigung und weniger Fachplaner. Ein Sonderbau hätte zusätzliche Richtlinien, Brandschutzgutachter, intensivere Behördenrunden und oft eine strengere BIM-Pflicht.
 
-## 25.3 Neubau vs. Bestand: der fundamentale Unterschied
+## 40.3 Neubau vs. Bestand: der fundamentale Unterschied
 
 Neubau ist planerisch näher an einer leeren Seite. Geometrie, Konstruktion, Material, Installationswege und Details können vor Baubeginn durchgearbeitet werden. Natürlich gibt es auch im Neubau Überraschungen, etwa Baugrund, Marktpreise oder Lieferzeiten. Aber das Grundprinzip bleibt: Das Gebäude entsteht aus der Planung.
 
@@ -89,7 +89,7 @@ Für Planer bedeutet das: Bestand wird nicht nur konstruktiv untersucht, sondern
 
 Für Softwareentwickler ist dieser Unterschied besonders relevant. Ein Neubau-Modell kann viele Regeln aus geplanten Objekten ableiten: Geschosse, Räume, Bauteile, Flächen, Materialien. Ein Bestandsmodell braucht zusätzlich Quellenstatus: gemessen, aus Plan übernommen, geöffnet, vermutet oder noch zu prüfen. Ohne diesen Status wirkt ein Bestandsmodell genauso sicher wie ein Neubau-Modell, obwohl es fachlich unsicherer ist. Gute Werkzeuge behandeln Unsicherheit deshalb als Datenfeld, nicht als Kommentar.
 
-## 25.4 Denkmalpflege als Sonderfall
+## 40.4 Denkmalpflege als Sonderfall
 
 **::Denkmalschutz::** beginnt nicht mit persönlichem Geschmack. Ein Gebäude ist Denkmal, wenn es nach Landesrecht als solches erfasst ist, meist über die Denkmalliste und die Untere Denkmalschutzbehörde. Jedes Bundesland hat ein eigenes Denkmalschutzgesetz, in Bayern etwa das BayDSchG. Ein Einzeldenkmal schützt das Objekt selbst. Ein **::Ensemble-Denkmal::** schützt den Zusammenhang, also Straßenbild, Platzraum oder historische Gruppe, auch wenn einzelne Gebäude für sich weniger bedeutend erscheinen.
 
@@ -133,7 +133,7 @@ Das BayDSchG, insbesondere Art. 6, steht beispielhaft für die denkmalschutzrech
 
 Neubau, Bestand und Denkmal unterscheiden sich nicht nur in der Gestaltung, sondern in Datenlage, Genehmigung, Kostenreserve, Vertragsstruktur und BIM-Anforderungen. Das Leitbeispiel K7 ist bewusst ein MFH-Neubau, weil es viele Regelthemen bündelt; andere Projektarten verlangen andere Starts.
 
-Verwandte Kapitel: [Kap. 1](/chapters/01-architektur-als-system) · [Kap. 14](/chapters/14-planungsrecht) · [Kap. 15](/chapters/15-hoai) · [Kap. 24](/chapters/24-sanierung)
+Verwandte Kapitel: [Kap. 1](/chapters/01-architektur-als-system) · [Kap. 18](/chapters/18-planungsrecht-bauantrag) · [Kap. 19](/chapters/19-hoai-rollen-projektorganisation) · [Kap. 39](/chapters/39-sanierung)
 
 [^bausanierung-stahr]: Stahr (Hrsg.): *Bausanierung*, 4. Auflage.
 [^denkmal-und-energie]: Weller & Scheuring (Hrsg.): *Denkmal und Energie 2021*.

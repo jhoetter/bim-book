@@ -1,6 +1,6 @@
 # Kapitel 1 – Architektur als System
 
-*Teil I – Fundament*
+*Teil I – Fundament, Projektstart & Entwurf*
 
 ---
 
@@ -38,7 +38,7 @@ tags: schichtenmodell, systemdenken, kastanienallee7, lebensdauer
 ![Schichtenmodell eines Gebäudes](../assets/illustrations/kap01_schichtenmodell.png)
 
 !!! kastanienallee "Kastanienallee 7"
-    Am Leitbeispiel arbeiten mindestens sieben Planungsbereiche zusammen: Architektur, Tragwerksplanung, Brandschutz, Wärmeschutz, Schallschutz, Heizung/Lüftung/Sanitär und Elektro. Die Grundfläche beträgt ca. 20 m × 18 m = 360 m², darüber liegen 4 Vollgeschosse, Keller und Dachgeschoss. Schon diese einfache Kubatur erzeugt Schnittstellen: Stützenraster, Treppenhaus, Aufzug, Installationsschächte, Fassadenraster, Dachaufbau und Technikräume müssen räumlich zusammenpassen. Digitale Koordination wird deshalb nicht als Zusatz behandelt, sondern als gemeinsame Arbeitsbasis; die Methode folgt in [Kapitel 18](/chapters/18-was-bim-wirklich-ist), das Austauschformat in [Kapitel 19](/chapters/19-ifc).
+    Am Leitbeispiel arbeiten mindestens sieben Planungsbereiche zusammen: Architektur, Tragwerksplanung, Brandschutz, Wärmeschutz, Schallschutz, Heizung/Lüftung/Sanitär und Elektro. Die Grundfläche beträgt ca. 20 m × 18 m = 360 m², darüber liegen 4 Vollgeschosse, Keller und Dachgeschoss. Schon diese einfache Kubatur erzeugt Schnittstellen: Stützenraster, Treppenhaus, Aufzug, Installationsschächte, Fassadenraster, Dachaufbau und Technikräume müssen räumlich zusammenpassen. Digitale Koordination wird deshalb nicht als Zusatz behandelt, sondern als gemeinsame Arbeitsbasis; die Methode folgt in [Kapitel 33](/chapters/33-was-bim-wirklich-ist), das Austauschformat in [Kapitel 34](/chapters/34-ifc).
 
 ## 1.2 Das Schichtenmodell
 
@@ -54,7 +54,7 @@ Die Tragstruktur ist das dauerhafte Gerüst des Gebäudes. Dazu gehören Fundame
 
 Materialien sind häufig Stahlbeton, Mauerwerk, Stahl oder Holz. Im Wohnungsbau sind tragende Wände und Stahlbeton-Skelettsysteme verbreitet; im Büro- und Gewerbebau dominieren oft Skelettstrukturen, weil sie größere Grundrissfreiheit ermöglichen. Die Entwurfskonsequenz ist klar: Was tragend ist, muss früh stabil entschieden werden. Spätere Öffnungen, Versprünge oder Schachtverlegungen sind möglich, aber sie kosten Planung, Nachweise und meist Geld.
 
-Die Tragstruktur ist deshalb kein Hintergrundthema für Statiker allein. Sie bestimmt Spannweiten, Stützenpositionen, Raumtiefen, Treppenhauslage, Tiefgaragenraster und oft auch die Fassadenordnung. [Kapitel 4](/chapters/04-tragwerk) erklärt diese Lastwege im Detail.
+Die Tragstruktur ist deshalb kein Hintergrundthema für Statiker allein. Sie bestimmt Spannweiten, Stützenpositionen, Raumtiefen, Treppenhauslage, Tiefgaragenraster und oft auch die Fassadenordnung. [Kapitel 8](/chapters/08-tragwerk) erklärt diese Lastwege im Detail.
 
 Für Architekten ist wichtig, die Tragstruktur früh als Ordnungsraster zu lesen. Ein Stützenraster von 6 m wirkt auf Parkplätze, Wohnungsbreiten, Fassadenachsen und Leitungswege. Eine tragende Wand kann eine Wohnung klar gliedern, aber auch spätere Zusammenlegungen verhindern. Ein aussteifender Kern ist räumlich effizient, aber er fixiert Treppe, Aufzug, Schächte und häufig auch die Rettungswege. Die Tragstruktur ist damit die langsamste Schicht und zugleich eine der stärksten Entwurfsentscheidungen.
 
@@ -64,7 +64,7 @@ Die Gebäudehülle trennt innen von außen. Sie besteht aus Außenwänden, Fenst
 
 Die Hülle ist gleichzeitig Wetterschutz, Wärmeschutz, Schallschutz, Brandschutz, gestalterisches Gesicht und Schnittstelle zur Stadt. Ihre Materialien reichen von Putzsystemen über Klinker, Vorhangfassaden und Holzfassaden bis zu Glas und Metall. Entwurflich ist sie besonders empfindlich, weil sie viele Anforderungen auf engem Raum bündelt: Dämmung braucht Dicke, Fenster brauchen Anschlüsse, Sonnenschutz braucht Führung, Entwässerung braucht Gefälle, und jedes Detail muss Regen, Wind und Temperaturwechsel aushalten.
 
-In digitalen Modellen darf die Hülle deshalb nicht nur als "Wand" erscheinen. Ein Außenwandtyp trägt andere Informationen als eine Wohnungstrennwand: Schichtaufbau, U-Wert, Feuerwiderstand, Außenbezug, Material, Anschlussdetails. Diese Vertiefung folgt in [Kapitel 5](/chapters/05-konstruktion) und [Kapitel 6](/chapters/06-waermeschutz-geg).
+In digitalen Modellen darf die Hülle deshalb nicht nur als "Wand" erscheinen. Ein Außenwandtyp trägt andere Informationen als eine Wohnungstrennwand: Schichtaufbau, U-Wert, Feuerwiderstand, Außenbezug, Material, Anschlussdetails. Diese Vertiefung folgt in [Kapitel 9](/chapters/09-konstruktion) und [Kapitel 10](/chapters/10-waermeschutz-geg).
 
 Die Hülle ist außerdem die Schicht mit den meisten Detailrisiken. Fast jeder Schaden an Gebäuden entsteht an Übergängen: Fensterlaibung, Balkonanschluss, Dachrand, Sockel, Attika, Durchdringung, Fuge. In der Systemlogik bedeutet das: Die Gebäudehülle ist nicht nur Fläche, sondern eine Kette von Anschlüssen. Wer sie nur im großen Maßstab entwirft, übersieht die Punkte, an denen Wasser, Wärme, Schall oder Feuer den Weg durch das Gebäude finden.
 
@@ -74,7 +74,7 @@ Die ::TGA:: ist die technische Infrastruktur des Gebäudes. Sie transportiert W�
 
 Zur ::TGA:: gehören nicht nur sichtbare Geräte wie Heizkreisverteiler oder Lüftungsventile. Entscheidend sind die unsichtbaren Wege: Schächte, Trassen, Deckenzwischenräume, Durchbrüche, Brandschutzabschottungen und Wartungszonen. Ein guter Entwurf plant Technik nicht erst ein, wenn die Räume fertig sind, sondern legt Raum, Struktur und Technik gemeinsam an.
 
-Für BIM-Anwendungen ist die ::TGA:: besonders datenintensiv. Ein Luftkanal hat Querschnitt, Volumenstrom, Druckverlust, Brandschutzanforderung und Zugehörigkeit zu einem System. Eine Leuchte hat Leistung, Schaltung, Raumzuordnung und Wartungsinformation. Die Grundlagen dazu stehen in [Kapitel 10](/chapters/10-heizung-waermeversorgung), [Kapitel 11](/chapters/11-lueftung), [Kapitel 12](/chapters/12-sanitaer) und [Kapitel 13](/chapters/13-elektro).
+Für BIM-Anwendungen ist die ::TGA:: besonders datenintensiv. Ein Luftkanal hat Querschnitt, Volumenstrom, Druckverlust, Brandschutzanforderung und Zugehörigkeit zu einem System. Eine Leuchte hat Leistung, Schaltung, Raumzuordnung und Wartungsinformation. Die Grundlagen dazu stehen in [Kapitel 14](/chapters/14-heizung-waermeversorgung), [Kapitel 15](/chapters/15-lueftung), [Kapitel 16](/chapters/16-sanitaer) und [Kapitel 17](/chapters/17-elektro).
 
 Gute ::TGA::-Planung beginnt nicht mit Geräten, sondern mit Wegen. Wo steigen Medien vertikal? Wo können horizontale Trassen geführt werden? Welche Deckenbereiche bleiben frei? Welche Bauteile dürfen nicht durchdrungen werden? Diese Fragen wirken unscheinbar, bestimmen aber den Bauablauf. Ein sauberer Schacht spart nicht nur Leitungslänge, sondern reduziert Kollisionen, Brandschutzdetails und spätere Wartungsprobleme.
 
@@ -122,21 +122,21 @@ Ein guter Planungsprozess hält diese Abhängigkeiten sichtbar. Er dokumentiert 
 
 ## 1.4 Wie dieses Buch aufgebaut ist
 
-Dieses Buch folgt der Logik des Gebäudes. Teil I legt das Fundament: Dieses Kapitel erklärt das System, [Kapitel 2](/chapters/02-entwurf-raum-funktion) erklärt Entwurf, Raum, Planlesen und grundlegende Flächenkennwerte. Danach werden die Schichten fachlich vertieft.
+Dieses Buch folgt der Logik des Gebäudes. Teil I legt das Fundament: Dieses Kapitel erklärt das System, [Kapitel 6](/chapters/06-plaene-raum-funktion-entwurfslogik) erklärt Entwurf, Raum, Planlesen und grundlegende Flächenkennwerte. Danach werden die Schichten fachlich vertieft.
 
-Teil II behandelt den Baukörper. [Kapitel 3](/chapters/03-baustoffe) erklärt Materialien, [Kapitel 4](/chapters/04-tragwerk) die Lastabtragung, [Kapitel 5](/chapters/05-konstruktion) die konstruktiven Aufbauten von Gründung, Wand, Decke und Dach. Diese Kapitel gehören zur dauerhaften und mittelfristigen Substanz des Gebäudes.
+Teil II behandelt den Baukörper. [Kapitel 7](/chapters/07-baustoffe) erklärt Materialien, [Kapitel 8](/chapters/08-tragwerk) die Lastabtragung, [Kapitel 9](/chapters/09-konstruktion) die konstruktiven Aufbauten von Gründung, Wand, Decke und Dach. Diese Kapitel gehören zur dauerhaften und mittelfristigen Substanz des Gebäudes.
 
-Teil III behandelt die bauphysikalischen Anforderungen an Hülle und Räume. [Kapitel 6](/chapters/06-waermeschutz-geg) erklärt Wärmeschutz, [Kapitel 7](/chapters/07-feuchteschutz) den Feuchteschutz, [Kapitel 8](/chapters/08-schallschutz) den Schallschutz und [Kapitel 9](/chapters/09-brandschutz) den Brandschutz. Diese Themen sind nicht Dekoration am Ende, sondern Kriterien, die Entwurf und Konstruktion formen.
+Teil III behandelt die bauphysikalischen Anforderungen an Hülle und Räume. [Kapitel 10](/chapters/10-waermeschutz-geg) erklärt Wärmeschutz, [Kapitel 11](/chapters/11-feuchteschutz) den Feuchteschutz, [Kapitel 12](/chapters/12-schallschutz) den Schallschutz und [Kapitel 13](/chapters/13-brandschutz) den Brandschutz. Diese Themen sind nicht Dekoration am Ende, sondern Kriterien, die Entwurf und Konstruktion formen.
 
-Teil IV widmet sich der ::TGA::. [Kapitel 10](/chapters/10-heizung-waermeversorgung) behandelt Heizung und Wärmeversorgung, [Kapitel 11](/chapters/11-lueftung) Lüftung, [Kapitel 12](/chapters/12-sanitaer) Sanitär und Entwässerung, [Kapitel 13](/chapters/13-elektro) Elektro und Gebäudeautomation. Hier wird sichtbar, wie stark Technik den Raum braucht.
+Teil IV widmet sich der ::TGA::. [Kapitel 14](/chapters/14-heizung-waermeversorgung) behandelt Heizung und Wärmeversorgung, [Kapitel 15](/chapters/15-lueftung) Lüftung, [Kapitel 16](/chapters/16-sanitaer) Sanitär und Entwässerung, [Kapitel 17](/chapters/17-elektro) Elektro und Gebäudeautomation. Hier wird sichtbar, wie stark Technik den Raum braucht.
 
-Teil V folgt dem Projektprozess. [Kapitel 14](/chapters/14-planungsrecht) ordnet Planungsrecht und Bauantrag ein, [Kapitel 15](/chapters/15-hoai) die Leistungsphasen, Ausführungsplanung und Honorare, [Kapitel 16](/chapters/16-kosten-ausschreibung) Kosten, Ausschreibung und Vergabe, [Kapitel 17](/chapters/17-bauprojektmanagement-bauoberleitung) Bauprojektmanagement und Bauoberleitung. Diese Themen wirken trocken, entscheiden aber, ob ein Entwurf genehmigungsfähig, beauftragbar und baubar ist.
+Teil V folgt dem Projektprozess. [Kapitel 18](/chapters/18-planungsrecht-bauantrag) ordnet Planungsrecht und Bauantrag ein, [Kapitel 19](/chapters/19-hoai-rollen-projektorganisation) die Leistungsphasen, Ausführungsplanung und Honorare, [Kapitel 23](/chapters/23-kostenplanung-mengen-din276) Kosten, Ausschreibung und Vergabe, [Kapitel 29](/chapters/29-bauoberleitung-baukontrolle-maengelmanagement) Bauprojektmanagement und Bauoberleitung. Diese Themen wirken trocken, entscheiden aber, ob ein Entwurf genehmigungsfähig, beauftragbar und baubar ist.
 
-Teil VI führt in die digitale Methode. [Kapitel 18](/chapters/18-was-bim-wirklich-ist) erklärt, was BIM als Arbeitsweise bedeutet. [Kapitel 19](/chapters/19-ifc) erklärt IFC als offene Datenstruktur. [Kapitel 20](/chapters/20-klassifikation) behandelt Klassifikation, [Kapitel 21](/chapters/21-prozess-kollaboration) Zusammenarbeit und gemeinsame Datenumgebungen, [Kapitel 22](/chapters/22-bim-praxis) die Anwendung in der Praxis.
+Teil VI führt in die digitale Methode. [Kapitel 33](/chapters/33-was-bim-wirklich-ist) erklärt, was BIM als Arbeitsweise bedeutet. [Kapitel 34](/chapters/34-ifc) erklärt IFC als offene Datenstruktur. [Kapitel 35](/chapters/35-klassifikation) behandelt Klassifikation, [Kapitel 36](/chapters/36-prozess-kollaboration) Zusammenarbeit und gemeinsame Datenumgebungen, [Kapitel 37](/chapters/37-bim-praxis) die Anwendung in der Praxis.
 
-Teil VII weitet den Blick auf Zukunfts- und Bestandsthemen. [Kapitel 23](/chapters/23-nachhaltigkeit) behandelt Nachhaltigkeit und Kreislaufwirtschaft, [Kapitel 24](/chapters/24-sanierung) die Sanierung, [Kapitel 25](/chapters/25-projektarten-neubau-bestand-denkmal) Projektarten, [Kapitel 26](/chapters/26-digitaler-zwilling-ki) digitale Zwillinge und KI. Auch diese Themen lassen sich besser verstehen, wenn man das Gebäude vorher als Schichtsystem gelesen hat.
+Teil VII weitet den Blick auf Zukunfts- und Bestandsthemen. [Kapitel 38](/chapters/38-nachhaltigkeit) behandelt Nachhaltigkeit und Kreislaufwirtschaft, [Kapitel 39](/chapters/39-sanierung) die Sanierung, [Kapitel 40](/chapters/40-projektarten-neubau-bestand-denkmal) Projektarten, [Kapitel 41](/chapters/41-digitaler-zwilling-ki) digitale Zwillinge und KI. Auch diese Themen lassen sich besser verstehen, wenn man das Gebäude vorher als Schichtsystem gelesen hat.
 
-Das Leitbeispiel ist bewusst ein Mehrfamilienhaus und kein Einfamilienhaus, Krankenhaus oder Denkmal. Ein MFH wie die Kastanienallee 7 ist komplex genug für Brandschutz, Aufzug, TGA-Koordination, Ausschreibung, Bauoberleitung und BIM, aber noch überschaubar genug, um die Zusammenhänge Schritt für Schritt zu verfolgen. Andere Projektarten verändern den Startpunkt und die Risiken; [Kapitel 25](/chapters/25-projektarten-neubau-bestand-denkmal) ordnet diese Unterschiede später systematisch ein.
+Das Leitbeispiel ist bewusst ein Mehrfamilienhaus und kein Einfamilienhaus, Krankenhaus oder Denkmal. Ein MFH wie die Kastanienallee 7 ist komplex genug für Brandschutz, Aufzug, TGA-Koordination, Ausschreibung, Bauoberleitung und BIM, aber noch überschaubar genug, um die Zusammenhänge Schritt für Schritt zu verfolgen. Andere Projektarten verändern den Startpunkt und die Risiken; [Kapitel 40](/chapters/40-projektarten-neubau-bestand-denkmal) ordnet diese Unterschiede später systematisch ein.
 
 ## BIM-Brücke: Schichten als Modellstruktur
 
@@ -155,4 +155,4 @@ Für Entwickler ist das die entscheidende Übersetzung: Eine Gebäudeschicht wir
 
 Das Schichtenmodell hilft, Komplexität zu ordnen, ohne sie zu verharmlosen. Es zeigt, warum Tragstruktur, Hülle, ::TGA:: und Innenausbau getrennt betrachtet, aber gemeinsam koordiniert werden müssen. Diese Denkweise trägt durch das gesamte Buch und bildet später die Brücke zu BIM und IFC.
 
-Verwandte Kapitel: [Kap. 2](/chapters/02-entwurf-raum-funktion) · [Kap. 4](/chapters/04-tragwerk) · [Kap. 5](/chapters/05-konstruktion) · [Kap. 18](/chapters/18-was-bim-wirklich-ist) · [Kap. 19](/chapters/19-ifc)
+Verwandte Kapitel: [Kap. 6](/chapters/06-plaene-raum-funktion-entwurfslogik) · [Kap. 8](/chapters/08-tragwerk) · [Kap. 9](/chapters/09-konstruktion) · [Kap. 33](/chapters/33-was-bim-wirklich-ist) · [Kap. 34](/chapters/34-ifc)

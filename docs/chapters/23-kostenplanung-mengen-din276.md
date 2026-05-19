@@ -1,6 +1,6 @@
-# Kapitel 16 – Kosten & Ausschreibung
+# Kapitel 23 – Kostenplanung, Mengen & DIN 276
 
-*Teil V – Projektprozess*
+*Teil VI – Ausschreibung, Vergabe & Bauvorbereitung*
 
 ---
 
@@ -13,7 +13,7 @@ Ein Entwurf wird erst baubar, wenn jemand ihn bepreisen, anbieten und ausführen
     - den Aufbau eines Leistungsverzeichnisses erklären
     - Vergabepraxis, VOB, Nachträge und Bauablauf als Projektrisiken einordnen
 
-## 16.1 Kostenermittlung nach DIN 276
+## 23.1 Kostenermittlung nach DIN 276
 
 ::DIN 276:: gliedert Kosten in Kostengruppen. KG 100 betrifft Grundstück, KG 200 vorbereitende Maßnahmen, KG 300 Baukonstruktion, KG 400 technische Anlagen, KG 500 Außenanlagen, KG 600 Ausstattung, KG 700 Baunebenkosten. Für Planung und Steuerung sind KG 300 und 400 meist die größten Blöcke.
 
@@ -32,7 +32,7 @@ tags: din276, kosten, kostengruppe, baukosten
 !!! kastanienallee "Kastanienallee 7"
     Überschlägige Kostenschätzung: BGF 1.800 m² × 3.200 €/m² = 5.760.000 €. Davon beispielhaft KG 300 Baukonstruktion 55 % = 3,17 Mio. €, KG 400 technische Anlagen 25 % = 1,44 Mio. €, KG 500 Außenanlagen 5 % = 0,29 Mio. €, KG 700 Baunebenkosten 15 % = 0,86 Mio. €. Die Rechnung ist grob, zeigt aber die Größenordnung.
 
-## 16.2 Leistungsverzeichnis und Ausschreibung
+## 23.2 Leistungsverzeichnis und Ausschreibung
 
 Ein ::LV:: zerlegt das Gebäude in Positionen. Jede Position hat Ordnungszahl, Menge, Einheit, Kurz- und Langtext, Einheitspreis und Gesamtpreis. Standardleistungsbuch Bau hilft, Leistungen eindeutig zu beschreiben. Mengen kommen aus Plänen, Modellen oder manuellen Aufmaßen.
 
@@ -50,7 +50,7 @@ tags: lv, ausschreibung, stlb, kosten
 -->
 ![LV Auszug](../assets/illustrations/kap16_lv_auszug.png)
 
-## 16.3 Vergabepraxis und Angebotsprüfung
+## 23.3 Vergabepraxis und Angebotsprüfung
 
 Nach Eingang der Angebote beginnt nicht automatisch die Auswahl des billigsten Bieters. Zuerst werden die Angebote formal und rechnerisch geprüft: Sind alle Positionen bepreist? Stimmen Summen und Nachlässe? Gibt es offensichtliche Rechenfehler, ungewöhnlich niedrige Einheitspreise oder fehlende Unterlagen? Danach folgt die technische und wirtschaftliche Wertung.
 
@@ -63,7 +63,7 @@ Die Vergabestruktur ist eine frühe strategische Entscheidung. Einzelvergabe gib
 !!! kastanienallee "Kastanienallee 7"
     Für K7 werden Rohbau, Dach, Fassade, TGA und Ausbau als Einzelgewerke ausgeschrieben. Der Architekt erstellt nach Submission einen Preisspiegel. Beim Rohbau ist Bieter 2 insgesamt 6 % günstiger, hat aber extrem niedrige Einheitspreise für Betonstahl und hohe Stundenlohnansätze. Im Bietergespräch wird geklärt, ob die Bewehrungsmengen verstanden wurden. Der Zuschlag geht nicht automatisch an den ersten Gesamtpreis, sondern an das wirtschaftlichste, technisch plausible Angebot.
 
-## 16.4 VOB/B Grundlagen
+## 23.4 VOB/B Grundlagen
 
 Die **Vergabe- und Vertragsordnung für Bauleistungen** (::VOB::) regelt Vergabe und Vertragsbedingungen für Bauleistungen. VOB/A betrifft Vergabe, VOB/B allgemeine Vertragsbedingungen, VOB/C technische Vertragsbedingungen. Im Bauvertrag begegnen vor allem Einheitspreisvertrag, Pauschalvertrag und Generalunternehmervertrag.
 
@@ -72,7 +72,7 @@ Nachträge entstehen, wenn Leistungen geändert oder zusätzlich angeordnet werd
 !!! kastanienallee "Kastanienallee 7"
     Für K7 werden Einheitspreisverträge für Rohbau und TGA-Gewerke angenommen. Die GU-Option wurde geprüft, aber wegen gewünschter Kostentransparenz verworfen. Vorteil: Der Bauherr sieht gewerkeweise Preise. Nachteil: Koordination und Schnittstellen bleiben stärker beim Planungsteam und der Bauleitung.
 
-## 16.5 Baustellenablauf und Gewerkekoordination
+## 23.5 Baustellenablauf und Gewerkekoordination
 
 Die Reihenfolge der ::Gewerk:: ist nicht beliebig. Grob: Baustelleneinrichtung, Erdarbeiten, Gründung, Rohbau, Dach und Hülle, technische Rohinstallation, Innenputz, Estrich, Trockenbau, Ausbau, Oberflächen, Inbetriebnahme. Manche Reihenfolgen variieren, aber Feuchte, Zugänglichkeit und Abhängigkeiten setzen Grenzen.
 
@@ -80,7 +80,7 @@ Ein Bauzeitenplan zeigt Vorgänge als Balken und Abhängigkeiten. Der kritische 
 
 Behinderungsanzeigen dokumentieren, wenn eine Firma wegen fehlender Vorleistung nicht arbeiten kann. Mängelprotokolle halten Abweichungen und Fristen fest. Abnahme erfolgt je ::Gewerk:: und am Ende als Gesamtprozess. Baustelleneinrichtungsplan, Kranstandort, Materiallager und Zufahrt sind praktische Kosten- und Zeitfaktoren.
 
-## 16.6 Vom Modell zur Baustelle
+## 23.6 Vom Modell zur Baustelle
 
 Kosten und Ausschreibung sind die Stelle, an der Planung in Verträge übersetzt wird. Ein Modell kann Mengen liefern, aber es liefert nicht automatisch eine baubare Leistung. Eine Wandmenge sagt noch nicht, welche Nebenleistungen, Anschlüsse, Gerüste, Schutzmaßnahmen, Toleranzen oder Ausführungsbedingungen enthalten sind. Das ::LV:: schließt diese Lücke.
 
@@ -95,7 +95,7 @@ Nachträge entstehen oft dort, wo Planung, ::LV:: und Baustelle nicht deckungsgl
 !!! kastanienallee "Kastanienallee 7"
     Für K7 kann das Modell die Menge einer ::Außenwand:: liefern: Länge × Höhe × Schichtaufbau. Das ::LV:: muss daraus aber Positionen machen: Stahlbetonwand, Dämmung, Armierungsputz, Oberputz, Fensterlaibungen, Sockelanschluss, Gerüst, Schutzmaßnahmen. Wenn 420 m² Fassadenfläche modelliert sind, können die abrechenbaren Putzflächen wegen Laibungen und Öffnungsabzügen abweichen. Diese Differenz muss kalkulatorisch verstanden werden.
 
-## 16.7 Prüffragen für die Praxis
+## 23.7 Prüffragen für die Praxis
 
 Kostenplanung braucht eine klare Bezugsgröße. Wird nach BGF, Wohnfläche, Nutzfläche oder Bauteilmengen verglichen? Sind Kostengruppen nach ::DIN 276:: vollständig? Sind KG 300 und KG 400 getrennt, aber koordiniert? Sind Außenanlagen, Baunebenkosten, Risikopuffer und Preissteigerungen enthalten? Viele frühe Kostenschätzungen wirken präzise, weil sie Zahlen haben, sind aber unvollständig.
 
@@ -105,7 +105,7 @@ Mengen aus dem Modell sollten nie blind übernommen werden. Öffnungen, Laibunge
 
 Der Bauablauf ergänzt die Kosten. Eine günstige Lösung kann teuer werden, wenn sie den kritischen Pfad verlängert oder viele Folgegewerke blockiert. Umgekehrt kann ein teureres Fertigteil wirtschaftlich sein, wenn es Bauzeit spart und Qualität erhöht. Kosten, Termine und Qualität sind keine getrennten Tabellen, sondern Projektentscheidungen mit Wechselwirkungen.
 
-## 16.8 Entwicklerperspektive
+## 23.8 Entwicklerperspektive
 
 ::5D-BIM:: klingt nach automatischer Kostenberechnung, ist aber vor allem ein Mapping-Problem. Modellobjekte müssen auf Kostengruppen, Leistungspositionen und Abrechnungsregeln abgebildet werden. Eine Wand kann im Modell ein Objekt sein, in der Kostenplanung eine ::Kostengruppe:: und im ::LV:: mehrere Positionen. Software muss diese Ebenen trennen.
 
@@ -135,4 +135,4 @@ DIN 276 liefert die Kostengliederung und die Begriffe der Kostenermittlung. Die 
 
 ::DIN 276:: ordnet, das ::LV:: beschreibt, die ::VOB:: regelt, der Bauzeitenplan koordiniert. Wer Kosten aus dem Modell ableiten will, braucht nicht nur Geometrie, sondern klassifizierte, vollständig beschriebene Bauteile.
 
-Verwandte Kapitel: [Kap. 15](/chapters/15-hoai) · [Kap. 17](/chapters/17-bauprojektmanagement-bauoberleitung) · [Kap. 20](/chapters/20-klassifikation) · [Kap. 22](/chapters/22-bim-praxis)
+Verwandte Kapitel: [Kap. 19](/chapters/19-hoai-rollen-projektorganisation) · [Kap. 29](/chapters/29-bauoberleitung-baukontrolle-maengelmanagement) · [Kap. 35](/chapters/35-klassifikation) · [Kap. 37](/chapters/37-bim-praxis)

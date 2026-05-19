@@ -1,0 +1,72 @@
+# Kapitel 31 – Inbetriebnahme, Abnahme & Übergabe
+
+*Teil VII – Bauausführung, Übergabe & Betriebsvorbereitung*
+
+---
+
+Ein Gebäude ist nicht fertig, nur weil die Oberflächen sauber aussehen. Technik muss funktionieren, Nachweise müssen vorliegen, Nutzer müssen eingewiesen sein, und die Abnahme verändert die Rechtslage.
+Übergabe ist ein eigener Prozess, kein Schlusspunkt am letzten Bautag.
+
+---
+
+!!! ziel "Nach diesem Kapitel können Sie …"
+    - die wichtigsten Arbeitsschritte dieses Prozessabschnitts einordnen
+    - typische Dokumente, Entscheidungen und Fehler erkennen
+    - die BIM- und Datenbrücke zur praktischen Projektsteuerung erklären
+
+## 31.1 Inbetriebnahme der TGA
+
+Heizung, Lüftung, Sanitär, Elektro, Gebäudeautomation und Aufzug müssen geprüft, eingestellt und dokumentiert werden. Dazu gehören Funktionsprüfungen, Einregulierung, Probebetrieb, Messprotokolle und Störungsprüfung. Besonders bei KWL und Fernwärme reicht es nicht, Geräte einzubauen; sie müssen im Betrieb die geplanten Werte erreichen.
+
+<!-- IMAGE
+name: kap31_inbetriebnahme_uebergabe
+type: diagram
+size: landscape
+desc: Inbetriebnahme, Abnahme & Übergabe: visuelle Darstellung des Abschnitts 31.1 Inbetriebnahme der TGA mit konkreten K7-Bezügen, Dokumentenstatus und Entscheidungslogik. Weißer Hintergrund, deutsche Beschriftungen, technisch-clean, keine Personen.
+caption: 31.1 Inbetriebnahme der TGA
+tags: kap31, inbetriebnahme, uebergabe
+-->
+![31.1 Inbetriebnahme der TGA](../assets/illustrations/kap31_inbetriebnahme_uebergabe.png)
+
+## 31.2 Revisionsunterlagen
+
+Revisionsunterlagen zeigen, was tatsächlich gebaut wurde. Dazu gehören Pläne, Schemata, Bedienungsanleitungen, Wartungsunterlagen, Prüfprotokolle, Produktdaten, Seriennummern und Anlagenkennzeichnungen. Ohne diese Unterlagen kann der Betreiber das Gebäude nicht sicher und wirtschaftlich betreiben.
+
+!!! kastanienallee "Kastanienallee 7"
+    Bei K7 werden KWL-Geräte je Wohnung einreguliert, die Fernwärmeübergabestation geprüft, der Aufzug abgenommen und Brandschutztüren kontrolliert. Erst wenn Prüfprotokolle, Revisionsunterlagen und Restmängelliste vorliegen, kann die Übergabe geordnet stattfinden.
+
+## 31.3 Abnahme
+
+Die Abnahme ist der rechtliche Wendepunkt. Leistungen werden als im Wesentlichen vertragsgerecht akzeptiert, Gewährleistungsfristen beginnen und Beweislasten verändern sich. Wesentliche Mängel können zur Abnahmeverweigerung führen, unwesentliche Mängel werden mit Vorbehalt und Frist dokumentiert.
+
+<!-- IMAGE
+name: kap31_revisionsunterlagenliste
+type: infographic
+size: landscape
+desc: Inbetriebnahme, Abnahme & Übergabe: zweites Praxisartefakt mit Tabellen, Pfeilen, Statusfeldern und klaren deutschen Labels. Weißer Hintergrund, deutsche Beschriftungen, technisch-clean, keine Personen.
+caption: 31.3 Abnahme
+tags: kap31, revisionsunterlagenliste
+-->
+![31.3 Abnahme](../assets/illustrations/kap31_revisionsunterlagenliste.png)
+
+## 31.4 Übergabe an Nutzer und Betreiber
+
+Zur Übergabe gehören Schlüssel, Zählerstände, Einweisungen, Wartungsverträge, Bedienungsunterlagen, Restmängelliste und Ansprechpartner. Nutzer brauchen andere Informationen als Betreiber. Eine Wohnungsübergabe erklärt Oberflächen und Bedienung; eine Betreiberübergabe erklärt Anlagen, Wartung und Dokumentation.
+
+## BIM-Brücke
+
+Die digitale Brücke liegt nicht darin, den analogen Ablauf nur als PDF abzulegen. Sie liegt darin, Vorgänge, Modelle, Dokumente, Entscheidungen und Verantwortlichkeiten miteinander zu verbinden. Ein Issue braucht Ort, Bauteil, Status, Frist und Verantwortlichen. Ein Plan braucht Index und Freigabestatus. Ein Modellobjekt braucht die Information, ob es Entwurf, Ausschreibung, Ausführung oder as-built beschreibt.
+
+Für Softwareentwickler ist diese Unterscheidung zentral: Nicht jedes Projektproblem ist ein Geometrieproblem. Viele Probleme sind Status-, Verantwortungs-, Nachweis- oder Vertragsprobleme. Gute BIM-Werkzeuge machen diese Zustände sichtbar, ohne fachliche Prüfung vorzutäuschen.
+
+## Normen und Grundlagen
+
+Je nach Kapitel wirken ::HOAI::, ::VOB::, Landesbauordnung, BauGB, BauNVO, DIN 276, DIN 277, ISO 19650 und projektspezifische Vertragsunterlagen. Entscheidend ist nicht nur, die Norm zu nennen, sondern zu verstehen, wofür sie im Prozess verwendet wird: als Leistungsbild, Kostengliederung, Nachweisgrundlage, Vertragsregel oder Informationsmanagement.
+
+## Zusammenfassung
+
+**Inbetriebnahme, Abnahme & Übergabe ist ein eigener Arbeitsabschnitt, weil hier konkrete Entscheidungen, Dokumente und Verantwortlichkeiten entstehen.**
+
+Wer diesen Abschnitt nur als Nebensatz im Gesamtprozess behandelt, verliert die praktischen Stellen, an denen Projekte teuer, langsam oder unklar werden. Die saubere Verbindung von Dokumentation, Entscheidung und Modell macht den Ablauf beherrschbar.
+
+Verwandte Kapitel: [Kap. 19](/chapters/19-hoai-rollen-projektorganisation) · [Kap. 36](/chapters/36-prozess-kollaboration) · [Kap. 41](/chapters/41-digitaler-zwilling-ki)

@@ -1,4 +1,4 @@
-# Kapitel 9 – Brandschutz
+# Kapitel 13 – Brandschutz
 
 *Teil III – Bauphysik*
 
@@ -13,7 +13,7 @@ Brandschutz ist im Alltag unsichtbar. Eine Tür schließt, ein Treppenhaus bleib
     - ::Gebäudeklasse:: nach MBO auf Grundanforderungen beziehen
     - Rettungswege und Brandabschnitte im Grundriss lesen
 
-## 9.1 Baustoffklassen
+## 13.1 Baustoffklassen
 
 ::Baustoffklasse:: beschreiben das Brandverhalten eines Materials. Europäische Klassen reichen von A1 und A2 für nichtbrennbare Baustoffe bis F für nicht klassifizierte oder leicht problematische Materialien. Zusätze wie s1, s2, s3 beschreiben Rauchentwicklung, d0 bis d2 brennendes Abtropfen.
 
@@ -26,7 +26,7 @@ Die ältere deutsche Systematik kennt A1/A2 für nichtbrennbar, B1 schwer entfla
 | B/C | brennbar, begrenzt beitragend | behandelte Holzwerkstoffe |
 | D/E | normal bis leicht entflammbar | viele Kunststoffe, unbehandeltes ::Holz:: je Produkt |
 
-## 9.2 Feuerwiderstandsklassen
+## 13.2 Feuerwiderstandsklassen
 
 ::Baustoffklasse:: betreffen Materialverhalten. ::Feuerwiderstandsklasse:: betreffen Bauteile. **::REI::** beschreibt drei Anforderungen: R für Tragfähigkeit, E für Raumabschluss, I für Wärmedämmung. REI 90 bedeutet, dass ein Bauteil diese Funktionen 90 Minuten unter Brandprüfung erfüllt.
 
@@ -34,11 +34,11 @@ Die ältere Bezeichnung F30, F60, F90 wird im Bestand und in der Praxis noch hä
 
 Brandschutz ist deshalb immer Bauteil plus Detail. Eine Wand mit hoher ::Feuerwiderstandsklasse:: verliert ihre Wirkung, wenn Leitungsdurchführungen nicht abgeschottet sind oder Türen offenstehen.
 
-## 9.3 Gebäudeklassen nach MBO
+## 13.3 Gebäudeklassen nach MBO
 
 Die ::MBO:: ordnet Gebäude in ::Gebäudeklasse:: ein. GK 1 umfasst kleine freistehende Gebäude, GK 2 kleinere Gebäude mit mehreren Nutzungseinheiten, GK 3 sonstige Gebäude niedriger Höhe, GK 4 Gebäude bis 13 m Höhe und Nutzungseinheiten bis 400 m², GK 5 größere Gebäude bis zur Hochhausgrenze. Sonderbauten werden gesondert betrachtet.
 
-Mit steigender ::Gebäudeklasse:: steigen Anforderungen an tragende Bauteile, Brandwände, Decken, Treppenräume und Rettungswege. Die ::Gebäudeklasse:: ist deshalb kein Etikett, sondern ein Schalter für viele Regeln. [Kapitel 2](/chapters/02-entwurf-raum-funktion) hat sie eingeführt; hier wird sie brandschutztechnisch wirksam.
+Mit steigender ::Gebäudeklasse:: steigen Anforderungen an tragende Bauteile, Brandwände, Decken, Treppenräume und Rettungswege. Die ::Gebäudeklasse:: ist deshalb kein Etikett, sondern ein Schalter für viele Regeln. [Kapitel 6](/chapters/06-plaene-raum-funktion-entwurfslogik) hat sie eingeführt; hier wird sie brandschutztechnisch wirksam.
 
 <!-- IMAGE
 name: kap09_gebaeudeklassen
@@ -53,7 +53,7 @@ tags: brandschutz, mbo, gebäudeklassen, rei
 !!! kastanienallee "Kastanienallee 7"
     Kastanienallee 7 wird als ::Gebäudeklasse:: 4 eingeordnet: 4 Vollgeschosse, oberster Aufenthaltsraum unter 13 m, Nutzungseinheiten unter 400 m². Daraus folgen robuste Anforderungen an tragende Bauteile und Decken, ein notwendiger Treppenraum mit Rauchabzug und feuerwiderstandsfähige Trennungen. Zur Nachbarbebauung werden Brandwand- beziehungsweise Gebäudeabschlusswand-Anforderungen geprüft.
 
-## 9.4 Brandabschnitte und Rettungswege
+## 13.4 Brandabschnitte und Rettungswege
 
 Brandabschnitte begrenzen die Ausbreitung von Feuer und Rauch. Brandwände und feuerwiderstandsfähige Decken verhindern, dass ein Brand schnell auf andere Gebäudeteile übergreift. Rettungswege ermöglichen, dass Menschen das Gebäude verlassen und die Feuerwehr angreifen kann.
 
@@ -72,13 +72,13 @@ tags: rettungsweg, treppenhaus, brandschutz, brandabschnitt
 !!! kastanienallee "Kastanienallee 7"
     Alle vier Wohnungen je Geschoss liegen direkt am Treppenhauskern. Die längste angenommene Fluchtweglinie von Wohnungseingangstür zum Treppenraum beträgt ca. 18 m und bleibt damit deutlich unter 35 m. Der Aufzug zählt nicht als ::Rettungsweg::. Er liegt im Kern, wird aber brandschutztechnisch vom Treppenraum und den Nutzungseinheiten getrennt.
 
-## 9.5 Sonderfälle
+## 13.5 Sonderfälle
 
 Tiefgaragen haben eigene Risiken: Fahrzeuge, Treibstoffe, Batterien, Rauch und CO. Sie brauchen Lüftung, Brandabschnitte, Rettungswege und je nach Größe zusätzliche Anlagen. Bei mehr als 1.000 m² können Sprinkler oder besondere Lüftungsanforderungen relevant werden.
 
 Holzbau braucht Kapselung, Abbrandbemessung und saubere Anschlussdetails. Eine Abbrandrate von etwa 0,65 mm/min hilft bei der Bemessung, ersetzt aber nicht das Brandschutzkonzept. Bei Gebäuden mit mehreren Geschossen, besonderer Nutzung, Tiefgarage oder Abweichungen sollte ein Brandschutzplaner früh beteiligt werden.
 
-## 9.6 Brandschutz im Grundriss lesen
+## 13.6 Brandschutz im Grundriss lesen
 
 Ein Brandschutzkonzept wirkt abstrakt, bis man es in einem Grundriss verfolgt. Dann wird sichtbar, dass Brandschutz räumlich ist. Jede Nutzungseinheit braucht einen ersten ::Rettungsweg::. Der Weg muss zu einem geschützten Bereich führen, meist dem notwendigen Treppenraum. Türen entlang dieses Weges haben bestimmte Anforderungen. Schächte dürfen Rauch und Feuer nicht unkontrolliert über Geschosse verteilen. Decken und Wände müssen Brandabschnitte wirksam trennen.
 
@@ -92,7 +92,7 @@ Der Aufzug zeigt das klar. Er verbessert Barrierefreiheit und Alltag, ist aber k
 
 Im BIM-Modell sollte Brandschutz nicht nur als PDF-Konzept neben dem Modell liegen. Brandabschnitte können als Räume oder Zonen modelliert werden, Bauteile tragen `FireRating`, Türen tragen Rauchschutz- und Selbstschließanforderungen. Prüfregeln können dann fehlende Angaben, falsche Türöffnungsrichtungen oder zu lange Wege melden. Die juristische Bewertung bleibt beim Fachplaner, aber das Modell kann verhindern, dass einfache räumliche Widersprüche bis zur Genehmigung unentdeckt bleiben.
 
-## 9.7 Prüffragen für die Praxis
+## 13.7 Prüffragen für die Praxis
 
 Brandschutz sollte bei jeder Grundrissvariante mitlaufen. Gibt es für jede Nutzungseinheit einen gesicherten ersten ::Rettungsweg::? Gibt es einen zweiten ::Rettungsweg:: oder eine zulässige Alternative? Sind Treppenraum, notwendige Flure und Türen so angeordnet, dass Rauch nicht unkontrolliert in Fluchtwege gelangt? Sind Schächte brandschutztechnisch getrennt und zugänglich?
 
@@ -102,7 +102,7 @@ Die dritte Ebene betrifft Nutzung und Betrieb. Ein Flur kann brandschutztechnisc
 
 Für BIM entstehen daraus klare Datenpunkte: Brandabschnitt, ::Rettungsweg::, Feuerwiderstand, Rauchschutz, Türfunktion, Abschottung, Nutzungsart. Ein Modell kann anzeigen, welche Bauteile diese Angaben noch nicht tragen. Es kann Fluchtweglängen messen und Türen auf Öffnungsrichtung prüfen. Es kann aber nicht entscheiden, ob eine Abweichung genehmigungsfähig ist. Diese Grenze muss bewusst bleiben.
 
-## 9.8 Entwicklerperspektive
+## 13.8 Entwicklerperspektive
 
 Brandschutz zeigt besonders klar, wo automatisierte Prüfung stark und wo sie begrenzt ist. Stark ist sie bei Geometrie: Fluchtweglängen messen, Türen finden, Brandabschnitte auf Durchdringungen prüfen, fehlende FireRating-Properties melden, Nutzungseinheiten identifizieren. Schwierig ist sie bei Auslegung: ob eine Abweichung genehmigungsfähig ist, ob ein ::Rettungsweg:: im konkreten Bundesland ausreicht oder ob eine Kompensationsmaßnahme akzeptiert wird.
 
@@ -122,4 +122,4 @@ Brandschutz kann im Modell über Properties wie `Pset_WallCommon.FireRating` dok
 
 Die wichtigsten Fehler entstehen an Übergängen: offene Durchführungen, falsche Türen, unklare Schächte, zu lange Wege. Gute Planung behandelt Brandschutz deshalb nicht als Nachtrag, sondern als Grundriss- und Konstruktionsparameter.
 
-Verwandte Kapitel: [Kap. 2](/chapters/02-entwurf-raum-funktion) · [Kap. 4](/chapters/04-tragwerk) · [Kap. 14](/chapters/14-planungsrecht) · [Kap. 22](/chapters/22-bim-praxis)
+Verwandte Kapitel: [Kap. 6](/chapters/06-plaene-raum-funktion-entwurfslogik) · [Kap. 8](/chapters/08-tragwerk) · [Kap. 18](/chapters/18-planungsrecht-bauantrag) · [Kap. 37](/chapters/37-bim-praxis)

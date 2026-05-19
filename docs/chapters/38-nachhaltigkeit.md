@@ -1,6 +1,6 @@
-# Kapitel 23 – Nachhaltigkeit & Kreislaufwirtschaft
+# Kapitel 38 – Nachhaltigkeit & Kreislaufwirtschaft
 
-*Teil VII – Nachhaltigkeit*
+*Teil IX – Bestand, Nachhaltigkeit & Betrieb*
 
 ---
 
@@ -13,13 +13,13 @@ Ein Gebäude kann im Betrieb sparsam sein und trotzdem viel CO₂ verursacht hab
     - ::LCA:: und EPDs als Datengrundlage erklären
     - ::Kreislaufwirtschaft:: und ::Materialpass:: als BIM-Anwendungsfälle einordnen
 
-## 23.1 Bauen und Klimakrise
+## 38.1 Bauen und Klimakrise
 
 Gebäude verursachen weltweit einen großen Anteil der CO₂-Emissionen, sowohl durch Betrieb als auch durch Herstellung. Operational Carbon entsteht durch Heizen, Kühlen, Strom und Nutzung. **::Embodied Carbon::** umfasst Emissionen aus Herstellung, Transport, Einbau, Instandhaltung und ::Rückbau:: von Materialien.
 
 Mit besseren Hüllen und erneuerbarer Energie sinkt der Betriebsanteil. Dadurch wird der gebundene CO₂-Anteil relativ wichtiger. Ein Neubau mit gutem ::GEG::-Nachweis kann trotzdem materialintensiv sein. Nachhaltigkeit verlangt deshalb eine Lebenszyklusperspektive.
 
-## 23.2 Lebenszyklusanalyse
+## 38.2 Lebenszyklusanalyse
 
 Eine ::LCA:: betrachtet Phasen: A1-A3 Herstellung, A4-A5 Transport und Bau, B1-B7 Nutzung, C1-C4 ::Rückbau:: und Entsorgung, D mögliche Gutschriften durch Wiederverwendung. Die Systemgrenze muss klar sein: cradle-to-gate, cradle-to-grave oder cradle-to-cradle.
 
@@ -38,13 +38,13 @@ tags: lca, embodied-carbon, epd, nachhaltigkeit
 !!! kastanienallee "Kastanienallee 7"
     Überschlägige LCA-Variante: Stahlbetontragwerk mit hoher Betonmenge liegt vereinfacht bei etwa 180 kg CO₂eq/m² BGF für die Tragstruktur. Eine Holz-Hybrid-Alternative könnte auf etwa 60 kg CO₂eq/m² kommen, wenn ::Holz:: aus nachhaltiger Quelle stammt und Brandschutz-/Schallschutzschichten moderat bleiben. Bei 1.800 m² BGF entspricht die Differenz rund (180 - 60) × 1.800 = 216.000 kg CO₂eq. Das ist keine Produktbilanz, aber eine entscheidungsrelevante Größenordnung.
 
-## 23.3 Zertifizierungssysteme
+## 38.3 Zertifizierungssysteme
 
 ::DGNB:: bewertet Gebäude ganzheitlich in Kriteriengruppen wie Ökologie, Ökonomie, soziokulturelle Qualität, Technik, Prozess und Standort. LEED ist international verbreitet und US-geprägt. BREEAM stammt aus Großbritannien. Zertifizierungen schaffen Vergleichbarkeit, erzwingen Dokumentation und können Finanzierung oder Vermarktung unterstützen.
 
 Sie messen aber nicht alles. Ein Zertifikat ersetzt keine gute Planung und kann falsche Prioritäten setzen, wenn Punkte statt Wirkung optimiert werden. Für Planer ist wichtig: Zertifizierung braucht Nachweise früh, nicht erst am Ende.
 
-## 23.4 Kreislaufwirtschaft
+## 38.4 Kreislaufwirtschaft
 
 ::Kreislaufwirtschaft:: fragt, wie Materialien später getrennt, wiederverwendet oder recycelt werden können. Design for Disassembly bevorzugt reversible Verbindungen statt Kleben und Vergießen. Urban Mining betrachtet Gebäude als Materiallager. Ein ::Materialpass:: dokumentiert, welche Materialien wo verbaut sind.
 
@@ -60,14 +60,14 @@ tags: materialpass, epd, kreislaufwirtschaft, bim
 -->
 ![Materialpass](../assets/illustrations/kap23_materialpass.png)
 
-## 23.5 Begrünung als bauphysikalische Maßnahme
+## 38.5 Begrünung als bauphysikalische Maßnahme
 
 Dachbegrünung speichert Regenwasser, schützt Abdichtung, reduziert Oberflächentemperaturen und verbessert Mikroklima. Extensive Begrünung ist leichter und pflegeärmer, intensive Begrünung schwerer und nutzbarer. Fassadenbegrünung kann Verschattung und Verdunstungskühlung bringen, braucht aber Unterhalt und klare Konstruktion.
 
 !!! kastanienallee "Kastanienallee 7"
     Das ::Flachdach:: hat ca. 360 m² Fläche; mit Rand- und Technikflächen werden rund 300-400 m² extensiv begrünt. Bei 40 l/m² Retention speichert 360 m² × 40 l/m² = 14.400 l Regenwasser. Die Dachoberfläche kann an heißen Tagen deutlich kühler bleiben; PV-Module profitieren zusätzlich von geringerer Umgebungstemperatur.
 
-## 23.6 Nachhaltigkeit als Mengenfrage
+## 38.6 Nachhaltigkeit als Mengenfrage
 
 Nachhaltigkeit bleibt vage, solange sie nur über Materialvorlieben diskutiert wird. Entscheidend sind Mengen, Lebensdauer und Austauschzyklen. Ein Baustoff mit gutem Image kann in großer Menge oder kurzer Lebensdauer ungünstig sein. Ein CO₂-intensiver Baustoff kann an einer tragenden Stelle sinnvoll sein, wenn er Material an anderer Stelle spart oder eine lange Nutzungsdauer ermöglicht.
 
@@ -82,7 +82,7 @@ Nachhaltigkeit widerspricht manchmal anderen Zielen. Mehr Dämmung spart Betrieb
 !!! kastanienallee "Kastanienallee 7"
     Für K7 kann eine LCA-Variante die Tragstruktur vergleichen. Angenommen 1.800 m² BGF und 180 kg CO₂eq/m² für eine betonintensive Variante ergeben 324 t CO₂eq. Eine Holz-Hybrid-Variante mit 90 kg CO₂eq/m² läge bei 162 t CO₂eq. Die Differenz von 162 t ist groß, muss aber gegen Brandschutz, Schallschutz, Kosten, Verfügbarkeit und spätere Rückbaubarkeit geprüft werden.
 
-## 23.7 Prüffragen für die Praxis
+## 38.7 Prüffragen für die Praxis
 
 Nachhaltigkeitsziele müssen messbar formuliert werden. "CO₂-arm" ist kein Projektziel, solange kein Grenzwert, Bilanzrahmen und Berechnungszeitpunkt festgelegt sind. Geht es um kg CO₂eq/m² BGF, um Lebenszyklusphasen A1-A3, A1-C4 oder inklusive Modul D? Werden technische Anlagen einbezogen? Welche Datenqualität ist in welcher ::LP:: akzeptiert?
 
@@ -92,7 +92,7 @@ Die dritte Frage ist ::Rückbau::. Können Schichten getrennt werden? Sind Verbi
 
 Für BIM ist wichtig, dass Nachhaltigkeitsdaten nicht als PDF neben dem Modell enden. Material, Menge, EPD-Referenz, Lebensdauer und Rückbaubarkeit müssen an Bauteilen oder Materialien hängen. Dann können Berichte wiederholt, Varianten verglichen und spätere Materialpässe erzeugt werden. Ohne diese Kopplung bleibt Nachhaltigkeit Handarbeit.
 
-## 23.8 Entwicklerperspektive
+## 38.8 Entwicklerperspektive
 
 LCA-Software braucht saubere Mengeneinheiten. ::Beton:: wird oft in m³ bilanziert, Stahl in kg, Dämmung in m³ oder m² bei Dicke, Fenster in m², Technikgeräte als Stück mit Produktdaten. Ein Modell muss diese Einheiten zuverlässig liefern oder umrechnen. Fehler bei Einheiten erzeugen massive CO₂-Fehler.
 
@@ -120,4 +120,4 @@ Heute fehlt oft eine standardisierte Pflichtstelle für EPD-IDs in IFC. Trotzdem
 
 Embodied Carbon, EPDs, ::Materialpass:: und Rückbaubarkeit machen Materialentscheidungen messbar. BIM kann daraus einen echten Arbeitsprozess machen, wenn Mengen und Materialdaten zuverlässig sind.
 
-Verwandte Kapitel: [Kap. 3](/chapters/03-baustoffe) · [Kap. 6](/chapters/06-waermeschutz-geg) · [Kap. 19](/chapters/19-ifc) · [Kap. 26](/chapters/26-digitaler-zwilling-ki)
+Verwandte Kapitel: [Kap. 7](/chapters/07-baustoffe) · [Kap. 10](/chapters/10-waermeschutz-geg) · [Kap. 34](/chapters/34-ifc) · [Kap. 41](/chapters/41-digitaler-zwilling-ki)

@@ -1,4 +1,4 @@
-# Kapitel 13 – Elektro & Gebäudeautomation
+# Kapitel 17 – Elektro & Gebäudeautomation
 
 *Teil IV – TGA*
 
@@ -13,7 +13,7 @@ Strom ist im Gebäude leise. Er liegt in Wänden, Schächten, Trassen und Vertei
     - Leitungsführung, Beleuchtung, ::PV:: und Ladeinfrastruktur räumlich einordnen
     - ::Gebäudeautomation:: von bloßer Smart-Home-Ausstattung unterscheiden
 
-## 13.1 Elektrische Grundversorgung
+## 17.1 Elektrische Grundversorgung
 
 Die elektrische Versorgung beginnt am Hausanschlusskasten. Von dort geht sie zur Hauptverteilung und zur Zähleranlage. Im Mehrfamilienhaus gibt es Wohnungszähler, Allgemeinstromzähler und oft separate Messungen für Wärmeerzeugung, ::PV:: oder Ladeinfrastruktur. Jede Wohnung hat eine Unterverteilung mit Leitungsschutzschaltern und RCDs, also FI-Schutzschaltern.
 
@@ -29,25 +29,25 @@ tags: elektro, zähleranlage, hausanschluss, rcd
 -->
 ![Zähleranlage im Mehrfamilienhaus](../assets/illustrations/kap13_zaehleranlage.png)
 
-## 13.2 Leitungsführung
+## 17.2 Leitungsführung
 
 Leitungen können unter Putz, in Leerrohren, Kabelkanälen, Steigschächten oder Kabeltrassen geführt werden. Unterputz ist im Wohnungsbau üblich, aber später schwer änderbar. Leerrohre schaffen Reserven. Kabeltrassen brauchen Platz und Koordination mit Lüftung, Sprinkler, Heizung und Tragwerk.
 
 Elektro wirkt im Grundriss klein, wird in Summe aber dicht: Steckdosen, Schalter, Daten, Türkommunikation, Rauchwarnmelder, Jalousien, Sensoren, ::PV::, E-Mobilität, Aufzug. Gute Planung bündelt Trassen und hält Revisionsbereiche frei.
 
-## 13.3 Beleuchtungsplanung
+## 17.3 Beleuchtungsplanung
 
 Beleuchtung ist Sehen, Sicherheit und Atmosphäre. DIN EN 12464 nennt für Arbeitsstätten Beleuchtungsstärken; Büroarbeitsplätze liegen typischerweise bei 500 lx. Wohnungen werden freier geplant, aber auch dort zählen Blendung, Lichtfarbe, Farbwiedergabe und Schaltbarkeit.
 
 LED-Technik erlaubt effiziente und regelbare Beleuchtung. CCT beschreibt die Farbtemperatur, CRI die Farbwiedergabe. Notbeleuchtung und Rettungszeichen sind brandschutzrelevant, besonders in Treppenhäusern, Tiefgaragen und Fluren.
 
-## 13.4 Schwachstromtechnik
+## 17.4 Schwachstromtechnik
 
 Schwachstrom umfasst Daten, Kommunikation, Sicherheit und Steuerung. Glasfaser und LAN werden zur Grundinfrastruktur. Brandmeldeanlagen, Einbruchmeldeanlagen, Videosprechanlagen, Zutrittssysteme und Rauchwarnmelder brauchen Leitung, Strom, Daten und Wartung.
 
 Aufzugssteuerung ist ein eigenes Elektrothema. Der Aufzug braucht einen separaten Starkstromkreis, häufig 400 V, sowie Notruf nach EN 81-28. Beleuchtung und Notruf müssen bei Ausfall gesichert sein. In ::Gebäudeklasse:: 4 ist kein Feuerwehraufzug erforderlich, aber der normale Aufzug muss früh mit Schacht, Steuerung und Technik abgestimmt werden.
 
-## 13.5 Photovoltaik
+## 17.5 Photovoltaik
 
 ::PV:: erzeugt Strom aus Sonnenlicht. In Deutschland liefert 1 kWp grob 900 bis 1.100 kWh pro Jahr, je nach Standort, Ausrichtung und Verschattung. Wechselrichter wandeln Gleichstrom in Wechselstrom. Eigenverbrauch ist wirtschaftlich interessant, Einspeisung ergänzt.
 
@@ -63,7 +63,7 @@ tags: pv, elektro, flachdach, eigenverbrauch
 -->
 ![PV-Konzept auf dem Flachdach](../assets/illustrations/kap13_pv_konzept.png)
 
-## 13.6 Gebäudeautomation
+## 17.6 Gebäudeautomation
 
 ::Gebäudeautomation:: verbindet Sensoren, Aktoren und Regelungen. KNX ist im deutschen Wohn- und Zweckbau ein verbreiteter Busstandard. BACnet ist im Gewerbe und in der Gebäudeleittechnik wichtig. DALI steuert Beleuchtung. Smart Building bedeutet nicht App-Spielerei, sondern abgestimmte Regelung von Licht, Verschattung, Heizung, Lüftung, Zutritt und Energie.
 
@@ -72,7 +72,7 @@ Energiemanagement wird wichtiger. Smart Meter, ::PV::, Ladepunkte und Wärmeerze
 !!! kastanienallee "Kastanienallee 7"
     Das elektrische Konzept umfasst 12 Wohnungszähler plus Allgemeinstrom, ::PV:: mit 30 kWp auf dem ::Flachdach::, 10 Ladepunkte in der Tiefgarage mit 11 kW je Ladepunkt und Lastmanagement. KNX wird als Grundinstallation für Allgemeinbereiche, Verschattung und Energiezähler vorgesehen. Der Aufzug erhält eigene Einspeisung, Notruf und Schnittstelle zur Wartung.
 
-## 13.7 Elektroplanung als Infrastruktur
+## 17.7 Elektroplanung als Infrastruktur
 
 Elektro wird im Entwurf oft unterschätzt, weil Leitungen dünn wirken. In Wirklichkeit ist Elektro die Infrastruktur für fast jede spätere Nutzung: Beleuchtung, Kommunikation, Aufzug, Brandschutztechnik, Lüftung, Heizungspumpen, ::PV::, Ladepunkte, Türkommunikation und ::Gebäudeautomation::. Wenn diese Infrastruktur zu spät geplant wird, entstehen sichtbare Kabelkanäle, überfüllte Schächte und teure Nachrüstungen.
 
@@ -87,7 +87,7 @@ Leerrohre und Trassen sind strategische Reserven. Niemand weiß in LP 2 sicher, 
 !!! kastanienallee "Kastanienallee 7"
     Für K7 bedeutet Elektro als Infrastruktur: 12 Wohnungszähler, Allgemeinstrom, ::PV:: mit 30 kWp, Aufzugsversorgung 400 V, Notruf, 10 Ladepunkte in der Tiefgarage, Datenanschluss und Reservewege vom Keller bis Dach. Bei 10 Ladepunkten wird nicht 10 × 11 kW als Dauerlast angesetzt, sondern ein dynamisches Lastmanagement geplant. Das muss im Elektroverteiler, im Zählerschrank und in der Datenanbindung abgebildet sein.
 
-## 13.8 Prüffragen für die Praxis
+## 17.8 Prüffragen für die Praxis
 
 Elektroplanung beginnt mit Lasten und Wegen. Welche Verbraucher haben hohe Leistung? Welche Anlagen sind sicherheitsrelevant? Welche Systeme brauchen Datenverbindungen? Wo liegen vertikale Trassen? Wie wird vom Hausanschluss bis zur letzten Wohnung verteilt? Ohne diese Grundstruktur werden spätere Smart-Building-Ideen nur Einzellösungen.
 
@@ -97,7 +97,7 @@ Dateninfrastruktur ist heute Teil der Grundversorgung. Glasfaser bis ins Gebäud
 
 Für BIM ist Elektro schwieriger als Architektur, weil viele Objekte klein, zahlreich und logisch verbunden sind. Ein Kabel einzeln zu modellieren ist oft nicht sinnvoll, aber Trassen, Verteiler, Verbraucher, Stromkreise und Assets müssen nachvollziehbar sein. Der Modellzweck entscheidet: Koordination braucht Raum und Trassen, Betrieb braucht Anlagenkennzeichen und Wartungsdaten, Kosten brauchen Mengen und Systeme.
 
-## 13.9 Entwicklerperspektive
+## 17.9 Entwicklerperspektive
 
 Elektro ist in BIM oft weniger sichtbar als Lüftung oder Sanitär, weil Leitungen klein sind und viele Verbindungen logisch statt geometrisch relevant sind. Für Koordination reichen Trassen, Verteiler und Hauptgeräte. Für Betrieb braucht man Stromkreise, Anlagenkennzeichen, Zähler, Wartungsdaten und Kommunikationsbeziehungen. Der Modellzweck entscheidet, wie tief modelliert wird.
 
@@ -115,7 +115,7 @@ Diese Trennung hilft auch bei Ausschreibung und Betrieb. Energie gehört zum Ele
 
 ## BIM-Brücke: Elektro als Asset-Struktur
 
-Elektroobjekte können als `IfcElectricDistributionBoard`, `IfcCableSegment`, `IfcLightFixture` oder `IfcSensor` modelliert werden. Für den Betrieb sind nicht nur Geometrie, sondern Stromkreis, Leistung, Wartung, Hersteller und Raumzuordnung relevant. Diese Daten bilden später eine Grundlage für digitale Zwillinge in [Kapitel 26](/chapters/26-digitaler-zwilling-ki).
+Elektroobjekte können als `IfcElectricDistributionBoard`, `IfcCableSegment`, `IfcLightFixture` oder `IfcSensor` modelliert werden. Für den Betrieb sind nicht nur Geometrie, sondern Stromkreis, Leistung, Wartung, Hersteller und Raumzuordnung relevant. Diese Daten bilden später eine Grundlage für digitale Zwillinge in [Kapitel 41](/chapters/41-digitaler-zwilling-ki).
 
 ## Zusammenfassung
 
@@ -123,4 +123,4 @@ Elektroobjekte können als `IfcElectricDistributionBoard`, `IfcCableSegment`, `I
 
 Hausanschluss, Zähler, Leitungen, Beleuchtung, ::PV::, Ladepunkte und ::Gebäudeautomation:: greifen ineinander. Je früher die Trassen und Technikflächen geklärt sind, desto weniger Konflikte entstehen im Ausbau.
 
-Verwandte Kapitel: [Kap. 10](/chapters/10-heizung-waermeversorgung) · [Kap. 23](/chapters/23-nachhaltigkeit) · [Kap. 26](/chapters/26-digitaler-zwilling-ki)
+Verwandte Kapitel: [Kap. 14](/chapters/14-heizung-waermeversorgung) · [Kap. 38](/chapters/38-nachhaltigkeit) · [Kap. 41](/chapters/41-digitaler-zwilling-ki)

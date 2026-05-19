@@ -1,4 +1,4 @@
-# Kapitel 10 – Heizung & Wärmeversorgung
+# Kapitel 14 – Heizung & Wärmeversorgung
 
 *Teil IV – TGA*
 
@@ -13,13 +13,13 @@ Ein warmer Raum entsteht nicht im Heizkörper. Er entsteht aus einer Kette von E
     - Fußbodenheizung, Vorlauftemperatur und hydraulischen Abgleich einordnen
     - Heizlast als Verbindung zwischen Gebäudehülle und TGA verstehen
 
-## 10.1 Warum TGA Systemdenken braucht
+## 14.1 Warum TGA Systemdenken braucht
 
 Heizung gehört zur ::TGA:: und damit zur veränderlichen technischen Schicht des Gebäudes. Sie beeinflusst aber dauerhafte Entscheidungen: Schachtgrößen, Technikräume, Deckenaufbauten, Dachflächen und Fassadenöffnungen. Ein Architekt muss nicht jede Pumpe auslegen, aber er muss früh fragen: Wo steht der Erzeuger? Wo laufen Leitungen? Welche Temperaturen braucht das System? Wie wird gewartet?
 
 In modernen Gebäuden verschiebt sich die Frage. Früher stand oft der Kessel im Mittelpunkt. Heute ist der ::Wärmeerzeuger:: nur ein Teil eines Gesamtsystems aus guter Hülle, niedriger Heizlast, niedrigen Vorlauftemperaturen und intelligenter Regelung. Ein schlecht gedämmtes Gebäude zwingt die Technik zu hohen Temperaturen; ein gutes Gebäude ermöglicht effiziente Systeme.
 
-## 10.2 Wärmeerzeuger im Vergleich
+## 14.2 Wärmeerzeuger im Vergleich
 
 Gas- und Ölkessel waren lange Standard, verlieren aber durch Klimaziele und GEG-Anforderungen an Zukunftsfähigkeit. Wärmepumpen nutzen Umweltwärme aus Luft, Erdreich oder Wasser. Eine Luft-Wasser-Wärmepumpe erreicht grob COP 3-4, eine Sole-Wasser-Wärmepumpe oft COP 4-5. Entscheidend ist die Jahresarbeitszahl, also die reale Effizienz über ein Jahr.
 
@@ -46,7 +46,7 @@ tags: heizung, wärmeerzeuger, fernwärme, wärmepumpe
 !!! kastanienallee "Kastanienallee 7"
     Kastanienallee 7 nutzt ::Fernwärme::. Dadurch entfallen Kessel, Brennstofflager und Abgasführung; im Keller reicht eine Übergabestation mit Wärmetauscher, Regelung und Pumpengruppen. Verglichen mit einer Luft-Wasser-Wärmepumpe spart das Dach- oder Außenflächen für Außengeräte, macht das Projekt aber abhängig vom Netz. Für den GEG-Nachweis zählt der Primärenergiefaktor des Fernwärmenetzes.
 
-## 10.3 Wärmeverteilung
+## 14.3 Wärmeverteilung
 
 Heizkörper arbeiten klassisch mit höheren Temperaturen, etwa 70/55 °C im Altbau. Flächenheizungen arbeiten mit niedrigerem Niveau, etwa 35/28 °C. Die **Fußbodenheizung** (::FBH::) verteilt Wärme über große Fläche und ermöglicht niedrige Vorlauftemperaturen. Das passt gut zu Wärmepumpen und gut gedämmten Gebäuden.
 
@@ -77,19 +77,19 @@ tags: fbh, estrich, deckenaufbau, vorlauftemperatur
 !!! kastanienallee "Kastanienallee 7"
     Das Heizkonzept hat eine Fernwärme-Übergabestation im Keller und 3 Heizkreise für ::FBH::. Je Wohnung werden Verteiler in Flur- oder Abstellbereichen angeordnet. Der hydraulische Abgleich erfolgt nach Methode B: Heizlast je Raum, Rohrlänge, Verlegeabstand und Volumenstrom werden berechnet. Bei 12 Wohnungen entstehen etwa 60 Heizkreise; schon kleine falsche Einstellungen würden sonst Komfortbeschwerden erzeugen.
 
-## 10.4 Warmwasserbereitung
+## 14.4 Warmwasserbereitung
 
 Warmwasser kann zentral oder dezentral erzeugt werden. Zentrale Speicher brauchen hohe Temperaturen, Zirkulation und Hygieneüberwachung. Legionellenrisiken werden durch Temperatur, Volumen, Stagnationsvermeidung und regelmäßigen Austausch beherrscht. Die 60-°C-Regel ist ein bekannter Orientierungswert für zentrale Systeme.
 
 Dezentrale Frischwasserstationen oder Durchlauferhitzer reduzieren Speicher- und Stagnationsrisiken, brauchen aber Leistung und Platz. Im Geschosswohnungsbau ist die Entscheidung eng mit Schächten, Abrechnung, Wartung und Nutzerkomfort verbunden.
 
-## 10.5 Dimensionierung als Konzept
+## 14.5 Dimensionierung als Konzept
 
 Die Heizlastberechnung nach DIN EN 12831 ermittelt, welche Leistung ein Raum am kältesten Auslegungstag braucht. Sie setzt sich aus Transmissionswärmeverlusten und Lüftungswärmeverlusten zusammen. Ein Neubau nach heutigem Standard liegt oft bei 25-35 W/m², ein unsanierter Altbau bei 60-100 W/m² oder mehr.
 
-Damit verbindet die Heizlast [Kapitel 6](/chapters/06-waermeschutz-geg) mit der Technik. Je besser Hülle, Luftdichtheit und Lüftung, desto kleiner werden Heizflächen, Leitungen und Erzeuger. Überdimensionierung ist kein Sicherheitsgewinn: Sie kostet Geld, verschlechtert Regelverhalten und kann Effizienz senken.
+Damit verbindet die Heizlast [Kapitel 10](/chapters/10-waermeschutz-geg) mit der Technik. Je besser Hülle, Luftdichtheit und Lüftung, desto kleiner werden Heizflächen, Leitungen und Erzeuger. Überdimensionierung ist kein Sicherheitsgewinn: Sie kostet Geld, verschlechtert Regelverhalten und kann Effizienz senken.
 
-## 10.6 Planungsfragen vor der Gerätewahl
+## 14.6 Planungsfragen vor der Gerätewahl
 
 In frühen Projektbesprechungen wird häufig zu schnell über Geräte gesprochen: ::Wärmepumpe:: oder ::Fernwärme::, Speichergröße, Hersteller, Regelung. Vorher müssen einfachere Fragen geklärt sein. Wie hoch ist die Heizlast? Welche Vorlauftemperatur ist realistisch? Gibt es genug Platz für Technik, Verteiler und Wartung? Wo laufen Steigleitungen? Wie wird Warmwasser hygienisch erzeugt? Wer betreibt die Anlage später?
 
@@ -104,7 +104,7 @@ Regelung entscheidet schließlich, ob ein gutes System gut funktioniert. Ein hyd
 !!! kastanienallee "Kastanienallee 7"
     Für K7 lautet die frühe Prüffolge: Heizlast je Raum berechnen, Fußbodenheizungsflächen prüfen, Verteilerstandorte je Wohnung festlegen, Steigleitungen im Kern bündeln, Fernwärmestation im Keller mit Wartungsfläche anordnen. Bei 60 Heizkreisen bedeutet ein Planungsfehler von nur 0,2 l/min je Kreis bereits 12 l/min falschen Gesamtvolumenstrom. Der hydraulische Abgleich ist deshalb kein Formular, sondern Betriebsqualität.
 
-## 10.7 Prüffragen für die Praxis
+## 14.7 Prüffragen für die Praxis
 
 Vor der Festlegung des Heizsystems sollte ein Planungsteam die Heizlast, die gewünschte Vorlauftemperatur, den Warmwasserbedarf und die Betriebsstrategie getrennt prüfen. Ein System kann für Raumheizung sehr effizient sein und bei Warmwasser ungünstig werden. Eine ::Wärmepumpe:: kann zur Hülle passen, aber am Schall, am Platz für Außengeräte oder am Stromanschluss scheitern. ::Fernwärme:: kann technisch einfach sein, aber abhängig von Netzpreisen und Netzdekarbonisierung.
 
@@ -112,19 +112,19 @@ Die Rücklauftemperatur ist ein guter Qualitätsindikator. Niedrige Rückläufe 
 
 Für die Planungspraxis gilt: Technikflächen brauchen Reserve. Ein Technikraum, der nur im Grundriss passt, aber keine Wartungsflächen, keine Türbreiten und keine Austauschwege hat, ist schlecht geplant. Geräte müssen in das Gebäude hineinkommen und später wieder heraus. Filter, Pumpen, Wärmetauscher, Speicher und Ventile müssen zugänglich bleiben. Diese banale Zugänglichkeit entscheidet im Betrieb über Kosten.
 
-## 10.8 Entwicklerperspektive
+## 14.8 Entwicklerperspektive
 
 Heizungsdaten sind ein gutes Beispiel für Systembeziehungen. Ein Rohrstück allein sagt wenig. Entscheidend ist, zu welchem System es gehört, welche Richtung der Volumenstrom hat, welche Temperatur angesetzt wird, welcher Raum versorgt wird und welches Gerät die Wärme liefert. Ein MEP-Modell muss daher Netze abbilden, nicht nur Bauteile.
 
 Für Software ist die Verbindung zwischen Raum und Heizlast zentral. Räume aus dem Architekturmodell liefern Fläche, Volumen, Nutzung und Hüllflächenbezug. Daraus entsteht eine Heizlast. Diese Heizlast bestimmt Heizflächen und Volumenströme. Wenn Räume später geteilt, zusammengelegt oder anders genutzt werden, muss die Technikprüfung reagieren. Ohne stabile Raum-IDs bricht diese Kette.
 
-Auch Betriebsdaten können zurückfließen. Soll-Vorlauf, Ist-Vorlauf, ::Vorlauf und Rücklauf::, Pumpenleistung, Ventilstellung und Raumtemperatur zeigen, ob das System wie geplant läuft. Im Neubau reicht ein as-planned-Modell; im Betrieb braucht man ein as-operated-Verständnis. Das ist der Übergang zum digitalen Zwilling in [Kapitel 26](/chapters/26-digitaler-zwilling-ki).
+Auch Betriebsdaten können zurückfließen. Soll-Vorlauf, Ist-Vorlauf, ::Vorlauf und Rücklauf::, Pumpenleistung, Ventilstellung und Raumtemperatur zeigen, ob das System wie geplant läuft. Im Neubau reicht ein as-planned-Modell; im Betrieb braucht man ein as-operated-Verständnis. Das ist der Übergang zum digitalen Zwilling in [Kapitel 41](/chapters/41-digitaler-zwilling-ki).
 
 Ein gutes Prüfwerkzeug für Heizung meldet daher nicht nur Kollisionen. Es fragt: Hat jeder beheizte Raum eine Heizlast? Ist jeder Heizkreis einem Raum zugeordnet? Sind Verteiler zugänglich? Sind Leitungen im richtigen System? Stimmen ::Vorlauf und Rücklauf::? Sind Dämmungen an Leitungen vorgesehen? Solche Prüfungen sparen spätere Sucharbeit.
 
 ## BIM-Brücke: Heizung als MEP-Modell
 
-Im IFC-Modell werden Heizungsbauteile als technische Komponenten geführt, etwa `IfcPipeSegment`, `IfcValve`, `IfcPump` oder `IfcHeatExchanger`. Räume können Heizlasten als Properties tragen. Kollisionsprüfung zeigt, ob Heizleitungen, Verteiler und Schachtführungen mit Tragwerk und Ausbau zusammenpassen. Die IFC-Struktur wird in [Kapitel 19](/chapters/19-ifc) vertieft.
+Im IFC-Modell werden Heizungsbauteile als technische Komponenten geführt, etwa `IfcPipeSegment`, `IfcValve`, `IfcPump` oder `IfcHeatExchanger`. Räume können Heizlasten als Properties tragen. Kollisionsprüfung zeigt, ob Heizleitungen, Verteiler und Schachtführungen mit Tragwerk und Ausbau zusammenpassen. Die IFC-Struktur wird in [Kapitel 34](/chapters/34-ifc) vertieft.
 
 ## Zusammenfassung
 
@@ -132,4 +132,4 @@ Im IFC-Modell werden Heizungsbauteile als technische Komponenten geführt, etwa 
 
 Niedrige Vorlauftemperaturen, hydraulischer Abgleich und passende Heizlast sind wichtiger als die reine Gerätewahl. Gute Heizungsplanung beginnt im Entwurf, nicht erst im Technikraum.
 
-Verwandte Kapitel: [Kap. 1](/chapters/01-architektur-als-system) · [Kap. 5](/chapters/05-konstruktion) · [Kap. 6](/chapters/06-waermeschutz-geg) · [Kap. 11](/chapters/11-lueftung)
+Verwandte Kapitel: [Kap. 1](/chapters/01-architektur-als-system) · [Kap. 9](/chapters/09-konstruktion) · [Kap. 10](/chapters/10-waermeschutz-geg) · [Kap. 15](/chapters/15-lueftung)

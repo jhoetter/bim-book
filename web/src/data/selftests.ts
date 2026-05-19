@@ -70,8 +70,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-02-entwurf-raum-funktion',
-    chapterId: '02-entwurf-raum-funktion',
+    id: 'test-06-plaene-raum-funktion-entwurfslogik',
+    chapterId: '06-plaene-raum-funktion-entwurfslogik',
     title: 'Selbsttest: Entwurf, Raum und Funktion',
     questions: [
       {
@@ -118,8 +118,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-03-baustoffe',
-    chapterId: '03-baustoffe',
+    id: 'test-07-baustoffe',
+    chapterId: '07-baustoffe',
     title: 'Selbsttest: Baustoffe',
     questions: [
       {
@@ -166,8 +166,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-04-tragwerk',
-    chapterId: '04-tragwerk',
+    id: 'test-08-tragwerk',
+    chapterId: '08-tragwerk',
     title: 'Selbsttest: Tragwerk',
     questions: [
       {
@@ -214,8 +214,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-05-konstruktion',
-    chapterId: '05-konstruktion',
+    id: 'test-09-konstruktion',
+    chapterId: '09-konstruktion',
     title: 'Selbsttest: Konstruktion',
     questions: [
       {
@@ -261,8 +261,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-06-waermeschutz-geg',
-    chapterId: '06-waermeschutz-geg',
+    id: 'test-10-waermeschutz-geg',
+    chapterId: '10-waermeschutz-geg',
     title: 'Selbsttest: Wärmeschutz & GEG',
     questions: [
       {
@@ -309,8 +309,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-07-feuchteschutz',
-    chapterId: '07-feuchteschutz',
+    id: 'test-11-feuchteschutz',
+    chapterId: '11-feuchteschutz',
     title: 'Selbsttest: Feuchteschutz',
     questions: [
       {
@@ -357,8 +357,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-08-schallschutz',
-    chapterId: '08-schallschutz',
+    id: 'test-12-schallschutz',
+    chapterId: '12-schallschutz',
     title: 'Selbsttest: Schallschutz',
     questions: [
       {
@@ -405,8 +405,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-09-brandschutz',
-    chapterId: '09-brandschutz',
+    id: 'test-13-brandschutz',
+    chapterId: '13-brandschutz',
     title: 'Selbsttest: Brandschutz',
     questions: [
       {
@@ -452,8 +452,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-10-heizung-waermeversorgung',
-    chapterId: '10-heizung-waermeversorgung',
+    id: 'test-14-heizung-waermeversorgung',
+    chapterId: '14-heizung-waermeversorgung',
     title: 'Selbsttest: Heizung & Wärmeversorgung',
     questions: [
       {
@@ -500,8 +500,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-11-lueftung',
-    chapterId: '11-lueftung',
+    id: 'test-15-lueftung',
+    chapterId: '15-lueftung',
     title: 'Selbsttest: Lüftung & Raumluftqualität',
     questions: [
       {
@@ -548,8 +548,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-12-sanitaer',
-    chapterId: '12-sanitaer',
+    id: 'test-16-sanitaer',
+    chapterId: '16-sanitaer',
     title: 'Selbsttest: Sanitär & Entwässerung',
     questions: [
       {
@@ -596,8 +596,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-13-elektro',
-    chapterId: '13-elektro',
+    id: 'test-17-elektro',
+    chapterId: '17-elektro',
     title: 'Selbsttest: Elektro & Gebäudeautomation',
     questions: [
       {
@@ -614,7 +614,7 @@ export const SELF_TESTS: SelfTest[] = [
         explanation: 'Gebäudeautomation verbindet Sensoren, Aktoren, Regelung und Betriebsdaten.',
       },
       {
-        id: 'q13-elektro',
+        id: 'q17-elektro',
         type: 'multiple',
         prompt: 'Welche Themen sind in der Elektroplanung häufig relevant?',
         options: [
@@ -644,8 +644,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-14-planungsrecht',
-    chapterId: '14-planungsrecht',
+    id: 'test-18-planungsrecht-bauantrag',
+    chapterId: '18-planungsrecht-bauantrag',
     title: 'Selbsttest: Planungsrecht',
     questions: [
       {
@@ -691,8 +691,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-15-hoai',
-    chapterId: '15-hoai',
+    id: 'test-19-hoai-rollen-projektorganisation',
+    chapterId: '19-hoai-rollen-projektorganisation',
     title: 'Selbsttest: HOAI',
     questions: [
       {
@@ -739,8 +739,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-16-kosten-ausschreibung',
-    chapterId: '16-kosten-ausschreibung',
+    id: 'test-23-kostenplanung-mengen-din276',
+    chapterId: '23-kostenplanung-mengen-din276',
     title: 'Selbsttest: Kosten & Ausschreibung',
     questions: [
       {
@@ -786,8 +786,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-17-bauprojektmanagement-bauoberleitung',
-    chapterId: '17-bauprojektmanagement-bauoberleitung',
+    id: 'test-29-bauoberleitung-baukontrolle-maengelmanagement',
+    chapterId: '29-bauoberleitung-baukontrolle-maengelmanagement',
     title: 'Selbsttest: Bauprojektmanagement & Bauoberleitung',
     questions: [
       {
@@ -833,8 +833,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-18-was-bim-wirklich-ist',
-    chapterId: '18-was-bim-wirklich-ist',
+    id: 'test-33-was-bim-wirklich-ist',
+    chapterId: '33-was-bim-wirklich-ist',
     title: 'Selbsttest: Was BIM wirklich ist',
     questions: [
       {
@@ -881,12 +881,12 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-19-ifc',
-    chapterId: '19-ifc',
+    id: 'test-34-ifc',
+    chapterId: '34-ifc',
     title: 'Selbsttest: IFC',
     questions: [
       {
-        id: 'q19-ifc',
+        id: 'q34-ifc',
         type: 'single',
         prompt: 'Wofür steht IFC praktisch im BIM-Kontext?',
         options: [
@@ -929,8 +929,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-20-klassifikation',
-    chapterId: '20-klassifikation',
+    id: 'test-35-klassifikation',
+    chapterId: '35-klassifikation',
     title: 'Selbsttest: Klassifikation',
     questions: [
       {
@@ -977,8 +977,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-21-prozess-kollaboration',
-    chapterId: '21-prozess-kollaboration',
+    id: 'test-36-prozess-kollaboration',
+    chapterId: '36-prozess-kollaboration',
     title: 'Selbsttest: Prozess & Kollaboration',
     questions: [
       {
@@ -1024,8 +1024,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-22-bim-praxis',
-    chapterId: '22-bim-praxis',
+    id: 'test-37-bim-praxis',
+    chapterId: '37-bim-praxis',
     title: 'Selbsttest: BIM in der Praxis',
     questions: [
       {
@@ -1072,8 +1072,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-23-nachhaltigkeit',
-    chapterId: '23-nachhaltigkeit',
+    id: 'test-38-nachhaltigkeit',
+    chapterId: '38-nachhaltigkeit',
     title: 'Selbsttest: Nachhaltigkeit & Kreislaufwirtschaft',
     questions: [
       {
@@ -1120,8 +1120,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-24-sanierung',
-    chapterId: '24-sanierung',
+    id: 'test-39-sanierung',
+    chapterId: '39-sanierung',
     title: 'Selbsttest: Sanierung',
     questions: [
       {
@@ -1168,8 +1168,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-25-projektarten-neubau-bestand-denkmal',
-    chapterId: '25-projektarten-neubau-bestand-denkmal',
+    id: 'test-40-projektarten-neubau-bestand-denkmal',
+    chapterId: '40-projektarten-neubau-bestand-denkmal',
     title: 'Selbsttest: Projektarten',
     questions: [
       {
@@ -1215,8 +1215,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-26-digitaler-zwilling-ki',
-    chapterId: '26-digitaler-zwilling-ki',
+    id: 'test-41-digitaler-zwilling-ki',
+    chapterId: '41-digitaler-zwilling-ki',
     title: 'Selbsttest: Digitaler Zwilling & KI',
     questions: [
       {

@@ -1,6 +1,6 @@
-# Kapitel 17 – Bauprojektmanagement & Bauoberleitung
+# Kapitel 29 – Bauoberleitung, Baukontrolle & Mängelmanagement
 
-*Teil V – Projektprozess*
+*Teil VII – Bauausführung, Übergabe & Betriebsvorbereitung*
 
 ---
 
@@ -13,7 +13,7 @@ Auf der Baustelle zeigt sich, ob Planung wirklich baubar war. Entscheidungen, di
     - Bauzeitenplan, Netzplan und kritischen Pfad erklären
     - Nachträge, Behinderungsanzeigen, Bautagebuch und Abnahme fachlich einordnen
 
-## 17.1 Was Bauprojektmanagement bedeutet
+## 29.1 Was Bauprojektmanagement bedeutet
 
 Früher konnte ein Baumeister viele Entscheidungen selbst überblicken. Moderne Gebäude sind anders: Tragwerk, Brandschutz, Schallschutz, Energie, Heizung, Lüftung, Sanitär, Elektro, Aufzug, Außenanlagen, Finanzierung, Genehmigung und Verträge greifen ineinander. Je mehr Beteiligte ein Projekt hat, desto weniger reicht fachliche Planung allein. Es braucht eine zweite Ebene, die Termine, Kosten, Risiken, Kommunikation und Entscheidungen zusammenhält.
 
@@ -35,7 +35,7 @@ Ohne diese Ordnung werden technische Fragen zu persönlichen Abstimmungen. Mit i
 
 Das ist der Unterschied zwischen Improvisation und belastbarer professioneller Steuerung.
 
-## 17.2 Terminplanung
+## 29.2 Terminplanung
 
 Ein Terminplan ist kein Kalender mit Wunschdaten. Er ist ein Modell des Bauablaufs. Er zeigt, welche Vorgänge voneinander abhängen, welche Reihenfolge technisch zwingend ist und wo Puffer liegen. Ohne Terminplanung wird Bauleitung reaktiv: Man merkt erst, dass etwas fehlt, wenn das nächste Gewerk bereits vor der Tür steht.
 
@@ -70,7 +70,7 @@ Der Terminplan wird wöchentlich fortgeschrieben. Soll-Ist-Vergleich bedeutet: g
 !!! kastanienallee "Kastanienallee 7"
     Für K7 beträgt die Bauzeit in ::LP:: 8 vierzehn Monate. Der Rohbau läuft sechs Monate, Dach und Dichtheit einen Monat, die TGA-Rohinstallation vier Monate teilweise parallel zu den oberen Rohbaugeschossen. Der Innenausbau dauert rund fünf Monate in fester Reihenfolge: Estrich, vier Wochen Trocknungszeit, KWL-Endmontage, Elektriker-Unterputz, Innenputz und Trockenbau, Maler, Parkett und Fliesen. Der kritische Pfad läuft über Rohbau, Estrich, Innenputz und Fußbodenbelag. Ein Verzug im Estrich verschiebt die folgenden Ausbaugewerke nahezu 1:1.
 
-## 17.3 Kostenkontrolle auf der Baustelle
+## 29.3 Kostenkontrolle auf der Baustelle
 
 Kostenkontrolle beginnt nicht erst mit der Schlussrechnung. Die Soll-Linie ist der Kostenanschlag aus Vergabe und Beauftragung. Er ist nach **::DIN 276::** gegliedert und wird während der Ausführung gegen Aufträge, Nachträge, geprüfte Rechnungen und Prognosen gehalten. Damit entsteht nicht nur die Frage: Was wurde bezahlt? Sondern: Was wird das Projekt am Ende voraussichtlich kosten?
 
@@ -97,7 +97,7 @@ Kostenkontrolle braucht deshalb eine Prognose, nicht nur eine Buchhaltung. Berei
 !!! kastanienallee "Kastanienallee 7"
     In Woche 8 stößt der Bagger beim Aushub auf Teereinschlüsse, vermutlich von einer früheren Tankstellennutzung. Der Rohbauer meldet einen Entsorgungsnachtrag: 320 m³ belasteter Boden, Sonderentsorgung Deponieklasse III und zusätzlicher Transport, zusammen 68.000 € netto. Die Architektenprüfung verlangt Aushubprotokoll, Wiegescheine und Marktpreisvergleich. Die Reserve von 10 % der Kostenschätzung beträgt 576.000 €; nach Freigabe ist sie um 68.000 € reduziert. Der Bauherr wird informiert, der Kostenbericht fortgeschrieben.
 
-## 17.4 Bauoberleitung: die tägliche Arbeit
+## 29.4 Bauoberleitung: die tägliche Arbeit
 
 Die ::Bauoberleitung:: in ::LP:: 8 bedeutet nicht, dass der Architekt jeden Handgriff permanent überwacht. Er prüft stichprobenartig, koordiniert, dokumentiert und greift ein, wenn Ausführung, Planung oder Vertrag auseinanderlaufen. Trotzdem haftet er für erkennbare Mängel, wenn er sie bei ordnungsgemäßer Überwachung hätte bemerken müssen. Vorsätzliches Wegsehen ist etwas anderes als ein verdeckter Mangel, aber beides zeigt: Bauüberwachung ist fachliche Verantwortung, nicht nur Anwesenheit.
 
@@ -118,7 +118,7 @@ Zwischen Mängelrüge und Abnahme liegt viel Alltagsarbeit. Ein Mangel muss so b
 !!! kastanienallee "Kastanienallee 7"
     In Woche 14 meldet der Rohbauer drei Tage Rückstand wegen Kranausfalls. Die Hydraulik ist defekt, der Kran ist für Schalung und Bewehrung betriebsnotwendig. Der Unternehmer stellt eine Behinderungsanzeige. Der Architekt prüft Wartungsnachweise, Ausfallzeit und Auswirkungen, bestätigt die Behinderung und dokumentiert sie in Bautagebuch und Protokoll. Dachdecker und TGA-Rohinstallation werden um drei Tage verschoben. Weil vier Tage Puffer vorhanden sind, entsteht kein kritischer-Pfad-Effekt.
 
-## 17.5 BIM in der Bauphase
+## 29.5 BIM in der Bauphase
 
 In der Bauphase wird BIM praktisch, wenn Termin, Modell, Dokumentation und Mängel zusammengeführt werden. 4D-BIM verknüpft Vorgänge aus dem Terminplan mit Modellelementen. In IFC4 können `IfcTask` Aufgaben und `IfcRelSequence` Abhängigkeiten abbilden. Ein Viewer kann dann zeigen, welche Bauteile zu welchem Zeitpunkt geplant, begonnen oder fertiggestellt sein sollten.
 
@@ -148,7 +148,7 @@ Art. 54 BayBO und § 59 ::MBO:: ordnen die Rolle des verantwortlichen Bauleiters
 
 Terminplan, Kostenkontrolle, Bauoberleitung, Bautagebuch, Behinderungsanzeige und Abnahme sind keine Bürokratie neben dem Bauen. Sie sind die Werkzeuge, mit denen Qualität, Zeit, Kosten und Verantwortung auf der Baustelle nachvollziehbar bleiben.
 
-Verwandte Kapitel: [Kap. 15](/chapters/15-hoai) · [Kap. 16](/chapters/16-kosten-ausschreibung) · [Kap. 18](/chapters/18-was-bim-wirklich-ist) · [Kap. 21](/chapters/21-prozess-kollaboration) · [Kap. 26](/chapters/26-digitaler-zwilling-ki)
+Verwandte Kapitel: [Kap. 19](/chapters/19-hoai-rollen-projektorganisation) · [Kap. 23](/chapters/23-kostenplanung-mengen-din276) · [Kap. 33](/chapters/33-was-bim-wirklich-ist) · [Kap. 36](/chapters/36-prozess-kollaboration) · [Kap. 41](/chapters/41-digitaler-zwilling-ki)
 
 [^bau-projekt-management-kochendoerfer]: Kochendörfer, Liebchen & Viering: *Bau-Projekt-Management*, 6. Auflage.
 [^bauobjektueberwachung-wuerfele]: Würfele, Bielefeld & Gralla: *Bauobjektüberwachung*, 3. Auflage.

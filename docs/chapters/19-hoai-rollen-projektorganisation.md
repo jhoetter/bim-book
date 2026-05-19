@@ -1,6 +1,6 @@
-# Kapitel 15 – HOAI: Phasen, Leistungen, Koordination
+# Kapitel 19 – HOAI, Rollen & Projektorganisation
 
-*Teil V – Projektprozess*
+*Teil V – Genehmigung & Planungsreife*
 
 ---
 
@@ -14,13 +14,13 @@ Ein Gebäude wird nicht in einem einzigen Schritt geplant. Es wird geklärt, ver
     - Honorar, anrechenbare Kosten und Fachplanerrollen grob einordnen
     - LOD, AIA und BAP als BIM-Steuerungsinstrumente verstehen
 
-## 15.1 HOAI als Prozessrahmen
+## 19.1 HOAI als Prozessrahmen
 
-Die Entwurfslogik selbst beginnt in [Kapitel 2](/chapters/02-entwurf-raum-funktion): Bauherrenwunsch, Ort, Raumprogramm, Varianten und Entscheidung. Dieses Kapitel fragt danach, wie diese Arbeit vertraglich und organisatorisch in ein Projekt übersetzt wird.
+Die Entwurfslogik selbst beginnt in [Kapitel 6](/chapters/06-plaene-raum-funktion-entwurfslogik): Bauherrenwunsch, Ort, Raumprogramm, Varianten und Entscheidung. Dieses Kapitel fragt danach, wie diese Arbeit vertraglich und organisatorisch in ein Projekt übersetzt wird.
 
 Die HOAI ist kein Entwurfslehrbuch. Sie beschreibt Leistungsphasen, Grundleistungen, Honorarsystematik und Verantwortlichkeiten. Das ist für Einsteiger wichtig, weil dieselbe räumliche Idee je nach Phase einen anderen Verbindlichkeitsgrad hat: In der Vorplanung ist eine Wand noch Suchbewegung, in der Ausführungsplanung ist sie koordinierter Bauinhalt, in der Ausschreibung wird sie Vertragsleistung.
 
-## 15.2 Die neun Leistungsphasen
+## 19.2 Die neun Leistungsphasen
 
 Die **Honorarordnung für Architekten und Ingenieure** (::HOAI::) beschreibt Leistungsbilder und Honorarlogik. Für Gebäudeplanung sind die neun ::LP:: ein praktisches Prozessmodell. ::LP:: 1 klärt Grundlagen, ::LP:: 2 entwickelt Vorplanung und Kostenschätzung, ::LP:: 3 verdichtet den Entwurf mit Kostenberechnung, ::LP:: 4 erstellt die Genehmigungsplanung.
 
@@ -39,19 +39,19 @@ tags: hoai, leistungsphasen, planungsprozess
 !!! kastanienallee "Kastanienallee 7"
     Ein plausibler Zeitplan: ::LP:: 1 dauert 3 Monate, ::LP:: 2-3 zusammen 4 Monate, ::LP:: 4 etwa 2 Monate Bearbeitung plus 8 Monate Behördenlaufzeit, ::LP:: 5 etwa 6 Monate, ::LP:: 6-7 etwa 3 Monate, ::LP:: 8 etwa 14 Monate Bauzeit. ::LP:: 9 läuft über die Gewährleistung. Diese Zeiten überlappen teilweise; entscheidend ist, dass Fachplaner früh genug eingebunden sind.
 
-## 15.3 Honorarberechnung
+## 19.3 Honorarberechnung
 
 Das Honorar basiert auf anrechenbaren Kosten, Honorarzone, Leistungsumfang und Honorartafel. Anrechenbare Kosten sind vor allem Baukonstruktion und technische Anlagen, nicht Grundstück oder Finanzierung. Honorarzonen I bis V beschreiben Planungsanforderungen, von sehr einfach bis sehr anspruchsvoll.
 
 Seit der HOAI-Reform sind Honorarsätze nicht mehr zwingend als verbindliche Mindest- und Höchstsätze anzuwenden, aber die Struktur bleibt in der Praxis wichtig. Für Einsteiger genügt: Honorar hängt nicht direkt an Quadratmetern, sondern an Kosten und Schwierigkeit. Ein technisches Gebäude gleicher Größe kann aufwendiger sein als ein einfaches Lager.
 
-## 15.4 Fachplaner und Rollen
+## 19.4 Fachplaner und Rollen
 
 Architekten koordinieren als Objektplaner viele Fachbeiträge, planen aber nicht alles selbst. Tragwerksplanung liefert Statik, Positionspläne und Bewehrung. TGA plant Heizung, Lüftung, Sanitär, Elektro und ::Gebäudeautomation::. Brandschutz, Bauphysik, Vermessung, Geotechnik und Freianlagen kommen je nach Projekt hinzu.
 
 Koordination heißt nicht, Fachplaner zu kontrollieren, sondern Schnittstellen zu führen. Eine Lüftungsanlage braucht Deckenhöhe, ein Unterzug braucht Platz, ein Brandschutzkonzept braucht Türen und Schächte, ein Schallschutznachweis braucht Bauteilaufbauten. Der Objektplaner muss diese Abhängigkeiten sichtbar halten.
 
-## 15.5 Ausführungsplanung und Bauunterlagen
+## 19.5 Ausführungsplanung und Bauunterlagen
 
 Zwischen Entwurf und Ausschreibung liegt ein entscheidender Schritt: Die Planung muss ausführbar werden. Im englischen Prozessmodell entspricht das den Construction Documents. Im deutschen HOAI-System liegt der Kern in ::LP:: 5, der Ausführungsplanung. Hier wird aus der genehmigten und abgestimmten Lösung ein Plansatz, nach dem Firmen kalkulieren, Werkpläne ableiten und später bauen können.
 
@@ -64,7 +64,7 @@ Für BIM ist ::LP:: 5 der Moment, in dem Modellreife praktisch wird. Ein LOD-300
 !!! kastanienallee "Kastanienallee 7"
     Für K7 enthält der LP-5-Stand unter anderem koordinierte Ausführungsgrundrisse im Maßstab 1:50, Fassaden- und Dachdetails, Aufzugsschachtmaße, Türlisten mit Brandschutzanforderungen, Schachtbelegung je Geschoss, Deckendurchbrüche für TGA, Abdichtungsdetails am Flachdach und einen abgestimmten Modellstand für Mengen. Erst dieser Stand ist belastbar genug, um daraus Leistungsverzeichnisse in Kapitel 16 abzuleiten.
 
-## 15.6 BIM in den Leistungsphasen
+## 19.6 BIM in den Leistungsphasen
 
 Der **Level of Development** (::LOD::) beschreibt den Informationsgehalt eines Modellelements. In ::LP:: 1 reicht ein grobes Volumenmodell, etwa LOD 100. In ::LP:: 2-3 werden Systeme und Hauptabmessungen festgelegt, LOD 200. In ::LP:: 5 müssen Bauteile, Schichten, Öffnungen und technische Systeme koordiniert sein, LOD 300 oder höher. LOD 500 beschreibt den geprüften as-built-Zustand.
 
@@ -83,13 +83,13 @@ tags: lod, bim, leistungsphasen, modell
 !!! kastanienallee "Kastanienallee 7"
     In ::LP:: 2 wird Kastanienallee 7 als Massen- und Raummodell mit Flächen, Geschossen und Erschließung geführt. In ::LP:: 3 kommen tragende Systeme, Schächte, Energiekennwerte und Fassadenraster hinzu. In ::LP:: 5 werden Wandaufbauten, Deckendurchbrüche, TGA-Trassen und Brandschutzeigenschaften koordiniert. Die AIA fordert je Disziplin LOD-Ziele und Prüfzeitpunkte.
 
-## 15.7 BIM-Ausführungsplan
+## 19.7 BIM-Ausführungsplan
 
 Der **BIM-Abwicklungsplan** (::BAP::) ist das zentrale Steuerungsdokument eines BIM-Projekts. Er antwortet auf die Informationsanforderungen des Auftraggebers und legt fest, wie das Projekt modellbasiert arbeitet. Ein guter ::BAP:: ist konkret, nicht eine Vorlage aus dem letzten Projekt.
 
 Typische Kapitel sind Projektziele, BIM-Anwendungsfälle, Modellstruktur, Koordinatenursprung, Dateibenennung, LOD-Matrix, Software, IFC-Version, MVD, CDE-Workflow, Prüfregeln, Rollen und Verantwortlichkeiten. Der ::BAP:: muss vor der vertieften Entwurfskoordination stehen, sonst entstehen Modelle ohne gemeinsame Regeln.
 
-## 15.8 Warum die Phasen nicht beliebig sind
+## 19.8 Warum die Phasen nicht beliebig sind
 
 Die ::LP:: wirken auf Einsteiger manchmal bürokratisch. In Wirklichkeit bilden sie eine Risikologik ab. In ::LP:: 1 und ::LP:: 2 werden Ziele, Randbedingungen und Varianten geklärt. In ::LP:: 3 wird der Entwurf so weit verdichtet, dass Kosten und Genehmigungsfähigkeit belastbar werden. ::LP:: 4 übersetzt ihn in Bauvorlagen. ::LP:: 5 macht daraus ausführbare Details. ::LP:: 6 und ::LP:: 7 beschreiben und vergeben Leistungen. ::LP:: 8 kontrolliert die Umsetzung. ::LP:: 9 prüft, ob das Werk im Betrieb Mängel zeigt.
 
@@ -104,7 +104,7 @@ Auch Rollen müssen konkret sein. Ein BIM-Manager definiert Ziele und Regeln, ei
 !!! kastanienallee "Kastanienallee 7"
     Für K7 wird im BAP festgelegt: Architekturmodell LOD 200 in ::LP:: 3, tragende Bauteile mit `LoadBearing`, Räume mit DIN-277-Flächen, TGA-Schächte geometrisch ab ::LP:: 3, detaillierte MEP-Trassen ab ::LP:: 5. IFC4 Reference View wird für Koordination vereinbart, BCF für Kollisionskommunikation. Dadurch weiß jedes Büro, welche Information zu welchem Zeitpunkt erwartet wird.
 
-## 15.9 Prüffragen für die Praxis
+## 19.9 Prüffragen für die Praxis
 
 Bei jedem Projekt sollte klar sein, welche Entscheidung in welcher ::LP:: getroffen wird. In ::LP:: 2 sind Varianten noch offen; in ::LP:: 3 muss der Entwurf so stabil werden, dass Kostenberechnung und Fachplanung belastbar sind. In ::LP:: 4 darf nicht mehr grundsätzlich gesucht werden. In ::LP:: 5 müssen Details ausführbar werden. Wenn diese Reifegrade nicht eingehalten werden, verschiebt sich Risiko nach hinten.
 
@@ -114,7 +114,7 @@ Auch Fachplaner brauchen klare Schnittstellen. Wer modelliert Durchbrüche? Wer 
 
 Ein guter BAP ist deshalb konkret und kurz genug, um genutzt zu werden. Er enthält keine allgemeinen BIM-Floskeln, sondern Projektregeln: Modellursprung, Koordinaten, Dateinamen, Austauschtermine, Prüfregeln, Verantwortlichkeiten, LOD-Matrix, Property-Anforderungen und Issue-Workflow. Alles, was niemand prüft, wird im Projekt wahrscheinlich nicht zuverlässig geliefert.
 
-## 15.10 Entwicklerperspektive
+## 19.10 Entwicklerperspektive
 
 HOAI-Phasen sind für Software wichtig, weil sie Informationsreife strukturieren. Ein Modellobjekt ist nicht einfach vorhanden oder nicht vorhanden. Es hat einen Reifegrad: grobes Volumen, typisiertes Bauteil, detaillierter Aufbau, ausführungsreifes Element, as-built-Asset. Software, die diese Reife nicht kennt, behandelt frühe Entwurfsdaten zu verbindlich oder späte Daten zu unverbindlich.
 
@@ -128,7 +128,7 @@ Für Planer ist die wichtigste Konsequenz: Jede digitale Zusatzanforderung brauc
 
 ## BIM-Brücke: Prozessdaten sind Projektdaten
 
-BIM ist nicht nur Geometrie, sondern Lieferung von Information zu einem Zeitpunkt. ::LOD::, AIA und ::BAP:: verbinden Fachplanung mit Datenqualität. In [Kapitel 21](/chapters/21-prozess-kollaboration) wird daraus der CDE-Workflow, in [Kapitel 18](/chapters/18-was-bim-wirklich-ist) die BIM-Methode.
+BIM ist nicht nur Geometrie, sondern Lieferung von Information zu einem Zeitpunkt. ::LOD::, AIA und ::BAP:: verbinden Fachplanung mit Datenqualität. In [Kapitel 36](/chapters/36-prozess-kollaboration) wird daraus der CDE-Workflow, in [Kapitel 33](/chapters/33-was-bim-wirklich-ist) die BIM-Methode.
 
 ## Normen und Grundlagen
 
@@ -140,4 +140,4 @@ Die HOAI 2021 beschreibt Leistungsbilder, Grundleistungen und Honorarlogik. DIN 
 
 Die ::HOAI:: gibt dafür die Prozesssprache, BIM ergänzt die Informationssprache. Ohne klare Rollen, LOD-Ziele und BAP entstehen Daten ohne Verlässlichkeit.
 
-Verwandte Kapitel: [Kap. 2](/chapters/02-entwurf-raum-funktion) · [Kap. 14](/chapters/14-planungsrecht) · [Kap. 16](/chapters/16-kosten-ausschreibung) · [Kap. 17](/chapters/17-bauprojektmanagement-bauoberleitung) · [Kap. 18](/chapters/18-was-bim-wirklich-ist) · [Kap. 21](/chapters/21-prozess-kollaboration)
+Verwandte Kapitel: [Kap. 6](/chapters/06-plaene-raum-funktion-entwurfslogik) · [Kap. 18](/chapters/18-planungsrecht-bauantrag) · [Kap. 23](/chapters/23-kostenplanung-mengen-din276) · [Kap. 29](/chapters/29-bauoberleitung-baukontrolle-maengelmanagement) · [Kap. 33](/chapters/33-was-bim-wirklich-ist) · [Kap. 36](/chapters/36-prozess-kollaboration)

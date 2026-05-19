@@ -1,6 +1,6 @@
-# Kapitel 14 – Planungsrecht
+# Kapitel 18 – Planungsrecht & Bauantrag im Detail
 
-*Teil V – Projektprozess*
+*Teil V – Genehmigung & Planungsreife*
 
 ---
 
@@ -13,7 +13,7 @@ Ein Grundstück wirkt frei, bis man seine Regeln liest. Eine Linie im ::Bebauung
     - Bebauungspläne mit GRZ, GFZ, Baugrenzen und Nutzungsart lesen
     - Bauantrag, digitale Genehmigung, ::Abstandsfläche:: und Befreiungen als Entwurfsbedingungen verstehen
 
-## 14.1 Das Baurecht-System
+## 18.1 Das Baurecht-System
 
 Das öffentliche Baurecht besteht aus mehreren Ebenen. Das Baugesetzbuch regelt städtebauliche Planung und die Zulässigkeit von Vorhaben. Die Baunutzungsverordnung konkretisiert Nutzungsarten, Bauweise und Maß der baulichen Nutzung. Die Landesbauordnungen regeln Sicherheit, ::Abstandsfläche::, Rettungswege, Stellplätze und Bauvorlagen; die ::MBO:: dient dabei als Muster.
 
@@ -31,7 +31,7 @@ tags: baurecht, baugb, mbo, bebauungsplan
 -->
 ![Hierarchie des Baurechts](../assets/illustrations/kap14_baurecht_hierarchie.png)
 
-## 14.2 Bebauungsplan lesen
+## 18.2 Bebauungsplan lesen
 
 Der ::Bebauungsplan:: legt fest, was auf einem Grundstück zulässig ist. Die Art der Nutzung wird mit Kürzeln beschrieben: WR für reines Wohngebiet, WA für allgemeines Wohngebiet, MI für Mischgebiet, GE für Gewerbegebiet, GI für Industriegebiet. Das Maß der Nutzung wird über ::GRZ::, ::GFZ::, Zahl der Vollgeschosse, Traufhöhe oder Firsthöhe bestimmt.
 
@@ -50,7 +50,7 @@ tags: bebauungsplan, grz, gfz, baugrenze
 !!! kastanienallee "Kastanienallee 7"
     Der angenommene ::Bebauungsplan:: setzt WA, ::GRZ:: 0,60 und ::GFZ:: 2,40 fest. Das Grundstück hat 600 m², die bebaute Fläche 360 m²; damit ist die ::GRZ:: ausgeschöpft. Die Geschossfläche der vier Vollgeschosse beträgt 1.440 m²; 1.440 / 600 = 2,40. Die Traufhöhe liegt bei 13 m und hält das Gebäude in ::Gebäudeklasse:: 4.
 
-## 14.3 Genehmigungsverfahren
+## 18.3 Genehmigungsverfahren
 
 Am Genehmigungsverfahren sind Bauherr, bauvorlageberechtigter Entwurfsverfasser, Behörde, Nachbarn und Träger öffentlicher Belange beteiligt. Je nach Bundesland und Vorhaben gibt es vereinfachte oder reguläre Verfahren. Wohngebäude mittlerer Größe können formal überschaubar wirken, erzeugen aber Abstimmungen zu Brandschutz, Stellplätzen, ::Entwässerung::, Barrierefreiheit und Nachbarschaft.
 
@@ -63,7 +63,7 @@ Für Planer ist wichtig, dass Bauantragspläne keine Entwurfsskizzen mehr sind. 
 !!! kastanienallee "Kastanienallee 7"
     Für Kastanienallee 7 wird ein reguläres Verfahren angenommen. Grund: GK 4, Aufzug, Tiefgarage/ Stellplätze, Brandschutz- und Schallschutzanforderungen. Zeitablauf: Einreichung nach Entwurfsplanung, formale Vollständigkeitsprüfung, Beteiligung der Fachstellen, Nachforderungen, Genehmigung. Wegen der hohen ::GRZ:: wird die Nachbar- und Satzungslage früh geprüft.
 
-## 14.4 Digitaler Bauantrag und BIM-to-Permit
+## 18.4 Digitaler Bauantrag und BIM-to-Permit
 
 Digitale Bauanträge ersetzen zunächst Papierwege, nicht automatisch die fachliche Prüfung. Viele Portale nehmen PDF-Pläne, Formulare und Nachweise digital entgegen. Das ist organisatorisch hilfreich, aber noch kein vollautomatischer Modellcheck. Ein BIM-Modell kann Geometrie, Flächen, Geschosse und Bauteile liefern; die Behörde braucht jedoch prüfbare, rechtlich eindeutige Unterlagen.
 
@@ -71,19 +71,19 @@ BIM-to-Permit ist deshalb ein realistischer, aber begrenzter Anwendungsfall. Gut
 
 Für Software ist die wichtigste Einsicht: Genehmigungsfähigkeit entsteht aus Modell, Regelquelle und Nachweislogik. Ein `IfcSite` allein kennt nicht den Bebauungsplan. Ein Raumobjekt allein weiß nicht, ob seine Fläche nach Wohnflächenverordnung, DIN 277 oder BauNVO relevant ist. Digitale Genehmigung braucht deshalb maschinenlesbare Regeln, saubere Modellklassifikation und menschlich nachvollziehbare Begründungen.
 
-## 14.5 Abstandsflächen
+## 18.5 Abstandsflächen
 
 ::Abstandsfläche:: sichern Belichtung, Belüftung, Brandschutzabstand und städtebauliche Ordnung. Ihre Tiefe hängt von der Wandhöhe und einem Faktor ab, in Wohngebieten häufig 0,4 H, mindestens jedoch 3 m. Landesrechtliche Details weichen ab, deshalb muss immer die konkrete Landesbauordnung gelesen werden.
 
 ::Abstandsfläche:: sind geometrisch, aber nicht trivial. Dachformen, Gelände, Grenzgaragen, Balkone, Vorbauten und Baulinien verändern die Berechnung. Ein Gebäude kann nach ::GRZ:: und ::GFZ:: zulässig wirken und trotzdem an ::Abstandsfläche:: scheitern. Genau deshalb gehört die Prüfung in den Vorentwurf.
 
-## 14.6 Sonderthemen
+## 18.6 Sonderthemen
 
 Denkmalschutz kann Gestalt, Material, Fenster und energetische Maßnahmen begrenzen. Das GEG enthält Ausnahmen, wenn Anforderungen die Substanz oder Erscheinung unverhältnismäßig beeinträchtigen. Nachbarzustimmungen können Konflikte lösen, ersetzen aber nicht jede öffentlich-rechtliche Zulässigkeit.
 
 Befreiungen nach §31 BauGB erlauben Abweichungen vom ::Bebauungsplan::, wenn Grundzüge der Planung nicht berührt sind und öffentliche Belange gewahrt bleiben. Sie sind kein Anspruch auf Wunschplanung, sondern ein begründeter Antrag. Teilungsgenehmigung, Stellplatznachweis und Außenanlagen gehören ebenfalls zum genehmigungsfähigen Gesamtbild.
 
-## 14.7 Planungsrecht als Entwurfsfilter
+## 18.7 Planungsrecht als Entwurfsfilter
 
 Planungsrecht sollte nicht erst geprüft werden, wenn der Entwurf fertig aussieht. Es ist ein Filter, der von Beginn an entscheidet, welche Varianten überhaupt sinnvoll sind. Ein Gebäude kann funktional, schön und wirtschaftlich wirken und trotzdem scheitern, wenn es außerhalb der Baugrenze liegt, die ::Abstandsfläche:: verletzt oder eine unzulässige Nutzung vorsieht.
 
@@ -98,7 +98,7 @@ Für digitale Werkzeuge ist Planungsrecht reizvoll und schwierig zugleich. Manch
 !!! kastanienallee "Kastanienallee 7"
     Für K7 wird die rechtliche Prüfung als Variantenfilter genutzt. Variante A überschreitet die Baugrenze im Hof um 1,20 m und wird verworfen. Variante B bleibt innerhalb der Baugrenze, erreicht mit 4 Vollgeschossen die GFZ 2,4 und hält die Traufhöhe von 13 m ein. Die Differenz ist kein gestalterisches Detail: Nur Variante B ist ohne frühe Befreiungsstrategie belastbar.
 
-## 14.8 Prüffragen für die Praxis
+## 18.8 Prüffragen für die Praxis
 
 Eine belastbare planungsrechtliche Prüfung beginnt mit Dokumentenlage. Liegt ein ::Bebauungsplan:: vor? Gibt es textliche Festsetzungen, Gestaltungssatzungen, Stellplatzsatzungen, Baumschutzsatzungen, Denkmalschutz oder Baulasten? Welche Landesbauordnung gilt? Welche Gemeinde ist zuständig? Ohne diese Quellen ist jede Entwurfsaussage vorläufig.
 
@@ -108,7 +108,7 @@ Stellplätze und Außenanlagen dürfen nicht vergessen werden. Ein Gebäude kann
 
 Digitale Prüfung kann hier viel leisten, wenn die Regeln als Parameter vorliegen. Ein Modell kann Flächen summieren, Höhen vergleichen und Baugrenzen prüfen. Schwieriger sind Ausnahmen, Befreiungen und Ermessensentscheidungen. Gute Software sollte deshalb Ergebnisse als Ampel mit Begründung zeigen, nicht als scheinbar absolute Genehmigungszusage.
 
-## 14.9 Entwicklerperspektive
+## 18.9 Entwicklerperspektive
 
 Planungsrecht ist für Software verführerisch, weil viele Regeln formal wirken. GRZ, GFZ, Höhen und Baugrenzen lassen sich tatsächlich parametrisieren. Ein Modell kann Grundstücksfläche, überbaute Fläche und Geschossfläche berechnen. Es kann Baukörper mit Baugrenzen schneiden und Höhen gegen festgelegte Ebenen prüfen. Diese Use-Cases sind realistisch.
 
@@ -132,4 +132,4 @@ BauGB und BauNVO bestimmen, ob und wie ein Grundstück planungsrechtlich bebaut 
 
 ::Bebauungsplan::, Bauordnung, Satzungen und Genehmigungsverfahren müssen früh gelesen werden. Nur dann werden ::GRZ::, ::GFZ::, ::Gebäudeklasse::, ::Abstandsfläche:: und Nutzung zu steuerbaren Parametern statt späten Überraschungen.
 
-Verwandte Kapitel: [Kap. 2](/chapters/02-entwurf-raum-funktion) · [Kap. 9](/chapters/09-brandschutz) · [Kap. 15](/chapters/15-hoai) · [Kap. 16](/chapters/16-kosten-ausschreibung)
+Verwandte Kapitel: [Kap. 6](/chapters/06-plaene-raum-funktion-entwurfslogik) · [Kap. 13](/chapters/13-brandschutz) · [Kap. 19](/chapters/19-hoai-rollen-projektorganisation) · [Kap. 23](/chapters/23-kostenplanung-mengen-din276)
