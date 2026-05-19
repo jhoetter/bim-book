@@ -1,8 +1,6 @@
 import { useMemo, useState } from 'react'
-import { NavLink } from 'react-router-dom'
-import { getChapterReferenceGraph, type ChapterGraphEdge, type ChapterGraphNode } from '../chapters'
+import { getChapterReferenceGraph, type ChapterGraphNode } from '../chapters'
 import { OverviewCard } from './OverviewCard'
-import { bookPath } from '../books'
 
 interface PartGroup {
   partTitle: string
@@ -30,12 +28,6 @@ function groupByPart(nodes: ChapterGraphNode[]): PartGroup[] {
   return groups
 }
 
-function edgeTargets(edges: ChapterGraphEdge[], id: string, direction: 'incoming' | 'outgoing'): ChapterGraphEdge[] {
-  return edges
-    .filter(edge => direction === 'incoming' ? edge.targetId === id : edge.sourceId === id)
-    .sort((a, b) => b.count - a.count)
-}
-
 export function ChapterReferenceGraph() {
   const graph = useMemo(() => getChapterReferenceGraph(), [])
   const groups = useMemo(() => groupByPart(graph.nodes), [graph.nodes])
@@ -47,12 +39,14 @@ export function ChapterReferenceGraph() {
   )
 
   const focused = focusedId ? byId.get(focusedId) ?? null : null
-  const incoming = focused ? edgeTargets(graph.edges, focused.chapter.id, 'incoming') : []
-  const outgoing = focused ? edgeTargets(graph.edges, focused.chapter.id, 'outgoing') : []
   const connectedIds = new Set<string>()
-  for (const edge of [...incoming, ...outgoing]) {
-    connectedIds.add(edge.sourceId)
-    connectedIds.add(edge.targetId)
+  if (focused) {
+    for (const edge of graph.edges) {
+      if (edge.sourceId === focused.chapter.id || edge.targetId === focused.chapter.id) {
+        connectedIds.add(edge.sourceId)
+        connectedIds.add(edge.targetId)
+      }
+    }
   }
 
   return (
@@ -83,7 +77,7 @@ export function ChapterReferenceGraph() {
                       <OverviewCard
                         key={node.chapter.id}
                         chapter={node.chapter}
-                        showDescription={false}
+                        showDescription={isFocused}
                         badge={node.chapter.num === '1' ? 'Einstieg' : undefined}
                         className={[
                           'overview-card--map',
@@ -101,60 +95,6 @@ export function ChapterReferenceGraph() {
             ))}
           </div>
         </div>
-
-        <aside className="chapter-map-focus" aria-label="Fokussiertes Kapitel">
-          {focused ? (
-            <>
-              <p className="chapter-map-focus-kicker">Fokus</p>
-              <h3>Kap. {focused.chapter.num} · {focused.chapter.title}</h3>
-              <p className="chapter-map-focus-meta">
-                {focused.incoming} eingehende, {focused.outgoing} ausgehende Verweise
-              </p>
-
-              <div className="chapter-map-links">
-                <div>
-                  <h4>Verweist auf</h4>
-                  {outgoing.length > 0 ? (
-                    outgoing.slice(0, 8).map(edge => {
-                      const target = byId.get(edge.targetId)
-                      if (!target) return null
-                      return (
-                        <NavLink key={`${edge.sourceId}-${edge.targetId}`} to={bookPath(target.chapter.path)}>
-                          <span>Kap. {target.chapter.num}</span>
-                          <strong>{target.chapter.title}</strong>
-                          <em>{edge.count}×</em>
-                        </NavLink>
-                      )
-                    })
-                  ) : (
-                    <p>Keine ausgehenden Kapitelverweise.</p>
-                  )}
-                </div>
-
-                <div>
-                  <h4>Wird referenziert von</h4>
-                  {incoming.length > 0 ? (
-                    incoming.slice(0, 8).map(edge => {
-                      const source = byId.get(edge.sourceId)
-                      if (!source) return null
-                      return (
-                        <NavLink key={`${edge.sourceId}-${edge.targetId}`} to={bookPath(source.chapter.path)}>
-                          <span>Kap. {source.chapter.num}</span>
-                          <strong>{source.chapter.title}</strong>
-                          <em>{edge.count}×</em>
-                        </NavLink>
-                      )
-                    })
-                  ) : (
-                    <p>Keine eingehenden Kapitelverweise.</p>
-                  )}
-                </div>
-              </div>
-            </>
-          ) : (
-            <p className="chapter-map-empty">Ein Kapitel fokussieren, um seine Querverweise zu sehen.</p>
-          )}
-        </aside>
       </div>
     </section>
   )

@@ -1847,8 +1847,6 @@ html, body, #root {
 .chapter-map-shell {
   flex: 1;
   min-height: 0;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 320px;
   border-top: 1px solid var(--border);
   background:
     linear-gradient(90deg, color-mix(in srgb, var(--border-soft) 70%, transparent) 1px, transparent 1px),
@@ -1866,9 +1864,9 @@ html, body, #root {
 }
 .chapter-map-grid {
   display: grid;
-  grid-template-columns: repeat(9, minmax(172px, 1fr));
-  gap: 14px;
-  min-width: 1660px;
+  grid-template-columns: repeat(9, minmax(190px, 1fr));
+  gap: 16px;
+  min-width: 1840px;
   align-items: start;
 }
 .chapter-map-part {
@@ -1916,9 +1914,10 @@ html, body, #root {
   opacity: 0.92;
   transform: none;
   box-shadow: none;
+  position: relative;
 }
 .overview-card--map:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 .overview-card--map-muted {
   opacity: 0.34;
@@ -1928,18 +1927,28 @@ html, body, #root {
   border-color: color-mix(in srgb, var(--accent) 38%, var(--border));
 }
 .overview-card--map-focused {
+  width: 260px;
+  min-height: 250px;
   opacity: 1;
   border-color: var(--accent);
   box-shadow:
     0 0 0 3px color-mix(in srgb, var(--accent) 14%, transparent),
     0 12px 26px hsl(222 24% 9% / 0.12);
+  z-index: 20;
 }
 .overview-card--map .overview-card-cover {
   height: 58px;
 }
+.overview-card--map-focused .overview-card-cover {
+  height: 126px;
+}
 .overview-card--map .overview-card-body {
   min-height: 54px;
   padding: 7px 9px 9px;
+}
+.overview-card--map-focused .overview-card-body {
+  min-height: 118px;
+  padding: 10px 12px 12px;
 }
 .overview-card--map .overview-card-icon {
   bottom: 5px;
@@ -1962,86 +1971,19 @@ html, body, #root {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.overview-card--map-focused .overview-card-title {
+  font-size: 0.94rem;
+  line-height: 1.24;
+}
+.overview-card--map-focused .overview-card-desc {
+  display: -webkit-box;
+  font-size: 0.78rem;
+  line-height: 1.42;
+  -webkit-line-clamp: 4;
+}
 .overview-card--map .overview-card-badge {
   font-size: 0.56rem;
   padding: 3px 7px;
-}
-.chapter-map-focus {
-  min-width: 0;
-  border-left: 1px solid var(--border);
-  background: color-mix(in srgb, var(--bg-sidebar) 78%, var(--bg));
-  padding: 24px 20px;
-  overflow: auto;
-}
-.chapter-map-focus-kicker {
-  margin: 0 0 8px;
-  color: var(--text-faint);
-  font-size: 0.68rem;
-  font-weight: 760;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-.chapter-map-focus h3 {
-  margin: 0;
-  color: var(--ink);
-  font-size: 1rem;
-  line-height: 1.28;
-}
-.chapter-map-focus-meta {
-  margin: 8px 0 18px;
-  color: var(--text-muted);
-  font-size: 0.78rem;
-}
-.chapter-map-links {
-  display: grid;
-  gap: 18px;
-}
-.chapter-map-links h4 {
-  margin: 0 0 8px;
-  color: var(--text-muted);
-  font-size: 0.72rem;
-  font-weight: 760;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-.chapter-map-links a {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
-  gap: 8px;
-  align-items: baseline;
-  padding: 8px 0;
-  color: var(--text);
-  text-decoration: none;
-  border-top: 1px solid var(--border-soft);
-}
-.chapter-map-links a:hover strong {
-  color: var(--accent);
-}
-.chapter-map-links span,
-.chapter-map-links em,
-.chapter-map-links p {
-  color: var(--text-faint);
-  font-size: 0.72rem;
-  font-style: normal;
-}
-.chapter-map-links strong {
-  min-width: 0;
-  color: var(--ink);
-  font-size: 0.78rem;
-  font-weight: 620;
-  line-height: 1.3;
-}
-.chapter-map-empty {
-  color: var(--text-muted);
-  font-size: 0.86rem;
-}
-@media (max-width: 1180px) {
-  .chapter-map-shell {
-    grid-template-columns: 1fr;
-  }
-  .chapter-map-focus {
-    display: none;
-  }
 }
 .chapter-graph-panel {
   flex: 1;

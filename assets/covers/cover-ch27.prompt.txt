@@ -1,1 +1,3 @@
-Generated cover crop from kap27_bauzeitenplan_taktplanung.png for Kapitel 27: Terminplanung, Lean & Baustellenlogistik
+Technical architectural chapter cover illustration for a professional German textbook. Pure white background, no gradients, no text, no labels, no numbers, no people, no photorealism. Minimal precise linework, bold architectural geometry, panoramic composition for a wide chapter banner. Palette: structural gray #6B7280, thermal blue #93C5FD, TGA/data amber #F59E0B, near-black #111827.
+
+Subject: Standalone panoramic construction schedule cover: Gantt/takt bars, flow arrows and a building skeleton, no text, no labels.
