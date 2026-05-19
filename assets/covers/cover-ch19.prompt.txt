@@ -1,10 +1,11 @@
-Generiert: 2026-05-18 11:05
+Generiert: 2026-05-18 11:02
 Typ: cover
-Beschreibung: Systematic building classification cover on white background spanning the full image width. Instead of a uniform grid, show a dynamic taxonomy cluster: a central near-black classification spine runs horizontally through the center band, with irregular branching trays holding large abstract building element symbols — wall, column, slab, door, duct, pipe, cable — at varied sizes and offsets. Structural elements use structural gray (#6B7280) hatching, envelope elements use thermal blue (#93C5FD), TGA elements use amber (#F59E0B). Thin near-black connector lines group related symbols into families. The composition is dense in the center band and sparse near the edges, clean and technical, no uniform matrix. No text, no codes, no numbers, no labels.
+Beschreibung: Abstract IFC data schema cover on white background spanning the full image width. A single bold root node near the upper center connects into an asymmetric branching hierarchy that fans outward across the central band, like a precise architectural data tree. Branches vary in length and spacing, avoiding a uniform grid. Nodes are bold circles and rounded technical junctions in near-black, structural gray (#6B7280), thermal blue (#93C5FD), and amber (#F59E0B); connection lines are fine near-black. The densest node network sits in the center band, with sparse white space at the top and bottom. Clean technical diagram style. No text, no class names, no labels, no numbers.
 
 --- QA-Verlauf ---
 
 Versuch 1: ✓ bestanden
+  Korrektur: No corrections needed.
 
 --- Finaler Prompt ---
 
@@ -14,4 +15,4 @@ Chapter cover banner illustration for a professional architectural textbook. Pur
 
 Color palette: structural gray #6B7280, thermal insulation blue #93C5FD, TGA/MEP amber #F59E0B, pure white background #FFFFFF, near-black lines and text #111827.
 
-Subject: Systematic building classification cover on white background spanning the full image width. Instead of a uniform grid, show a dynamic taxonomy cluster: a central near-black classification spine runs horizontally through the center band, with irregular branching trays holding large abstract building element symbols — wall, column, slab, door, duct, pipe, cable — at varied sizes and offsets. Structural elements use structural gray (#6B7280) hatching, envelope elements use thermal blue (#93C5FD), TGA elements use amber (#F59E0B). Thin near-black connector lines group related symbols into families. The composition is dense in the center band and sparse near the edges, clean and technical, no uniform matrix. No text, no codes, no numbers, no labels.
+Subject: Abstract IFC data schema cover on white background spanning the full image width. A single bold root node near the upper center connects into an asymmetric branching hierarchy that fans outward across the central band, like a precise architectural data tree. Branches vary in length and spacing, avoiding a uniform grid. Nodes are bold circles and rounded technical junctions in near-black, structural gray (#6B7280), thermal blue (#93C5FD), and amber (#F59E0B); connection lines are fine near-black. The densest node network sits in the center band, with sparse white space at the top and bottom. Clean technical diagram style. No text, no class names, no labels, no numbers.

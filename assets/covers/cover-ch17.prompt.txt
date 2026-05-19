@@ -1,10 +1,11 @@
-Generiert: 2026-05-18 11:00
+Generiert: 2026-05-18 10:57
 Typ: cover
-Beschreibung: Isometric view of a 3D building model shown as overlapping transparent layers on white background, spanning the full image width. Three model layers float apart in exploded view: architectural model as delicate near-black thin lines with room outlines; structural model in structural gray (#6B7280) solid columns and beams; MEP model as amber (#F59E0B) thin pipes and ducts. Thin blue (#93C5FD) connection lines link identical elements across layers — representing model federation and data linkage. The exploded stack fills the full width, with strongest visual density in the center band and sparse top/bottom margins. Bold, clean isometric technical line work. No text. No labels.
+Beschreibung: Abstract cost and tendering cover on white background spanning the full image width. A bold central cost breakdown bar runs horizontally through the center band, subdivided into unequal segments of varying widths for major construction packages; segments use structural gray (#6B7280) hatching, thermal blue (#93C5FD), amber (#F59E0B), and near-black outlines. Above and below the bar, irregular proportional vertical blocks and fine quantity-takeoff line fragments cluster around the center, with more density in the middle and sparse top and bottom edges. Dynamic data-visualization composition, not a uniform grid. Clean technical architectural illustration. No text, no numbers, no labels.
 
 --- QA-Verlauf ---
 
 Versuch 1: ✓ bestanden
+  Korrektur: No corrections needed; the design meets all specified criteria.
 
 --- Finaler Prompt ---
 
@@ -14,4 +15,4 @@ Chapter cover banner illustration for a professional architectural textbook. Pur
 
 Color palette: structural gray #6B7280, thermal insulation blue #93C5FD, TGA/MEP amber #F59E0B, pure white background #FFFFFF, near-black lines and text #111827.
 
-Subject: Isometric view of a 3D building model shown as overlapping transparent layers on white background, spanning the full image width. Three model layers float apart in exploded view: architectural model as delicate near-black thin lines with room outlines; structural model in structural gray (#6B7280) solid columns and beams; MEP model as amber (#F59E0B) thin pipes and ducts. Thin blue (#93C5FD) connection lines link identical elements across layers — representing model federation and data linkage. The exploded stack fills the full width, with strongest visual density in the center band and sparse top/bottom margins. Bold, clean isometric technical line work. No text. No labels.
+Subject: Abstract cost and tendering cover on white background spanning the full image width. A bold central cost breakdown bar runs horizontally through the center band, subdivided into unequal segments of varying widths for major construction packages; segments use structural gray (#6B7280) hatching, thermal blue (#93C5FD), amber (#F59E0B), and near-black outlines. Above and below the bar, irregular proportional vertical blocks and fine quantity-takeoff line fragments cluster around the center, with more density in the middle and sparse top and bottom edges. Dynamic data-visualization composition, not a uniform grid. Clean technical architectural illustration. No text, no numbers, no labels.

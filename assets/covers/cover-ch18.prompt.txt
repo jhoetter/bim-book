@@ -1,11 +1,10 @@
-Generiert: 2026-05-18 11:02
+Generiert: 2026-05-18 11:00
 Typ: cover
-Beschreibung: Abstract IFC data schema cover on white background spanning the full image width. A single bold root node near the upper center connects into an asymmetric branching hierarchy that fans outward across the central band, like a precise architectural data tree. Branches vary in length and spacing, avoiding a uniform grid. Nodes are bold circles and rounded technical junctions in near-black, structural gray (#6B7280), thermal blue (#93C5FD), and amber (#F59E0B); connection lines are fine near-black. The densest node network sits in the center band, with sparse white space at the top and bottom. Clean technical diagram style. No text, no class names, no labels, no numbers.
+Beschreibung: Isometric view of a 3D building model shown as overlapping transparent layers on white background, spanning the full image width. Three model layers float apart in exploded view: architectural model as delicate near-black thin lines with room outlines; structural model in structural gray (#6B7280) solid columns and beams; MEP model as amber (#F59E0B) thin pipes and ducts. Thin blue (#93C5FD) connection lines link identical elements across layers — representing model federation and data linkage. The exploded stack fills the full width, with strongest visual density in the center band and sparse top/bottom margins. Bold, clean isometric technical line work. No text. No labels.
 
 --- QA-Verlauf ---
 
 Versuch 1: ✓ bestanden
-  Korrektur: No corrections needed.
 
 --- Finaler Prompt ---
 
@@ -15,4 +14,4 @@ Chapter cover banner illustration for a professional architectural textbook. Pur
 
 Color palette: structural gray #6B7280, thermal insulation blue #93C5FD, TGA/MEP amber #F59E0B, pure white background #FFFFFF, near-black lines and text #111827.
 
-Subject: Abstract IFC data schema cover on white background spanning the full image width. A single bold root node near the upper center connects into an asymmetric branching hierarchy that fans outward across the central band, like a precise architectural data tree. Branches vary in length and spacing, avoiding a uniform grid. Nodes are bold circles and rounded technical junctions in near-black, structural gray (#6B7280), thermal blue (#93C5FD), and amber (#F59E0B); connection lines are fine near-black. The densest node network sits in the center band, with sparse white space at the top and bottom. Clean technical diagram style. No text, no class names, no labels, no numbers.
+Subject: Isometric view of a 3D building model shown as overlapping transparent layers on white background, spanning the full image width. Three model layers float apart in exploded view: architectural model as delicate near-black thin lines with room outlines; structural model in structural gray (#6B7280) solid columns and beams; MEP model as amber (#F59E0B) thin pipes and ducts. Thin blue (#93C5FD) connection lines link identical elements across layers — representing model federation and data linkage. The exploded stack fills the full width, with strongest visual density in the center band and sparse top/bottom margins. Bold, clean isometric technical line work. No text. No labels.

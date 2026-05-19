@@ -229,7 +229,7 @@ Im digitalen Modell wird ein Raum nicht nur als beschriftete Fläche gezeichnet.
 
 Für Planer ist das hilfreich, weil dieselben Räume in vielen Auswertungen auftauchen. Die Wohnflächenberechnung, die Türliste, die Lüftungsplanung, der Schallschutz, die Kosten und später die Vermietung greifen auf Raumdaten zu. Wenn Räume nur als Text im Plan stehen, müssen diese Informationen mehrfach abgeschrieben werden. Wenn Räume als Datenobjekte sauber gepflegt sind, können Änderungen konsistenter weitergegeben werden.
 
-Auch ::GRZ:: und ::GFZ:: lassen sich teilweise automatisiert prüfen, wenn Modellstruktur und Datenqualität stimmen. `IfcSite` beschreibt das Grundstück, `IfcBuilding` das Gebäude, Geschosse und Räume liefern Flächen. Die Schwierigkeit liegt nicht in der Formel, sondern in der richtigen Zuordnung: Welche Flächen sind anrechenbar? Welche Bauteile zählen zur Grundfläche? Welche Geschosse sind Vollgeschosse? Diese Fragen verbinden Modellierung mit Planungsrecht und Klassifikation; die digitale Vertiefung folgt in [Kapitel 18](/chapters/18-ifc) und [Kapitel 19](/chapters/19-klassifikation).
+Auch ::GRZ:: und ::GFZ:: lassen sich teilweise automatisiert prüfen, wenn Modellstruktur und Datenqualität stimmen. `IfcSite` beschreibt das Grundstück, `IfcBuilding` das Gebäude, Geschosse und Räume liefern Flächen. Die Schwierigkeit liegt nicht in der Formel, sondern in der richtigen Zuordnung: Welche Flächen sind anrechenbar? Welche Bauteile zählen zur Grundfläche? Welche Geschosse sind Vollgeschosse? Diese Fragen verbinden Modellierung mit Planungsrecht und Klassifikation; die digitale Vertiefung folgt in [Kapitel 19](/chapters/19-ifc) und [Kapitel 20](/chapters/20-klassifikation).
 
 ## Zusammenfassung
 

@@ -1,4 +1,4 @@
-# Kapitel 20 – Prozess & Kollaboration: CDE, ISO 19650 & AIA
+# Kapitel 21 – Prozess & Kollaboration: CDE, ISO 19650 & AIA
 
 *Teil VI – BIM*
 
@@ -13,54 +13,54 @@ In großen Projekten scheitert Information selten daran, dass niemand etwas wei�
     - WIP, Shared, Published und Archived als ::Informationsstatus:: unterscheiden
     - BIM-Rollen und BCF-Koordination praktisch einordnen
 
-## 20.1 Das Problem verteilter Information
+## 21.1 Das Problem verteilter Information
 
 Ohne zentrale Datenumgebung liegen Pläne in E-Mails, Dateiservern, Cloud-Ordnern und Chatverläufen. Niemand weiß sicher, welche Version gilt. Ein Fachplaner arbeitet mit altem Grundriss, die Baustelle druckt eine überholte PDF, und das Modell im Viewer hat andere Schächte als die Ausführungsplanung.
 
 Eine ::CDE::, kurz ::CDE::, löst nicht alle Koordinationsprobleme, aber sie schafft einen Ort und einen Workflow. Dateien bekommen Status, Revision, Verantwortliche und Freigaben. Information wird damit prüfbar.
 
-## 20.2 CDE und Informationsstatus
+## 21.2 CDE und Informationsstatus
 
 ::ISO 19650:: unterscheidet Informationsbereiche. Work in Progress ist der interne Arbeitsbereich eines Teams. Shared ist für Koordination freigegeben, aber noch nicht vertraglich veröffentlicht. Published ist zur Verwendung freigegeben, etwa für Bau oder Vergabe. Archived bewahrt alte Stände nachvollziehbar auf.
 
 Dateinamen folgen projektbezogenen Konventionen: Projektcode, Ursprung, Zone, Ebene, Typ, Rolle, Nummer, Revision und Status. Der genaue Aufbau wird im ::BAP:: festgelegt. Wichtig ist weniger das Schema selbst als seine konsequente Anwendung.
 
 <!-- IMAGE
-name: kap20_cde_workflow
+name: kap21_cde_workflow
 type: diagram
 size: landscape
 desc: Flussdiagramm CDE-Workflow mit Bereichen Work in Progress, Shared, Published, Archived. Pfeile zeigen Prüfung, Freigabe, Revision und Archivierung. Beispiel-Dateinamen nach ISO 19650, deutsche Labels, weißer Hintergrund.
 caption: Die CDE macht Informationsstatus sichtbar
 tags: cde, iso19650, workflow, shared
 -->
-![CDE-Workflow](../assets/illustrations/kap20_cde_workflow.png)
+![CDE-Workflow](../assets/illustrations/kap21_cde_workflow.png)
 
 !!! kastanienallee "Kastanienallee 7"
     Beispiel-Datei: `K7-ARC-ZZ-02-M3-A-0001-S2-P03.ifc`. K7 ist Projektcode, ARC Ursprung Architektur, 02 Geschoss, M3 Modelltyp, A Rolle Architektur, S2 Status Shared zur Koordination, P03 Revision. Tragwerk und TGA liefern eigene Modelle mit gleicher Logik; das Koordinationsmodell referenziert die Shared-Stände.
 
-## 20.3 ISO 19650 im Überblick
+## 21.3 ISO 19650 im Überblick
 
 ::ISO 19650:: beschreibt Informationsmanagement über den Lebenszyklus. Teil 1 liefert Begriffe, Teil 2 den Lieferprozess. Die Rollenlogik unterscheidet Auftraggeber, Lead Appointed Party und Task Teams. Daraus entsteht eine Informationsanforderungskette: OIR, AIR, EIR/::AIA::, MIDP und TIDP.
 
 Für die Praxis heißt das: Auftraggeber müssen sagen, welche Information sie brauchen. Planerteams müssen planen, wann sie diese liefern. BIM ist damit kein Zusatz zur Planung, sondern ein Lieferprozess mit Verantwortlichkeiten.
 
 <!-- IMAGE
-name: kap20_iso19650_struktur
+name: kap21_iso19650_struktur
 type: diagram
 size: portrait
 desc: Organigramm ISO 19650 mit Auftraggeber, OIR/AIR/EIR, Lead Appointed Party mit MIDP und Task Teams mit TIDP. Informationsfluss als Pfeile, deutsche Labels, weißer Hintergrund.
 caption: ISO 19650 ordnet Informationsanforderungen und Lieferteams
 tags: iso19650, aia, midp, tidp
 -->
-![ISO-19650-Struktur](../assets/illustrations/kap20_iso19650_struktur.png)
+![ISO-19650-Struktur](../assets/illustrations/kap21_iso19650_struktur.png)
 
-## 20.4 BIM-Rollen
+## 21.4 BIM-Rollen
 
 Der BIM-Manager arbeitet häufig auf Auftraggeberseite oder projektübergreifend: Ziele, ::AIA::, Standards, Prüfstrategie. Der BIM-Koordinator führt die Modellkoordination innerhalb des Planungsteams: Teilmodelle prüfen, Kollisionen verfolgen, Koordinationssitzungen leiten. BIM-Autoren erstellen Fachmodelle in Authoring-Software.
 
 Diese Rollen ersetzen nicht Architekt, Tragwerksplaner oder TGA-Planer. Sie ergänzen deren Arbeit um Informationsmanagement. Ein guter BIM-Koordinator versteht deshalb Baupraxis und Datenstruktur.
 
-## 20.5 Kollisionsprüfung und BCF
+## 21.5 Kollisionsprüfung und BCF
 
 Kollisionen können hart, weich oder organisatorisch sein. Hard Clash: ein Rohr schneidet einen Unterzug. Soft Clash: Wartungsabstand fehlt. Workflow Clash: zwei Fachmodelle nutzen unterschiedliche Geschosshöhen. ::Kollisionsprüfung:: erzeugt Aufgaben, keine fertige Lösung.
 
@@ -69,7 +69,7 @@ Kollisionen können hart, weich oder organisatorisch sein. Hard Clash: ein Rohr 
 !!! kastanienallee "Kastanienallee 7"
     BCF-Ticket: Im 2. OG schneidet ein Lüftungskanal 200 × 100 mm einen Stahlbetonunterzug. Status: offen. Zuständig: TGA-Koordination und Tragwerksplanung. Lösung: Kanalführung um 300 mm verschieben oder Unterzugslage prüfen. Das Ticket enthält Kameraposition, Objekt-GUIDs und Fälligkeitsdatum zur nächsten Koordinationsrunde.
 
-## 20.6 Informationsstatus ernst nehmen
+## 21.6 Informationsstatus ernst nehmen
 
 Ein ::CDE:: ist nicht einfach ein besserer Dateiordner. Der Wert entsteht durch Status. Work in Progress bedeutet: ein Team arbeitet intern, andere dürfen sich nicht darauf verlassen. Shared bedeutet: andere Teams dürfen koordinieren, aber es ist noch nicht freigegeben für Bau oder Vertrag. Published bedeutet: Information ist offiziell geliefert. Archived bedeutet: sie bleibt nachvollziehbar erhalten.
 
@@ -84,7 +84,7 @@ Für Auftraggeber ist der Informationslieferplan entscheidend. Der MIDP beschrei
 !!! kastanienallee "Kastanienallee 7"
     Für K7 wird festgelegt: Architekturmodell `K7-ARC-ZZ-XX-M3-A-0001-S2-P01`, Tragwerksmodell analog mit Rolle `S`, TGA mit Rolle `M`. S2 bedeutet geteilt zur Koordination, A1 später freigegeben. Ein BCF-Issue "Lüftungskanal kollidiert mit Unterzug 2. OG" bleibt offen, bis TGA die Trasse ändert und Tragwerk die Öffnung nicht mehr benötigt.
 
-## 20.7 Prüffragen für die Praxis
+## 21.7 Prüffragen für die Praxis
 
 Ein CDE-Prozess sollte vor Projektstart an einem einfachen Szenario getestet werden: Architektur lädt ein Modell hoch, Tragwerk referenziert es, TGA meldet eine Kollision, Architektur ändert den Schacht, alle erhalten die neue Version. Wenn dieser Ablauf nicht eindeutig ist, wird das Projekt im Alltag Probleme bekommen.
 
@@ -94,7 +94,7 @@ Revisionssicherheit ist der dritte Kernpunkt. Wer hat wann welche Information ge
 
 Für die Praxis gilt: Je einfacher die Regeln, desto wahrscheinlicher werden sie eingehalten. Ein Dateinamenstandard, den niemand versteht, wird umgangen. Ein Workflow mit zehn Freigabestufen wird zu langsam. Gute Informationsprozesse sind streng genug für Qualität und einfach genug für den Projektdruck.
 
-## 20.8 Entwicklerperspektive
+## 21.8 Entwicklerperspektive
 
 CDE-Software ist weniger ein Dateispeicher als ein Zustandsautomat. Ein Informationscontainer wechselt von WIP zu Shared, von Shared zu Published, von Published zu Archived. Jeder Wechsel braucht Berechtigung, Prüfung, Zeitstempel und Nachvollziehbarkeit. Wer diese Zustände sauber modelliert, versteht ::ISO 19650:: besser als jemand, der nur Ordnernamen nachbaut.
 
@@ -122,4 +122,4 @@ CDE-Produkte wie BIMcollab, Autodesk Construction Cloud oder Trimble Connect set
 
 ::CDE::, ::ISO 19650::, Rollen und BCF machen Modellarbeit nachvollziehbar. Gute Prozesse verhindern nicht alle Fehler, aber sie machen sie früh sichtbar und zuständig.
 
-Verwandte Kapitel: [Kap. 15](/chapters/15-hoai) · [Kap. 17](/chapters/17-was-bim-wirklich-ist) · [Kap. 21](/chapters/21-bim-praxis)
+Verwandte Kapitel: [Kap. 15](/chapters/15-hoai) · [Kap. 18](/chapters/18-was-bim-wirklich-ist) · [Kap. 22](/chapters/22-bim-praxis)

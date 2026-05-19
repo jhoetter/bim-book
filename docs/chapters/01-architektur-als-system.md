@@ -38,7 +38,7 @@ tags: schichtenmodell, systemdenken, kastanienallee7, lebensdauer
 ![Schichtenmodell eines Gebäudes](../assets/illustrations/kap01_schichtenmodell.png)
 
 !!! kastanienallee "Kastanienallee 7"
-    Am Leitbeispiel arbeiten mindestens sieben Planungsbereiche zusammen: Architektur, Tragwerksplanung, Brandschutz, Wärmeschutz, Schallschutz, Heizung/Lüftung/Sanitär und Elektro. Die Grundfläche beträgt ca. 20 m × 18 m = 360 m², darüber liegen 4 Vollgeschosse, Keller und Dachgeschoss. Schon diese einfache Kubatur erzeugt Schnittstellen: Stützenraster, Treppenhaus, Aufzug, Installationsschächte, Fassadenraster, Dachaufbau und Technikräume müssen räumlich zusammenpassen. Digitale Koordination wird deshalb nicht als Zusatz behandelt, sondern als gemeinsame Arbeitsbasis; die Methode folgt in [Kapitel 17](/chapters/17-was-bim-wirklich-ist), das Austauschformat in [Kapitel 18](/chapters/18-ifc).
+    Am Leitbeispiel arbeiten mindestens sieben Planungsbereiche zusammen: Architektur, Tragwerksplanung, Brandschutz, Wärmeschutz, Schallschutz, Heizung/Lüftung/Sanitär und Elektro. Die Grundfläche beträgt ca. 20 m × 18 m = 360 m², darüber liegen 4 Vollgeschosse, Keller und Dachgeschoss. Schon diese einfache Kubatur erzeugt Schnittstellen: Stützenraster, Treppenhaus, Aufzug, Installationsschächte, Fassadenraster, Dachaufbau und Technikräume müssen räumlich zusammenpassen. Digitale Koordination wird deshalb nicht als Zusatz behandelt, sondern als gemeinsame Arbeitsbasis; die Methode folgt in [Kapitel 18](/chapters/18-was-bim-wirklich-ist), das Austauschformat in [Kapitel 19](/chapters/19-ifc).
 
 ## 1.2 Das Schichtenmodell
 
@@ -130,16 +130,16 @@ Teil III behandelt die bauphysikalischen Anforderungen an Hülle und Räume. [Ka
 
 Teil IV widmet sich der ::TGA::. [Kapitel 10](/chapters/10-heizung-waermeversorgung) behandelt Heizung und Wärmeversorgung, [Kapitel 11](/chapters/11-lueftung) Lüftung, [Kapitel 12](/chapters/12-sanitaer) Sanitär und Entwässerung, [Kapitel 13](/chapters/13-elektro) Elektro und Gebäudeautomation. Hier wird sichtbar, wie stark Technik den Raum braucht.
 
-Teil V erklärt den rechtlichen und wirtschaftlichen Rahmen. [Kapitel 14](/chapters/14-planungsrecht) ordnet Planungsrecht ein, [Kapitel 15](/chapters/15-hoai) die Leistungsphasen und Honorare, [Kapitel 16](/chapters/16-kosten-ausschreibung) Kosten und Ausschreibung. Diese Themen wirken trocken, entscheiden aber, ob ein Entwurf genehmigungsfähig, beauftragbar und baubar ist.
+Teil V erklärt den rechtlichen und wirtschaftlichen Rahmen. [Kapitel 14](/chapters/14-planungsrecht) ordnet Planungsrecht ein, [Kapitel 15](/chapters/15-hoai) die Leistungsphasen und Honorare, [Kapitel 16](/chapters/16-bauprojektmanagement-bauoberleitung) Bauprojektmanagement und Bauoberleitung, [Kapitel 17](/chapters/17-kosten-ausschreibung) Kosten und Ausschreibung. Diese Themen wirken trocken, entscheiden aber, ob ein Entwurf genehmigungsfähig, beauftragbar und baubar ist.
 
-Teil VI führt in die digitale Methode. [Kapitel 17](/chapters/17-was-bim-wirklich-ist) erklärt, was BIM als Arbeitsweise bedeutet. [Kapitel 18](/chapters/18-ifc) erklärt IFC als offene Datenstruktur. [Kapitel 19](/chapters/19-klassifikation) behandelt Klassifikation, [Kapitel 20](/chapters/20-prozess-kollaboration) Zusammenarbeit und gemeinsame Datenumgebungen, [Kapitel 21](/chapters/21-bim-praxis) die Anwendung in der Praxis.
+Teil VI führt in die digitale Methode. [Kapitel 18](/chapters/18-was-bim-wirklich-ist) erklärt, was BIM als Arbeitsweise bedeutet. [Kapitel 19](/chapters/19-ifc) erklärt IFC als offene Datenstruktur. [Kapitel 20](/chapters/20-klassifikation) behandelt Klassifikation, [Kapitel 21](/chapters/21-prozess-kollaboration) Zusammenarbeit und gemeinsame Datenumgebungen, [Kapitel 22](/chapters/22-bim-praxis) die Anwendung in der Praxis.
 
-Teil VII weitet den Blick auf Zukunfts- und Bestandsthemen. [Kapitel 22](/chapters/22-nachhaltigkeit) behandelt Nachhaltigkeit und Kreislaufwirtschaft, [Kapitel 23](/chapters/23-sanierung) die Sanierung, [Kapitel 24](/chapters/24-digitaler-zwilling-ki) digitale Zwillinge und KI. Auch diese Themen lassen sich besser verstehen, wenn man das Gebäude vorher als Schichtsystem gelesen hat.
+Teil VII weitet den Blick auf Zukunfts- und Bestandsthemen. [Kapitel 23](/chapters/23-nachhaltigkeit) behandelt Nachhaltigkeit und Kreislaufwirtschaft, [Kapitel 24](/chapters/24-sanierung) die Sanierung, [Kapitel 25](/chapters/25-projektarten-neubau-bestand-denkmal) Projektarten, [Kapitel 26](/chapters/26-digitaler-zwilling-ki) digitale Zwillinge und KI. Auch diese Themen lassen sich besser verstehen, wenn man das Gebäude vorher als Schichtsystem gelesen hat.
 
 ## BIM-Brücke: Schichten als Modellstruktur
 
 !!! note "Vorausgriff auf IFC"
-    Diese Box ist ein Vorausgriff — wer IFC noch nicht kennt, kann sie zunächst überfliegen und nach Kapitel 18 zurückkehren.
+    Diese Box ist ein Vorausgriff — wer IFC noch nicht kennt, kann sie zunächst überfliegen und nach Kapitel 19 zurückkehren.
 
 Im IFC-Modell wird ein Gebäude nicht als einzige Geometrie gespeichert. Tragende Stützen können etwa als `IfcColumn`, Decken als `IfcSlab`, technische Systeme als `IfcDistributionSystem` und Boden- oder Deckenbeläge als `IfcCovering` beschrieben werden. Das ist keine zufällige Benennung, sondern eine digitale Entsprechung des Schichtenmodells.
 
@@ -153,4 +153,4 @@ Für Entwickler ist das die entscheidende Übersetzung: Eine Gebäudeschicht wir
 
 Das Schichtenmodell hilft, Komplexität zu ordnen, ohne sie zu verharmlosen. Es zeigt, warum Tragstruktur, Hülle, ::TGA:: und Innenausbau getrennt betrachtet, aber gemeinsam koordiniert werden müssen. Diese Denkweise trägt durch das gesamte Buch und bildet später die Brücke zu BIM und IFC.
 
-Verwandte Kapitel: [Kap. 2](/chapters/02-entwurf-raum-funktion) · [Kap. 4](/chapters/04-tragwerk) · [Kap. 5](/chapters/05-konstruktion) · [Kap. 17](/chapters/17-was-bim-wirklich-ist) · [Kap. 18](/chapters/18-ifc)
+Verwandte Kapitel: [Kap. 2](/chapters/02-entwurf-raum-funktion) · [Kap. 4](/chapters/04-tragwerk) · [Kap. 5](/chapters/05-konstruktion) · [Kap. 18](/chapters/18-was-bim-wirklich-ist) · [Kap. 19](/chapters/19-ifc)

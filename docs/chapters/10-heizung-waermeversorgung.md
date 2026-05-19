@@ -118,13 +118,13 @@ Heizungsdaten sind ein gutes Beispiel für Systembeziehungen. Ein Rohrstück all
 
 Für Software ist die Verbindung zwischen Raum und Heizlast zentral. Räume aus dem Architekturmodell liefern Fläche, Volumen, Nutzung und Hüllflächenbezug. Daraus entsteht eine Heizlast. Diese Heizlast bestimmt Heizflächen und Volumenströme. Wenn Räume später geteilt, zusammengelegt oder anders genutzt werden, muss die Technikprüfung reagieren. Ohne stabile Raum-IDs bricht diese Kette.
 
-Auch Betriebsdaten können zurückfließen. Soll-Vorlauf, Ist-Vorlauf, ::Vorlauf und Rücklauf::, Pumpenleistung, Ventilstellung und Raumtemperatur zeigen, ob das System wie geplant läuft. Im Neubau reicht ein as-planned-Modell; im Betrieb braucht man ein as-operated-Verständnis. Das ist der Übergang zum digitalen Zwilling in [Kapitel 24](/chapters/24-digitaler-zwilling-ki).
+Auch Betriebsdaten können zurückfließen. Soll-Vorlauf, Ist-Vorlauf, ::Vorlauf und Rücklauf::, Pumpenleistung, Ventilstellung und Raumtemperatur zeigen, ob das System wie geplant läuft. Im Neubau reicht ein as-planned-Modell; im Betrieb braucht man ein as-operated-Verständnis. Das ist der Übergang zum digitalen Zwilling in [Kapitel 26](/chapters/26-digitaler-zwilling-ki).
 
 Ein gutes Prüfwerkzeug für Heizung meldet daher nicht nur Kollisionen. Es fragt: Hat jeder beheizte Raum eine Heizlast? Ist jeder Heizkreis einem Raum zugeordnet? Sind Verteiler zugänglich? Sind Leitungen im richtigen System? Stimmen ::Vorlauf und Rücklauf::? Sind Dämmungen an Leitungen vorgesehen? Solche Prüfungen sparen spätere Sucharbeit.
 
 ## BIM-Brücke: Heizung als MEP-Modell
 
-Im IFC-Modell werden Heizungsbauteile als technische Komponenten geführt, etwa `IfcPipeSegment`, `IfcValve`, `IfcPump` oder `IfcHeatExchanger`. Räume können Heizlasten als Properties tragen. Kollisionsprüfung zeigt, ob Heizleitungen, Verteiler und Schachtführungen mit Tragwerk und Ausbau zusammenpassen. Die IFC-Struktur wird in [Kapitel 18](/chapters/18-ifc) vertieft.
+Im IFC-Modell werden Heizungsbauteile als technische Komponenten geführt, etwa `IfcPipeSegment`, `IfcValve`, `IfcPump` oder `IfcHeatExchanger`. Räume können Heizlasten als Properties tragen. Kollisionsprüfung zeigt, ob Heizleitungen, Verteiler und Schachtführungen mit Tragwerk und Ausbau zusammenpassen. Die IFC-Struktur wird in [Kapitel 19](/chapters/19-ifc) vertieft.
 
 ## Zusammenfassung
 

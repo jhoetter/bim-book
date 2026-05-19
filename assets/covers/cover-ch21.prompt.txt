@@ -1,10 +1,14 @@
-Generiert: 2026-05-18 11:12
+Generiert: 2026-05-18 11:10
 Typ: cover
-Beschreibung: Isometric federated BIM model of a 4-story building spanning the full image width on white background. The building is shown as three semi-transparent overlapping technical models in one combined view: structural skeleton in structural gray (#6B7280) solid columns and slabs; MEP systems as amber (#F59E0B) fine lines for pipes, ducts and cable trays; interior partitions and facade as near-black thin lines. A few thermal blue (#93C5FD) coordination connection lines link model layers, without clash markers or warning signs. The combined model is bold, centered in the banner band, and fills the full width with sparse top and bottom space. Clean technical architectural illustration. No text. No labels.
+Beschreibung: Abstract collaboration network diagram spanning the full image width on white background. Five to seven large circular nodes representing project roles arranged across the center band — not labeled, just differentiated by size and color: near-black, structural gray (#6B7280), amber (#F59E0B), thermal blue (#93C5FD). Bold connection lines of varying thickness link the nodes, with arrowheads showing data exchange direction. A central larger node representing a common data environment in amber connects to all others. Fine secondary lines show indirect connections and version flow. The network fills the full width with visual balance, dense in the center and sparse at top and bottom. No text. No labels.
 
 --- QA-Verlauf ---
 
-Versuch 1: ✓ bestanden
+Versuch 1: ✗ nicht bestanden
+  - Presence of text or illustrative elements inside nodes that appear like labels or annotations
+  Korrektur: Remove any text or diagrammatic elements from inside the nodes to ensure the image has no text or labels, adhering to pure graphical representation.
+
+Versuch 2: ✓ bestanden
 
 --- Finaler Prompt ---
 
@@ -14,4 +18,9 @@ Chapter cover banner illustration for a professional architectural textbook. Pur
 
 Color palette: structural gray #6B7280, thermal insulation blue #93C5FD, TGA/MEP amber #F59E0B, pure white background #FFFFFF, near-black lines and text #111827.
 
-Subject: Isometric federated BIM model of a 4-story building spanning the full image width on white background. The building is shown as three semi-transparent overlapping technical models in one combined view: structural skeleton in structural gray (#6B7280) solid columns and slabs; MEP systems as amber (#F59E0B) fine lines for pipes, ducts and cable trays; interior partitions and facade as near-black thin lines. A few thermal blue (#93C5FD) coordination connection lines link model layers, without clash markers or warning signs. The combined model is bold, centered in the banner band, and fills the full width with sparse top and bottom space. Clean technical architectural illustration. No text. No labels.
+Subject: Abstract collaboration network diagram spanning the full image width on white background. Five to seven large circular nodes representing project roles arranged across the center band — not labeled, just differentiated by size and color: near-black, structural gray (#6B7280), amber (#F59E0B), thermal blue (#93C5FD). Bold connection lines of varying thickness link the nodes, with arrowheads showing data exchange direction. A central larger node representing a common data environment in amber connects to all others. Fine secondary lines show indirect connections and version flow. The network fills the full width with visual balance, dense in the center and sparse at top and bottom. No text. No labels.
+
+KORREKTUREN (aus QA-Prüfung):
+- Presence of text or illustrative elements inside nodes that appear like labels or annotations
+
+Bitte korrigiere: Remove any text or diagrammatic elements from inside the nodes to ensure the image has no text or labels, adhering to pure graphical representation.

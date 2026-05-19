@@ -1,4 +1,4 @@
-# Kapitel 17 – Was BIM wirklich ist
+# Kapitel 18 – Was BIM wirklich ist
 
 *Teil VI – BIM*
 
@@ -13,7 +13,7 @@ Viele Projekte sagen "BIM", wenn sie eigentlich ein 3D-Modell meinen. Andere sag
     - typische BIM-Anwendungsfälle realistisch einordnen
     - offenes BIM und proprietäre Ökosysteme vergleichen
 
-## 17.1 Drei Dimensionen von BIM
+## 18.1 Drei Dimensionen von BIM
 
 **Building Information Modeling** (::BIM::) ist eine Methode der vernetzten Planung, Ausführung und Bewirtschaftung von Gebäuden auf Basis digitaler Modelle. Die erste Dimension ist Methode: Beteiligte arbeiten koordiniert, liefern definierte Informationen und prüfen Modelle gemeinsam. Die zweite Dimension ist das Datenmodell: Bauteile sind nicht nur Geometrie, sondern Objekte mit Eigenschaften. Die dritte Dimension ist der Prozess: Informationslieferungen haben Termine, Verantwortliche und Qualitätskriterien.
 
@@ -22,7 +22,7 @@ Ein BIM-Modell ist also nicht automatisch gut, weil es dreidimensional ist. Eine
 !!! kastanienallee "Kastanienallee 7"
     Für Kastanienallee 7 liefern Architektur, Tragwerk, Heizung/Lüftung/Sanitär, Elektro und Brandschutz eigene Fachmodelle. Das Koordinationsmodell führt sie zusammen. Prüfungen fragen dann: Schneidet ein Lüftungskanal einen Unterzug? Haben alle Wohnungen Räume mit Flächen? Sind Schächte durchgehend? Stimmen Türbreiten für Barrierefreiheit?
 
-## 17.2 Was BIM löst
+## 18.2 Was BIM löst
 
 BIM hilft bei Kollisionsprüfung, Mengenermittlung, Energiesimulation, Terminplanung, Kostenkopplung und Facility Management. Eine harte Kollision ist eine geometrische Überschneidung, etwa Rohr durch Träger. Eine weiche Kollision verletzt Mindestabstände. Eine Workflow-Kollision ist ein Planungswiderspruch, etwa ein Schacht ohne Wartungszugang.
 
@@ -31,16 +31,16 @@ BIM hilft bei Kollisionsprüfung, Mengenermittlung, Energiesimulation, Terminpla
 BIM löst keine schlechte Planung. Ein falsch modellierter Schacht bleibt falsch, nur digital. Ein leerer Property-Satz hilft keiner Auswertung. Deshalb sind Informationsanforderungen, Prüfregeln und Koordination wichtiger als Softwaremarketing.
 
 <!-- IMAGE
-name: kap17_bim_dimensionen
+name: kap18_bim_dimensionen
 type: infographic
 size: landscape
 desc: Infografik BIM-Dimensionen 3D Geometrie, 4D Zeit, 5D Kosten, 6D Betrieb, 7D Nachhaltigkeit mit je einem konkreten Beispiel am Mehrfamilienhaus. Weißer Hintergrund, deutsche Labels, technisch-clean.
 caption: BIM-Anwendungsfälle koppeln Modellinformation mit Entscheidungen
 tags: bim, 4d, 5d, facility-management
 -->
-![BIM-Dimensionen](../assets/illustrations/kap17_bim_dimensionen.png)
+![BIM-Dimensionen](../assets/illustrations/kap18_bim_dimensionen.png)
 
-## 17.3 BIM-Reifegrade
+## 18.3 BIM-Reifegrade
 
 Little BIM bedeutet: ein Büro arbeitet intern modellbasiert. Big BIM bedeutet: mehrere Beteiligte arbeiten modellbasiert über Organisationsgrenzen hinweg. Proprietäre BIM-Prozesse bleiben in einem Software-Ökosystem. Offenes BIM nutzt offene Standards, vor allem **Industry Foundation Classes** (::IFC::), um Daten unabhängig vom Hersteller auszutauschen.
 
@@ -48,23 +48,23 @@ Offenes BIM ist schwieriger, aber langfristig robuster. Gebäude leben länger a
 
 Das **BIM Collaboration Format** (::BCF::) ergänzt IFC für Koordination. Es speichert keine Geometrie, sondern Probleme: Kameraposition, betroffene Objekte, Kommentar, Status und Zuständigkeit. Damit wird Modellprüfung zu einem nachvollziehbaren Workflow.
 
-## 17.4 BIM im deutschen Markt
+## 18.4 BIM im deutschen Markt
 
 In Deutschland wurde BIM zuerst im Infrastrukturbau stärker verpflichtend. Öffentliche Auftraggeber, Bahn, Autobahn und Bundesbau treiben standardisierte Modellanforderungen. Im Hochbau ist die Lage heterogen: große Projekte arbeiten zunehmend modellbasiert, kleinere Projekte oft noch zeichnungsorientiert.
 
 VDI 2552, ISO 19650 und DIN SPEC 91391 liefern Begriffe und Prozessrahmen. Entscheidend bleibt die Praxis: Ein Auftraggeber muss Informationsanforderungen formulieren, das Planungsteam muss liefern können, und der Betreiber muss wissen, welche Daten später gebraucht werden.
 
 <!-- IMAGE
-name: kap17_prozessvergleich
+name: kap18_prozessvergleich
 type: diagram
 size: landscape
 desc: Flussdiagramm klassischer Planungsprozess versus BIM-Prozess. Klassisch: getrennte Pläne, späte Koordination, Kollision auf Baustelle. BIM: Fachmodelle, Koordinationsmodell, frühe Clash-Prüfung, BCF-Tickets. Weißer Hintergrund, deutsche Labels.
 caption: BIM verschiebt Koordination nach vorn
 tags: bim, prozess, koordination, bcf
 -->
-![Prozessvergleich klassisch und BIM](../assets/illustrations/kap17_prozessvergleich.png)
+![Prozessvergleich klassisch und BIM](../assets/illustrations/kap18_prozessvergleich.png)
 
-## 17.5 Was sich im Alltag wirklich ändert
+## 18.5 Was sich im Alltag wirklich ändert
 
 Der größte BIM-Effekt ist nicht die dreidimensionale Darstellung. Dreidimensionale Modelle gab es lange vor BIM. Der Unterschied liegt darin, dass Bauteile Bedeutung, Beziehungen und Anforderungen tragen. Eine Wand ist nicht nur eine extrudierte Fläche, sondern ::Außenwand::, tragend oder nichttragend, mit Schichtaufbau, Brandschutz, U-Wert, Kostenbezug und Raumgrenze. Diese Bedeutung kann geprüft, gefiltert und weiterverwendet werden.
 
@@ -79,7 +79,7 @@ Offenes BIM ist deshalb anspruchsvoll. Proprietäre Werkzeuge speichern intern v
 !!! kastanienallee "Kastanienallee 7"
     Im BIM-Prozess von K7 liefert Architektur das Raummodell und die Bauteilstruktur, Tragwerk das analytische Strukturmodell, TGA die MEP-Trassen und Technikkomponenten. Ein Koordinationsmodell prüft wöchentlich Schächte, Deckenöffnungen, Unterzüge und Installationen. BCF-Issues enthalten Ansicht, Kommentar, Verantwortlichen und Termin. Damit wird Koordination nachvollziehbar, statt in E-Mails zu verschwinden.
 
-## 17.6 Prüffragen für die Praxis
+## 18.6 Prüffragen für die Praxis
 
 Ein Projekt sollte vor dem Modellstart klären, welche BIM-Anwendungsfälle wirklich gebraucht werden. Kollisionsprüfung, Mengenermittlung, Kostenkopplung, Energieanalyse, 4D-Terminplanung und FM-Übergabe verlangen unterschiedliche Daten. Wer alles verspricht, ohne Datenanforderungen zu definieren, erzeugt ein überladenes Modell mit unklarer Qualität.
 
@@ -89,7 +89,7 @@ Die dritte Frage lautet: Was wird geprüft? Ein Modell kann nur dann zuverlässi
 
 Schließlich muss geklärt werden, wie Änderungen laufen. Ein Modell ist lebendig. Wenn Tragwerk eine Stütze verschiebt, betrifft das Architektur, TGA, Kosten und eventuell Brandschutz. BCF, CDE und regelmäßige Koordinationsrunden machen diese Folgen sichtbar. BIM ist deshalb keine Datei, sondern ein Änderungsprozess mit Daten.
 
-## 17.7 Entwicklerperspektive
+## 18.7 Entwicklerperspektive
 
 Für Entwickler ist BIM ein Domänenproblem, kein Dateiformatproblem. Wer nur Dreiecke rendert, baut einen Viewer. Wer Räume, Bauteile, Systeme, Beziehungen, Versionen, Rollen und Anforderungen versteht, baut ein BIM-Werkzeug. Der Unterschied liegt in der Semantik.
 
@@ -113,4 +113,4 @@ So gelesen ist BIM vor allem ein Disziplinwechsel: weg vom Zeichnen einzelner An
 
 Es ist Methode, Datenmodell und Prozess zugleich. Der Nutzen entsteht nicht durch 3D, sondern durch Semantik, Koordination und überprüfbare Lieferstände.
 
-Verwandte Kapitel: [Kap. 15](/chapters/15-hoai) · [Kap. 18](/chapters/18-ifc) · [Kap. 20](/chapters/20-prozess-kollaboration) · [Kap. 21](/chapters/21-bim-praxis)
+Verwandte Kapitel: [Kap. 15](/chapters/15-hoai) · [Kap. 19](/chapters/19-ifc) · [Kap. 21](/chapters/21-prozess-kollaboration) · [Kap. 22](/chapters/22-bim-praxis)

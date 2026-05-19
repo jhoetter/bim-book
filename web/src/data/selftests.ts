@@ -739,12 +739,59 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-16-kosten-ausschreibung',
-    chapterId: '16-kosten-ausschreibung',
+    id: 'test-16-bauprojektmanagement-bauoberleitung',
+    chapterId: '16-bauprojektmanagement-bauoberleitung',
+    title: 'Selbsttest: Bauprojektmanagement & Bauoberleitung',
+    questions: [
+      {
+        id: 'q16-kritischer-pfad',
+        type: 'single',
+        prompt: 'Was bedeutet ein Vorgang auf dem kritischen Pfad?',
+        options: [
+          { id: 'a', text: 'Er hat keinen Gesamtpuffer; seine Verzögerung verschiebt den Endtermin.' },
+          { id: 'b', text: 'Er ist besonders teuer, aber terminlich beliebig.' },
+          { id: 'c', text: 'Er darf ohne Dokumentation verschoben werden.' },
+          { id: 'd', text: 'Er betrifft nur gestalterische Entscheidungen.' },
+        ],
+        correctOptionIds: ['a'],
+        explanation: 'Der kritische Pfad besteht aus Vorgängen ohne Puffer. Verzögerungen wirken direkt auf den Projektendtermin.',
+      },
+      {
+        id: 'q16-bauoberleitung',
+        type: 'multiple',
+        prompt: 'Welche Aufgaben gehören typischerweise zur Bauoberleitung in LP 8?',
+        options: [
+          { id: 'a', text: 'Ausführung stichprobenartig mit Planung und Vertrag abgleichen' },
+          { id: 'b', text: 'Baubesprechungen und Protokolle führen' },
+          { id: 'c', text: 'Bautagebuch und Mängel dokumentieren' },
+          { id: 'd', text: 'Jeden Handgriff eines Unternehmers dauerhaft ersetzen' },
+          { id: 'e', text: 'Nachträge fachlich und rechnerisch prüfen' },
+        ],
+        correctOptionIds: ['a', 'b', 'c', 'e'],
+        explanation: 'LP 8 überwacht, koordiniert, dokumentiert und prüft. Die Ausführung selbst bleibt Aufgabe der Unternehmen.',
+      },
+      {
+        id: 'q16-behinderung',
+        type: 'single',
+        prompt: 'Warum ist eine Behinderungsanzeige relevant?',
+        options: [
+          { id: 'a', text: 'Sie dokumentiert einen Hinderungsgrund und kann Vertragsfristen beeinflussen.' },
+          { id: 'b', text: 'Sie ersetzt die Abnahme.' },
+          { id: 'c', text: 'Sie macht jeden Nachtrag automatisch unbegründet.' },
+          { id: 'd', text: 'Sie ist nur ein internes Fotoprotokoll.' },
+        ],
+        correctOptionIds: ['a'],
+        explanation: 'Eine berechtigte Behinderung kann Ausführungsfristen verschieben und muss deshalb geprüft und dokumentiert werden.',
+      },
+    ],
+  },
+  {
+    id: 'test-17-kosten-ausschreibung',
+    chapterId: '17-kosten-ausschreibung',
     title: 'Selbsttest: Kosten & Ausschreibung',
     questions: [
       {
-        id: 'q16-din276',
+        id: 'q17-din276',
         type: 'single',
         prompt: 'Wozu dient die DIN 276 in der Kostenplanung?',
         options: [
@@ -757,7 +804,7 @@ export const SELF_TESTS: SelfTest[] = [
         explanation: 'Die DIN 276 ordnet Kosten in Kostengruppen und macht Kostenstände vergleichbar.',
       },
       {
-        id: 'q16-lv',
+        id: 'q17-lv',
         type: 'multiple',
         prompt: 'Was gehört zu einer brauchbaren Ausschreibung?',
         options: [
@@ -771,7 +818,7 @@ export const SELF_TESTS: SelfTest[] = [
         explanation: 'Ausschreibungen müssen Leistungen, Mengen, Qualitäten und Randbedingungen nachvollziehbar beschreiben.',
       },
       {
-        id: 'q16-kostenstand',
+        id: 'q17-kostenstand',
         type: 'single',
         prompt: 'Warum sollten Kosten im Projektverlauf fortgeschrieben werden?',
         options: [
@@ -786,8 +833,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-17-was-bim-wirklich-ist',
-    chapterId: '17-was-bim-wirklich-ist',
+    id: 'test-18-was-bim-wirklich-ist',
+    chapterId: '18-was-bim-wirklich-ist',
     title: 'Selbsttest: Was BIM wirklich ist',
     questions: [
       {
@@ -834,12 +881,12 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-18-ifc',
-    chapterId: '18-ifc',
+    id: 'test-19-ifc',
+    chapterId: '19-ifc',
     title: 'Selbsttest: IFC',
     questions: [
       {
-        id: 'q18-ifc',
+        id: 'q19-ifc',
         type: 'single',
         prompt: 'Wofür steht IFC praktisch im BIM-Kontext?',
         options: [
@@ -882,8 +929,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-19-klassifikation',
-    chapterId: '19-klassifikation',
+    id: 'test-20-klassifikation',
+    chapterId: '20-klassifikation',
     title: 'Selbsttest: Klassifikation',
     questions: [
       {
@@ -930,8 +977,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-20-prozess-kollaboration',
-    chapterId: '20-prozess-kollaboration',
+    id: 'test-21-prozess-kollaboration',
+    chapterId: '21-prozess-kollaboration',
     title: 'Selbsttest: Prozess & Kollaboration',
     questions: [
       {
@@ -948,7 +995,7 @@ export const SELF_TESTS: SelfTest[] = [
         explanation: 'Eine Common Data Environment strukturiert Informationsflüsse und Planstände im Projekt.',
       },
       {
-        id: 'q20-prozess',
+        id: 'q21-prozess',
         type: 'multiple',
         prompt: 'Welche Elemente verbessern kollaborative BIM-Prozesse?',
         options: [
@@ -977,8 +1024,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-21-bim-praxis',
-    chapterId: '21-bim-praxis',
+    id: 'test-22-bim-praxis',
+    chapterId: '22-bim-praxis',
     title: 'Selbsttest: BIM in der Praxis',
     questions: [
       {
@@ -1025,8 +1072,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-22-nachhaltigkeit',
-    chapterId: '22-nachhaltigkeit',
+    id: 'test-23-nachhaltigkeit',
+    chapterId: '23-nachhaltigkeit',
     title: 'Selbsttest: Nachhaltigkeit & Kreislaufwirtschaft',
     questions: [
       {
@@ -1073,8 +1120,8 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-23-sanierung',
-    chapterId: '23-sanierung',
+    id: 'test-24-sanierung',
+    chapterId: '24-sanierung',
     title: 'Selbsttest: Sanierung',
     questions: [
       {
@@ -1121,8 +1168,55 @@ export const SELF_TESTS: SelfTest[] = [
     ],
   },
   {
-    id: 'test-24-digitaler-zwilling-ki',
-    chapterId: '24-digitaler-zwilling-ki',
+    id: 'test-25-projektarten-neubau-bestand-denkmal',
+    chapterId: '25-projektarten-neubau-bestand-denkmal',
+    title: 'Selbsttest: Projektarten',
+    questions: [
+      {
+        id: 'q25-projektart',
+        type: 'single',
+        prompt: 'Warum sollte die Projektart früh geklärt werden?',
+        options: [
+          { id: 'a', text: 'Sie beeinflusst Strategie, Behörden, Risiken, Verträge und BIM-Datenanforderungen.' },
+          { id: 'b', text: 'Sie ist erst nach Fertigstellung relevant.' },
+          { id: 'c', text: 'Sie ersetzt alle Entwurfsentscheidungen.' },
+          { id: 'd', text: 'Sie betrifft nur die Fassadenfarbe.' },
+        ],
+        correctOptionIds: ['a'],
+        explanation: 'Projektarten setzen unterschiedliche Rahmenbedingungen für Planung, Genehmigung, Kosten, Ablauf und Daten.',
+      },
+      {
+        id: 'q25-bestand',
+        type: 'multiple',
+        prompt: 'Welche Punkte unterscheiden Bestand grundlegend vom Neubau?',
+        options: [
+          { id: 'a', text: 'Unsichere Geometrie und unvollständige Bestandspläne' },
+          { id: 'b', text: 'Mögliche Schadstoffe und unbekannte Konstruktionen' },
+          { id: 'c', text: 'Bestandsschutz und heutige Anforderungen müssen abgegrenzt werden' },
+          { id: 'd', text: 'Es gibt grundsätzlich keine Kostenrisiken' },
+          { id: 'e', text: 'Befunde können Konzept und Ablauf zurückwerfen' },
+        ],
+        correctOptionIds: ['a', 'b', 'c', 'e'],
+        explanation: 'Bestand ist Planung mit Befunden, Unsicherheit und rechtlicher Abgrenzung, nicht einfach ein später Neubau.',
+      },
+      {
+        id: 'q25-denkmal',
+        type: 'single',
+        prompt: 'Was ist bei Denkmalprojekten zusätzlich zentral?',
+        options: [
+          { id: 'a', text: 'Substanz- und Erscheinungsschutz sowie Abstimmung mit der Denkmalschutzbehörde.' },
+          { id: 'b', text: 'Alle GEG-Anforderungen entfallen automatisch.' },
+          { id: 'c', text: 'Historische Oberflächen dürfen ohne Erlaubnis verändert werden.' },
+          { id: 'd', text: 'Ein grobes Volumenmodell ersetzt jede Bestandsdokumentation.' },
+        ],
+        correctOptionIds: ['a'],
+        explanation: 'Denkmalpflege verlangt Erlaubnis, Abwägung, dokumentierte Befunde und oft reversible Eingriffe.',
+      },
+    ],
+  },
+  {
+    id: 'test-26-digitaler-zwilling-ki',
+    chapterId: '26-digitaler-zwilling-ki',
     title: 'Selbsttest: Digitaler Zwilling & KI',
     questions: [
       {

@@ -278,13 +278,13 @@ Wenn eine bisher nicht zugeordnete Quelle tatsächlich verwendet wurde, ihre `ch
 | `::DVGW::` | dvgw | Kap. 12 |
 | `::HOAI::` | hoai | Kap. 15 |
 | `::VOB::` | vob | Kap. 16 |
-| `::BIM::` | bim | Kap. 17 |
-| `::IFC::` | ifc | Kap. 18 |
-| `::LOD::` | lod | Kap. 18 |
-| `::BCF::` | bcf | Kap. 20 |
-| `::BAP::` | bap | Kap. 20 |
-| `::EPD::` | epd | Kap. 22 |
-| `::Embodied Carbon::` | embodied-carbon | Kap. 22 |
+| `::BIM::` | bim | Kap. 18 |
+| `::IFC::` | ifc | Kap. 19 |
+| `::LOD::` | lod | Kap. 19 |
+| `::BCF::` | bcf | Kap. 21 |
+| `::BAP::` | bap | Kap. 21 |
+| `::EPD::` | epd | Kap. 23 |
+| `::Embodied Carbon::` | embodied-carbon | Kap. 23 |
 
 ### Neuen Glossareintrag anlegen
 
@@ -379,7 +379,7 @@ Richtig — jedes Kapitel einzeln verlinkt, mit dem Thema als Linktext:
 ```markdown
 Planungsrecht: [Kapitel 14](/chapters/14-planungsrecht) ·
 HOAI: [Kapitel 15](/chapters/15-hoai) ·
-Kosten: [Kapitel 16](/chapters/16-kosten-ausschreibung)
+Kosten: [Kapitel 17](/chapters/17-kosten-ausschreibung)
 ```
 
 Falsch — unklickbarer Bereich:

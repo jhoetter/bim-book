@@ -64,4 +64,4 @@ Heizung und Fernwärme: [Kap. 10](/chapters/10-heizung-waermeversorgung) · Lüf
 
 Das IFC-Modell umfasst alle Gewerke in einer gemeinsamen räumlichen Struktur: 6 Geschosse, ~80 Räume, vollständige TGA-Objekte — Grundlage für Kollisionskoordination (BCF), Flächenauswertung (IfcSpace) und Kostenermittlung (DIN 276).
 
-IFC-Grundlagen: [Kap. 18](/chapters/18-ifc) · Vollständige Entitätenreferenz: [IFC-Schnellreferenz](/appendix/ifc-referenz)
+IFC-Grundlagen: [Kap. 19](/chapters/19-ifc) · Vollständige Entitätenreferenz: [IFC-Schnellreferenz](/appendix/ifc-referenz)

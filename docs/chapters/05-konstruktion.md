@@ -132,7 +132,7 @@ tags: holzbau, holzrahmenbau, clt, brandschutz, schallschutz
 
 Konstruktionsaufbauten werden in IFC über Bauteile und Materialschichten beschrieben. `IfcWall`, `IfcSlab` und `IfcRoof` tragen Geometrie; `IfcMaterialLayerSet` beschreibt die Schichten. Das ist für Wärmeschutz, Kosten, Mengen und Nachhaltigkeit entscheidend.
 
-Der Unterschied zwischen LOD 200 und LOD 400 zeigt sich hier deutlich. In LOD 200 reicht ein Wandtyp mit grober Dicke. In LOD 300 müssen Schichten, Öffnungen und relevante Anschlüsse stimmen. In LOD 400 kommen montagefähige Details, Befestigungen und exakte Produkte hinzu. IFC und LOD werden in [Kapitel 18](/chapters/18-ifc) und [Kapitel 15](/chapters/15-hoai) vertieft.
+Der Unterschied zwischen LOD 200 und LOD 400 zeigt sich hier deutlich. In LOD 200 reicht ein Wandtyp mit grober Dicke. In LOD 300 müssen Schichten, Öffnungen und relevante Anschlüsse stimmen. In LOD 400 kommen montagefähige Details, Befestigungen und exakte Produkte hinzu. IFC und LOD werden in [Kapitel 19](/chapters/19-ifc) und [Kapitel 15](/chapters/15-hoai) vertieft.
 
 ## Zusammenfassung
 

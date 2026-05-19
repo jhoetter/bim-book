@@ -1,10 +1,15 @@
-Generiert: 2026-05-18 11:19
+Generiert: 2026-05-18 11:17
 Typ: cover
-Beschreibung: Cross-section through a building wall showing renovation retrofit layers on white background, spanning the full image width. Left half: existing old masonry wall in warm amber (#F59E0B) brick pattern with subtly irregular mortar joints and rougher cut edges. Right half: crisp new retrofit system added to the outside — thermal insulation in thermal blue (#93C5FD) zigzag pattern, thin render coat, and a precise new window reveal. A bold vertical cut line separates old from new, with structural gray (#6B7280) parapet detail at the top edge of the central band. The contrast between old texture and new technical layers is the visual centerpiece, centered horizontally with sparse top and bottom. No text. No labels.
+Beschreibung: Panoramic circular material lifecycle diagram across the full image width on white background. A large bold circular flow sits in the center band with amber (#F59E0B) arrows moving clockwise. Around the circle are abstract non-labeled material states: gray aggregate texture, structural gray (#6B7280) building frame, dense use-phase building line work, broken deconstruction fragments, and recycled material fragments returning to aggregate. Green vegetation (#10B981) and thermal blue (#93C5FD) accent shapes sit inside the circle without forming icons or text. The visual weight is central with sparse top and bottom whitespace. Clean technical architectural illustration. No text. No labels. No numbers.
 
 --- QA-Verlauf ---
 
-Versuch 1: ✓ bestanden
+Versuch 1: ✗ nicht bestanden
+  - Most visual elements are not concentrated in the center band of the image
+  - Includes architectural structures which might suggest more detail than abstract material states
+  Korrektur: Reorganize the elements so that the majority of the visual weight sits in the center band. Simplify the architectural elements to ensure they represent abstract material states rather than detailed buildings.
+
+Versuch 2: ✓ bestanden
 
 --- Finaler Prompt ---
 
@@ -14,4 +19,10 @@ Chapter cover banner illustration for a professional architectural textbook. Pur
 
 Color palette: structural gray #6B7280, thermal insulation blue #93C5FD, TGA/MEP amber #F59E0B, pure white background #FFFFFF, near-black lines and text #111827.
 
-Subject: Cross-section through a building wall showing renovation retrofit layers on white background, spanning the full image width. Left half: existing old masonry wall in warm amber (#F59E0B) brick pattern with subtly irregular mortar joints and rougher cut edges. Right half: crisp new retrofit system added to the outside — thermal insulation in thermal blue (#93C5FD) zigzag pattern, thin render coat, and a precise new window reveal. A bold vertical cut line separates old from new, with structural gray (#6B7280) parapet detail at the top edge of the central band. The contrast between old texture and new technical layers is the visual centerpiece, centered horizontally with sparse top and bottom. No text. No labels.
+Subject: Panoramic circular material lifecycle diagram across the full image width on white background. A large bold circular flow sits in the center band with amber (#F59E0B) arrows moving clockwise. Around the circle are abstract non-labeled material states: gray aggregate texture, structural gray (#6B7280) building frame, dense use-phase building line work, broken deconstruction fragments, and recycled material fragments returning to aggregate. Green vegetation (#10B981) and thermal blue (#93C5FD) accent shapes sit inside the circle without forming icons or text. The visual weight is central with sparse top and bottom whitespace. Clean technical architectural illustration. No text. No labels. No numbers.
+
+KORREKTUREN (aus QA-Prüfung):
+- Most visual elements are not concentrated in the center band of the image
+- Includes architectural structures which might suggest more detail than abstract material states
+
+Bitte korrigiere: Reorganize the elements so that the majority of the visual weight sits in the center band. Simplify the architectural elements to ensure they represent abstract material states rather than detailed buildings.

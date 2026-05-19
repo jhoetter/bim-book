@@ -117,4 +117,4 @@ Lüftungsobjekte heißen in IFC zum Beispiel `IfcDuctSegment`, `IfcAirTerminal` 
 
 Dichte Gebäude brauchen ein Konzept, nicht nur Fenster. Ob zentral oder dezentral, entscheidet sich an Schachtflächen, Wartung, Brandschutz, Schall und Betreiberlogik.
 
-Verwandte Kapitel: [Kap. 7](/chapters/07-feuchteschutz) · [Kap. 10](/chapters/10-heizung-waermeversorgung) · [Kap. 18](/chapters/18-ifc)
+Verwandte Kapitel: [Kap. 7](/chapters/07-feuchteschutz) · [Kap. 10](/chapters/10-heizung-waermeversorgung) · [Kap. 19](/chapters/19-ifc)

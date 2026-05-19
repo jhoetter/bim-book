@@ -1,15 +1,10 @@
-Generiert: 2026-05-18 11:17
+Generiert: 2026-05-18 11:12
 Typ: cover
-Beschreibung: Panoramic circular material lifecycle diagram across the full image width on white background. A large bold circular flow sits in the center band with amber (#F59E0B) arrows moving clockwise. Around the circle are abstract non-labeled material states: gray aggregate texture, structural gray (#6B7280) building frame, dense use-phase building line work, broken deconstruction fragments, and recycled material fragments returning to aggregate. Green vegetation (#10B981) and thermal blue (#93C5FD) accent shapes sit inside the circle without forming icons or text. The visual weight is central with sparse top and bottom whitespace. Clean technical architectural illustration. No text. No labels. No numbers.
+Beschreibung: Isometric federated BIM model of a 4-story building spanning the full image width on white background. The building is shown as three semi-transparent overlapping technical models in one combined view: structural skeleton in structural gray (#6B7280) solid columns and slabs; MEP systems as amber (#F59E0B) fine lines for pipes, ducts and cable trays; interior partitions and facade as near-black thin lines. A few thermal blue (#93C5FD) coordination connection lines link model layers, without clash markers or warning signs. The combined model is bold, centered in the banner band, and fills the full width with sparse top and bottom space. Clean technical architectural illustration. No text. No labels.
 
 --- QA-Verlauf ---
 
-Versuch 1: ✗ nicht bestanden
-  - Most visual elements are not concentrated in the center band of the image
-  - Includes architectural structures which might suggest more detail than abstract material states
-  Korrektur: Reorganize the elements so that the majority of the visual weight sits in the center band. Simplify the architectural elements to ensure they represent abstract material states rather than detailed buildings.
-
-Versuch 2: ✓ bestanden
+Versuch 1: ✓ bestanden
 
 --- Finaler Prompt ---
 
@@ -19,10 +14,4 @@ Chapter cover banner illustration for a professional architectural textbook. Pur
 
 Color palette: structural gray #6B7280, thermal insulation blue #93C5FD, TGA/MEP amber #F59E0B, pure white background #FFFFFF, near-black lines and text #111827.
 
-Subject: Panoramic circular material lifecycle diagram across the full image width on white background. A large bold circular flow sits in the center band with amber (#F59E0B) arrows moving clockwise. Around the circle are abstract non-labeled material states: gray aggregate texture, structural gray (#6B7280) building frame, dense use-phase building line work, broken deconstruction fragments, and recycled material fragments returning to aggregate. Green vegetation (#10B981) and thermal blue (#93C5FD) accent shapes sit inside the circle without forming icons or text. The visual weight is central with sparse top and bottom whitespace. Clean technical architectural illustration. No text. No labels. No numbers.
-
-KORREKTUREN (aus QA-Prüfung):
-- Most visual elements are not concentrated in the center band of the image
-- Includes architectural structures which might suggest more detail than abstract material states
-
-Bitte korrigiere: Reorganize the elements so that the majority of the visual weight sits in the center band. Simplify the architectural elements to ensure they represent abstract material states rather than detailed buildings.
+Subject: Isometric federated BIM model of a 4-story building spanning the full image width on white background. The building is shown as three semi-transparent overlapping technical models in one combined view: structural skeleton in structural gray (#6B7280) solid columns and slabs; MEP systems as amber (#F59E0B) fine lines for pipes, ducts and cable trays; interior partitions and facade as near-black thin lines. A few thermal blue (#93C5FD) coordination connection lines link model layers, without clash markers or warning signs. The combined model is bold, centered in the banner band, and fills the full width with sparse top and bottom space. Clean technical architectural illustration. No text. No labels.

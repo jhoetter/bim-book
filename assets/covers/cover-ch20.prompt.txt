@@ -1,14 +1,10 @@
-Generiert: 2026-05-18 11:10
+Generiert: 2026-05-18 11:05
 Typ: cover
-Beschreibung: Abstract collaboration network diagram spanning the full image width on white background. Five to seven large circular nodes representing project roles arranged across the center band — not labeled, just differentiated by size and color: near-black, structural gray (#6B7280), amber (#F59E0B), thermal blue (#93C5FD). Bold connection lines of varying thickness link the nodes, with arrowheads showing data exchange direction. A central larger node representing a common data environment in amber connects to all others. Fine secondary lines show indirect connections and version flow. The network fills the full width with visual balance, dense in the center and sparse at top and bottom. No text. No labels.
+Beschreibung: Systematic building classification cover on white background spanning the full image width. Instead of a uniform grid, show a dynamic taxonomy cluster: a central near-black classification spine runs horizontally through the center band, with irregular branching trays holding large abstract building element symbols — wall, column, slab, door, duct, pipe, cable — at varied sizes and offsets. Structural elements use structural gray (#6B7280) hatching, envelope elements use thermal blue (#93C5FD), TGA elements use amber (#F59E0B). Thin near-black connector lines group related symbols into families. The composition is dense in the center band and sparse near the edges, clean and technical, no uniform matrix. No text, no codes, no numbers, no labels.
 
 --- QA-Verlauf ---
 
-Versuch 1: ✗ nicht bestanden
-  - Presence of text or illustrative elements inside nodes that appear like labels or annotations
-  Korrektur: Remove any text or diagrammatic elements from inside the nodes to ensure the image has no text or labels, adhering to pure graphical representation.
-
-Versuch 2: ✓ bestanden
+Versuch 1: ✓ bestanden
 
 --- Finaler Prompt ---
 
@@ -18,9 +14,4 @@ Chapter cover banner illustration for a professional architectural textbook. Pur
 
 Color palette: structural gray #6B7280, thermal insulation blue #93C5FD, TGA/MEP amber #F59E0B, pure white background #FFFFFF, near-black lines and text #111827.
 
-Subject: Abstract collaboration network diagram spanning the full image width on white background. Five to seven large circular nodes representing project roles arranged across the center band — not labeled, just differentiated by size and color: near-black, structural gray (#6B7280), amber (#F59E0B), thermal blue (#93C5FD). Bold connection lines of varying thickness link the nodes, with arrowheads showing data exchange direction. A central larger node representing a common data environment in amber connects to all others. Fine secondary lines show indirect connections and version flow. The network fills the full width with visual balance, dense in the center and sparse at top and bottom. No text. No labels.
-
-KORREKTUREN (aus QA-Prüfung):
-- Presence of text or illustrative elements inside nodes that appear like labels or annotations
-
-Bitte korrigiere: Remove any text or diagrammatic elements from inside the nodes to ensure the image has no text or labels, adhering to pure graphical representation.
+Subject: Systematic building classification cover on white background spanning the full image width. Instead of a uniform grid, show a dynamic taxonomy cluster: a central near-black classification spine runs horizontally through the center band, with irregular branching trays holding large abstract building element symbols — wall, column, slab, door, duct, pipe, cable — at varied sizes and offsets. Structural elements use structural gray (#6B7280) hatching, envelope elements use thermal blue (#93C5FD), TGA elements use amber (#F59E0B). Thin near-black connector lines group related symbols into families. The composition is dense in the center band and sparse near the edges, clean and technical, no uniform matrix. No text, no codes, no numbers, no labels.

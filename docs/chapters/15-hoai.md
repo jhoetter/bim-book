@@ -165,7 +165,7 @@ Für Planer ist die wichtigste Konsequenz: Jede digitale Zusatzanforderung brauc
 
 ## BIM-Brücke: Prozessdaten sind Projektdaten
 
-BIM ist nicht nur Geometrie, sondern Lieferung von Information zu einem Zeitpunkt. ::LOD::, AIA und ::BAP:: verbinden Fachplanung mit Datenqualität. In [Kapitel 20](/chapters/20-prozess-kollaboration) wird daraus der CDE-Workflow, in [Kapitel 17](/chapters/17-was-bim-wirklich-ist) die BIM-Methode.
+BIM ist nicht nur Geometrie, sondern Lieferung von Information zu einem Zeitpunkt. ::LOD::, AIA und ::BAP:: verbinden Fachplanung mit Datenqualität. In [Kapitel 21](/chapters/21-prozess-kollaboration) wird daraus der CDE-Workflow, in [Kapitel 18](/chapters/18-was-bim-wirklich-ist) die BIM-Methode.
 
 ## Zusammenfassung
 
@@ -173,4 +173,4 @@ BIM ist nicht nur Geometrie, sondern Lieferung von Information zu einem Zeitpunk
 
 Die ::HOAI:: gibt dafür die Prozesssprache, BIM ergänzt die Informationssprache. Ohne klare Rollen, LOD-Ziele und BAP entstehen Daten ohne Verlässlichkeit.
 
-Verwandte Kapitel: [Kap. 16](/chapters/16-kosten-ausschreibung) · [Kap. 17](/chapters/17-was-bim-wirklich-ist) · [Kap. 20](/chapters/20-prozess-kollaboration)
+Verwandte Kapitel: [Kap. 16](/chapters/16-bauprojektmanagement-bauoberleitung) · [Kap. 17](/chapters/17-kosten-ausschreibung) · [Kap. 18](/chapters/18-was-bim-wirklich-ist) · [Kap. 21](/chapters/21-prozess-kollaboration)

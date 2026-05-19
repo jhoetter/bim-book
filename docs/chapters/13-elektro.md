@@ -115,7 +115,7 @@ Diese Trennung hilft auch bei Ausschreibung und Betrieb. Energie gehört zum Ele
 
 ## BIM-Brücke: Elektro als Asset-Struktur
 
-Elektroobjekte können als `IfcElectricDistributionBoard`, `IfcCableSegment`, `IfcLightFixture` oder `IfcSensor` modelliert werden. Für den Betrieb sind nicht nur Geometrie, sondern Stromkreis, Leistung, Wartung, Hersteller und Raumzuordnung relevant. Diese Daten bilden später eine Grundlage für digitale Zwillinge in [Kapitel 24](/chapters/24-digitaler-zwilling-ki).
+Elektroobjekte können als `IfcElectricDistributionBoard`, `IfcCableSegment`, `IfcLightFixture` oder `IfcSensor` modelliert werden. Für den Betrieb sind nicht nur Geometrie, sondern Stromkreis, Leistung, Wartung, Hersteller und Raumzuordnung relevant. Diese Daten bilden später eine Grundlage für digitale Zwillinge in [Kapitel 26](/chapters/26-digitaler-zwilling-ki).
 
 ## Zusammenfassung
 
@@ -123,4 +123,4 @@ Elektroobjekte können als `IfcElectricDistributionBoard`, `IfcCableSegment`, `I
 
 Hausanschluss, Zähler, Leitungen, Beleuchtung, ::PV::, Ladepunkte und ::Gebäudeautomation:: greifen ineinander. Je früher die Trassen und Technikflächen geklärt sind, desto weniger Konflikte entstehen im Ausbau.
 
-Verwandte Kapitel: [Kap. 10](/chapters/10-heizung-waermeversorgung) · [Kap. 22](/chapters/22-nachhaltigkeit) · [Kap. 24](/chapters/24-digitaler-zwilling-ki)
+Verwandte Kapitel: [Kap. 10](/chapters/10-heizung-waermeversorgung) · [Kap. 23](/chapters/23-nachhaltigkeit) · [Kap. 26](/chapters/26-digitaler-zwilling-ki)

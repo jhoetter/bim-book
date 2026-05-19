@@ -161,6 +161,13 @@ export const NORMEN: NormEntry[] = [
     ka7: 'Basis aller Werkverträge (Rohbau, TGA, Ausbau); Abnahme und Gewährleistung nach § 12 / § 13 VOB/B.',
   },
   {
+    id: 'vobb-5-6-12',
+    norm: 'VOB/B §§ 5, 6, 12, 14',
+    thema: 'Ausführungsfristen, Behinderung, Abnahme und Abrechnung',
+    bereich: 'Recht', phase: 'Ausführung',
+    ka7: 'Bauzeitenplan, Behinderungsanzeige, Abnahmeprotokoll und Schlussrechnung werden in LP 8 daran gespiegelt.',
+  },
+  {
     id: 'din276',
     norm: 'DIN 276',
     thema: 'Kosten im Bauwesen (KG 100–700)',
@@ -180,6 +187,34 @@ export const NORMEN: NormEntry[] = [
     thema: 'Barrierefreies Bauen',
     bereich: 'Recht', phase: 'Genehmigung',
     ka7: 'GK 4: mindestens 1 barrierefrei zugängliche WE je Treppenhaus; Aufzug 110×140 cm mind. vorhanden.',
+  },
+  {
+    id: 'bgb-555-559',
+    norm: 'BGB §§ 555b-555f, § 559',
+    thema: 'Modernisierung im Mietrecht',
+    bereich: 'Recht', phase: 'Genehmigung',
+    ka7: 'Für K7 als Neubau nicht zentral, aber für das Nachbarhaus aus Kap. 24 maßgeblich bei energetischer Modernisierung.',
+  },
+  {
+    id: 'geg-48-52',
+    norm: 'GEG §§ 48-52',
+    thema: 'Anforderungen an Bestandsbauteile',
+    bereich: 'Recht', phase: 'Entwurf',
+    ka7: 'Bei Bestandsmaßnahmen am Nachbarhaus löst die Erneuerung größerer Bauteilflächen energetische Anforderungen aus.',
+  },
+  {
+    id: 'geg-105',
+    norm: 'GEG § 105',
+    thema: 'Ausnahmen für Baudenkmäler',
+    bereich: 'Recht', phase: 'Genehmigung',
+    ka7: 'Bei denkmalgeschützten Bestandsprojekten kann Substanz- oder Erscheinungsschutz energetische Standardanforderungen begrenzen.',
+  },
+  {
+    id: 'baydschg-art6',
+    norm: 'BayDSchG Art. 6',
+    thema: 'Erlaubnispflicht bei Baudenkmälern',
+    bereich: 'Recht', phase: 'Genehmigung',
+    ka7: 'Für K7 nicht einschlägig; bei Denkmalprojekten wäre die Untere Denkmalschutzbehörde früh einzubinden.',
   },
 
   // BIM & Digital

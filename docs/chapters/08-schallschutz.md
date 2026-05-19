@@ -117,4 +117,4 @@ Akustische Anforderungen können im Modell als Properties geführt werden, etwa 
 
 Direkte Bauteilwerte reichen nicht; Anschlüsse, Schächte und Ausführung entscheiden mit. ::Raumakustik:: ist ein eigenes Thema: Sie macht Räume nicht leiser nach außen, sondern verständlicher und angenehmer im Inneren.
 
-Verwandte Kapitel: [Kap. 5](/chapters/05-konstruktion) · [Kap. 12](/chapters/12-sanitaer) · [Kap. 18](/chapters/18-ifc)
+Verwandte Kapitel: [Kap. 5](/chapters/05-konstruktion) · [Kap. 12](/chapters/12-sanitaer) · [Kap. 19](/chapters/19-ifc)

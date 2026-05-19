@@ -117,7 +117,7 @@ tags: dämmstoffe, mineralwolle, wlg, u-wert
 
 Im IFC-Modell werden Materialien nicht nur als Text auf Bauteile geschrieben. `IfcMaterial` beschreibt das Material, `IfcMaterialLayer` die einzelne Schicht mit Dicke und `IfcMaterialLayerSet` die geordnete Schichtenfolge. Für Software ist das entscheidend: Erst wenn eine Wand ihre Schichten kennt, lassen sich Mengen, U-Werte, CO₂-Daten oder Ausschreibungspositionen ableiten.
 
-Kennwerte werden zu Properties. Rohdichte, λ-Wert, Brandklasse oder E-Modul können aus Produktdaten, EPDs oder internen Materialbibliotheken stammen. Klassifikationssysteme wie OmniClass Table 41 oder deutsche Materialkataloge helfen, Begriffe eindeutig zuzuordnen. Die IFC-Struktur wird in [Kapitel 18](/chapters/18-ifc) erklärt, Klassifikation in [Kapitel 19](/chapters/19-klassifikation).
+Kennwerte werden zu Properties. Rohdichte, λ-Wert, Brandklasse oder E-Modul können aus Produktdaten, EPDs oder internen Materialbibliotheken stammen. Klassifikationssysteme wie OmniClass Table 41 oder deutsche Materialkataloge helfen, Begriffe eindeutig zuzuordnen. Die IFC-Struktur wird in [Kapitel 19](/chapters/19-ifc) erklärt, Klassifikation in [Kapitel 20](/chapters/20-klassifikation).
 
 ## Zusammenfassung
 
@@ -125,4 +125,4 @@ Kennwerte werden zu Properties. Rohdichte, λ-Wert, Brandklasse oder E-Modul kö
 
 ::Beton:: trägt und speichert, Stahl spannt weit, ::Mauerwerk:: ist wirtschaftlich und robust, ::Holz:: ist leicht und speichert Kohlenstoff, ::Glas:: öffnet und schwächt zugleich, ::Dämmstoff:: bestimmen die Hülle. Wer Material als Datenstruktur versteht, kann später Modelle prüfen, Mengen auswerten und Varianten vergleichen.
 
-Verwandte Kapitel: [Kap. 4](/chapters/04-tragwerk) · [Kap. 5](/chapters/05-konstruktion) · [Kap. 6](/chapters/06-waermeschutz-geg) · [Kap. 22](/chapters/22-nachhaltigkeit)
+Verwandte Kapitel: [Kap. 4](/chapters/04-tragwerk) · [Kap. 5](/chapters/05-konstruktion) · [Kap. 6](/chapters/06-waermeschutz-geg) · [Kap. 23](/chapters/23-nachhaltigkeit)

@@ -18,15 +18,17 @@
 #   13-elektro
 #   14-planungsrecht
 #   15-hoai
-#   16-kosten-ausschreibung
-#   17-was-bim-wirklich-ist
-#   18-ifc
-#   19-klassifikation
-#   20-prozess-kollaboration
-#   21-bim-praxis
-#   22-nachhaltigkeit
-#   23-sanierung
-#   24-digitaler-zwilling-ki
+#   16-bauprojektmanagement-bauoberleitung
+#   17-kosten-ausschreibung
+#   18-was-bim-wirklich-ist
+#   19-ifc
+#   20-klassifikation
+#   21-prozess-kollaboration
+#   22-bim-praxis
+#   23-nachhaltigkeit
+#   24-sanierung
+#   25-projektarten-neubau-bestand-denkmal
+#   26-digitaler-zwilling-ki
 #
 # FIELD MEANINGS:
 #   introduced_in: chapter ID where the term was first spelled out in full
@@ -50,10 +52,10 @@ terms:
     introduced_in: "15-hoai"
 
   bcf:
-    introduced_in: "17-was-bim-wirklich-ist"
+    introduced_in: "18-was-bim-wirklich-ist"
 
   bim:
-    introduced_in: "17-was-bim-wirklich-ist"
+    introduced_in: "18-was-bim-wirklich-ist"
 
   dampfbremse:
     introduced_in: "05-konstruktion"
@@ -65,10 +67,10 @@ terms:
     introduced_in: "12-sanitaer"
 
   embodied-carbon:
-    introduced_in: "22-nachhaltigkeit"
+    introduced_in: "23-nachhaltigkeit"
 
   epd:
-    introduced_in: "22-nachhaltigkeit"
+    introduced_in: "23-nachhaltigkeit"
 
   eurocode:
     introduced_in: "03-baustoffe"
@@ -95,7 +97,7 @@ terms:
     introduced_in: "10-heizung-waermeversorgung"
 
   ifc:
-    introduced_in: "17-was-bim-wirklich-ist"
+    introduced_in: "18-was-bim-wirklich-ist"
 
   innenputz:
     introduced_in: "05-konstruktion"
@@ -131,7 +133,7 @@ terms:
     introduced_in: "01-architektur-als-system"
 
   step:
-    introduced_in: "18-ifc"
+    introduced_in: "19-ifc"
 
   tga:
     introduced_in: "01-architektur-als-system"
@@ -143,7 +145,7 @@ terms:
     introduced_in: "06-waermeschutz-geg"
 
   vob:
-    introduced_in: "16-kosten-ausschreibung"
+    introduced_in: "16-bauprojektmanagement-bauoberleitung"
 
   wdvs:
     introduced_in: "05-konstruktion"
@@ -156,9 +158,9 @@ terms:
   abstandsflaeche:
     introduced_in: "14-planungsrecht"
   aia:
-    introduced_in: "20-prozess-kollaboration"
+    introduced_in: "21-prozess-kollaboration"
   api:
-    introduced_in: "24-digitaler-zwilling-ki"
+    introduced_in: "26-digitaler-zwilling-ki"
   aussenwand:
     introduced_in: "05-konstruktion"
   baustoffklasse:
@@ -166,25 +168,37 @@ terms:
   bebauungsplan:
     introduced_in: "14-planungsrecht"
   bestandsaufnahme:
-    introduced_in: "23-sanierung"
+    introduced_in: "24-sanierung"
+  bestandsmassnahme:
+    introduced_in: "24-sanierung"
   beton:
     introduced_in: "03-baustoffe"
+  bauoberleitung:
+    introduced_in: "16-bauprojektmanagement-bauoberleitung"
+  bauzeitenplan:
+    introduced_in: "16-bauprojektmanagement-bauoberleitung"
+  bautagebuch:
+    introduced_in: "16-bauprojektmanagement-bauoberleitung"
+  behinderungsanzeige:
+    introduced_in: "16-bauprojektmanagement-bauoberleitung"
   cde:
-    introduced_in: "20-prozess-kollaboration"
+    introduced_in: "21-prozess-kollaboration"
   daemmstoff:
     introduced_in: "03-baustoffe"
   datenqualitaet:
-    introduced_in: "24-digitaler-zwilling-ki"
+    introduced_in: "26-digitaler-zwilling-ki"
+  denkmalschutz:
+    introduced_in: "25-projektarten-neubau-bestand-denkmal"
   dgnb:
-    introduced_in: "22-nachhaltigkeit"
+    introduced_in: "23-nachhaltigkeit"
   diffusion:
     introduced_in: "07-feuchteschutz"
   din-276:
-    introduced_in: "16-kosten-ausschreibung"
+    introduced_in: "16-bauprojektmanagement-bauoberleitung"
   din-277:
-    introduced_in: "19-klassifikation"
+    introduced_in: "20-klassifikation"
   digitaler-zwilling:
-    introduced_in: "24-digitaler-zwilling-ki"
+    introduced_in: "26-digitaler-zwilling-ki"
   entwaesserung:
     introduced_in: "12-sanitaer"
   fernwaerme:
@@ -200,53 +214,67 @@ terms:
   gebaeudeklasse:
     introduced_in: "09-brandschutz"
   georeferenzierung:
-    introduced_in: "18-ifc"
+    introduced_in: "19-ifc"
   gewerk:
-    introduced_in: "16-kosten-ausschreibung"
+    introduced_in: "16-bauprojektmanagement-bauoberleitung"
   glas:
     introduced_in: "03-baustoffe"
   holz:
     introduced_in: "03-baustoffe"
+  instandhaltung:
+    introduced_in: "24-sanierung"
+  instandsetzung:
+    introduced_in: "24-sanierung"
   ids:
-    introduced_in: "18-ifc"
+    introduced_in: "19-ifc"
   ifcopenshell:
-    introduced_in: "18-ifc"
+    introduced_in: "19-ifc"
   informationsstatus:
-    introduced_in: "20-prozess-kollaboration"
+    introduced_in: "21-prozess-kollaboration"
   iso-19650:
-    introduced_in: "20-prozess-kollaboration"
+    introduced_in: "21-prozess-kollaboration"
   klassifikation:
-    introduced_in: "19-klassifikation"
+    introduced_in: "20-klassifikation"
   kollisionspruefung:
-    introduced_in: "20-prozess-kollaboration"
+    introduced_in: "21-prozess-kollaboration"
   kostengruppe:
-    introduced_in: "16-kosten-ausschreibung"
+    introduced_in: "17-kosten-ausschreibung"
+  kritischer-pfad:
+    introduced_in: "16-bauprojektmanagement-bauoberleitung"
   kreislaufwirtschaft:
-    introduced_in: "22-nachhaltigkeit"
+    introduced_in: "23-nachhaltigkeit"
   lca:
-    introduced_in: "22-nachhaltigkeit"
+    introduced_in: "23-nachhaltigkeit"
   legionellen:
     introduced_in: "12-sanitaer"
   leistungsphase:
     introduced_in: "15-hoai"
   leistungsverzeichnis:
-    introduced_in: "16-kosten-ausschreibung"
+    introduced_in: "17-kosten-ausschreibung"
   luftschall:
     introduced_in: "08-schallschutz"
   materialpass:
-    introduced_in: "22-nachhaltigkeit"
+    introduced_in: "23-nachhaltigkeit"
   mauerwerk:
     introduced_in: "03-baustoffe"
   mvd:
-    introduced_in: "18-ifc"
+    introduced_in: "19-ifc"
+  modernisierung-bgb:
+    introduced_in: "24-sanierung"
+  modulbau:
+    introduced_in: "25-projektarten-neubau-bestand-denkmal"
+  nachtrag:
+    introduced_in: "16-bauprojektmanagement-bauoberleitung"
+  oba:
+    introduced_in: "16-bauprojektmanagement-bauoberleitung"
   photovoltaik:
     introduced_in: "13-elektro"
   properties:
-    introduced_in: "18-ifc"
+    introduced_in: "19-ifc"
   propertysets:
-    introduced_in: "18-ifc"
+    introduced_in: "19-ifc"
   punktwolke:
-    introduced_in: "23-sanierung"
+    introduced_in: "24-sanierung"
   raumakustik:
     introduced_in: "08-schallschutz"
   rettungsweg:
@@ -254,11 +282,17 @@ terms:
   rlt-anlage:
     introduced_in: "11-lueftung"
   rueckbau:
-    introduced_in: "22-nachhaltigkeit"
+    introduced_in: "23-nachhaltigkeit"
   scan-to-bim:
-    introduced_in: "23-sanierung"
+    introduced_in: "24-sanierung"
+  sonderbau:
+    introduced_in: "25-projektarten-neubau-bestand-denkmal"
+  bestandsschutz:
+    introduced_in: "25-projektarten-neubau-bestand-denkmal"
+  ensemble-denkmal:
+    introduced_in: "25-projektarten-neubau-bestand-denkmal"
   sensorik:
-    introduced_in: "24-digitaler-zwilling-ki"
+    introduced_in: "26-digitaler-zwilling-ki"
   stahlbeton:
     introduced_in: "03-baustoffe"
   steigschacht:
@@ -274,6 +308,6 @@ terms:
   waermepumpe:
     introduced_in: "10-heizung-waermeversorgung"
   gaeb:
-    introduced_in: "16-kosten-ausschreibung"
+    introduced_in: "17-kosten-ausschreibung"
   5d-bim:
-    introduced_in: "16-kosten-ausschreibung"
+    introduced_in: "17-kosten-ausschreibung"

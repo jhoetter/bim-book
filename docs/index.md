@@ -66,10 +66,10 @@ Es ist der häufigste Gebäudetyp in Deutschland. Es erfordert alle Disziplinen:
 Neu hier? Empfohlene Lesereihenfolge je nach Hintergrund:
 
 === "Informatiker / Entwickler"
-    Beginne mit **Kapitel 1** (Systemdenken), springe dann zu **Kapitel 18** (IFC), und lies die BIM-Brücken aller dazwischen liegenden Kapitel. Die Bauphysik (Kapitel 6–9) und TGA (Kapitel 10–13) liefern das fachliche Fundament für die Datenmodelle.
+    Beginne mit **Kapitel 1** (Systemdenken), springe dann zu **Kapitel 19** (IFC), und lies die BIM-Brücken aller dazwischen liegenden Kapitel. Die Bauphysik (Kapitel 6–9) und TGA (Kapitel 10–13) liefern das fachliche Fundament für die Datenmodelle.
 
 === "Architekt / Ingenieur"
-    Die ersten fünf Teile kennst du weitgehend. Starte mit **Kapitel 17** (Was BIM wirklich ist) und arbeite dich durch Teil VI. Die BIM-Brücken fassen das Bekannte ins Datenmodell um.
+    Die ersten fünf Teile kennst du weitgehend. Starte mit **Kapitel 18** (Was BIM wirklich ist) und arbeite dich durch Teil VI. Die BIM-Brücken fassen das Bekannte ins Datenmodell um.
 
 === "Quereinsteiger"
     Lies das Buch von vorne. Die Struktur ist so angelegt, dass jedes Kapitel auf dem vorherigen aufbaut – ohne Vorkenntnisse in Architektur oder Softwareentwicklung vorauszusetzen.

@@ -1,14 +1,10 @@
-Generiert: 2026-05-18 11:24
+Generiert: 2026-05-18 11:19
 Typ: cover
-Beschreibung: Panoramic diagram spanning the full image width on white background showing a physical building and its digital twin as one paired system. Left side: isometric building outline in structural gray (#6B7280) with solid walls and window openings, simplified but architectural. Right side: the same building as a translucent near-black wireframe with amber (#F59E0B) data nodes at sensor locations and thin thermal blue (#93C5FD) connection lines. Between physical and digital model, bold amber bidirectional arrows show data flow through the center band. Composition is precise and technical, dense in the middle with sparse top and bottom, no decorative glow. No text. No labels. No numbers.
+Beschreibung: Cross-section through a building wall showing renovation retrofit layers on white background, spanning the full image width. Left half: existing old masonry wall in warm amber (#F59E0B) brick pattern with subtly irregular mortar joints and rougher cut edges. Right half: crisp new retrofit system added to the outside — thermal insulation in thermal blue (#93C5FD) zigzag pattern, thin render coat, and a precise new window reveal. A bold vertical cut line separates old from new, with structural gray (#6B7280) parapet detail at the top edge of the central band. The contrast between old texture and new technical layers is the visual centerpiece, centered horizontally with sparse top and bottom. No text. No labels.
 
 --- QA-Verlauf ---
 
-Versuch 1: ✗ nicht bestanden
-  - Background is not pure white (#FFFFFF). It appears slightly off-white or textured.
-  Korrektur: Adjust the background color to a pure white (#FFFFFF) to ensure it meets the requirements.
-
-Versuch 2: ✓ bestanden
+Versuch 1: ✓ bestanden
 
 --- Finaler Prompt ---
 
@@ -18,9 +14,4 @@ Chapter cover banner illustration for a professional architectural textbook. Pur
 
 Color palette: structural gray #6B7280, thermal insulation blue #93C5FD, TGA/MEP amber #F59E0B, pure white background #FFFFFF, near-black lines and text #111827.
 
-Subject: Panoramic diagram spanning the full image width on white background showing a physical building and its digital twin as one paired system. Left side: isometric building outline in structural gray (#6B7280) with solid walls and window openings, simplified but architectural. Right side: the same building as a translucent near-black wireframe with amber (#F59E0B) data nodes at sensor locations and thin thermal blue (#93C5FD) connection lines. Between physical and digital model, bold amber bidirectional arrows show data flow through the center band. Composition is precise and technical, dense in the middle with sparse top and bottom, no decorative glow. No text. No labels. No numbers.
-
-KORREKTUREN (aus QA-Prüfung):
-- Background is not pure white (#FFFFFF). It appears slightly off-white or textured.
-
-Bitte korrigiere: Adjust the background color to a pure white (#FFFFFF) to ensure it meets the requirements.
+Subject: Cross-section through a building wall showing renovation retrofit layers on white background, spanning the full image width. Left half: existing old masonry wall in warm amber (#F59E0B) brick pattern with subtly irregular mortar joints and rougher cut edges. Right half: crisp new retrofit system added to the outside — thermal insulation in thermal blue (#93C5FD) zigzag pattern, thin render coat, and a precise new window reveal. A bold vertical cut line separates old from new, with structural gray (#6B7280) parapet detail at the top edge of the central band. The contrast between old texture and new technical layers is the visual centerpiece, centered horizontally with sparse top and bottom. No text. No labels.

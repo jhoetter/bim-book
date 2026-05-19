@@ -120,7 +120,7 @@ Für BIM ist diese Unterscheidung wichtig. Ein Architekturmodell zeigt oft alle 
 
 Im digitalen Modell sollten tragende Bauteile eindeutig als solche erkennbar sein. `IfcColumn`, `IfcBeam`, `IfcSlab` und `IfcFooting` beschreiben Stützen, Träger, Decken und Fundamente. Properties wie `LoadBearing = true` sind keine Nebensache: Sie entscheiden, ob ein Prüfwerkzeug tragende von nichttragenden Elementen unterscheiden kann.
 
-In der Praxis wird oft ein eigenes Strukturmodell geführt, getrennt vom Architekturmodell. Das ist sinnvoll, wenn Achsen, Querschnitte, Lasten und analytische Linien sauber gepflegt werden. Die Koordination zwischen beiden Modellen ist kritisch: Eine Türöffnung in der Architektur kann im Strukturmodell ein Unterzug, eine Bewehrungsänderung oder eine unzulässige Schwächung sein. IFC-Grundlagen folgen in [Kapitel 18](/chapters/18-ifc).
+In der Praxis wird oft ein eigenes Strukturmodell geführt, getrennt vom Architekturmodell. Das ist sinnvoll, wenn Achsen, Querschnitte, Lasten und analytische Linien sauber gepflegt werden. Die Koordination zwischen beiden Modellen ist kritisch: Eine Türöffnung in der Architektur kann im Strukturmodell ein Unterzug, eine Bewehrungsänderung oder eine unzulässige Schwächung sein. IFC-Grundlagen folgen in [Kapitel 19](/chapters/19-ifc).
 
 ## Zusammenfassung
 

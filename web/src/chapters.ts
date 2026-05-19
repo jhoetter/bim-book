@@ -167,25 +167,27 @@ export const PARTS: Part[] = [
     chapters: [
       { id: '14-planungsrecht', num: '14', title: 'Planungsrecht', path: 'chapters/14-planungsrecht', icon: ProjectInfoIcon, pageIcon: ProjectInfoHifi, coverImage: '/assets/covers/cover-ch14.png' },
       { id: '15-hoai', num: '15', title: 'HOAI: Phasen, Leistungen, Koordination', path: 'chapters/15-hoai', icon: PhaseIcon, pageIcon: PhaseHifi, coverImage: '/assets/covers/cover-ch15.png' },
-      { id: '16-kosten-ausschreibung', num: '16', title: 'Kosten & Ausschreibung', path: 'chapters/16-kosten-ausschreibung', icon: QuantityTakeoffIcon, pageIcon: QuantityTakeoffHifi, coverImage: '/assets/covers/cover-ch16.png' },
+      { id: '16-bauprojektmanagement-bauoberleitung', num: '16', title: 'Bauprojektmanagement & Bauoberleitung', path: 'chapters/16-bauprojektmanagement-bauoberleitung', icon: ProjectInfoIcon, pageIcon: ProjectInfoHifi, coverImage: '/assets/covers/cover-ch16.png' },
+      { id: '17-kosten-ausschreibung', num: '17', title: 'Kosten & Ausschreibung', path: 'chapters/17-kosten-ausschreibung', icon: QuantityTakeoffIcon, pageIcon: QuantityTakeoffHifi, coverImage: '/assets/covers/cover-ch17.png' },
     ],
   },
   {
     title: 'Teil VI – BIM',
     chapters: [
-      { id: '17-was-bim-wirklich-ist', num: '17', title: 'Was BIM wirklich ist', path: 'chapters/17-was-bim-wirklich-ist', icon: LinkedModelIcon, pageIcon: LinkedModelHifi, coverImage: '/assets/covers/cover-ch17.png' },
-      { id: '18-ifc', num: '18', title: 'IFC: Die Sprache des digitalen Gebäudes', path: 'chapters/18-ifc', icon: IFCIcon, pageIcon: IFCHifi, coverImage: '/assets/covers/cover-ch18.png' },
-      { id: '19-klassifikation', num: '19', title: 'Klassifikation', path: 'chapters/19-klassifikation', icon: FamilyTypeIcon, pageIcon: FamilyTypeHifi, coverImage: '/assets/covers/cover-ch19.png' },
-      { id: '20-prozess-kollaboration', num: '20', title: 'Prozess & Kollaboration', path: 'chapters/20-prozess-kollaboration', icon: SyncIcon, pageIcon: SyncHifi, coverImage: '/assets/covers/cover-ch20.png' },
-      { id: '21-bim-praxis', num: '21', title: 'BIM in der Praxis', path: 'chapters/21-bim-praxis', icon: WorksetIcon, pageIcon: WorksetHifi, coverImage: '/assets/covers/cover-ch21.png' },
+      { id: '18-was-bim-wirklich-ist', num: '18', title: 'Was BIM wirklich ist', path: 'chapters/18-was-bim-wirklich-ist', icon: LinkedModelIcon, pageIcon: LinkedModelHifi, coverImage: '/assets/covers/cover-ch18.png' },
+      { id: '19-ifc', num: '19', title: 'IFC: Die Sprache des digitalen Gebäudes', path: 'chapters/19-ifc', icon: IFCIcon, pageIcon: IFCHifi, coverImage: '/assets/covers/cover-ch19.png' },
+      { id: '20-klassifikation', num: '20', title: 'Klassifikation', path: 'chapters/20-klassifikation', icon: FamilyTypeIcon, pageIcon: FamilyTypeHifi, coverImage: '/assets/covers/cover-ch20.png' },
+      { id: '21-prozess-kollaboration', num: '21', title: 'Prozess & Kollaboration', path: 'chapters/21-prozess-kollaboration', icon: SyncIcon, pageIcon: SyncHifi, coverImage: '/assets/covers/cover-ch21.png' },
+      { id: '22-bim-praxis', num: '22', title: 'BIM in der Praxis', path: 'chapters/22-bim-praxis', icon: WorksetIcon, pageIcon: WorksetHifi, coverImage: '/assets/covers/cover-ch22.png' },
     ],
   },
   {
     title: 'Teil VII – Nachhaltigkeit',
     chapters: [
-      { id: '22-nachhaltigkeit', num: '22', title: 'Nachhaltigkeit & Kreislaufwirtschaft', path: 'chapters/22-nachhaltigkeit', icon: PlantingIcon, pageIcon: PlantingHifi, coverImage: '/assets/covers/cover-ch22.png' },
-      { id: '23-sanierung', num: '23', title: 'Sanierung', path: 'chapters/23-sanierung', icon: RevisionIcon, pageIcon: RevisionHifi, coverImage: '/assets/covers/cover-ch23.png' },
-      { id: '24-digitaler-zwilling-ki', num: '24', title: 'Digitaler Zwilling & KI', path: 'chapters/24-digitaler-zwilling-ki', icon: DigitalTwinIcon, pageIcon: DigitalTwinHifi, coverImage: '/assets/covers/cover-ch24.png' },
+      { id: '23-nachhaltigkeit', num: '23', title: 'Nachhaltigkeit & Kreislaufwirtschaft', path: 'chapters/23-nachhaltigkeit', icon: PlantingIcon, pageIcon: PlantingHifi, coverImage: '/assets/covers/cover-ch23.png' },
+      { id: '24-sanierung', num: '24', title: 'Sanierung', path: 'chapters/24-sanierung', icon: RevisionIcon, pageIcon: RevisionHifi, coverImage: '/assets/covers/cover-ch24.png' },
+      { id: '25-projektarten-neubau-bestand-denkmal', num: '25', title: 'Projektarten: Neubau, Bestand, Denkmal', path: 'chapters/25-projektarten-neubau-bestand-denkmal', icon: TopoIcon, pageIcon: TopoHifi, coverImage: '/assets/covers/cover-ch25.png' },
+      { id: '26-digitaler-zwilling-ki', num: '26', title: 'Digitaler Zwilling & KI', path: 'chapters/26-digitaler-zwilling-ki', icon: DigitalTwinIcon, pageIcon: DigitalTwinHifi, coverImage: '/assets/covers/cover-ch26.png' },
     ],
   },
 ]

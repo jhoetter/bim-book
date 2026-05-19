@@ -122,4 +122,4 @@ Brandschutz kann im Modell über Properties wie `Pset_WallCommon.FireRating` dok
 
 Die wichtigsten Fehler entstehen an Übergängen: offene Durchführungen, falsche Türen, unklare Schächte, zu lange Wege. Gute Planung behandelt Brandschutz deshalb nicht als Nachtrag, sondern als Grundriss- und Konstruktionsparameter.
 
-Verwandte Kapitel: [Kap. 2](/chapters/02-entwurf-raum-funktion) · [Kap. 4](/chapters/04-tragwerk) · [Kap. 14](/chapters/14-planungsrecht) · [Kap. 21](/chapters/21-bim-praxis)
+Verwandte Kapitel: [Kap. 2](/chapters/02-entwurf-raum-funktion) · [Kap. 4](/chapters/04-tragwerk) · [Kap. 14](/chapters/14-planungsrecht) · [Kap. 22](/chapters/22-bim-praxis)
