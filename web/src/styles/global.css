@@ -1930,21 +1930,8 @@ html, body, #root {
 }
 .overview-card--map-connected {
   opacity: 1;
-  border-color: color-mix(in srgb, var(--accent) 38%, var(--border));
-}
-.overview-card--map-relation-outgoing {
-  border-color: color-mix(in srgb, var(--accent) 58%, var(--border));
+  border-color: color-mix(in srgb, var(--accent) 56%, var(--border));
   box-shadow: inset 3px 0 0 color-mix(in srgb, var(--accent) 72%, transparent);
-}
-.overview-card--map-relation-incoming {
-  border-color: color-mix(in srgb, var(--accent-amber) 58%, var(--border));
-  box-shadow: inset 3px 0 0 color-mix(in srgb, var(--accent-amber) 72%, transparent);
-}
-.overview-card--map-relation-both {
-  border-color: color-mix(in srgb, var(--accent) 38%, var(--accent-amber));
-  box-shadow:
-    inset 3px 0 0 color-mix(in srgb, var(--accent) 72%, transparent),
-    inset -3px 0 0 color-mix(in srgb, var(--accent-amber) 72%, transparent);
 }
 .overview-card--map-focused {
   min-height: 250px;
@@ -2003,12 +1990,6 @@ html, body, #root {
 .overview-card--map .overview-card-badge {
   font-size: 0.56rem;
   padding: 3px 7px;
-}
-.overview-card--map-relation-incoming .overview-card-badge {
-  background: var(--accent-amber);
-}
-.overview-card--map-relation-both .overview-card-badge {
-  background: linear-gradient(90deg, var(--accent), var(--accent-amber));
 }
 .chapter-graph-panel {
   flex: 1;
